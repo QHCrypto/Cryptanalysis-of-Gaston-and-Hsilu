@@ -1,0 +1,29 @@
+{
+  "input_path": "/home/yxb/分析/代数攻击/hsilu_2r/hsilu_no_start.txt",
+  "sample_count": 32,
+  "sampled_unsatisfiable_capacities": 0,
+  "background_condition_rank_histogram": {
+    "1": 32
+  },
+  "output_rank_histogram": {
+    "20": 2,
+    "21": 15,
+    "22": 13,
+    "19": 2
+  },
+  "selected_output_quadratic_terms": "all zero in every consistent sample",
+  "cpp_reference_checks": 32,
+  "witness": {
+    "scope": "planted target at chosen capacity/background, not arbitrary XOF preimage",
+    "native_input_hex": [
+      "ae3accbad10bf856",
+      "b015400a42678c08",
+      "7854c084b7238b1b",
+      "edc537decd376561",
+      "8f9ab74597de2f7f"
+    ],
+    "first_block_target_hex": "a7df7d81125228cc",
+    "rank": 22
+  },
+  "limitations": "No full 128-bit XOF preimage, no proof of condition independence or sponge prefix reachability."
+}

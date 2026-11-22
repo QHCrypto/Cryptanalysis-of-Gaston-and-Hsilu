@@ -1,0 +1,75 @@
+Output active=6; theta-effect=nonzero; cutoff=26; backend=opencl; device=NVIDIA GeForce GTX 1080 Ti
+Position orbits=1171552; range=[0,1171552); full output assignments=1039756712482912
+All disjoint column pairs and 1024-entry inverse tables verified.
+Improved: input=24; position=3642; done=3643/1171552; elapsed=2.279 s
+Progress 1.470%; completed=17216/1171552; best=24; elapsed=10.0 s; ETA=672.0 s
+Progress 2.961%; completed=34688/1171552; best=24; elapsed=20.1 s; ETA=657.3 s
+Progress 4.447%; completed=52096/1171552; best=24; elapsed=30.1 s; ETA=645.9 s
+Progress 5.927%; completed=69440/1171552; best=24; elapsed=40.1 s; ETA=636.0 s
+Progress 7.408%; completed=86784/1171552; best=24; elapsed=50.1 s; ETA=626.1 s
+Progress 8.888%; completed=104128/1171552; best=24; elapsed=60.1 s; ETA=616.3 s
+Progress 10.363%; completed=121408/1171552; best=24; elapsed=70.2 s; ETA=606.8 s
+Improved: input=23; position=136405; done=136406/1171552; elapsed=78.912 s
+Progress 11.843%; completed=138752/1171552; best=23; elapsed=80.2 s; ETA=596.8 s
+Progress 13.362%; completed=156544/1171552; best=23; elapsed=90.2 s; ETA=584.8 s
+Progress 14.908%; completed=174656/1171552; best=23; elapsed=100.2 s; ETA=572.1 s
+Improved: input=22; position=175536; done=175537/1171552; elapsed=100.734 s
+Progress 16.514%; completed=193472/1171552; best=22; elapsed=110.3 s; ETA=557.4 s
+Progress 18.120%; completed=212288/1171552; best=22; elapsed=120.3 s; ETA=543.5 s
+Progress 19.694%; completed=230720/1171552; best=22; elapsed=130.3 s; ETA=531.3 s
+Progress 21.245%; completed=248896/1171552; best=22; elapsed=140.3 s; ETA=520.1 s
+Progress 22.824%; completed=267392/1171552; best=22; elapsed=150.3 s; ETA=508.4 s
+Progress 24.419%; completed=286080/1171552; best=22; elapsed=160.4 s; ETA=496.4 s
+Progress 25.987%; completed=304448/1171552; best=22; elapsed=170.4 s; ETA=485.3 s
+Improved: input=15; position=321320; done=321321/1171552; elapsed=179.512 s
+Progress 27.631%; completed=323712/1171552; best=15; elapsed=180.4 s; ETA=472.5 s
+Progress 29.887%; completed=350144/1171552; best=15; elapsed=190.4 s; ETA=446.6 s
+Progress 32.149%; completed=376640/1171552; best=15; elapsed=200.4 s; ETA=423.0 s
+Progress 34.438%; completed=403456/1171552; best=15; elapsed=210.4 s; ETA=400.6 s
+Progress 36.705%; completed=430016/1171552; best=15; elapsed=220.4 s; ETA=380.1 s
+Progress 38.972%; completed=456576/1171552; best=15; elapsed=230.5 s; ETA=360.9 s
+Progress 41.250%; completed=483264/1171552; best=15; elapsed=240.5 s; ETA=342.5 s
+Progress 43.522%; completed=509888/1171552; best=15; elapsed=250.5 s; ETA=325.0 s
+Progress 45.779%; completed=536320/1171552; best=15; elapsed=260.5 s; ETA=308.5 s
+Progress 48.046%; completed=562880/1171552; best=15; elapsed=270.5 s; ETA=292.5 s
+Progress 50.340%; completed=589760/1171552; best=15; elapsed=280.5 s; ETA=276.7 s
+Progress 52.640%; completed=616704/1171552; best=15; elapsed=290.5 s; ETA=261.4 s
+Progress 54.934%; completed=643584/1171552; best=15; elapsed=300.5 s; ETA=246.5 s
+Progress 57.234%; completed=670528/1171552; best=15; elapsed=310.5 s; ETA=232.0 s
+Progress 59.518%; completed=697280/1171552; best=15; elapsed=320.5 s; ETA=218.0 s
+Progress 61.779%; completed=723776/1171552; best=15; elapsed=330.6 s; ETA=204.5 s
+Progress 64.052%; completed=750400/1171552; best=15; elapsed=340.6 s; ETA=191.1 s
+Progress 66.335%; completed=777152/1171552; best=15; elapsed=350.6 s; ETA=177.9 s
+Progress 68.602%; completed=803712/1171552; best=15; elapsed=360.6 s; ETA=165.0 s
+Progress 70.869%; completed=830272/1171552; best=15; elapsed=370.6 s; ETA=152.3 s
+Progress 73.136%; completed=856832/1171552; best=15; elapsed=380.6 s; ETA=139.8 s
+Progress 75.414%; completed=883520/1171552; best=15; elapsed=390.6 s; ETA=127.3 s
+Progress 77.632%; completed=909504/1171552; best=15; elapsed=400.6 s; ETA=115.4 s
+Improved: input=13; position=934719; done=934720/1171552; elapsed=410.224 s
+Progress 79.899%; completed=936064/1171552; best=13; elapsed=410.7 s; ETA=103.3 s
+Progress 82.538%; completed=966976/1171552; best=13; elapsed=420.7 s; ETA=89.0 s
+Progress 85.182%; completed=997952/1171552; best=13; elapsed=430.7 s; ETA=74.9 s
+Progress 87.821%; completed=1028864/1171552; best=13; elapsed=440.7 s; ETA=61.1 s
+Progress 90.454%; completed=1059712/1171552; best=13; elapsed=450.7 s; ETA=47.6 s
+Progress 93.081%; completed=1090496/1171552; best=13; elapsed=460.7 s; ETA=34.2 s
+Progress 95.671%; completed=1120832/1171552; best=13; elapsed=470.7 s; ETA=21.3 s
+Progress 98.276%; completed=1151360/1171552; best=13; elapsed=480.7 s; ETA=8.4 s
+
+Minimum input active columns: 13; proven_optimal=true
+Input X: active_columns=13, active_bits=13
+  columns (index:value): 4:0x02 11:0x04 29:0x10 30:0x01 31:0x04 32:0x08 35:0x02 37:0x08 42:0x04 49:0x10 53:0x01 57:0x02 60:0x10
+  row 0 = 0x0020000040000000
+  row 1 = 0x0200000800000010
+  row 2 = 0x0000040080000800
+  row 3 = 0x0000002100000000
+  row 4 = 0x1002000020000000
+Output Y: active_columns=6, active_bits=7
+  columns (index:value): 0:0x05 12:0x10 23:0x02 30:0x01 35:0x08 41:0x08
+  row 0 = 0x0000000040000001
+  row 1 = 0x0000000000800000
+  row 2 = 0x0000000000000001
+  row 3 = 0x0000020800000000
+  row 4 = 0x0000000000001000
+Theta effect E=0x0000020040000000
+Completed positions=1171552/1171552; tested=17040104227205; covered output assignments=1039756712482912
+Setup=0.585640 s; search=487.308458 s

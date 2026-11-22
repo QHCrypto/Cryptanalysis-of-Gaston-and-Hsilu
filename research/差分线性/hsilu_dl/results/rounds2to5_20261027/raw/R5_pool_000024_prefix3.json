@@ -1,0 +1,69 @@
+{
+  "id": "R5_pool_000024_prefix3",
+  "algorithm": "Hsilu",
+  "rounds": 3,
+  "start_round_index": 7,
+  "delta_core": [
+    "0000000000000004",
+    "0000000000000004",
+    "0000000000000004",
+    "0000000000000004",
+    "0000000000000004"
+  ],
+  "lambda_core": [
+    "000c800010000124",
+    "4000040000120001",
+    "4010000000000412",
+    "1000044000000001",
+    "0088000002482010"
+  ],
+  "scope": "middle of (0,3,2)",
+  "method": "original DATF Algorithm 3",
+  "status": "completed",
+  "correlation": {
+    "numerator": "0",
+    "denominator": "1",
+    "log2_abs": null
+  },
+  "bias": {
+    "numerator": "0",
+    "denominator": "1",
+    "log2_abs": null
+  },
+  "limits": {
+    "seconds": 30,
+    "max_terms": 1000000,
+    "max_products": 100000000,
+    "max_nodes": 200000,
+    "address_space_bytes": 4294967296
+  },
+  "first_L_omitted": null,
+  "remaining_alpha_assumed_jointly_uniform": true,
+  "dag_verified_full_states": 4,
+  "phase": "completed",
+  "statistics": {
+    "initial_terms": 131,
+    "initial_variables": 127,
+    "peak_polynomial_terms": 3109,
+    "beta_definitions_expanded": 79,
+    "product_pairs": 9644,
+    "expanded_terms": 3109,
+    "expanded_variables": 141,
+    "expanded_degree": 4,
+    "remaining_beta_variables": 0,
+    "expanded_input_variables": 5,
+    "expanded_alpha_variables": 136,
+    "max_component_variables": 141,
+    "bias_nodes": 4,
+    "affine_pair_eliminations": 3,
+    "isolated_uniform_zero_leaves": 1
+  },
+  "elapsed_seconds": 0.053537132997007575,
+  "peak_rss_kib": 23988,
+  "expansion_verified_formal_assignments": 16,
+  "zero_certificate": null,
+  "expanded_anf_file": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R5_pool_000024_prefix3.anf.json",
+  "expanded_anf_sha256": "9b4dcd1f6132f3c26343de610e511b44f0f2d9fd6d67995f5c9cd2262dbf0b73",
+  "evaluation_order": "full beta expansion then Bias",
+  "boundary_note": "Hsilu core: first chi input to last chi output. All internal L layers retained; final native L handled by external mask L^{-T}. Generic worker first_L_omitted is inapplicable to Hsilu."
+}

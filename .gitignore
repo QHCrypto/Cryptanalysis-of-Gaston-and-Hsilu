@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+*.so
+*.o
+*.a
+.venv/
+build/
+/validation/20*/
+/validation/preimage_accounting.json
+*.zip
+.DS_Store

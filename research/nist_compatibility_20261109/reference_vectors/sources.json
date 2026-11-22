@@ -1,0 +1,12 @@
+{
+  "aead.txt": {
+    "url": "https://raw.githubusercontent.com/ascon/ascon-c/main/crypto_aead/asconaead128/LWC_AEAD_KAT_128_128.txt",
+    "sha256": "bbbc34692fe05e5fda0a3b025585622ab3e3747495e5e3655b29aae8c2a4bd33",
+    "bytes": 260253
+  },
+  "xof.txt": {
+    "url": "https://raw.githubusercontent.com/ascon/ascon-c/main/crypto_hash/asconxof128/LWC_XOF_KAT_128_512.txt",
+    "sha256": "d7f5a23f37fc969896e48246700bc859fa324f2d309164043361376068e30852",
+    "bytes": 1207368
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "id": "G3b",
+  "algorithm": "Gaston",
+  "rounds": 3,
+  "start_round_index": 9,
+  "delta_core": [
+    "0000000000000000",
+    "0000000000000000",
+    "0000000000000010",
+    "0000000000000000",
+    "0000000000000000"
+  ],
+  "lambda_core": [
+    "0000000000000000",
+    "0000000000000000",
+    "0000000000000001",
+    "0000000000000000",
+    "0000000000000000"
+  ],
+  "previous_datf": {
+    "numerator": "-1",
+    "denominator": "16",
+    "log2_abs": -4.0
+  },
+  "previous_hnw": {
+    "numerator": "-1",
+    "denominator": "16",
+    "denominator_exponent": 4,
+    "log2_abs": -4
+  },
+  "sampling": {
+    "samples": 16777216,
+    "seed": "2026101601",
+    "n0": 7865762,
+    "n1": 8911454,
+    "rho": -0.06232810020446777,
+    "log2_abs": -4.003973450511626,
+    "ci95": [
+      -0.0628056623567706,
+      -0.06185050950979231
+    ]
+  },
+  "method": "original DATF Algorithm 3",
+  "status": "completed",
+  "correlation": {
+    "numerator": "-1",
+    "denominator": "16",
+    "log2_abs": -4.0
+  },
+  "bias": {
+    "numerator": "-1",
+    "denominator": "32",
+    "log2_abs": -5.0
+  },
+  "limits": {
+    "seconds": 120,
+    "max_terms": 1000000,
+    "max_products": 100000000,
+    "max_nodes": 200000,
+    "address_space_bytes": 4294967296
+  },
+  "first_L_omitted": true,
+  "remaining_alpha_assumed_jointly_uniform": true,
+  "dag_verified_full_states": 4,
+  "phase": "completed",
+  "statistics": {
+    "initial_terms": 5,
+    "initial_variables": 5,
+    "peak_polynomial_terms": 450,
+    "beta_definitions_expanded": 3,
+    "product_pairs": 551,
+    "expanded_terms": 450,
+    "expanded_variables": 30,
+    "expanded_degree": 4,
+    "remaining_beta_variables": 0,
+    "expanded_input_variables": 2,
+    "expanded_alpha_variables": 28,
+    "max_component_variables": 30,
+    "bias_nodes": 5,
+    "isolated_uniform_zero_leaves": 1,
+    "quadratic_calls": 2
+  },
+  "elapsed_seconds": 0.02697246300522238,
+  "peak_rss_kib": 21256,
+  "expansion_verified_formal_assignments": 16,
+  "zero_certificate": null,
+  "expanded_anf_file": "representatives/02.anf.json",
+  "expanded_anf_sha256": "a1ec6b6b0a879cf47fbcc9413dad8c0b18475feba59bd398b03b65401f1b3fe1"
+}

@@ -1,0 +1,12 @@
+{
+  "scope":"necessary rank conditions only; rank deficiency does not imply full activity or low trail weight",
+  "complete_anchored_six_column_enumeration":true,
+  "checked":7028847,
+  "left_dependent":78,
+  "both_dependent":0,
+  "left_orbits":13,
+  "both_orbits":0,
+  "seconds":0.564140,
+  "both_orbit_masks":[],
+  "left_orbit_masks":["0000000000041099","0000000121200041","0000000201140101","0000004024040021","0000004204400003","0000005010200401","0000009000012041","0000020004102101","0000100024080101","0000100222000081","0000200202004003","0000408808008001","0002004040102001"]
+}

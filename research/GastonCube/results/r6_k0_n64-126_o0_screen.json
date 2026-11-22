@@ -1,0 +1,12 @@
+{
+  "schema": "GastonCube-v1", "rounds": 6, "word_bits": 64,
+  "input": "IV,K0,K1,N0,N1; independent original bits",
+  "output_bit": 0, "key_index": 0, "nonce_indices": [64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126],
+  "mode": "screen", "classification": "feasible_only", "complete": false,
+  "coefficient": null,
+  "coefficients": null,
+  "trails_counted": 0, "batches": 1, "solver_status": 2,
+  "solcount": 1, "circuit_nodes": 5353, "binary_variables": 104165, "constraints": 4831,
+  "seconds": 8.653771, "witness_key": 0,
+  "scope": "A feasible trail is not a nonzero coefficient. Coefficients are certified only when complete=true."
+}

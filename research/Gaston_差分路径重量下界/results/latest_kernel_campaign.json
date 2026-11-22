@@ -1,0 +1,64 @@
+{
+  "state": "stopped",
+  "run_directory": "/home/yxb/分析/Gaston_差分路径重量下界/results/kernel_campaigns/20261024_132538_a2fd158c",
+  "order": [
+    6,
+    7,
+    8
+  ],
+  "kernel_reduced": true,
+  "analytically_excluded": {
+    "9": {
+      "weight_lower_bound": 45
+    }
+  },
+  "threads_per_solve": 16,
+  "maximum_concurrent_solves": 1,
+  "time_limit": null,
+  "external_timeout": null,
+  "verification": {
+    "6": "/home/yxb/分析/Gaston_差分路径重量下界/results/kernel_campaigns/20261024_132538_a2fd158c/validation_k6/verification.json",
+    "7": "/home/yxb/分析/Gaston_差分路径重量下界/results/kernel_campaigns/20261024_132538_a2fd158c/validation_k7/verification.json",
+    "8": "/home/yxb/分析/Gaston_差分路径重量下界/results/kernel_campaigns/20261024_132538_a2fd158c/validation_k8/verification.json"
+  },
+  "source_sha256": {
+    "gaston_3round_lossy": "c27af3c7f334ec38eb12df8d565437c97ccbc20415d2f3378394d0d1dd8040c2",
+    "gaston_3round_lossy.cpp": "ea22b97c2e1e0d3a26dc43a3e15130e167949671456b49118fe773d0508d298a",
+    "Makefile": "8460bff92869ad9ff220fa6c2ca0d8d384f5b40278e201ed198a0a7fbffed1f8",
+    "src/activity_profile_data.hpp": "827214c9f71f9712204a155455fc30f25d96c225a1535568855930c800f89b18",
+    "src/verify_lossy_model.py": "8dbd4496cd74351a8a5fd2f2e6c2bd36ef0a6c240fef1cbb8233c2ba7ba46184",
+    "src/kernel_campaign.py": "52f7189934711f3127462ae3aed4884ee94c00952dd1dfb7aa370fba625d9560",
+    "src/build_activity_profiles.py": "8512d74950590f3b30b0d3322ae937f5675099a27e22bfc7ee66b773725cc3c7",
+    "references/activity_profiles.json": "7965612f47decfac18302f35bfca086824255653ea8576dfbb6b5f630fb1f8fd",
+    "src/kernel_type_data.hpp": "c35a6e9704c05e88c2fa1e9c948fc237de977976b3632c0fe2cb2c8a8fac5f66",
+    "src/build_kernel_types.py": "2b90e4d98ef3dbfdffb9ad4cc253319364bb60466f6c3f830be89f2ffc66b72c",
+    "src/audit_kernel_structure.py": "8cc4c3fcc3acd75383362acc69dd74211b285320298a575658fc202ac9cc528e",
+    "results/kernel_structure_audit_20261024.json": "50e32bcb51b99321001052cd3276c75f02f95045fd64b8f06c4559bb3e414a3c"
+  },
+  "coverage_sha256": "b8265ad6b8b75306fe4a8372c663ef8e16b02059a8371a4c8b5758ff87f93444",
+  "worker_pid": 2063781,
+  "started_local": "2026-10-24T13:26:09.795033+08:00",
+  "command": [
+    "/usr/bin/python3",
+    "/home/yxb/分析/Gaston_差分路径重量下界/results/kernel_campaigns/20261024_132538_a2fd158c/source/src/kernel_campaign.py",
+    "worker",
+    "--run",
+    "/home/yxb/分析/Gaston_差分路径重量下界/results/kernel_campaigns/20261024_132538_a2fd158c"
+  ],
+  "stop_instruction": "Send SIGINT to worker_pid; it interrupts the current solve and does not start another branch.",
+  "external_proof": {
+    "path": "/home/yxb/分析/Gaston_差分路径重量下界/results/support_space_proof_20261024.json",
+    "sha256": "11c9e101bdec3e80eaa7fa617401ff6740d952c0bdf601df0a908870be009728",
+    "status": "PASS",
+    "weight_lower_bound": 44,
+    "kernel_branches_excluded_for_any_weight": [
+      6,
+      7,
+      8
+    ],
+    "middle9_weight_lower_bound": 45,
+    "method": "Exact GF(2) support enumeration plus prior completed activity bounds; historical subproofs not replayed"
+  },
+  "stop_reason": "The weight-below-44 target was excluded by the separate exact support proof; interrupted MILP is not an infeasibility proof.",
+  "updated_local": "2026-10-24T21:25:53.026861+08:00"
+}

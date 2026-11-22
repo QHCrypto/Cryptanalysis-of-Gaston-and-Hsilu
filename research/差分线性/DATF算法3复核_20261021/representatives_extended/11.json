@@ -1,0 +1,82 @@
+{
+  "id": "H4d",
+  "algorithm": "Hsilu",
+  "rounds": 4,
+  "start_round_index": 8,
+  "delta_core": [
+    "0000000000000400",
+    "0000000000000000",
+    "0000000000000000",
+    "0000000000000000",
+    "0000000000000000"
+  ],
+  "lambda_core": [
+    "0000000000000400",
+    "0000000000000000",
+    "0000000000800000",
+    "0000000000800000",
+    "0000000000000000"
+  ],
+  "previous_datf": {
+    "numerator": "1",
+    "denominator": "1024",
+    "log2_abs": -10.0
+  },
+  "previous_hnw": {
+    "numerator": "0",
+    "denominator": "1",
+    "denominator_exponent": 0,
+    "log2_abs": null
+  },
+  "sampling": {
+    "samples": 268435456,
+    "seed": "2026101803",
+    "n0": 134359336,
+    "n1": 134076120,
+    "rho": 0.0010550618171691895,
+    "log2_abs": -9.888456754250281,
+    "ci95": [
+      0.000935435161467435,
+      0.0011746884426737658
+    ]
+  },
+  "method": "original DATF Algorithm 3",
+  "status": "resource_limit",
+  "correlation": null,
+  "bias": null,
+  "limits": {
+    "seconds": 180,
+    "max_terms": 5000000,
+    "max_products": 1000000000,
+    "max_nodes": 2000000,
+    "address_space_bytes": 4294967296
+  },
+  "first_L_omitted": true,
+  "remaining_alpha_assumed_jointly_uniform": true,
+  "dag_verified_full_states": 4,
+  "phase": "uniform_Bias",
+  "statistics": {
+    "initial_terms": 15,
+    "initial_variables": 12,
+    "peak_polynomial_terms": 137569,
+    "beta_definitions_expanded": 127,
+    "product_pairs": 9651506,
+    "expanded_terms": 137569,
+    "expanded_variables": 178,
+    "expanded_degree": 6,
+    "remaining_beta_variables": 0,
+    "expanded_input_variables": 2,
+    "expanded_alpha_variables": 176,
+    "max_component_variables": 178,
+    "bias_nodes": 532911,
+    "affine_pair_eliminations": 206151,
+    "isolated_uniform_zero_leaves": 4892,
+    "separations": 29780,
+    "quadratic_calls": 80741,
+    "bias_cache_hits": 21351
+  },
+  "elapsed_seconds": 180.05169205204584,
+  "peak_rss_kib": 252188,
+  "reason": "ResourceLimit: wall time exceeds 180 seconds",
+  "evaluation_order": "full beta expansion then Bias"
+}

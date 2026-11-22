@@ -1,0 +1,63 @@
+Set parameter LicenseID to value 2850350
+Read LP format model from file base.lp
+Reading time = 0.01 seconds
+: 4868 rows, 1152 columns, 17152 nonzeros
+Set parameter Threads to value 4
+Set parameter MIPFocus to value 1
+Set parameter SolutionLimit to value 1
+Set parameter FeasibilityTol to value 1e-09
+Set parameter IntFeasTol to value 1e-09
+Gurobi Optimizer version 13.0.2 build v13.0.2rc1 (linux64 - "Ubuntu 24.04.5 LTS")
+
+CPU model: 13th Gen Intel(R) Core(TM) i9-13900KF, instruction set [SSE2|AVX|AVX2]
+Thread count: 32 physical cores, 32 logical processors, using up to 4 threads
+
+Non-default parameters:
+SolutionLimit  1
+FeasibilityTol  1e-09
+IntFeasTol  1e-09
+MIPFocus  1
+Threads  4
+
+Optimize a model with 4935 rows, 1152 columns and 17408 nonzeros (Min)
+Model fingerprint: 0x7a286906
+Model has 0 linear objective coefficients
+Variable types: 0 continuous, 1152 integer (1152 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+01]
+
+Presolve removed 1604 rows and 448 columns
+Presolve time: 0.02s
+Presolved: 3331 rows, 704 columns, 12480 nonzeros
+Variable types: 0 continuous, 704 integer (704 binary)
+
+Root relaxation: objective 0.000000e+00, 1076 iterations, 0.06 seconds (0.10 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0  315          -    0.00000      -     -    0s
+     0     0    0.00000    0  186          -    0.00000      -     -    0s
+     0     0    0.00000    0  265          -    0.00000      -     -    0s
+     0     0    0.00000    0  290          -    0.00000      -     -    0s
+     0     0    0.00000    0  204          -    0.00000      -     -    1s
+H    0     0                       0.0000000    0.00000  0.00%     -    1s
+
+Cutting planes:
+  Lift-and-project: 1
+  Zero half: 7
+  RLT: 1
+
+Explored 1 nodes (8163 simplex iterations) in 1.85 seconds (1.07 work units)
+Thread count was 4 (of 32 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+Status: 2; feasibility objective: 0; runtime: 1.862115 s
+input: 0x0000000000800001 0x0000000000000020 0x0000000000000002 0x0000000000000084 0x0000000040000000
+output: 0x0000000400000001 0x0200000004008000 0x0000000000000002 0x0000000000000820 0x0000000000000004

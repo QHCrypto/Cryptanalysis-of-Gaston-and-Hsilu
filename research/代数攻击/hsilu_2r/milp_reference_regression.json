@@ -1,0 +1,16 @@
+{
+  "matching_svg_state_cells": 1600,
+  "matching_path_fields": [
+    "free_variables_by_lane",
+    "guessed_by_lane",
+    "selected_outputs_by_lane",
+    "conditions_eq_0",
+    "conditions_eq_1",
+    "condition_count",
+    "resource_usage",
+    "complexity_exponent",
+    "final_linearizable_x3_by_lane"
+  ],
+  "fixed_reference_matches": true,
+  "global_optimality_proved": false
+}

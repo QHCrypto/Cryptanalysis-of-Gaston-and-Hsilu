@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "linear_trails_checked": 173,
+  "new_prefix_DATF3_vs_independent_exact": 128,
+  "affine_search_feasibility_checks": "every retained hit verified in search script",
+  "hnw_jobs": 28,
+  "hnw_variants": [
+    "full",
+    "zero"
+  ],
+  "native_mask_conversion": "passed for all 44 report rows"
+}

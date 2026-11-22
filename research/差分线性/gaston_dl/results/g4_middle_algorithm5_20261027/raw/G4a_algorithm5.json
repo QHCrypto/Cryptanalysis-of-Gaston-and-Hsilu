@@ -1,0 +1,3633 @@
+{
+  "job": {
+    "id": "G4a_middle",
+    "algorithm": "Gaston",
+    "rounds": 2,
+    "start_round_index": 9,
+    "delta_core": [
+      "000200000300000a",
+      "0800020000030000",
+      "0180000400010000",
+      "00020000800000c0",
+      "0000400010000018"
+    ],
+    "lambda_core": [
+      "0000000000000000",
+      "0000000000001000",
+      "0000000000000000",
+      "0000200000000000",
+      "0000000000000000"
+    ]
+  },
+  "method": "JOC DATF algorithm5",
+  "status": "completed",
+  "correlation": {
+    "numerator": "1",
+    "denominator": "4",
+    "log2_abs": -2.0
+  },
+  "bias": {
+    "numerator": "1",
+    "denominator": "8",
+    "log2_abs": -3.0
+  },
+  "splice_single_trail": {
+    "numerator": "1",
+    "denominator": "256",
+    "log2_abs": -8.0
+  },
+  "trace": [
+    {
+      "terms": 6,
+      "variables": 5,
+      "isolated_variables": [],
+      "nonisolated_factor": "1/4",
+      "accumulated": "1/4"
+    }
+  ],
+  "marginal_correlations": {
+    "0": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "1": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "2": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "3": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "4": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "5": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "6": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "7": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "8": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "9": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "10": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "11": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "12": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "13": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "14": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "15": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "16": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "17": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "18": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "19": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "20": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "21": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "22": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "23": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "24": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "25": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "26": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "27": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "28": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "29": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "30": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "31": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "32": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "33": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "34": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "35": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "36": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "37": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "38": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "39": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "40": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "41": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "42": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "43": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "44": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "45": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "46": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "47": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "48": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "49": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "50": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "51": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "52": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "53": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "54": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "55": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "56": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "57": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "58": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "59": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "60": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "61": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "62": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "63": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "64": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "65": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "66": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "67": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "68": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "69": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "70": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "71": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "72": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "73": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "74": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "75": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "76": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "77": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "78": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "79": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "80": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "81": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "82": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "83": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "84": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "85": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "86": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "87": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "88": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "89": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "90": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "91": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "92": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "93": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "94": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "95": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "96": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "97": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "98": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "99": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "100": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "101": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "102": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "103": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "104": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "105": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "106": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "107": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "108": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "109": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "110": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "111": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "112": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "113": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "114": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "115": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "116": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "117": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "118": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "119": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "120": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "121": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "122": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "123": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "124": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "125": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "126": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "127": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "128": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "129": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "130": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "131": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "132": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "133": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "134": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "135": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "136": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "137": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "138": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "139": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "140": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "141": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "142": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "143": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "144": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "145": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "146": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "147": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "148": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "149": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "150": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "151": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "152": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "153": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "154": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "155": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "156": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "157": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "158": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "159": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "160": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "161": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "162": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "163": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "164": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "165": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "166": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "167": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "168": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "169": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "170": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "171": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "172": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "173": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "174": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "175": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "176": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "177": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "178": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "179": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "180": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "181": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "182": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "183": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "184": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "185": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "186": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "187": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "188": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "189": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "190": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "191": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "192": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "193": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "194": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "195": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "196": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "197": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "198": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "199": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "200": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "201": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "202": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "203": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "204": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "205": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "206": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "207": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "208": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "209": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "210": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "211": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "212": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "213": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "214": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "215": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "216": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "217": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "218": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "219": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "220": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "221": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "222": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "223": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "224": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "225": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "226": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "227": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "228": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "229": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "230": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "231": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "232": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "233": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "234": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "235": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "236": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "237": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "238": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "239": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "240": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "241": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "242": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "243": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "244": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "245": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "246": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "247": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "248": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "249": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "250": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "251": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "252": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "253": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "254": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "255": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "256": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "257": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "258": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "259": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "260": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "261": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "262": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "263": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "264": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "265": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "266": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "267": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "268": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "269": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "270": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "271": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "272": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "273": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "274": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "275": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "276": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "277": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "278": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "279": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "280": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "281": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "282": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "283": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "284": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "285": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "286": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "287": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "288": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "289": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "290": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "291": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "292": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "293": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "294": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "295": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "296": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "297": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "298": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "299": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "300": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "301": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "302": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "303": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "304": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "305": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "306": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "307": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "308": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "309": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "310": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "311": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "312": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "313": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "314": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "315": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "316": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "317": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "318": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "319": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "320": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "321": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "322": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "323": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "324": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "325": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "326": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "327": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "328": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "329": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "330": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "331": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "332": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "333": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "334": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "335": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "336": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "337": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "338": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "339": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "340": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "341": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "342": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "343": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "344": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "345": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "346": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "347": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "348": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "349": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "350": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "351": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "352": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "353": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "354": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "355": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "356": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "357": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "358": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "359": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "360": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "361": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "362": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "363": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "364": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "365": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "366": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "367": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "368": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "369": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "370": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "371": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "372": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "373": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "374": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "375": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "376": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "377": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "378": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "379": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "380": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "381": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "382": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "383": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "384": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "385": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "386": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "387": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "388": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "389": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "390": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "391": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "392": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "393": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "394": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "395": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "396": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "397": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "398": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "399": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "400": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "401": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "402": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "403": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "404": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "405": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "406": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "407": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "408": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "409": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "410": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "411": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "412": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "413": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "414": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "415": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "416": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "417": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "418": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "419": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "420": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "421": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "422": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "423": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "424": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "425": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "426": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "427": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "428": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "429": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "430": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "431": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "432": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "433": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "434": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "435": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "436": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "437": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "438": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "439": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "440": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "441": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "442": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "443": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "444": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "445": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "446": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "447": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "448": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "449": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "450": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "451": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "452": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "453": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "454": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "455": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "456": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "457": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "458": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "459": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "460": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "461": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "462": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "463": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "464": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "465": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "466": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "467": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "468": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "469": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "470": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "471": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "472": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "473": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "474": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "475": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "476": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "477": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "478": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "479": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "480": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "481": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "482": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "483": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "484": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "485": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "486": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "487": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "488": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "489": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "490": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "491": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "492": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "493": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "494": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "495": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "496": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "497": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "498": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "499": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "500": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "501": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "502": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "503": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "504": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "505": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "506": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "507": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "508": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "509": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "510": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "511": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "512": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "513": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "514": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "515": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "516": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "517": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "518": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "519": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "520": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "521": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "522": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "523": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "524": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "525": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "526": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "527": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "528": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "529": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "530": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "531": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "532": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "533": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "534": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "535": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "536": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "537": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "538": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "539": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "540": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "541": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "542": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "543": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "544": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "545": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "546": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "547": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "548": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "549": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "550": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "551": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "552": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "553": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "554": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "555": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "556": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "557": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "558": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "559": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "560": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "561": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "562": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "563": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "564": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "565": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "566": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "567": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "568": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "569": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "570": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "571": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "572": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "573": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "574": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "575": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "576": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "577": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "578": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "579": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "580": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "581": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "582": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "583": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "584": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "585": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "586": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "587": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "588": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "589": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "590": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "591": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "592": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "593": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "594": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "595": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "596": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "597": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "598": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "599": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "600": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "601": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "602": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "603": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "604": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "605": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "606": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "607": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "608": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "609": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "610": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "611": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "612": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "613": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "614": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "615": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "616": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "617": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "618": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "619": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "620": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "621": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "622": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "623": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "624": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "625": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "626": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "627": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "628": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "629": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "630": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "631": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "632": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "633": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "634": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "635": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "636": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "637": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "638": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "639": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "640": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "641": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "642": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "643": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "644": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "645": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "646": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "647": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "648": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "649": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "650": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "651": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "652": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "653": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "654": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "655": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "656": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "657": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "658": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "659": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "660": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "661": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "662": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "663": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "664": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "665": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "666": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "667": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "668": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "669": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "670": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "671": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "672": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "673": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "674": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "675": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "676": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "677": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "678": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "679": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "680": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "681": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "682": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "683": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "684": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "685": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "686": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "687": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "688": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "689": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "690": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "691": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "692": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "693": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "694": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "695": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "696": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "697": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "698": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "699": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "700": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "701": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "702": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "703": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "704": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "705": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "706": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "707": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "708": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "709": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "710": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "711": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    },
+    "712": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    }
+  },
+  "elapsed_seconds": 0.01176037899858784,
+  "statistics": {
+    "peak_polynomial_terms": 61,
+    "distributions_input": 320,
+    "nonuniform_input": 0,
+    "weighted_nodes": 394,
+    "distributions_alpha": 320,
+    "nonuniform_alpha": 0,
+    "distributions_beta": 73,
+    "nonuniform_beta": 0,
+    "uniform_backend_calls": 1,
+    "uniform_backend": {
+      "peak_polynomial_terms": 6,
+      "bias_nodes": 1,
+      "quadratic_calls": 1
+    }
+  },
+  "phase": "completed"
+}

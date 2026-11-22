@@ -1,0 +1,66 @@
+{
+  "id": "new5_007_prefix2",
+  "algorithm": "Hsilu",
+  "rounds": 2,
+  "start_round_index": 7,
+  "delta_core": [
+    "0000000000000000",
+    "0000000000002000",
+    "0000000000000000",
+    "0000000000000000",
+    "0000000000000000"
+  ],
+  "lambda_core": [
+    "4b98f5d53883fa04",
+    "ea9a64a8a80a0019",
+    "02758ffd240452e0",
+    "f178fefcf9d00108",
+    "d5bbc3780c2acab2"
+  ],
+  "scope": "middle of (0,2,3)",
+  "method": "original DATF Algorithm 3",
+  "status": "completed",
+  "correlation": {
+    "numerator": "1",
+    "denominator": "4",
+    "log2_abs": -2.0
+  },
+  "bias": {
+    "numerator": "1",
+    "denominator": "8",
+    "log2_abs": -3.0
+  },
+  "limits": {
+    "seconds": 30,
+    "max_terms": 1000000,
+    "max_products": 100000000,
+    "max_nodes": 200000,
+    "address_space_bytes": 4294967296
+  },
+  "first_L_omitted": null,
+  "remaining_alpha_assumed_jointly_uniform": true,
+  "dag_verified_full_states": 4,
+  "phase": "completed",
+  "statistics": {
+    "initial_terms": 37,
+    "initial_variables": 25,
+    "peak_polynomial_terms": 37,
+    "expanded_terms": 37,
+    "expanded_variables": 25,
+    "expanded_degree": 2,
+    "remaining_beta_variables": 0,
+    "expanded_input_variables": 2,
+    "expanded_alpha_variables": 23,
+    "max_component_variables": 13,
+    "bias_nodes": 1,
+    "quadratic_calls": 1
+  },
+  "elapsed_seconds": 0.006926314003067091,
+  "peak_rss_kib": 24540,
+  "expansion_verified_formal_assignments": 16,
+  "zero_certificate": null,
+  "expanded_anf_file": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_007_prefix2.anf.json",
+  "expanded_anf_sha256": "525d6cb814159379d8e319cf5f8b0256372f7781ce61aa8f83fa988db194a66e",
+  "evaluation_order": "full beta expansion then Bias",
+  "boundary_note": "Hsilu core: first chi input to last chi output. All internal L layers retained; final native L handled by external mask L^{-T}. Generic worker first_L_omitted is inapplicable to Hsilu."
+}

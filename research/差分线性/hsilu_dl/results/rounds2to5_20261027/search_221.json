@@ -1,0 +1,10 @@
+{
+  "status": "completed",
+  "family": "D2_M2_L1",
+  "tested": 12800,
+  "nonzero": 0,
+  "linear_heads": 20,
+  "scope": "10 certified two-round differential prefixes × 64 rotations × all one-bit output one-chi linear trails at column 0",
+  "top": [],
+  "elapsed_seconds": 0.2976405769950361
+}

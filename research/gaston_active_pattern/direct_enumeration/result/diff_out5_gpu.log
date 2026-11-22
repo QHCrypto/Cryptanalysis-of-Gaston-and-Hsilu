@@ -1,0 +1,35 @@
+Mode=difference; fixed output=5; map=lambda^(-1); backend=opencl; CPU threads=0
+GPU: NVIDIA GeForce GTX 1080 Ti
+Position sets=119133; target=119133; values per set=28629151; candidates=3410676646083; rotation orbits=on (Burnside checked)
+Improved: minimum=41; completed=1/119133; elapsed=0.012 s
+Improved: minimum=40; completed=6/119133; elapsed=0.012 s
+Improved: minimum=39; completed=7/119133; elapsed=0.012 s
+Improved: minimum=37; completed=18/119133; elapsed=0.012 s
+Improved: minimum=36; completed=41/119133; elapsed=0.012 s
+Improved: minimum=35; completed=227/119133; elapsed=0.041 s
+Improved: minimum=30; completed=267/119133; elapsed=0.050 s
+Improved: minimum=28; completed=7734/119133; elapsed=1.108 s
+Progress: 60.169%; sets=71681/119133 (CPU=0 GPU=71681); minimum=28; elapsed=10.0 s; ETA=6.6 s
+Improved: minimum=25; completed=76865/119133; elapsed=10.726 s
+
+Status: 已完成枚举，已证明最优
+Minimum input active columns: 25
+Visited: 3410676646083
+Setup: 0.063905 s
+Enumeration: 16.605703 s
+CPU sets: 0; GPU sets: 119133
+Input difference X: active_columns=25, active_bits=37
+  columns (index:value): 0:0x08 4:0x08 5:0x04 9:0x04 11:0x0c 12:0x11 14:0x08 16:0x15 17:0x10 20:0x03 22:0x0c 23:0x11 27:0x15 29:0x10 31:0x03 34:0x14 38:0x01 41:0x01 42:0x02 45:0x10 49:0x01 53:0x08 57:0x08 58:0x14 62:0x04
+  row 0 = 0x0002024088911000
+  row 1 = 0x0000040080100000
+  row 2 = 0x4400000408410a20
+  row 3 = 0x0220000000404811
+  row 4 = 0x0400200428831000
+Output difference Y: active_columns=5, active_bits=13
+  columns (index:value): 0:0x14 11:0x04 12:0x13 23:0x0f 41:0x13
+  row 0 = 0x0000020000801000
+  row 1 = 0x0000020000801000
+  row 2 = 0x0000000000800801
+  row 3 = 0x0000000000800000
+  row 4 = 0x0000020000001001
+Saved: result/diff_out5_gpu.json, result/diff_out5_gpu.positions.tsv

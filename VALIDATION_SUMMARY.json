@@ -1,0 +1,63 @@
+{
+  "date": "2026-11-22",
+  "distribution": "public lightweight code package",
+  "full_proof_certificates_included": false,
+  "profiles": [
+    {
+      "profile": "quick",
+      "status": "PASS",
+      "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+      "platform": "Linux-7.0.0-43-generic-x86_64-with-glibc2.39",
+      "checks": [
+        {
+          "name": "parameters",
+          "status": "PASS",
+          "seconds": 1.131
+        },
+        {
+          "name": "differential",
+          "status": "PASS",
+          "seconds": 0.896
+        },
+        {
+          "name": "gaston_support",
+          "status": "PASS",
+          "seconds": 0.832
+        },
+        {
+          "name": "differential_linear",
+          "status": "PASS",
+          "seconds": 6.889
+        },
+        {
+          "name": "preimage_structure",
+          "status": "PASS",
+          "seconds": 3.998
+        },
+        {
+          "name": "cubes",
+          "status": "PASS",
+          "seconds": 2.212
+        },
+        {
+          "name": "preimage_accounting",
+          "status": "PASS",
+          "seconds": 0.065
+        }
+      ]
+    },
+    {
+      "profile": "datf",
+      "status": "PASS",
+      "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+      "platform": "Linux-7.0.0-43-generic-x86_64-with-glibc2.39",
+      "checks": [
+        {
+          "name": "datf_algorithm5",
+          "status": "PASS",
+          "seconds": 0.561
+        }
+      ]
+    }
+  ]
+}

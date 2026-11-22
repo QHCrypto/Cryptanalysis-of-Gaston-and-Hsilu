@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-20",
+  "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.39",
+  "python": "3.12.3",
+  "gurobi_version": "13.0.2",
+  "threads_per_successful_milp": 4,
+  "python_sat_version": "1.9.dev15",
+  "witness_completion_solver": "CaDiCaL 1.9.5 through python-sat",
+  "exploration_solver": "Kissat 4.0.4 8af8e56f174b778aef3aa45af9f739b2a5f492c2",
+  "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+  "base_generation_command": "../gaston_active_pattern --mode difference --output-active 7 --theta-effect nonzero --no-symmetry --prefix base --export-only",
+  "successful_commands": [
+    "./check_bound base.lp 7 11 801 4 e2_gap11_out7",
+    "./check_bound base.lp 8 10 801 4 e2_gap11_out8",
+    "./check_bound base.lp 9 9 801 4 e2_gap11_out9"
+  ],
+  "cnf_generation_commands": [
+    "/home/yxb/\u5206\u6790/Hsilu_trail/tools/sat/venv/bin/python make_cnf.py --output 7 --input-max 11 --prefix unrestricted_out7",
+    "/home/yxb/\u5206\u6790/Hsilu_trail/tools/sat/venv/bin/python make_cnf.py --output 8 --input-max 10 --prefix unrestricted_out8",
+    "/home/yxb/\u5206\u6790/Hsilu_trail/tools/sat/venv/bin/python make_cnf.py --output 9 --input-max 9 --prefix unrestricted_out9"
+  ],
+  "certificate_export_command": "/home/yxb/\u5206\u6790/Hsilu_trail/tools/sat/venv/bin/python export_certificates.py",
+  "independent_verification_command": "python3 verify_certificates.py",
+  "all_current_task_search_processes_stopped": true,
+  "proof_kind": "explicit counterexamples with full CNF satisfying assignments",
+  "unsat_proof_claimed": false,
+  "minimum_input_counts_claimed": false
+}

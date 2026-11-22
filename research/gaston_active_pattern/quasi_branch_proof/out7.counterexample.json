@@ -1,0 +1,92 @@
+{
+  "mode": "difference",
+  "condition": "E(rho_east(X)) != 0",
+  "metric": "nonzero 5-bit S-box columns",
+  "claim_output_active": 7,
+  "claim_input_at_least": 12,
+  "claim_holds": false,
+  "certificate_type": "explicit_counterexample",
+  "minimum_input_proven": false,
+  "theta_effect_hex": "0x0000000000000801",
+  "theta_effect_weight": 2,
+  "theta_input_words": [
+    "0x0000000000800000",
+    "0x0000000500000000",
+    "0x0000000520800000",
+    "0x0000002400800000",
+    "0x0000000400840000"
+  ],
+  "P_hex": "0x0000002020040000",
+  "Q_hex": "0x0001000040180805",
+  "source_solution": "e2_gap11_out7.sol",
+  "source_solution_sha256": "41af8126baa68451c309e391eec025b8e7fb3ad70ac370e15b3784bf4cc24798",
+  "input_words": [
+    "0x0000000000800000",
+    "0x0000005000000000",
+    "0x0000000000001482",
+    "0x1000000000000480",
+    "0x0000000040084000"
+  ],
+  "input_columns": [
+    1,
+    7,
+    10,
+    12,
+    14,
+    19,
+    23,
+    30,
+    36,
+    38,
+    60
+  ],
+  "input_active": 11,
+  "input_bit_weight": 13,
+  "input_column_patterns": {
+    "1": "0x04",
+    "7": "0x0c",
+    "10": "0x0c",
+    "12": "0x04",
+    "14": "0x10",
+    "19": "0x10",
+    "23": "0x01",
+    "30": "0x10",
+    "36": "0x02",
+    "38": "0x02",
+    "60": "0x08"
+  },
+  "output_words": [
+    "0x0000000400000000",
+    "0x0000000001008000",
+    "0x9000000000000000",
+    "0x0000000000080000",
+    "0x2000000000000000"
+  ],
+  "output_columns": [
+    15,
+    19,
+    24,
+    34,
+    60,
+    61,
+    63
+  ],
+  "output_active": 7,
+  "output_bit_weight": 7,
+  "output_column_patterns": {
+    "15": "0x02",
+    "19": "0x08",
+    "24": "0x02",
+    "34": "0x01",
+    "60": "0x04",
+    "61": "0x10",
+    "63": "0x04"
+  },
+  "output_quasi_cost": 18,
+  "input_quasi_cost": 22,
+  "cnf": "unrestricted_out7.cnf",
+  "cnf_sha256": "6a3087bc0e86bd6226c517d15734697c6c19578bd44ef5138f3c57013645b6fc",
+  "cnf_model": "out7.sat.model",
+  "cnf_model_sha256": "0318cb3a0c0bb71d0c2e9ed3f01834bfab147b80e59704203c00744b1ae5237f",
+  "runtime_seconds": 93.7279
+}

@@ -1,0 +1,80 @@
+{
+  "id": "H4c",
+  "algorithm": "Hsilu",
+  "rounds": 4,
+  "start_round_index": 8,
+  "delta_core": [
+    "0000000000000400",
+    "0000000000000000",
+    "0000000000000000",
+    "0000000000000000",
+    "0000000000000000"
+  ],
+  "lambda_core": [
+    "0000000000000400",
+    "0000000000000000",
+    "0000000000800000",
+    "0000000000000000",
+    "0000000000000000"
+  ],
+  "previous_datf": {
+    "numerator": "1",
+    "denominator": "1024",
+    "log2_abs": -10.0
+  },
+  "previous_hnw": {
+    "numerator": "0",
+    "denominator": "1",
+    "denominator_exponent": 0,
+    "log2_abs": null
+  },
+  "sampling": {
+    "samples": 268435456,
+    "seed": "2026101803",
+    "n0": 134340383,
+    "n1": 134095073,
+    "rho": 0.0009138509631156921,
+    "log2_abs": -10.0957534793711,
+    "ci95": [
+      0.0007942242928047349,
+      0.0010334776072711271
+    ]
+  },
+  "method": "original DATF Algorithm 3",
+  "status": "resource_limit",
+  "correlation": null,
+  "bias": null,
+  "limits": {
+    "seconds": 120,
+    "max_terms": 1000000,
+    "max_products": 100000000,
+    "max_nodes": 200000,
+    "address_space_bytes": 4294967296
+  },
+  "first_L_omitted": true,
+  "remaining_alpha_assumed_jointly_uniform": true,
+  "dag_verified_full_states": 4,
+  "phase": "uniform_Bias",
+  "statistics": {
+    "initial_terms": 10,
+    "initial_variables": 10,
+    "peak_polynomial_terms": 88362,
+    "beta_definitions_expanded": 113,
+    "product_pairs": 137244,
+    "expanded_terms": 88362,
+    "expanded_variables": 161,
+    "expanded_degree": 6,
+    "remaining_beta_variables": 0,
+    "expanded_input_variables": 2,
+    "expanded_alpha_variables": 159,
+    "max_component_variables": 161,
+    "bias_nodes": 200001,
+    "isolated_uniform_zero_leaves": 52317,
+    "separations": 12505,
+    "quadratic_calls": 32040,
+    "bias_cache_hits": 17634
+  },
+  "elapsed_seconds": 21.968678433913738,
+  "peak_rss_kib": 159840,
+  "reason": "ResourceLimit: Bias nodes exceed 200000"
+}

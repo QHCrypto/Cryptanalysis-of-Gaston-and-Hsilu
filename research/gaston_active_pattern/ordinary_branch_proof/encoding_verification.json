@@ -1,0 +1,7 @@
+{
+  "verification": "PASS",
+  "unit_inputs_checked": 320,
+  "zero_input_checked": true,
+  "random_inputs_checked": 128,
+  "circuit_activity_and_cover_clauses_checked_per_input": 5184
+}

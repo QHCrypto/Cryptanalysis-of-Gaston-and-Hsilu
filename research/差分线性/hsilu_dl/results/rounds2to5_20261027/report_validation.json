@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "rows": 44,
+  "tables": 7,
+  "links_checked": 112,
+  "broken_links": [],
+  "whole_status_present_every_row": true,
+  "correlation_products_checked": true,
+  "sampling_counts_checked": true
+}

@@ -1,0 +1,44 @@
+COMMAND ["make", "support-proof-binaries"]
+g++ -O3 -std=c++17 -Wall -Wextra -Wpedantic src/support_rank_probe.cpp -o src/support_rank_probe
+g++ -O3 -std=c++17 -Wall -Wextra -Wpedantic src/verify_support_ranks.cpp -o src/verify_support_ranks
+COMMAND ["/usr/bin/python3", "src/verify_support_proof.py"]
+{
+  "status": "PASS",
+  "checked_local": "2026-11-22T19:02:49.444713+08:00",
+  "conclusion": "Every nonzero free-endpoint Gaston-320 three-chi-layer XOR differential trail has weight at least 44 under the agreed local-DDT-weight definition",
+  "weight_lower_bound": 44,
+  "new_computation": "Exact finite GF(2) enumeration and full-support nullspace checks, without floating-point MILP inference",
+  "historical_single_layer_proofs_replayed": false,
+  "source_scope": "Uses the prior completed single-layer activity results and outside-kernel branch proof, with their files hash-checked",
+  "branch_reports": {
+    "6": {
+      "complete_anchored_supports_checked_twice": 7028847,
+      "left_rank_deficient_orbits": 13,
+      "both_rank_deficient_orbits": 0,
+      "both_exact_full_support_orbits": 0,
+      "maximum_candidate_nullity": 0,
+      "nonzero_candidate_vectors_rechecked": 0,
+      "double_kernel_branch_infeasible_for_any_weight": true
+    },
+    "7": {
+      "complete_anchored_supports_checked_twice": 67945521,
+      "left_rank_deficient_orbits": 910,
+      "both_rank_deficient_orbits": 1,
+      "both_exact_full_support_orbits": 0,
+      "maximum_candidate_nullity": 1,
+      "nonzero_candidate_vectors_rechecked": 2,
+      "double_kernel_branch_infeasible_for_any_weight": true
+    },
+    "8": {
+      "complete_anchored_supports_checked_twice": 553270671,
+      "left_rank_deficient_orbits": 32332,
+      "both_rank_deficient_orbits": 104,
+      "both_exact_full_support_orbits": 0,
+      "maximum_candidate_nullity": 1,
+      "nonzero_candidate_vectors_rechecked": 208,
+      "double_kernel_branch_infeasible_for_any_weight": true
+    }
+  },
+  "middle9_analytic_lower_bound": 45,
+  "remaining_below44_cases": []
+}

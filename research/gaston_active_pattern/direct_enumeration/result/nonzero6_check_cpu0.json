@@ -1,0 +1,20 @@
+{
+  "method": "exact_enumeration_with_zero_pair_pruning",
+  "mode": "difference",
+  "fixed_side": "output",
+  "fixed_count": 6,
+  "theta_effect_constraint": "nonzero",
+  "cutoff": 26,
+  "position_sets": 1171552,
+  "start_position": 0,
+  "completed_position_sets": 1,
+  "tested_candidates_with_duplicates": 22534092,
+  "covered_output_states": 887503681,
+  "enumeration_complete": false,
+  "proven_optimal": false,
+  "objective": null,
+  "backend": "cpu",
+  "device": "CPU",
+  "setup_seconds": 0.0766296509999999931,
+  "search_seconds": 0.148710807
+}

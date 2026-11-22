@@ -1,0 +1,57 @@
+{
+  "id": "R5_pool_000024",
+  "algorithm": "Hsilu",
+  "rounds": 5,
+  "start_round_index": 7,
+  "delta_core": [
+    "0000000000000004",
+    "0000000000000004",
+    "0000000000000004",
+    "0000000000000004",
+    "0000000000000004"
+  ],
+  "lambda_core": [
+    "0000000000000400",
+    "0000000000000000",
+    "0000000000800000",
+    "0000000000000000",
+    "0000000000000000"
+  ],
+  "previous_datf": {
+    "numerator": "25571057032231476532144091701505600999003004470603623647465866389102586388459354813300240893575470766993018664203125",
+    "denominator": "45427420268475430659332737993000283397102585042957378767593137448789955507087370207886940669610222847547657600391636120845912601788416",
+    "log2_abs": -60.623757289374566
+  },
+  "aliases": [
+    "R5_pool_000024"
+  ],
+  "sources": [
+    "/home/yxb/分析/差分线性/hsilu_dl/results/research_summary.json"
+  ],
+  "method": "original DATF Algorithm 3",
+  "status": "resource_limit",
+  "correlation": null,
+  "bias": null,
+  "limits": {
+    "seconds": 30,
+    "max_terms": 1000000,
+    "max_products": 100000000,
+    "max_nodes": 100000,
+    "address_space_bytes": 4294967296
+  },
+  "first_L_omitted": true,
+  "remaining_alpha_assumed_jointly_uniform": true,
+  "dag_verified_full_states": 4,
+  "phase": "beta_expansion",
+  "statistics": {
+    "initial_terms": 10,
+    "initial_variables": 10,
+    "peak_polynomial_terms": 1226151,
+    "beta_definitions_expanded": 161,
+    "product_pairs": 4133027
+  },
+  "elapsed_seconds": 2.1781345369527116,
+  "peak_rss_kib": 278436,
+  "reason": "ResourceLimit: polynomial terms 1226151 exceed 1000000",
+  "evaluation_order": "full beta expansion then Bias"
+}

@@ -1,0 +1,50 @@
+COMMAND ["make", "test", "build/hnw_endpoint"]
+mkdir -p build
+cc -O2 -I../../gaston_ref/gaston/implementation/reference -c ../../gaston_ref/gaston/implementation/reference/gaston.c -o build/reference.o
+g++ -Iinclude -O3 -std=c++17 -Wall -Wextra -Wpedantic -I../../gaston_ref/gaston/implementation/reference tests/test.cpp build/reference.o -o build/tests -pthread
+./build/tests
+PASS reference round and omitted-first-linear boundary (all round counts)
+PASS chi/DDT/LAT/direct derivative identities (all local endpoints)
+PASS rank(L)=320, transpose, rotations, all 4096 two-round conditional rank checks
+PASS two-round exhaustive local enumeration and rotated three-round estimates
+PASS reproducible sample partitioning, signed correlation, boundary Wilson interval
+PASS fourth-round model collapse: all 61504 nontrivial linear products have exact zero factors (not underflow)
+All tests passed.
+python3 tests/test_fixed_tail.py
+PASS 18 single/two-column comparisons with independent active-value enumeration
+g++ -Iinclude -O3 -std=c++17 -Wall -Wextra -Wpedantic src/hnw_endpoint.cpp -o build/hnw_endpoint -lgmpxx -lgmp
+COMMAND ["./build/hnw_endpoint", "--selftest"]
+{"status":"PASS","two_wise_LAT_coordinates_checked":4096,"conditional_DDT_branches_checked":317,"zero_slice_coordinates_checked":1024,"two_wise_linear_coordinates_checked":65536,"round_constant_coordinates_checked":65536,"prior_estimator_checks":4}
+COMMAND ["make", "test", "build/hnw_endpoint"]
+mkdir -p build
+g++ -O3 -std=c++17 -Wall -Wextra -Wpedantic -Iinclude -I../../hsilu_ref src/main.cpp ../../hsilu_ref/hsilu.cpp -pthread -o build/hsilu_dl
+./build/hsilu_dl selftest
+PASS reference rounds 1..12, core/output boundary, transpose, DDT
+python3 tests/test_core.py
+PASS 320-basis inverse/inverse-transpose; 2/3/4-chi DAGs; five-round-prefix RC indices
+python3 tests/test_prefix.py
+PASS exact two-chi correlation against independent affine basis enumeration
+g++ -O3 -std=c++17 -Wall -Wextra -Wpedantic -Iinclude src/hnw_endpoint.cpp -lgmpxx -lgmp -o build/hnw_endpoint
+COMMAND ["./build/hnw_endpoint", "--selftest"]
+{"status":"PASS","two_wise_LAT_coordinates_checked":4096,"conditional_DDT_branches_checked":317,"zero_slice_coordinates_checked":1024,"two_wise_linear_coordinates_checked":65536,"round_constant_coordinates_checked":65536}
+COMMAND ["/usr/bin/python3", "dl_check.py"]
+{
+  "g": {
+    "N": 4194304,
+    "odd_count": 2089428,
+    "correlation": 0.0036830902099609375,
+    "normal95": [
+      0.002726065451120854,
+      0.004640114968801021
+    ]
+  },
+  "h": {
+    "N": 4194304,
+    "odd_count": 2093307,
+    "correlation": 0.0018334388732910156,
+    "normal95": [
+      0.0008764092318217327,
+      0.0027904685147602986
+    ]
+  }
+}

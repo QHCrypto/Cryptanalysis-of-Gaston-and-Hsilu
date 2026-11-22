@@ -1,0 +1,92 @@
+{
+  "mode": "difference",
+  "condition": "E(rho_east(X)) != 0",
+  "metric": "nonzero 5-bit S-box columns",
+  "claim_output_active": 8,
+  "claim_input_at_least": 11,
+  "claim_holds": false,
+  "certificate_type": "explicit_counterexample",
+  "minimum_input_proven": false,
+  "theta_effect_hex": "0x0000000000000801",
+  "theta_effect_weight": 2,
+  "theta_input_words": [
+    "0x0000000040800000",
+    "0x0000000000800000",
+    "0x0000c00400800000",
+    "0x0010000000000000",
+    "0x0000800040800000"
+  ],
+  "P_hex": "0x0010400400000000",
+  "Q_hex": "0x0000400c20000800",
+  "source_solution": "e2_gap11_out8.sol",
+  "source_solution_sha256": "0a9ba93fb0bc4a3c980abef5e3546076a247b7c73bbb4bfb2dbe8f6846095cdf",
+  "input_words": [
+    "0x0000000040800000",
+    "0x0000000008000000",
+    "0x0000000003001002",
+    "0x0000000002000000",
+    "0x0000080004080000"
+  ],
+  "input_columns": [
+    1,
+    12,
+    19,
+    23,
+    24,
+    25,
+    26,
+    27,
+    30,
+    43
+  ],
+  "input_active": 10,
+  "input_bit_weight": 11,
+  "input_column_patterns": {
+    "1": "0x04",
+    "12": "0x04",
+    "19": "0x10",
+    "23": "0x01",
+    "24": "0x04",
+    "25": "0x0c",
+    "26": "0x10",
+    "27": "0x02",
+    "30": "0x01",
+    "43": "0x10"
+  },
+  "output_words": [
+    "0x0000000440000000",
+    "0x0000000004000000",
+    "0x0000000000006000",
+    "0x0000000400010020",
+    "0x0000000004002200"
+  ],
+  "output_columns": [
+    5,
+    9,
+    13,
+    14,
+    16,
+    26,
+    30,
+    34
+  ],
+  "output_active": 8,
+  "output_bit_weight": 11,
+  "output_column_patterns": {
+    "5": "0x08",
+    "9": "0x10",
+    "13": "0x14",
+    "14": "0x04",
+    "16": "0x08",
+    "26": "0x12",
+    "30": "0x01",
+    "34": "0x09"
+  },
+  "output_quasi_cost": 18,
+  "input_quasi_cost": 20,
+  "cnf": "unrestricted_out8.cnf",
+  "cnf_sha256": "b9537173ed84820e36ea2f725080f2cc7618953bd5cf1fe800562060b838c34d",
+  "cnf_model": "out8.sat.model",
+  "cnf_model_sha256": "53c9ca21102e523469b79116ea1185ca94dffa5d0fbba8e299e7bbd79491ed4b",
+  "runtime_seconds": 9.73786
+}

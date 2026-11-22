@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "scope": "Exported lossy model encoding; not a solved three-round optimum",
+  "variables": 3266,
+  "constraints": 11419,
+  "xor_gates_exhaustively_verified": 1408,
+  "chi_columns_checked": 192,
+  "chi_input_output_pairs_checked": 1024,
+  "lossy_supported_pairs": 962,
+  "true_ddt_supported_pairs": 317,
+  "every_true_ddt_pair_embeds_at_no_greater_cost": true,
+  "lossy_minimum_cost_by_input_hw": [
+    0,
+    2,
+    3,
+    3,
+    4,
+    4
+  ],
+  "reference_linear_cases_per_layer": 353,
+  "reference_linear_layers_checked": 2,
+  "linear_rank": 320,
+  "initial_linear_layer_can_be_eliminated_for_free_input": true,
+  "column_translation_symmetry_checked": true,
+  "activity_profiles_enabled": true,
+  "activity_or_hull_enabled": true,
+  "count_minima_by_effect_nonzero_flags": {
+    "00": 18,
+    "01": 22,
+    "10": 22,
+    "11": 22
+  },
+  "sha256": {
+    "/home/yxb/分析/Gaston_差分路径重量下界/results/activity_strengthened_validation_20261023/model.mps": "64f990e664ce59fdb1d150d8dea9e4867355bb57c66ae062bb7a12d931edf832",
+    "/home/yxb/分析/Gaston_差分路径重量下界/results/activity_strengthened_validation_20261023/encoding.json": "a76b784bdd1dbd4222e3492790a5d611ffb2b819906c2078be99f74cbb12e7a9",
+    "/home/yxb/分析/Gaston_差分路径重量下界/gaston_3round_lossy.cpp": "79dbbf9c2221412a718982e1de0f3592e63e188fffe0bf7455ccd58d52538d5e",
+    "/home/yxb/分析/Gaston_差分路径重量下界/gaston_3round_lossy": "01d92dfa94a90c3804b6f51f0edfe409fd2c9a15a25845793542594995692c5d",
+    "/home/yxb/分析/gaston_ref/gaston/implementation/reference/gaston.c": "4a0ce39ce158f410111aef7a985c2a7f8b7752e669162ec78e20eaf56bd2f5dc",
+    "/home/yxb/分析/gaston_ref/gaston/implementation/reference/gaston.h": "3fbca231939b1369e9ee093689b60eb1df716a1b4f0dea0da90fc3aacb57bc0a",
+    "/home/yxb/分析/Gaston_差分路径重量下界/src/activity_profile_data.hpp": "6de9fa22db4f4187b915d08e47918e017fcdf99073430c77e79b8364c3663bc1",
+    "/home/yxb/分析/Gaston_差分路径重量下界/references/activity_profiles.json": "3a3780c700dcb6267b4165cfd547841e9720efe0441d0ccf48227114902db241"
+  }
+}

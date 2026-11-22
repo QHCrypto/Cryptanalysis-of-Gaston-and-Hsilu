@@ -1,0 +1,64 @@
+{
+  "files": [
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/hnw26_comparison/configuration.json",
+      "sha256": "a47a2be3363831d6df0522117ca631684556cf585c914ecd067525cd9a231e4d"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/datf_pools/linear_two_match/hnw26/results.json",
+      "sha256": "c4479849e56fb204257a1f1f71bab66452342984182f5eab3958e283c315b6d0"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/路径分段汇总_20261027/results.json",
+      "sha256": "5a41baa9a98ac7cb0548ad5438bc0002538ca0ffbaa7b4c14876d54e47263204"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/文献/Differential-Linear Cryptanalysis from an Algebraic Perspective.pdf",
+      "sha256": "a4693c54486c54cecf75d165969b8bc3f61ccf237fcecd24a9b16a51974bba37"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/g4_middle_algorithm5_20261027/algorithm5.py",
+      "sha256": "7173e2921ad9a8583ef2cd108c916dfacd96ecb173cf89b1833df98e621758fe"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/g4_middle_algorithm5_20261027/run.py",
+      "sha256": "7120509e7512d38bc93fa51e8c6b9bfcc07579c050f80f9a2c1d32af3fe23c44"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/DATF算法3复核_20261021/algorithm3.py",
+      "sha256": "be292ecd81205a49cd1127bc3c46ded65b9418d86773619145069f2c180f32b5"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/tools/datf.py",
+      "sha256": "a565d96a2fc20cd8af0fd2dff466441977ac6c8947483c29a24a851c983d0dee"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/tools/datf_k06.py",
+      "sha256": "a186728ca9442a9897f1adbdf0d19b9386e0defb29b46eef334859e5436ef87c"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/tools/datf_quadratic.py",
+      "sha256": "7a647cf1efcb38a5ae7464b2e2343dea7c1d3e5a1e7951ee99a389fa3dd51e5f"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/tools/fixed_tail_search.py",
+      "sha256": "1b67552e6360e5e8c3fdbd124036f88ba4e2c92e96fa8f0dad6e778bc873a127"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/tools/linear_seed_scan.py",
+      "sha256": "fa462a1d24f913f26f7847b5e433073726e1ddb59b75277274952933bdafe5e3"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/hnw_middle.py",
+      "sha256": "675be01ee34c1978965dbb1f1727cc37f6e81ab7f230019e656ae14d77a934f5"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/datf_pools/pools/linear_one.jsonl.gz",
+      "sha256": "cbbce54726b528fc0e8f5ed96355271b6982540a44ebc93740d5ad705bc06b34"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/datf_pools/pools/linear_two_2to2.jsonl.gz",
+      "sha256": "498ca2a1e921315e0919fde85419d49cb6f9a83845fd6c99a35a893e09978966"
+    }
+  ]
+}

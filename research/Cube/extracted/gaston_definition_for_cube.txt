@@ -1,0 +1,2096 @@
+        Twin Column Parity Mixers and Gaston
+               A New Mixing Layer and Permutation
+
+Solane El Hirch1 , Joan Daemen1 , Raghvendra Rohit2 , and Rusydi H. Makarim
+                  1
+                   Radboud University, Nijmegen, The Netherlands
+2
+    Cryptography Research Centre, Technology Innovation Institute, Abu Dhabi, UAE
+        solane.elhirch@ru.nl, joan@cs.ru.nl, raghvendra.rohit@tii.ae,
+                                rusydi@makarim.id
+
+
+
+        Abstract. We introduce a new type of mixing layer for the round func-
+        tion of cryptographic permutations, called circulant twin column parity
+        mixer (CPM), that is a generalization of the mixing layers in Keccak-f
+        and Xoodoo. While these mixing layers have a bitwise differential branch
+        number of 4 and a computational cost of 2 (bitwise) additions per bit, the
+        circulant twin CPMs we build have a bitwise differential branch number
+        of 12 at the expense of an increase in computational cost: depending on
+        the dimension this ranges between 3 and 3.34 XORs per bit. Our circu-
+        lant twin CPMs operate on a state in the form of a rectangular array and
+        can serve as mixing layer in a round function that has as non-linear step a
+        layer of S-boxes operating in parallel on the columns. When sandwiched
+        between two ShiftRow-like mappings, we can obtain a columnwise branch
+        number of 12 and hence it guarantees 12 active S-boxes per two rounds
+        in differential trails. Remarkably, the linear branch numbers (bitwise and
+        columnwise alike) of these mappings is only 4. However, we define the
+        transpose of a circulant twin CPM that has linear branch number of 12
+        and a differential branch number of 4. We give a concrete instantiation of
+        a permutation using such a mixing layer, named Gaston. It operates on
+        a state of 5 × 64 bits and uses χ operating on columns for its non-linear
+        layer. Most notably, the Gaston round function is lightweight in that it
+        takes as few bitwise operations as the one of NIST lightweight standard
+        Ascon. We show that the best 3-round differential and linear trails of
+        Gaston have much higher weights than those of Ascon. Permutations
+        like Gaston can be very competitive in applications that rely for their se-
+        curity exclusively on good differential properties, such as keyed hashing
+        as in the compression phase of Farfalle.
+
+        Keywords: Mixing layer · Permutations · Branch number · Column
+        parity mixer (CPM) · Ascon
+
+
+1     Introduction
+
+Over the last decades there has been extensive research on lightweight cryp-
+tographic primitives, where lightweight means with the objective of being im-
+plemented on resource-constrained platforms, e.g., for the Internet of Things
+(IoT), Radio Frequency ID (RFID) and sensors. Those platforms require a care-
+ful trade-off between efficiency and security. A major challenge is to achieve
+excellent performance results on a wide spectrum of target devices while pro-
+viding a good security margin, and this at reasonable implementation cost. In
+hardware implementations and in bit-sliced software implementations a good
+estimate of the cost is the total number of binary Boolean operations (XOR,
+(N)AND, (N)OR, NOT) required to execute the primitive. We will refer to this
+as the gate cost.
+    In recent years, iterated cryptographic permutations have become increas-
+ingly popular, but their design is very similar to that of the data path of block
+ciphers. In so-called substitution-permutation networks (SPN), the round func-
+tion has a linear layer and a non-linear S-box layer. In an SPN block cipher the
+rounds are typically alternated with the addition of a round key, derived from
+the cipher key by means of a key schedule. The linear layer often consists of the
+composition of a mixing layer and a bit shuffle moving the bits around.
+    Many SPNs are designed according to the wide trail strategy and the best
+know example of this is the Advanced Encryption Standard (AES) [13]. With this
+strategy, one can easily prove strong upper bounds for the expected differential
+probability of differential trails and for the correlation contribution of linear
+trails. The simplicity of the strategy and this ability to prove trail bounds have
+made it one of the most widely used design approaches for block ciphers and
+permutations.
+    AES [13] operates on a state that can be represented as a 4 × 4 byte array. Its
+mixing layer is called MixColumns and it considers each column of the state as a
+4-byte vector and it multiplies them by a 4 × 4-byte matrix. These matrices are
+maximum-distance-separable (MDS): they have (differential and linear) branch
+number 5. The AES linear layer also has a byte shuffle, called ShiftRows. Their
+combination allows to prove that the number of active S-boxes in any 4-round
+trail is 25, or in general, the square of the branch number [13]. In the context
+of lightweight cryptography, there has been ample research about constructing
+MDS matrices with low gate cost, see [3,18,24–26,28,35,37]. While most research
+is about 4×4 matrices, the first MixColumn-like MDS matrices for use in crypto-
+graphic round functions were 8 × 8, introduced in the block cipher SHARK [34].
+Later 8 × 8 MDS matrices were used in the compression function of hash func-
+tions such as Whirlpool [2] and there has also been research on reducing the gate
+cost of such mappings [24]. Constructions that combine 8×8 MDS matrices with
+an appropriate ShiftRows mapping have at least 92 = 81 active S-boxes in any
+4-round trail. Still, it would be a stretch to call such mappings and ciphers that
+make use of them lightweight.
+    A different flavor of the wide trail strategy we find in Ascon-p, the per-
+mutation underlying Ascon [17], Keccak-f , the permutation underlying Kec-
+cak [6], and the permutation Xoodoo [12]. The former two have a mixing layer
+of the type column parity mixer (CPM) that cannot be split into a number of
+parallel mappings but operates on the state as a whole. The mixing layer of
+Ascon-p consists of separate mix mappings operating on the 5 rows of the state
+
+                                        2
+independently, combined with two mixing steps that act as enforcements of the
+low-diffusion linear step in the S-box layer. The latter is the χ mapping borrowed
+from Keccak-f , but then operating on 5-bit columns rather than rows.
+    In all three permutations the mixing layer has a branch number of 4 and hence
+they have relatively low worst-case diffusion. Moreover, they do not lend them-
+selves to easy proofs for strong lower bounds on the number of active S-boxes
+over 4 or more rounds. Still, with computer-aided techniques, strong bounds
+have been achieved for Keccak-f [32], Xoodoo [15] and Ascon-p [19, 30].
+    A study in [9] provides evidence that this approach outperforms MDS-based
+designs in that they achieve lower upper bounds on the probability of differential
+trails and the correlation contribution of linear trails for the same amount of
+computation, often due to lighter rounds. Moreover, the paper shows that they
+suffer less from clustering of trails.
+    The mixing layers in Xoodoo and Keccak-f both require 2 binary XOR
+operations per bit of the state. In the permutation underlying Ascon, winner of
+the NIST lightweight cryptography cipher competition [33], the mixing layer pL
+costs similarly 2 binary XOR operations per bit. However, the part of the mixing
+layer in the S-boxes pS has an additional cost of 1.2 binary XOR operations per
+bit, totaling to 3.2 binary XOR operations per bit. In this split-up, the gate
+cost of the non-linear layer is equal in all three permutations as all use the χ
+mapping: 1 XOR, 1 AND and 1 NOT gate per state bit.
+
+Our Contribution. In this work, we explore the possibility of using the mixing
+budget of 3.2 binary XOR operations per bit, allocated for Ascon-p, differently.
+We define a new type of mixing layer, the circulant twin CPM, a generalization
+of the column parity mixers in Keccak-f and Xoodoo. Whereas the latter
+have differential branch number 4, our twin CPM achieves differential branch
+number 12. Remarkably, its linear branch number is equal to that of the mixing
+layer of Keccak-f , Xoodoo and Ascon-p, namely 4. We show that we can
+transpose a twin CPM resulting in linear branch number of 12 and differential
+branch number of 4 with no effect on the gate cost. We provide a proof-of-concept
+permutation that uses the twin CPM as its mixing layer that we name Gaston.
+This permutation is lightweight in the sense that it takes the same number of
+bitwise Boolean operations per round as Ascon-p. We show that Gaston achieves
+very good differential trail behaviour for both differential, and even linear, trails
+over 2 and 3 rounds.
+
+Related Work. There is a lot of research that focuses on finding MDS matrices
+that have low implementation cost. The efficiency of MDS matrices can be de-
+fined in terms of several criteria such as the overall gate cost, latency or circuit
+depth [3, 22, 23, 27, 29, 35]. Implementing an MDS matrix with branch number
+9 (dimension 8) requires more than 6 XORs per bit. We know of no work that
+investigates the gate cost of MDS matrices or other mixing layers with branch
+number above 9. At least for MDS matrices existing research suggests that the
+number of XORs per bit increases with the branch number. In Table 1, we com-
+pare various types of mixing layers.
+
+                                         3
+Table 1: A comparison of different types of mixing layers. For MDS, the dimen-
+sions in the second column represent the dimension of the matrix (defined over
+the finite field) while for the rest it denotes the state size in bits. The symbols d,
+m and n denote the degree of the field defining polynomial, the number of rows
+and number of columns, respectively. For the first row of CPM, w represents the
+number of 5 × 5 slices and w ∈ {8, 16, 32, 64} based on the variant of Keccak-f .
+
+    Mixing layer type       Dimensions            XORs       Branch number Source
+                                                  per bit    Diff. Linear
+                            3 × 3, GF (2d )       5
+                                                  3
+                                                       1
+                                                    + 3d     4    4         [18]
+                                                       3 †
+                            4 × 4, GF (2d )       2 + 4d     5    5         [18]
+    MDS
+                            8 × 8, GF (24 )       6.06       9    9         [24]
+                            8 × 8, GF (28 )       6.125      9    9         [24]
+                            5 × 5 × w, GF (2) 2          4        4         [6]
+    CPM                     3 × 4 × 32, GF (2) 2         4        4         [12]
+                            m × n, GF (2)      2 + h−2
+                                                    m
+                                                       ‡ 4        4         [36]
+    Ascon pL                5 × 64, GF (2)        2          4    4         [17]
+                                                     1
+    Twin CPM              m × n, GF (2)           3+ m       12   4        This work
+                                                     1
+    Transpose of Twin CPM m × n, GF (2)           3+ m       4    12       This work
+† : For d = 4, 8 this bound is tight as shown in [37]. A 4 × 4 matrix over GF (24 ) with
+cost 35 XORs is used in Saturnin [10].
+‡ : h is the Hamming weight of the parity-folding polynomial as defined in [36].
+
+
+
+Outline. In Sec. 2, we recall different diffusion metrics for linear layers. The
+circulant twin CPM and the bit shuffles which make up the linear layer are
+defined in Sec. 3. The study of the differential diffusion properties of twin CPMs
+is given in Sec. 4 while in Sec. 5 we discuss the equivalence relations that partition
+the sets of the shift offsets that define the linear layer. We investigate the linear
+mask properties of twin CPMs in Sec. 6. In Sec. 7, we describe the search strategy
+for the shift offsets in the twin CPM mixing layer and row shifts of lightweight
+permutation Gaston and further provide upper bounds on the weight of trails
+over 2 and 3 rounds of Gaston using general-purpose solvers. In Sec. 8 we finalize
+the specifications of Gaston and discuss how Gaston and variants can be used in
+the Farfalle construction. In Sec. 9 we provide conclusions and open problems.
+
+
+2     Diffusion Metrics for Linear Layers
+We will study iterated permutations with a round function R consisting of a
+linear layer that we will denote by λ and a non-linear layer that we will denote
+by γ. We will assume R = γ ◦ λ. The other option would be R = λ ◦ γ. When
+investigating difference (and mask) propagation through the round function the
+variant can be addressed by a simple re-phasing.
+
+
+                                              4
+    We assume the round function operates on a state A that consists of bits
+arranged in an array of rows of equal length. We denote the set of all possible
+states by A. Note that A forms a vector space with bitwise addition.
+    Orthogonal to the rows we have columns. We assume the non-linear layer
+operates in parallel on the columns, as in Ascon-p [16] and Xoodoo [12].
+    Iterating such a round function provides resistance against differential (DC)
+and linear cryptanalysis (LC) by the alternation of λ and γ. In particular, their
+combination targets the avoidance of differential trails with high probability
+and/or linear trails with high correlation contribution.
+    Within the linear layer there typically is a mixlayer that ensures that a bit
+at its output depends on multiple bits at its input and that a difference in few
+input bits propagates to multiple bits at its output. The mixlayer mixes bits
+close to each other in the state and the role of the shuffles is to move bits close
+to each other to positions that are far from each other. We call the mixlayer θ.
+    In this section we recall the basics of difference and linear propagation and
+list some metrics for λ and θ such as the branch number and the branch his-
+togram to provide an indicator of their performance in the round function of a
+cryptographic permutation or block cipher.
+
+2.1    Difference Propagation
+Differential cryptanalysis exploits high-probability differentials [8]. Let f be a
+transformation over Fn2 and let a be an input difference to f and b its output
+difference. The combination of input difference and output difference (a, b) is
+called a differential over f and its differential probability (DP) is defined as the
+fraction of all possible input pairs with difference a that exhibit the difference b
+after application of f to its members:
+                                       #{x ∈ Fn2 | f (x) ⊕ f (x ⊕ a) = b}
+                    DP(a, b) =                                              .
+                                                        2n
+The restriction weight wr of a differential relates to its DP as DP = 2−wr .
+    We call a differential over the round function R a round differential. Round
+differentials can be chained to form a differential trail. An r-round differential
+trail Q is determined by the sequence of difference patterns before and after each
+round (q 0 , q 1 , . . . , q r ). The DP of a trail is the fraction of all possible input pairs
+with difference q 0 that exhibit difference q i after i rounds for all i ≤ r.
+    The DP of a trail is in general hard to compute and often approximated by
+its expected DP (EDP). The EDP of a differential trail is the product of the DP
+values of its round differentials and is whatQyou would get if the round differen-
+tials would act independently: EDP(Q) = 0<i≤r DP(q i−1 , q i ). The restriction
+weight of a trail is defined as the sum of the restriction weights of its round
+differentials and hence 2−wr (Q) = EDP(Q).
+
+2.2    Linear Propagation
+Linear cryptanalysis exploits linear approximations with high correlation [31].
+Let a be a mask that defines the linear Boolean function of input bits aT x of a
+
+
+                                              5
+transformation f and b one that defines the linear Boolean function of output
+bits bT f (x). The combination of input mask and output mask (a, b) is called a
+linear approximation over f and its correlation is determined as the probability
+p over all inputs x that the linear function defined by a and the linear function
+defined by b are equal, namely 2p − 1:
+                               #{x ∈ Fn2 | aT x + bT f (x) = 0}
+                   C(a, b) =                                    − 1.
+                                            2n−1
+The correlation weight wc of a linear approximation is defined by C2 = 2−wc .
+    We call a linear approximation over the round function R a round linear
+approximation. Round linear approximations can be chained to form a linear
+trail. An r-round linear trail Q is determined by the sequence of masks before
+and after each round (q 0 , q 1 , . . . , q r ). The correlation contribution C of a trail
+is definedQas the product of the correlations of its round linear approximations:
+C(Q) = 0<i≤r C(q i−1 , q i ). The correlation weight of a linear trail relates to its
+correlation C as C2 = 2−wc and is therefore the sum of the correlation weights
+of its constituent round linear approximations.
+
+2.3   Diffusion Metrics Related to Differences
+In this section we discuss diffusion metrics for the propagation of differences. We
+will indicate differences of state dimensions by the term state and its non-zero
+bits or columns as active. Let wb (A) be the number of active bits in state A and
+wc (A) its number of active columns. We call wb (A) the bit weight, wc (A) the
+column weight of A and denote by L the linear layer.
+    The concept of branch number is an important metric for the diffusion power
+of mixing layers. It was introduced in [14] and popularized through [13]. We will
+generalize it to individual states. For simplicity, we will implicitly assume we are
+dealing with differential branch numbers and omit the qualification “differential”.
+We discuss the propagation of linear masks in Sec. 6.
+Definition 1 (Bit branch number of a state). The bit branch number of
+state A with respect to L is the sum of the bit weight of A and that of L(A):
+
+                           Bb,L (A) = wb (A) + wb (L(A)) .
+
+Definition 2 (Column branch number of a state). The column branch
+number of state A with respect to L is the sum of the column weight of A and
+that of L(A):
+
+                           Bc,L (A) = wc (A) + wc (L(A)) .
+
+   The well-known branch numbers of a linear mapping are the minimum of
+the corresponding branch number over all non-zero states. The bit and column
+branch numbers are given by:
+
+           Bb (L) =    min      Bb,L (A)   and Bc (L) =      min     Bc,L (A) .
+                      A∈A\{0}                              A∈A\{0}
+
+
+
+                                            6
+The branch numbers of a mapping give only limited information about its dif-
+fusion power. We wish to compare several linear mappings according to their
+diffusion power. High diffusion power means few states with low branch number.
+In that respect, a more informative quantitative measure of the “immediate”
+diffusion power is given by the branch histograms.
+
+Definition 3 (Bit branch histogram). The bit branch histogram of L is the
+histogram indicating the number of states per bit branch number:
+
+                       Hb,L (w) = #{A ∈ A with Bb,L (A) = w} .
+
+   The bit branch histogram is the appropriate measure for a mixlayer like θ: a
+mixlayer strives to minimize the number of states with low bit branch number.
+
+Definition 4 (Column branch histogram). The column branch histogram
+of L is the histogram indicating the number of states per column branch number:
+
+                      Hc,L (w) = #{A ∈ A with Bc,L (A) = w} .
+
+    The column branch histogram is the appropriate measure for a linear layer
+λ: it says something about the number of 2-round trails with a given number of
+active columns and that lower bounds their weight. Good diffusion corresponds
+to branch histograms with a low left tail.
+
+2.4     Diffusion Metrics Related to Masks
+As was shown in [14], the linear branch of a linear mapping specified by a matrix
+M is equal to the differential branch number of MT , the transpose of M. When
+talking about linear branch numbers of a linear mapping we will speak about
+the (differential) branch number of its transpose.
+    Using the bit and column Hamming weight, we define the linear branch
+number of a state A with respect to a linear layer L as the sum of the weights
+of A and that of LT (A). Depending on the type of weight, we have two types of
+linear branch number:
+
+    Bb,LT (A) = wb (A) + wb (LT (A))       and Bc,LT (A)      = wc (A) + wc (LT (A)) .
+
+      The linear bit and column branch numbers of a mapping L are defined by
+
+        Bb (LT ) =    min      Bb,LT (A)   and   Bc (LT ) =     min     Bc,LT (A) .
+                     A∈A\{0}                                  A∈A\{0}
+
+The histograms are defined analogously.
+
+
+3      Circulant Twin Column Parity Mixers and Row Shifts
+The round function operates on a state A with m rows and n columns, that we
+denote as Ai with 0 ≤ i < m. The bit in row i and column j is denoted as ai,j .
+
+
+                                             7
+As we wish our round function to be suited for software implementations, we
+will assume the row length n is a power of two: n = 2` . Still, some of the lemmas
+we prove are also valid if that is not the case.
+    We limit our choice of the steps of the round function, except for the round
+constant addition, to mappings that commute with a cyclic shift of the state
+in the horizontal direction. Such a property has been called shift-invariant,
+translation-invariant or rotation-invariant but we will use the term circulant.
+More formally, if τ is a mapping that shifts the state one position to the left,
+then a mapping α is circulant if τ ◦ α = α ◦ τ . Circulance partitions the state
+space into classes where a class contains all shifted versions of a given state. For
+the vast majority of states these classes contain n members. In our investigations
+on propagation, we can restrict ourselves to one representative of each class. We
+adopt a convention how to choose that representative and call that canonical.
+    For γ, circulance simply means that it applies the same S-box to all columns.
+For λ we assume it is a mixlayer sandwiched between two cyclic row shift steps
+as in Xoodoo [12] and all three are circulant.
+
+
+3.1   Cyclic Row Shifts
+
+Similar to ShiftRows in Rijndael [13], the round function of Gaston has two bit
+shuffles that cyclically shift the bits within the rows. We call them ρwest and
+ρeast and we specify them as follow:
+
+                    ρwest : Ai ← (Ai ≪ wi ), for 0 ≤ i < m
+                    ρeast : Ai ← (Ai ≪ ei ), for 0 ≤ i < m .
+Here (C ≪ r) denotes row C shifted over offset r, i.e., moving the bit in position
+j to position j + r mod n. Sometimes we write τ r (C) for (C ≪ r).
+    Each row shift step is parameterized by m offsets, hence there are 2m shift
+offset parameters: w0 to wm−1 and e0 to em−1 . In the diffusion properties only
+the differences between the offsets of ρwest (or ρeast ) matter and therefore we
+can fix one offset for each of them to 0. We set w0 = 0 and e0 = 0, and hence to
+fully specify the row shift steps we must specify 2(m − 1) offsets. We will denote
+the array of shift offsets for ρwest by Rw , the array of shift offsets for ρeast by
+Re and their combination by Rρ .
+
+
+3.2   Circulant Twin Column Parity Mixers
+
+The mixlayer θ is what we call a circulant twin column parity mixer or twin
+CPM for short. This is a variant of the column parity mixers as in Xoodoo and
+Keccak-f . A circulant column parity mixer applied to our two-dimensional
+state would look like this:
+                                                                             m−1
+                                                                             X
+Ai ← Ai + (E ≪ u) for 0 ≤ i < m, with E ← (P + (P ≪ r)) and P ←                    Ai .
+                                                                             i=0
+                                                                                (1)
+
+
+                                         8
+This mapping computes the bitwise sum of all rows, called the column parity
+P , folds it to the θ-effect E and adds that to each row after shifting over some
+offset u. Here folding consists of adding P and a shifted copy of P . The two shift
+offsets r and u would be parameters. The CPM of (1) has a computational cost
+of two XORs per bit. CPMs and their properties were studied in [36].
+    A circulant twin column parity mixer looks like this:
+
+       Ai ← Ai + (E ≪ u) for 0 ≤ i < m
+                            with E ← (P + (P ≪ r)) + (Q + (Q ≪ s)),
+                                       m−1
+                                       X                  m−1
+                                                          X
+                            and P ←          Ai and Q ←         (Ai ≪ ti ) .   (2)
+                                       i=0                i=0
+
+In (2), next to the column parity P , there is an additional column parity Q,
+obtained by adding the rows where each one is first shifted over a row-specific
+offset ti . Both parities P and Q are folded and the θ-effect E consists of the
+sum of the two folded parities. The twin CPM of (2) has a computational cost
+of 3 + 1/m XORs per bit, hence 3.2 for 5 rows and 3.333 for 3 rows. Like the row
+shift steps, the twin CPM (2) is also a parameterized mapping. Its parameters
+are: the two folding offsets r and s, the θ-effect addition offset u, and the m
+offsets ti for computing parity Q. This totals to m + 3 shift offset parameters.
+We denote the array of shift offsets for θ by Rθ and the combination of Rθ with
+those of the row shift steps Rρ by Rλ . We divide Rθ into two parts: the ones
+that determine the distribution of the bit weight of the θ-effect that we group
+in RE = (s, t0 , t1 , t2 , t3 , t4 ) and u.
+
+3.3   Polynomial Representation
+The mixlayer θ and the row shifts ρwest and ρeast are specified in terms of two
+operations: bitwise addition of rows and cyclic shifts. These operations lend
+themselves to a representation of the rows of the state as polynomials with
+coefficients in F2 . We denote row i of a state by
+                                 X
+                        Ai (X) =     ai,j X j for 0 ≤ i < m .
+                                  j
+
+These are elements of F2 [X], the ring of binary polynomials. Bitwise addition
+of rows is just the addition of polynomials in F2 [X]. A cyclic shift of a row Ai
+over an offset r corresponds with the multiplication of Ai by the polynomial X r
+modulo 1 + X n . It follows that we are working in the ring of binary polynomials
+modulo 1 + X n : F2 [X]/(1 + X n ) and a state is a vector of m polynomials, hence
+the state space A is (F2 [X]/(1 + X n ))m .
+    In polynomial representation, the column parity mixer of (1) becomes:
+                            m−1
+                            X
+                                  X u + X u+r Aj for 0 ≤ i < m .
+                                             
+                Ai ← Ai +
+                            j=0
+
+
+
+                                        9
+Here (X u + X u+r ) Aj denotes the multiplication of the constant polynomial
+(X u + X u+r ) by a variable polynomial Aj modulo 1 + X n .
+   The circulant twin CPM of (2) becomes:
+                        m−1
+                        X
+        Ai ← Ai + X u          1 + X r + X tj + X s+tj Aj for 0 ≤ i < m .
+                                                      
+                         j=0
+
+We will denote the constant polynomials in this expression as ρj , hence
+                                m−1
+                                X
+  Ai ← Ai + X u E with E =             ρj Aj and ρj = 1 + X r + X tj + X s+tj .            (3)
+                                 j=0
+
+    The polynomial representation of state and linear mappings can be quite
+convenient in demonstrating properties. For example, Ai (x) is divisible by 1+X
+iff Ai (1) = 0, that is, it has an even number of active bits.
+
+3.4   The Inverse of a Circulant Twin CPM
+Equation (3) represents m equations, one for each row Ai of the state. We
+can rewrite it as a matrix equation where we represent the state A as an m-
+dimensional vector with coordinates the rows polynomials. We denote the vector
+containing the polynomials Ri = X u ρi by R and write 1 for an m-dimensional
+vector with all coordinates equal to 1. Denoting the image by B, this gives:
+                         B = A + 1RT A = (I + 1RT )A ,
+with I an m × m unit matrix. For symmetry reasons, the inverse has a similar
+                      T
+shape: A = (I + 1R0 )B, where R0 is the vector of polynomials for the inverse.
+                                           T
+Substitution results in: B = (I+1RT )(I+1R0 )B or simplified I = (I+1RT )(I+
+   0T
+1R ). Working this out yields:
+                                                               
+                         T        T              T                   T
+                                                         X
+        0 = 1RT + 1R0 + 1RT 1R0 = 1RT + 1R0 + 1             Rj  R0
+                                                                          j
+                                                                             
+                                                                                  T
+                                                                   X
+                                         = 1RT + 1 1 +                  Rj  R0 .
+                                                                     j
+                                                             
+                                                                  Ri0 , hence Ri0 is given by
+                                                  P
+Taking the i-th component yields Ri = 1 +              j Rj
+                                                 −1
+                                          X
+                        Ri0 = 1 + X u          ρj     X u ρi .
+                                            j
+
+As the polynomials ρj are divisible by 1+X, the expression between the brackets
+is coprime to 1 + X and hence to 1 + X n , hence its inverse exists for any choice
+of the shift offsets if n = 2` . Moreover, this inverse is in general dense, similar
+to the inverse of θ in Keccak-p.
+
+
+                                          10
+4     Differential Diffusion Properties of Twin CPMs
+In this section we study structural properties of twin CPMs that are a function of
+their shift offsets. This leads to necessary conditions for achieving branch number
+of 12 and suggests choices leading to a low left tail in the branch histogram. We
+will group these conditions in a number of condition sets governing the shift
+offsets. They have the form of inequalities and are always modulo n.
+    For a state A that has E = 0 in (2), a twin CPM acts like the identity. Its bit
+branch number is simply its number of active bits times two. The set of states
+with E = 0 forms a subspace of A and plays an important role in this section.
+
+Definition 5 (θ-effect kernel). The subspace of A of states that have E = 0
+in (2) for a twin CPM is its θ-effect kernel.
+
+We will refer to the θ-effect kernel simply as the kernel. States in the kernel with
+few active bits have a low branch number and are therefore undesirable.
+    In this section we start by characterizing the kernel, then we discuss unavoid-
+able states in the kernel, followed by states that are avoidable by a good choice
+of shift offsets and finally states with low branch number outside the kernel.
+
+4.1   The Kernel and Its Dimension
+We define the P -kernel as the subspace of A for which P = 0 in (2) and the
+Q-kernel analogously. The dimension of the P -kernel is (m − 1)n. It is namely
+the subspace of A that satisfies n independent linear equations: the parity of
+each column shall be 0. The dimension of the Q-kernel is likewise (m − 1)n as it
+is also a subspace of A that satisfies n independent linear equations.
+    We call the intersection of the P -kernel and the Q-kernel the P Q-kernel.
+Clearly the P Q-kernel is a subspace of the θ-kernel. Its dimension depends on
+the offsets ti but is at least (m−2)n+1. This is because the sum of all conditions
+of the P -kernel is the sum of all conditions of the Q-kernel.
+    We call states in P -kernel with the lowest number of active bits, namely 2,
+P -orbitals and similar states in the Q-kernel we call Q-orbitals.
+Definition 6 (P -orbital). A P -orbital is a state with 2 active bits that are in
+the same column: it has Ai = X q and Aj = X q for some q.
+
+Definition 7 (Q-orbital). A Q-orbital is a state with 2 active bits contributing
+to the same bit in Q: it has Ai = X q+tj and Aj = X q+ti for some q.
+
+    If for two rows i and j, we have ti = tj , then the state with two active rows
+Ai = 1 and Aj = 1 is at the same time a P -orbital and a Q-orbital, and therefore
+in the kernel. A 2-bit state in the kernel implies a branch number of at most 4
+and clearly we want to avoid it. Therefore, we will take all offsets ti different.
+Condition set 1. Conditions to avoid single-orbital states in the kernel:
+
+                       ti 6= tj , ∀{i, j} ⊂ {0, 1, . . . , m − 1} .
+
+
+                                           11
+   The following lemma says something about the dimension of the kernel if the
+number of columns is a power of two: n = 2` .
+                          d
+Lemma 1. Let (1 + X) = gcd(ρ0 , ρ1 , . . . , ρm−1 , 1 + X n ) with n = 2` , then the
+dimension of the kernel is (m − 1)n + d.
+                                                 `            2`             n
+Proof. As n = 2` we have 1 + X n = 1 + X 2 = (1 + X) = (1 + X) . Then
+                                    d
+there exists a j such that (1 + X) = gcd(ρj , 1 + X n ). We can do a renumbering
+                                        d
+such that gcd(ρ0 , 1 + X n ) = (1 + X) , therefore this is without loss of generality.
+We now rewrite
+                                  X
+                                      ρ j Aj = ρ 0 A0 .                           (4)
+                                 j>0
+
+The number of different solutions of (4) determines the dimension of the kernel.
+We can choose Aj in the lefthand side freely, resulting in some value B and try
+to solve B = ρ0 A0 for A0 . As all ρj are divisible by 1 + X d , so is B. Hence,
+we can divide both sides by 1 + X d resulting in an equation B 0 = πA0 with
+                  d                       d
+B 0 = B/(1 + X) and π = ρ0 /(1 + X) . As π is coprime to 1 + X n it has an
+inverse and the solution is given by A0 = π −1 B 0 . Moreover, if C is a solution for
+                                  n−d                                  n−d
+A0 in (4), then C + β(X)(1 + X)        is also a solution as ρ0 (1 + X)     = 0. The
+                    n−d               d
+term β(X)(1 + X)        can take on 2 possible values, namely those obtained by
+taking for β the polynomials of degree less than d. Hence, the choice of the Aj
+in the lefthand side accounts for dimension (m − 1)n and the 2d values of A0 per
+element of that vector space adds d to the dimension.                              t
+                                                                                   u
+
+4.2   Minimizing the Kernel
+By choosing our offsets well, we can ensure that all states in the kernel have
+an even number of active bits. First in Lemma 2, we link the shape of the
+polynomials ρj with the number of factors 1 + X they contain. Then in Lemma 3
+we prove that the kernel contains only states with an even number of bits if the
+polynomials ρi satisfy a certain condition.
+
+Lemma 2. Let n = 2` and 0 ≤ a < b < c < d < n. Then
+
+   gcd(X a + X b + X c + X d , 1 + X n ) = 1 + X ⇐⇒ a + b + c + d mod 2 = 1 ,
+
+i.e., if {a, b, c, d} has an odd number of odd integers.
+
+Proof. Dividing X a + X b + X c + X d by 1 + X gives a≤i<b X i + c≤i<d X i .
+                                                      P             P
+This polynomial is only divisible by 1 + X if it has an even number of terms.
+This expression has an even number of terms iff b − a and d − c are both odd or
+both even, or equivalently iff a + b + c + d is even.                        t
+                                                                             u
+
+Lemma 3. If n = 2` and for all polynomials ρj the GCD with 1 + X n is the
+same: gcd(ρj , 1 + X n ) = 1 + X d with d < n, all states in the kernel have an even
+number of active bits.
+
+
+                                         12
+                                            d                                     d+1
+Proof. If gcd(ρj , 1 + X n ) = (1 + X) then ρj mod (1 + X)                              = (1 + X)d . We
+now have
+                                            !
+                            d+1
+                                    X                    d+1
+           E mod (1 + X)        =      ρi Ai mod (1 + X)
+                                        i
+                                                                   !
+                                      X                       d                          d+1
+                                 =              (1 + X) Ai                 mod (1 + X)
+                                        i
+                                                                       !
+                                                      d
+                                                          X                              d+1
+                                 =    (1 + X)                     Ai       mod (1 + X)
+                                                          i
+                                                                        !                  !
+                                                  d
+                                                          X
+                                 = (1 + X)                         Ai       mod (1 + X)        .
+                                                              i
+                             P
+If A has odd bit weight, (      j Aj ) mod (1 + X) = 1 and therefore E 6= 0.                         t
+                                                                                                     u
+We now give a corollary with a sufficient condition for minimizing the kernel.
+Corollary 1. For n = 2` , if in θ we have r + s mod 2 = 1, then the dimension
+of kernel is (m − 1)n + 1 and only contains states with an even number of active
+bits.
+Proof. If r + s mod 2 = 1, then for all polynomials ρj we have (0 + r + tj +
+(s + tj )) mod 2 = 1. Due to Lemma 2 this implies that for all ρj we have
+gcd(ρj , 1 + X n ) = 1 + X. It follows from Lemma 3 that the kernel only contains
+states with an even number of active bits and from Lemma 1 that the dimension
+of the kernel is (m − 1)n + 1.                                                  t
+                                                                                u
+
+4.3   Row Twins
+Irrespective of the choice of shift offsets, the kernel contains states with 8 active
+bits. These states have a specific structure and we call them row twins.
+Definition 8. A state A is a row twin if it only has two active rows with indices
+in {i, j} ⊂ {0, 1, . . . , m − 1} and
+      Ai = ρj = 1 + X r + X ti + X s+ti , Aj = ρi = 1 + X r + X tj + X s+tj ,
+or if it is a shifted version of such a state.
+Lemma 4. Row twins are in the kernel.
+Proof. From (3) we have E = ρi Ai + ρj Aj = ρi ρj + ρj ρi = 0.                  t
+                                                                                u
+             m
+               
+There are 2 = m(m − 1)/2 canonical row twins. To avoid row twins with less
+than 8 active bits, each row in a row twins shall have 4 active bits implying that
+the 4 powers in ρj shall be different. This results in a number of conditions for
+the shift offsets of θ.
+Condition set 2. Conditions to avoid row twins with less than 8 active bits:
+         r 6= 0, s 6= 0
+         ti 6= 0, ti 6= r, ti 6= −s, ti 6= r − s                       ∀i ∈ {0, 1, . . . , m − 1}
+
+
+                                                 13
+4.4   Vortices
+
+Irrespective of the choice of shift offsets, the kernel contains states with 6 active
+bits. We call these vortices, after states with similar structure in Keccak-f .
+
+Definition 9. A state A is a vortex if it only has three active rows with indices
+in {i, j, k} ⊂ {0, 1, . . . , m − 1} and
+
+               Ai = X tj + X tk , Aj = X tk + X ti , Ak = X ti + X tj ,
+
+or if it is a shifted version of such a state.
+
+Lemma 5. Vortices are in the kernel.
+
+Proof. As P = Ai + Aj + Ak = 0, the vortex is in the P -kernel, and as Q =
+X ti Ai +X tj Aj +X tk Ak = 0, it is in the Q-kernel. Hence it is in the θ- kernel. t
+                                                                                    u
+
+   As the indices of the active rows completely determine the shape of a vortex,
+there are 53 = 10 canonical vortices. Due to the existence of vortices, the binary
+            
+
+branch number of any circulant twin CPM is at most 12.
+
+
+4.5   Avoiding States in the Kernel with Less than 6 Active Bits
+
+The Condition sets 1 are covered by a more general set of conditions to avoid
+states in the kernel with 4 active bits. There are three types of such states and
+we will cover them in the following three lemmas.
+
+Lemma 6. For even n, let {i, j} ⊂ {0, 1, . . . , m − 1} and ti = tj + n/2, then the
+state A with two active rows Ai = Aj = 1 + X n/2 is in the kernel.
+
+Proof. The state is in the P kernel as P = (1 + X n/2 ) + (1 + X n/2 ) = 0. It is
+also in the Q-kernel as Q = X tj (1 + X n/2 ) + (X tj +n/2 )(1 + X n/2 ) = 0.  t
+                                                                               u
+
+Lemma 7. Let {i, j, k} ⊂ {0, 1, . . . , m − 1} and ti + tj = 2tk , then the state A
+with three active rows Ai = X tk , Aj = X ti and Ak = X tk + X ti is in the kernel.
+
+Proof. The state is in the P -kernel as P = X tk + X ti + X tk + X ti = 0. It is also
+in the Q-kernel as Q = X ti +tk + X tj +ti + X tk +tk + X tk +ti = 0.               t
+                                                                                    u
+
+Lemma 8. Let {i, j, k, l} ⊂ {0, 1, . . . , m − 1} and ti + tj = tk + tl , then the state
+with 4 active rows Ai = 1, Aj = X tk −tj , Ak = 1 and Al = X ti −tl is in the
+kernel.
+
+Proof. The state is in the P -kernel as 1 + X tk −tj + 1 + X ti −tl = 0. It is also in
+the q-kernel as Ai = X ti + X tk + X tk + X ti = 0.                                  t
+                                                                                     u
+
+   These three lemmas combined with Condition sets 1 result in three types of
+conditions that we group in the following set.
+
+
+                                          14
+Condition set 3. To avoid in-kernel states with 4 active bits (or 2 active bits).
+For any set {i, j} ⊂ {0, 1, . . . , m − 1} (for even n):
+
+                                        2ti 6= 2tj .
+
+For any sets {i, j} ⊂ {0, 1, . . . , m − 1} and k ∈ {0, 1, . . . , m − 1} with k 6∈ {i, j}:
+
+                                     ti + tj 6= 2tk .
+
+For any two sets {i, j} ⊂ {0, 1, . . . , m − 1} and {k, l} ⊂ {0, 1, . . . , m − 1} and
+{i, j} ∩ {k, l} = ∅:
+
+                                    ti + tj 6= tk + tl .
+
+4.6   States with Low Branch Number outside the Kernel
+We now discuss structures that result in states outside the kernel with low branch
+number. If the θ-effect E of a state has d active bits, the state has (bit) branch
+number of at least md.
+    This is because each active bit in E is added to m rows and if in a row it
+is added to a passive bit, that bit is active after θ and vice versa, hence it will
+always contribute 1 to the bit branch number. As the polynomials ρj all have
+even parity, so does E and therefore the smallest non-zero value of d is 2. In
+that case the branch number is at least 2m. If E has more than 2 active bits, it
+has at least 4 and the branch number is at least 4m. In the following, we discuss
+states with a low number of active bits before θ with 2 active bits in E.
+    Each of the polynomials ρj has 4 active bits and therefore for any single-bit
+state A, E has 4 active bits. A state A outside the kernel with two active bits
+may have 2, 4, 6 or 8 active bits in E. P - and Q-orbitals lead to at most 4 active
+bits in E.
+    A P -orbital with active bits in (0, i) and (0, j) has Ai = 1 and Aj = 1 and 0
+in other rows, and yields:
+
+                    E = ρi + ρj = X ti + X s+ti + X tj + X s+tj .                      (5)
+
+   A Q-orbital with active bits in (ti , j) and (tj , i) has Ai = X tj and Aj = X ti
+and 0 in the other rows and yields:
+
+                E = X tj ρi + X ti ρj = X tj + X r+ti + X ti + X r+tj .                (6)
+
+   If two exponents in (5) collide, we obtain an E with two active bits. The
+same holds for (6) and this leads to 2 n2 more conditions.
+Condition set 4. Conditions for P -orbitals or Q-orbitals having E with two
+active bits. For all {i, j} ∈ {0, 1, . . . , m − 1}:
+
+                                       ti 6= tj + r
+                                       ti 6= tj + s .
+
+
+                                            15
+      Notice that we can build a state with 3 active bits that has at most 4 active
+bits in E by taking for the first two bits a Q-orbital and the last two bits a
+P -orbital, or vice versa. For example, let the 3 active bits be at (tj , i), (ti , j) and
+(ti , k), then we have:
+
+        E =X tj ρi + X ti ρj + X ti ρk = X tj + X r+tj + X tk +ti + X s+tk +ti .      (7)
+
+This can be seen as a chain: a Q-orbital followed by a P -orbital. Note that k can
+be equal to i.
+   A P -orbital followed by a Q-orbital: (tk , i), (tk , j) and (tj , k), gives:
+
+       E =X tk ρi + X tk ρj + X tj ρk = X tj + X r+tj + X ti +tk + X s+ti +tk .       (8)
+
+    These chains can be generalized by building longer sequences of alternating
+P -orbitals and Q-orbitals. The number of active bits grows with the chain length
+and hence the longer the chains are, the less threatening.
+
+
+5     Equivalence Classes of Shift Offset Vectors
+In this section we discuss two equivalence relations that partition the sets of
+shift offset vectors Rλ . The equivalence stems from alternative representations
+of the state that lead to linear mappings λ with the same bit branch and column
+branch histograms. These representations change the indexes of the bits, but
+preserve grouping of bits in columns.
+    If we denote the alternative representation of a state A by A0 , then we have
+A = σ(A) with σ a bit shuffle. Clearly, B = λ(A) implies B 0 = σ(B) =
+  0
+
+σ(λ(A)) = σ(λ(σ −1 (A0 ))). In other words, B 0 = λ0 (A0 ) with λ0 = σ ◦ λ ◦ σ −1 .
+As σ is a bit shuffle, the bit branch number of A with respect to λ is equal to
+that of A0 with respect to λ0 . Moreover, if σ preserves the grouping of bits in
+columns, this is also true for the column branch number.
+    We will now describe two groups of bit shuffles whose elements convert a
+mapping λ = ρwest ◦ θ ◦ ρeast characterized by some offset vector Rλ to a linear
+mapping of the same shape but with a different offset vector.
+
+5.1    Multiplicative Factor Equivalence
+The first group of bit shuffles rearranges the bits within the rows of a state by
+multiplying their horizontal indexes with a fixed constant q modulo n. Expres-
+sions in the horizontal index shall be taken modulo n.
+                                                                      ∗
+Definition 10 (Multiplicative shuffle).            Let q ∈ (Z/nZ) , then πq is the
+permutation over domain Fn2 defined by:
+
+                        A0 = πq (A) ⇔ ∀j ∈ Z/nZ : a0qj = aj ,
+
+with A a row and aj its component at index j. We call πq the multiplicative
+shuffle with shuffling factor q (operating on n-bit vectors).
+
+                                           16
+Clearly, as q is coprime to n, πq has an inverse. It is πq−1 with q −1 the multi-
+                                ∗
+plicative inverse of q in (Z/nZ) .
+Lemma 9. Let A0 = πq (A) and B 0 = πq (B). Then, if B = (A ≪ t) we have
+B 0 = (A0 ≪ qt), or equivalently, πq ◦ τ t ◦ πq−1 = τ qt .
+Proof. Using A0 = πq (A), B 0 = πq (B) and B = (A ≪ t) yields:
+                  ∀i ∈ Z/nZ : b0qi = bi = ai+t = a0q(i+t) = a0qi+qt .
+A change of variable j ← qi results in ∀j ∈ Z/nZ : b0j = a0j+qr , in other words
+B 0 = (A0 ≪ qt).                                                               t
+                                                                               u
+    We can define a multiplicative shuffle on a rectangular state with m rows by
+applying it to all its rows. Clearly, it preserves the grouping of bits in columns.
+    A linear layer λ with some offset vector Rλ only makes use of cyclic shifts
+and row additions and therefore πq ◦ λ ◦ πq−1 is of the same type but has an offset
+vector that is given by qRλ , i.e., Rλ with all entries multiplied by q modulo n.
+    As offset vectors Rλ and qRλ with q coprime to n are equivalent, we can
+limit investigating variants with a given entry fixed to some constant value. In
+this respect the following lemma is useful.
+Lemma 10. Assume n = 2` and q is coprime to n. Then if r is of the form u2d
+with u odd, qr mod n is of the form v2d with v odd.
+Proof. We have:
+      qu2d mod 2` = (qu mod 2` )(2d mod 2` ) mod 2` = (qu mod 2` )2d mod 2`
+The group (Z/2` Z)∗ consists of the odd integers < 2` . As the product of two
+group elements is a group element, qu mod 2` ∈ (Z/2` Z)∗ and hence odd.     t
+                                                                            u
+Corollary 2. Multiplication of shift offset by an invertible factor q modulo n =
+2` preserves its parity: it maps odd to odd and even to even.
+
+5.2    Implications for Rθ
+Let us now focus on θ, in particular RE . According to Corollary 1, the kernel is
+minimized by taking r odd and s even or vice versa. Let us assume r is odd. Then
+we can fix its value to 1 in the offset vector RE without loss of generality: we can
+obtain an offset vector with any possible odd value q for r by just multiplying
+by q. We can limit s to even values in the interval [2, n/2]. It starts at 2 as
+according to Condition sets 2 we wish s 6= 0. The end of the interval is n/2
+due to the following reason. The two terms in ρi that depend on s are X ti and
+X s+ti . Assuming the offsets ti range over all possible values, X a and X b can
+be obtained in two different ways: ti = a and s = b − a mod n or ti = b and
+s = a − b mod n. The values of b − a and a − b cannot both be above n and hence
+without loss of generality we can set the limit s ≤ n/2.
+    These restrictions on r and s reduce the number of options for RE from n7
+to less than n6 /2. When we add u to RE , we obtain Rθ and it turns out that
+there are pairs of offset vectors Rθ that result in equivalent mappings θ.
+
+
+                                          17
+Lemma 11. The following offset vectors yield θ mappings that are equivalent
+
+                  Rθ = [1, a, b0 , . . . , bm−1 , c]
+                  R0θ = [1, a, 1 − b0 − a, . . . , 1 − bm−1 − a, −c − 1] .
+
+Proof. Consider Rj = X u ρj = X u + X u+r + X u+tj + X u+s+tj . Filling in Rθ :
+
+                        Rj = X c + X c+1 + X c+bj + X c+a+bj ,
+
+and filling in R0θ :
+
+               Rj0 = X −c−1 + X −c + X −c−1+1−bj −a + X −c−1+1−bj
+                   = X −c + X −c−1 + X −c−bj + X −c−bj −a .
+
+Composition with π−1 yields Rj00 = X c + X c+1 + X c+bj + X c+bj +a = Rj .        t
+                                                                                  u
+
+   Note that the offset ti in R0θ is even if ti in Rθ is odd and vice versa. For the
+case of odd m, we can avoid investigating equivalent offset vectors by requiring
+the number of odd ti values in a canonical offset vector to be odd.
+
+5.3    Row Order Equivalence
+A row shuffle is a bit shuffle that keeps the order of the bits in the rows intact
+but changes the order of the rows. Naturally it preserves both bit and column
+branch numbers. As there are m! ways to shuffle m rows, this creates classes of
+shift offsets of size up to m! that are equivalent.
+    As a canonical representation we can adopt the one where the offsets ti are
+ordered by increasing value. Moreover, according to Condition sets 1 we should
+take all ti different, thus we can adopt ∀0 < i < m : ti > ti−1 .This reduces the
+                                                               n
+number of offset vectors RE to investigate to less than n/4 m     .
+
+Corollary 3. All interesting classes of offset vectors RE are represented by the
+lists with the following features
+ – r = 1 and s ∈ [2, n] and even,
+ – For all i > 0, tP
+                   i > ti−1 ,
+ – tn−1 mod 2 = i<n−1 ti mod 2.
+
+
+6     Linear Mask Propagation Properties
+The propagation of linear masks through a linear mapping, important in the
+context of linear cryptanalysis, can be easily described with the matrix repre-
+sentation of the linear map. If we denote the matrix of L by M, we have U = MT V
+with V the mask at the output and U the mask at its input.
+    For a twin CPM we wish to express its transpose in terms of row additions
+and cyclic shifts. This allows expressing masks at the input as a function of masks
+at the output. This is more convenient with the polynomial representation.
+
+
+                                                18
+6.1     Representing Masks as Polynomials
+In linear cryptanalysis, a mask defines a linear function of state bits, i.e., a sum
+of the state bits in positions where the mask is 1. If a state A has the shape of a
+binary vector, the shape of the mask u is a binary vector of the same dimension
+A and the linear function corresponding to mask u is given by uT A. In our case
+the state is an array of m rows Ai and we can represent     masks similarly, where
+the linear function corresponding to a mask U is i Ui T Ai .
+                                                    P
+    We will express the m rows of a mask by polynomials (U0 , U1 , . . . , Um−1 ) and
+its propagation through θ in polynomial form.
+Definition 11 (transpose of a polynomial). The transpose of a polynomial
+                      n
+                         is given by the polynomial P (X −1 ). Therefore, if P =
+P(X) ∈ jF2 [X]/(1T + X ) P
+P
+                                  n−j mod n
+  j pj X then P (X) =      i pj X           .
+      With this we can express linear functions of a state using polynomials.
+Lemma 12 (Expression for a linear function). The linear function of a
+state A ∈ (F2 [X]/(1 + X n ))m defined by a mask U ∈ (F2 [X]/(1 + X n ))m is given
+by U T A mod X. In other words, it is the coefficient of X 0 in U T A.
+Proof. ThePcoefficient of X 0 in UiT (X)Ai (X) mod 1 + X n =
+                                                           PUi (−X)Ai (X) mod
+1 + X n is j ui,j ai,j . Taking the sum over all rows gives i,j ui,j ai,j . t
+                                                                            u
+
+6.2     Mask Propagation through a Twin CPM
+We will now show how input and output masks are related over a generalization
+of a circulant twin CPM in polynomial representation.
+Lemma 13 (Mask propagation throught a circulant mapping).       P Let L be
+determined by a square matrix of polynomials ρi,j with Bj ← Aj + i ρi,j Ai . An
+input mask V ∈ (F2 [X]/(1+X n ))m depends on an output mask U ∈ (F2 [X]/(1+
+X n ))m as:
+                                       X
+                            Vi = Ui +     ρTj,i Uj .
+                                                            j
+
+Proof. We can compute an input mask V from the output mask U as follows:
+                                       
+ X              X            X              X            XX
+     UiT Bi =      UiT Ai +    ρi,j Aj  =     UiT Ai +      UiT ρi,j Aj
+   i                       i                     j                   i                j        i
+                                                                                                     
+                  X                    XX                                X            X
+              =            UiT Ai +                  UjT ρj,i Ai =           UiT +            UjT ρj,i  Ai
+                   i                   i     j                           i                 j
+                                                      T
+                   X                   X
+              =                Ui +        ρT
+                                             j,i Uj
+                                                     Ai .
+                       i               j
+
+                           T                   T                                T
+                  P                    P                                     P
+hence, we have         i U i Bi =          i Vi Ai with Vi = Ui +            j ρj,i Uj .                       t
+                                                                                                               u
+
+
+                                                        19
+Therefore, the polynomial representation of the transpose of θ is given by:
+                           4
+                           X
+                                 X −u 1 + X −r + X −ti + X −s−ti Aj .
+                                                                
+              Ai ← Ai +
+                           j=0
+
+This translates readily to:
+
+        Ai ←Ai + ((E + (F ≫ ti )) ≫ u) for 0 ≤ i < m with
+                                                                       4
+                                                                       X
+              E ← P + (P ≫ r) , F ← P + (P ≫ s) and P ←                      Ai .   (9)
+                                                                       i=0
+
+We see two θ-effects, E and F with different folding offsets: r and s. They are
+both added to the rows, where the second one is shifted over different offsets ti .
+
+6.3   Low-Weight 3-Round Linear Trails
+The P -kernel of θT consists of all states with an even number of active bits in
+each column.     It has elements with only two active bits, namely P -orbitals, in
+total n m
+            
+          2   of them. It follows that the bit branch number of θT is at most 4.
+It is also at least 4 because for any state A with a single active bit θT (A) and
+    −1
+ θT     (A) have more than 3 bits.
+    If all shift offsets in Rw are different and similarly all shift offsets in Re , the
+bit branch number of θT translates to a column branch number of 4 for λT . As
+an active column has at least weight (and minimum reverse weight) 2, it follows
+that there are 2-round trails with weight 8.
+    For three rounds we consider a particular type of linear trails. We know a
+single-bit mask at the output of χ, restricted to a single column, is correlated
+to the same single-bit mask at its input with correlation 1/2. Therefore, with
+respect to masks with at most a single active bit per column, χ can act as the
+identity. The type of 3-round linear trails we consider are those where this is the
+case for the middle χ.
+    An orbital at θ of the second round is transformed by ρwest −1 , goes through
+χ unchanged and is then transformed by ρeast −1 to end up at the output of θ of
+the first round. If these bits are in the same column, they form again an orbital
+and are in the kernel, implying that we see it unchanged at the input of θ. This
+would mean a 3-round trail that has in each χ-step only two active bits, thus
+with weight only 12.
+    We can avoid these by having conditions on the shift offsets formed by the
+combination of ρwest and ρeast . We will denote them by ci = ei + wi .
+    From the example above, we should ensure ∀i, j : ci 6= cj . These are the rules
+of Condition sets 1, applied to ci . Similarly, violation of the rules in Condition
+sets 3 applied to ci would lead to trails with 4-bit states in the kernel of θT in
+two consecutive rounds, and thus to 3-round linear trails with weight only 24.
+    We cannot avoid the existence of linear trails with 6-bit states in the kernel
+of θT in two consecutive rounds, and these result in 3-round linear trails with
+
+                                          20
+weight at most 36. In particular, they are like the vortices of Definition 9, but
+with ci taking the place of ti . In total there are m
+                                                    3 canonical vortices and there
+may be additional trails with 6-bit states in the kernel of θT in two consecutive
+rounds. If the 6 active bits of the masks at input/output of the χ steps in these
+trails are not in 6 different columns, the weight goes under 36.
+
+
+6.4   Transpose of Twin CPMs
+
+Twin CPMs have stronger diffusion for the propagation of differences than for
+the propagation of masks. In some use cases we may wish to have the inverse.
+For those cases we can use the transpose of a twin CPM as specified in (9).
+
+
+7     Application: the Design of Gaston
+
+In this section we will illustrate the power of circulant twin CPMs by building a
+concrete iterated permutation using it as the mixing layer in its round function.
+Our permutation operates on a two-dimensional state with the same dimensions
+as Ascon-p and we decided to call it Gaston.
+
+
+7.1   The Structure of the Round Function and Shape of the State
+
+Gaston operates on 320-bit states with m = 5 rows and n = 64 columns. Its
+round function consists of a linear layer followed by a non-linear layer. As in
+the iterated permutation Xoodoo [12], the linear layer consists of the mixlayer
+θ, preceded and followed by row shift steps ρwest and ρeast respectively and a
+round constant addition ι. The non-linear layer consists of the application of the
+χ-mapping that operates in parallel on the 5-bit columns. The main differences
+with the Xoodoo round function are that θ is a circulant twin CPM rather than
+a circulant CPM and that the state has 5-bit columns rather than 3-bit columns.
+    After fixing the round function structure, the design effort mainly consists of
+determining the shift offsets of the mixlayer and the row shift steps. We discuss
+our search strategy to find shift offsets for the mixlayer as well as for the two
+row shuffles in Sec. 7.2, the procedure we followed for Rθ in Sec. 7.3 and for Rρ
+in Sec. 7.4 and Sec. 7.5.
+
+
+7.2   General Search Strategy
+
+As discussed in Sec. 3, the shift offsets of the linear layer λ are gathered in a
+shift offset vector Rλ = (Rθ , Rρ ). We aim to find a shift offset vector Rλ that
+minimizes the maximum DP value of differentials over a fixed round version
+of Gaston, say with 4 rounds. Determining the maximum DP value of 4-round
+differentials is actually a huge task, even for a single value of Rλ . Moreover, the
+number of Rλ values is astronomical: It has 3m + 1 entries each in the range
+[0, 63], thus for Gaston there are 6416 = 296 possible values. Taking into account
+
+
+                                        21
+the equivalence classes discussed in Sec. 5 this reduces to 16 64
+                                                                     9        81
+                                                                   5 64 ≈ 2 , but
+it remains astronomical.
+    With minimization of the maximum DP of differentials over 4-round Gaston
+being infeasible, we turn to local optimization. In particular, we will choose a
+value for Rλ that gives rise to a linear layer λ with a column branch number of
+12. There are many such values of Rλ and as secondary criterion we look at the
+left tail in the column branch histogram of the corresponding mappings λ.
+    For λ to have a column branch number of 12, θ must have a bit branch
+number of 12. Moreover, the height of the tail of the column branch histogram
+of λ depends strongly on that of the bit branch histogram of θ. Both the bit
+branch number and the height of the tail of the bit branch histogram of θ are
+fully determined by Rθ . Therefore, we opt for a two-phase approach: we first
+determine Rθ and then only Rρ , where we choose Rθ based on quantitative bit-
+level diffusion properties of θ and Rρ is chosen to translate this bit-level diffusion
+to the column level for λ.
+    Our two phases are each divided into a number of steps. In particular, for
+Rρ we first find a suitable candidate for Rw before making a choice on Re .
+
+
+7.3   Selecting the Offsets of Rθ
+
+To find the offsets for Rθ , the steps are the following:
+
+ 1. RE -condition-filtering: we eliminate all RE candidates leading to avoidable
+    in-kernel states with less than 6 active bits. This phase reduces the 16 64
+                                                                               
+                                                                             5 ≈
+    227 RE candidates that move on to the next phase to 14 282 988 ≈ 223
+    candidates.
+ 2. RE -kernel-filtering: we keep the RE candidates that have no in-kernel states
+    with less than 6 active bits and count the number of in-kernel states with 6
+    active bits. There are 828 candidates for RE with 11 6-bit states.
+ 3. RE -candidate-pool: for each RE candidate we compute the θ-effect E of all
+    states with 3 active bits and keep those that minimize the number of 3-bit
+    states that result in E having 2 active bits. This minimum turns out to be
+    1 and there are 3 such candidates for RE .
+ 4. u-selection: we exhaustively test all u candidates and select the value that
+    moves all active bits to different columns for states outside the kernel with
+    5 active bits or less. After this phase Rθ is fully determined.
+
+RE -Condition-Filtering. Several cases of in-kernel and out-of-kernel states with
+bit branch number less than 12 are avoidable by discarding shift offsets defined
+in Sec. 4. More specifically, we discard candidates leading to single-orbital states
+(Condition sets 1) as well as 2-bit and 4-bit states in the kernel (Condition
+sets 3). Offsets that result in in-kernel states with an odd number of active bits,
+in-kernel row twins states with less that 8 active bits (Condition sets 2) and
+2-bit states that have a θ-effect E with 2 active bits (Condition sets 4) are also
+eliminated.
+
+
+                                         22
+RE -Kernel-Filtering. For each RE candidate we generate all states up to 6
+active bits and discard any candidate that leads to in-kernel states with 4 active
+bits as well as 2-bit states with 2 bits in E that were not caught during the RE -
+condition-filtering phase. We keep those that result in the minimum number of
+in-kernel states with bit branch number of 12.
+
+RE -Candidate-Pool. For each RE candidate we look at the θ-effect E of all
+out-of-kernel states with less than 6 active input bits. For a θ-effect E with 2
+active bits the bitwise branch number is at least 10. If E has 4 active bits then
+states have a bitwise branch number of at least 20. During this phase we discard
+RE candidates that do not minimize the number of 3-bit states with 2 bits in
+E. We report in Table 2 the histograms for the chosen candidate (right table)
+and we also give an example of a discarded RE candidate (left table).
+
+
+
+Table 2: 2-dimensional histograms giving the number of states according to the
+number of active bits in the θ-effect (vertical axis) and the number of active bits
+at the input (horizontal axis). We have RE = (1, 20, 4, 6, 21, 33, 61) at the left
+and RE = (1, 18, 25, 32, 52, 60, 63) at the right.
+                          3 4 5 6               3 4 5 6
+                        0           11        0           11
+                        2 6 28 168 868        2 1 24 158 686
+
+
+
+u-Selection. For the 3 RE candidates, we generate the histogram listing the
+number of states according to the bit weight at input and output for all u values.
+We generate all states with at most 6 active input bits and at most 2 active bits
+in the θ-effect E. In the generated histograms, we see that u impacts an effect
+that we call affected-loss that we now explain. An active bit in an unaffected
+column contributes 2 to the branch number and an active bit in an affected
+column does not contribute to it. We choose the u candidate that minimizes
+that affected-loss. As the offset u shifts the θ-effect E before it is added to the
+rows, we only need to look at out-of-kernel states. We chose to look only at those
+with few active bits that have two active bits in E as that is where the risk of
+getting a branch number below 12 is. We select the u value where active bits do
+not overlap with affected columns for all states up to 5 active bits. We report
+in Table 4 the histogram associated to the chosen candidate and we also give an
+example of a u candidate that can be discarded in Table 3. In particular, there
+are 24 4-bit states with 2 bits in E and a bit overlapping with a affected column
+costs 2 bits. If u is fixed to 29 then out of these 24 states there are 3 states
+that have an image with 10 active bits. It means that there are 2 bits at the
+input that are overlapping with an affected column. Moreover, 2 states have an
+image with 12 active bits which means that 1 bit is overlapping with an affected
+column. For u = 23 all 24 4-bit states will have an image with 14 active bits. We
+report in Table 4 the bit branch histogram associated to the chosen candidate.
+
+
+                                         23
+Table 3: 2-dimensional bit weight histograms for RE = (1, 18, 25, 32, 52, 60, 63)
+with offset u = 29.
+                                      6 7 8 9 10 11 12 13 14 15
+                                   3                    1
+                                   4           3     2    19
+                                   5              6     2    150
+                                   6 11 2 3         40    73
+
+
+Table 4: 2-dimensional bit weight histogram for RE = (1, 18, 25, 32, 52, 60, 63)
+with offset u = 23.
+      6 7 8 9 10 11 12         13    14    15    16    17     18      19     20        21      22     23
+   1                                                                                   5
+   2                                                                                           29
+   3                            1                                                       5            149
+   4                                 24                        1             14                67
+   5                                      158           3            17               289            506
+   6 11                   18         15         653           42             132              3012
+   7          1                200        143         4447           578              1930          29567
+   8     346      18      25        1421       1432          25849          7119             24174
+   9                  94       303       12900       16428         207062            81499         284023
+  10            10952    1247       3139       94506        141168         1313837          894509
+  11         17       58      10545      39889       842033        1492497         10832247        9631128
+
+
+
+
+7.4    Selecting the Offsets of Rw
+The mixlayer θ being set, we can generate low-branch number in-kernel and out-
+of-kernel states. The role of the row shuffle Rw is to move bits that are in the
+same column in a state at the output of θ to different columns at the output of
+λ. To determine Rw we proceed with the following steps:
+ 1. Rw -kernel-filtering: for each Rw candidate we apply ρwest to the 11 in-kernel
+    states with 6 active bits, see Table 4. We keep those that shift all 6 bits to
+    different columns at the output of λ. This phase reduces the 63∗62∗61∗60 ≈
+    224 candidates for Rw to 3 943 564 ≈ 222 .
+ 2. Rw -condition-filtering: we reduce the set of Rw candidates by keeping those
+    that for the 10 bits in any 2 affected columns are moved to at least 9 dif-
+    ferent columns. This reduces the set of 222 candidates for Rw candidates to
+    1 362 650 ≈ 220 candidates.
+ 3. Rw -kernel-filtering: we apply each Rw candidate to all in-kernel states with
+    8 active bits, see Table 4. We keep those that shift at most 2 active bits to
+    the same column. We are left with 9212 candidates.
+ 4. Rw -candidate-pool: we apply each Rw candidate to out-of-kernel states with
+    at most bit branch number 18. We keep those where at most one column
+    will have two active bits at the output of λ. There are 24 candidates.
+
+Rw -Kernel-Filtering. The desired effect of ρwest is the following. For low-branch-
+number states, the row shuffle ρwest should move active bits in the state after θ
+
+
+                                                    24
+to different columns at the output of λ. When bits cluster in columns it results
+in a state having a column branch number under λ smaller than the bit branch
+number under θ. The effect of active bits at the output of θ ending up in the
+same column after λ is called bit huddling [9]. In this phase, for all Rw values we
+check whether for the 11 states with bit branch number 12 there is bit huddling
+at the output of λ and keep only those where there is none.
+
+Rw -Condition-Filtering. For states outside the kernel, the state at the output
+of θ will have a number of affected columns. For low-branch-number states,
+typically an affected column will have most of its bits active, most often all of
+them. Now, if we have a state consisting of two affected columns at the output
+of θ, the positions of these affected columns can be chosen such that there are
+at least 2 bits in the same column after ρwest : the 10 bits huddle to 9 columns.
+By a judicious choice of the shift offsets in Rw this number can be limited to
+not be lower than 9 for any two affected column position. The conditions on the
+shift offsets to limit this bit huddling coincide with Condition sets 3.
+
+Rw -Kernel-Filtering. We keep any Rw that moves the 8 active bits before ρwest
+to at least 7 different columns after ρwest .
+
+Rw -Candidate-Pool. We require that a Rw candidate moves active bits in the
+state before ρwest to different columns after ρwest . We minimize the bit huddling
+effect to one column having at most 2 active bits.
+
+7.5   Selecting the Offsets of Re
+Following the procedure to determine a suitable Rw , for each of the 24 Rw
+candidates we go through the following steps to make a choice on Re :
+ 1. Re -kernel-filtering: the Re candidates are selected from the set of Rw can-
+    didates passing the Rw -kernel-filtering phase.
+ 2. Re -condition-filtering: for each Re candidate we take into account Rw . We
+    eliminate any Re that results in vortices with less than 4 bits remaining in
+    the kernel of θT for two successive rounds.
+ 3. Re -vortices-filtering: we apply each (Rw , Re ) candidate to the 10 canonical
+    vortices obtained by the combination of ρwest and ρeast . Candidates that
+    result in vortices with less than 6 bits in the kernel of θT for two successive
+    rounds when χ acts as the identity are discarded.
+ 4. Rρ -tie-break: we check the minimum squared correlation C2 of 3-round linear
+    trails in the kernel of θT for the (Rw , Re ) candidates.
+
+Re -Kernel-Filtering. The conditions for a Re candidate in this step are the same
+as the conditions for a Rw candidate in the Rw -kernel-filtering step, but applied
+to the additive inverses of the ρeast shift offsets that we denote as −Re . A Re
+candidate passes the step if it moves all bits of the 11 6-bit states at the input
+of θ to different columns after ρeast −1 . As all these 6-bit states are in-kernel, the
+bits before and after θ are the same. Thus, the list of candidates for −Re is the
+same as the list of candidates generated during the Rw -kernel-filtering step.
+
+
+                                          25
+Re -Condition-Filtering. As described in Sec. 6.3, we eliminate all candidates
+leading up to low-weight 3-round linear trails with 4-bit states in the kernel of
+θT in two consecutive rounds when χ acts as the identity. The conditions to
+discard those offsets coincide with Condition sets 3 applied to ρwest + ρeast and
+ensure that we don’t obtain a 3-round in-kernel linear trail with weight 24 when
+χ acts as the identity.
+
+Re -Vortices-Filtering. As stated in Sec. 6.3, we can generate all 10 canonical
+vortices obtained from the combination of Rw and Re . For each candidate, we
+apply ρeast −1 , ρwest as well as ρwest ◦ ρeast ◦ ρwest and require that all 6 bits in the
+10 vortices are moved to different columns after each operation. Doing so ensures
+that we avoid vortices with 6 active bits in the kernel of θT in two consecutive
+rounds which lead to 3-round linear trails with weight less than 36.
+
+Rρ -Tie-Break. For a (Rw , Re ) candidate, we model the linear propagation be-
+havior of the permutation with SMT and we check the minimum weight of
+3-round linear trails in the kernel of θT . We select a candidate that maximizes
+the minimum squared correlation C2 of trails over 3 rounds in the kernel of θT .
+The parameters for the linear layer are given in Table 6 in Sec. 8.
+
+7.6   Trail Search and Bounds
+Several of the steps in the selection process for the linear layer require the gener-
+ation of states up to some branch number. To generate these states, we use the
+tree traversal technique and we make use of the two-level tree search as well as
+canonicity and a score function, both defined in [19]. We further use Satisfiabil-
+ity Modulo Theories (SMT) and Mixed-Integer Linear Programming (MILP) in
+a hybrid manner [30] to obtain bounds on the differential and linear trails (see
+Appendix A). We then discuss our results in Table 5.
+
+Two-Level Tree Search. The two-level tree traversal strategy introduced in [19]
+allows efficiently generating all states with branch number below a given target.
+The strategy arranges the states in a tree with nodes identified by a row list,
+that specifies the active rows of the state. The parent of a state is the row list
+with the last row removed and the root of the tree is the empty list. The active
+rows are lists of active bits, indicated by their x-coordinates. When traversing
+the tree, going to the first child of a node corresponds to adding the smallest
+possible active row after its last active row in the list. Going to the sibling of a
+node corresponds to iterating the last active row to the next value. Lastly, going
+to the parent of a node is done by removing the last active row from the row
+list.
+
+Canonicity. The linear layer λ and the non-linear layer χ are both shift invariant
+with respect to translation along the horizontal axis. This symmetry property
+partitions the state space into equivalence classes and we only need to visit one
+node per class. The representative of such a class is called a canonical state and
+
+                                           26
+corresponds to the smallest state of its class, for some order relation. We adopt
+an order relation where a non-canonical state has no canonical descendants.
+Hence, we can safely prune complete subtrees of non-canonical state in the tree.
+
+Score. We denote by score the function that gives a lower bound on the branch
+number of a node and all its descendants. It allows us to safely prune complete
+subtrees from nodes with score higher than the target branch number. Moreover,
+we are only interested in low-branch number states and thus the states generation
+can be limited by the number of active bits in the θ-effect E. Since the addition
+of a bit in a state at the input of θ always adds 4 active bits at the output of θ
+with the number of affected columns, it is enough to generate all states with a
+score below 4 times the limit weight at the input.
+
+SMT and MILP Models for Analysis of Trails in Gaston. Since the automated
+methods for searching differential and linear trails are well known, we omit their
+description in this section due to space limitation. However, we discuss the mod-
+eling for both automated tools in Appendix A.
+
+Results. We use the parameters from Table 6 to compute the differential and
+linear properties of Gaston and compare them with Ascon in Table 5.
+
+
+
+Table 5: Differential and linear bounds of Gaston where kernel of E and P are
+taken at the first round. The exact numbers in the table represents the minimum
+values.
+
+                               Differential
+                                                Gaston          Ascon
+                                         Ker(E) = 0 Ker(E) 6= 0
+           Column-wise branch number         12      13 − 16      4
+           Weight of 2-round trail (B.1)     24      26 − 34      8
+           Weight of 3-round trail (B.1)   ≤ 106        -        40
+                                  Linear
+                                         Ker(P ) = 0 Ker(P ) 6= 0
+           Column-wise branch number          4          21          4
+             Weight of 2-round trail          8          42          8
+           Weight of 3-round trail (B.2)     34         ≥ 44        28
+
+
+
+
+    From Table 5, we observe that the column-wise branch number (differential)
+of Gaston’s mixing layer is three times larger than that of Ascon, while the
+linear column-wise branch number of both mixing layers are the same. The best
+3-round differential trail we find for Gaston has weight 106, much higher than
+Ascon’s 3-round differential trail with weight 40. Moreover, the optimal weight
+of Gaston’s 3-round linear trail is 34 while it is 28 for Ascon.
+
+
+                                        27
+Algorithm 1 Definition of Gaston
+    Parameters: Number q of rounds
+    for Round index i from 1 − q up to 0 do A = Ri (A)
+
+    The round function R:
+    for index
+          P j from P0 to 4 do Aj ←P (Aj ≪ ej )    P                                 . ρeast
+    E ← ( Aj + ( Aj ≪ r)) + ( (Aj ≪ tj ) + ( (Aj ≪ tj ) ≪ s))
+    for index j from 0 to 4 do Aj ← Aj + (E ≪ u)                                       .θ
+    for index j from 0 to 4 do Aj ← (Aj ≪ wj )                                      . ρwest
+    A0 ← A0 + Ci                                                                        .ι
+    for index j from 0 to 4 do Aj ← Aj + Aj+1 · Aj+2                                   .χ
+
+
+
+8     Specifications of Gaston and Use Case
+
+In this section we provide a non-ambiguous specification of the Gaston family of
+permutations and present a concrete use case.
+    As in Ascon-p and Xoodoo, the number of rounds in Gaston is not fixed but
+depends on the use case. The round function is the same for all rounds, except
+for the round constants. As in Xoodoo and Ascon-p, the round constants
+are numbered from the last round backwards, therefore, the last round always
+has the same round constant, irrespective of the number of rounds and likewise
+the penultimate round, etc. The round constants used in Gaston correspond
+to those used in Ascon-p . Algorithm 1 describes Gaston and uses the shift
+offset parameters alongside the round constants that are specified in Table 6.
+We denote by Aj · Aj 0 the bitwise product (AND) of rows Aj and Aj 0 while Aj
+denotes the bitwise complement of row Aj . A reference implementation of Gaston
+is available at https://gitlab.science.ru.nl/selhirch/circulanttwincpm.
+
+
+
+Table 6: List of parameters for the linear diffusion layer of Gaston at the left and
+the round constants Ci with −11 ≤ i ≤ 0, in hexadecimal notation at the right.
+       Index Rθ = (r s tj u) Rw Re
+                                              i   Ci     i   Ci   i   Ci   i   Ci
+         0         1 18 25 23 0     0
+         1              32    56   60      −11 0xf0 −8 0xc3 −5 0x96 −2 0x69
+         2              52    31   22      −10 0xe1 −7 0xb4 −4 0x87 −1 0x5a
+         3              60    46   27      −9 0xd2 −6 0xa5 −3 0x78 0 0x4b
+         4              63    43    4
+
+
+
+    A permutation by itself does not constitute as a cryptographic primitive, it
+must be used in a construction to be cryptographically useful. Constructions in-
+clude Even-Mansour [20] to build a block cipher, Farfalle [4] to build a deck func-
+tion (a variable-input-length variable-output-length pseudorandom function),
+sponge to build a hash function or an extendable output function (XOF) [5]
+
+
+                                         28
+and (monkey)duplex [7] as a basis for authenticated encryption schemes like
+Ascon. There is a actually quite a list of permutation-based constructions and
+modes and this list is still growing.
+    We believe Gaston, and in some cases a similar permutation using a transpose
+twin CPM, are competitive in most of these constructions but choosing the re-
+quired number of rounds would require some more comprehensive cryptanalysis.
+In Farfalle however the security depends mostly on differential and correlation
+properties and the number of rounds is easier to choose based on existing anal-
+ysis. Therefore we will concentrate on that use case in this subsection.
+    Farfalle makes use of 4 permutations that in the case of Xoofff all are
+6-round Xoodoo. When instantiated with Gaston, we propose the following:
+
+pc in the compression layer. In [21] it has been shown      that the strength against
+    inner collisions in Farfalle is given by maxa b DP2 (a, b) ≤ maxa,b DP(a, b)
+                                                    P
+    under reasonable assumptions. To achieve 128 bits of security with respect
+    to this, it is sufficient that maxa,b DP(a, b) ≤ 2−128 . With the current bounds
+    we are confident that 4 rounds are sufficient.
+pe in the expansion layer. This permutation needs to protect against state/key-
+    recovery attacks using output only and to avoid biases in the output. For
+    the latter the input-output correlations are important and therefore a Gaston
+    variant with a transpose twin CPM would be the logical choice. Assuming the
+    squared correlation of the best linear trails for this variant would be similar
+    to the DP of differential trails for Gaston, 4 rounds would be sufficient to
+    avoid detectable biases in the output. Moreover, based on the cryptanalysis
+    of [11], the high diffusion of the twin CPM in Gaston in comparison to that of
+    the CPM of Xoodoo would make 4 rounds sufficient to offer a comfortable
+    security margin with respect to state/key-recovery attacks.
+pd between the compression and expansion layer. Its role is to protect against
+    input/output attacks. Here the algebraic degree of the concatenation of pd
+    and pe is relevant rather than difference propagation and correlation. Here a
+    Gaston variant with a classical CPM would be the logical choice, thanks to
+    its low gate cost of 2 XORs per state bit. We believe again 4 rounds would
+    be sufficient, resulting in an algebraic degree close to 256.
+pb for deriving the initial mask from the key K. The purpose of this permutation
+    is to diffuse the key bits to the mask in case of a biased key. Here we propose
+    to take Gaston with 4 rounds where the reduction in rounds with respect to
+    Xoodoo is motivated by the higher diffusion of the twin CPM as compared
+    to the CPM.
+
+Thus, all 4 permutations have 4 rounds instead of 6 rounds. The rounds of
+Gaston are slightly more expensive per bit than those of Xoodoo but this is
+still compensated by the decrease in number of rounds. Additionally, the Gaston-
+based Farfalle instance operates on smaller blocks than Xoofff, 320 bits instead
+of 384. This is an advantage on constrained platforms. We believe this provides
+a promising perspective for the future adoption of Gaston and its variants.
+
+                                         29
+9   Conclusions
+
+Circulant twin CPMs are a generalization of CPMs used as mixing layer in Kec-
+cak-f and Xoodoo. Together with their transpose, they form a new category of
+mixing layer that has very high local diffusion in the form of a differential branch
+number (linear branch number for the transpose) not seen before for such a low
+cost. The optimization for differential or linear branch number is a new feature
+that allows to get a much higher specific branch number for the same amount
+of computation than MDS matrices.
+    We use a twin CPM in a proof-of-concept lightweight permutation Gaston
+that has a round function that has the same width, shape and gate cost as
+that of Ascon-p. Due to its high branch number, the best 2-round differential
+trails in Gaston have weight 24 vs. 8 in Ascon-p. Even though the linear branch
+number of our mixing layer in Gaston is only 4, the best 3-round linear trails
+of Gaston have weight 34 vs. 28 in Ascon-p. No 3-round differential trails were
+found with weight less than 106 while in Ascon-p there are 3-round differential
+trails with weight 40.
+
+
+Open Problems. For Gaston it would be interesting to have tighter bounds for the
+weight of differential trails over more than 2 rounds and linear trails over more
+than 3 rounds. This will require the introduction of new techniques. Moreover,
+interesting aspects to investigate are clustering of differential trails in differen-
+tials, clustering of linear trails in linear approximations and the validation of
+the approximation of the DP of differential trails by DP(Q) ≈ 2−wr (Q) . Another
+direction for future research is to explore permutations operating on states with
+other dimensions such as those of Xoodoo.
+    Finally, it would be interesting to more closely investigate the use of Gas-
+ton-like permutations within constructions like Farfalle, (monkey)-duplex such
+as Ascon or Xoodyak and others and do a comprehensive analysis of the per-
+mutation in that context.
+
+
+Acknowledgements
+
+Solane El Hirch is supported by the Cryptography Research Center of the Tech-
+nology Innovation Institute (TII), Abu Dhabi (UAE), under the TII-Radboud
+project with title Evaluation and Implementation of Lightweight Cryptographic
+Primitives and Protocols. Joan Daemen is supported by the European Research
+Council under the ERC advanced grant agreement under grant ERC-2017-ADG
+Nr. 788980 ESCADA. Rusydi H. Makarim did this work while he was at the
+Cryptography Research Center of the Technology Innovation Institute (TII),
+Abu Dhabi (UAE). We would also like to thank the reviewers of CRYPTO 2023
+and our shepherd Bart Preneel for their insightful suggestions which helped us
+in significantly improving the quality of paper.
+
+                                         30
+References
+ 1. Abdelkhalek, A., Sasaki, Y., Todo, Y., Tolba, M., Youssef, A.M.: MILP model-
+    ing for (large) s-boxes to optimize probability of differential characteristics. IACR
+    Trans. Symmetric Cryptol. 2017(4), 99–129 (2017), https://doi.org/10.13154/
+    tosc.v2017.i4.99-129
+ 2. Barreto, P., Rijmen, V.: The WHIRLPOOL hashing function. Sub-
+    mitted to NESSIE, Sept 2000, revised May 2003. Available online at
+    https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=
+    664b5286124b28abf2d30a07ba6f9e020f4138fe
+ 3. Beierle, C., Kranz, T., Leander, G.: Lightweight multiplication in GF(2n ) with
+    applications to MDS matrices. In: Robshaw, M., Katz, J. (eds.) Advances in
+    Cryptology - CRYPTO 2016 - 36th Annual International Cryptology Confer-
+    ence, Santa Barbara, CA, USA, August 14-18, 2016, Proceedings, Part I. Lec-
+    ture Notes in Computer Science, vol. 9814, pp. 625–653. Springer (2016), https:
+    //doi.org/10.1007/978-3-662-53018-4_23
+ 4. Bertoni, G., Daemen, J., Hoffert, S., Peeters, M., Van Assche, G., Van Keer, R.: Far-
+    falle: parallel permutation-based cryptography. IACR Trans. Symmetric Cryptol.
+    2017(4), 1–38 (2017), https://tosc.iacr.org/index.php/ToSC/article/view/
+    801
+ 5. Bertoni, G., Daemen, J., Peeters, M., Van Assche, G.: Sponge functions. Ecrypt
+    Hash Workshop 2007 (May 2007)
+ 6. Bertoni, G., Daemen, J., Peeters, M., Van Assche, G.: The Keccak reference
+    (January 2011), https://keccak.team/papers.html
+ 7. Bertoni, G., Daemen, J., Peeters, M., Van Assche, G.: Permutation-based encryp-
+    tion, authentication and authenticated encryption. In: Directions in Authenticated
+    Ciphers (2012)
+ 8. Biham, E., Shamir, A.: Differential cryptanalysis of DES-like cryptosystems. In:
+    Menezes, A., Vanstone, S.A. (eds.) Advances in Cryptology - CRYPTO ’90, 10th
+    Annual International Cryptology Conference, Santa Barbara, California, USA, Au-
+    gust 11-15, 1990, Proceedings. Lecture Notes in Computer Science, vol. 537, pp.
+    2–21. Springer (1990), https://doi.org/10.1007/3-540-38424-3_1
+ 9. Bordes, N., Daemen, J., Kuijsters, D., Van Assche, G.: Thinking outside the su-
+    perbox. In: Malkin, T., Peikert, C. (eds.) Advances in Cryptology - CRYPTO
+    2021 - 41st Annual International Cryptology Conference, CRYPTO 2021, Vir-
+    tual Event, August 16-20, 2021, Proceedings, Part III. Lecture Notes in Com-
+    puter Science, vol. 12827, pp. 337–367. Springer (2021), https://doi.org/10.
+    1007/978-3-030-84252-9_12
+10. Canteaut, A., Duval, S., Leurent, G., Naya-Plasencia, M., Perrin, L., Pornin, T.,
+    Schrottenloher, A.: Saturnin: a suite of lightweight symmetric algorithms for post-
+    quantum security. IACR Trans. Symmetric Cryptol. 2020(S1), 160–207 (2020),
+    https://doi.org/10.13154/tosc.v2020.iS1.160-207
+11. Cui, T., Grassi, L.: Algebraic key-recovery attacks on reduced-round Xoofff. In:
+    Dunkelman, O., Jr., M.J.J., O’Flynn, C. (eds.) Selected Areas in Cryptogra-
+    phy - SAC 2020 - 27th International Conference, Halifax, NS, Canada (Virtual
+    Event), October 21-23, 2020, Revised Selected Papers. Lecture Notes in Com-
+    puter Science, vol. 12804, pp. 171–197. Springer (2020), https://doi.org/10.
+    1007/978-3-030-81652-0_7
+12. Daemen, J., Hoffert, S., Van Assche, G., Van Keer, R.: The design of Xoodoo and
+    Xoofff. IACR Trans. Symmetric Cryptol. 2018(4), 1–38 (2018), https://tosc.
+    iacr.org/index.php/ToSC/article/view/7359
+
+
+                                           31
+13. Daemen, J., Rijmen, V.: The Design of Rijndael: AES - The Advanced Encryption
+    Standard. Information Security and Cryptography, Springer (2002), https://doi.
+    org/10.1007/978-3-662-04722-4
+14. Daemen, J.: Cipher and hash function design, strategies based on linear and differ-
+    ential cryptanalysis, PhD Thesis. K.U.Leuven (1995), http://jda.noekeon.org/
+15. Daemen, J., Mella, S., Van Assche, G.: Tighter trail bounds for Xoodoo. IACR
+    Cryptol. ePrint Arch. p. 1088 (2022), https://eprint.iacr.org/2022/1088
+16. Dobraunig, C., Eichlseder, M., Mendel, F., Schläffer, M.: Ascon v1.2. Submission to
+    NIST Lightweight Cryptography Standardization Process (round 2) (March 2019),
+    https://ascon.iaik.tugraz.at/
+17. Dobraunig, C., Eichlseder, M., Mendel, F., Schläffer, M.: Ascon v1.2: Lightweight
+    authenticated encryption and hashing. J. Cryptol. 34(3), 33 (2021), https://doi.
+    org/10.1007/s00145-021-09398-9
+18. Duval, S., Leurent, G.: MDS matrices with lightweight circuits. IACR Trans. Sym-
+    metric Cryptol. 2018(2), 48–78 (2018), https://doi.org/10.13154/tosc.v2018.
+    i2.48-78
+19. El Hirch, S., Mella, S., Mehrdad, A., Daemen, J.: Improved differential and lin-
+    ear trail bounds for ASCON. IACR Trans. Symmetric Cryptol. 2022(4), 145–178
+    (2022), https://doi.org/10.46586/tosc.v2022.i4.145-178
+20. Even, S., Mansour, Y.: A construction of a cipher from a single pseudoran-
+    dom permutation. In: Imai, H., Rivest, R.L., Matsumoto, T. (eds.) Advances
+    in Cryptology - ASIACRYPT ’91, International Conference on the Theory and
+    Applications of Cryptology, Fujiyoshida, Japan, November 11-14, 1991, Proceed-
+    ings. Lecture Notes in Computer Science, vol. 739, pp. 210–224. Springer (1991),
+    https://doi.org/10.1007/3-540-57332-1_17
+21. Fuchs, J., Rotella, Y., Daemen, J.: On the security of keyed hashing based on
+    an unkeyed block function. IACR Cryptol. ePrint Arch. p. 1172 (2022), https:
+    //eprint.iacr.org/2022/1172
+22. Guo, J., Peyrin, T., Poschmann, A.: The PHOTON family of lightweight hash
+    functions. In: Rogaway, P. (ed.) Advances in Cryptology - CRYPTO 2011 - 31st
+    Annual Cryptology Conference, Santa Barbara, CA, USA, August 14-18, 2011.
+    Proceedings. Lecture Notes in Computer Science, vol. 6841, pp. 222–239. Springer
+    (2011), https://doi.org/10.1007/978-3-642-22792-9_13
+23. Guo, J., Peyrin, T., Poschmann, A., Robshaw, M.J.B.: The LED block cipher. In:
+    Preneel, B., Takagi, T. (eds.) Cryptographic Hardware and Embedded Systems -
+    CHES 2011 - 13th International Workshop, Nara, Japan, September 28 - October
+    1, 2011. Proceedings. Lecture Notes in Computer Science, vol. 6917, pp. 326–341.
+    Springer (2011), https://doi.org/10.1007/978-3-642-23951-9_22
+24. Kranz, T., Leander, G., Stoffelen, K., Wiemer, F.: Shorter linear straight-line
+    programs for MDS matrices. IACR Trans. Symmetric Cryptol. 2017(4), 188–211
+    (2017), https://doi.org/10.13154/tosc.v2017.i4.188-211
+25. Li, C., Wang, Q.: Design of lightweight linear diffusion layers from near-mds
+    matrices. IACR Trans. Symmetric Cryptol. 2017(1), 129–155 (2017), https:
+    //doi.org/10.13154/tosc.v2017.i1.129-155
+26. Li, S., Sun, S., Shi, D., Li, C., Hu, L.: Lightweight iterative MDS matrices: How
+    small can we go? IACR Trans. Symmetric Cryptol. 2019(4), 147–170 (2019),
+    https://doi.org/10.13154/tosc.v2019.i4.147-170
+27. Li, Y., Wang, M.: On the construction of lightweight circulant involutory MDS
+    matrices. In: Peyrin, T. (ed.) Fast Software Encryption - 23rd International Con-
+    ference, FSE 2016, Bochum, Germany, March 20-23, 2016, Revised Selected Pa-
+
+
+                                          32
+    pers. Lecture Notes in Computer Science, vol. 9783, pp. 121–139. Springer (2016),
+    https://doi.org/10.1007/978-3-662-52993-5_7
+28. Liu, M., Sim, S.M.: Lightweight MDS generalized circulant matrices. In: Peyrin,
+    T. (ed.) Fast Software Encryption - 23rd International Conference, FSE 2016,
+    Bochum, Germany, March 20-23, 2016, Revised Selected Papers. Lecture Notes in
+    Computer Science, vol. 9783, pp. 101–120. Springer (2016), https://doi.org/10.
+    1007/978-3-662-52993-5_6
+29. Liu, M., Sim, S.M.: Lightweight MDS generalized circulant matrices. In: Peyrin,
+    T. (ed.) Fast Software Encryption - 23rd International Conference, FSE 2016,
+    Bochum, Germany, March 20-23, 2016, Revised Selected Papers. Lecture Notes in
+    Computer Science, vol. 9783, pp. 101–120. Springer (2016), https://doi.org/10.
+    1007/978-3-662-52993-5_6
+30. Makarim, R.H., Rohit, R.: Towards tight differential bounds of Ascon: a hybrid
+    usage of SMT and MILP. IACR Trans. Symmetric Cryptol. 2022(3), 303–340
+    (2022), https://doi.org/10.46586/tosc.v2022.i3.303-340
+31. Matsui, M., Yamagishi, A.: A new method for known plaintext attack of FEAL
+    cipher. In: Rueppel, R.A. (ed.) Advances in Cryptology - EUROCRYPT ’92, Work-
+    shop on the Theory and Application of of Cryptographic Techniques, Balatonfüred,
+    Hungary, May 24-28, 1992, Proceedings. Lecture Notes in Computer Science,
+    vol. 658, pp. 81–91. Springer (1992), https://doi.org/10.1007/3-540-47555-9_7
+32. Mella, S., Daemen, J., Van Assche, G.: New techniques for trail bounds and appli-
+    cation to differential trails in Keccak. IACR Trans. Symmetric Cryptol. 2017(1),
+    329–357 (2017)
+33. National Institute of Standards and Technology: Lightweight Cryptogra-
+    phy (LWC) Standardization project (2019), https://csrc.nist.gov/projects/
+    lightweight-cryptography
+34. Rijmen, V., Daemen, J., Preneel, B., Bosselaers, A., De Win, E.: The cipher
+    SHARK. In: Gollmann, D. (ed.) Fast Software Encryption, Third International
+    Workshop, Cambridge, UK, February 21-23, 1996, Proceedings. Lecture Notes in
+    Computer Science, vol. 1039, pp. 99–111. Springer (1996), https://doi.org/10.
+    1007/3-540-60865-6_47
+35. Sim, S.M., Khoo, K., Oggier, F.E., Peyrin, T.: Lightweight MDS involution ma-
+    trices. In: Leander, G. (ed.) Fast Software Encryption - 22nd International Work-
+    shop, FSE 2015, Istanbul, Turkey, March 8-11, 2015, Revised Selected Papers.
+    Lecture Notes in Computer Science, vol. 9054, pp. 471–493. Springer (2015),
+    https://doi.org/10.1007/978-3-662-48116-5_23
+36. Stoffelen, K., Daemen, J.: Column parity mixers. IACR Trans. Symmetric Cryptol.
+    2018(1), 126–159 (2018), https://doi.org/10.13154/tosc.v2018.i1.126-159
+37. Venkateswarlu, A., Kesarwani, A., Sarkar, S.: On the lower bound of cost of MDS
+    matrices. IACR Trans. Symmetric Cryptol. 2022(4), 266–290 (2022), https://
+    doi.org/10.46586/tosc.v2022.i4.266-290
+
+
+A    Automated Models for Analysis of Trails in Gaston
+In order to obtain bounds on the differential and linear branch number of Gaston,
+we use Satisfiability Modulo Theories (SMT) and Mixed-Integer Linear Program-
+ming (MILP) in a hybrid manner [30]. We discuss the construction of the models
+for both automated tools followed by the discussion on the obtained bounds. We
+restrict our discussion on the model for differential trails since the one for linear
+
+
+                                         33
+trails is analogous. The source codes for both differential and linear trails are
+available at https://gitlab.science.ru.nl/selhirch/circulanttwincpm.
+
+A.1     MILP Model for Computing Differential Weight
+Our MILP modeling consists of three steps, namely 1) model constraints for a
+single round, i.e., 5-bit χ S-box and the linear layer λ = ρwest ◦ θ ◦ ρeast , 2) add
+constraints for multiple rounds by extending the previous step, and 3) add the
+objective function to minimize the weight.
+
+Constraints for χ. Let {xi }4i=0 and {yi }4i=0 be binary variables denoting the
+input and output difference of χ, respectively. We use the approach from [1,
+Appendix B] to model weights of differential transitions. More precisely, we first
+divide the DDT of χ into multiple DDTs based on weights. Then for each DDT,
+we compute the minimized product-of-sum (POS) representation of Boolean
+functions using Logic Friday. Each POS form is then converted into a set of
+linear inequalities where these inequalities remove the impossible propagations
+in DDT [1, Sec. 3]. Finally, the differential transitions via χ can be modeled by
+the following inequalities.
+               x0 + x1 + x2 + x3 + x4 ≥ d,             x0 + x1 + x2 + x3 + x4 ≤ 5 · d
+                 y0 + y1 + y2 + y3 + y4 ≥ d,              y0 + y1 + y2 + y3 + y4 ≤ 5 · d
+                                                                 w(2) + w(3) + w(4) = d
+       4
+       X         4
+                 X
+          j
+         ai xi +   bji yi + cj − 10 · w(2) ≥ 0, for j = 0, . . . , `(w(2) ) − 1
+        i=0              i=0                                                                    (10)
+       4
+       X                 4
+                         X
+              dji xi +         eji yi + f j − 10 · w(3) ≥ 0, for j = 0, . . . , `(w(3) ) − 1
+       i=0               i=0
+      4
+      X                4
+                       X
+            gij xi +         hji yi + k j − 10 · w(4) ≥ 0, for j = 0, . . . , `(w(4) ) − 1 .
+      i=0              i=0
+
+    In (10), d, w(2) , w(3) , w(4) are binary variables. We enforce d = 1 if and only
+if the S-box is active. The variables w(2) , w(4) , w(4) mean the difference prop-
+agates through χ with weight either 2, 3 and 4, respectively. The number of
+linear inequalities (number of terms in the POS representation) corresponding
+to weight 2, 3 and 4 is given by `(w(2) ), `(w(4) ) and `(w(4) ), respectively. We pro-
+vide the values of `(w(2) ), `(w(4) ), `(w(4) ) and coefficients (aji , bji , cj ), (dji , eji , f j )
+and (gij , hji , k j ) in our codes.
+
+Constraints for Linear layer. Let {yi }319                   319
+                                               i=0 and {xi }i=0 be the input and
+output difference of the linear layer, respectively. Since the linear layer is a com-
+position of different operations (see Sec. 3.1 and 3.2), we explain the modeling
+procedure for each individual operation. For simplicity, in this section we use
+the notation [i + j] which means i + j mod 64.
+
+
+                                                     34
+State after ρeast . This operation performs left cyclic rotation on each row of the
+input state with shift offset vector Re = (e0 , e1 , e2 , e3 , e4 ). Accordingly, there
+are no new constraints and the updated state is given by
+             z64·j+i ← y64·j+ [ej +i] , for i = 0, . . . , 63 and j = 0, . . . , 4 .       (11)
+
+The P Operation. For each column of the state in (11), this operation computes
+the column-parity. To model it, we simply need to consider the bitwise XOR
+modeling of 5 binary variables. For each column, this can be done as follows.
+    zi + z64+i + z128+i + z192+i + z256+i + pi = 2 · ui , for i = 0, . . . , 63 .          (12)
+Here pi ∈ {0, 1} and ui ∈ {0, 1, 2, 3}. Notice that pi = 1 if and only if the
+Hamming weight of the i-th column, i.e., (zi , z64+i , z128+i , z192+i , z256+i ) is odd.
+
+The Q Operation. This operation has two steps. First, the rows 0, 1, 2, 3 and 4 of
+state in (11) are cyclically shifted to the left by t0 , t1 , t2 , t3 and t4 , respectively.
+Second, we compute the column-parity of this state. Thus, similar to the P
+operation, we need to model the bitwise XOR modeling of 5 binary variables.
+For columns i = 0, . . . , 63, the constraints are as follows.
+     z[i+t0 ] + z64+[i+t1 ] + z128+[i+t2 ] + z192+[i+t3 ] + z256+[i+t4 ] + qi = 2 · vi .
+Here qi ∈ {0, 1} and vi ∈ {0, 1, 2, 3}.
+
+The E Operation. This operation computes the θ-effect using variables {pi }63   i=0 ,
+{qi }63
+     i=0 and their shifted versions. To model it, we have the following constraints.
+               pi + p[i+r] + qi + q[i+s] + gi = 2 · bi , for i = 0, . . . , 63 .           (13)
+In (13), we have gi ∈ {0, 1}, bi ∈ {0, 1, 2} and (r, s) are the shift offsets from Rθ .
+
+State after XORing Shifted Version of Variables {gi }63        i=0 . Given the shift offset
+u from Rθ , consider {g[i+u] }63
+                               i=0 . Let {f  }319
+                                            i i=0  be  binary     variables denoting state
+after XORing {g[i+u] }63i=0 to each  row  in (11). We    have    the following constraints
+for this operation.
+        g[i+u] + z64·j+i − f64·j+i ≥ 0
+                                                               
+                                                               
+                                                                
+        g[i+u] − z64·j+i + f64·j+i ≥ 0
+                                       
+                                                               
+                                                                
+                                           for i = 0, . . . , 63 for j = 0, . . . , 4 (14)
+      −g[i+u] + z64·j+i + f64·j+i ≥ 0                         
+                                                                
+                                                               
+    −g[i+u] − z64·j+i − f64·j+i ≥ −2
+                                                               
+
+Note that the four inequalities in (14) remove the impossible propagations (0, 0, 1),
+(0, 1, 0), (1, 0, 0) and (1, 1, 1).
+
+State after ρwest . This operation performs left cyclic rotation on each row of
+the input state {fi }319
+                     i=0 with shift offset vector Rw = (w0 , w1 , w2 , w3 , w4 ). The
+output state is given as follows.
+             x64·j+i ← f64·j+[wj +i] , for i = 0, . . . , 63 and j = 0, . . . , 4 .        (15)
+
+
+                                               35
+Constraints for Multiple Rounds. We add the aforementioned constraints
+for 64 S-boxes and for the linear layer in each round. Furthermore, we add a
+constraint that the sum of input active bits is at least 1 in order to ensure a
+nonzero input difference.
+
+                                    (2)          (2)    (3)        (3)         (4)   (4)
+Objective Function. Let wi,0 , . . . , wi,63 , wi,0 , . . . , wi,63 , wi,0 , . . . , wi,63 be the
+variables denoting the activity (along with weights) of 64 S-boxes at round i.
+Then for r rounds, the objective function as given in (16) is to minimize the
+weight of a r-round differential trail.
+                              r−1 X
+                             X   63                                           
+                                               (2)        (3)            (4)
+                       min                2 · wi,j + 3 · wi,j + 4 · wi,j                    (16)
+                              i=0 j=0
+
+
+A.2     SMT Modeling
+Constraints for the Linear Layer. The SMT constraints for the differential (resp.
+linear) propagation of θ is immediate to derive from its definition in (2) (resp.
+its transpose in (9)). This is also the case for the differential propagation of ρeast
+and ρwest , in which their transpose for the linear propagation performs bitwise
+rotation in the opposite direction.
+
+Constraints for χ. For the differential propagation of the nonlinear layer χ,
+we construct the set of constraints for χ based on a Boolean function, say f ,
+that defines the (in)-validity of a differential. Concretely, for any nonzero weight
+differential (x, y), we define f (xky) = 1 and 0 otherwise, where xky denotes
+the vector concatenation of x and y. The constraints that represent f can be
+constructed in a row-by-row basis from the DDT of χ. The inclusion of the weight
+in the model is immediate to derive using an auxiliary variable that stores the
+weight from a given differential. Note that this approach is generic and works
+for any small-size permutation.
+
+Reducing Search Time. Due to the complexity of the function θ in Gaston, the
+SMT solver takes a substantial amount of time to find a trail of weight less than
+a chosen bound, even for a satisfiable instance of a small number of rounds. One
+strategy to reduce the search time of a SMT solver is to add new restrictions that
+simplify the constraints. We are particularly interested in a set of trails where
+the effect of θ on a state at a particular round is minimal such as the states that
+lie in the θ-kernel.
+
+B     Differential and Linear Trails of Gaston
+B.1    Differential Trails
+Figure 1 depicts the optimal 2-round differential trail of Gaston while Fig. 2 gives
+a differential trail for 3-round with the best found weight of 106. Note that this
+may not be the optimal weight of a 3-round trail.
+
+                                                 36
+................................................................
+..........1...................................1.................
+1...............................................................
+.....1.......1...........................1......................
+................................................................
+---------------------------------------------------------------- χ
+................................................................
+..........1...................................1.................
+1...............................................................
+.....1.......1...........................1......................
+................................................................
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ρeast
+................................................................
+..............1...................................1.............
+..........................................1.....................
+..............1...........................1.......1.............
+................................................................
+---------------------------------------------------------------- θ
+................................................................
+..............1...................................1.............
+..........................................1.....................
+..............1...........................1.......1.............
+................................................................
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ρwest
+................................................................
+......................1...................................1.....
+...........1....................................................
+....1...........................1...........................1...
+................................................................
+---------------------------------------------------------------- χ
+...........1....................................................
+...........1..........1...................................1.1...
+...........1................................................1...
+....1...........................1...........................1...
+......................1.........................................
+
+
+Fig. 1: 2-round differential trail with 12 [6, 6] active S-boxes and weight 24 [12,
+12]
+
+
+B.2         Linear Trails
+Figure 3 depicts the optimal 3-round linear trail of Gaston with weight 34.
+
+
+C        Inverse of θ
+
+In Fig. 4 we illustrate the density of the inverse of θ: it corresponds to the
+preimage of a state that has a single active bit at position (0, 0). Other states
+with a single active bit have preimages with similar shape and Hamming weight.
+
+
+D        Test Vectors
+
+
+
+
+                                                                        37
+.............................................1.................1
+...........................................................1....
+......................................1.................1.......
+...........................................1..........1......1..
+...............................1.................1..............
+---------------------------------------------------------------- χ
+.............................................1.................1
+...........................................................1....
+......................................1.................1.......
+...........................................1..........1......1..
+...............................1.................1..............
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ρeast
+.............................................1.................1
+...............................................................1
+................1.................1.............................
+................1..........1......1.............................
+...........................1.................1..................
+---------------------------------------------------------------- θ
+.............................................1.................1
+...............................................................1
+................1.................1.............................
+................1..........1......1.............................
+...........................1.................1..................
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ρwest
+.............................................1.................1
+.......1........................................................
+...1.............................................1..............
+..................................1..........1......1...........
+..1.............................................1...............
+---------------------------------------------------------------- χ
+...1.........................................1.................1
+.......1........................................................
+...1..............................1.............11..1...........
+..................................1.............1...1...........
+..1.............................................1...............
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ρeast
+...1.........................................1.................1
+...........1....................................................
+............1.............11..1..............1..................
+.......1.............1...1......................................
+............................................1.................1.
+---------------------------------------------------------------- θ
+...1...1.............1................1.....11.....1.1.........1
+.......1...1.........1................1.....1......1.1..........
+.......1....1........1....11..1.......1.....11.....1.1..........
+.........................1............1.....1......1.1..........
+.......1.............1................1............1.1........1.
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ρwest
+...1...1.............1................1.....11.....1.1.........1
+...............1...1.........1................1.....1......1.1..
+.......1.....11.....1.1.................1....1........1....11..1
+.....1.1...................................1............1.....1.
+........1.1........1........1.............1................1....
+---------------------------------------------------------------- χ
+...1.........11......1................1.....1......1.1.....1.1..
+..............11...1.........1..........1..1..1.....1........11.
+.............11.....1.1.....1...........1..1.1........1....11.11
+.....1.1...................................1.1..........1.....11
+........1.1.................1.............1..................1..
+
+
+Fig. 2: 3-round differential trail with 50 [10, 9, 31] active S-boxes and weight 106
+[20, 19, 67]
+
+
+
+
+                                                                        38
+............................1...............................1...
+...1.........................1..................................
+...1.........................1..................................
+............................................................1...
+...........1....................1...........................1...
+----------------------------------------------------------------        χ
+............................1...................................
+...1.........................1..................................
+................................................................
+............................................................1...
+...........1....................1...............................
+----------------------------------------------------------------        ρeast
+............................1...................................
+.......1.........................1..............................
+................................................................
+.................................1..............................
+.......1....................1...................................
+----------------------------------------------------------------        θ
+............................1...................................
+.......1.........................1..............................
+................................................................
+.................................1..............................
+.......1....................1...................................
+----------------------------------------------------------------        ρwest
+............................1...................................
+...............1.........................1......................
+................................................................
+...................................................1............
+............................1....................1..............
+----------------------------------------------------------------        χ
+................................................................
+...............1.........................1......................
+.........................................1......................
+...................................................1............
+............................1....................1..............
+----------------------------------------------------------------        ρeast
+................................................................
+...................1.........................1..................
+...................1............................................
+........................1.......................................
+........................1....................1..................
+----------------------------------------------------------------        θ
+................................................................
+...................1.........................1..................
+...................1............................................
+........................1.......................................
+........................1....................1..................
+----------------------------------------------------------------        ρwest
+................................................................
+...........................1.........................1..........
+....................................................1...........
+..........................................1.....................
+..1..........................................1..................
+----------------------------------------------------------------        χ
+.............................................1..................
+...........................1.........................1..........
+....................................................11..........
+..........................................1.........1...........
+..1.......................................1..1..................
+
+
+Fig. 3: 3-round linear trail with [6, 5, 6] active S-boxes and weight 34 [12, 10, 12]
+
+
+
+
+                                         39
+1001011011110010010010100100100001011100100101111100001000011110
+0100000010101100000011011000110000001100100001011110101001000011
+0111011100101010101101111100110111001100011011001110010010000100
+1100101000010111100000110001010100001100111011101101000010011110
+1010110110011010100101001001000011001010111100000101110001100000
+
+
+Fig. 4: θ-preimage of a state with a single active bit at (0, 0), with θ the mixing
+layer in Gaston
+
+
+
+
+                0x0000000000000000           0x88B326096BEBC635
+                0x0000000000000000           0x6CA8FB64BC5CE6CA
+                0x0000000000000000           0xF1CE3840D8190713
+                0x0000000000000000           0x54D70067438689B5
+                0x0000000000000000           0xF17FE863F958F32B
+
+                0x1F4AD9906DA6A254           0x1BA89B5B5C4583B6
+                0x4B84D7F83F2BDDFA           0x22135709AE53417D
+                0x468A0853578A00E3           0x9847B975E9EC9F3D
+                0x6C05A0506DF7F66E           0xCE042DF2A402591D
+                0x4EFB22112453C964           0x563EC68FC30307EA
+
+                0xFFFFFFFFFFFFFFFF           0x3117D51B14937067
+                0x0123456789ABCDEF           0x338F17F773C13F79
+                0xFEDCBA9876543210           0xDFB86E0868D252AB
+                0xAAAAAAAAAAAAAAAA           0x0D461D35EB863DE7
+                0x0101010101010101           0x08BCE3E354C7231A
+Table 7: Test vectors for 12-rounds of Gaston. The input and its coresponding
+output are on the left-side and the right-side respectively.
+
+
+
+
+                                        40
+

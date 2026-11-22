@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "local_links_checked": 16,
+  "report_rows": 2,
+  "browser_preview": "unavailable: computer-use inventory contains no browsers",
+  "checks": "HTML parsing, local links, labels, values and arithmetic checked; no browser screenshot"
+}

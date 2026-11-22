@@ -1,0 +1,39 @@
+{
+  "id": "58e1b97f62ace491",
+  "algorithm": "Gaston",
+  "rounds": 2,
+  "start_round_index": 8,
+  "delta_core": [
+    "0100000180000500",
+    "0001000001800004",
+    "c000020000800000",
+    "0100004000006000",
+    "0020000800000c00"
+  ],
+  "lambda_core": [
+    "0200200200222020",
+    "2002002002220200",
+    "0000000000000000",
+    "0000000000000000",
+    "0000000000000000"
+  ],
+  "status": "completed",
+  "method": "HNW26 zero-value-mask model with exact first-DDT summation",
+  "backend": "affine constraints and exact quadratic sign sum",
+  "correlation": {
+    "numerator": "1",
+    "denominator": "262144",
+    "log2_abs": -18.0
+  },
+  "statistics": {
+    "rank": 18,
+    "quadratic_terms": 0,
+    "inconsistent_constraints": false
+  },
+  "certificate": {
+    "nonzero_base_value_masks_killed": 1984,
+    "total": 1984,
+    "full_equals_zero_certified_for_two_chi": true
+  },
+  "elapsed_seconds": 0.011906534004083369
+}

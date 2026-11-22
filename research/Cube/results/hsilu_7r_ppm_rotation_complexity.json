@@ -1,0 +1,94 @@
+{
+  "status": "Conditional cost estimate for a specified schedule; not a verified full key-recovery result",
+  "model": "Hsilu initialization prefix (IV,K0,K1,N0,0), 7 rounds, full 64-dimensional N0 cube, first 128 output bits observable",
+  "assumptions": [
+    "The final 128-bit cube signature leaves sufficiently few K1 candidates; constant candidate count is used for the online estimate.",
+    "Uniform intermediate coefficient key-degree bound is 32; each 32-variable coefficient is recovered with 2^32 key settings and a 2^32-point nonce cube per setting.",
+    "Rotation representatives are used for coefficient recovery AND product accumulation, with actual orbit lengths respected.",
+    "All representative coefficient ANFs are stored densely; this is not a minimum-memory claim.",
+    "Main time model uses one XOR-equivalent unit per 64-bit AND-XOR accumulation, as an idealized comparison with the paper; large-table access cost is also parameterized separately."
+  ],
+  "subset_count": {
+    "value": 1832624140942590534,
+    "log2": 60.66861663700344,
+    "unit": "32-element subsets"
+  },
+  "rotation_orbits": {
+    "value": 28634752211620266,
+    "log2": 54.668616637476646,
+    "unit": "orbits"
+  },
+  "coefficient_recovery": {
+    "value": 528217945661847618267698151718649856,
+    "log2": 118.66861663747665,
+    "unit": "six-round Hsilu prefix evaluations"
+  },
+  "coefficient_recovery_seven_round_equivalent": {
+    "value": 4.5275823913872656e+35,
+    "log2": 118.4462242161402,
+    "unit": "seven-round Hsilu equivalents, linear round scaling"
+  },
+  "product_accumulation": {
+    "value": 2641089728309238091338490758593249280,
+    "log2": 120.99054473236401,
+    "unit": "64-bit AND-XOR accumulation pairs"
+  },
+  "time_parameterization": "T = (6/7)*prefix_calls + eta*pair_operations + lower-order work; eta is seven-round Hsilu equivalents per 64-bit pair",
+  "xor_only_eta": 0.007936507936507936,
+  "product_xor_only_equivalent": {
+    "value": 2.0961029589755855e+34,
+    "log2": 114.0132648088641,
+    "unit": "seven-round Hsilu equivalents"
+  },
+  "main_terms_xor_only_total": {
+    "value": 4.737192687284824e+35,
+    "log2": 118.51151567639192,
+    "unit": "seven-round Hsilu equivalents"
+  },
+  "sensitivity_two_xor_units_per_pair": {
+    "value": 4.946802983182383e+35,
+    "log2": 118.57397976333857,
+    "unit": "seven-round Hsilu equivalents"
+  },
+  "sensitivity_one_permutation_per_pair": {
+    "value": 3.0938479674479645e+36,
+    "log2": 121.21881372003713,
+    "unit": "seven-round Hsilu equivalents"
+  },
+  "data": {
+    "value": 18446744073709551616,
+    "log2": 64.0,
+    "unit": "distinct-nonce queries, one 128-bit output block per query"
+  },
+  "raw_observed_data_bits": {
+    "value": 2361183241434822606848,
+    "log2": 71.0,
+    "unit": "bits, before streaming XOR accumulation"
+  },
+  "dense_coefficient_storage": {
+    "value": 39355303768951268365062635520,
+    "log2": 94.99054473236401,
+    "unit": "bits"
+  },
+  "dense_coefficient_storage_bytes": {
+    "value": 4919412971118908545632829440,
+    "log2": 91.99054473236401,
+    "unit": "bytes"
+  },
+  "online_work": "2^64 oracle queries + L*2^64 candidate verification work, where L is the number of K1 candidates; approx 2^65 with L=1 under the usual unit convention",
+  "matching_precomputation": "Convert the recovered 64-variable signature ANF to its truth table using a fast Mobius transform, then build a signature-to-key index. Do not evaluate an exponentially large ANF independently for every key.",
+  "ascon_paper_2021_194_section_6_2": {
+    "reported_time_log2": 123.28,
+    "reported_data_log2": 64,
+    "reported_memory_bits_log2": 101,
+    "coefficient_interpolation_points": 1846943453,
+    "coefficient_only_ascon_to_hsilu_operation_count_ratio": 27.52160210004742,
+    "caution": "The two time units are their respective cipher's seven-round permutations, not an assertion of equal wall-clock cost."
+  },
+  "limitations": [
+    "No full seven-round signature, collision distribution, or full key-recovery success rate has been computed.",
+    "The degree-32 witness for a six-round intermediate coefficient does not establish that the final seven-round signature is nonconstant or discriminating.",
+    "The total neglects coefficient-cube XOR accumulation and setup overhead, like the paper's leading operation estimate; decimals are not hardware predictions.",
+    "These are operation counts for the specified interpolation and storage schedule, not optimality claims."
+  ]
+}

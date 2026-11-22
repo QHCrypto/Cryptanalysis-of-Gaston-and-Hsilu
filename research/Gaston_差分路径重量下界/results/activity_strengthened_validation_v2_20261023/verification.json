@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "scope": "Exported lossy model encoding; not a solved three-round optimum",
+  "variables": 3266,
+  "constraints": 11420,
+  "xor_gates_exhaustively_verified": 1408,
+  "chi_columns_checked": 192,
+  "chi_input_output_pairs_checked": 1024,
+  "lossy_supported_pairs": 962,
+  "true_ddt_supported_pairs": 317,
+  "every_true_ddt_pair_embeds_at_no_greater_cost": true,
+  "lossy_minimum_cost_by_input_hw": [
+    0,
+    2,
+    3,
+    3,
+    4,
+    4
+  ],
+  "reference_linear_cases_per_layer": 353,
+  "reference_linear_layers_checked": 2,
+  "linear_rank": 320,
+  "initial_linear_layer_can_be_eliminated_for_free_input": true,
+  "column_translation_symmetry_checked": true,
+  "activity_profiles_enabled": true,
+  "activity_or_hull_enabled": true,
+  "count_minima_by_effect_nonzero_flags": {
+    "00": 18,
+    "01": 22,
+    "10": 22,
+    "11": 22
+  },
+  "sha256": {
+    "/home/yxb/分析/Gaston_差分路径重量下界/results/activity_strengthened_validation_v2_20261023/model.mps": "f23d65e2a6ff805c2f71dc27a02e37e4535f09a1ee5f3b0ceec72871d522594d",
+    "/home/yxb/分析/Gaston_差分路径重量下界/results/activity_strengthened_validation_v2_20261023/encoding.json": "1dc2fcc15b0e65d151dbf01be54fc9f4ac8b457282ab77010613bc293c31a433",
+    "/home/yxb/分析/Gaston_差分路径重量下界/gaston_3round_lossy.cpp": "1ed54ba2f0517a1e5565a9ce5c00547ec9ca91912e6e6e0e191a225f3b65c22b",
+    "/home/yxb/分析/Gaston_差分路径重量下界/gaston_3round_lossy": "7ad643cde3175d84b7eb2effded47dd4cc978d36564e6c488e475add7fa9d3e6",
+    "/home/yxb/分析/gaston_ref/gaston/implementation/reference/gaston.c": "4a0ce39ce158f410111aef7a985c2a7f8b7752e669162ec78e20eaf56bd2f5dc",
+    "/home/yxb/分析/gaston_ref/gaston/implementation/reference/gaston.h": "3fbca231939b1369e9ee093689b60eb1df716a1b4f0dea0da90fc3aacb57bc0a",
+    "/home/yxb/分析/Gaston_差分路径重量下界/src/activity_profile_data.hpp": "827214c9f71f9712204a155455fc30f25d96c225a1535568855930c800f89b18",
+    "/home/yxb/分析/Gaston_差分路径重量下界/references/activity_profiles.json": "7965612f47decfac18302f35bfca086824255653ea8576dfbb6b5f630fb1f8fd"
+  }
+}

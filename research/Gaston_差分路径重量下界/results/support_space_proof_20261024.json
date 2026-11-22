@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "checked_local": "2026-10-24T21:25:52.973633+08:00",
+  "conclusion": "Every nonzero free-endpoint Gaston-320 three-chi-layer XOR differential trail has weight at least 44 under the agreed local-DDT-weight definition",
+  "weight_lower_bound": 44,
+  "new_computation": "Exact finite GF(2) enumeration and full-support nullspace checks, without floating-point MILP inference",
+  "historical_single_layer_proofs_replayed": false,
+  "source_scope": "Uses the prior completed single-layer activity results and outside-kernel branch proof, with their files hash-checked",
+  "branch_reports": {
+    "6": {
+      "complete_anchored_supports_checked_twice": 7028847,
+      "left_rank_deficient_orbits": 13,
+      "both_rank_deficient_orbits": 0,
+      "both_exact_full_support_orbits": 0,
+      "maximum_candidate_nullity": 0,
+      "nonzero_candidate_vectors_rechecked": 0,
+      "double_kernel_branch_infeasible_for_any_weight": true
+    },
+    "7": {
+      "complete_anchored_supports_checked_twice": 67945521,
+      "left_rank_deficient_orbits": 910,
+      "both_rank_deficient_orbits": 1,
+      "both_exact_full_support_orbits": 0,
+      "maximum_candidate_nullity": 1,
+      "nonzero_candidate_vectors_rechecked": 2,
+      "double_kernel_branch_infeasible_for_any_weight": true
+    },
+    "8": {
+      "complete_anchored_supports_checked_twice": 553270671,
+      "left_rank_deficient_orbits": 32332,
+      "both_rank_deficient_orbits": 104,
+      "both_exact_full_support_orbits": 0,
+      "maximum_candidate_nullity": 1,
+      "nonzero_candidate_vectors_rechecked": 208,
+      "double_kernel_branch_infeasible_for_any_weight": true
+    }
+  },
+  "middle9_analytic_lower_bound": 45,
+  "remaining_below44_cases": [],
+  "sha256": {
+    "src/support_rank_probe.cpp": "e6225ea52f483429aa1e870d49456f8595558d7e70df07c18cf816e3d06237ae",
+    "src/verify_support_ranks.cpp": "5b17e7937f595b72ee114623eee03757df102de79bf3dd8cc626468fdb793a89",
+    "src/build_support_reference.py": "6795d3a3005875bf2bc85b1727a40d5b86ed77e37db26ec513debc2c0528f117",
+    "src/analyze_support_spaces.py": "2c55fbe13dc704f78309c3bd9497727a49bf30df832df6898af61d4ecfd7439d",
+    "src/verify_support_proof.py": "e9bb64e6768d358ac161265f4d64b3bda7cdc2dcac5f0846a240807b323e7269",
+    "src/run_support_proof.py": "60c16577f26614a9a68598114579ec1903e705473c27c3aa9217726dac99df13",
+    "src/audit_kernel_structure.py": "8cc4c3fcc3acd75383362acc69dd74211b285320298a575658fc202ac9cc528e",
+    "src/verify_lossy_model.py": "8dbd4496cd74351a8a5fd2f2e6c2bd36ef0a6c240fef1cbb8233c2ba7ba46184",
+    "src/build_activity_profiles.py": "8512d74950590f3b30b0d3322ae937f5675099a27e22bfc7ee66b773725cc3c7",
+    "Makefile": "88802277759ef14dcf786630280cc1321020df2a0ffe374475ac1270610701cf",
+    "src/support_rank_probe": "82e6468319b1ddd501e88e510c6f3026ae3d35e99a374af2093cacaf2a7be06c",
+    "src/verify_support_ranks": "804c0e3d764668c259c9c778e4f1cdc8407c9f2c6c70c90e2dd6948318972738",
+    "results/support_reference_verification_20261024.json": "672fb0ea7c1967614659d5d522b2107a17c90231013c4d9923b78a1c2ff847dd",
+    "results/support_reference_matrices_20261024.txt": "e65e1dbcd573ab0a95125fca087d1e6d4a24f53fb1d8c559d9ef1179f542785c",
+    "results/support_space_analysis_20261024.json": "a040e4ad02e8c489cff0768485b60ae001986c64d71530a435442ad2d789eb11",
+    "references/activity_profiles.json": "7965612f47decfac18302f35bfca086824255653ea8576dfbb6b5f630fb1f8fd",
+    "results/support_rank_six_20261024.json": "ce08b3d1470eef0c5be9a507244b0667ec8e0a6a139f331c02ca5e03a45f708a",
+    "results/support_rank_six_independent_20261024.json": "5d6df1abdff9f31ec7446d9e0b596208c4322f3045f977b9af54b2167865d950",
+    "results/support_rank_seven_20261024.json": "e03d3d5eb803b1e9ee9280b41458c08f63ddb27cc7a98a4d254409396b731186",
+    "results/support_rank_seven_independent_20261024.json": "06171890574d55f9ef74b2f7f33c3b3761e9306361a7ca11dcca253d25f4fdd6",
+    "results/support_rank_eight_20261024.json": "a07d94d778c53fd0c65e59b354c480deb189cf75cd43fde7c080e1b4cc0d3a91",
+    "results/support_rank_eight_independent_20261024.json": "8fe89b3b4abe6ef9b000301cdeea750ae5e3c90ca6a2aca8359abe2e5561a3e4"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "recorded_at": "2026-10-20T19:09:07.718940+08:00",
+  "system": "Linux-7.0.0-38-generic-x86_64-with-glibc2.39",
+  "python": "3.12.3",
+  "Kissat": {
+    "version": "4.0.4",
+    "revision": "8af8e56f174b778aef3aa45af9f739b2a5f492c2",
+    "source": "https://github.com/arminbiere/kissat",
+    "arguments": [
+      "--phase=0"
+    ]
+  },
+  "drat_trim": {
+    "source": "https://github.com/marijnheule/drat-trim",
+    "revision": "2e3b2dc0ecf938addbd779d42877b6ed69d9a985",
+    "arguments": [
+      "CNF",
+      "-i"
+    ],
+    "proof_input": "gzip -dc PROOF.drat.gz, binary DRAT on stdin"
+  },
+  "python_sat_version": "1.9.dev15",
+  "Gurobi": "13.0.2, exploratory only; not needed by the final proof",
+  "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+  "final_solver_workers": 8,
+  "source_and_binary_hashes": {
+    "tools/kissat": "d9d3b3255024d8955b7e24527fe733e207ac4f61bdaa6ed342d189a3e9c63801",
+    "tools/drat-trim/drat-trim": "92f0aa9575ed519d66a99b8b1b3dde6ece4618ae4c202a3a4b200265dda0aa7a",
+    "make_cnf.py": "ef29283ee45ede0b1b97cf53f7beb78bdb191cbab0075a64da07a7f8dc9cf1fb",
+    "solve_effects.py": "d700086a93957b110f7ee8fea6c1bd4819eaf58e4bd881178cac6165d8f3a611",
+    "verify_proof.py": "ca6d4b94f37ab3c0784233dece3f4846e76d3295e92929471ffa652ad40161cc",
+    "verify_matchings.py": "5d271d5f0a799a3f8b3c6bac2c4581092d37014657671a2eafc84b1af78e80b9",
+    "validate_encoding.py": "981bb2ce604871db26140612e4d79b1911afb5b326b14f41f2c96e7b5c261e22",
+    "activity_matching.hpp": "a7f520122f0f1f31de54ce40be6c9c39870b2e91fe20acff7a802d35e3e16db7",
+    "enumerate_effects.cpp": "f828d574408cf5035be0dac5f1eb412c97e4b2edf0baecc1a6431979fe0065e7",
+    "extend_effects.cpp": "64b25f1c7d82994d69332fe36081d32cbed3b5a55e7da25bafbffd4b2b9b6b64",
+    "total15.cnf": "f00a2df2015d489fb4e1c09507eb8c2eb7f45c20603faed238a86bc59f369959"
+  },
+  "independent_checks": [
+    "320 basis inputs, zero input, 128 deterministic random inputs",
+    "regenerated base CNF byte equality",
+    "regenerated matching certificates byte equality",
+    "all matching edges and orbit coverage checked with Python standard library",
+    "every retained UNSAT proof checked by drat-trim"
+  ],
+  "base_cnf_model": "full Gaston difference; E!=0; total nonzero 5-bit columns<=15; E[0]=1 rotation anchor; no fixed input/output column count",
+  "all_1667_drat_proofs_checked": true,
+  "final_aggregate_verification": "PASS"
+}

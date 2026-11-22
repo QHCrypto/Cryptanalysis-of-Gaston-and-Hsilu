@@ -1,0 +1,68 @@
+{
+  "id": "R3_p8_c53_m1",
+  "algorithm": "Hsilu",
+  "rounds": 3,
+  "start_round_index": 9,
+  "delta_core": [
+    "0000000000000000",
+    "0000000000000000",
+    "0000000000000000",
+    "0000000000000001",
+    "0000000000000000"
+  ],
+  "lambda_core": [
+    "0020000000000000",
+    "0000000000000000",
+    "0000000000000000",
+    "0000000000000000",
+    "0000000000000000"
+  ],
+  "scope": "whole",
+  "method": "original DATF Algorithm 3",
+  "status": "completed",
+  "correlation": {
+    "numerator": "3",
+    "denominator": "4",
+    "log2_abs": -0.4150374992788439
+  },
+  "bias": {
+    "numerator": "3",
+    "denominator": "8",
+    "log2_abs": -1.415037499278844
+  },
+  "limits": {
+    "seconds": 30,
+    "max_terms": 1000000,
+    "max_products": 100000000,
+    "max_nodes": 200000,
+    "address_space_bytes": 4294967296
+  },
+  "first_L_omitted": null,
+  "remaining_alpha_assumed_jointly_uniform": true,
+  "dag_verified_full_states": 4,
+  "phase": "completed",
+  "statistics": {
+    "initial_terms": 2,
+    "initial_variables": 2,
+    "peak_polynomial_terms": 4,
+    "beta_definitions_expanded": 1,
+    "product_pairs": 2,
+    "expanded_terms": 4,
+    "expanded_variables": 3,
+    "expanded_degree": 3,
+    "remaining_beta_variables": 0,
+    "expanded_input_variables": 1,
+    "expanded_alpha_variables": 2,
+    "max_component_variables": 3,
+    "bias_nodes": 3,
+    "quadratic_calls": 1
+  },
+  "elapsed_seconds": 0.01388896000571549,
+  "peak_rss_kib": 21012,
+  "expansion_verified_formal_assignments": 16,
+  "zero_certificate": null,
+  "expanded_anf_file": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R3_p8_c53_m1.anf.json",
+  "expanded_anf_sha256": "a363e555f49789d7982ff4c8b7fafdf1a49e69568c8bf29da86867c8b8c3d433",
+  "evaluation_order": "full beta expansion then Bias",
+  "boundary_note": "Hsilu core: first chi input to last chi output. All internal L layers retained; final native L handled by external mask L^{-T}. Generic worker first_L_omitted is inapplicable to Hsilu."
+}

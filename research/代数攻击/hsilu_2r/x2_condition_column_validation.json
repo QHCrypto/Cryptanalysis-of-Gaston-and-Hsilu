@@ -1,0 +1,96 @@
+{
+  "path_to_native_bit": "63-j",
+  "definition": "Y2 = chi(iota(X2)), before MRM and rho",
+  "column_traces": {
+    "7": {
+      "X2_active_message_positions_by_row": [
+        [],
+        [],
+        [
+          30,
+          34
+        ],
+        [],
+        []
+      ],
+      "Y2_quadratic_active_pairs_by_row": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    },
+    "17": {
+      "X2_active_message_positions_by_row": [
+        [
+          31
+        ],
+        [],
+        [
+          25,
+          40,
+          44
+        ],
+        [],
+        []
+      ],
+      "Y2_quadratic_active_pairs_by_row": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    }
+  },
+  "condition_equal_one_witness": {
+    "native_base_input_words_hex": [
+      "6106a98894323ab0",
+      "810ba5801100081f",
+      "f56f64d4e10bed17",
+      "b4ade2a2e9404047",
+      "f6b354e77bfeddda"
+    ],
+    "X2_1_17": 1,
+    "selected_equation_rank": 21,
+    "all_affine_output_path_positions": [
+      2,
+      6,
+      7,
+      12,
+      13,
+      14,
+      17,
+      19,
+      21,
+      24,
+      29,
+      33,
+      34,
+      38,
+      40,
+      41,
+      43,
+      47,
+      52,
+      57,
+      61,
+      62
+    ],
+    "active_assignment_checks": [
+      {
+        "active_assignment": 0,
+        "X2_1_17": 1
+      },
+      {
+        "active_assignment": 2097151,
+        "X2_1_17": 1
+      },
+      {
+        "active_assignment": 1193046,
+        "X2_1_17": 1
+      }
+    ]
+  }
+}

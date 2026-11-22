@@ -1,0 +1,564 @@
+{
+  "date": "2026-11-09",
+  "standard": "NIST SP 800-232 (August 2025)",
+  "interpretation": "Use NIST outer modes, IV, byte/bit convention, padding and injection. Keep original Gaston/Hsilu round functions.",
+  "XOF_IV_hex": "0000080000cc0003",
+  "AEAD_IV_hex": "00001000808c0001",
+  "reduced_XOF": "all permutation calls reduced, fixed full-mode IV",
+  "reduced_AEAD": "only initialization reduced; processing 8 rounds, finalization 12 rounds, fixed full-mode IV",
+  "official_KAT": {
+    "official_Ascon_AEAD_vectors": 1089,
+    "official_Ascon_XOF_vectors": 1025,
+    "all_passed": true
+  },
+  "mode_crosschecks": {
+    "bitstring_XOF_crosschecks": 130,
+    "native_permutation_crosschecks": 80,
+    "all_passed": true
+  },
+  "AEAD_observables": {
+    "gaston": {
+      "full_message_checks": 48,
+      "reduced_initialization_rounds": 6,
+      "cube_points": 256,
+      "same_observable": true,
+      "corrected_finalization_checked": true
+    },
+    "hsilu": {
+      "full_message_checks": 48,
+      "reduced_initialization_rounds": 7,
+      "cube_points": 256,
+      "same_observable": true,
+      "corrected_finalization_checked": true
+    }
+  },
+  "Hsilu_XOF_2r": {
+    "message_bits": 190,
+    "red": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "blue": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "padding_bits": {
+      "62": 1,
+      "63": 0
+    },
+    "exhaustive_pairs_per_case": 16384,
+    "cases": [
+      {
+        "prefix_hex": [
+          "3d849d7edf9ccb10",
+          "c1b22f9ff1c147ab"
+        ],
+        "tail_hex": "0a6c5570ac6937f8",
+        "digest_bytes": "db746797f1b21035bf37197740470b7f",
+        "mixed_rank": 40,
+        "projection_dimension": 24,
+        "candidates": 1,
+        "recovered": [
+          [
+            119,
+            111
+          ]
+        ]
+      },
+      {
+        "prefix_hex": [
+          "85b8c32c357053a1",
+          "1f790887f1ce6921"
+        ],
+        "tail_hex": "13db6800dac14d06",
+        "digest_bytes": "6a2763e66291b38f20cc80cb4193d724",
+        "mixed_rank": 43,
+        "projection_dimension": 21,
+        "candidates": 1,
+        "recovered": [
+          [
+            59,
+            72
+          ]
+        ]
+      },
+      {
+        "prefix_hex": [
+          "e902cff4f6823839",
+          "5edec47c77d4528e"
+        ],
+        "tail_hex": "108b92880a426989",
+        "digest_bytes": "4b8c599297ddf92cc85d0d0ef381d0e5",
+        "mixed_rank": 36,
+        "projection_dimension": 28,
+        "candidates": 1,
+        "recovered": [
+          [
+            99,
+            19
+          ]
+        ]
+      },
+      {
+        "prefix_hex": [
+          "44ff9ef5130e03ad",
+          "843cdda861a9c4d0"
+        ],
+        "tail_hex": "3dddec97a6c93679",
+        "digest_bytes": "02b282d33f9c5e7260ee198d59ba4d3e",
+        "mixed_rank": 38,
+        "projection_dimension": 26,
+        "candidates": 1,
+        "recovered": [
+          [
+            74,
+            33
+          ]
+        ]
+      },
+      {
+        "prefix_hex": [
+          "9998aa2ec5029f53",
+          "88e93056eb12b791"
+        ],
+        "tail_hex": "271e2e51a6b287f1",
+        "digest_bytes": "0fb83fc78718a96c34d19a39c0adea19",
+        "mixed_rank": 46,
+        "projection_dimension": 18,
+        "candidates": 1,
+        "recovered": [
+          [
+            59,
+            98
+          ]
+        ]
+      },
+      {
+        "prefix_hex": [
+          "f17c8522ea4f2e6c",
+          "717ec5fc2d897c3c"
+        ],
+        "tail_hex": "0a82a7c11a09bbc3",
+        "digest_bytes": "6ea2c2387e860dbc26bdd2ae9d0829dc",
+        "mixed_rank": 41,
+        "projection_dimension": 23,
+        "candidates": 1,
+        "recovered": [
+          [
+            87,
+            71
+          ]
+        ]
+      },
+      {
+        "prefix_hex": [
+          "148507013a058d9c",
+          "a38d4d8f5c17655d"
+        ],
+        "tail_hex": "2933271c5e94ce8a",
+        "digest_bytes": "f76a9b32a9dc30e9d0fde892dfaceee2",
+        "mixed_rank": 43,
+        "projection_dimension": 21,
+        "candidates": 1,
+        "recovered": [
+          [
+            75,
+            121
+          ]
+        ]
+      },
+      {
+        "prefix_hex": [
+          "e0d26ab87480ef64",
+          "cab8a2e065a89f01"
+        ],
+        "tail_hex": "04ae3355269ba06e",
+        "digest_bytes": "87c45b7314e654eeddcbec53487b1f81",
+        "mixed_rank": 38,
+        "projection_dimension": 26,
+        "candidates": 1,
+        "recovered": [
+          [
+            76,
+            19
+          ]
+        ]
+      }
+    ],
+    "complexity_status": "Same 7+7+48 dimensions and >=15 projected bits; previous conditional operation counts transfer."
+  },
+  "Hsilu_XOF_3r": {
+    "message_bits": 190,
+    "coordinate_shift_mod64": 62,
+    "prefix_hex": [
+      "0c2ff3302f051967",
+      "4a4724bf7db369dd"
+    ],
+    "blue": [
+      29,
+      61
+    ],
+    "matches": [
+      28,
+      60
+    ],
+    "first_rank": 29,
+    "fibre_dimension": 31,
+    "second_polynomial_rank": 28,
+    "second_quadratic_rank": 28,
+    "color_proof": {
+      "all_selected_cancellations_valid": true,
+      "nonmixed_output_positions": [
+        28,
+        60
+      ],
+      "stage_counts": [
+        {
+          "stage": 1,
+          "mixed_bits": 0
+        },
+        {
+          "stage": 2,
+          "mixed_bits": 13
+        },
+        {
+          "stage": 3,
+          "mixed_bits": 114
+        },
+        {
+          "stage": 4,
+          "mixed_bits": 296
+        },
+        {
+          "stage": 5,
+          "mixed_bits": 318
+        }
+      ]
+    },
+    "fibre_draws": 524288,
+    "nontrivial_pairs": 540,
+    "rectangle_checks": 2160,
+    "planted_target_checks": [
+      {
+        "tail_hex": "0c7185f88d995561",
+        "digest_bytes": "308d2018e485ef21c9c95a5810a1d574",
+        "recovered_count": 1
+      },
+      {
+        "tail_hex": "190d4e4abbf5fac2",
+        "digest_bytes": "91067f408e2ebca156a369bcf8cd1df2",
+        "recovered_count": 1
+      },
+      {
+        "tail_hex": "2d31759313aca0fc",
+        "digest_bytes": "3adabb46718978fb1d470df4ac08aa47",
+        "recovered_count": 1
+      },
+      {
+        "tail_hex": "3bc43a62225cc255",
+        "digest_bytes": "405b4155a89a3f03430f739571694b1b",
+        "recovered_count": 1
+      },
+      {
+        "tail_hex": "1ccc562085891967",
+        "digest_bytes": "a5a549676f1c632dc7fcc87783fdbd32",
+        "recovered_count": 1
+      },
+      {
+        "tail_hex": "10813c23259dc150",
+        "digest_bytes": "7b38de485267012a0c8fa41ec3048a13",
+        "recovered_count": 1
+      },
+      {
+        "tail_hex": "206cc9b89df859ec",
+        "digest_bytes": "72816f22c1aa4d8591b92ff18bbc9497",
+        "recovered_count": 1
+      },
+      {
+        "tail_hex": "287b26f16915b2f2",
+        "digest_bytes": "967eed216dad062f78d29ffde71d049e",
+        "recovered_count": 1
+      },
+      {
+        "tail_hex": "00020d43c715a3a4",
+        "digest_bytes": "44119cbbf5beaa48882626d5668694ff",
+        "recovered_count": 1
+      },
+      {
+        "tail_hex": "1e2193b1b2ec7fa1",
+        "digest_bytes": "abf85697490fd453c22e78c20e9be44e",
+        "recovered_count": 1
+      },
+      {
+        "tail_hex": "2c0dd26a91249eea",
+        "digest_bytes": "d18031dc589dc86ca712fc6d57ab3392",
+        "recovered_count": 1
+      },
+      {
+        "tail_hex": "29a2c89afd6c2b2c",
+        "digest_bytes": "3dc00ca1f44d6a082bb1e7086068300e",
+        "recovered_count": 1
+      },
+      {
+        "tail_hex": "0ae22ed04e00b2b2",
+        "digest_bytes": "dc10b6b468c3544be56bee2650f3a418",
+        "recovered_count": 1
+      },
+      {
+        "tail_hex": "0e207bdb3ee405b3",
+        "digest_bytes": "ed0cfd6be3675605994d14bc50468360",
+        "recovered_count": 1
+      },
+      {
+        "tail_hex": "2765fd921abc4bf6",
+        "digest_bytes": "9abc9c5d2a70d81bd0fff6404378b3e5",
+        "recovered_count": 1
+      },
+      {
+        "tail_hex": "246d75d23bb907b2",
+        "digest_bytes": "78a7e2a0d46dc291b27aff60ba613a68",
+        "recovered_count": 1
+      },
+      {
+        "tail_hex": "1ee2349a4a287315",
+        "digest_bytes": "fcd3af85b98497af2f713aa1545801cf",
+        "recovered_count": 1
+      },
+      {
+        "tail_hex": "0f07d92bf059afab",
+        "digest_bytes": "5d3dc8bde23991472ce6995a605eb4f1",
+        "recovered_count": 1
+      },
+      {
+        "tail_hex": "31b55d9089f01aad",
+        "digest_bytes": "6daec97ac00fca3e535282617b680dd1",
+        "recovered_count": 1
+      },
+      {
+        "tail_hex": "2edc780a22d1c31e",
+        "digest_bytes": "1c71c61959301250f38cd8c965c3bc83",
+        "recovered_count": 1
+      },
+      {
+        "tail_hex": "063c1bfa8a5c5b26",
+        "digest_bytes": "2da589c5e444e6226449caed649f7b80",
+        "recovered_count": 1
+      },
+      {
+        "tail_hex": "033f62d2600c9892",
+        "digest_bytes": "2530d7cf8afc54d4fe7258f0c78fa7a3",
+        "recovered_count": 1
+      },
+      {
+        "tail_hex": "3e238099d01447e6",
+        "digest_bytes": "bb6854c5810e6c03262c3add92565514",
+        "recovered_count": 1
+      },
+      {
+        "tail_hex": "26ca4903f84449e7",
+        "digest_bytes": "504b2dc8844d32061c857b4a2c122ec7",
+        "recovered_count": 1
+      },
+      {
+        "tail_hex": "18979d43dd28036b",
+        "digest_bytes": "d538c5a8d7a5229d70979b9b796dc3d5",
+        "recovered_count": 1
+      },
+      {
+        "tail_hex": "0b06ab4b7c489190",
+        "digest_bytes": "46ea4aced8e5b293ae4a64e75d652cd6",
+        "recovered_count": 1
+      },
+      {
+        "tail_hex": "214abf6053edb356",
+        "digest_bytes": "498ccd60df71ec25eeaac07dae58cbcd",
+        "recovered_count": 1
+      },
+      {
+        "tail_hex": "2ea035b03095a858",
+        "digest_bytes": "2077211aadd4416778c2c338eadabd8c",
+        "recovered_count": 1
+      },
+      {
+        "tail_hex": "16820900cc45cace",
+        "digest_bytes": "11e5fc7ebabaa0d766444855e59daa2d",
+        "recovered_count": 1
+      },
+      {
+        "tail_hex": "083a56b0f738072b",
+        "digest_bytes": "a0193e39afd794181bd024a796031a7d",
+        "recovered_count": 1
+      },
+      {
+        "tail_hex": "3cc60323cd1d00c5",
+        "digest_bytes": "0e5ec3a38759dfacffa273ee17df50d7",
+        "recovered_count": 1
+      },
+      {
+        "tail_hex": "287326f369303e78",
+        "digest_bytes": "92f08915366d5a56373e8a83c72013bd",
+        "recovered_count": 1
+      }
+    ],
+    "complexity_status": "Same dimensions, table sizes and counting schedule; prefix-density and target-coverage assumptions remain conditional."
+  },
+  "Gaston_XOF_2r": {
+    "guess_rank": 47,
+    "free_dimension": 17,
+    "affine_targets": 17,
+    "exact_zero_quadratic_coefficient_checks": 544,
+    "round_constants_hex": [
+      "5a",
+      "4b"
+    ],
+    "legal_message_checks": 128,
+    "tail_bits": "variable 0..63; nonzero padded words only",
+    "total_generated_candidates": 399957,
+    "joint_successes": 2995,
+    "pooled_conditional_probability": 0.007488304992786725,
+    "independence_model_probability": 0.00751694681821391,
+    "conditional_time_exponent_from_sample": 118.0611450887071,
+    "experiments": [
+      {
+        "prefix_hex": [
+          "d8c08082a349a51b",
+          "85350135fb321595"
+        ],
+        "target17": 28313,
+        "branches": 100000,
+        "consistent_branches": 61093,
+        "all_solutions_count": 99848,
+        "joint_successes": 719,
+        "rejected_zero_padded_words": 0,
+        "rank_histogram": {
+          "13": 7,
+          "14": 556,
+          "15": 12829,
+          "16": 57472,
+          "17": 29136
+        },
+        "conditional_probability": 0.007200945437064338
+      },
+      {
+        "prefix_hex": [
+          "9355673a091af534",
+          "650506f62f18264b"
+        ],
+        "target17": 110832,
+        "branches": 100000,
+        "consistent_branches": 60952,
+        "all_solutions_count": 99931,
+        "joint_successes": 762,
+        "rejected_zero_padded_words": 0,
+        "rank_histogram": {
+          "13": 5,
+          "14": 513,
+          "15": 12737,
+          "16": 57966,
+          "17": 28779
+        },
+        "conditional_probability": 0.007625261430386967
+      },
+      {
+        "prefix_hex": [
+          "8b876cf4ff225a6b",
+          "d16dc4ac3e5fdb1f"
+        ],
+        "target17": 97929,
+        "branches": 100000,
+        "consistent_branches": 61062,
+        "all_solutions_count": 99955,
+        "joint_successes": 778,
+        "rejected_zero_padded_words": 0,
+        "rank_histogram": {
+          "13": 7,
+          "14": 520,
+          "15": 12879,
+          "16": 57677,
+          "17": 28917
+        },
+        "conditional_probability": 0.007783502576159272
+      },
+      {
+        "prefix_hex": [
+          "0edf03ea55bebd4e",
+          "e444106fc8feea37"
+        ],
+        "target17": 107327,
+        "branches": 100000,
+        "consistent_branches": 61180,
+        "all_solutions_count": 100223,
+        "joint_successes": 736,
+        "rejected_zero_padded_words": 0,
+        "rank_histogram": {
+          "13": 3,
+          "14": 530,
+          "15": 12864,
+          "16": 57576,
+          "17": 29027
+        },
+        "conditional_probability": 0.007343623719106393
+      }
+    ],
+    "scope": "Exact local affinity at these legal prefixes, complete branch-solution enumeration and finite probability sampling. Full complexity remains conditional on output coverage, probability and normalized solving costs."
+  },
+  "status": "PASS_WITH_ORIGINAL_COMPLEXITY_ASSUMPTIONS",
+  "unchanged_permutation_results": [
+    "Hsilu differential trail 82",
+    "Gaston outside-kernel branch number 16",
+    "Gaston outside-kernel two-round weight 32",
+    "Gaston three-round lower bound 44",
+    "existing differential-linear endpoints with original round constants"
+  ],
+  "unresolved_original_assumptions": [
+    "Gaston six-round cube coefficient rank",
+    "Hsilu seven-round signature nonconstancy and bucket distribution",
+    "complete preimage target coverage and cost assumptions"
+  ],
+  "source_sha256": {
+    "nist_compatibility_20261109/nist_modes.py": "5b30f23a76ca216338f318d264fe91c64f269bdd9c17d8d4eddb7f5cd923a9f9",
+    "nist_compatibility_20261109/native.cpp": "0a0c454f896c9be53ea1dfde86630f95274622dd84710644b800d4bb19d48f7b",
+    "nist_compatibility_20261109/audit.py": "6b33e6872c36d84e9970e7af235fe9abafd47a6b801fcffce3325ce71bbdd91a",
+    "nist_compatibility_20261109/scan_prefixes.py": "477b8fa8472460cb7ee9d0e20a5793c61ea4baf8e7426d6bc71fc1d3c6071635",
+    "Cube/src/gaston_aead.py": "a3b11bc6921efd281624f746f1b5b1e215ada962efc09ec3a87453d2546c5810",
+    "HsiluCube/src/hsilu_aead.py": "6f83bc0eec115090cf1f50907eb765161e3341a4dc4f3e1c28f0938805190546"
+  },
+  "NIST_data_limit": {
+    "source": "SP 800-232 Section 4.3 R6",
+    "per_key_bytes_max_exponent": 54,
+    "query_payload": "16-byte nonce + one 16-byte plaintext block, empty associated data",
+    "per_key_queries_max_exponent_for_this_interface": 49,
+    "Gaston_6r": {
+      "nonce_queries_exponent": 63,
+      "input_bytes_lower_bound_exponent": 68,
+      "within_NIST_data_limit": false
+    },
+    "Hsilu_7r": {
+      "nonce_queries_exponent": 64,
+      "input_bytes_lower_bound_exponent": 69,
+      "within_NIST_data_limit": false
+    },
+    "interpretation": "The cube identities and conditional evaluation counts survive the NIST mode migration. They are not results within the NIST single-key data-limited security model."
+  },
+  "AEAD_helper_correction": {
+    "previous_finalization_injection_words": [
+      1,
+      2
+    ],
+    "NIST_finalization_injection_words": [
+      2,
+      3
+    ],
+    "effect": "Tags change; ciphertext and the initialization-rate cube observable do not. Historical tag fixtures require regeneration if used."
+  }
+}

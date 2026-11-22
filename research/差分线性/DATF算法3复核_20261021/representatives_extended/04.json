@@ -1,0 +1,57 @@
+{
+  "id": "G4d",
+  "algorithm": "Gaston",
+  "rounds": 4,
+  "start_round_index": 8,
+  "delta_core": [
+    "0000000000000000",
+    "0000000000000000",
+    "0000000000000001",
+    "0000000000000000",
+    "0000000000000000"
+  ],
+  "lambda_core": [
+    "0008800400022001",
+    "0000000000000000",
+    "0000000000000000",
+    "0004000000000000",
+    "1000880040002000"
+  ],
+  "previous_datf": {
+    "numerator": "-9",
+    "denominator": "17592186044416",
+    "log2_abs": -40.83007499855769
+  },
+  "previous_hnw": {
+    "numerator": "0",
+    "denominator": "1",
+    "denominator_exponent": 0,
+    "log2_abs": null
+  },
+  "sampling": null,
+  "method": "original DATF Algorithm 3",
+  "status": "resource_limit",
+  "correlation": null,
+  "bias": null,
+  "limits": {
+    "seconds": 180,
+    "max_terms": 5000000,
+    "max_products": 1000000000,
+    "max_nodes": 2000000,
+    "address_space_bytes": 4294967296
+  },
+  "first_L_omitted": true,
+  "remaining_alpha_assumed_jointly_uniform": true,
+  "dag_verified_full_states": 4,
+  "phase": "beta_expansion",
+  "statistics": {
+    "initial_terms": 60,
+    "initial_variables": 54,
+    "peak_polynomial_terms": 6082028,
+    "beta_definitions_expanded": 192,
+    "product_pairs": 14273215
+  },
+  "elapsed_seconds": 14.832364279893227,
+  "peak_rss_kib": 1397820,
+  "reason": "ResourceLimit: polynomial terms 6082028 exceed 5000000"
+}

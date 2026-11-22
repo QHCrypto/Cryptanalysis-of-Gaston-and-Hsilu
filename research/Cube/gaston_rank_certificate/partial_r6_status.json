@@ -1,0 +1,30 @@
+{
+  "implementation": "original_gaston_c",
+  "word_bits": 64,
+  "rounds": 6,
+  "period": 64,
+  "cube_dimension": 63,
+  "iv_hex": "00001000808c0001",
+  "total_points": 9223372036854775808,
+  "files": [
+    "partial_r6_0.json"
+  ],
+  "covered_points": 1048576,
+  "coverage_complete": false,
+  "sums_hex": [
+    [
+      "3e62d5d54924a8b3",
+      "d8ef3c92355f1aea"
+    ],
+    [
+      "0ce065c43f31786e",
+      "c9671890f08b180d"
+    ],
+    [
+      "c907b1f5114dc047",
+      "1cc66b89cc5a135c"
+    ]
+  ],
+  "rank_certificate": null,
+  "reason": "Partial sums do not determine any full-cube matrix entry."
+}

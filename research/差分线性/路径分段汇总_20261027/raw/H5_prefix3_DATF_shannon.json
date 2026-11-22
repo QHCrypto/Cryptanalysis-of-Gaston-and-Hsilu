@@ -1,0 +1,501 @@
+{
+  "id": "H5_prefix3",
+  "algorithm": "Hsilu",
+  "rounds": 3,
+  "start_round_index": 7,
+  "delta_core": [
+    "0200000000000000",
+    "0000000000000000",
+    "0200000000000000",
+    "0200000000000000",
+    "0000000000000000"
+  ],
+  "lambda_core": [
+    "000c800010000124",
+    "4000040000120001",
+    "4010000000000412",
+    "1000044000000001",
+    "0088000002482010"
+  ],
+  "method": "original DATF Algorithm 3",
+  "status": "completed",
+  "correlation": {
+    "numerator": "0",
+    "denominator": "1",
+    "log2_abs": null
+  },
+  "bias": {
+    "numerator": "0",
+    "denominator": "1",
+    "log2_abs": null
+  },
+  "limits": {
+    "seconds": 30,
+    "max_terms": 1000000,
+    "max_products": 100000000,
+    "max_nodes": 200000,
+    "address_space_bytes": 4294967296
+  },
+  "first_L_omitted": true,
+  "remaining_alpha_assumed_jointly_uniform": true,
+  "dag_verified_full_states": 4,
+  "phase": "completed",
+  "statistics": {
+    "input_shannon_variables": 4,
+    "input_shannon_total_branches": 16,
+    "peak_polynomial_terms": 0,
+    "input_shannon_completed_branches": 16,
+    "max_branch_peak_polynomial_terms": 486,
+    "beta_definitions_expanded": 1152,
+    "product_pairs": 4104,
+    "max_branch_expanded_terms": 486,
+    "max_branch_expanded_variables": 131,
+    "max_branch_expanded_degree": 2,
+    "max_branch_expanded_input_variables": 0,
+    "max_branch_expanded_alpha_variables": 131,
+    "max_branch_max_component_variables": 127,
+    "bias_nodes": 16,
+    "isolated_uniform_zero_leaves": 16
+  },
+  "elapsed_seconds": 0.09021753299748525,
+  "peak_rss_kib": 591312,
+  "expansion_verified_formal_assignments": 0,
+  "zero_certificate": null,
+  "expanded_anf_file": "差分线性/路径分段汇总_20261027/raw/H5_prefix3_DATF_shannon.anf.json",
+  "expanded_anf_sha256": "82e656d4897adb940d178e84cb247ac11a43017fbc677553e72086791c63d38d",
+  "evaluation_order": "exact input Shannon then full beta expansion per branch",
+  "branches": [
+    {
+      "assignment": 0,
+      "input_variables": [
+        121,
+        185,
+        249,
+        313
+      ],
+      "numerator": "0",
+      "denominator": "1",
+      "statistics": {
+        "initial_terms": 127,
+        "initial_variables": 122,
+        "peak_polynomial_terms": 127,
+        "beta_definitions_expanded": 72,
+        "product_pairs": 77,
+        "expanded_terms": 74,
+        "expanded_variables": 54,
+        "expanded_degree": 2,
+        "remaining_beta_variables": 0,
+        "expanded_input_variables": 0,
+        "expanded_alpha_variables": 54,
+        "max_component_variables": 26,
+        "bias_nodes": 1,
+        "isolated_uniform_zero_leaves": 1
+      }
+    },
+    {
+      "assignment": 1,
+      "input_variables": [
+        121,
+        185,
+        249,
+        313
+      ],
+      "numerator": "0",
+      "denominator": "1",
+      "statistics": {
+        "initial_terms": 127,
+        "initial_variables": 122,
+        "peak_polynomial_terms": 342,
+        "beta_definitions_expanded": 72,
+        "product_pairs": 395,
+        "expanded_terms": 342,
+        "expanded_variables": 112,
+        "expanded_degree": 2,
+        "remaining_beta_variables": 0,
+        "expanded_input_variables": 0,
+        "expanded_alpha_variables": 112,
+        "max_component_variables": 108,
+        "bias_nodes": 1,
+        "isolated_uniform_zero_leaves": 1
+      }
+    },
+    {
+      "assignment": 2,
+      "input_variables": [
+        121,
+        185,
+        249,
+        313
+      ],
+      "numerator": "0",
+      "denominator": "1",
+      "statistics": {
+        "initial_terms": 127,
+        "initial_variables": 122,
+        "peak_polynomial_terms": 167,
+        "beta_definitions_expanded": 72,
+        "product_pairs": 169,
+        "expanded_terms": 167,
+        "expanded_variables": 79,
+        "expanded_degree": 2,
+        "remaining_beta_variables": 0,
+        "expanded_input_variables": 0,
+        "expanded_alpha_variables": 79,
+        "max_component_variables": 68,
+        "bias_nodes": 1,
+        "isolated_uniform_zero_leaves": 1
+      }
+    },
+    {
+      "assignment": 3,
+      "input_variables": [
+        121,
+        185,
+        249,
+        313
+      ],
+      "numerator": "0",
+      "denominator": "1",
+      "statistics": {
+        "initial_terms": 127,
+        "initial_variables": 122,
+        "peak_polynomial_terms": 486,
+        "beta_definitions_expanded": 72,
+        "product_pairs": 520,
+        "expanded_terms": 486,
+        "expanded_variables": 131,
+        "expanded_degree": 2,
+        "remaining_beta_variables": 0,
+        "expanded_input_variables": 0,
+        "expanded_alpha_variables": 131,
+        "max_component_variables": 127,
+        "bias_nodes": 1,
+        "isolated_uniform_zero_leaves": 1
+      }
+    },
+    {
+      "assignment": 4,
+      "input_variables": [
+        121,
+        185,
+        249,
+        313
+      ],
+      "numerator": "0",
+      "denominator": "1",
+      "statistics": {
+        "initial_terms": 127,
+        "initial_variables": 122,
+        "peak_polynomial_terms": 167,
+        "beta_definitions_expanded": 72,
+        "product_pairs": 169,
+        "expanded_terms": 167,
+        "expanded_variables": 79,
+        "expanded_degree": 2,
+        "remaining_beta_variables": 0,
+        "expanded_input_variables": 0,
+        "expanded_alpha_variables": 79,
+        "max_component_variables": 68,
+        "bias_nodes": 1,
+        "isolated_uniform_zero_leaves": 1
+      }
+    },
+    {
+      "assignment": 5,
+      "input_variables": [
+        121,
+        185,
+        249,
+        313
+      ],
+      "numerator": "0",
+      "denominator": "1",
+      "statistics": {
+        "initial_terms": 127,
+        "initial_variables": 122,
+        "peak_polynomial_terms": 486,
+        "beta_definitions_expanded": 72,
+        "product_pairs": 520,
+        "expanded_terms": 486,
+        "expanded_variables": 131,
+        "expanded_degree": 2,
+        "remaining_beta_variables": 0,
+        "expanded_input_variables": 0,
+        "expanded_alpha_variables": 131,
+        "max_component_variables": 127,
+        "bias_nodes": 1,
+        "isolated_uniform_zero_leaves": 1
+      }
+    },
+    {
+      "assignment": 6,
+      "input_variables": [
+        121,
+        185,
+        249,
+        313
+      ],
+      "numerator": "0",
+      "denominator": "1",
+      "statistics": {
+        "initial_terms": 127,
+        "initial_variables": 122,
+        "peak_polynomial_terms": 127,
+        "beta_definitions_expanded": 72,
+        "product_pairs": 77,
+        "expanded_terms": 74,
+        "expanded_variables": 54,
+        "expanded_degree": 2,
+        "remaining_beta_variables": 0,
+        "expanded_input_variables": 0,
+        "expanded_alpha_variables": 54,
+        "max_component_variables": 26,
+        "bias_nodes": 1,
+        "isolated_uniform_zero_leaves": 1
+      }
+    },
+    {
+      "assignment": 7,
+      "input_variables": [
+        121,
+        185,
+        249,
+        313
+      ],
+      "numerator": "0",
+      "denominator": "1",
+      "statistics": {
+        "initial_terms": 127,
+        "initial_variables": 122,
+        "peak_polynomial_terms": 342,
+        "beta_definitions_expanded": 72,
+        "product_pairs": 395,
+        "expanded_terms": 342,
+        "expanded_variables": 112,
+        "expanded_degree": 2,
+        "remaining_beta_variables": 0,
+        "expanded_input_variables": 0,
+        "expanded_alpha_variables": 112,
+        "max_component_variables": 108,
+        "bias_nodes": 1,
+        "isolated_uniform_zero_leaves": 1
+      }
+    },
+    {
+      "assignment": 8,
+      "input_variables": [
+        121,
+        185,
+        249,
+        313
+      ],
+      "numerator": "0",
+      "denominator": "1",
+      "statistics": {
+        "initial_terms": 129,
+        "initial_variables": 123,
+        "peak_polynomial_terms": 129,
+        "beta_definitions_expanded": 72,
+        "product_pairs": 69,
+        "expanded_terms": 75,
+        "expanded_variables": 50,
+        "expanded_degree": 2,
+        "remaining_beta_variables": 0,
+        "expanded_input_variables": 0,
+        "expanded_alpha_variables": 50,
+        "max_component_variables": 15,
+        "bias_nodes": 1,
+        "isolated_uniform_zero_leaves": 1
+      }
+    },
+    {
+      "assignment": 9,
+      "input_variables": [
+        121,
+        185,
+        249,
+        313
+      ],
+      "numerator": "0",
+      "denominator": "1",
+      "statistics": {
+        "initial_terms": 129,
+        "initial_variables": 123,
+        "peak_polynomial_terms": 330,
+        "beta_definitions_expanded": 72,
+        "product_pairs": 375,
+        "expanded_terms": 330,
+        "expanded_variables": 111,
+        "expanded_degree": 2,
+        "remaining_beta_variables": 0,
+        "expanded_input_variables": 0,
+        "expanded_alpha_variables": 111,
+        "max_component_variables": 107,
+        "bias_nodes": 1,
+        "isolated_uniform_zero_leaves": 1
+      }
+    },
+    {
+      "assignment": 10,
+      "input_variables": [
+        121,
+        185,
+        249,
+        313
+      ],
+      "numerator": "0",
+      "denominator": "1",
+      "statistics": {
+        "initial_terms": 129,
+        "initial_variables": 123,
+        "peak_polynomial_terms": 129,
+        "beta_definitions_expanded": 72,
+        "product_pairs": 72,
+        "expanded_terms": 70,
+        "expanded_variables": 50,
+        "expanded_degree": 2,
+        "remaining_beta_variables": 0,
+        "expanded_input_variables": 0,
+        "expanded_alpha_variables": 50,
+        "max_component_variables": 24,
+        "bias_nodes": 1,
+        "isolated_uniform_zero_leaves": 1
+      }
+    },
+    {
+      "assignment": 11,
+      "input_variables": [
+        121,
+        185,
+        249,
+        313
+      ],
+      "numerator": "0",
+      "denominator": "1",
+      "statistics": {
+        "initial_terms": 129,
+        "initial_variables": 123,
+        "peak_polynomial_terms": 329,
+        "beta_definitions_expanded": 72,
+        "product_pairs": 375,
+        "expanded_terms": 329,
+        "expanded_variables": 113,
+        "expanded_degree": 2,
+        "remaining_beta_variables": 0,
+        "expanded_input_variables": 0,
+        "expanded_alpha_variables": 113,
+        "max_component_variables": 110,
+        "bias_nodes": 1,
+        "isolated_uniform_zero_leaves": 1
+      }
+    },
+    {
+      "assignment": 12,
+      "input_variables": [
+        121,
+        185,
+        249,
+        313
+      ],
+      "numerator": "0",
+      "denominator": "1",
+      "statistics": {
+        "initial_terms": 129,
+        "initial_variables": 123,
+        "peak_polynomial_terms": 129,
+        "beta_definitions_expanded": 72,
+        "product_pairs": 72,
+        "expanded_terms": 70,
+        "expanded_variables": 50,
+        "expanded_degree": 2,
+        "remaining_beta_variables": 0,
+        "expanded_input_variables": 0,
+        "expanded_alpha_variables": 50,
+        "max_component_variables": 24,
+        "bias_nodes": 1,
+        "isolated_uniform_zero_leaves": 1
+      }
+    },
+    {
+      "assignment": 13,
+      "input_variables": [
+        121,
+        185,
+        249,
+        313
+      ],
+      "numerator": "0",
+      "denominator": "1",
+      "statistics": {
+        "initial_terms": 129,
+        "initial_variables": 123,
+        "peak_polynomial_terms": 329,
+        "beta_definitions_expanded": 72,
+        "product_pairs": 375,
+        "expanded_terms": 329,
+        "expanded_variables": 113,
+        "expanded_degree": 2,
+        "remaining_beta_variables": 0,
+        "expanded_input_variables": 0,
+        "expanded_alpha_variables": 113,
+        "max_component_variables": 110,
+        "bias_nodes": 1,
+        "isolated_uniform_zero_leaves": 1
+      }
+    },
+    {
+      "assignment": 14,
+      "input_variables": [
+        121,
+        185,
+        249,
+        313
+      ],
+      "numerator": "0",
+      "denominator": "1",
+      "statistics": {
+        "initial_terms": 129,
+        "initial_variables": 123,
+        "peak_polynomial_terms": 129,
+        "beta_definitions_expanded": 72,
+        "product_pairs": 69,
+        "expanded_terms": 75,
+        "expanded_variables": 50,
+        "expanded_degree": 2,
+        "remaining_beta_variables": 0,
+        "expanded_input_variables": 0,
+        "expanded_alpha_variables": 50,
+        "max_component_variables": 15,
+        "bias_nodes": 1,
+        "isolated_uniform_zero_leaves": 1
+      }
+    },
+    {
+      "assignment": 15,
+      "input_variables": [
+        121,
+        185,
+        249,
+        313
+      ],
+      "numerator": "0",
+      "denominator": "1",
+      "statistics": {
+        "initial_terms": 129,
+        "initial_variables": 123,
+        "peak_polynomial_terms": 330,
+        "beta_definitions_expanded": 72,
+        "product_pairs": 375,
+        "expanded_terms": 330,
+        "expanded_variables": 111,
+        "expanded_degree": 2,
+        "remaining_beta_variables": 0,
+        "expanded_input_variables": 0,
+        "expanded_alpha_variables": 111,
+        "max_component_variables": 107,
+        "bias_nodes": 1,
+        "isolated_uniform_zero_leaves": 1
+      }
+    }
+  ]
+}

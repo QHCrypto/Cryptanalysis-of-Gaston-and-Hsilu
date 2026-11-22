@@ -1,0 +1,145 @@
+{
+  "mode": "difference",
+  "condition": "E(rho_east(X)) != 0",
+  "metric": "nonzero 5-bit S-box columns",
+  "results": [
+    {
+      "output_active": 1,
+      "minimum_input_active": 57,
+      "proven_optimal": true,
+      "theta_effect_hex": "0x071095763015b7c6",
+      "proof": "complete_unrestricted_enumeration_and_optimal_witness_with_nonzero_effect",
+      "source": "/home/yxb/分析/gaston_active_pattern/direct_enumeration/result/diff_out1_nonzero_witness.json",
+      "enumeration_seconds": 3.4334e-05,
+      "input_words": [
+        "0xbb180adbe303884a",
+        "0xb180adbe303884ab",
+        "0x0e212aec602b678c",
+        "0x60f1095763015b7c",
+        "0xabb180adbe303884"
+      ],
+      "output_words": [
+        "0x0000000000000000",
+        "0x0000000000000000",
+        "0x0000000000000001",
+        "0x0000000000000001",
+        "0x0000000000000000"
+      ]
+    },
+    {
+      "output_active": 2,
+      "minimum_input_active": 48,
+      "proven_optimal": true,
+      "theta_effect_hex": "0x205cca5b000a2602",
+      "proof": "complete_unrestricted_enumeration_and_optimal_witness_with_nonzero_effect",
+      "source": "/home/yxb/分析/gaston_active_pattern/direct_enumeration/result/diff_out2.json",
+      "enumeration_seconds": 0.000165046,
+      "input_words": [
+        "0x2d80051301102e64",
+        "0xd80051101102e652",
+        "0x40b994b600144c04",
+        "0x2285cca5b000a260",
+        "0x52d80051301302e6"
+      ],
+      "output_words": [
+        "0x0000000000000001",
+        "0x0000000002000000",
+        "0x0000000000000000",
+        "0x0000000000000001",
+        "0x0000000000000001"
+      ]
+    },
+    {
+      "output_active": 3,
+      "minimum_input_active": 39,
+      "proven_optimal": true,
+      "theta_effect_hex": "0x00a8800118882401",
+      "proof": "complete_unrestricted_enumeration_and_optimal_witness_with_nonzero_effect",
+      "source": "/home/yxb/分析/gaston_active_pattern/direct_enumeration/result/diff_out3.json",
+      "enumeration_seconds": 0.087633042,
+      "input_words": [
+        "0x008c441200805440",
+        "0x0ac4412008014400",
+        "0x0051000231124002",
+        "0x300a881011888240",
+        "0x0008c44120880544"
+      ],
+      "output_words": [
+        "0x0000000000000000",
+        "0x0000200000000040",
+        "0x0000200000000041",
+        "0x0000200000000040",
+        "0x0000000000000040"
+      ]
+    },
+    {
+      "output_active": 4,
+      "minimum_input_active": 34,
+      "proven_optimal": true,
+      "theta_effect_hex": "0x002aa20200800480",
+      "proof": "complete_unrestricted_enumeration_and_optimal_witness_with_nonzero_effect",
+      "source": "/home/yxb/分析/gaston_active_pattern/direct_enumeration/result/diff_out4_gpu.json",
+      "enumeration_seconds": 0.067126166,
+      "input_words": [
+        "0x0100400040000550",
+        "0x1005202400014510",
+        "0x0055540401800100",
+        "0x0082aa2021080048",
+        "0x1030040024020155"
+      ],
+      "output_words": [
+        "0x0000000200001001",
+        "0x0000001200000001",
+        "0x0000000200001001",
+        "0x0000000200000001",
+        "0x0000001000000001"
+      ]
+    },
+    {
+      "output_active": 5,
+      "minimum_input_active": 25,
+      "proven_optimal": true,
+      "theta_effect_hex": "0x2200000004008110",
+      "proof": "complete_unrestricted_enumeration_and_optimal_witness_with_nonzero_effect",
+      "source": "/home/yxb/分析/gaston_active_pattern/direct_enumeration/result/diff_out5_gpu.json",
+      "enumeration_seconds": 16.605702625,
+      "input_words": [
+        "0x0002024088911000",
+        "0x0000040080100000",
+        "0x4400000408410a20",
+        "0x0220000000404811",
+        "0x0400200428831000"
+      ],
+      "output_words": [
+        "0x0000020000801000",
+        "0x0000020000801000",
+        "0x0000000000800801",
+        "0x0000000000800000",
+        "0x0000020000001001"
+      ]
+    },
+    {
+      "output_active": 6,
+      "minimum_input_active": 13,
+      "proven_optimal": true,
+      "theta_effect_hex": "0x0000020040000000",
+      "proof": "complete_position_orbits_with_exact_disjoint_zero_pair_pruning",
+      "source": "/home/yxb/分析/gaston_active_pattern/direct_enumeration/result/diff_out6_nonzero.json",
+      "enumeration_seconds": 487.308457649,
+      "input_words": [
+        "0x0020000040000000",
+        "0x0200000800000010",
+        "0x0000040080000800",
+        "0x0000002100000000",
+        "0x1002000020000000"
+      ],
+      "output_words": [
+        "0x0000000040000001",
+        "0x0000000000800000",
+        "0x0000000000000001",
+        "0x0000020800000000",
+        "0x0000000000001000"
+      ]
+    }
+  ]
+}

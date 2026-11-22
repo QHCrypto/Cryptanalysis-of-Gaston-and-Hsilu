@@ -1,0 +1,15 @@
+{
+  "rounds": 3,
+  "word_bits": 8,
+  "key_word": 0,
+  "completed_rounds": 3,
+  "stage": "projection",
+  "nodes": 1201,
+  "peak_nodes": 3793,
+  "collections": 15,
+  "recursive_calls": 38472,
+  "seconds": 0.001628100,
+  "coefficient_certificate": true,
+  "failure": "",
+  "low_coefficients": [[0,1],[1,1],[1,1],[0,0]]
+}

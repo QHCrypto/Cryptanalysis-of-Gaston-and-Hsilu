@@ -1,0 +1,32 @@
+{
+  "verification": "PASS",
+  "method": "exact_integer_arithmetic",
+  "forward_matrix_rank": 320,
+  "requires_solver": false,
+  "results": [
+    {
+      "output_active": 7,
+      "input_active": 11,
+      "theta_effect_hex": "0x0000000000000801",
+      "claim_refuted": true,
+      "clauses_checked": 9541,
+      "all_checks_passed": true
+    },
+    {
+      "output_active": 8,
+      "input_active": 10,
+      "theta_effect_hex": "0x0000000000000801",
+      "claim_refuted": true,
+      "clauses_checked": 9653,
+      "all_checks_passed": true
+    },
+    {
+      "output_active": 9,
+      "input_active": 7,
+      "theta_effect_hex": "0x0000000000000801",
+      "claim_refuted": true,
+      "clauses_checked": 9753,
+      "all_checks_passed": true
+    }
+  ]
+}

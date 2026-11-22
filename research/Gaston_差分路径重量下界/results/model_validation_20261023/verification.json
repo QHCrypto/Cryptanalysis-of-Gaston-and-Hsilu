@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "scope": "Exported lossy model encoding; not a solved three-round optimum",
+  "variables": 3072,
+  "constraints": 9346,
+  "xor_gates_exhaustively_verified": 1408,
+  "chi_columns_checked": 192,
+  "chi_input_output_pairs_checked": 1024,
+  "lossy_supported_pairs": 962,
+  "true_ddt_supported_pairs": 317,
+  "every_true_ddt_pair_embeds_at_no_greater_cost": true,
+  "lossy_minimum_cost_by_input_hw": [
+    0,
+    2,
+    3,
+    3,
+    4,
+    4
+  ],
+  "reference_linear_cases_per_layer": 353,
+  "reference_linear_layers_checked": 2,
+  "linear_rank": 320,
+  "initial_linear_layer_can_be_eliminated_for_free_input": true,
+  "column_translation_symmetry_checked": true,
+  "sha256": {
+    "/home/yxb/分析/Gaston_差分路径重量下界/results/model_validation_20261023/model.mps": "a90a2321a50a0897cca3ed7513a55e4341bb8eec23b06ef71878fedc4514e5de",
+    "/home/yxb/分析/Gaston_差分路径重量下界/results/model_validation_20261023/encoding.json": "8ae8facf8ee923915c97dbcfd22d539c624fb7ddf5dba11d21d2c4cc70d2e25d",
+    "/home/yxb/分析/Gaston_差分路径重量下界/gaston_3round_lossy.cpp": "0607b366519978f978605ce5eb88e80dd3b177ff713de83bd122daafa2d0d623",
+    "/home/yxb/分析/Gaston_差分路径重量下界/gaston_3round_lossy": "ddc597b71eb66466ae80f11ad8d376f24e4caac9b9b37cb8d6f6fd7601ecc8b6",
+    "/home/yxb/分析/gaston_ref/gaston/implementation/reference/gaston.c": "4a0ce39ce158f410111aef7a985c2a7f8b7752e669162ec78e20eaf56bd2f5dc",
+    "/home/yxb/分析/gaston_ref/gaston/implementation/reference/gaston.h": "3fbca231939b1369e9ee093689b60eb1df716a1b4f0dea0da90fc3aacb57bc0a"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "id": "forward_D1_M1_D3_chi1_to_3_full_jobs",
+  "algorithm": "Gaston",
+  "rounds": 5,
+  "start_round_index": 7,
+  "delta_core": [
+    "0000000000000000",
+    "000000100000000a",
+    "0000000000000000",
+    "0000000000000040",
+    "0400000010003000"
+  ],
+  "lambda_core": [
+    "0008800400022001",
+    "0000000000000000",
+    "0000000000000000",
+    "0004000000000000",
+    "1000880040002000"
+  ],
+  "previous_datf": {
+    "numerator": "0",
+    "denominator": "1",
+    "log2_abs": null
+  },
+  "aliases": [
+    "forward_D1_M1_D3_chi1_to_3_full_jobs"
+  ],
+  "sources": [
+    "/home/yxb/分析/差分线性/gaston_dl/results/fixed_tail_extension/full_jobs/eb68140b4e8229a65b9e571c308526b6c1b688e2a92522c6802b47f331d74adf.json.gz"
+  ],
+  "method": "original DATF Algorithm 3",
+  "status": "resource_limit",
+  "correlation": null,
+  "bias": null,
+  "limits": {
+    "seconds": 30,
+    "max_terms": 1000000,
+    "max_products": 100000000,
+    "max_nodes": 100000,
+    "address_space_bytes": 4294967296
+  },
+  "first_L_omitted": true,
+  "remaining_alpha_assumed_jointly_uniform": true,
+  "dag_verified_full_states": 4,
+  "phase": "beta_expansion",
+  "statistics": {
+    "initial_terms": 60,
+    "initial_variables": 54,
+    "peak_polynomial_terms": 302799,
+    "beta_definitions_expanded": 299,
+    "product_pairs": 4131235621
+  },
+  "elapsed_seconds": 1.1245054920436814,
+  "peak_rss_kib": 187580,
+  "reason": "ResourceLimit: monomial product pairs exceed 100000000",
+  "evaluation_order": "full beta expansion then Bias"
+}

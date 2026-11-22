@@ -1,0 +1,24 @@
+{
+  "mode": "difference",
+  "condition": "E(rho_east(X)) != 0",
+  "input_active": 3,
+  "output_active": 13,
+  "total_active": 16,
+  "input_words": [
+    "0x0000000000000000",
+    "0x0000008000000100",
+    "0x0000000000000000",
+    "0x0000000000000000",
+    "0x0000000000000001"
+  ],
+  "output_words": [
+    "0x0400000000002000",
+    "0x1004000008000020",
+    "0x0000100002000000",
+    "0x0800010000000000",
+    "0x0100802000000000"
+  ],
+  "theta_effect_hex": "0x0040000800000000",
+  "source": "/home/yxb/\u5206\u6790/gaston_active_pattern/result/diff_in3.json",
+  "certificate_role": "upper_bound_witness"
+}

@@ -1,0 +1,114 @@
+{
+  "status": "PASS",
+  "one_chi_LAT_identities": 1024,
+  "native_two_chi_crosschecks": [
+    {
+      "case": 0,
+      "native_first_DDT_branches": 4,
+      "correlation": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "statistics": {
+        "rank": 0,
+        "quadratic_terms": 0,
+        "inconsistent_constraints": false
+      }
+    },
+    {
+      "case": 1,
+      "native_first_DDT_branches": 16,
+      "correlation": {
+        "numerator": "0",
+        "denominator": "1",
+        "log2_abs": null
+      },
+      "statistics": {
+        "inconsistent_constraints": true,
+        "rank": 1
+      }
+    },
+    {
+      "case": 2,
+      "native_first_DDT_branches": 4,
+      "correlation": {
+        "numerator": "0",
+        "denominator": "1",
+        "log2_abs": null
+      },
+      "statistics": {
+        "inconsistent_constraints": true,
+        "rank": 0
+      }
+    },
+    {
+      "case": 3,
+      "native_first_DDT_branches": 32,
+      "correlation": {
+        "numerator": "0",
+        "denominator": "1",
+        "log2_abs": null
+      },
+      "statistics": {
+        "rank": 0,
+        "quadratic_terms": 2,
+        "inconsistent_constraints": false
+      }
+    },
+    {
+      "case": 4,
+      "native_first_DDT_branches": 8,
+      "correlation": {
+        "numerator": "1",
+        "denominator": "2",
+        "log2_abs": -1.0
+      },
+      "statistics": {
+        "rank": 1,
+        "quadratic_terms": 0,
+        "inconsistent_constraints": false
+      }
+    },
+    {
+      "case": 5,
+      "native_first_DDT_branches": 16,
+      "correlation": {
+        "numerator": "0",
+        "denominator": "1",
+        "log2_abs": null
+      },
+      "statistics": {
+        "inconsistent_constraints": true,
+        "rank": 0
+      }
+    },
+    {
+      "case": 6,
+      "native_first_DDT_branches": 4,
+      "correlation": {
+        "numerator": "0",
+        "denominator": "1",
+        "log2_abs": null
+      },
+      "statistics": {
+        "inconsistent_constraints": true,
+        "rank": 1
+      }
+    },
+    {
+      "case": 7,
+      "native_first_DDT_branches": 64,
+      "correlation": {
+        "numerator": "1",
+        "denominator": "64",
+        "log2_abs": -6.0
+      },
+      "statistics": {
+        "rank": 6,
+        "quadratic_terms": 0,
+        "inconsistent_constraints": false
+      }
+    }
+  ]
+}

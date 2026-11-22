@@ -1,0 +1,8 @@
+PASS: independent inverse matrix supplies 26 disjoint rank-10 column pairs for every nonzero output-column gap.
+PASS K=1: unrestricted optimum 57 attained with E=0x071095763015b7c6
+PASS K=2: unrestricted optimum 48 attained with E=0x205cca5b000a2602
+PASS K=3: unrestricted optimum 39 attained with E=0x00a8800118882401
+PASS K=4: unrestricted optimum 34 attained with E=0x002aa20200800480
+PASS K=5: unrestricted optimum 25 attained with E=0x2200000004008110
+PASS K=6: 1171552/1171552 distinct canonical position orbits; 5 witnesses; best=13; proven=True
+Saved validated summary: /home/yxb/分析/gaston_active_pattern/direct_enumeration/result/nonzero_output_1_to_6.json

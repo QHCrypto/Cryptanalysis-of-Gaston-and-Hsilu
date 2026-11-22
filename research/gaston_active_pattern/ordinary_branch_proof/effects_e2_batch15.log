@@ -1,0 +1,5 @@
+Cases=32, jobs=3, total<=15
+Completed=5/32, last=0x0000000000000801, verified=False, elapsed=282.4s
+Completed=6/32, last=0x0000000000004001, verified=False, elapsed=285.2s
+Completed=7/32, last=0x0000000000000201, verified=False, elapsed=285.2s
+Finished. Only records with drat_verified=true prove an E case.

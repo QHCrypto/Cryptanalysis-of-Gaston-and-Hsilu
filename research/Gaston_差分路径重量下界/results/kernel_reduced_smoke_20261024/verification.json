@@ -1,0 +1,57 @@
+{
+  "status": "PASS",
+  "scope": "Exported lossy model encoding; not a solved three-round optimum",
+  "subproblem": {
+    "kernel_both": true,
+    "middle_active": 6,
+    "weight_cap": 43
+  },
+  "kernel_reduced": true,
+  "kernel_type_verification": {
+    "type_count": 62,
+    "analytically_excluded_middle9_lower_bound": 45,
+    "all_type_lists_recomputed": true
+  },
+  "kernel_even_bit_weight_identity_verified_on_full_basis": true,
+  "variables": 2430,
+  "constraints": 8223,
+  "xor_gates_exhaustively_verified": 512,
+  "chi_columns_checked": 192,
+  "chi_input_output_pairs_checked": 1024,
+  "lossy_supported_pairs": 962,
+  "true_ddt_supported_pairs": 317,
+  "every_true_ddt_pair_embeds_at_no_greater_cost": true,
+  "lossy_minimum_cost_by_input_hw": [
+    0,
+    2,
+    3,
+    3,
+    4,
+    4
+  ],
+  "reference_linear_cases_per_layer": 353,
+  "reference_linear_layers_checked": 2,
+  "linear_rank": 320,
+  "initial_linear_layer_can_be_eliminated_for_free_input": true,
+  "column_translation_symmetry_checked": true,
+  "activity_profiles_enabled": true,
+  "activity_or_hull_enabled": true,
+  "count_minima_by_effect_nonzero_flags": {
+    "00": 18,
+    "01": 22,
+    "10": 22,
+    "11": 22
+  },
+  "sha256": {
+    "/home/yxb/分析/Gaston_差分路径重量下界/results/kernel_reduced_smoke_20261024/model.mps": "0d42327ce5dcb00bd1cb6826b16dbde8f7e0aa3f14970ffce127a8bb2ea886ac",
+    "/home/yxb/分析/Gaston_差分路径重量下界/results/kernel_reduced_smoke_20261024/encoding.json": "f90334b67989b165a305e92f6a5497cf65d04395019338eae8118d27f89fae95",
+    "/home/yxb/分析/Gaston_差分路径重量下界/gaston_3round_lossy.cpp": "ea22b97c2e1e0d3a26dc43a3e15130e167949671456b49118fe773d0508d298a",
+    "/home/yxb/分析/Gaston_差分路径重量下界/gaston_3round_lossy": "c27af3c7f334ec38eb12df8d565437c97ccbc20415d2f3378394d0d1dd8040c2",
+    "/home/yxb/分析/gaston_ref/gaston/implementation/reference/gaston.c": "4a0ce39ce158f410111aef7a985c2a7f8b7752e669162ec78e20eaf56bd2f5dc",
+    "/home/yxb/分析/gaston_ref/gaston/implementation/reference/gaston.h": "3fbca231939b1369e9ee093689b60eb1df716a1b4f0dea0da90fc3aacb57bc0a",
+    "/home/yxb/分析/Gaston_差分路径重量下界/src/activity_profile_data.hpp": "827214c9f71f9712204a155455fc30f25d96c225a1535568855930c800f89b18",
+    "/home/yxb/分析/Gaston_差分路径重量下界/references/activity_profiles.json": "7965612f47decfac18302f35bfca086824255653ea8576dfbb6b5f630fb1f8fd",
+    "/home/yxb/分析/Gaston_差分路径重量下界/src/kernel_type_data.hpp": "c35a6e9704c05e88c2fa1e9c948fc237de977976b3632c0fe2cb2c8a8fac5f66",
+    "/home/yxb/分析/Gaston_差分路径重量下界/results/kernel_structure_audit_20261024.json": "50e32bcb51b99321001052cd3276c75f02f95045fd64b8f06c4559bb3e414a3c"
+  }
+}

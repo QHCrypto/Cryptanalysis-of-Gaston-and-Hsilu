@@ -1,0 +1,265 @@
+{
+  "status": "PASS",
+  "coordinate_convention": "all path coordinates MSB-first; native bit = 63-j",
+  "source_svg": "/home/yxb/\u5206\u6790/\u4ee3\u6570\u653b\u51fb/Hsilu3r_new/hsilu_3round_best_attack_1_5.1.svg",
+  "source_sha256": "f94c612fc421c6307f5f01115248602b660e9cb3bf1bb41700c8d2a96f06679e",
+  "structural_cells_verified": 2240,
+  "round_constants": [
+    "69",
+    "5a",
+    "4b"
+  ],
+  "counts": {
+    "active": 2,
+    "X1": 4,
+    "X2": 32,
+    "X3": 4,
+    "coordinate_guesses": 25,
+    "budget_sum": 63
+  },
+  "original_prefix": {
+    "prefix_hex": [
+      "63c92946c6b0ac2c",
+      "101be7b317c13375"
+    ],
+    "state_hex": [
+      "021f96cbf72f8f13",
+      "40989cb90d7b9cbf",
+      "a1ecf7ceaa45d5bc",
+      "94e97ae51c923523",
+      "3e45edc8d76d6a68"
+    ],
+    "input_violations": [
+      {
+        "lane": 1,
+        "msb_bit": 51,
+        "native_bit": 12,
+        "required": 0,
+        "actual": 1
+      },
+      {
+        "lane": 4,
+        "msb_bit": 51,
+        "native_bit": 12,
+        "required": 1,
+        "actual": 0
+      }
+    ],
+    "valid_for_new_path": false,
+    "X2_rank_at_zero_active": 32,
+    "X2_consistent_at_zero_active": true,
+    "X2_conditions_depending_on_active_bits": {
+      "45": [],
+      "51": [
+        [
+          4,
+          31
+        ]
+      ]
+    },
+    "combined_X2_and_25_guesses_rank_at_zero_active": 57
+  },
+  "new_prefix": {
+    "prefix_hex": [
+      "63c92946c6b0ac2c",
+      "101be7b317c13396"
+    ],
+    "state_hex": [
+      "37fef50cc9b2fe86",
+      "5829ff2a6b138b34",
+      "0f5991df6af4bdb1",
+      "00c5b570c05196de",
+      "c6e83a8e11bc9d7a"
+    ],
+    "increment_from_original_M1": 33,
+    "all_input_conditions_satisfied": true,
+    "X2_rank": 32,
+    "X2_consistent": true,
+    "background_dimension_after_X2": 30,
+    "guessed_coordinates_msb": [
+      [
+        0,
+        10
+      ],
+      [
+        0,
+        32
+      ],
+      [
+        0,
+        41
+      ],
+      [
+        0,
+        45
+      ],
+      [
+        0,
+        52
+      ],
+      [
+        0,
+        59
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        55
+      ],
+      [
+        1,
+        57
+      ],
+      [
+        1,
+        61
+      ],
+      [
+        2,
+        10
+      ],
+      [
+        2,
+        15
+      ],
+      [
+        2,
+        29
+      ],
+      [
+        2,
+        48
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        14
+      ],
+      [
+        3,
+        41
+      ],
+      [
+        3,
+        54
+      ],
+      [
+        3,
+        59
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        8
+      ],
+      [
+        4,
+        9
+      ],
+      [
+        4,
+        58
+      ]
+    ],
+    "independent_guess_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      23,
+      24
+    ],
+    "independent_guess_rank": 23,
+    "combined_rank_before_X3": 55,
+    "remaining_variables_before_X3": 7,
+    "guess_dependencies": [
+      {
+        "guess_indices": [
+          6
+        ],
+        "coordinates_msb": [
+          [
+            1,
+            2
+          ]
+        ],
+        "rhs": 0
+      },
+      {
+        "guess_indices": [
+          12,
+          22
+        ],
+        "coordinates_msb": [
+          [
+            2,
+            15
+          ],
+          [
+            4,
+            8
+          ]
+        ],
+        "rhs": 0
+      }
+    ],
+    "all_branches_affine": true,
+    "guesses_and_conditions_independent_of_active_variables": true
+  },
+  "round_constant_corrections_to_analyzer": [
+    "0",
+    "X2[1][57]",
+    "X2[1][59]",
+    "0"
+  ],
+  "sampled_branches": 4096,
+  "consistent_sampled_branches": 3842,
+  "sampled_backgrounds": 32776,
+  "sampled_branch_rank_consistency_histogram": {
+    "4:1": 3591,
+    "3:0": 246,
+    "3:1": 249,
+    "2:0": 8,
+    "2:1": 2
+  },
+  "sampled_output_rank_histogram": {
+    "2": 12391,
+    "1": 18245,
+    "0": 2140
+  },
+  "sampled_backgrounds_per_branch": 8.001953125
+}

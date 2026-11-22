@@ -1,0 +1,227 @@
+{
+  "status": "Complete counted schedules under explicit cost models, with reduced-instance verification; not a practical execution of the seven-round instance",
+  "model": "Hsilu (IV,K0,K1,N0,0), 7 initialization rounds, full 64-dimensional N0 cube, first 128 output bits observable",
+  "tests": [
+    {
+      "word_bits": 4,
+      "rounds": 3,
+      "keys_exhausted": 16,
+      "ternary_points": 81,
+      "ternary_orbit_evaluations": 24,
+      "all_state_bits_match_direct_and_both_schedules": true,
+      "in_place_contraction_matches": true,
+      "rate_distinct_signatures": 16,
+      "rate_max_bucket_size": 1,
+      "ppm_counts": {
+        "base_representatives": 1,
+        "middle_representatives": 2,
+        "middle_periods": [
+          2,
+          4
+        ]
+      }
+    },
+    {
+      "word_bits": 8,
+      "rounds": 4,
+      "keys_exhausted": 256,
+      "ternary_points": 6561,
+      "ternary_orbit_evaluations": 834,
+      "all_state_bits_match_direct_and_both_schedules": true,
+      "in_place_contraction_matches": true,
+      "rate_distinct_signatures": 256,
+      "rate_max_bucket_size": 1,
+      "ppm_counts": {
+        "base_representatives": 4,
+        "middle_representatives": 10,
+        "middle_periods": [
+          2,
+          4,
+          8
+        ]
+      }
+    },
+    {
+      "word_bits": 64,
+      "rounds": 4,
+      "cube_positions": [
+        1,
+        4,
+        13,
+        20,
+        31,
+        40,
+        52,
+        63
+      ],
+      "local_keys_exhausted": 256,
+      "nonce_points_per_key": 256,
+      "all_320_bits_match_reference": true,
+      "in_place_contraction_matches": true
+    }
+  ],
+  "costs": {
+    "common": {
+      "data": {
+        "value": 18446744073709551616,
+        "log2": 64.0,
+        "unit": "distinct-nonce queries, each observing 128 bits"
+      },
+      "signature_truth_table_storage": {
+        "value": 2361183241434822606848,
+        "log2": 71.0,
+        "unit": "bits"
+      },
+      "deterministic_matching_scan": {
+        "value": 18446744073709551616,
+        "log2": 64.0,
+        "unit": "128-bit signature comparisons; two word reads per comparison"
+      },
+      "candidate_index_storage": {
+        "value": 3541774862152233910272,
+        "log2": 71.58496250072116,
+        "unit": "bits, payload only: 128-bit signature + 64-bit key"
+      },
+      "candidate_verification": "L * 2^64 local candidate checks; L is the actual seven-round signature bucket size",
+      "full_recovery_condition": "L * 2^64 must not dominate the reported preprocessing time; no seven-round bucket distribution is certified"
+    },
+    "A_materialized_four_factor_ppm": {
+      "base_prefix_calls": {
+        "value": 32784488486935195549696,
+        "log2": 74.7954314732145,
+        "unit": "five-round prefix calls"
+      },
+      "middle_16_plus_16": {
+        "value": 369620333406401535622914239574835200,
+        "log2": 118.15352744495907,
+        "unit": "64-bit AND-XOR accumulations"
+      },
+      "outer_32_plus_32": {
+        "value": 2641089728309238091338490758593249280,
+        "log2": 120.99054473236401,
+        "unit": "64-bit AND-XOR accumulations"
+      },
+      "combined_accumulations": {
+        "value": 3010710061715639626961404998168084480,
+        "log2": 121.17951519585564,
+        "unit": "64-bit AND-XOR accumulations"
+      },
+      "main_memory_accesses_simple_loop": {
+        "value": 12042840246862558507845619992672337920,
+        "log2": 123.17951519585564,
+        "unit": "64-bit accesses: read two factors, read/write accumulator"
+      },
+      "time_one_access_one_round": {
+        "value": 1.720405749551794e+36,
+        "log2": 120.37216027379804,
+        "unit": "seven-round equivalents, memory-access-dominated paper-style model"
+      },
+      "time_one_accumulation_one_round": {
+        "value": 4.301014373879485e+35,
+        "log2": 118.37216027379804,
+        "unit": "seven-round equivalents, alternative aggregate primitive model"
+      },
+      "time_xor_only": {
+        "value": 2.3894524299330473e+34,
+        "log2": 114.20223527235574,
+        "unit": "seven-round equivalents, AND/memory/indexing overhead ignored"
+      },
+      "dominant_storage": {
+        "value": 39355303768951268365062635520,
+        "log2": 94.99054473236401,
+        "unit": "bits"
+      },
+      "additional_lower_order_work": "6 orbit-length accumulators; <=126 rotation symmetrizations; final linear layer; 64-variable fast Mobius transform; matching-table index"
+    },
+    "B_shared_ternary_batch_evaluation": {
+      "points": {
+        "value": 3433683820292512484657849089281,
+        "log2": 101.43760004615399,
+        "unit": "ternary assignments"
+      },
+      "rotation_representatives": {
+        "value": 53651309692070536526220688464,
+        "log2": 95.437600046154,
+        "unit": "ternary necklaces, including short periods"
+      },
+      "representative_evaluation_upper_bound": {
+        "value": 53651309692070536526220688464,
+        "log2": 95.437600046154,
+        "unit": "seven-round Hsilu calls; actual circuit is first linear layer plus six quadratic-only rounds"
+      },
+      "grid_fill_writes": {
+        "value": 6867367640585024969315698178562,
+        "log2": 102.43760004615399,
+        "unit": "64-bit writes"
+      },
+      "contraction_fibers": {
+        "value": 3433683820274065740584139537665,
+        "log2": 101.43760004614624,
+        "unit": "3-vector to 2-vector contractions"
+      },
+      "contraction_xors": {
+        "value": 13734735281096262962336558150660,
+        "log2": 103.43760004614624,
+        "unit": "64-bit XORs"
+      },
+      "contraction_memory_accesses": {
+        "value": 34336838202740657405841395376650,
+        "log2": 104.75952814103361,
+        "unit": "64-bit reads/writes"
+      },
+      "total_grid_memory_accesses": {
+        "value": 41204205843325682375157093555212,
+        "log2": 105.0225625468687,
+        "unit": "64-bit reads/writes"
+      },
+      "leading_time_one_access_one_round": {
+        "value": 5.939966430167167e+30,
+        "log2": 102.2282976242516,
+        "unit": "seven-round equivalents; local indexing/rotations and XOR overhead are separate O(3^64) word operations"
+      },
+      "leading_time_plus_contraction_xor_cost": {
+        "value": 6.048972265731424e+30,
+        "log2": 102.25453289263072,
+        "unit": "seven-round equivalents; excludes address-generation and rotation arithmetic"
+      },
+      "storage_peak_in_place": {
+        "value": 439511528997441598036204683427968,
+        "log2": 108.43760004615399,
+        "unit": "bits; dense two-word ternary table, contraction may overwrite its input"
+      },
+      "matching": "After 64 contractions, entries are the actual signature truth table for all 2^64 local key words. The default schedule scans it against the observed signature in 2^64 comparisons and retains every matching key; a hash index is optional, not required.",
+      "why_no_missing_key_evaluation_factor": "The 3->2 contraction computes every key's cube sum simultaneously, with no separate evaluation of a large expression at each key.",
+      "remaining_word_arithmetic": "O(3^64) for necklace generation, orbit scatter, rotations and fixed-width address calculations; decimals of the leading cost model are not wall-clock predictions"
+    },
+    "paper_2025_1029_reported": {
+      "time_log2": 95.96,
+      "data_log2": 64,
+      "memory_bits_log2": 104.85,
+      "time_unit": "seven-round Ascon permutations",
+      "status": "Author-reported estimate; the all-key evaluation step is not independently certified here"
+    }
+  },
+  "proof": [
+    "First-round state is B(K)+L(0,(1+K1)*x,0,x,0). A degree-64 nonce monomial after the remaining six quadratic rounds requires 64 nonce-bearing leaves; any first-state constant or later linear/constant branch cannot contribute.",
+    "Hence the full cube equals the cube of G(x,b), where b=(1+K1)*x and G is the first linear layer followed by six quadratic-only rounds. G is rotation-covariant.",
+    "Each coordinate of (x,b) assumes only (0,0),(1,0),(1,1). At fixed K1 bit 0, cube summation chooses (0,0) and (1,1); at bit 1 it chooses (0,0) and (1,0). Tensoring this local 3->2 XOR map over 64 coordinates gives every key's cube sum exactly.",
+    "The contraction schedule is the pointwise-evaluation counterpart of retaining the degree-16 factors and their last-two-round circuit: lower-degree terms disappear under the full 64-dimensional sum, and common subexpressions are evaluated only once per grid point."
+  ],
+  "author_code_audit": {
+    "repository": "https://github.com/keyrecoveryofascon/keyrecoveryofascon",
+    "commit": "616f5d247bd9decdb39a74f2339f73a115392910",
+    "observed": "The supplied experiment constructs symbolic six-round superpoly expressions; no seven-round all-key matching-table construction was found in the inspected source. This does not prove that no faster algorithm exists."
+  },
+  "limitations": [
+    "No seven-round nonconstant-signature, collision-distribution, or complete recovery-success claim.",
+    "The ternary batch algorithm is an additional derivation for this Hsilu transfer, not a result claimed in the Ascon paper and not a claim of novelty.",
+    "Both memory estimates are for specified schedules, not minimum memory bounds.",
+    "No claim of optimal time complexity or of a flaw in the published Ascon result."
+  ],
+  "elapsed_seconds": 1.5807368790265173,
+  "quartic_screening": {
+    "used_to_reduce_these_costs": false,
+    "follow_up_report": "/home/yxb/\u5206\u6790/Cube/results/hsilu_7r_quartic_screen.json",
+    "meaning": "These are explicit unpruned schedules. A separate first-five-round MILP screen audits whether quartic terms can be excluded."
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "mode": "difference",
+  "condition": "E(rho_east(X)) != 0",
+  "metric": "nonzero 5-bit S-box columns",
+  "claim_output_active": 9,
+  "claim_input_at_least": 10,
+  "claim_holds": false,
+  "certificate_type": "explicit_counterexample",
+  "minimum_input_proven": false,
+  "theta_effect_hex": "0x0000000000000801",
+  "theta_effect_weight": 2,
+  "theta_input_words": [
+    "0x0000000000800001",
+    "0x0000000000000002",
+    "0x0000000000800000",
+    "0x0000000420000000",
+    "0x0000000400000000"
+  ],
+  "P_hex": "0x0000000020000003",
+  "Q_hex": "0x0001000040000800",
+  "source_solution": "e2_gap11_out9.sol",
+  "source_solution_sha256": "489f9ad985dd8ea6a155d8b3d262842f6c2efb64b4f0a2f6084e273baca121f3",
+  "input_words": [
+    "0x0000000000800001",
+    "0x0000000000000020",
+    "0x0000000000000002",
+    "0x0000000000000084",
+    "0x0000000040000000"
+  ],
+  "input_columns": [
+    0,
+    1,
+    2,
+    5,
+    7,
+    23,
+    30
+  ],
+  "input_active": 7,
+  "input_bit_weight": 7,
+  "input_column_patterns": {
+    "0": "0x01",
+    "1": "0x04",
+    "2": "0x08",
+    "5": "0x02",
+    "7": "0x08",
+    "23": "0x01",
+    "30": "0x10"
+  },
+  "output_words": [
+    "0x0000000400000001",
+    "0x0200000004008000",
+    "0x0000000000000002",
+    "0x0000000000000820",
+    "0x0000000000000004"
+  ],
+  "output_columns": [
+    0,
+    1,
+    2,
+    5,
+    11,
+    15,
+    26,
+    34,
+    57
+  ],
+  "output_active": 9,
+  "output_bit_weight": 9,
+  "output_column_patterns": {
+    "0": "0x01",
+    "1": "0x04",
+    "2": "0x10",
+    "5": "0x08",
+    "11": "0x08",
+    "15": "0x02",
+    "26": "0x02",
+    "34": "0x01",
+    "57": "0x02"
+  },
+  "output_quasi_cost": 18,
+  "input_quasi_cost": 16,
+  "cnf": "unrestricted_out9.cnf",
+  "cnf_sha256": "5162cb081a9a862de520c42e4e9a831b9d669c45298cd195d03be40780ff380c",
+  "cnf_model": "out9.sat.model",
+  "cnf_model_sha256": "86906ce1b60b26453f6643fa4f972ccff56cabe12cf5b7efcd55ab777ca1fa93",
+  "runtime_seconds": 1.86211
+}

@@ -1,0 +1,13 @@
+{
+  "weighted_exhaustive_cases": 140,
+  "layerwise_not_recursive_marginal": "PASS",
+  "nonuniform_alpha": "PASS",
+  "isolated_substitution": "PASS",
+  "status": "PASS",
+  "dag_checks": 32,
+  "algorithm3_expansion_checks": 64,
+  "outer_DDT_and_tail_LAT_and_boundary_checks": "PASS",
+  "algorithms_3_5_and_independent_middle_crosscheck": "PASS",
+  "new_full_endpoint_jobs": 0,
+  "whole_endpoint_resource_limits_preserved": true
+}

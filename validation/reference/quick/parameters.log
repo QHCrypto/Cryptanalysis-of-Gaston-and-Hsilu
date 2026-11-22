@@ -1,0 +1,68 @@
+COMMAND ["make", "native.so"]
+g++ -O3 -std=c++17 -Wall -Wextra -Wpedantic -shared -fPIC native.cpp ../hsilu_ref/hsilu.cpp -o native.so
+COMMAND ["/usr/bin/python3", "verify_section2.py"]
+{
+  "date": "2026-11-11",
+  "source": "/tmp/gaston_hsilu_reproduce_mff7xjjx/research/Gaston_Hsilu_CTP/verification_inputs/paper_parameters.tex",
+  "source_sha256": "d84621100c0d892e349179e2809a24c02adcba5846f2ff5be86d076773500d0f",
+  "parameters_parsed_from_latex": true,
+  "chi_lookup_entries": 32,
+  "chi_coordinate_degrees": [
+    2,
+    2,
+    2,
+    2,
+    2
+  ],
+  "gaston_rotation_triples": 5,
+  "hsilu_circuit_steps": 13,
+  "round_constants": 12,
+  "linear_basis_comparisons_per_permutation": 320,
+  "linear_ranks": {
+    "gaston": 320,
+    "hsilu": 320
+  },
+  "permutation_comparisons_with_python_and_native": 240,
+  "round_counts_checked": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "gaston_original_vectors": 3,
+  "bitstring_xof_comparisons": 130,
+  "xof_message_lengths_bits": [
+    0,
+    1,
+    7,
+    8,
+    62,
+    63,
+    64,
+    65,
+    127,
+    128,
+    190,
+    191,
+    192
+  ],
+  "aead_comparisons": 216,
+  "aead_ad_and_plaintext_lengths_bytes": [
+    0,
+    1,
+    15,
+    16,
+    17,
+    32
+  ],
+  "all_passed": true,
+  "scope": "Exact finite parameter, lookup and linear-map checks; sampled nonlinear permutation/mode agreement. No new security claim."
+}

@@ -1,0 +1,69 @@
+[
+  {
+    "a1": [
+      "0000000000080001",
+      "0000000000001000",
+      "0000000110002000",
+      "0004000000000000",
+      "0000008800104000"
+    ],
+    "sources": [
+      "Hsilu_trail/pysat_kissat/examples/diff_nonzero.json"
+    ]
+  },
+  {
+    "a1": [
+      "0000000000000000",
+      "0000000000100001",
+      "0000000000000000",
+      "0400204000008000",
+      "0000000000000000"
+    ],
+    "sources": [
+      "Hsilu_trail/pysat_kissat/results/diff_6_6_27.json",
+      "Hsilu_trail/pysat_kissat/research/chi5_propagation_20261012/path_trials/6_6_27_restricted_current47/trial.json",
+      "Hsilu_trail/pysat_kissat/research/chi5_propagation_20261012/path_trials/6_6_27_restricted_current47_plus10/trial.json",
+      "Hsilu_trail/pysat_kissat/research/chi5_propagation_20261012/path_trials/6_6_27_restricted_greedy_pc_trimmed/trial.json",
+      "Hsilu_trail/pysat_kissat/results/cardinality_6_6_27_20261011/mtotalizer_r1.json",
+      "Hsilu_trail/pysat_kissat/results/cardinality_6_6_27_20261011/seqcounter_r1.json",
+      "Hsilu_trail/pysat_kissat/results/cardinality_6_6_27_20261011/totalizer_r1.json",
+      "Hsilu_trail/pysat_kissat/results/cardinality_6_6_27_20261011/cardnetwrk_r1.json",
+      "Hsilu_trail/pysat_kissat/results/cardinality_6_6_27_20261011/sortnetwrk_r1.json",
+      "Hsilu_trail/pysat_kissat/results/cardinality_6_6_27_20261011/kmtotalizer_r1.json",
+      "Hsilu_trail/pysat_kissat/results/totalizer_improvements_20261011_203749/6_6_27_shared_alias/totalizer_r1.json",
+      "Hsilu_trail/pysat_kissat/results/totalizer_improvements_20261011_203749/6_6_27_shared_alias_preprocess/totalizer_r1.json",
+      "Hsilu_trail/pysat_kissat/results/totalizer_improvements_20261011_203749/6_6_27_baseline_y0/totalizer_r1.json"
+    ]
+  },
+  {
+    "a1": [
+      "0000000000000201",
+      "0000000000000044",
+      "0000000010402000",
+      "0000110000200000",
+      "0000000820104000"
+    ],
+    "sources": [
+      "Hsilu_trail/pysat_kissat/results/fuzzy_weight_completion_check_20261020/candidate_0001.json",
+      "Hsilu_trail/pysat_kissat/results/fuzzy_weight_completion_check_20261020/candidate_0002.json",
+      "Hsilu_trail/pysat_kissat/results/fuzzy_weight_completion_check_20261020/best.json"
+    ]
+  },
+  {
+    "a1": [
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000010021",
+      "0000000000000000"
+    ],
+    "sources": [
+      "Hsilu_trail/pysat_kissat/results/cardinality_13_3_25_parallel_20261011/mtotalizer_r1.json",
+      "Hsilu_trail/pysat_kissat/results/cardinality_13_3_25_parallel_20261011/seqcounter_r1.json",
+      "Hsilu_trail/pysat_kissat/results/cardinality_13_3_25_parallel_20261011/totalizer_r1.json",
+      "Hsilu_trail/pysat_kissat/results/cardinality_13_3_25_parallel_20261011/cardnetwrk_r1.json",
+      "Hsilu_trail/pysat_kissat/results/cardinality_13_3_25_parallel_20261011/sortnetwrk_r1.json",
+      "Hsilu_trail/pysat_kissat/results/cardinality_13_3_25_parallel_20261011/kmtotalizer_r1.json"
+    ]
+  }
+]

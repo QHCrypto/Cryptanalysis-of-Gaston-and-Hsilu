@@ -1,0 +1,219 @@
+{
+  "files": [
+    {
+      "path": "/home/yxb/分析/差分线性/DATF算法3复核_20261021/algorithm3.py",
+      "bytes": 11202,
+      "sha256": "be292ecd81205a49cd1127bc3c46ded65b9418d86773619145069f2c180f32b5"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/DATF算法3复核_20261021/representatives_extended/00.json",
+      "bytes": 1918,
+      "sha256": "c47541cee95cfaa59160530a40c61fb6ddb251464fe3bf67a86c1e71221c8f6e"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/DATF算法3复核_20261021/representatives_extended/01.json",
+      "bytes": 2156,
+      "sha256": "4444cf98b7d45498497276ee06637100d22d8a5603818a3d705c6ac16b127ac0"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/DATF算法3复核_20261021/representatives_extended/02.json",
+      "bytes": 2156,
+      "sha256": "22b3ae3de174378e1e3cd8d9b8891f3f91147a52052b3c8503116ad96715fbed"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/DATF算法3复核_20261021/representatives_extended/03.json",
+      "bytes": 1591,
+      "sha256": "6e2f4f8816abe1ce13c28d0a1ae4ab5cec9c1898a5b6006c7304c1db036059b7"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/DATF算法3复核_20261021/representatives_extended/05.json",
+      "bytes": 1866,
+      "sha256": "d23d02df7417490d79b1206fbab2003dbc8cc7029af48fd3bde04402de65d2d2"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/DATF算法3复核_20261021/representatives_extended/07.json",
+      "bytes": 1917,
+      "sha256": "fc28af195c6f1f3ae93be935775172d0010436a45fe5902813c888cd49870a7b"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/DATF算法3复核_20261021/representatives_extended/08.json",
+      "bytes": 1984,
+      "sha256": "cd033e23da55f22a768236aae2278a3ad2b8df925b8f1f5d98857f5b3c696da8"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/DATF算法3复核_20261021/representatives_extended/09.json",
+      "bytes": 1978,
+      "sha256": "dfbb939375deb409bc7978b228ea1c54172ea77e8adb7c0f5c52f6f0dc03609c"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/DATF算法3复核_20261021/representatives_extended/10.json",
+      "bytes": 2044,
+      "sha256": "3a4b307facafa220194ffb88bfb0d93722585907c62248c0fbe3d7a2f8ff67db"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/DATF算法3复核_20261021/representatives_extended/11.json",
+      "bytes": 2045,
+      "sha256": "b17d9180bc99d0fce0f0738e6fe26d3a51bb9d601cc3f47872cd89def4285c59"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/DATF算法3复核_20261021/results.json",
+      "bytes": 893759,
+      "sha256": "6a9979fa9abf1d5bd516a7b2384a8efa10a84e060392faaaf7527582722f09f6"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/DATF算法3复核_20261021/worker.py",
+      "bytes": 5364,
+      "sha256": "bee93b06e60f9fd0f2a64e496c53530bca41c85761ba6340a7c92f554a41c7b6"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/datf_pools/paper_full24/search_results.json",
+      "bytes": 90434,
+      "sha256": "0c3fc394fee0cd84e7b7a817d50db933b0aa2c6a5fe79f363834e03fe4939bc5"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/fixed_paper_tail/search.json",
+      "bytes": 1100045,
+      "sha256": "a598610aae2c9477a54b2a86520623699ce088921b9aa71f0c813ac9d78ed297"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/g4_middle_algorithm5_20261027/results.json",
+      "bytes": 20139,
+      "sha256": "3b1ac275da3f1dc054698bbe6208d64a2d2c19a961a52ba97e7ca11218c3c54b"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/tools/datf_k06.py",
+      "bytes": 9069,
+      "sha256": "a186728ca9442a9897f1adbdf0d19b9386e0defb29b46eef334859e5436ef87c"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/tools/fixed_tail_search.py",
+      "bytes": 15816,
+      "sha256": "1b67552e6360e5e8c3fdbd124036f88ba4e2c92e96fa8f0dad6e778bc873a127"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/hsilu_dl/build/hnw_endpoint",
+      "bytes": 87032,
+      "sha256": "15083b895b907340a6bd18cbc8ebe5c23fdd653a78ed4030bfc8863eea9ec9f7"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/hsilu_dl/results/research_summary.json",
+      "bytes": 656924,
+      "sha256": "b39f58459813d4390388b3e78af7a70f2e45bc60ad8888bb8c0a608a1a14f90d"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/hsilu_dl/src/hnw_endpoint.cpp",
+      "bytes": 13360,
+      "sha256": "11ca386bf97b1b710ffe0b5df807fa6822f8624f1fdde015d1ba46aaf4137a99"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/hsilu_dl/tools/hsilu.py",
+      "bytes": 3146,
+      "sha256": "cdd65cdf626dcd4231e292c70c31711f335717ddeeb032db5dfbcde25f4a487d"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/研究汇总_20261019/results_catalog.json",
+      "bytes": 18225978,
+      "sha256": "000ae18ef308897b0e9ff47f3bac3e6971d21666925ac1e11611f7cf5035a2a8"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/路径分段汇总_20261027/build_report.py",
+      "bytes": 26377,
+      "sha256": "aa8c378079f87c25d1a904837459aaa702ed81d906fd238daf93b9715b9c089a"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/路径分段汇总_20261027/cuts.json",
+      "bytes": 1816,
+      "sha256": "89f3a7664a8d3805d084dff089875edf7d396e14d04759936441be11a229e4dc"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/路径分段汇总_20261027/evaluate_middle.py",
+      "bytes": 7101,
+      "sha256": "86019a3100882d4976d4048db468bf0b89fa66a137d579108423683acec364b4"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/路径分段汇总_20261027/middle_manifest.json",
+      "bytes": 1834,
+      "sha256": "6a2afe236030639a25fb75b2df6a5acb0f897b414b8e9a6764ae1d681757ebee"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/路径分段汇总_20261027/prepare.py",
+      "bytes": 3198,
+      "sha256": "b1deb130813924ea57a22358206b16f53d3b72c6fa5f02d9d5947f42c3b40458"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/路径分段汇总_20261027/raw/G4c_b0_DATF.anf.json",
+      "bytes": 17619,
+      "sha256": "f3dad85a0b154a2dd611beb23432bbd6eb12c43ff3a2a67e6e81236460b42634"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/路径分段汇总_20261027/raw/G4c_b0_DATF.json",
+      "bytes": 1636,
+      "sha256": "2290021761ce4ab62ea860f5fe59ab2ed18a819f2cc9ce34b13307967b3ee441"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/路径分段汇总_20261027/raw/G4c_b0_HNW.json",
+      "bytes": 747,
+      "sha256": "9e90e1831e8240d23f7f1956696184be32a7be47ad38d098cd5ba53158ba149f"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/路径分段汇总_20261027/raw/G4c_b1_DATF.anf.json",
+      "bytes": 17619,
+      "sha256": "f3dad85a0b154a2dd611beb23432bbd6eb12c43ff3a2a67e6e81236460b42634"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/路径分段汇总_20261027/raw/G4c_b1_DATF.json",
+      "bytes": 1635,
+      "sha256": "87a06f37549399b72ef24644d97502cab56b0ebf207f67ca357d0d0bd6aeae0c"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/路径分段汇总_20261027/raw/G4c_b1_HNW.json",
+      "bytes": 747,
+      "sha256": "69cb4f79e3de4f0cbb09d372f4dbe1ee6b80435aa19651587fd7c3c0b0007a7e"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/路径分段汇总_20261027/raw/G4d_b0_DATF.anf.json",
+      "bytes": 17624,
+      "sha256": "0a889c9019265243a583f674396d596488a89b7d75dabf7475cc3b4c4005d484"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/路径分段汇总_20261027/raw/G4d_b0_DATF.json",
+      "bytes": 1637,
+      "sha256": "4bcaf8aa6f20d5aeb2063dd7cdff2abf519c0981ffa7513a1ef713de18aa9ea7"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/路径分段汇总_20261027/raw/G4d_b0_HNW.json",
+      "bytes": 748,
+      "sha256": "49378cbb59803baf88c6878fc60efb22a33fd81abd3c90adf18cf90f127dc467"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/路径分段汇总_20261027/raw/H5_prefix3_DATF.anf.json",
+      "bytes": 274175,
+      "sha256": "8b687e189148e230162c593297012f1d476617aac31a2634262cea4f4c2bb5d8"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/路径分段汇总_20261027/raw/H5_prefix3_DATF.json",
+      "bytes": 1798,
+      "sha256": "4399a50fe44b3fc239c0b843e6b6b5edd32eb3c351778c3b23665f5216c3839f"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/路径分段汇总_20261027/raw/H5_prefix3_DATF_shannon.anf.json",
+      "bytes": 74925,
+      "sha256": "82e656d4897adb940d178e84cb247ac11a43017fbc677553e72086791c63d38d"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/路径分段汇总_20261027/raw/H5_prefix3_DATF_shannon.json",
+      "bytes": 13090,
+      "sha256": "4b07e1a736efadaaa2e27cc587fae0590f681ed9f3d40d7421adadd09fd4142e"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/路径分段汇总_20261027/raw/H5_prefix3_HNW_full.json",
+      "bytes": 4425,
+      "sha256": "6380678ea803c7c09fc3fc12b430af91591e3c4c0e6dec790a38e0dd8b72c506"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/路径分段汇总_20261027/raw/H5_prefix3_HNW_zero.json",
+      "bytes": 4426,
+      "sha256": "6e28dc61954d73a943f5c0f2698e74248c57fb62d3fc030bd43f66691aac7967"
+    }
+  ]
+}

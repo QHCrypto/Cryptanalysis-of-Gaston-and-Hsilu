@@ -1,0 +1,67 @@
+{
+  "id": "H5_prefix3",
+  "algorithm": "Hsilu",
+  "rounds": 3,
+  "start_round_index": 7,
+  "delta_core": [
+    "0200000000000000",
+    "0000000000000000",
+    "0200000000000000",
+    "0200000000000000",
+    "0000000000000000"
+  ],
+  "lambda_core": [
+    "000c800010000124",
+    "4000040000120001",
+    "4010000000000412",
+    "1000044000000001",
+    "0088000002482010"
+  ],
+  "method": "original DATF Algorithm 3",
+  "status": "completed",
+  "correlation": {
+    "numerator": "0",
+    "denominator": "1",
+    "log2_abs": null
+  },
+  "bias": {
+    "numerator": "0",
+    "denominator": "1",
+    "log2_abs": null
+  },
+  "limits": {
+    "seconds": 120,
+    "max_terms": 1000000,
+    "max_products": 100000000,
+    "max_nodes": 200000,
+    "address_space_bytes": 4294967296
+  },
+  "first_L_omitted": true,
+  "remaining_alpha_assumed_jointly_uniform": true,
+  "dag_verified_full_states": 4,
+  "phase": "completed",
+  "statistics": {
+    "initial_terms": 129,
+    "initial_variables": 124,
+    "peak_polynomial_terms": 1228,
+    "beta_definitions_expanded": 72,
+    "product_pairs": 2020,
+    "expanded_terms": 1228,
+    "expanded_variables": 143,
+    "expanded_degree": 4,
+    "remaining_beta_variables": 0,
+    "expanded_input_variables": 4,
+    "expanded_alpha_variables": 139,
+    "max_component_variables": 143,
+    "bias_nodes": 3,
+    "affine_pair_eliminations": 2,
+    "isolated_uniform_zero_leaves": 1
+  },
+  "elapsed_seconds": 0.025820192000537645,
+  "peak_rss_kib": 591312,
+  "expansion_verified_formal_assignments": 16,
+  "zero_certificate": null,
+  "expanded_anf_file": "差分线性/路径分段汇总_20261027/raw/H5_prefix3_DATF.anf.json",
+  "expanded_anf_sha256": "8b687e189148e230162c593297012f1d476617aac31a2634262cea4f4c2bb5d8",
+  "evaluation_order": "full beta expansion then Bias"
+}

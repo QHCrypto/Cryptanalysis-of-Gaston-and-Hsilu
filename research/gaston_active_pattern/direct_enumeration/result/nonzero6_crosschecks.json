@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "position_index": 0,
+      "minimum_below_26": null,
+      "full_brute_assignments": 887503681,
+      "cpu_pruned_matches_brute": true,
+      "gpu_record_matches_brute": true
+    },
+    {
+      "position_index": 3642,
+      "minimum_below_26": 24,
+      "full_brute_assignments": 887503681,
+      "cpu_pruned_matches_brute": true,
+      "gpu_record_matches_brute": true
+    },
+    {
+      "position_index": 321320,
+      "minimum_below_26": 15,
+      "full_brute_assignments": 887503681,
+      "cpu_pruned_matches_brute": true,
+      "gpu_record_matches_brute": true
+    },
+    {
+      "position_index": 500000,
+      "minimum_below_26": null,
+      "full_brute_assignments": 887503681,
+      "cpu_pruned_matches_brute": true,
+      "gpu_record_matches_brute": true
+    },
+    {
+      "position_index": 934719,
+      "minimum_below_26": 13,
+      "full_brute_assignments": 887503681,
+      "cpu_pruned_matches_brute": true,
+      "gpu_record_matches_brute": true
+    },
+    {
+      "position_index": 1171551,
+      "minimum_below_26": null,
+      "full_brute_assignments": 887503681,
+      "cpu_pruned_matches_brute": true,
+      "gpu_record_matches_brute": true
+    }
+  ],
+  "lookup_compression_1024_position_records_identical": true,
+  "sigint_partial_result_checked": true,
+  "strict_threshold_15_and_16_checked": true
+}

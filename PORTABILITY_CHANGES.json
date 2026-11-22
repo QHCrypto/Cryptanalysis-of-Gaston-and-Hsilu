@@ -1,0 +1,46 @@
+[
+  {
+    "path": "research/Gaston_Hsilu_CTP/paper_rewriting_output/evaluate_datf_algorithm5.py",
+    "change": "Resolve literal workspace Path from the package location."
+  },
+  {
+    "path": "research/Gaston_Hsilu_CTP/paper_rewriting_output/ctp_reviewer_20261117/independent_checks.py",
+    "change": "Resolve literal workspace Path from the package location."
+  },
+  {
+    "path": "research/Gaston_差分路径重量下界/src/verify_support_proof.py",
+    "change": "Resolve historical input paths against packaged research root; keep all input bytes and hashes."
+  },
+  {
+    "path": "research/Gaston_Hsilu_CTP/paper_rewriting_output/ctp_reviewer_20261117/independent_checks.py",
+    "change": "Replace superseded auxiliary-cost comparison with current candidate exponents; use scripts/preimage_accounting.py for full accounting."
+  },
+  {
+    "path": "research/代数攻击/Hsilu3r_new/validation_current_prefix/verify_prefix.py",
+    "change": "Resolve the historical SVG path relative to the package, keeping input JSON unchanged."
+  },
+  {
+    "path": "research/Hsilu_trail/search_below82_20261117/reference_wrapper.cpp",
+    "change": "Use relative reference include in the copied C++ wrapper."
+  },
+  {
+    "path": "research/代数攻击/hsilu_2r/verify_path_algebra.py",
+    "change": "Resolve C++ reference build paths from the package root."
+  },
+  {
+    "path": "research/Gaston_Hsilu_CTP/paper_rewriting_output/verify_section2.py",
+    "change": "Use an independent chi5 truth table after the old manuscript table was removed; preserve the parameter, native-round and mode comparisons."
+  },
+  {
+    "path": "research/Gaston_Hsilu_CTP/paper_rewriting_output/verify_section2.py",
+    "change": "Use the standalone numerical verification input instead of depending on a full manuscript snapshot."
+  },
+  {
+    "path": "research/Gaston_Hsilu_CTP/paper_rewriting_output/ctp_reviewer_20261117/independent_checks.py",
+    "change": "Use the standalone numerical verification input instead of depending on a full manuscript snapshot."
+  },
+  {
+    "path": "scripts/preimage_accounting.py",
+    "change": "Use the standalone numerical verification input instead of depending on a full manuscript snapshot."
+  }
+]

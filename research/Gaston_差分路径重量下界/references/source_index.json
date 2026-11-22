@@ -1,0 +1,87 @@
+{
+  "created": "2026-10-23",
+  "scope_status": "Confirmed: Gaston-320, nonzero XOR differences, free endpoints, sum of local DDT restriction weights; three rounds first.",
+  "formal_multiround_search_started": true,
+  "old_drat_proofs_replayed_this_turn": false,
+  "sources": [
+    {
+      "role": "original_spec",
+      "workspace_relative_path": "gaston_ref/gaston.pdf",
+      "sha256": "704ceb275655d5336da0ee97c2103229c5fdb034b930be1a847f0817c3bac75d",
+      "url": "https://eprint.iacr.org/2023/799"
+    },
+    {
+      "role": "original_spec_text",
+      "workspace_relative_path": "Cube/extracted/gaston_definition_for_cube.txt",
+      "sha256": "84584ef4ad2a8bfca910dfcb19546e1ec972ad1dbf985c9d68e3f9ec0ccce695",
+      "url": null
+    },
+    {
+      "role": "followup_2024",
+      "workspace_relative_path": "gaston_ref/2024-1867.pdf",
+      "sha256": "465e61a4d01f69240a6eafe6308ca9b5773e81aaf4877a7d4f95cc77d16161c1",
+      "url": "https://eprint.iacr.org/2024/1867"
+    },
+    {
+      "role": "reference_c",
+      "workspace_relative_path": "gaston_ref/gaston/implementation/reference/gaston.c",
+      "sha256": "4a0ce39ce158f410111aef7a985c2a7f8b7752e669162ec78e20eaf56bd2f5dc",
+      "url": null
+    },
+    {
+      "role": "reference_parameters",
+      "workspace_relative_path": "gaston_ref/gaston/implementation/reference/gaston.h",
+      "sha256": "3fbca231939b1369e9ee093689b60eb1df716a1b4f0dea0da90fc3aacb57bc0a",
+      "url": null
+    },
+    {
+      "role": "outside_branch_statement",
+      "workspace_relative_path": "gaston_active_pattern/ordinary_branch_proof/README.md",
+      "sha256": "d52a59895f9d4dd55b9365b3acde3dda8a1ca4795048b068a35d4b3cdf2d4209",
+      "url": null
+    },
+    {
+      "role": "outside_branch_verification_record",
+      "workspace_relative_path": "gaston_active_pattern/ordinary_branch_proof/proof_verification.json",
+      "sha256": "86996898427bd08eba358e4f6dcc37ec782acf8403c25113c4e7184477a7a4ae",
+      "url": null
+    },
+    {
+      "role": "outside_two_chi_weight",
+      "workspace_relative_path": "gaston_active_pattern/two_round_outside_proof/README.md",
+      "sha256": "880bbb204a0e82c633c746e0b6a79c65840d0c2ef8bd9d26b2aaf9bcbb5c519a",
+      "url": null
+    },
+    {
+      "role": "existing_sat_readme",
+      "workspace_relative_path": "Gaston_trail/pysat_kissat/README_zh.md",
+      "sha256": "e075ab4a3819fbeb8496087a2df78edb52975a24583e00c333931e396a33e23d",
+      "url": null
+    },
+    {
+      "role": "existing_chi_cnf",
+      "workspace_relative_path": "Gaston_trail/pysat_kissat/sbox_cnf.py",
+      "sha256": "f58055eb1da31d668b948ca85543cfe79a9952146bc5bc67c8a0680f37fb8dc1",
+      "url": null
+    },
+    {
+      "role": "Hsilu lossy model, section 8.1.1 Table 14",
+      "workspace_relative_path": "tmp/pdfs/hsilu_mitm/我的已发布论文：Multiple Rows Mixers and Hsilu.txt",
+      "sha256": "966eb53735697ba35903476a39a81b356b6d5646198e86f798603bbcf7dd2705",
+      "url": "https://doi.org/10.46586/tosc.v2025.i2.166-191"
+    }
+  ],
+  "method_references": [
+    {
+      "title": "New techniques for trail bounds and application to differential trails in Keccak",
+      "url": "https://doi.org/10.13154/tosc.v2017.i1.329-357",
+      "authors_page": "https://keccak.team/papers.html"
+    },
+    {
+      "title": "Tighter trail bounds for Xoodoo",
+      "url": "https://eprint.iacr.org/2022/1088"
+    }
+  ],
+  "current_method": "Exact linear MILP + Hsilu lossy chi, strengthened with local activity profiles and OR hull. New integer run not started.",
+  "current_solver_state": "stopped_by_user"
+}

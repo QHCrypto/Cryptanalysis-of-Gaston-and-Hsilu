@@ -1,0 +1,87 @@
+{
+  "id": "G3a",
+  "algorithm": "Gaston",
+  "rounds": 3,
+  "start_round_index": 9,
+  "delta_core": [
+    "0000000000000001",
+    "0000000000000000",
+    "0000000000000000",
+    "0000000000000000",
+    "0000000000000000"
+  ],
+  "lambda_core": [
+    "0000000000000000",
+    "0000000000000000",
+    "0000000000000000",
+    "0000000000080000",
+    "0000000000000000"
+  ],
+  "previous_datf": {
+    "numerator": "-5",
+    "denominator": "32",
+    "log2_abs": -2.678071905112638
+  },
+  "previous_hnw": {
+    "numerator": "-3",
+    "denominator": "16"
+  },
+  "sampling": {
+    "samples": 4194304,
+    "seed": "13074040226442538726",
+    "n0": 1704388,
+    "n1": 2489916,
+    "rho": -0.1872844696044922,
+    "log2_abs": -2.4166968245297866,
+    "ci95": [
+      -0.18822437765714523,
+      -0.1863442184937686
+    ]
+  },
+  "method": "original DATF Algorithm 3",
+  "status": "completed",
+  "correlation": {
+    "numerator": "-3",
+    "denominator": "16",
+    "log2_abs": -2.415037499278844
+  },
+  "bias": {
+    "numerator": "-3",
+    "denominator": "32",
+    "log2_abs": -3.415037499278844
+  },
+  "limits": {
+    "seconds": 120,
+    "max_terms": 1000000,
+    "max_products": 100000000,
+    "max_nodes": 200000,
+    "address_space_bytes": 4294967296
+  },
+  "first_L_omitted": true,
+  "remaining_alpha_assumed_jointly_uniform": true,
+  "dag_verified_full_states": 4,
+  "phase": "completed",
+  "statistics": {
+    "initial_terms": 5,
+    "initial_variables": 5,
+    "peak_polynomial_terms": 125,
+    "beta_definitions_expanded": 3,
+    "product_pairs": 181,
+    "expanded_terms": 125,
+    "expanded_variables": 20,
+    "expanded_degree": 4,
+    "remaining_beta_variables": 0,
+    "expanded_input_variables": 2,
+    "expanded_alpha_variables": 18,
+    "max_component_variables": 20,
+    "bias_nodes": 7,
+    "isolated_uniform_zero_leaves": 2,
+    "quadratic_calls": 2
+  },
+  "elapsed_seconds": 0.02554564899764955,
+  "peak_rss_kib": 21320,
+  "expansion_verified_formal_assignments": 16,
+  "zero_certificate": null,
+  "expanded_anf_file": "representatives/01.anf.json",
+  "expanded_anf_sha256": "562b706052d5a602216362042753e1af230d0d1d5a8937a62dbea92707d28255"
+}

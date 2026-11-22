@@ -1,0 +1,11 @@
+{
+  "endpoint": "G3a",
+  "method": "independent exhaustive truth table, bit-parallel, no Shannon/quadratic backend",
+  "variables": 20,
+  "formal_assignments": 1048576,
+  "ones": 622592,
+  "zeros": 425984,
+  "correlation": "-3/16",
+  "elapsed_seconds": 0.06523152510635555,
+  "source_anf_sha256": "562b706052d5a602216362042753e1af230d0d1d5a8937a62dbea92707d28255"
+}

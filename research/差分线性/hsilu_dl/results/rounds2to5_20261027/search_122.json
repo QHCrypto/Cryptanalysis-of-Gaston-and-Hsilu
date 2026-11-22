@@ -1,0 +1,8 @@
+{
+  "status": "completed",
+  "tested": 761856,
+  "nonzero": 0,
+  "scope": "64 columns × 31 nonzero first-chi output patterns × 384 existing linear-tail heads; best first DDT input and minimum-weight last completion retained",
+  "top": [],
+  "elapsed_seconds": 3.4583772070036503
+}

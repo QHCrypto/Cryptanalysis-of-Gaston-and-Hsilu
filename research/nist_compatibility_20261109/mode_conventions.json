@@ -1,0 +1,42 @@
+{
+  "decision": "论文中的 Gaston-XOF、Hsilu-XOF、Gaston-AEAD、Hsilu-AEAD 统一采用 NIST SP 800-232 外层定义",
+  "standard": "NIST SP 800-232, August 2025",
+  "standard_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-232.pdf",
+  "permutations": "保留 Gaston 与 Hsilu 原始轮函数、旋转参数及轮常数；只替换 NIST 外层流程中的 Ascon-p 调用",
+  "state": "five 64-bit words; word-internal bit 0 is the least significant bit",
+  "serialization": "NIST little-endian; the i-th input bit is stored at integer bit i",
+  "XOF": {
+    "IV_hex": "0000080000cc0003",
+    "rate_bits": 64,
+    "capacity_bits": 256,
+    "input_domain": "arbitrary finite bit strings, as in NIST Algorithm 6",
+    "padding": "append bit 1 followed by the zeroes needed to complete a 64-bit block; always pad, including aligned messages",
+    "full_rounds": 12,
+    "reduced_definition": "所有初始化、吸收、挤出调用统一使用最后 r 轮；IV 保持完整构造的固定值",
+    "preimage_output_bits": 128,
+    "Gaston_2r_messages": "两个完整 64 比特前缀块，加 0 至 63 比特变长尾部；允许的最后填充块恰为所有非零 64 比特字",
+    "Hsilu_2r_and_3r_messages": "190 比特；尾部 62 比特位于末块比特 0..61，填充比特 62=1、63=0",
+    "Hsilu_3r_coordinate_change": "历史核心坐标 j 映射为 (j-2) mod 64；常数不旋转，合法前缀、秩和匹配关系重新核验"
+  },
+  "AEAD": {
+    "IV_hex": "00001000808c0001",
+    "rate_bits": 128,
+    "capacity_bits": 192,
+    "key_bits": 128,
+    "nonce_bits": 128,
+    "tag_bits": 128,
+    "initialization_state": "(IV,K0,K1,N0,N1)",
+    "post_initialization_key_injection": "S3 ^= K0; S4 ^= K1",
+    "domain_separation": "S4 ^= 1 << 63",
+    "pre_finalization_key_injection": "S2 ^= K0; S3 ^= K1",
+    "tag": "(S3 xor K0) || (S4 xor K1), little-endian",
+    "full_rounds": {"initialization": 12, "processing": 8, "finalization": 12},
+    "reduced_definition": "仅初始化轮数改为 r，消息处理保留 8 轮，终结保留 12 轮，IV 不变",
+    "cube_interface": "空关联数据、一个已知完整速率明文块、逐次使用不同 nonce；观察前两个初始化输出字",
+    "NIST_single_key_data_limit_bytes": "2^54, including nonce",
+    "cube_model_label": "现有 Gaston 六轮与 Hsilu 七轮 cube 为超过 NIST 单密钥数据上限的减轮结构分析",
+    "retained_conditions": "Gaston 六轮矩阵秩以及 Hsilu 七轮特征碰撞桶规模仍待完整证据"
+  },
+  "evidence": "audit_results.json; nist_hsilu_3r_prefixes.json",
+  "no_scope_upgrade": "本次核验不把既有条件性复杂度升级为无条件定理，也不将替换置换后的研究实例称作 NIST 标准算法"
+}

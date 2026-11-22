@@ -1,0 +1,13 @@
+weight=2 orbits=32 retained=32
+  matching_bound=8 count=4
+  matching_bound=9 count=12
+  matching_bound=10 count=16
+weight=4 orbits=9936 retained=1632
+  matching_bound=12 count=7
+  matching_bound=13 count=65
+  matching_bound=14 count=356
+  matching_bound=15 count=1204
+  matching_bound=16 count=8304
+weight=6 orbits=1171552 retained=3
+  matching_bound=15 count=3
+  matching_bound=16 count=1171549

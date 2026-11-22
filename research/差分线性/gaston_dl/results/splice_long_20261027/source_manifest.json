@@ -1,0 +1,668 @@
+{
+  "files": [
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/datf_pools/pools/pools.json",
+      "sha256": "98ed7b9932f5fe0b8069bddce83bd26aca15fd31183166a810d6af1651254e3f"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/fixed_paper_tail/search.json",
+      "sha256": "a598610aae2c9477a54b2a86520623699ce088921b9aa71f0c813ac9d78ed297"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/pq_kernel_six_all/search.json",
+      "sha256": "23ac204354389b084955550c400617fa8e8c637cc0ca81c8cfaf832a39330f9c"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/datf_pools/paper_full24/search_results.json",
+      "sha256": "0c3fc394fee0cd84e7b7a817d50db933b0aa2c6a5fe79f363834e03fe4939bc5"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/fixed_tail_extension/results.json",
+      "sha256": "62e11c425111180f6d64f5dd8d637c6b39d62b45fafbec1926714eaf53b8acf7"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/datf_pools/linear_two_match/search_results.json",
+      "sha256": "8013c7ba274b1f511fdf4ea4c59b450ec6c28134e2209bbc40012e215ccc2895"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/datf_pools/search_final/results.json",
+      "sha256": "03a17798d7eb39bd9e1fb4cdf2b4253a6fb8f79e96e37d08fafb0edd0f94d568"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/DATF算法3复核_20261021/algorithm3.py",
+      "sha256": "be292ecd81205a49cd1127bc3c46ded65b9418d86773619145069f2c180f32b5"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/DATF算法3复核_20261021/worker.py",
+      "sha256": "bee93b06e60f9fd0f2a64e496c53530bca41c85761ba6340a7c92f554a41c7b6"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/src/hnw_endpoint.cpp",
+      "sha256": "47f07518c345442b15d9a6f102215b66c3b18f1eb2d3166dd38fcfab6528e0df"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/run_datf.py",
+      "sha256": "706a853f6f094d25426a76c0e97e524e74d17782b76b04811064eb60de6fa966"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/build_report.py",
+      "sha256": "900be4c3d20c034e0f8b44056e16b1abb6f2603d18cb829197be26b23b281113"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/hnw_middle.py",
+      "sha256": "675be01ee34c1978965dbb1f1727cc37f6e81ab7f230019e656ae14d77a934f5"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/prepare.py",
+      "sha256": "6303413071e53a396953cff8b52b91d4429c9d4a309fb23c2954c9625d26ce6d"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/9a7f97e9a9baf3ae_datf.json",
+      "sha256": "8ceb00cd41a7df5142e4c347ebfd49d63ceb4f415dc099fc03ed4b822cff971e"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/e189becd2f86ab15_datf.json",
+      "sha256": "896ca80a106db32978f04679cee967c9c82083c25dbbc42908ba85795e3860c4"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/55811300ac9e823f_datf.json",
+      "sha256": "6b2645ffa4fe120a868da07260b3f2989ccea43c2e20de316effe7793a078369"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/71afb18e77412ccb_datf.json",
+      "sha256": "7b3a67c3cc348581b1675e6118b6f4c2682dfab2a3f77d2c9c009a99788c2de6"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/ccb8ee36d796404a_datf.json",
+      "sha256": "9c66fed8b95701431a0427e83a1060b7035c0359fc99e25d33cc72d605194582"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/399a372f52685d06_datf.json",
+      "sha256": "d8a8425df13eb86f4eab9cae50ed64951b64c6ea238fa0fa8307047a72cf4c2b"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/f7ab1bb6c1e682b2_datf.json",
+      "sha256": "33301c6ae6ed9cd094e8e28078318dff8d52a1dba7a89330e16b59d223b58630"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/bfd12a3f3b255dcc_datf.json",
+      "sha256": "6bb5a7a7e7bac0ec207e7613969d023ecba6d8e6caf212af3df2f2f3b34ce901"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/f7762ec70c68909a_datf.json",
+      "sha256": "d17e27db238762e30323a25cc7866b6008d9c654b02edd7bbe283507c12a9e61"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/585e7d0b07028ce9_datf.json",
+      "sha256": "48093d868f5b5704af0e93f8f75be738aeea4434542e0a57bec86628290d70bd"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/3d812c75c2e1a5e5_datf.json",
+      "sha256": "669c1f78030f7c615571ebf7c74c52b6203a537a6b30ad043e6068ce17c86816"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/07317ae6d3e30095_datf.json",
+      "sha256": "5c5cace15274600eed43924ccc9e31d00a9116ce418e1d046a09dda436b51135"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/cad0c0743ed12502_datf.json",
+      "sha256": "00ef9dc1808e01525f08c4cf82e9e58f9aa33436aaa7b96a78db9d87ccd0bf4e"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/87aae79afc603864_datf.json",
+      "sha256": "270eacb49e49f2d8109674cfefd64cd8e290bc0bbb71fdc534d5e8e770088558"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/e5294b84631af8ca_datf.json",
+      "sha256": "e027f6d4cd9dcd51ea57a09b0fcd72f6d7241e390d631f6e3998b0c298b2e0fb"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/84c23652cd5add04_datf.json",
+      "sha256": "18fa1f26bbd8cda7aad708e6a345be0843914b8ee85597155ab2243d550f7189"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/1af71fe0b0b39e67_datf.json",
+      "sha256": "18fb24b88ec585c0dd9e0120bbb99446dcbeb47eb7e216afae5b8b6d0b8e912d"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/94e94d1506ad0531_datf.json",
+      "sha256": "5f446d77ccc43530f880f0806120ffced3a4387c572dc8919d4834c2dd352447"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/ea1e5557d9b2d9bf_datf.json",
+      "sha256": "c1319a1847bc81d7469f4d4e5bf46d1deb962af15b99f3f049903c06e9f62853"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/df0890d365864a8d_datf.json",
+      "sha256": "577ac37c3702eb710be5b9299dd04cf222731b19790ec696ffca30160c718044"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/5dd0d3601fdb1fea_datf.json",
+      "sha256": "255c35a6d25cdc507678c34361a22810fa0e5842eb55327d7625ce6d2a0edee4"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/c216411d4b67253d_datf.json",
+      "sha256": "e6522e54431b0cdea83e67f1dd933d4e274dd2b01f940d0ac2f526c2c43ac015"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/d7b1916004585091_datf.json",
+      "sha256": "f3b8260fc868a376f60dd470c796c86a65fca8a490667cbdd51c270a082874eb"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/df2ef5f09174d771_datf.json",
+      "sha256": "1869d01e804ac182eafebf8a752fceda1d87b39142796a76cabd3e3667b5bc2c"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/befac847ca11aeea_datf.json",
+      "sha256": "a1c1381733fdcb55621226cb22e8e354cf1db598d1fdf9bd962f53079f173cbb"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/477ea5a105981910_datf.json",
+      "sha256": "c70e2504b956a3942005d789c3547290bfa16617e90b386dc55b4329a9ea4580"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/bcc0ae5735c6b01b_datf.json",
+      "sha256": "cb2ee1e83edc6533b05a12c0790eb7df67a1bf43f52f96279f04b3d52a2b63a5"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/1e61ae72a48883ca_datf.json",
+      "sha256": "d1bc9120c51c99924e61f42b129ba9bcd22108188d06a32dd0c84133ee1115d7"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/25c4b851d96c968a_datf.json",
+      "sha256": "33e020ab7bf323ff954d6cefd4ea17250a73f993a6972cb26c69a88d65c9c247"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/71cd9231b7556754_datf.json",
+      "sha256": "7fc7dde3d600ddb2dc9cbf8f22a963abaa13bd3988394878c5352ab45f8bd1bb"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/3f34f3c6387f551d_datf.json",
+      "sha256": "ba690eb58ce63d1986f7c46564929f62073a194cd3ab1f9debf1b295defbd173"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/eb8a13b54236ad25_datf.json",
+      "sha256": "7b100df6288a1b7d30955d0367010b2c3a3fd6b5c523b2313ed01836c195499e"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/8a588b98700736a2_datf.json",
+      "sha256": "85c86bb1a0da38209b74519b23f12ca32322d56479ccf8f37565d44cc3f07029"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/4e72a4b34d6c9d39_datf.json",
+      "sha256": "4ffa23122c9b0283380878aa5319c8c9d4c4e12777dc54a72d1b06ca552c6660"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/c314404b4fec5b1f_datf.json",
+      "sha256": "7e96cca17188b1c2aee526a03d4118dd030cd02a5b784e3d01b19e14146cd834"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/068ef2efacd272d4_datf.json",
+      "sha256": "b194fa0249b2bce1ce533b3bb83018410e41782d7f1967bfb8a0aeb831965c37"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/d8ba38c53e58273b_datf.json",
+      "sha256": "b6ef917c3331b717a8ecc2f81e5625dcdc3cc2c11e7b7ce90fc23cf10dcca10c"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/d9840ae875014241_datf.json",
+      "sha256": "b55197f362dc2127534742f0d64d2b3f910700e295e68dd27a4003cf507d6188"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/232d36d8bbe004fb_datf.json",
+      "sha256": "5e904eb55ae771cfd433fbc0a7de93602d570f3d43e2030456a6bace83a46543"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/a68ede752eb717c6_datf.json",
+      "sha256": "d78b8bf6d2089f34b2c841ddf6006b78ec4792817b7d832fc057c2885795a7fe"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/e3467bcec113a6ca_datf.json",
+      "sha256": "d0c019336d913867aebfece1423ee6bccdab7a8cb6c1be90e57dd313057be6f6"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/33153afaa5d782ce_datf.json",
+      "sha256": "00e531d92378936ca5c09dcf6fc4753d7021b8973eb9155d58ced8ce4c0bea77"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/0140bbfa26ed0dbd_datf.json",
+      "sha256": "027ea0a64332d60ad213c7d633e58044f5439f6f7d7460a7b51b7e5a65595e5a"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/4890053fd519df1a_datf.json",
+      "sha256": "c8b59cb912650c3005127450b7144ea4da83fe0ae6427f5bb11108c6108913dc"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/4cfe801aeb4da654_datf.json",
+      "sha256": "3e0de3fed09bb29e575724cba49522b984c28ef6e33ed7026f93504b1b569de8"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/939a6eab74f9b427_datf.json",
+      "sha256": "2d92c18a6d73989f800fd9ecced8a0d07c3698ccd33dcdd698e7cb11d51e7ae3"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/1060916dbef42bde_datf.json",
+      "sha256": "98184a0eb956d273c1524bcf426416a869d1646a2d1e8a1988c0eaab35b27427"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/c84c657d49544e51_datf.json",
+      "sha256": "6049169527b10250a250da35d87bf7033ace3a390480b90951ff5fd927e85634"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/d67a28a55858b051_datf.json",
+      "sha256": "25e9006d4bf5ecf24c2df57de8fd635ca2557541a2cf6e34fa7a83ef27824161"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/74f920496eabac73_datf.json",
+      "sha256": "6208e1bee26dbdb042011d27406b72dedef9b429b2785bf7c6765f3f1bfe6dd4"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/dbbe95223ca97dd3_datf.json",
+      "sha256": "61ae66541e29048a3aba728091fbe8b488c545dce8f505ad33409371767a0e28"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/9a593a2d52352b4e_datf.json",
+      "sha256": "c84e14c946d92c8b990fc9e4fc597082e6d43c04d2111ced6309adab5ea27dcd"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/03dfdfabd5e833ae_datf.json",
+      "sha256": "2b399454989022e739cfd60618555f9bb1bd9c55862af45952478f8be4ae0bb6"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/22f2ae051eaf8c46_datf.json",
+      "sha256": "ea7b4a371a5155c2b3247465dcdb47619e6dbe1091c109809d0dc5e9c1e0953e"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/40cb367b04ab9671_datf.json",
+      "sha256": "38d395f44c20e9f794b3205ec8bc093ce14009d94e788c44edbbad81ac57a4b4"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/20a967b06f1e9c6e_datf.json",
+      "sha256": "2e668844563ebcced871d06930b1ec6cc542785e3399a19fb90b70f1fa02f8c9"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/6386ac5ff3e1a950_datf.json",
+      "sha256": "7fb323d0d3adab2e9cae6432d8431364b95ca9496c3bf77667f2ef3164e27e48"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/17bf9f75ba7706f1_datf.json",
+      "sha256": "ba9d6e0865260c11a1ff7aa0a10ef350c6c9ed34ed8a236a74c0338aaa9e70f1"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/a023689b6e1c2dac_datf.json",
+      "sha256": "1979c511bb682c083f681787956ac0bb18a52b034174f775acb3e494738a1c32"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/f3ab42bc6f9cd6d0_datf.json",
+      "sha256": "707be28030f200376a9a5067fe596785968f8672704301864204bb67b8561f79"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/79d1f345beff0a9d_datf.json",
+      "sha256": "c25d1e1c593efb793cd2a737df4df416b528f451e8b8eae7dd220bdac0c111fc"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/33a46f993b15d161_datf.json",
+      "sha256": "09680c5f0339d80409428f1fa3a64d6b48246bef3feddaef2aa1f256a29a57c0"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/d896d382e4aed5eb_datf.json",
+      "sha256": "7f5b9f4e4700fe59f8e6a7fdfd54326c5769234068ade5e16704345edd0f8cca"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/58e1b97f62ace491_datf.json",
+      "sha256": "b532813f3a7387f82b57d627e2a483b9ed84358ed25bf9bcf9c5db2d5cdc3bad"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/fda03bb180cbef7b_datf.json",
+      "sha256": "b3637ab9507bd0baae54621a4b730cb5dc68e88f63ab627f6836da53b55dfcc5"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/4b332d7f48d1234e_datf.json",
+      "sha256": "c88a125dd76542f850a4c9e8f8a88461818189bf9a60c0aa86f87434b1ce3bc1"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/8dcf0d47b78e54d1_datf.json",
+      "sha256": "d7e3fe9eda3047bef1dfd68b41149882bb04f0814d3b6087e248d4d286eec189"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/0539e77c3d68f17b_datf.json",
+      "sha256": "22c5b1f4e792f6c2e5ac7afcb131a5829003cd005558b2a203c219a05bc0f833"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/6bfac11aecdf4a9c_datf.json",
+      "sha256": "b61bf236590ee5769180c8043bb3df4697663c2facf76730e804f1ce1c5a4630"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/fa883ce2620bf232_datf.json",
+      "sha256": "01920848b333ef9815261867335edd72d5d7703659f20be914ad0f4baae8ea1a"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/4f2579ab3420e088_datf.json",
+      "sha256": "d0f41ad7c9e09b62787ab20c4d29f423b666ae7013c5d8f1517f80c117da6f41"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/e68ecd46f96f5711_datf.json",
+      "sha256": "91c5447d805d57f75ec8252f76494ea0fe1e656c620abc358e1adbd4df517e38"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/4b276b7ea28692cf_datf.json",
+      "sha256": "d5562a76888f7c89eaca02971a69e6d61bb4da5b2e938e4a67c40deef133284b"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/b98458bd62f44325_datf.json",
+      "sha256": "e8ea6fba858978589424ed02858a37c1dbf8d78a68bc05ce9885788218e57322"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/4fa0f0e12ab15dc4_datf.json",
+      "sha256": "ca7bdaffe9d875bf27498d801ed2879a9b6dd5fe827022eda6404f011f7b4caa"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/31047d92410bf471_datf.json",
+      "sha256": "33df68dc489c907ba3234882568376973af2ad303f3a43e776416d7b4da71279"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/71cd9231b7556754_hnw.json",
+      "sha256": "fa5bf33e15c8b56f0ad3c93c997e96d1d79fb74001a700f1fac63245c7d9e710"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/939a6eab74f9b427_hnw.json",
+      "sha256": "8492ee5017e11ed80ca304d4bc6d344ed9be041699d6ce2bd1d445c68a232c71"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/d8ba38c53e58273b_hnw.json",
+      "sha256": "27e9f0a0019ce5a7535345a3c13a71fc8084e1b40c17a073205227af51f312c7"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/74f920496eabac73_hnw.json",
+      "sha256": "3c699ff9a47abd6ecdcfaa99f03ed280d55d646b17dc837d73c641f527f5c449"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/e68ecd46f96f5711_hnw.json",
+      "sha256": "2e40e916bd7a8fee0b938a987145d2188d1ffbfab674170ec2ab9375ce12566c"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/dbbe95223ca97dd3_hnw.json",
+      "sha256": "3e1247d8bdcef7beb86d67d31d867c3420c0103b39d8bcf74f264ee9cf13ce35"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/07317ae6d3e30095_hnw.json",
+      "sha256": "aa3b2cbe467db3447b64c00feeb6be5afc1dde0a0576cea16815fbb27150cb44"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/c314404b4fec5b1f_hnw.json",
+      "sha256": "fb7148e3fa5226c1701768b2002b664fbeaa902bf29a779ab79c7174fedaa415"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/31047d92410bf471_hnw.json",
+      "sha256": "1ee7a370f16d7ebf1f615c9f41b0a664c89affe7aea2f7d0e7becf8eee893339"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/df2ef5f09174d771_hnw.json",
+      "sha256": "5d64ed4f3f6a3e9d3c75604a4296f271ba4d34aec21471a43e7c73ec7f1df22e"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/ccb8ee36d796404a_hnw.json",
+      "sha256": "ad0b50e88ae40e955f792ef8a6aaeec385ed57cc6c9db96d756b32cde085abf2"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/d67a28a55858b051_hnw.json",
+      "sha256": "fc1ee55bcbb8c70945fbfb9f2a129aa7337aa2737bd479fc688442865e0d2a68"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/585e7d0b07028ce9_hnw.json",
+      "sha256": "8860b48f203b851ec5483469c24e96f28ebea52970dd999e42560003dff98bea"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/399a372f52685d06_hnw.json",
+      "sha256": "a4dd8789eb30496d3c6ad0edd8c23f0f0de0d3d581296402de95fe2e189ea636"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/9a7f97e9a9baf3ae_hnw.json",
+      "sha256": "9f1f788c0f1237220b5daf19f5cf9733a4bacf8053a3110d4a81d5e8f9438feb"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/20a967b06f1e9c6e_hnw.json",
+      "sha256": "a8ede4cb3a8c28adf385c9d809956c6e7c224eb8b7d4ae13d4d7144df2be52e8"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/4890053fd519df1a_hnw.json",
+      "sha256": "72988e8f610de5b7a79ccadb2433a90b0a8292a7fd57605251072df16ffb9417"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/477ea5a105981910_hnw.json",
+      "sha256": "6df8d1163d0c3b7e116b85156fd38fe722581333b65012760c96cc1d25d82197"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/79d1f345beff0a9d_hnw.json",
+      "sha256": "81e61644a3028febfe0800673e0857a5d9d6c3470f64524a219e65f83144a797"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/a023689b6e1c2dac_hnw.json",
+      "sha256": "90f953c34b845afbbe031607d60b7a9535a73efc0f551cadb6f2513c0eb14d2b"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/22f2ae051eaf8c46_hnw.json",
+      "sha256": "676974bc3f2382107895266663b54f6787107a35da6919acbf4fcd7d2f83617d"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/5dd0d3601fdb1fea_hnw.json",
+      "sha256": "292505905883b5cec879a1e1dc15e844f3fc01bcac1f3423463430eb5a88a644"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/4f2579ab3420e088_hnw.json",
+      "sha256": "e341f4ab0a8582d70115d68e55cc2da024c296b28300147ef410751237e86c27"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/befac847ca11aeea_hnw.json",
+      "sha256": "f510a322c26f9b5869f4c79d9155f559267f45ad632b1dbe7e9f18ccbaafc5ca"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/df0890d365864a8d_hnw.json",
+      "sha256": "86a08e8cb7cc0ae348a8ef7c5106257009ab1443532f09785ef91726cf148452"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/b98458bd62f44325_hnw.json",
+      "sha256": "83c03e768d3d47aeedf084e9d0fcddc11bbb21c7fe14e84ce9a72433f35cf6e7"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/84c23652cd5add04_hnw.json",
+      "sha256": "9d38333eb87e8f15a5b4ae341f39c743aab02e4ee34368b00887f1f5125b4298"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/8dcf0d47b78e54d1_hnw.json",
+      "sha256": "9f849621e17d39f8abfb59deedd9f83628c4fb05f70c17a71aa513b94ef73d89"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/33a46f993b15d161_hnw.json",
+      "sha256": "e5ece00b57678289f51b0ebb94d373564a0aaf7d059fd9dd22091e26913c3d1d"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/58e1b97f62ace491_hnw.json",
+      "sha256": "2715b1a0b60b9fa3579b1ebe92472811b94b63c477b87d4e18e7529d4675c975"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/0539e77c3d68f17b_hnw.json",
+      "sha256": "51fc286e76ec49d5f80d0c8b3ae71d24a28ff2d2d1d21aec77c478d819066b16"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/fa883ce2620bf232_hnw.json",
+      "sha256": "a524182c94b5b7e82937aa5d1f8af4a1e05b4f92840e354f4dc49bc39d6ee457"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/c84c657d49544e51_hnw.json",
+      "sha256": "dae88f07a1c25d60b028ccc527e25184cfd2d55151654d8a69cf29f1b8641c71"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/d7b1916004585091_hnw.json",
+      "sha256": "8531c63669b9bf8ad3012d48d0b4f7ef4b54785b35df0eb111cb1279f75107db"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/71afb18e77412ccb_hnw.json",
+      "sha256": "bd86f2db0ce0ccdef0a6874de1165872de721603ce80e638b0a3a6fef38fa89c"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/40cb367b04ab9671_hnw.json",
+      "sha256": "7f1b9985026310dc526b202db370a7611afafe0e531e2790cebe469363e0d646"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/068ef2efacd272d4_hnw.json",
+      "sha256": "40efea940ab019c74cbd885a40174939c582430da2ee50fe7dc5c37e7986b379"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/f7762ec70c68909a_hnw.json",
+      "sha256": "8adf92dbdd72a1d4f115071038f082fa8baec3b5a0935e5bdc18d8bdda8808b2"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/c216411d4b67253d_hnw.json",
+      "sha256": "c5a10bf93037eb856127845d62f4c393cfd366ac11b53a23385febea9712dac6"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/17bf9f75ba7706f1_hnw.json",
+      "sha256": "26273889db2da33adb2a6c8cca066aef79f3304d07702239babb348c5bbf4905"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/e5294b84631af8ca_hnw.json",
+      "sha256": "3f354cf44c4210e4954f6fde59aa38558790e6ad3dbad86bafc4d3e014c03bbf"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/94e94d1506ad0531_hnw.json",
+      "sha256": "13dcd0fca78e7f03cb17b23a1c8f02b19f176966a415f49d78a4c1abfaa8a5b0"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/4b276b7ea28692cf_hnw.json",
+      "sha256": "d4e60608b845e2a6a8e4e35ac374b52d617e6c4a3c275aa334ed75baa3f8a605"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/f7ab1bb6c1e682b2_hnw.json",
+      "sha256": "cbe8d32b247efbcc9cbe59cc27c8719bf787aa884c21c953f34d9d008fa9695c"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/1060916dbef42bde_hnw.json",
+      "sha256": "002614abc17e47139eacc2a92a2967298946d91f92d57732497d9b2875a29da3"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/1e61ae72a48883ca_hnw.json",
+      "sha256": "bc05e0369ce5f62087a51aee29073d06c27d16f57541ac3cb27e5a647914408f"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/9a593a2d52352b4e_hnw.json",
+      "sha256": "7568bd78dd27da99bd3a6da6421ceedf51ea38f825658ccb957a7cd42f2308ec"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/8a588b98700736a2_hnw.json",
+      "sha256": "a1efa75175f8067bf48981a412bd77a30027bb1d8d4c764ac6244ad06963e90d"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/87aae79afc603864_hnw.json",
+      "sha256": "50de0d04ae0c78fbe645c9309c11715e5fcb879b7bf57f7aaca0f4bc8673a992"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/4e72a4b34d6c9d39_hnw.json",
+      "sha256": "f9446567a39e7fe7da7df8d84c918b0049592060fd7edabfe011208fad19c8da"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/03dfdfabd5e833ae_hnw.json",
+      "sha256": "7a9cf2330f14fc7cd54369f748bda2a6b0cb6ad999ae6af9b5b7e73df4947801"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/ea1e5557d9b2d9bf_hnw.json",
+      "sha256": "0631fa64834ae5884267ca493994616c3f4c5fdccd7b32c51a84b15fd69e9bec"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/eb8a13b54236ad25_hnw.json",
+      "sha256": "58d853fae0a67ee1ec1dda878883b37f81143bf541cc36206b37fbf630dd19c5"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/0140bbfa26ed0dbd_hnw.json",
+      "sha256": "9f45ce7990e3b04d7388887dcd99fdc482ee4478e773e8b3cd23d1d21690cead"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/4b332d7f48d1234e_hnw.json",
+      "sha256": "d012ac7645ef59757c1d352d1a437fd96394426fa2f4e4a5adc894315b1b763c"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/6bfac11aecdf4a9c_hnw.json",
+      "sha256": "0daf13fd92df59421bd99c0f9aa6838eb78bb5c5f2e2837c69938a83cc44c5e0"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/4cfe801aeb4da654_hnw.json",
+      "sha256": "62a4a5e0b82deb809e4f4bd971bf4cbf5fef49ccb858ea9dbd2019a604c3ef32"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/fda03bb180cbef7b_hnw.json",
+      "sha256": "12be96be5f2dbe9a2f2af6ab0ad17712819e404cacce051f46a353c6c7a21a99"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/bcc0ae5735c6b01b_hnw.json",
+      "sha256": "4a699e74547559e0de4c55f7a1af4cecc90a60376d09dfcf50abc8a4e1e3603b"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/d9840ae875014241_hnw.json",
+      "sha256": "c7ab5182ac21e5deb03723353dd4084fa87cbf92d5dba95e4dab130a0e4be06e"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/f3ab42bc6f9cd6d0_hnw.json",
+      "sha256": "54cfaeeb07ce2083e6205d3dc9738343a1a668d5ab2bda9e928d1ec7fe61d38c"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/bfd12a3f3b255dcc_hnw.json",
+      "sha256": "95a9a97cd41a32b1228ea56b49bd8d80aafafd6214df7af3d04d6b9f194d4470"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/d896d382e4aed5eb_hnw.json",
+      "sha256": "ec1f907ed5504fa26accdaa690e4f5625b2b733d0b50e144128026827377d97e"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/cad0c0743ed12502_hnw.json",
+      "sha256": "e1f14ca225851094be827008d7c312c636453d79052e8dbd5695015d67d23f4d"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/e189becd2f86ab15_hnw.json",
+      "sha256": "4759d440f0120ce198a536d54f63f6d93a6479db0e2fb13293a166307922266e"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/e3467bcec113a6ca_hnw.json",
+      "sha256": "a768cff6e42d88c95baef6dce77320203bf4e47c854475cb934dae3b22965038"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/232d36d8bbe004fb_hnw.json",
+      "sha256": "6d13916a3a67c203ae4df57f09f32614071f828ec58f6f4854113564313b624f"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/3f34f3c6387f551d_hnw.json",
+      "sha256": "c3c0ed2bce2d43f314476d792a8d3be322d979dac590bdc2eb061b7b01ac49bb"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/a68ede752eb717c6_hnw.json",
+      "sha256": "f740f881d311e345eecf2aafa75153fc87900dffb77b393a9a96e4c5f0d9a458"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/25c4b851d96c968a_hnw.json",
+      "sha256": "2b99f750a0b41d03c156703cfae311e6e07167ed9e5b8e4ce816f8336391d179"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/3d812c75c2e1a5e5_hnw.json",
+      "sha256": "a729b2d51caa8504128a9835788b2d2a3ea358533d9f58177957190cdd7ca92f"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/55811300ac9e823f_hnw.json",
+      "sha256": "c650c55a68abe6ebce99fb52f4052595c7a58e536e1540e8e74bc03de9a4bc0f"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/4fa0f0e12ab15dc4_hnw.json",
+      "sha256": "3414d4d3a567c0a41a4e575034043a1406289660a83d1065e0f09a884e17ae9e"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/1af71fe0b0b39e67_hnw.json",
+      "sha256": "2e8d49e3e2f610ab6e408d753885ac6946179cbb6514a4f1f91aedd643afd585"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/33153afaa5d782ce_hnw.json",
+      "sha256": "706409c90058cf98b4bd2dfac31ba581ab9dca434ee6c147db52686064e33d01"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/gaston_dl/results/splice_long_20261027/raw/6386ac5ff3e1a950_hnw.json",
+      "sha256": "75393038c8770a9a8dbf5484f59f36f051400762ad8c2d50dd02c38273f8672d"
+    }
+  ]
+}

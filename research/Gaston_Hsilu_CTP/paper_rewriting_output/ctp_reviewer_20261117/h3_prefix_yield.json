@@ -1,0 +1,36 @@
+{
+  "counts": {
+    "prefixes": 4096,
+    "capacity_pass": 259,
+    "consistent_rank32": 187,
+    "retained": 58
+  },
+  "sampled_branches_per_retained_prefix": 256,
+  "eta_mean": 8.007004310344827,
+  "eta_min": 7.6875,
+  "eta_max": 8.5,
+  "eta_histogram": {
+    "7.6875": 1,
+    "7.71875": 1,
+    "7.75": 2,
+    "7.78125": 3,
+    "7.8125": 2,
+    "7.84375": 6,
+    "7.875": 1,
+    "7.9375": 7,
+    "7.96875": 4,
+    "8.0": 4,
+    "8.03125": 4,
+    "8.0625": 6,
+    "8.09375": 2,
+    "8.125": 3,
+    "8.15625": 4,
+    "8.21875": 2,
+    "8.25": 1,
+    "8.28125": 1,
+    "8.3125": 2,
+    "8.375": 1,
+    "8.5": 1
+  },
+  "scope": "Independent sampling of legal prefixes and branches; not an exhaustive yield guarantee or preimage experiment."
+}

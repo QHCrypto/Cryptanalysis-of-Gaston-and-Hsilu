@@ -1,0 +1,575 @@
+{
+  "word_bits": 8,
+  "prefix_rounds": 2,
+  "quartics": 94,
+  "excluded": 0,
+  "retained": 94,
+  "nonzero_coefficients": 94,
+  "false_exclusions": 0,
+  "details": [
+    {
+      "id": 0,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x20f420e42aa20b601cc9e6e719729fcb012932e0fdaa0a92f102b03555227108"
+    },
+    {
+      "id": 1,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x619a3322fed81baa908c8e7a6322af853002d952a183c17252dadcf079ba905e"
+    },
+    {
+      "id": 2,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0xf502c308a5372ddbce0d3e52c7e136171c049f66be3181e4f4022463e84e89"
+    },
+    {
+      "id": 3,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x45b44126f6fbf5143010d4623a818f2319a746139bc6696b8de1ea352c3746e8"
+    },
+    {
+      "id": 4,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x3551108530fc4c67601d01fe7fec2657bbcd0eb71a57ee57211ccc1f05774829"
+    },
+    {
+      "id": 5,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x5f143531116157104ac477364a6f1502ff44a48b2f030aa977146327e52c040"
+    },
+    {
+      "id": 6,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x6267bb85cf15f3181bb423ecb9cd32cd4d23a1a204be57ff3c91d45251a36f1d"
+    },
+    {
+      "id": 7,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x1fd832ade285e5b44e2ba34b136f94964ebc886c461a1512ba85f55b1f8b41a"
+    },
+    {
+      "id": 8,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x7e5b0ca2392714fe1050f089fb60c0ef426c708d5f874a1f974d7c0893664de0"
+    },
+    {
+      "id": 9,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x664142ba340bd76c0053ffff001c91c7043e132532e13656554db33041a904df"
+    },
+    {
+      "id": 10,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x69db4eac6ebcb2c700c799cd810407bb5d2d4ae476589be9e6de07b3d6826267"
+    },
+    {
+      "id": 11,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x70f757f8196d88462ac59851d9dad4262065779775bdb4a044ca811aa6245647"
+    },
+    {
+      "id": 12,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x535063802a8015f0436c87f61fa922322161613ef14dee176049cab1fc49554"
+    },
+    {
+      "id": 13,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x103d37251c1e5fbf1c20bda3f4b84095133f572ff0a9cdd7bf1f28ec6ddf32ff"
+    },
+    {
+      "id": 14,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x123c142b2d3bdbba340468ec92c6318b17060609f408b004f5658e997380614c"
+    },
+    {
+      "id": 15,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x3191505b08432461819fb409921c0631703513f7b013ae033cc740a1b0c4c8d"
+    },
+    {
+      "id": 16,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x26a32367f3e4d004459a4ba608696095aa4d9f8f136622e5dc2d0eaef38a70ba"
+    },
+    {
+      "id": 17,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x54e2280bdf3c0e8bf042c78b5a9aa80804d4296f33ee87d929bb5a2f06bde47"
+    },
+    {
+      "id": 18,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x275816b7e77f9b1b351c1d16c57ae3ee335842d25583a9e22544f6eb141606e2"
+    },
+    {
+      "id": 19,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x21022533260e5d3f10010511070d291d12031374ee04c07c3a16d9cb88b066ae"
+    },
+    {
+      "id": 20,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x58535418b9d56c6484182d65cf87a3875106948e8e8dae742df194f30637c6b0"
+    },
+    {
+      "id": 21,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x714a257160352633cf003558745f38a7fa6a504366a471903f9dd42bb43534dc"
+    },
+    {
+      "id": 22,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x692ba44e850cbdd9792bdc82b0cf4ea63f15fdb89dbf4acb03fe683b50e0142a"
+    },
+    {
+      "id": 23,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x62ec9bed777f8683e237d083a241e87ac89acb2d7cb9e8ec4f2c3d6c64b667b"
+    },
+    {
+      "id": 24,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0xa94bf9b257ead13ec5028a238f1d189535aaa218303f812cf9a38938f0b61eac"
+    },
+    {
+      "id": 25,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x2b6745697d3590c92ac8f220b9b119b16fd96eafa511dc59fbb1f85262cad80"
+    },
+    {
+      "id": 26,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x9b77603ce76698a03e7ab94109d2d38ff8351b24d0e73ac070e51b7cf72bd396"
+    },
+    {
+      "id": 27,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x5047511c9f2219780964e50b613649f6c581c25edf4771bf9f0ed0620b95dea8"
+    },
+    {
+      "id": 28,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x9d026b008cc2a4c3a412772061d1b91030bda1c88c934d1b4b057ac0d213046b"
+    },
+    {
+      "id": 29,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0xf74441d135a72402861033cca3fbcaeff8707500f9eb9e3509a5b9c852792a1"
+    },
+    {
+      "id": 30,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0xa7a4bd002b991fe6f0939db7914f37a34062d74e9a0674bc761f43d2e9d69659"
+    },
+    {
+      "id": 31,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x78566357934a2bdbd318b9cc6e8036716137a9efbacfe0d684830fc787d3d00f"
+    },
+    {
+      "id": 32,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x52e4d15d2a722f6084f02b67619e6eb4a0a765ecf7da341c00f40dc84cd8b5ce"
+    },
+    {
+      "id": 33,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x125f455eb568d5748f159382a5989ae8414da1fbb8d1ec5d8ada268dde138384"
+    },
+    {
+      "id": 34,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x6755735ca7f8ad3e21598ad407881a6b332971b5e068768f4517fb70d2be7207"
+    },
+    {
+      "id": 35,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x5f44529d39199269427d84dce5d4182f0250c3749924797d2ff4e82297f09bb5"
+    },
+    {
+      "id": 36,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0xbe837011492dc2f3dc467204736268092c540405084289412a5d24e1930ad66"
+    },
+    {
+      "id": 37,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0xd7046184e0803af0962074f47690e1998e3af0e3cf30b9b14dd21f935c67158"
+    },
+    {
+      "id": 38,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x242bbc8d95c3af471b28fc503fbb0a47576ff4c86434311d544fe272be73936a"
+    },
+    {
+      "id": 39,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x50c05150b5a0a1f0b185baeaaa652e50309106d6c9e0aed301216b00038d860"
+    },
+    {
+      "id": 40,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x4bd02e0f5e019a7ae73b26200371e8118c657d36bb5f2e5e8b29cb1ee0e0190"
+    },
+    {
+      "id": 41,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x51dead718d34118d430fc3da3111098b08cf8461639b24c558bab1e5764d5893"
+    },
+    {
+      "id": 42,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x31ea7799c2e772bf4ef52bc5e7a5b993522276f952f5538be6f0a3ceaaf31996"
+    },
+    {
+      "id": 43,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x220017103d0f99103503190168037a0e202250448ca17c264257494190eb6cc4"
+    },
+    {
+      "id": 44,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x5a6c570fb4c79a4bff5ea76cb2fc2bc61d325327c0cd6e5b5caa0480c393f524"
+    },
+    {
+      "id": 45,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x45ce1a96102e3d0b0b5965f005bed50003d85d54674a47e7cc29105baf9ff195"
+    },
+    {
+      "id": 46,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x52649fabfdca81d53a79f6c5e3c236f76d459ffe6342e4a10ba9908898c3898f"
+    },
+    {
+      "id": 47,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x5121c6c45a514de05722c36559ddcc46e491f54cbc916d1c48e8f776770da01"
+    },
+    {
+      "id": 48,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0xc9fc017df9273400aaa34cfee9d711355354ba32021cb19b1d3d77aba1c634fc"
+    },
+    {
+      "id": 49,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x8e485797f2e2ae2ebefabece3c3732c4148dcb078a9645e622aa10425f086f34"
+    },
+    {
+      "id": 50,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x514352215a0ceb41c5ef3a732379c69a786fedbf6f5c3995e46c7bc027237e28"
+    },
+    {
+      "id": 51,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0xb900c4311ac034f2f220241203203de19199d064c1a9306bc6b612446b1a14b8"
+    },
+    {
+      "id": 52,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0xed7876db2407e49f40ff96a7f6f5612747487676c6aec33e529a7c8120a1c708"
+    },
+    {
+      "id": 53,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x55343b6347b07c9047f1d8b814e63f0066e26f5250e396d72241ea16524eca58"
+    },
+    {
+      "id": 54,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x73e7a068cedba2e08012a1453570ec5132a4c5ec6252c14d3865a1d0f50da832"
+    },
+    {
+      "id": 55,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0xfdbb67245d571e34ad46608dbce316c01067efc0aecb59b78342e26a9e7b75f0"
+    },
+    {
+      "id": 56,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x75642249904f03053850a08c7451aa3473767223b6faf238e9a889b6d2f68646"
+    },
+    {
+      "id": 57,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x7d6670bf3312f020d4b22804c9c9b0867423b72de3702a2ae3850a87dbef4661"
+    },
+    {
+      "id": 58,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x5be1723750b8a1952269ce2c9c43952c42e911b842a8522b7c59d1d73d3eca1e"
+    },
+    {
+      "id": 59,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0xf8718c58ca55208676ce64d9df15d21fa58dee9f083869673387216a147526bf"
+    },
+    {
+      "id": 60,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x131b7ce7074e348d373c6c4929085972776139e62934d83415dd68ed6b4899c9"
+    },
+    {
+      "id": 61,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x3a21ff257dbf6745122e8b2bf0f194e336038b2f5fb9d7670da4eb55c65877d0"
+    },
+    {
+      "id": 62,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0xd8559391c009424ac8533458a55bdfaa50a46b6547b30554ebb7da34c3ed99cc"
+    },
+    {
+      "id": 63,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x5f1e96c0f6f0aad3095907dda90c9edf32105348b357d9519ef4dc51a5062540"
+    },
+    {
+      "id": 64,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x2511da834b0748a46157b758f6d47ce712e870e66b1ac3153c00fc211c68e31"
+    },
+    {
+      "id": 65,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x8dcace55ccd368ce85e528472d3390c1b20ed0a9ddc791375bec4399bfdeed6e"
+    },
+    {
+      "id": 66,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x74d47c1f4453d6b07ceeac732774b95f363d152595d4f594ef470f28ff388078"
+    },
+    {
+      "id": 67,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x475e567376230bfc421e220818df54e75155555179987d9772a30b11d6709a5e"
+    },
+    {
+      "id": 68,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x31cd4802ef2dac4270fc3ebb051f82496f926145420eba237fcc68bd129a1e4e"
+    },
+    {
+      "id": 69,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0xb8936dea7f2b49fed09eb6b12be66d22fa83d3dd2b62d87388e39362945989bc"
+    },
+    {
+      "id": 70,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0xd1cd31ad0cf130d495a2c07f78e8dd0ef10adbc6755898d7fa29f6cfa9a6a00"
+    },
+    {
+      "id": 71,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x5c12ae8b1ebeb36c497229227f860ebc91ee2bbbc6071f1c3fae9c55837b8408"
+    },
+    {
+      "id": 72,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x1f2f268cef3615400c31a46599c7706900f5d2630566f756f652500edd6aa3c"
+    },
+    {
+      "id": 73,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x8e9c6f6a93738e2cd7b1eca9bdb42e418c4afbe95b7bc5a48c8e402e0c19b1fd"
+    },
+    {
+      "id": 74,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x544785b041466bee0002250e74885956405ea80692477e2b8b678a73c427644a"
+    },
+    {
+      "id": 75,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x60ebedcb596798a360ce74c9c4fe4d87cf36d83b90fa43d47fcc20e33a19ea40"
+    },
+    {
+      "id": 76,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x243b0055dc6f07311e06b09dfa407e3c25b9ed987d3b232f45ad2cca294a0aa5"
+    },
+    {
+      "id": 77,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0xc85f1d6e5b72d24df363d1c132b0c7a1c97738807dd4c59089ca08e56d5c8f22"
+    },
+    {
+      "id": 78,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x704cb1753708d1e75575a063c57b6b122837c2b2620b1b8015302ede545d5f2"
+    },
+    {
+      "id": 79,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x1220a143c02c7c42035b4085e7cf06f3010672033ce0a81122dfbd38ce445de"
+    },
+    {
+      "id": 80,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0xb68f9ccb44251f5639227be0c39a11835d90bff4face6f530831e349cd72ad64"
+    },
+    {
+      "id": 81,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0xddaa4f8db197047be37735859ef9a509a103dcdf5d16b0e3f138f0ca32768c87"
+    },
+    {
+      "id": 82,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0xfaeca61df8faaad2bb76443fdbac0b04b2f5b8abaed97cbee678cf963c5544e2"
+    },
+    {
+      "id": 83,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x3df3d7e827c428ab2dd884681d693c086e9d6dab06585306c933d747446c2870"
+    },
+    {
+      "id": 84,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x33385806a3b0436dea6d46efce0dc705bd20bd20df8f02c5cb4df113612b0805"
+    },
+    {
+      "id": 85,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x49aeb4d7f7c0348ff63b3031c2c98ad3956aca3389229735933e7c368ac80551"
+    },
+    {
+      "id": 86,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x27613bfbf39ffdc43ab719cf4b20312a5f4c503124bb78a673c65b655192cb59"
+    },
+    {
+      "id": 87,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0xdaa2177b4b120a7f97e18a496855dbf74084eb9bc227c9b1716b0961e016c96"
+    },
+    {
+      "id": 88,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x6a1659d8960c81291968579ed73b75af35e762c78ae344bed79d61656a47cfcc"
+    },
+    {
+      "id": 89,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x32013dee358137bd16f3c3444b1b6aaf223134b31d58ae155ff1fea06011631d"
+    },
+    {
+      "id": 90,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x3f00c65435a92e8ca6892acfc06bf3424ffe336fa2ce1259233ea8c52ae90570"
+    },
+    {
+      "id": 91,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x1a4e225220a42d23808cac4af220e624f26a9e611b7b07b8a3bc182ba0702597"
+    },
+    {
+      "id": 92,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x460b44848e9c5435d8bf86a64c18aa7563fea5d95121d484c66e40b3cef82ed8"
+    },
+    {
+      "id": 93,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x6769b561d6db6409013bf74fa43fcdb9211de40ccb2a2b98bff406cd2e23ff86"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+COMMAND ["/usr/bin/python3", "scripts/preimage_accounting.py"]
+{
+  "Gaston_2round": {
+    "search_exponent": 118.05563748774034,
+    "permutation_bit_operations": 4096,
+    "recurring_elimination_bit_operations_per_candidate": 1632,
+    "setup_elimination_bit_operations": 52969,
+    "candidates_per_setup": 140737488355328,
+    "Ts_elimination_only": 0.39843750000009187,
+    "Tv": 1,
+    "reported_exponent_Huang_dominant_convention": 118.05563748774034,
+    "exponent_retaining_1_plus_Ts": 118.5394532650047
+  },
+  "Hsilu_2round": {
+    "search_exponent": 106,
+    "permutation_bit_operations": 3712,
+    "recurring_elimination_bit_operations_per_candidate": 3542,
+    "setup_elimination_bit_operations": 0,
+    "candidates_per_setup": 1,
+    "Ts_elimination_only": 0.9542025862068966,
+    "Tv": 1,
+    "reported_exponent_Huang_dominant_convention": 106,
+    "exponent_retaining_1_plus_Ts": 106.9665800348427
+  },
+  "Hsilu_3round": {
+    "search_exponent": 126,
+    "permutation_bit_operations": 5568,
+    "recurring_elimination_bit_operations_per_candidate": 969.25,
+    "setup_elimination_bit_operations": 65835,
+    "candidates_per_setup": 67108864,
+    "Ts_elimination_only": 0.17407524802764857,
+    "Tv": 1,
+    "reported_exponent_Huang_dominant_convention": 126,
+    "exponent_retaining_1_plus_Ts": 126.23152487563483
+  }
+}

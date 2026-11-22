@@ -1,0 +1,82 @@
+Set parameter LicenseID to value 2850350
+Read LP format model from file base.lp
+Reading time = 0.02 seconds
+: 4868 rows, 1152 columns, 17152 nonzeros
+Set parameter Threads to value 4
+Set parameter MIPFocus to value 1
+Set parameter SolutionLimit to value 1
+Set parameter FeasibilityTol to value 1e-09
+Set parameter IntFeasTol to value 1e-09
+Gurobi Optimizer version 13.0.2 build v13.0.2rc1 (linux64 - "Ubuntu 24.04.5 LTS")
+
+CPU model: 13th Gen Intel(R) Core(TM) i9-13900KF, instruction set [SSE2|AVX|AVX2]
+Thread count: 32 physical cores, 32 logical processors, using up to 4 threads
+
+Non-default parameters:
+SolutionLimit  1
+FeasibilityTol  1e-09
+IntFeasTol  1e-09
+MIPFocus  1
+Threads  4
+
+Optimize a model with 4935 rows, 1152 columns and 17408 nonzeros (Min)
+Model fingerprint: 0x0c90e957
+Model has 0 linear objective coefficients
+Variable types: 0 continuous, 1152 integer (1152 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+01]
+
+Presolve removed 1604 rows and 448 columns
+Presolve time: 0.03s
+Presolved: 3331 rows, 704 columns, 12480 nonzeros
+Variable types: 0 continuous, 704 integer (704 binary)
+
+Root relaxation: objective 0.000000e+00, 1136 iterations, 0.09 seconds (0.10 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0  305          -    0.00000      -     -    0s
+     0     0    0.00000    0  299          -    0.00000      -     -    0s
+     0     0    0.00000    0  247          -    0.00000      -     -    0s
+     0     0    0.00000    0  301          -    0.00000      -     -    1s
+     0     0    0.00000    0  290          -    0.00000      -     -    1s
+     0     0    0.00000    0  272          -    0.00000      -     -    1s
+     0     0    0.00000    0  272          -    0.00000      -     -    2s
+     0     0    0.00000    0  272          -    0.00000      -     -    2s
+     0     0    0.00000    0  270          -    0.00000      -     -    2s
+     0     0    0.00000    0  270          -    0.00000      -     -    2s
+     0     0    0.00000    0  257          -    0.00000      -     -    3s
+     0     0    0.00000    0  267          -    0.00000      -     -    3s
+     0     0    0.00000    0  267          -    0.00000      -     -    3s
+     0     2    0.00000    0  267          -    0.00000      -     -   14s
+    30    40    0.00000    6  298          -    0.00000      -   482   15s
+    90    68 infeasible   17               -    0.00000      -   709   21s
+   196   110 infeasible   11               -    0.00000      -   674   26s
+   233   134    0.00000    5  305          -    0.00000      -   727   31s
+   293   162    0.00000   10  316          -    0.00000      -   710   36s
+   385   209 infeasible   14               -    0.00000      -   705   46s
+   526   267 infeasible   15               -    0.00000      -   722   57s
+   846   299    0.00000   10  286          -    0.00000      -   681   68s
+  1030   339    0.00000   18  437          -    0.00000      -   720   77s
+  1260   382    0.00000   17  504          -    0.00000      -   707   84s
+  1483   409 infeasible   18               -    0.00000      -   696   93s
+* 1543   238              12       0.0000000    0.00000  0.00%   694   93s
+
+Cutting planes:
+  Zero half: 15
+  RLT: 3
+
+Explored 1684 nodes (1177833 simplex iterations) in 93.72 seconds (119.60 work units)
+Thread count was 4 (of 32 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+Status: 2; feasibility objective: 0; runtime: 93.727924 s
+input: 0x0000000000800000 0x0000005000000000 0x0000000000001482 0x1000000000000480 0x0000000040084000
+output: 0x0000000400000000 0x0000000001008000 0x9000000000000000 0x0000000000080000 0x2000000000000000

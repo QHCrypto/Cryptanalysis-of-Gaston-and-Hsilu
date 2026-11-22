@@ -1,0 +1,33 @@
+{
+  "id": "e68ecd46f96f5711",
+  "algorithm": "Gaston",
+  "rounds": 1,
+  "start_round_index": 8,
+  "delta_core": [
+    "0000800210010000",
+    "0000008002100100",
+    "0800801000004001",
+    "4100000020008400",
+    "0800000004001080"
+  ],
+  "lambda_core": [
+    "0200200200222020",
+    "2002002002220200",
+    "0000000000000000",
+    "0000000000000000",
+    "0000000000000000"
+  ],
+  "status": "completed",
+  "method": "HNW26 zero-value-mask model with exact first-DDT summation",
+  "backend": "local DLCT product",
+  "correlation": {
+    "numerator": "1",
+    "denominator": "1",
+    "log2_abs": 0.0
+  },
+  "statistics": {},
+  "certificate": {
+    "full_equals_zero_certified_for_one_chi": true
+  },
+  "elapsed_seconds": 0.00019437199807725847
+}

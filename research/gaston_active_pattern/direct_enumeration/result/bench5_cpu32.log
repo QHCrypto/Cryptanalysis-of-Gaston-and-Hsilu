@@ -1,0 +1,30 @@
+Mode=difference; fixed output=5; map=lambda^(-1); backend=cpu; CPU threads=32
+Position sets=119133; target=512; values per set=28629151; candidates=3410676646083; rotation orbits=on (Burnside checked)
+Improved: minimum=41; completed=1/119133; elapsed=0.045 s
+Improved: minimum=40; completed=4/119133; elapsed=0.045 s
+Improved: minimum=37; completed=9/119133; elapsed=0.046 s
+Improved: minimum=36; completed=33/119133; elapsed=0.092 s
+Improved: minimum=35; completed=227/119133; elapsed=0.379 s
+Improved: minimum=30; completed=265/119133; elapsed=0.448 s
+
+Status: 部分搜索，未证明最优
+Minimum input active columns: 30
+Visited: 14658125312
+Setup: 0.006162 s
+Enumeration: 0.839519 s
+CPU sets: 512; GPU sets: 0
+Input difference X: active_columns=30, active_bits=41
+  columns (index:value): 0:0x01 1:0x01 2:0x01 3:0x02 8:0x14 12:0x0e 13:0x16 14:0x02 16:0x0a 17:0x15 21:0x02 23:0x04 24:0x02 26:0x10 29:0x08 30:0x01 34:0x06 35:0x10 36:0x08 39:0x01 41:0x04 42:0x10 43:0x02 49:0x08 52:0x10 54:0x0c 56:0x01 59:0x14 60:0x02 63:0x01
+  row 0 = 0x8100008040020007
+  row 1 = 0x1000080401217008
+  row 2 = 0x0840020400823100
+  row 3 = 0x0042001020011000
+  row 4 = 0x0810040804022100
+Output difference Y: active_columns=5, active_bits=15
+  columns (index:value): 0:0x13 1:0x07 2:0x07 12:0x0f 25:0x18
+  row 0 = 0x0000000000001007
+  row 1 = 0x0000000000001007
+  row 2 = 0x0000000000001006
+  row 3 = 0x0000000002001000
+  row 4 = 0x0000000002000001
+Saved: result/bench5_cpu32.json, result/bench5_cpu32.positions.tsv

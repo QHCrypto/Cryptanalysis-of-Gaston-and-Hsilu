@@ -1,0 +1,77 @@
+{
+  "id": "forward_D1_M1_D3_chi1_to_3_prefix_jobs",
+  "algorithm": "Gaston",
+  "rounds": 2,
+  "start_round_index": 7,
+  "delta_core": [
+    "0000000000000000",
+    "000000100000000a",
+    "0000000000000000",
+    "0000000000000040",
+    "0400000010003000"
+  ],
+  "lambda_core": [
+    "e7495335dc9486a6",
+    "20a32c46caff7c6a",
+    "8283d1002af04217",
+    "a095540a24b70183",
+    "aa54ed1458fbdcb5"
+  ],
+  "previous_datf": {
+    "numerator": "0",
+    "denominator": "1",
+    "log2_abs": null
+  },
+  "aliases": [
+    "forward_D1_M1_D3_chi1_to_3_prefix_jobs"
+  ],
+  "sources": [
+    "/home/yxb/分析/差分线性/gaston_dl/results/fixed_tail_extension/prefix_jobs/12b2edb1fdd99f49fa01f30c04838be142f9e604bb93ca8a5ed5758d16ec7ff9.json.gz"
+  ],
+  "method": "original DATF Algorithm 3",
+  "status": "completed",
+  "correlation": {
+    "numerator": "1",
+    "denominator": "65536",
+    "log2_abs": -16.0
+  },
+  "bias": {
+    "numerator": "1",
+    "denominator": "131072",
+    "log2_abs": -17.0
+  },
+  "limits": {
+    "seconds": 30,
+    "max_terms": 1000000,
+    "max_products": 100000000,
+    "max_nodes": 100000,
+    "address_space_bytes": 4294967296
+  },
+  "first_L_omitted": true,
+  "remaining_alpha_assumed_jointly_uniform": true,
+  "dag_verified_full_states": 4,
+  "phase": "completed",
+  "statistics": {
+    "initial_terms": 260,
+    "initial_variables": 181,
+    "peak_polynomial_terms": 400,
+    "beta_definitions_expanded": 21,
+    "product_pairs": 316,
+    "expanded_terms": 400,
+    "expanded_variables": 162,
+    "expanded_degree": 2,
+    "remaining_beta_variables": 0,
+    "expanded_input_variables": 16,
+    "expanded_alpha_variables": 146,
+    "max_component_variables": 162,
+    "bias_nodes": 1,
+    "quadratic_calls": 1
+  },
+  "elapsed_seconds": 0.015954128000885248,
+  "peak_rss_kib": 20160,
+  "expansion_verified_formal_assignments": 16,
+  "zero_certificate": null,
+  "expanded_anf_file": "batch/085.anf.json",
+  "expanded_anf_sha256": "96662b08ec0c6e9c5fe86bada883eeea617bcc033108373173f65cb196848d47",
+  "evaluation_order": "full beta expansion then Bias"
+}

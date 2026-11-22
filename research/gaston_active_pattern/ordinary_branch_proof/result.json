@@ -1,0 +1,25 @@
+{
+  "verification": "PASS",
+  "ordinary_branch_number_outside_theta_kernel": 16,
+  "lower_bound": 16,
+  "upper_bound": 16,
+  "upper_witness": {
+    "input_active": 3,
+    "output_active": 13,
+    "theta_effect_hex": "0x0040000800000000"
+  },
+  "weight_at_least_eight_excluded_by_matching_extensions": true,
+  "retained_cases_with_checked_unsat_proofs": {
+    "2": 32,
+    "4": 1632,
+    "6": 3
+  },
+  "initial_drat_checks_completed_for_every_case": true,
+  "base_cnf_sha256": "f00a2df2015d489fb4e1c09507eb8c2eb7f45c20603faed238a86bc59f369959",
+  "matching_certificates_sha256": "76a96658f07aef1fa2261e2fa6b898a15c6e54d1a4a87f4453f9985960645896",
+  "extension_certificates_sha256": "7e7bc6e55f7e56d13b4ec177b46de0309b3e5c32e8880a3d2f916a129f825aaa",
+  "statement": "Y=lambda(X), E(rho_east(X)) != 0, metric=nonzero 5-bit columns",
+  "proof_kind": "computer-assisted exact proof with explicit matching certificates and independently checked DRAT refutations",
+  "proof_complete": true,
+  "completed_at": "2026-10-20T19:15:07.068780+08:00"
+}

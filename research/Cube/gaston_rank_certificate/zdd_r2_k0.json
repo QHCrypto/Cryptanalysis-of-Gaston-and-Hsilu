@@ -1,0 +1,13 @@
+{
+  "rounds": 2,
+  "word_bits": 4,
+  "key_word": 0,
+  "completed_rounds": 2,
+  "stage": "projection",
+  "nodes": 111,
+  "recursive_calls": 642,
+  "seconds": 0.000107632,
+  "coefficient_certificate": true,
+  "failure": "",
+  "low_coefficients": [[0,0],[1,1],[1,1],[1,0]]
+}

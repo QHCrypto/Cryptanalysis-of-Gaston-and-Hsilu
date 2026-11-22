@@ -1,0 +1,70 @@
+{
+  "id": "R4_pool_000007",
+  "algorithm": "Hsilu",
+  "rounds": 4,
+  "start_round_index": 8,
+  "delta_core": [
+    "0000000000000000",
+    "0000000000000000",
+    "0000000000000000",
+    "0000000000000000",
+    "0000000000000400"
+  ],
+  "lambda_core": [
+    "0000000000000400",
+    "0000000000000400",
+    "0000000000800000",
+    "0000000000800000",
+    "0000000000000000"
+  ],
+  "previous_datf": {
+    "numerator": "1",
+    "denominator": "2048",
+    "log2_abs": -11.0
+  },
+  "aliases": [
+    "R4_pool_000007"
+  ],
+  "sources": [
+    "/home/yxb/分析/差分线性/hsilu_dl/results/research_summary.json"
+  ],
+  "method": "original DATF Algorithm 3",
+  "status": "resource_limit",
+  "correlation": null,
+  "bias": null,
+  "limits": {
+    "seconds": 30,
+    "max_terms": 1000000,
+    "max_products": 100000000,
+    "max_nodes": 100000,
+    "address_space_bytes": 4294967296
+  },
+  "first_L_omitted": true,
+  "remaining_alpha_assumed_jointly_uniform": true,
+  "dag_verified_full_states": 4,
+  "phase": "uniform_Bias",
+  "statistics": {
+    "initial_terms": 20,
+    "initial_variables": 14,
+    "peak_polynomial_terms": 148379,
+    "beta_definitions_expanded": 133,
+    "product_pairs": 479543,
+    "expanded_terms": 148379,
+    "expanded_variables": 192,
+    "expanded_degree": 6,
+    "remaining_beta_variables": 0,
+    "expanded_input_variables": 2,
+    "expanded_alpha_variables": 190,
+    "max_component_variables": 192,
+    "bias_nodes": 11588,
+    "affine_pair_eliminations": 2409,
+    "isolated_uniform_zero_leaves": 402,
+    "bias_cache_hits": 6234,
+    "separations": 138,
+    "quadratic_calls": 988
+  },
+  "elapsed_seconds": 30.05036894697696,
+  "peak_rss_kib": 424904,
+  "reason": "ResourceLimit: wall time exceeds 30 seconds",
+  "evaluation_order": "full beta expansion then Bias"
+}

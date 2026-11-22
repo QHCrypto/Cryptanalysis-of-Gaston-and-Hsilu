@@ -1,0 +1,25 @@
+{
+  "created_date": "2026-10-22",
+  "sources": {
+    "gaston_cube.cpp": "7890085341adfb4a8f61609c99eb945e598505afe47498703c34567583aaf2c7",
+    "Makefile": "98331cbd5d33bc6076e5bf8756c263858b2d55dda097c284a8c10c731113af26",
+    "reference/gaston.py": "d7e1b934cb3319f140a09cedb2574b4ebb0f49b26135c392106b472ac56fa198",
+    "src/select_cube.py": "29c36ec4c23934402ff7dd627ad9dc647e13d2e15b7a19686c6d8d1883fc7af6",
+    "src/run_matrix.py": "bc3ab81b4ed6ad3c982e8bfadbdd4a3ae937a31293f3ed65b5c550d91b5a2d0b",
+    "src/status.py": "0087a236fa17b92bd634ebfa9e02f6acf5040ff00051ec65630972cf8fc4a6f9",
+    "tests/validate.py": "8c70c44d841ca70e42874f3e7b9f0ad29e827674b92973ee69776659fdb4c36b",
+    "cube_config.json": "2f9c181ab49487a3f9f41573513ccd3f394760354cb37c89b72ce2b2cde2ad3a",
+    "src/compare_key_split.py": "b180d7df00f91bdd38e5addb360b98fa4cfb671bf42407c95c2b43a5bcb07447",
+    "gaston_mp.hpp": "ff02a7553ffd460dbcb7347ef0ee02c91b7715b567b8bf77d7246eb531153788",
+    "gaston_parity_cube.cpp": "0241e831f40fbdd38dd52bbdb4cfc99f119fc903d508b2255f674b700ffb7c8a",
+    "reference/parity_cube.py": "0064db65830990d0d1ed7214a08dc78e0521df5419e4e009b876dac8bb5665e3",
+    "src/run_parity_matrix.py": "2fa7cb34b97405a1e3f68dfcd3691badb6447b489fded2cf43abd514fcf194e6",
+    "src/three_cube_reference.py": "678da3c31f1ee4fbafde9ffff34d456a38600f13b5cedddc7d058abb81d0bffb",
+    "tests/validate_parity.py": "04d6f2e930fb0cb4acdc20e83f5306917e6c6247c0fa1b78adb43807d6a176a5",
+    "parity_cube_config.json": "1f69bd9176a246feea5b9493411dc7b377f7ab21f6d72506e93919484ef691d9",
+    "PARITY_CUBE.md": "5c4f805a58d68aed183fae0a834dd7af309ffa7bfad28a927c7239ef34524c70",
+    "README.md": "90d318f6d24e4ab9b8d24cb77f60e5a1f2e36f55b6d7d570a3873c9ee585b202"
+  },
+  "original_reference": "/home/yxb/\u5206\u6790/gaston_ref/gaston/implementation/reference/gaston.c",
+  "original_reference_sha256": "4a0ce39ce158f410111aef7a985c2a7f8b7752e669162ec78e20eaf56bd2f5dc"
+}

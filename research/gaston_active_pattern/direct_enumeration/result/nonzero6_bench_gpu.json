@@ -1,0 +1,20 @@
+{
+  "method": "exact_enumeration_with_zero_pair_pruning",
+  "mode": "difference",
+  "fixed_side": "output",
+  "fixed_count": 6,
+  "theta_effect_constraint": "nonzero",
+  "cutoff": 26,
+  "position_sets": 1171552,
+  "start_position": 0,
+  "completed_position_sets": 1024,
+  "tested_candidates_with_duplicates": 23071167368,
+  "covered_output_states": 908803769344,
+  "enumeration_complete": false,
+  "proven_optimal": false,
+  "objective": null,
+  "backend": "opencl",
+  "device": "NVIDIA GeForce GTX 1080 Ti",
+  "setup_seconds": 0.711179556000000046,
+  "search_seconds": 0.893406001999999977
+}

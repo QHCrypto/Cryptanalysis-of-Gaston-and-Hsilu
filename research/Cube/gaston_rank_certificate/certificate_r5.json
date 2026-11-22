@@ -1,0 +1,39 @@
+{
+  "implementation": "original_gaston_c",
+  "word_bits": 64,
+  "rounds": 5,
+  "period": 32,
+  "cube_dimension": 31,
+  "iv_hex": "00001000808c0001",
+  "total_points": 2147483648,
+  "files": [
+    "complete_r5.json"
+  ],
+  "covered_points": 2147483648,
+  "coverage_complete": true,
+  "sums_hex": [
+    [
+      "65f5847b3dfd1d87",
+      "8821e719d6d0f9e5"
+    ],
+    [
+      "94f9785a99a97898",
+      "9f599f42abd0a4c7"
+    ],
+    [
+      "2ae46271e388a1b8",
+      "a428047407a1938e"
+    ]
+  ],
+  "representative_columns_hex": [
+    "1778785b7d005d22f10cfc21a454651f",
+    "2c09e36dd1716a6b4f11e60ade75bc3f"
+  ],
+  "residue_columns": [
+    0,
+    0
+  ],
+  "residue_rank": 0,
+  "matrix_rank": 125,
+  "rank_lower_bound_from_residue_only": 0
+}

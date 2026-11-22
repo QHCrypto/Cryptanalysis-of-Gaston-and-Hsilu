@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "main_tables": 2,
+  "representatives": 13,
+  "whole_evaluation": 10,
+  "middle_only_evaluation": 3,
+  "whole_algorithm3_completed": 4,
+  "whole_algorithm3_resource_limited": 6,
+  "new_middle_algorithm3_completed": 4,
+  "local_links_checked": 79,
+  "legacy_datf_values_used_as_algorithm3": false
+}

@@ -1,0 +1,78 @@
+{
+  "G4c": {
+    "split": [
+      1,
+      1,
+      2
+    ],
+    "linear_squared_weight": 38,
+    "branches": [
+      {
+        "job_id": "G4c_b0",
+        "probability": "8/32",
+        "differential_output": [
+          "0000000000000000",
+          "0000000000000000",
+          "0000000000000000",
+          "0000000000000000",
+          "0000000000000002"
+        ]
+      },
+      {
+        "job_id": "G4c_b1",
+        "probability": "8/32",
+        "differential_output": [
+          "0000000000000000",
+          "0000000000000000",
+          "0000000000000002",
+          "0000000000000002",
+          "0000000000000002"
+        ]
+      }
+    ],
+    "source": "gaston_dl/results/fixed_paper_tail/search.json",
+    "tail_id": "D3_chi2_to_3",
+    "aggregation": "sum of two distinct retained DDT events; each probability 1/4; not one trail of probability 1/2"
+  },
+  "G4d": {
+    "split": [
+      1,
+      1,
+      2
+    ],
+    "linear_squared_weight": 38,
+    "branches": [
+      {
+        "job_id": "G4d_b0",
+        "probability": "1/4",
+        "differential_output": [
+          "0000000000000000",
+          "0000000000000000",
+          "0000000000000001",
+          "0000000000000000",
+          "0000000000000000"
+        ]
+      }
+    ],
+    "source": "gaston_dl/results/datf_pools/paper_full24/search_results.json",
+    "tail_id": "D3_chi2_to_3",
+    "aggregation": "single retained DDT event"
+  },
+  "H5": {
+    "split": [
+      0,
+      3,
+      2
+    ],
+    "linear_squared_weight": 10,
+    "branches": [
+      {
+        "job_id": "H5_prefix3",
+        "probability": "1"
+      }
+    ],
+    "source": "hsilu_dl/results/research_summary.json",
+    "tail_id": "H0064",
+    "aggregation": "no differential outer prefix; original search used a three-chi prefix and a fixed two-chi linear tail"
+  }
+}

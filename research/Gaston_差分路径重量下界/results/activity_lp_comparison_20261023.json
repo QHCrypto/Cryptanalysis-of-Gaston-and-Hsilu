@@ -1,0 +1,46 @@
+{
+  "scope": "Continuous LP relaxations before MIP presolve/cuts; no integer search",
+  "threads_per_sequential_solve": 16,
+  "results": [
+    {
+      "variant": "original",
+      "continuous_relaxation_objective": 3.5196973466194112,
+      "runtime_seconds": 0.6678578853607178,
+      "constraints": 9346,
+      "variables": 3072,
+      "iterations": 6578.0
+    },
+    {
+      "variant": "or_hull_only",
+      "continuous_relaxation_objective": 6.471129482719489,
+      "runtime_seconds": 0.9228930473327637,
+      "constraints": 11266,
+      "variables": 3266,
+      "iterations": 10218.0
+    },
+    {
+      "variant": "profiles_without_combined_count_cuts",
+      "continuous_relaxation_objective": 35.99999999999968,
+      "runtime_seconds": 0.8719820976257324,
+      "constraints": 9496,
+      "variables": 3266,
+      "iterations": 6741.0
+    },
+    {
+      "variant": "profiles_with_combined_count_cuts",
+      "continuous_relaxation_objective": 35.99999999999998,
+      "runtime_seconds": 0.6109580993652344,
+      "constraints": 9500,
+      "variables": 3266,
+      "iterations": 5101.0
+    },
+    {
+      "variant": "all_strengthening",
+      "continuous_relaxation_objective": 36.000000000001144,
+      "runtime_seconds": 1.1654069423675537,
+      "constraints": 11420,
+      "variables": 3266,
+      "iterations": 6699.0
+    }
+  ]
+}

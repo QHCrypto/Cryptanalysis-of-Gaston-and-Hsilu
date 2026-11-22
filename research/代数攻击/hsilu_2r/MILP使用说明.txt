@@ -1,0 +1,83 @@
+Hsilu 两轮条件线性化 MILP
+
+这是依据 hsilu_2round_best_attack.txt、配套 SVG 和本地 hsilu_ref 重建的模型，
+不是恢复了原作者未提供的生成器源码。程序独立建立约束并搜索；原路径仅作为
+可选的初始可行解或固定决策的回归验证用例，程序也支持完全不提供初始解。
+
+编译与运行
+  cd /home/yxb/分析/代数攻击/hsilu_2r
+  make
+  ./hsilu_2round_milp --threads 8
+
+默认搜索 128 位目标，输出 hsilu_2round_rebuilt.txt 和 hsilu_2round_rebuilt.svg。
+没有默认 TimeLimit 或其他提前停止参数。Gurobi 日志完整显示。
+按 Ctrl+C 会请求终止，并在存在 incumbent 时导出当前可行解。
+若没有可行解则返回退出码 2，不读取目标值或变量值，不导出伪解。
+原始 hsilu_2round_best_attack.txt/.svg 不会被覆盖。
+
+复现原文件的 64 位计数与全部决策
+  make check
+等价于：
+  ./hsilu_2round_milp --check-reference hsilu_2round_best_attack.txt --digest-bits 64 --output reproduced_reference --threads 4
+  python3 validate_milp_path.py reproduced_reference.txt
+此模式固定自由位置、条件位置/值和所选输出，其他传播变量由 MILP 推导。
+该模式下的 optimal 只表示固定决策实例最优，不能说原搜索问题已证明最优。
+
+用原路径作为初始解，继续独立搜索
+  ./hsilu_2round_milp --start hsilu_2round_best_attack.txt --digest-bits 128 --output hsilu_128_search --threads 8
+
+完全不提供初始解
+  ./hsilu_2round_milp --no-start --digest-bits 128 --output hsilu_no_start --threads 8
+
+导出 LP 模型
+  ./hsilu_2round_milp --write-lp hsilu_2round_model.lp --threads 8
+
+验证任意导出结果
+  python3 validate_milp_path.py hsilu_2round_rebuilt.txt --samples 32
+
+Makefile 支持 make SRC=hsilu_2round_milp.cpp 和 make hsilu_2round_milp。
+默认 GUROBI_HOME=/opt/gurobi1302/linux64，可通过 make GUROBI_HOME=... 覆盖。
+
+数学模型
+1. 每个状态位有 active 和 nonlinear 两个布尔标签：
+   C（常量）=(0,0)，L（仿射）=(1,0)，N（可能非线性）=(1,1)。
+   这里记录关于保留消息变量的保守次数标签，不追踪具体系数或异或相消。
+2. X1 第 0 行的 64 个位置可以选择 C 或 L；其他四行初始为 C。
+   C 位是一次解方程前固定的背景，L 位留给线性方程求解。
+3. X1、X2 中的 C 位可以额外施加取值 0 或 1 的条件。
+   q0+q1+active<=1：不能同时取 0 和 1，也不能直接条件化一个 L/N 位。
+   条件作用在 iota 之前，轮常数为 0x5a、0x4b；程序处理 iota 对已指定值的翻转。
+4. chi 的单个位写成 a+(1+b)c。若条件使 b=1 或 c=0，则乘积为 0；
+   否则乘积标签为 min(2,deg(b)+deg(c))。异或结果使用两项标签的最大值。
+   chi 输出的常量只保留 C 标签，具体 0/1 值不向后免费传播。
+5. MRM 按参考实现的 13 个中间字和行旋转逐步传播；每个 XOR 采用标签最大值。
+   位编号为 MSB=0，左旋读取 j+s（模 64），对应 native 整数位 63-j。
+6. 只从 X3 第 0 行的 L 位中选择输出关系，不把 C 位当作可求解变量方向。
+   选出的关系数 L 等于保留的消息变量数 F，且 F>=1。
+7. 条件数 C 为 X1/X2 全部显式条件之和，每个权重为 1；资源约束 F+C<=64。
+   这复现了原路径的 F=21、C=43、资源 64。不是条件秩的计算。
+8. 目标最小化 digest_bits-L。默认 digest_bits=128；原路径对应指数 107。
+   使用 --digest-bits 64 则同一结构对应指数 43。改变目标长度仅平移目标，
+   搜索约束仍只涉及第一块 64 位输出，不包含额外挤出轮的代数关系。
+
+验证和结论边界
+程序导出前会独立执行整数标签回放，逐位比较全部 X1/Y1/X2/Y2/X3 状态。
+validate_milp_path.py 进一步在随机 capacity 上解背景条件，检查输出的全部二次
+ANF 系数、输出方程秩，并调用本地 C++ 参考实现核对具体候选。
+标签模型不保证条件独立可解，不保证所选线性关系独立，也不保证 capacity
+能由合法海绵前缀生成。导出文件如实将这些未检查项目标为 not_checked。
+实际完整原像复杂度还要计入条件生成、消元、秩亏处理和剩余输出分布。
+当前模型是保守结构搜索，不包含输出位线性组合、概率近似、精确 ANF 抵消，
+也不包含给含活动变量的中间表达式加约束后重新参数化的扩展模型。
+
+本次交付验证记录
+1. 已使用本机 Gurobi 13.0.2 成功编译，启用 -Wall -Wextra -Wpedantic，无编译警告。
+2. reproduced_reference.txt/.svg 精确复现原文件的决策、条件、22 个线性位置；
+   原 SVG 中全部 1600 个 X1/Y1/X2/Y2/X3 状态格与新 SVG 逐格同色。
+3. 原路径的 16 组随机背景均可解出中间条件；所选输出的全部二次系数为零，
+   且具体候选通过 C++ 参考实现。秩并非始终满秩，详见对应 algebra_validation.json。
+4. 128 位自由搜索接受初始指数 107；人工 Ctrl+C 后状态 11，正常导出 hsilu_128_search。
+   该次测试约 52 秒，未证明全局最优；程序本身没有设置这个时限。
+5. --no-start 独立搜索自行找到 F=L=15、C=43 的新路径，约 8 秒后人工 Ctrl+C。
+   结果为 no_start_smoke.txt/.svg，抽象目标指数 113；这只是功能测试的当前解。
+   16 组参考实现核查均通过，中间条件秩均为 6，输出方程中观察到秩 13、14、15。

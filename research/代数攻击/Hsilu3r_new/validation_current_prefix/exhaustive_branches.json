@@ -1,0 +1,27 @@
+{
+  "independent_guesses": 23,
+  "free_variables": 7,
+  "branches_enumerated": 8388608,
+  "backgrounds": 67112960,
+  "coefficient_rank_histogram": {
+    "2": 18432,
+    "3": 993280,
+    "4": 7376896
+  },
+  "consistent_rank_histogram": {
+    "2": 4672,
+    "3": 496768,
+    "4": 7376896
+  },
+  "inconsistent_rank_histogram": {
+    "2": 13760,
+    "3": 496512
+  },
+  "first_1024_augmented_rows_fnv64": "16475098738660769445",
+  "spread_augmented_rows_fnv64": "15770078699619472864",
+  "direct_polynomial_cross_check": "PASS: first 1024 and 1026 spread checkpoints including all Gray-code bit levels",
+  "total_consistent_branches": 7878336,
+  "total_inconsistent_branches": 510272,
+  "backgrounds_per_independent_guess_branch": 8.00048828125,
+  "status": "PASS"
+}

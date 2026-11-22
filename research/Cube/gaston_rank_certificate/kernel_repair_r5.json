@@ -1,0 +1,103 @@
+{
+  "rounds": 5,
+  "word_bits": 64,
+  "first_cube": "N1=0; N0 repeats an even-parity 32-bit word twice",
+  "first_cube_dimension": 31,
+  "first_cube_rank": 125,
+  "kernel_basis_hex": [
+    "00000000000000005555555555555555",
+    "0000000000000000aaaaaaaaaaaaaaaa",
+    "ffffffffffffffff0000000000000000"
+  ],
+  "second_cube": "N1=0; N0 repeats a period-bit word with bit zero fixed to zero",
+  "second_cube_dimension": 31,
+  "kernel_images_hex": [
+    "c197a11fc197a11f4385eff34385eff3",
+    "e294d7b9e294d7b931e668be31e668be",
+    "d0a0e1b6d0a0e1b6ff63b733ff63b733"
+  ],
+  "rank_gain": 3,
+  "joint_rank": 128,
+  "repair_minor": {
+    "packed_output_bit_positions": [
+      0,
+      1,
+      6
+    ],
+    "rows": [
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        0,
+        0
+      ]
+    ],
+    "rank": 3
+  },
+  "sources": [
+    "certificate_r5.json",
+    "kernel_probe_r5.json"
+  ],
+  "complete_enumeration_points_per_cube": 2147483648,
+  "polynomial_certificate": {
+    "coefficient_matrices_M0_M1_M2": [
+      [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    ],
+    "entry_valuations": [
+      [
+        6,
+        1
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "determinant_valuation": 3,
+    "smith_exponents": [
+      1,
+      2
+    ],
+    "rank_from_determinant": 125,
+    "proof": "Over F2[t]/t^64, Smith exponents s1,s2 give rank 128-s1-s2. If the determinant has valuation d<64, neither exponent is saturated and s1+s2=d. Here the 12 bits in M0,M1,M2 give det=t^3+O(t^4), hence rank125."
+  },
+  "scope": "Exact actual-word-size five-round result; no six-round coefficient is supplied."
+}

@@ -1,0 +1,25 @@
+{
+  "implementation": "original_gaston_c",
+  "word_bits": 64,
+  "rounds": 5,
+  "period": 32,
+  "cube_dimension": 31,
+  "cube": "N1=0; N0 repeats a period-bit word with bit zero fixed to zero",
+  "begin": 0,
+  "count": 2147483648,
+  "total_points": 2147483648,
+  "coverage_complete": true,
+  "seconds": 131.395321887,
+  "keys_hex": [
+    ["0000000000000000","0000000000000000"],
+    ["5555555555555555","0000000000000000"],
+    ["aaaaaaaaaaaaaaaa","0000000000000000"],
+    ["0000000000000000","ffffffffffffffff"]
+  ],
+  "sums_hex": [
+    ["6a3783d1db39c71b","0b70e5a4696654fa"],
+    ["29b26c2298bc28e8","cae744bba8f1f5e5"],
+    ["5bd1eb6feadfafa5","e9e4321d8bf28343"],
+    ["955434e2245a7028","dbd00412b9c6b54c"]
+  ]
+}

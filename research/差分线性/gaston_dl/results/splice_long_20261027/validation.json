@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "candidates": 49,
+  "middle_jobs": 76,
+  "outer_DDT_branches_checked": 86,
+  "tail_LAT_and_transpose_checks": 11,
+  "completed_DATF_middle_jobs": 76,
+  "completed_HNW_middle_jobs": 76,
+  "max_rounds": 9,
+  "full_endpoint_jobs": 0,
+  "best_log2_abs": [
+    -59.0,
+    -83.0,
+    -116.0,
+    -140.0,
+    -164.0
+  ]
+}

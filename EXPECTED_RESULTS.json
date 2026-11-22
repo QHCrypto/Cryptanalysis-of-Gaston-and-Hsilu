@@ -1,0 +1,14 @@
+{
+  "datf": {
+    "G4a": {
+      "numerator": "3",
+      "denominator": "2048",
+      "log2_abs": -9.415037499278844
+    },
+    "H4a": {
+      "numerator": "0",
+      "denominator": "1",
+      "log2_abs": null
+    }
+  }
+}

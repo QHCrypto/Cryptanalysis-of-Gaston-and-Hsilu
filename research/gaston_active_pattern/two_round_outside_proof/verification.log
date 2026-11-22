@@ -1,0 +1,5 @@
+PASS: all 1024 chi input-pair evaluations; nonzero DDT maximum 8/32.
+PASS: Z ->lambda X ->chi X ->lambda Y ->chi Y, both effects nonzero.
+Leading effect = 743b9ca3a0eb61a6; middle effect = 0040000800000000.
+PASS: exact two-round minimum weight = 6 + 26 = 32; lower bound = 2*16.
+The lower bound uses the previously certified branch theorem; this invocation checked its summary hash, not its proof files.

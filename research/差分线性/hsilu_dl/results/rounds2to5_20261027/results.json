@@ -1,0 +1,5412 @@
+{
+  "date": "2026-10-27",
+  "algorithm": "Hsilu",
+  "quantity": "rho = E[(-1)^(Lambda dot (F(X) xor F(X xor Delta)))]; epsilon = rho/2",
+  "policy": "Use completed full Algorithm 3 where feasible; otherwise evaluate middle/prefix with original Algorithm 3 and splice a single linear trail.",
+  "boundary": "Core: first chi input to last chi output; every internal L retained. Native output mask = L^{-T}(core mask). First RC absorbed into uniform input translation; last R round constants.",
+  "rows": [
+    {
+      "code": "H2",
+      "rounds": 2,
+      "input_difference": [
+        "0000000000000001",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000"
+      ],
+      "core_output_mask": [
+        "0000000000000002",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000"
+      ],
+      "full_output_mask": [
+        "66016dea3c0aef71",
+        "f2e8b7532660255a",
+        "203cc41c25758935",
+        "840842188e29c028",
+        "5c624e12f8d45a80"
+      ],
+      "split": [
+        0,
+        2,
+        0
+      ],
+      "evaluated_part": "whole",
+      "datf_algorithm3": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "datf_seconds": 0.007477733997802716,
+      "datf_source": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R2_p1_c1_m1.json",
+      "hnw26": {
+        "full": {
+          "numerator": "1",
+          "denominator": "1",
+          "denominator_exponent": 0,
+          "log2_abs": 0
+        },
+        "zero": {
+          "numerator": "1",
+          "denominator": "1",
+          "denominator_exponent": 0,
+          "log2_abs": 0
+        }
+      },
+      "p": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "q_squared": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "reported_correlation": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "sampling": {
+        "id": "R2_p1_c1_m1",
+        "rounds": "2",
+        "samples": 4194304,
+        "seed": "2026101801",
+        "n0": 4194304,
+        "n1": 0,
+        "rho": 1.0,
+        "log2_abs": 0.0
+      },
+      "original_id": "R2_p1_c1_m1",
+      "note": "结构性恒等于 +1",
+      "whole_attempt": {
+        "status": "completed",
+        "source": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R2_p1_c1_m1.json"
+      }
+    },
+    {
+      "code": "R2_p1_c1_m2",
+      "rounds": 2,
+      "input_difference": [
+        "0000000000000001",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000"
+      ],
+      "core_output_mask": [
+        "0000000000000000",
+        "0000000000000002",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000"
+      ],
+      "full_output_mask": [
+        "8f029bdc59805b7a",
+        "c9980956bcb22dd4",
+        "094d624d480f3107",
+        "218a700a21021086",
+        "b63516a017189384"
+      ],
+      "split": [
+        0,
+        2,
+        0
+      ],
+      "evaluated_part": "whole",
+      "datf_algorithm3": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "datf_seconds": 0.006819907001045067,
+      "datf_source": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R2_p1_c1_m2.json",
+      "hnw26": {
+        "full": {
+          "numerator": "1",
+          "denominator": "1",
+          "denominator_exponent": 0,
+          "log2_abs": 0
+        },
+        "zero": {
+          "numerator": "1",
+          "denominator": "1",
+          "denominator_exponent": 0,
+          "log2_abs": 0
+        }
+      },
+      "p": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "q_squared": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "reported_correlation": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "sampling": {
+        "id": "R2_p1_c1_m2",
+        "rounds": "2",
+        "samples": 4194304,
+        "seed": "2026101801",
+        "n0": 4194304,
+        "n1": 0,
+        "rho": 1.0,
+        "log2_abs": 0.0
+      },
+      "original_id": "R2_p1_c1_m2",
+      "note": "整体模型值；保留历史采样对照",
+      "whole_attempt": {
+        "status": "completed",
+        "source": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R2_p1_c1_m2.json"
+      }
+    },
+    {
+      "code": "R2_p1_c1_m3",
+      "rounds": 2,
+      "input_difference": [
+        "0000000000000001",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000"
+      ],
+      "core_output_mask": [
+        "0000000000000002",
+        "0000000000000002",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000"
+      ],
+      "full_output_mask": [
+        "e903f636658ab40b",
+        "3b70be059ad2088e",
+        "2971a6516d7ab832",
+        "a5823212af2bd0ae",
+        "ea5758b2efccc904"
+      ],
+      "split": [
+        0,
+        2,
+        0
+      ],
+      "evaluated_part": "whole",
+      "datf_algorithm3": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "datf_seconds": 0.006809836995671503,
+      "datf_source": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R2_p1_c1_m3.json",
+      "hnw26": {
+        "full": {
+          "numerator": "1",
+          "denominator": "1",
+          "denominator_exponent": 0,
+          "log2_abs": 0
+        },
+        "zero": {
+          "numerator": "1",
+          "denominator": "1",
+          "denominator_exponent": 0,
+          "log2_abs": 0
+        }
+      },
+      "p": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "q_squared": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "reported_correlation": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "sampling": {
+        "id": "R2_p1_c1_m3",
+        "rounds": "2",
+        "samples": 4194304,
+        "seed": "2026101801",
+        "n0": 4194304,
+        "n1": 0,
+        "rho": 1.0,
+        "log2_abs": 0.0
+      },
+      "original_id": "R2_p1_c1_m3",
+      "note": "整体模型值；保留历史采样对照",
+      "whole_attempt": {
+        "status": "completed",
+        "source": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R2_p1_c1_m3.json"
+      }
+    },
+    {
+      "code": "R2_p1_c1_m4",
+      "rounds": 2,
+      "input_difference": [
+        "0000000000000001",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000"
+      ],
+      "core_output_mask": [
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000002",
+        "0000000000000000",
+        "0000000000000000"
+      ],
+      "full_output_mask": [
+        "d6a3c0a6f7166016",
+        "7522660275af2c8b",
+        "41c25358935203c8",
+        "2188629c0288408c",
+        "e12d8d45a805c424"
+      ],
+      "split": [
+        0,
+        2,
+        0
+      ],
+      "evaluated_part": "whole",
+      "datf_algorithm3": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "datf_seconds": 0.006752397996024229,
+      "datf_source": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R2_p1_c1_m4.json",
+      "hnw26": {
+        "full": {
+          "numerator": "1",
+          "denominator": "1",
+          "denominator_exponent": 0,
+          "log2_abs": 0
+        },
+        "zero": {
+          "numerator": "1",
+          "denominator": "1",
+          "denominator_exponent": 0,
+          "log2_abs": 0
+        }
+      },
+      "p": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "q_squared": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "reported_correlation": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "sampling": {
+        "id": "R2_p1_c1_m4",
+        "rounds": "2",
+        "samples": 4194304,
+        "seed": "2026101801",
+        "n0": 4194304,
+        "n1": 0,
+        "rho": 1.0,
+        "log2_abs": 0.0
+      },
+      "original_id": "R2_p1_c1_m4",
+      "note": "整体模型值；保留历史采样对照",
+      "whole_attempt": {
+        "status": "completed",
+        "source": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R2_p1_c1_m4.json"
+      }
+    },
+    {
+      "code": "H3",
+      "rounds": 3,
+      "input_difference": [
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000001",
+        "0000000000000000"
+      ],
+      "core_output_mask": [
+        "0000000020000000",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000"
+      ],
+      "full_output_mask": [
+        "a3c0aef7166016de",
+        "32660255af2e8b75",
+        "c25758935203cc41",
+        "88e29c0288408421",
+        "2f8d45a805c624e1"
+      ],
+      "split": [
+        0,
+        3,
+        0
+      ],
+      "evaluated_part": "whole",
+      "datf_algorithm3": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "datf_seconds": 0.013472267004544847,
+      "datf_source": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R3_p8_c29_m1.json",
+      "hnw26": {
+        "full": {
+          "numerator": "1",
+          "denominator": "1",
+          "denominator_exponent": 0,
+          "log2_abs": 0
+        },
+        "zero": {
+          "numerator": "1",
+          "denominator": "1",
+          "denominator_exponent": 0,
+          "log2_abs": 0
+        }
+      },
+      "p": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "q_squared": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "reported_correlation": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "sampling": {
+        "id": "R3_p8_c29_m1",
+        "rounds": "3",
+        "samples": 4194304,
+        "seed": "2026101801",
+        "n0": 4194304,
+        "n1": 0,
+        "rho": 1.0,
+        "log2_abs": 0.0
+      },
+      "original_id": "R3_p8_c29_m1",
+      "note": "结构性恒等于 +1",
+      "whole_attempt": {
+        "status": "completed",
+        "source": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R3_p8_c29_m1.json"
+      }
+    },
+    {
+      "code": "R3_p8_c16_m24",
+      "rounds": 3,
+      "input_difference": [
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000001",
+        "0000000000000000"
+      ],
+      "core_output_mask": [
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000010000",
+        "0000000000010000"
+      ],
+      "full_output_mask": [
+        "5855d6e3c8856207",
+        "45e73c4516f207c9",
+        "6e01752866582761",
+        "97a5bb7c59a15338",
+        "002a10a708831023"
+      ],
+      "split": [
+        0,
+        3,
+        0
+      ],
+      "evaluated_part": "whole",
+      "datf_algorithm3": {
+        "numerator": "-3",
+        "denominator": "4",
+        "log2_abs": -0.4150374992788439
+      },
+      "datf_seconds": 0.013863587999367155,
+      "datf_source": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R3_p8_c16_m24.json",
+      "hnw26": {
+        "full": {
+          "numerator": "-3",
+          "denominator": "4",
+          "denominator_exponent": 2,
+          "log2_abs": -0.4150374992788439
+        },
+        "zero": {
+          "numerator": "-3",
+          "denominator": "4",
+          "denominator_exponent": 2,
+          "log2_abs": -0.4150374992788439
+        }
+      },
+      "p": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "q_squared": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "reported_correlation": {
+        "numerator": "-3",
+        "denominator": "4",
+        "log2_abs": -0.4150374992788438
+      },
+      "sampling": {
+        "id": "R3_p8_c16_m24",
+        "rounds": "3",
+        "samples": 4194304,
+        "seed": "2026101801",
+        "n0": 524045,
+        "n1": 3670259,
+        "rho": -0.7501158714294434,
+        "log2_abs": -0.414814626979237
+      },
+      "original_id": "R3_p8_c16_m24",
+      "note": "整体模型值；保留历史采样对照",
+      "whole_attempt": {
+        "status": "completed",
+        "source": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R3_p8_c16_m24.json"
+      }
+    },
+    {
+      "code": "R3_p8_c36_m1",
+      "rounds": 3,
+      "input_difference": [
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000001",
+        "0000000000000000"
+      ],
+      "core_output_mask": [
+        "0000001000000000",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000"
+      ],
+      "full_output_mask": [
+        "e0577b8b300b6f51",
+        "33012ad79745ba99",
+        "2bac49a901e620e1",
+        "714e0144204210c4",
+        "c6a2d402e3127097"
+      ],
+      "split": [
+        0,
+        3,
+        0
+      ],
+      "evaluated_part": "whole",
+      "datf_algorithm3": {
+        "numerator": "3",
+        "denominator": "4",
+        "log2_abs": -0.4150374992788439
+      },
+      "datf_seconds": 0.013897044998884667,
+      "datf_source": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R3_p8_c36_m1.json",
+      "hnw26": {
+        "full": {
+          "numerator": "3",
+          "denominator": "4",
+          "denominator_exponent": 2,
+          "log2_abs": -0.4150374992788439
+        },
+        "zero": {
+          "numerator": "3",
+          "denominator": "4",
+          "denominator_exponent": 2,
+          "log2_abs": -0.4150374992788439
+        }
+      },
+      "p": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "q_squared": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "reported_correlation": {
+        "numerator": "3",
+        "denominator": "4",
+        "log2_abs": -0.4150374992788438
+      },
+      "sampling": {
+        "id": "R3_p8_c36_m1",
+        "rounds": "3",
+        "samples": 4194304,
+        "seed": "2026101801",
+        "n0": 3669269,
+        "n1": 525035,
+        "rho": 0.7496438026428223,
+        "log2_abs": -0.4157228409173533
+      },
+      "original_id": "R3_p8_c36_m1",
+      "note": "整体模型值；保留历史采样对照",
+      "whole_attempt": {
+        "status": "completed",
+        "source": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R3_p8_c36_m1.json"
+      }
+    },
+    {
+      "code": "R3_p8_c53_m1",
+      "rounds": 3,
+      "input_difference": [
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000001",
+        "0000000000000000"
+      ],
+      "core_output_mask": [
+        "0020000000000000",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000"
+      ],
+      "full_output_mask": [
+        "f7166016dea3c0ae",
+        "55af2e8b75326602",
+        "935203cc41c25758",
+        "028840842188e29c",
+        "a805c624e12f8d45"
+      ],
+      "split": [
+        0,
+        3,
+        0
+      ],
+      "evaluated_part": "whole",
+      "datf_algorithm3": {
+        "numerator": "3",
+        "denominator": "4",
+        "log2_abs": -0.4150374992788439
+      },
+      "datf_seconds": 0.01388896000571549,
+      "datf_source": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R3_p8_c53_m1.json",
+      "hnw26": {
+        "full": {
+          "numerator": "3",
+          "denominator": "4",
+          "denominator_exponent": 2,
+          "log2_abs": -0.4150374992788439
+        },
+        "zero": {
+          "numerator": "3",
+          "denominator": "4",
+          "denominator_exponent": 2,
+          "log2_abs": -0.4150374992788439
+        }
+      },
+      "p": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "q_squared": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "reported_correlation": {
+        "numerator": "3",
+        "denominator": "4",
+        "log2_abs": -0.4150374992788438
+      },
+      "sampling": {
+        "id": "R3_p8_c53_m1",
+        "rounds": "3",
+        "samples": 4194304,
+        "seed": "2026101801",
+        "n0": 3670479,
+        "n1": 523825,
+        "rho": 0.750220775604248,
+        "log2_abs": -0.41461287928040536
+      },
+      "original_id": "R3_p8_c53_m1",
+      "note": "整体模型值；保留历史采样对照",
+      "whole_attempt": {
+        "status": "completed",
+        "source": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R3_p8_c53_m1.json"
+      }
+    },
+    {
+      "code": "H4c",
+      "rounds": 4,
+      "input_difference": [
+        "0000000000000400",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000"
+      ],
+      "core_output_mask": [
+        "0000000000000400",
+        "0000000000000000",
+        "0000000000800000",
+        "0000000000000000",
+        "0000000000000000"
+      ],
+      "full_output_mask": [
+        "2b6611e0106b4a3c",
+        "51f3cd87e297fd7c",
+        "afacecca19021ad4",
+        "b784930c70883310",
+        "95f62480a18d4bdb"
+      ],
+      "split": [
+        0,
+        2,
+        2
+      ],
+      "evaluated_part": "prefix/middle",
+      "datf_algorithm3": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "datf_seconds": 0.006833690000348724,
+      "datf_source": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R4_pool_000000_prefix2.json",
+      "hnw26": {
+        "full": {
+          "numerator": "1",
+          "denominator": "1",
+          "denominator_exponent": 0,
+          "log2_abs": 0
+        },
+        "zero": {
+          "numerator": "1",
+          "denominator": "1",
+          "denominator_exponent": 0,
+          "log2_abs": 0
+        }
+      },
+      "p": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "q_squared": {
+        "numerator": "1",
+        "denominator": "1024",
+        "log2_abs": -10.0
+      },
+      "reported_correlation": {
+        "numerator": "1",
+        "denominator": "1024",
+        "log2_abs": -10.0
+      },
+      "sampling": {
+        "samples": 268435456,
+        "seed": "2026101803",
+        "n0": 134340383,
+        "n1": 134095073,
+        "rho": 0.0009138509631156921,
+        "log2_abs": -10.0957534793711,
+        "ci95": [
+          0.0007942242928047349,
+          0.0010334776072711271
+        ]
+      },
+      "original_id": "R4_pool_000000",
+      "note": "独立 2^28 对确认",
+      "whole_attempt": {
+        "status": "resource_limit",
+        "reason": "ResourceLimit: wall time exceeds 180 seconds",
+        "elapsed_seconds": 180.04744987701997,
+        "source": "/home/yxb/分析/差分线性/DATF算法3复核_20261021/representatives_extended/10.json",
+        "statistics": {
+          "initial_terms": 10,
+          "initial_variables": 10,
+          "peak_polynomial_terms": 88362,
+          "beta_definitions_expanded": 113,
+          "product_pairs": 6300049,
+          "expanded_terms": 88362,
+          "expanded_variables": 161,
+          "expanded_degree": 6,
+          "remaining_beta_variables": 0,
+          "expanded_input_variables": 2,
+          "expanded_alpha_variables": 159,
+          "max_component_variables": 161,
+          "bias_nodes": 690004,
+          "affine_pair_eliminations": 237809,
+          "quadratic_calls": 103165,
+          "isolated_uniform_zero_leaves": 11858,
+          "separations": 45397,
+          "bias_cache_hits": 5711
+        }
+      },
+      "historical_exact_prefix2": "1"
+    },
+    {
+      "code": "H4d",
+      "rounds": 4,
+      "input_difference": [
+        "0000000000000400",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000"
+      ],
+      "core_output_mask": [
+        "0000000000000400",
+        "0000000000000000",
+        "0000000000800000",
+        "0000000000800000",
+        "0000000000000000"
+      ],
+      "full_output_mask": [
+        "6ce75c0e3dab6791",
+        "153fc96cbcceeb96",
+        "2b0a5dccbd048a57",
+        "a741ab0960092b53",
+        "ceecafd0aa850219"
+      ],
+      "split": [
+        0,
+        2,
+        2
+      ],
+      "evaluated_part": "prefix/middle",
+      "datf_algorithm3": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "datf_seconds": 0.006833690000348724,
+      "datf_source": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R4_pool_000000_prefix2.json",
+      "hnw26": {
+        "full": {
+          "numerator": "1",
+          "denominator": "1",
+          "denominator_exponent": 0,
+          "log2_abs": 0
+        },
+        "zero": {
+          "numerator": "1",
+          "denominator": "1",
+          "denominator_exponent": 0,
+          "log2_abs": 0
+        }
+      },
+      "p": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "q_squared": {
+        "numerator": "1",
+        "denominator": "1024",
+        "log2_abs": -10.0
+      },
+      "reported_correlation": {
+        "numerator": "1",
+        "denominator": "1024",
+        "log2_abs": -10.0
+      },
+      "sampling": {
+        "samples": 268435456,
+        "seed": "2026101803",
+        "n0": 134359336,
+        "n1": 134076120,
+        "rho": 0.0010550618171691895,
+        "log2_abs": -9.888456754250281,
+        "ci95": [
+          0.000935435161467435,
+          0.0011746884426737658
+        ]
+      },
+      "original_id": "R4_pool_000001",
+      "note": "独立 2^28 对确认",
+      "whole_attempt": {
+        "status": "resource_limit",
+        "reason": "ResourceLimit: wall time exceeds 180 seconds",
+        "elapsed_seconds": 180.05169205204584,
+        "source": "/home/yxb/分析/差分线性/DATF算法3复核_20261021/representatives_extended/11.json",
+        "statistics": {
+          "initial_terms": 15,
+          "initial_variables": 12,
+          "peak_polynomial_terms": 137569,
+          "beta_definitions_expanded": 127,
+          "product_pairs": 9651506,
+          "expanded_terms": 137569,
+          "expanded_variables": 178,
+          "expanded_degree": 6,
+          "remaining_beta_variables": 0,
+          "expanded_input_variables": 2,
+          "expanded_alpha_variables": 176,
+          "max_component_variables": 178,
+          "bias_nodes": 532911,
+          "affine_pair_eliminations": 206151,
+          "isolated_uniform_zero_leaves": 4892,
+          "separations": 29780,
+          "quadratic_calls": 80741,
+          "bias_cache_hits": 21351
+        }
+      },
+      "historical_exact_prefix2": "1"
+    },
+    {
+      "code": "R4_pool_000006",
+      "rounds": 4,
+      "input_difference": [
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000400"
+      ],
+      "core_output_mask": [
+        "0000000000000400",
+        "0000000000000400",
+        "0000000000800000",
+        "0000000000000000",
+        "0000000000000000"
+      ],
+      "full_output_mask": [
+        "2e51a95310ddbf22",
+        "61e160fe86cc54ef",
+        "3568765a076014c6",
+        "a364874e74a93f53",
+        "ffdb64ae90aa42b7"
+      ],
+      "split": [
+        0,
+        2,
+        2
+      ],
+      "evaluated_part": "prefix/middle",
+      "datf_algorithm3": {
+        "numerator": "1",
+        "denominator": "2",
+        "log2_abs": -1.0
+      },
+      "datf_seconds": 0.006900457003212068,
+      "datf_source": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R4_pool_000006_prefix2.json",
+      "hnw26": {
+        "full": {
+          "numerator": "1",
+          "denominator": "2",
+          "denominator_exponent": 1,
+          "log2_abs": -1
+        },
+        "zero": {
+          "numerator": "1",
+          "denominator": "2",
+          "denominator_exponent": 1,
+          "log2_abs": -1
+        }
+      },
+      "p": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "q_squared": {
+        "numerator": "1",
+        "denominator": "1024",
+        "log2_abs": -10.0
+      },
+      "reported_correlation": {
+        "numerator": "1",
+        "denominator": "2048",
+        "log2_abs": -11.0
+      },
+      "sampling": {
+        "id": "R4_pool_000006",
+        "rounds": "4",
+        "samples": 67108864,
+        "seed": "2026101802",
+        "n0": 33575975,
+        "n1": 33532889,
+        "rho": 0.0006420314311981201,
+        "log2_abs": -10.605068452102694
+      },
+      "original_id": "R4_pool_000006",
+      "note": "2^26 对发现批次；未列入四个独立确认代表",
+      "whole_attempt": {
+        "status": "resource_limit",
+        "reason": "ResourceLimit: wall time exceeds 30 seconds",
+        "elapsed_seconds": 30.061588096083142,
+        "source": "/home/yxb/分析/差分线性/DATF算法3复核_20261021/batch/039.json",
+        "statistics": {
+          "initial_terms": 15,
+          "initial_variables": 12,
+          "peak_polynomial_terms": 98568,
+          "beta_definitions_expanded": 119,
+          "product_pairs": 326196,
+          "expanded_terms": 98568,
+          "expanded_variables": 177,
+          "expanded_degree": 6,
+          "remaining_beta_variables": 0,
+          "expanded_input_variables": 2,
+          "expanded_alpha_variables": 175,
+          "max_component_variables": 177,
+          "bias_nodes": 20999,
+          "affine_pair_eliminations": 1813,
+          "quadratic_calls": 7390,
+          "isolated_uniform_zero_leaves": 452,
+          "bias_cache_hits": 3468
+        }
+      },
+      "historical_exact_prefix2": "1/2"
+    },
+    {
+      "code": "R4_pool_000007",
+      "rounds": 4,
+      "input_difference": [
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000400"
+      ],
+      "core_output_mask": [
+        "0000000000000400",
+        "0000000000000400",
+        "0000000000800000",
+        "0000000000800000",
+        "0000000000000000"
+      ],
+      "full_output_mask": [
+        "69d0e4bd3d1d928f",
+        "252d6415d8954205",
+        "b1cec75ca3668445",
+        "b3a1bf4b64282710",
+        "a4c1effe9ba20b75"
+      ],
+      "split": [
+        0,
+        2,
+        2
+      ],
+      "evaluated_part": "prefix/middle",
+      "datf_algorithm3": {
+        "numerator": "1",
+        "denominator": "2",
+        "log2_abs": -1.0
+      },
+      "datf_seconds": 0.006900457003212068,
+      "datf_source": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R4_pool_000006_prefix2.json",
+      "hnw26": {
+        "full": {
+          "numerator": "1",
+          "denominator": "2",
+          "denominator_exponent": 1,
+          "log2_abs": -1
+        },
+        "zero": {
+          "numerator": "1",
+          "denominator": "2",
+          "denominator_exponent": 1,
+          "log2_abs": -1
+        }
+      },
+      "p": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "q_squared": {
+        "numerator": "1",
+        "denominator": "1024",
+        "log2_abs": -10.0
+      },
+      "reported_correlation": {
+        "numerator": "1",
+        "denominator": "2048",
+        "log2_abs": -11.0
+      },
+      "sampling": {
+        "id": "R4_pool_000007",
+        "rounds": "4",
+        "samples": 67108864,
+        "seed": "2026101802",
+        "n0": 33565473,
+        "n1": 33543391,
+        "rho": 0.00032904744148254395,
+        "log2_abs": -11.569416775353908
+      },
+      "original_id": "R4_pool_000007",
+      "note": "2^26 对发现批次；未列入四个独立确认代表",
+      "whole_attempt": {
+        "status": "resource_limit",
+        "reason": "ResourceLimit: wall time exceeds 30 seconds",
+        "elapsed_seconds": 30.05036894697696,
+        "source": "/home/yxb/分析/差分线性/DATF算法3复核_20261021/batch/040.json",
+        "statistics": {
+          "initial_terms": 20,
+          "initial_variables": 14,
+          "peak_polynomial_terms": 148379,
+          "beta_definitions_expanded": 133,
+          "product_pairs": 479543,
+          "expanded_terms": 148379,
+          "expanded_variables": 192,
+          "expanded_degree": 6,
+          "remaining_beta_variables": 0,
+          "expanded_input_variables": 2,
+          "expanded_alpha_variables": 190,
+          "max_component_variables": 192,
+          "bias_nodes": 11588,
+          "affine_pair_eliminations": 2409,
+          "isolated_uniform_zero_leaves": 402,
+          "bias_cache_hits": 6234,
+          "separations": 138,
+          "quadratic_calls": 988
+        }
+      },
+      "historical_exact_prefix2": "1/2"
+    },
+    {
+      "code": "R4_pool_000020",
+      "rounds": 4,
+      "input_difference": [
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000004000",
+        "0000000000000000"
+      ],
+      "core_output_mask": [
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000004",
+        "0000000000000000",
+        "0000000000000200"
+      ],
+      "full_output_mask": [
+        "154234e51e057de9",
+        "2366114c72dec47d",
+        "0356b6c1b27227c4",
+        "5333cd5a1db781ba",
+        "a35222c0335aa248"
+      ],
+      "split": [
+        0,
+        2,
+        2
+      ],
+      "evaluated_part": "prefix/middle",
+      "datf_algorithm3": {
+        "numerator": "-1",
+        "denominator": "2",
+        "log2_abs": -1.0
+      },
+      "datf_seconds": 0.006737096999131609,
+      "datf_source": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R4_pool_000020_prefix2.json",
+      "hnw26": {
+        "full": {
+          "numerator": "-1",
+          "denominator": "2",
+          "denominator_exponent": 1,
+          "log2_abs": -1
+        },
+        "zero": {
+          "numerator": "-1",
+          "denominator": "2",
+          "denominator_exponent": 1,
+          "log2_abs": -1
+        }
+      },
+      "p": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "q_squared": {
+        "numerator": "1",
+        "denominator": "1024",
+        "log2_abs": -10.0
+      },
+      "reported_correlation": {
+        "numerator": "-1",
+        "denominator": "2048",
+        "log2_abs": -11.0
+      },
+      "sampling": {
+        "id": "R4_pool_000020",
+        "rounds": "4",
+        "samples": 67108864,
+        "seed": "2026101802",
+        "n0": 33524054,
+        "n1": 33584810,
+        "rho": -0.0009053349494934082,
+        "log2_abs": -10.109260730369034
+      },
+      "original_id": "R4_pool_000020",
+      "note": "2^26 对发现批次；未列入四个独立确认代表",
+      "whole_attempt": {
+        "status": "resource_limit",
+        "reason": "ResourceLimit: wall time exceeds 30 seconds",
+        "elapsed_seconds": 30.038826285046525,
+        "source": "/home/yxb/分析/差分线性/DATF算法3复核_20261021/batch/041.json",
+        "statistics": {
+          "initial_terms": 10,
+          "initial_variables": 10,
+          "peak_polynomial_terms": 35024,
+          "beta_definitions_expanded": 90,
+          "product_pairs": 874115,
+          "expanded_terms": 35012,
+          "expanded_variables": 135,
+          "expanded_degree": 6,
+          "remaining_beta_variables": 0,
+          "expanded_input_variables": 2,
+          "expanded_alpha_variables": 133,
+          "max_component_variables": 135,
+          "bias_nodes": 72468,
+          "affine_pair_eliminations": 23415,
+          "quadratic_calls": 15324,
+          "bias_cache_hits": 2853,
+          "separations": 2591
+        }
+      },
+      "historical_exact_prefix2": "-1/2"
+    },
+    {
+      "code": "R4_pool_000021",
+      "rounds": 4,
+      "input_difference": [
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000004000",
+        "0000000000000000"
+      ],
+      "core_output_mask": [
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000004",
+        "0000000000000004",
+        "0000000000000200"
+      ],
+      "full_output_mask": [
+        "142f5ed9146a0c87",
+        "ebd1436a12f99e8f",
+        "37d2aae487fa12e4",
+        "5bf1d5dc3477a93e",
+        "e11c3018e7002210"
+      ],
+      "split": [
+        0,
+        2,
+        2
+      ],
+      "evaluated_part": "prefix/middle",
+      "datf_algorithm3": {
+        "numerator": "-1",
+        "denominator": "2",
+        "log2_abs": -1.0
+      },
+      "datf_seconds": 0.006737096999131609,
+      "datf_source": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R4_pool_000020_prefix2.json",
+      "hnw26": {
+        "full": {
+          "numerator": "-1",
+          "denominator": "2",
+          "denominator_exponent": 1,
+          "log2_abs": -1
+        },
+        "zero": {
+          "numerator": "-1",
+          "denominator": "2",
+          "denominator_exponent": 1,
+          "log2_abs": -1
+        }
+      },
+      "p": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "q_squared": {
+        "numerator": "1",
+        "denominator": "1024",
+        "log2_abs": -10.0
+      },
+      "reported_correlation": {
+        "numerator": "-1",
+        "denominator": "2048",
+        "log2_abs": -11.0
+      },
+      "sampling": {
+        "id": "R4_pool_000021",
+        "rounds": "4",
+        "samples": 67108864,
+        "seed": "2026101802",
+        "n0": 33526331,
+        "n1": 33582533,
+        "rho": -0.000837475061416626,
+        "log2_abs": -10.221666149457347
+      },
+      "original_id": "R4_pool_000021",
+      "note": "2^26 对发现批次；未列入四个独立确认代表",
+      "whole_attempt": {
+        "status": "resource_limit",
+        "reason": "ResourceLimit: wall time exceeds 30 seconds",
+        "elapsed_seconds": 30.043340538977645,
+        "source": "/home/yxb/分析/差分线性/DATF算法3复核_20261021/batch/042.json",
+        "statistics": {
+          "initial_terms": 15,
+          "initial_variables": 12,
+          "peak_polynomial_terms": 46999,
+          "beta_definitions_expanded": 96,
+          "product_pairs": 656912,
+          "expanded_terms": 46985,
+          "expanded_variables": 151,
+          "expanded_degree": 6,
+          "remaining_beta_variables": 0,
+          "expanded_input_variables": 2,
+          "expanded_alpha_variables": 149,
+          "max_component_variables": 151,
+          "bias_nodes": 38899,
+          "affine_pair_eliminations": 11498,
+          "quadratic_calls": 8805,
+          "bias_cache_hits": 5151,
+          "separations": 2022
+        }
+      },
+      "historical_exact_prefix2": "-1/2"
+    },
+    {
+      "code": "H4a",
+      "rounds": 4,
+      "input_difference": [
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000040000",
+        "0000000000000000"
+      ],
+      "core_output_mask": [
+        "0000000000000200",
+        "0000000000000000",
+        "0000000000000004",
+        "0000000000000000",
+        "0000000000000200"
+      ],
+      "full_output_mask": [
+        "142fded914ea0c8f",
+        "cbd1426a12fb9e8f",
+        "3f92aae4c7fb12e4",
+        "5b71d5d43477a93e",
+        "c11c3038e7002214"
+      ],
+      "split": [
+        0,
+        2,
+        2
+      ],
+      "evaluated_part": "prefix/middle",
+      "datf_algorithm3": {
+        "numerator": "1",
+        "denominator": "2",
+        "log2_abs": -1.0
+      },
+      "datf_seconds": 0.0067847699974663556,
+      "datf_source": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R4_pool_000026_prefix2.json",
+      "hnw26": {
+        "full": {
+          "numerator": "1",
+          "denominator": "2",
+          "denominator_exponent": 1,
+          "log2_abs": -1
+        },
+        "zero": {
+          "numerator": "1",
+          "denominator": "2",
+          "denominator_exponent": 1,
+          "log2_abs": -1
+        }
+      },
+      "p": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "q_squared": {
+        "numerator": "1",
+        "denominator": "1024",
+        "log2_abs": -10.0
+      },
+      "reported_correlation": {
+        "numerator": "1",
+        "denominator": "2048",
+        "log2_abs": -11.0
+      },
+      "sampling": {
+        "samples": 268435456,
+        "seed": "2026101803",
+        "n0": 134477302,
+        "n1": 133958154,
+        "rho": 0.0019339770078659058,
+        "log2_abs": -9.014213641261506,
+        "ci95": [
+          0.0018143504967229607,
+          0.0020536034636562395
+        ]
+      },
+      "original_id": "R4_pool_000026",
+      "note": "独立 2^28 对确认",
+      "whole_attempt": {
+        "status": "resource_limit",
+        "reason": "ResourceLimit: wall time exceeds 180 seconds",
+        "elapsed_seconds": 180.02472162002232,
+        "source": "/home/yxb/分析/差分线性/DATF算法3复核_20261021/representatives_extended/08.json",
+        "statistics": {
+          "initial_terms": 15,
+          "initial_variables": 12,
+          "peak_polynomial_terms": 33282,
+          "beta_definitions_expanded": 94,
+          "product_pairs": 6896125,
+          "expanded_terms": 33213,
+          "expanded_variables": 148,
+          "expanded_degree": 6,
+          "remaining_beta_variables": 0,
+          "expanded_input_variables": 2,
+          "expanded_alpha_variables": 146,
+          "max_component_variables": 148,
+          "bias_nodes": 400567,
+          "affine_pair_eliminations": 157492,
+          "isolated_uniform_zero_leaves": 24934,
+          "bias_cache_hits": 18598,
+          "separations": 6884,
+          "quadratic_calls": 50003
+        }
+      },
+      "historical_exact_prefix2": "1/2"
+    },
+    {
+      "code": "H4b",
+      "rounds": 4,
+      "input_difference": [
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000040000",
+        "0000000000000000"
+      ],
+      "core_output_mask": [
+        "0000000000000200",
+        "0000000000000000",
+        "0000000000000004",
+        "0000000000000004",
+        "0000000000000200"
+      ],
+      "full_output_mask": [
+        "1542b4e51e857de1",
+        "0366104c72dcc47d",
+        "0b16b6c1f27327c4",
+        "53b3cd521db781ba",
+        "835222e0335aa24c"
+      ],
+      "split": [
+        0,
+        2,
+        2
+      ],
+      "evaluated_part": "prefix/middle",
+      "datf_algorithm3": {
+        "numerator": "1",
+        "denominator": "2",
+        "log2_abs": -1.0
+      },
+      "datf_seconds": 0.0067847699974663556,
+      "datf_source": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R4_pool_000026_prefix2.json",
+      "hnw26": {
+        "full": {
+          "numerator": "1",
+          "denominator": "2",
+          "denominator_exponent": 1,
+          "log2_abs": -1
+        },
+        "zero": {
+          "numerator": "1",
+          "denominator": "2",
+          "denominator_exponent": 1,
+          "log2_abs": -1
+        }
+      },
+      "p": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "q_squared": {
+        "numerator": "1",
+        "denominator": "1024",
+        "log2_abs": -10.0
+      },
+      "reported_correlation": {
+        "numerator": "1",
+        "denominator": "2048",
+        "log2_abs": -11.0
+      },
+      "sampling": {
+        "samples": 268435456,
+        "seed": "2026101803",
+        "n0": 134474332,
+        "n1": 133961124,
+        "rho": 0.001911848783493042,
+        "log2_abs": -9.030815865910396,
+        "ci95": [
+          0.001792222267576582,
+          0.002031475244690162
+        ]
+      },
+      "original_id": "R4_pool_000027",
+      "note": "独立 2^28 对确认",
+      "whole_attempt": {
+        "status": "resource_limit",
+        "reason": "ResourceLimit: wall time exceeds 180 seconds",
+        "elapsed_seconds": 180.0271243569441,
+        "source": "/home/yxb/分析/差分线性/DATF算法3复核_20261021/representatives_extended/09.json",
+        "statistics": {
+          "initial_terms": 20,
+          "initial_variables": 14,
+          "peak_polynomial_terms": 43131,
+          "beta_definitions_expanded": 98,
+          "product_pairs": 4679461,
+          "expanded_terms": 43050,
+          "expanded_variables": 162,
+          "expanded_degree": 6,
+          "remaining_beta_variables": 0,
+          "expanded_input_variables": 2,
+          "expanded_alpha_variables": 160,
+          "max_component_variables": 162,
+          "bias_nodes": 327670,
+          "affine_pair_eliminations": 89088,
+          "quadratic_calls": 71641,
+          "separations": 21026,
+          "bias_cache_hits": 3227,
+          "isolated_uniform_zero_leaves": 5871
+        }
+      },
+      "historical_exact_prefix2": "1/2"
+    },
+    {
+      "code": "R4_pool_000784",
+      "rounds": 4,
+      "input_difference": [
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000008000000"
+      ],
+      "core_output_mask": [
+        "0000000000000400",
+        "0000000000000000",
+        "0000000000800000",
+        "0000000000000000",
+        "0000000000800000"
+      ],
+      "full_output_mask": [
+        "460c2dea7f1a643d",
+        "e6a1ebe7c5cd0f34",
+        "2bb0c9ff91173ae0",
+        "759c1525b0a0b718",
+        "dbe4fc54eb0d1399"
+      ],
+      "split": [
+        0,
+        2,
+        2
+      ],
+      "evaluated_part": "prefix/middle",
+      "datf_algorithm3": {
+        "numerator": "-1",
+        "denominator": "2",
+        "log2_abs": -1.0
+      },
+      "datf_seconds": 0.00844704000337515,
+      "datf_source": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R4_pool_000784_prefix2.json",
+      "hnw26": {
+        "full": {
+          "numerator": "-1",
+          "denominator": "2",
+          "denominator_exponent": 1,
+          "log2_abs": -1
+        },
+        "zero": {
+          "numerator": "-1",
+          "denominator": "2",
+          "denominator_exponent": 1,
+          "log2_abs": -1
+        }
+      },
+      "p": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "q_squared": {
+        "numerator": "1",
+        "denominator": "4096",
+        "log2_abs": -12.0
+      },
+      "reported_correlation": {
+        "numerator": "-1",
+        "denominator": "8192",
+        "log2_abs": -13.0
+      },
+      "sampling": {
+        "id": "R4_pool_000784",
+        "rounds": "4",
+        "samples": 67108864,
+        "seed": "2026101802",
+        "n0": 33557219,
+        "n1": 33551645,
+        "rho": 8.305907249450684e-05,
+        "log2_abs": -13.55550271289619
+      },
+      "original_id": "R4_pool_000784",
+      "note": "2^26 对发现批次；未列入四个独立确认代表",
+      "whole_attempt": {
+        "status": "resource_limit",
+        "reason": "ResourceLimit: wall time exceeds 30 seconds",
+        "elapsed_seconds": 30.045418497989886,
+        "source": "/home/yxb/分析/差分线性/DATF算法3复核_20261021/batch/043.json",
+        "statistics": {
+          "initial_terms": 13,
+          "initial_variables": 14,
+          "peak_polynomial_terms": 80368,
+          "beta_definitions_expanded": 114,
+          "product_pairs": 303389,
+          "expanded_terms": 80368,
+          "expanded_variables": 189,
+          "expanded_degree": 6,
+          "remaining_beta_variables": 0,
+          "expanded_input_variables": 2,
+          "expanded_alpha_variables": 187,
+          "max_component_variables": 189,
+          "bias_nodes": 22084,
+          "isolated_uniform_zero_leaves": 1679,
+          "affine_pair_eliminations": 2007,
+          "separations": 6866,
+          "quadratic_calls": 288,
+          "bias_cache_hits": 11840
+        }
+      },
+      "historical_exact_prefix2": "-1/2"
+    },
+    {
+      "code": "R4_pool_000785",
+      "rounds": 4,
+      "input_difference": [
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000008000000"
+      ],
+      "core_output_mask": [
+        "0000000000000400",
+        "0000000000000000",
+        "0000000000800000",
+        "0000000000800000",
+        "0000000000800000"
+      ],
+      "full_output_mask": [
+        "018d600452da4990",
+        "a26def0c9b9419de",
+        "af1678f93511aa63",
+        "65592d20a021af5b",
+        "80fe7704e0055a5b"
+      ],
+      "split": [
+        0,
+        2,
+        2
+      ],
+      "evaluated_part": "prefix/middle",
+      "datf_algorithm3": {
+        "numerator": "-1",
+        "denominator": "2",
+        "log2_abs": -1.0
+      },
+      "datf_seconds": 0.00844704000337515,
+      "datf_source": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R4_pool_000784_prefix2.json",
+      "hnw26": {
+        "full": {
+          "numerator": "-1",
+          "denominator": "2",
+          "denominator_exponent": 1,
+          "log2_abs": -1
+        },
+        "zero": {
+          "numerator": "-1",
+          "denominator": "2",
+          "denominator_exponent": 1,
+          "log2_abs": -1
+        }
+      },
+      "p": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "q_squared": {
+        "numerator": "1",
+        "denominator": "4096",
+        "log2_abs": -12.0
+      },
+      "reported_correlation": {
+        "numerator": "-1",
+        "denominator": "8192",
+        "log2_abs": -13.0
+      },
+      "sampling": {
+        "id": "R4_pool_000785",
+        "rounds": "4",
+        "samples": 67108864,
+        "seed": "2026101802",
+        "n0": 33546780,
+        "n1": 33562084,
+        "rho": -0.00022804737091064453,
+        "log2_abs": -12.098378841653888
+      },
+      "original_id": "R4_pool_000785",
+      "note": "2^26 对发现批次；未列入四个独立确认代表",
+      "whole_attempt": {
+        "status": "resource_limit",
+        "reason": "ResourceLimit: wall time exceeds 30 seconds",
+        "elapsed_seconds": 30.070364139042795,
+        "source": "/home/yxb/分析/差分线性/DATF算法3复核_20261021/batch/044.json",
+        "statistics": {
+          "initial_terms": 18,
+          "initial_variables": 14,
+          "peak_polynomial_terms": 96912,
+          "beta_definitions_expanded": 114,
+          "product_pairs": 554017,
+          "expanded_terms": 96912,
+          "expanded_variables": 189,
+          "expanded_degree": 6,
+          "remaining_beta_variables": 0,
+          "expanded_input_variables": 2,
+          "expanded_alpha_variables": 187,
+          "max_component_variables": 189,
+          "bias_nodes": 16449,
+          "isolated_uniform_zero_leaves": 423,
+          "affine_pair_eliminations": 4270,
+          "separations": 1594,
+          "quadratic_calls": 352,
+          "bias_cache_hits": 9558
+        }
+      },
+      "historical_exact_prefix2": "-1/2"
+    },
+    {
+      "code": "R4_pool_000818",
+      "rounds": 4,
+      "input_difference": [
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000004",
+        "0000000000000000"
+      ],
+      "core_output_mask": [
+        "0000000000000400",
+        "0000000000000000",
+        "0000000000800400",
+        "0000000000000000",
+        "0000000000000000"
+      ],
+      "full_output_mask": [
+        "6ce75c0e3cab6791",
+        "153fc96cbcceeb96",
+        "2b0a5decbd058a57",
+        "a741ab0960092b53",
+        "ceecafd0aa050219"
+      ],
+      "split": [
+        0,
+        2,
+        2
+      ],
+      "evaluated_part": "prefix/middle",
+      "datf_algorithm3": {
+        "numerator": "1",
+        "denominator": "2",
+        "log2_abs": -1.0
+      },
+      "datf_seconds": 0.008560702000977471,
+      "datf_source": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R4_pool_000818_prefix2.json",
+      "hnw26": {
+        "full": {
+          "numerator": "1",
+          "denominator": "2",
+          "denominator_exponent": 1,
+          "log2_abs": -1
+        },
+        "zero": {
+          "numerator": "1",
+          "denominator": "2",
+          "denominator_exponent": 1,
+          "log2_abs": -1
+        }
+      },
+      "p": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "q_squared": {
+        "numerator": "1",
+        "denominator": "4096",
+        "log2_abs": -12.0
+      },
+      "reported_correlation": {
+        "numerator": "1",
+        "denominator": "8192",
+        "log2_abs": -13.0
+      },
+      "sampling": {
+        "id": "R4_pool_000818",
+        "rounds": "4",
+        "samples": 67108864,
+        "seed": "2026101802",
+        "n0": 33582705,
+        "n1": 33526159,
+        "rho": 0.0008426010608673096,
+        "log2_abs": -10.212862647239309
+      },
+      "original_id": "R4_pool_000818",
+      "note": "2^26 对发现批次；未列入四个独立确认代表",
+      "whole_attempt": {
+        "status": "resource_limit",
+        "reason": "ResourceLimit: wall time exceeds 30 seconds",
+        "elapsed_seconds": 30.033055201987736,
+        "source": "/home/yxb/分析/差分线性/DATF算法3复核_20261021/batch/045.json",
+        "statistics": {
+          "initial_terms": 13,
+          "initial_variables": 14,
+          "peak_polynomial_terms": 37706,
+          "beta_definitions_expanded": 99,
+          "product_pairs": 112829,
+          "expanded_terms": 37706,
+          "expanded_variables": 172,
+          "expanded_degree": 6,
+          "remaining_beta_variables": 0,
+          "expanded_input_variables": 2,
+          "expanded_alpha_variables": 170,
+          "max_component_variables": 172,
+          "bias_nodes": 40140,
+          "affine_pair_eliminations": 2022,
+          "quadratic_calls": 18646,
+          "separations": 3369,
+          "bias_cache_hits": 718
+        }
+      },
+      "historical_exact_prefix2": "1/2"
+    },
+    {
+      "code": "R4_pool_000819",
+      "rounds": 4,
+      "input_difference": [
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000004",
+        "0000000000000000"
+      ],
+      "core_output_mask": [
+        "0000000000000400",
+        "0000000000000000",
+        "0000000000800400",
+        "0000000000000000",
+        "0000000000000400"
+      ],
+      "full_output_mask": [
+        "1cec375fdcf81c18",
+        "877a73fd8fcfd141",
+        "2aae7d0d94a9cafe",
+        "8707bbcd51472a17",
+        "0cfedf466ca7561b"
+      ],
+      "split": [
+        0,
+        2,
+        2
+      ],
+      "evaluated_part": "prefix/middle",
+      "datf_algorithm3": {
+        "numerator": "1",
+        "denominator": "2",
+        "log2_abs": -1.0
+      },
+      "datf_seconds": 0.008560702000977471,
+      "datf_source": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R4_pool_000818_prefix2.json",
+      "hnw26": {
+        "full": {
+          "numerator": "1",
+          "denominator": "2",
+          "denominator_exponent": 1,
+          "log2_abs": -1
+        },
+        "zero": {
+          "numerator": "1",
+          "denominator": "2",
+          "denominator_exponent": 1,
+          "log2_abs": -1
+        }
+      },
+      "p": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "q_squared": {
+        "numerator": "1",
+        "denominator": "4096",
+        "log2_abs": -12.0
+      },
+      "reported_correlation": {
+        "numerator": "1",
+        "denominator": "8192",
+        "log2_abs": -13.0
+      },
+      "sampling": {
+        "id": "R4_pool_000819",
+        "rounds": "4",
+        "samples": 67108864,
+        "seed": "2026101802",
+        "n0": 33591437,
+        "n1": 33517427,
+        "rho": 0.001102834939956665,
+        "log2_abs": -9.824567404091358
+      },
+      "original_id": "R4_pool_000819",
+      "note": "2^26 对发现批次；未列入四个独立确认代表",
+      "whole_attempt": {
+        "status": "resource_limit",
+        "reason": "ResourceLimit: wall time exceeds 30 seconds",
+        "elapsed_seconds": 30.030209703021683,
+        "source": "/home/yxb/分析/差分线性/DATF算法3复核_20261021/batch/046.json",
+        "statistics": {
+          "initial_terms": 16,
+          "initial_variables": 15,
+          "peak_polynomial_terms": 44864,
+          "beta_definitions_expanded": 99,
+          "product_pairs": 212456,
+          "expanded_terms": 44864,
+          "expanded_variables": 186,
+          "expanded_degree": 6,
+          "remaining_beta_variables": 0,
+          "expanded_input_variables": 2,
+          "expanded_alpha_variables": 184,
+          "max_component_variables": 186,
+          "bias_nodes": 32295,
+          "affine_pair_eliminations": 3230,
+          "quadratic_calls": 13799,
+          "separations": 1434,
+          "bias_cache_hits": 1410
+        }
+      },
+      "historical_exact_prefix2": "1/2"
+    },
+    {
+      "code": "R4_pool_000852",
+      "rounds": 4,
+      "input_difference": [
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000008",
+        "0000000000000000"
+      ],
+      "core_output_mask": [
+        "0000000000000400",
+        "0000000000000000",
+        "0000000000800400",
+        "0000000000000400",
+        "0000000000000000"
+      ],
+      "full_output_mask": [
+        "018d600453da0990",
+        "a26def0c9b94195e",
+        "af1678d93530aa63",
+        "65592d20a021af5b",
+        "80fe7704f0855a5b"
+      ],
+      "split": [
+        0,
+        2,
+        2
+      ],
+      "evaluated_part": "prefix/middle",
+      "datf_algorithm3": {
+        "numerator": "-1",
+        "denominator": "2",
+        "log2_abs": -1.0
+      },
+      "datf_seconds": 0.008477932002278976,
+      "datf_source": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R4_pool_000852_prefix2.json",
+      "hnw26": {
+        "full": {
+          "numerator": "-1",
+          "denominator": "2",
+          "denominator_exponent": 1,
+          "log2_abs": -1
+        },
+        "zero": {
+          "numerator": "-1",
+          "denominator": "2",
+          "denominator_exponent": 1,
+          "log2_abs": -1
+        }
+      },
+      "p": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "q_squared": {
+        "numerator": "1",
+        "denominator": "4096",
+        "log2_abs": -12.0
+      },
+      "reported_correlation": {
+        "numerator": "-1",
+        "denominator": "8192",
+        "log2_abs": -13.0
+      },
+      "sampling": {
+        "id": "R4_pool_000852",
+        "rounds": "4",
+        "samples": 67108864,
+        "seed": "2026101802",
+        "n0": 33544126,
+        "n1": 33564738,
+        "rho": -0.0003071427345275879,
+        "log2_abs": -11.66880312284697
+      },
+      "original_id": "R4_pool_000852",
+      "note": "2^26 对发现批次；未列入四个独立确认代表",
+      "whole_attempt": {
+        "status": "resource_limit",
+        "reason": "ResourceLimit: wall time exceeds 30 seconds",
+        "elapsed_seconds": 30.044265586067922,
+        "source": "/home/yxb/分析/差分线性/DATF算法3复核_20261021/batch/047.json",
+        "statistics": {
+          "initial_terms": 16,
+          "initial_variables": 15,
+          "peak_polynomial_terms": 38379,
+          "beta_definitions_expanded": 101,
+          "product_pairs": 208333,
+          "expanded_terms": 38379,
+          "expanded_variables": 179,
+          "expanded_degree": 6,
+          "remaining_beta_variables": 0,
+          "expanded_input_variables": 2,
+          "expanded_alpha_variables": 177,
+          "max_component_variables": 179,
+          "bias_nodes": 30603,
+          "affine_pair_eliminations": 3758,
+          "quadratic_calls": 12548,
+          "isolated_uniform_zero_leaves": 359,
+          "separations": 1387,
+          "bias_cache_hits": 351
+        }
+      },
+      "historical_exact_prefix2": "-1/2"
+    },
+    {
+      "code": "R4_pool_000853",
+      "rounds": 4,
+      "input_difference": [
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000008",
+        "0000000000000000"
+      ],
+      "core_output_mask": [
+        "0000000000000400",
+        "0000000000000000",
+        "0000000000800400",
+        "0000000000000400",
+        "0000000000000400"
+      ],
+      "full_output_mask": [
+        "71860b55b3897219",
+        "3028559da8952389",
+        "aeb258381c9ceaca",
+        "451f3de4916fae1f",
+        "42ec079236270e59"
+      ],
+      "split": [
+        0,
+        2,
+        2
+      ],
+      "evaluated_part": "prefix/middle",
+      "datf_algorithm3": {
+        "numerator": "-1",
+        "denominator": "2",
+        "log2_abs": -1.0
+      },
+      "datf_seconds": 0.008477932002278976,
+      "datf_source": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R4_pool_000852_prefix2.json",
+      "hnw26": {
+        "full": {
+          "numerator": "-1",
+          "denominator": "2",
+          "denominator_exponent": 1,
+          "log2_abs": -1
+        },
+        "zero": {
+          "numerator": "-1",
+          "denominator": "2",
+          "denominator_exponent": 1,
+          "log2_abs": -1
+        }
+      },
+      "p": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "q_squared": {
+        "numerator": "1",
+        "denominator": "4096",
+        "log2_abs": -12.0
+      },
+      "reported_correlation": {
+        "numerator": "-1",
+        "denominator": "8192",
+        "log2_abs": -13.0
+      },
+      "sampling": {
+        "id": "R4_pool_000853",
+        "rounds": "4",
+        "samples": 67108864,
+        "seed": "2026101802",
+        "n0": 33539046,
+        "n1": 33569818,
+        "rho": -0.0004585385322570801,
+        "log2_abs": -11.090669406993165
+      },
+      "original_id": "R4_pool_000853",
+      "note": "2^26 对发现批次；未列入四个独立确认代表",
+      "whole_attempt": {
+        "status": "resource_limit",
+        "reason": "ResourceLimit: wall time exceeds 30 seconds",
+        "elapsed_seconds": 30.027973082032986,
+        "source": "/home/yxb/分析/差分线性/DATF算法3复核_20261021/batch/048.json",
+        "statistics": {
+          "initial_terms": 19,
+          "initial_variables": 15,
+          "peak_polynomial_terms": 44524,
+          "beta_definitions_expanded": 101,
+          "product_pairs": 142017,
+          "expanded_terms": 44524,
+          "expanded_variables": 179,
+          "expanded_degree": 6,
+          "remaining_beta_variables": 0,
+          "expanded_input_variables": 2,
+          "expanded_alpha_variables": 177,
+          "max_component_variables": 179,
+          "bias_nodes": 17292,
+          "affine_pair_eliminations": 1093,
+          "quadratic_calls": 8035,
+          "separations": 62,
+          "bias_cache_hits": 57,
+          "isolated_uniform_zero_leaves": 32
+        }
+      },
+      "historical_exact_prefix2": "-1/2"
+    },
+    {
+      "code": "R4_pool_000884",
+      "rounds": 4,
+      "input_difference": [
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000100",
+        "0000000000000000"
+      ],
+      "core_output_mask": [
+        "0000000000000000",
+        "0000004000000000",
+        "0000000000000000",
+        "0000000000001000",
+        "0000000000000000"
+      ],
+      "full_output_mask": [
+        "85a39f785d96c38e",
+        "4b0d2319ae6ae1f5",
+        "1196b4370978c97b",
+        "2820086331ec1167",
+        "db5913c7aca3b50b"
+      ],
+      "split": [
+        0,
+        2,
+        2
+      ],
+      "evaluated_part": "prefix/middle",
+      "datf_algorithm3": {
+        "numerator": "1",
+        "denominator": "2",
+        "log2_abs": -1.0
+      },
+      "datf_seconds": 0.008470341002976056,
+      "datf_source": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R4_pool_000884_prefix2.json",
+      "hnw26": {
+        "full": {
+          "numerator": "1",
+          "denominator": "2",
+          "denominator_exponent": 1,
+          "log2_abs": -1
+        },
+        "zero": {
+          "numerator": "1",
+          "denominator": "2",
+          "denominator_exponent": 1,
+          "log2_abs": -1
+        }
+      },
+      "p": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "q_squared": {
+        "numerator": "1",
+        "denominator": "4096",
+        "log2_abs": -12.0
+      },
+      "reported_correlation": {
+        "numerator": "1",
+        "denominator": "8192",
+        "log2_abs": -13.0
+      },
+      "sampling": {
+        "id": "R4_pool_000884",
+        "rounds": "4",
+        "samples": 67108864,
+        "seed": "2026101802",
+        "n0": 33568039,
+        "n1": 33540825,
+        "rho": 0.0004055202007293701,
+        "log2_abs": -11.267938596386333
+      },
+      "original_id": "R4_pool_000884",
+      "note": "2^26 对发现批次；未列入四个独立确认代表",
+      "whole_attempt": {
+        "status": "resource_limit",
+        "reason": "ResourceLimit: wall time exceeds 30 seconds",
+        "elapsed_seconds": 30.02854348695837,
+        "source": "/home/yxb/分析/差分线性/DATF算法3复核_20261021/batch/049.json",
+        "statistics": {
+          "initial_terms": 10,
+          "initial_variables": 10,
+          "peak_polynomial_terms": 21374,
+          "beta_definitions_expanded": 92,
+          "product_pairs": 290629,
+          "expanded_terms": 21374,
+          "expanded_variables": 140,
+          "expanded_degree": 6,
+          "remaining_beta_variables": 0,
+          "expanded_input_variables": 2,
+          "expanded_alpha_variables": 138,
+          "max_component_variables": 140,
+          "bias_nodes": 64661,
+          "isolated_uniform_zero_leaves": 3353,
+          "affine_pair_eliminations": 6818,
+          "separations": 9356,
+          "quadratic_calls": 22914,
+          "bias_cache_hits": 5099
+        }
+      },
+      "historical_exact_prefix2": "1/2"
+    },
+    {
+      "code": "R4_pool_000885",
+      "rounds": 4,
+      "input_difference": [
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000100",
+        "0000000000000000"
+      ],
+      "core_output_mask": [
+        "0000000000000000",
+        "0000004000000000",
+        "0000000000000000",
+        "0000000000001000",
+        "0000000000001000"
+      ],
+      "full_output_mask": [
+        "458e323fdcdb2dab",
+        "021bc95d626e0aab",
+        "170637b3afc9cbdf",
+        "a9384b73f4d41477",
+        "d310d19cb62ae500"
+      ],
+      "split": [
+        0,
+        2,
+        2
+      ],
+      "evaluated_part": "prefix/middle",
+      "datf_algorithm3": {
+        "numerator": "1",
+        "denominator": "2",
+        "log2_abs": -1.0
+      },
+      "datf_seconds": 0.008470341002976056,
+      "datf_source": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R4_pool_000884_prefix2.json",
+      "hnw26": {
+        "full": {
+          "numerator": "1",
+          "denominator": "2",
+          "denominator_exponent": 1,
+          "log2_abs": -1
+        },
+        "zero": {
+          "numerator": "1",
+          "denominator": "2",
+          "denominator_exponent": 1,
+          "log2_abs": -1
+        }
+      },
+      "p": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "q_squared": {
+        "numerator": "1",
+        "denominator": "4096",
+        "log2_abs": -12.0
+      },
+      "reported_correlation": {
+        "numerator": "1",
+        "denominator": "8192",
+        "log2_abs": -13.0
+      },
+      "sampling": {
+        "id": "R4_pool_000885",
+        "rounds": "4",
+        "samples": 67108864,
+        "seed": "2026101802",
+        "n0": 33562042,
+        "n1": 33546822,
+        "rho": 0.00022679567337036133,
+        "log2_abs": -12.106319261609093
+      },
+      "original_id": "R4_pool_000885",
+      "note": "2^26 对发现批次；未列入四个独立确认代表",
+      "whole_attempt": {
+        "status": "resource_limit",
+        "reason": "ResourceLimit: wall time exceeds 30 seconds",
+        "elapsed_seconds": 30.030506249982864,
+        "source": "/home/yxb/分析/差分线性/DATF算法3复核_20261021/batch/050.json",
+        "statistics": {
+          "initial_terms": 15,
+          "initial_variables": 12,
+          "peak_polynomial_terms": 33278,
+          "beta_definitions_expanded": 102,
+          "product_pairs": 76437,
+          "expanded_terms": 33278,
+          "expanded_variables": 154,
+          "expanded_degree": 6,
+          "remaining_beta_variables": 0,
+          "expanded_input_variables": 2,
+          "expanded_alpha_variables": 152,
+          "max_component_variables": 154,
+          "bias_nodes": 36666,
+          "isolated_uniform_zero_leaves": 1,
+          "affine_pair_eliminations": 322,
+          "separations": 4106,
+          "quadratic_calls": 16976,
+          "bias_cache_hits": 2143
+        }
+      },
+      "historical_exact_prefix2": "1/2"
+    },
+    {
+      "code": "H5-old",
+      "rounds": 5,
+      "input_difference": [
+        "0200000000000000",
+        "0000000000000000",
+        "0200000000000000",
+        "0200000000000000",
+        "0000000000000000"
+      ],
+      "core_output_mask": [
+        "0000000000000400",
+        "0000000000000000",
+        "0000000000800000",
+        "0000000000000000",
+        "0000000000000000"
+      ],
+      "full_output_mask": [
+        "2b6611e0106b4a3c",
+        "51f3cd87e297fd7c",
+        "afacecca19021ad4",
+        "b784930c70883310",
+        "95f62480a18d4bdb"
+      ],
+      "split": [
+        0,
+        3,
+        2
+      ],
+      "evaluated_part": "prefix/middle",
+      "datf_algorithm3": {
+        "numerator": "0",
+        "denominator": "1",
+        "log2_abs": null
+      },
+      "datf_seconds": 0.03056708000076469,
+      "datf_source": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R5_pool_000000_prefix3.json",
+      "hnw26": {
+        "full": {
+          "numerator": "0",
+          "denominator": "1",
+          "denominator_exponent": 0,
+          "log2_abs": null
+        },
+        "zero": {
+          "numerator": "0",
+          "denominator": "1",
+          "denominator_exponent": 0,
+          "log2_abs": null
+        }
+      },
+      "p": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "q_squared": {
+        "numerator": "1",
+        "denominator": "1024",
+        "log2_abs": -10.0
+      },
+      "reported_correlation": {
+        "numerator": "0",
+        "denominator": "1",
+        "log2_abs": null
+      },
+      "sampling": {
+        "id": "R5_pool_000000",
+        "rounds": 5,
+        "samples": 268435456,
+        "seed": 2026102101,
+        "n0": 134240631,
+        "n1": 134194825,
+        "rho": 0.00017064064741134644,
+        "log2_abs": -12.516751035156785,
+        "ci95": [
+          5.101393952622324e-05,
+          0.0002902673504123765
+        ],
+        "null_standard_error": 6.103515625e-05,
+        "null_z_score": 2.7957763671875,
+        "hoeffding_threshold": 0.0001657838764331811,
+        "significant_hoeffding": true,
+        "ci95_excludes_zero": true
+      },
+      "original_id": "R5_pool_000000",
+      "note": "旧候选：原算法 3 的三轮前缀为 0；不保留旧自定义 DATF 非零评分",
+      "whole_attempt": {
+        "status": "resource_limit",
+        "reason": "ResourceLimit: polynomial terms 5315944 exceed 5000000",
+        "elapsed_seconds": 12.2049191739643,
+        "source": "/home/yxb/分析/差分线性/DATF算法3复核_20261021/representatives_extended/12.json",
+        "statistics": {
+          "initial_terms": 10,
+          "initial_variables": 10,
+          "peak_polynomial_terms": 5315944,
+          "beta_definitions_expanded": 344,
+          "product_pairs": 13134745
+        }
+      },
+      "independent_reference_sampling": {
+        "id": "R5_pool_000000",
+        "rounds": 5,
+        "samples": 268435456,
+        "seed": 2026102102,
+        "n0": 134208826,
+        "n1": 134226630,
+        "rho": -6.632506847381592e-05,
+        "log2_abs": -13.880086214547731,
+        "ci95": [
+          -0.0001859517744462469,
+          5.330163939709642e-05
+        ],
+        "null_standard_error": 6.103515625e-05,
+        "null_z_score": -1.086669921875,
+        "hoeffding_threshold": 0.0001657838764331811,
+        "significant_hoeffding": false,
+        "ci95_excludes_zero": false
+      }
+    },
+    {
+      "code": "R5_pool_000001",
+      "rounds": 5,
+      "input_difference": [
+        "0200000000000000",
+        "0000000000000000",
+        "0200000000000000",
+        "0200000000000000",
+        "0000000000000000"
+      ],
+      "core_output_mask": [
+        "0000000000000400",
+        "0000000000000000",
+        "0000000000800000",
+        "0000000000800000",
+        "0000000000000000"
+      ],
+      "full_output_mask": [
+        "6ce75c0e3dab6791",
+        "153fc96cbcceeb96",
+        "2b0a5dccbd048a57",
+        "a741ab0960092b53",
+        "ceecafd0aa850219"
+      ],
+      "split": [
+        0,
+        3,
+        2
+      ],
+      "evaluated_part": "prefix/middle",
+      "datf_algorithm3": {
+        "numerator": "0",
+        "denominator": "1",
+        "log2_abs": null
+      },
+      "datf_seconds": 0.03056708000076469,
+      "datf_source": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R5_pool_000000_prefix3.json",
+      "hnw26": {
+        "full": {
+          "numerator": "0",
+          "denominator": "1",
+          "denominator_exponent": 0,
+          "log2_abs": null
+        },
+        "zero": {
+          "numerator": "0",
+          "denominator": "1",
+          "denominator_exponent": 0,
+          "log2_abs": null
+        }
+      },
+      "p": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "q_squared": {
+        "numerator": "1",
+        "denominator": "1024",
+        "log2_abs": -10.0
+      },
+      "reported_correlation": {
+        "numerator": "0",
+        "denominator": "1",
+        "log2_abs": null
+      },
+      "sampling": null,
+      "original_id": "R5_pool_000001",
+      "note": "旧候选：原算法 3 的三轮前缀为 0；不保留旧自定义 DATF 非零评分",
+      "whole_attempt": {
+        "status": "resource_limit",
+        "reason": "ResourceLimit: polynomial terms 1127301 exceed 1000000",
+        "elapsed_seconds": 3.4568009639624506,
+        "source": "/home/yxb/分析/差分线性/DATF算法3复核_20261021/batch/051.json",
+        "statistics": {
+          "initial_terms": 15,
+          "initial_variables": 12,
+          "peak_polynomial_terms": 1127301,
+          "beta_definitions_expanded": 307,
+          "product_pairs": 5139392
+        }
+      }
+    },
+    {
+      "code": "R5_pool_000004",
+      "rounds": 5,
+      "input_difference": [
+        "2000000000000000",
+        "2000000000000000",
+        "2000000000000000",
+        "2000000000000000",
+        "2000000000000000"
+      ],
+      "core_output_mask": [
+        "0000000000000400",
+        "0000000000000000",
+        "0000000000800000",
+        "0000000000000000",
+        "0000000000000000"
+      ],
+      "full_output_mask": [
+        "2b6611e0106b4a3c",
+        "51f3cd87e297fd7c",
+        "afacecca19021ad4",
+        "b784930c70883310",
+        "95f62480a18d4bdb"
+      ],
+      "split": [
+        0,
+        3,
+        2
+      ],
+      "evaluated_part": "prefix/middle",
+      "datf_algorithm3": {
+        "numerator": "0",
+        "denominator": "1",
+        "log2_abs": null
+      },
+      "datf_seconds": 0.05670046500017634,
+      "datf_source": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R5_pool_000004_prefix3.json",
+      "hnw26": {
+        "full": {
+          "numerator": "0",
+          "denominator": "1",
+          "denominator_exponent": 0,
+          "log2_abs": null
+        },
+        "zero": {
+          "numerator": "0",
+          "denominator": "1",
+          "denominator_exponent": 0,
+          "log2_abs": null
+        }
+      },
+      "p": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "q_squared": {
+        "numerator": "1",
+        "denominator": "1024",
+        "log2_abs": -10.0
+      },
+      "reported_correlation": {
+        "numerator": "0",
+        "denominator": "1",
+        "log2_abs": null
+      },
+      "sampling": null,
+      "original_id": "R5_pool_000004",
+      "note": "旧候选：原算法 3 的三轮前缀为 0；不保留旧自定义 DATF 非零评分",
+      "whole_attempt": {
+        "status": "resource_limit",
+        "reason": "ResourceLimit: polynomial terms 1106004 exceed 1000000",
+        "elapsed_seconds": 2.0654291780665517,
+        "source": "/home/yxb/分析/差分线性/DATF算法3复核_20261021/batch/052.json",
+        "statistics": {
+          "initial_terms": 10,
+          "initial_variables": 10,
+          "peak_polynomial_terms": 1106004,
+          "beta_definitions_expanded": 157,
+          "product_pairs": 3776105
+        }
+      }
+    },
+    {
+      "code": "R5_pool_000005",
+      "rounds": 5,
+      "input_difference": [
+        "2000000000000000",
+        "2000000000000000",
+        "2000000000000000",
+        "2000000000000000",
+        "2000000000000000"
+      ],
+      "core_output_mask": [
+        "0000000000000400",
+        "0000000000000000",
+        "0000000000800000",
+        "0000000000800000",
+        "0000000000000000"
+      ],
+      "full_output_mask": [
+        "6ce75c0e3dab6791",
+        "153fc96cbcceeb96",
+        "2b0a5dccbd048a57",
+        "a741ab0960092b53",
+        "ceecafd0aa850219"
+      ],
+      "split": [
+        0,
+        3,
+        2
+      ],
+      "evaluated_part": "prefix/middle",
+      "datf_algorithm3": {
+        "numerator": "0",
+        "denominator": "1",
+        "log2_abs": null
+      },
+      "datf_seconds": 0.05670046500017634,
+      "datf_source": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R5_pool_000004_prefix3.json",
+      "hnw26": {
+        "full": {
+          "numerator": "0",
+          "denominator": "1",
+          "denominator_exponent": 0,
+          "log2_abs": null
+        },
+        "zero": {
+          "numerator": "0",
+          "denominator": "1",
+          "denominator_exponent": 0,
+          "log2_abs": null
+        }
+      },
+      "p": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "q_squared": {
+        "numerator": "1",
+        "denominator": "1024",
+        "log2_abs": -10.0
+      },
+      "reported_correlation": {
+        "numerator": "0",
+        "denominator": "1",
+        "log2_abs": null
+      },
+      "sampling": null,
+      "original_id": "R5_pool_000005",
+      "note": "旧候选：原算法 3 的三轮前缀为 0；不保留旧自定义 DATF 非零评分",
+      "whole_attempt": {
+        "status": "resource_limit",
+        "reason": "ResourceLimit: polynomial terms 1106004 exceed 1000000",
+        "elapsed_seconds": 2.0715809139655903,
+        "source": "/home/yxb/分析/差分线性/DATF算法3复核_20261021/batch/053.json",
+        "statistics": {
+          "initial_terms": 15,
+          "initial_variables": 12,
+          "peak_polynomial_terms": 1106004,
+          "beta_definitions_expanded": 157,
+          "product_pairs": 3776105
+        }
+      }
+    },
+    {
+      "code": "R5_pool_000008",
+      "rounds": 5,
+      "input_difference": [
+        "0000000000400000",
+        "0000000000400000",
+        "0000000000400000",
+        "0000000000400000",
+        "0000000000400000"
+      ],
+      "core_output_mask": [
+        "0000000000000400",
+        "0000000000000000",
+        "0000000000800000",
+        "0000000000000000",
+        "0000000000000000"
+      ],
+      "full_output_mask": [
+        "2b6611e0106b4a3c",
+        "51f3cd87e297fd7c",
+        "afacecca19021ad4",
+        "b784930c70883310",
+        "95f62480a18d4bdb"
+      ],
+      "split": [
+        0,
+        3,
+        2
+      ],
+      "evaluated_part": "prefix/middle",
+      "datf_algorithm3": {
+        "numerator": "0",
+        "denominator": "1",
+        "log2_abs": null
+      },
+      "datf_seconds": 0.05575537899858318,
+      "datf_source": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R5_pool_000008_prefix3.json",
+      "hnw26": {
+        "full": {
+          "numerator": "0",
+          "denominator": "1",
+          "denominator_exponent": 0,
+          "log2_abs": null
+        },
+        "zero": {
+          "numerator": "0",
+          "denominator": "1",
+          "denominator_exponent": 0,
+          "log2_abs": null
+        }
+      },
+      "p": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "q_squared": {
+        "numerator": "1",
+        "denominator": "1024",
+        "log2_abs": -10.0
+      },
+      "reported_correlation": {
+        "numerator": "0",
+        "denominator": "1",
+        "log2_abs": null
+      },
+      "sampling": null,
+      "original_id": "R5_pool_000008",
+      "note": "旧候选：原算法 3 的三轮前缀为 0；不保留旧自定义 DATF 非零评分",
+      "whole_attempt": {
+        "status": "resource_limit",
+        "reason": "ResourceLimit: polynomial terms 1458206 exceed 1000000",
+        "elapsed_seconds": 2.972080759005621,
+        "source": "/home/yxb/分析/差分线性/DATF算法3复核_20261021/batch/054.json",
+        "statistics": {
+          "initial_terms": 10,
+          "initial_variables": 10,
+          "peak_polynomial_terms": 1458206,
+          "beta_definitions_expanded": 202,
+          "product_pairs": 4993373
+        }
+      }
+    },
+    {
+      "code": "R5_pool_000009",
+      "rounds": 5,
+      "input_difference": [
+        "0000000000400000",
+        "0000000000400000",
+        "0000000000400000",
+        "0000000000400000",
+        "0000000000400000"
+      ],
+      "core_output_mask": [
+        "0000000000000400",
+        "0000000000000000",
+        "0000000000800000",
+        "0000000000800000",
+        "0000000000000000"
+      ],
+      "full_output_mask": [
+        "6ce75c0e3dab6791",
+        "153fc96cbcceeb96",
+        "2b0a5dccbd048a57",
+        "a741ab0960092b53",
+        "ceecafd0aa850219"
+      ],
+      "split": [
+        0,
+        3,
+        2
+      ],
+      "evaluated_part": "prefix/middle",
+      "datf_algorithm3": {
+        "numerator": "0",
+        "denominator": "1",
+        "log2_abs": null
+      },
+      "datf_seconds": 0.05575537899858318,
+      "datf_source": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R5_pool_000008_prefix3.json",
+      "hnw26": {
+        "full": {
+          "numerator": "0",
+          "denominator": "1",
+          "denominator_exponent": 0,
+          "log2_abs": null
+        },
+        "zero": {
+          "numerator": "0",
+          "denominator": "1",
+          "denominator_exponent": 0,
+          "log2_abs": null
+        }
+      },
+      "p": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "q_squared": {
+        "numerator": "1",
+        "denominator": "1024",
+        "log2_abs": -10.0
+      },
+      "reported_correlation": {
+        "numerator": "0",
+        "denominator": "1",
+        "log2_abs": null
+      },
+      "sampling": null,
+      "original_id": "R5_pool_000009",
+      "note": "旧候选：原算法 3 的三轮前缀为 0；不保留旧自定义 DATF 非零评分",
+      "whole_attempt": {
+        "status": "resource_limit",
+        "reason": "ResourceLimit: polynomial terms 1458206 exceed 1000000",
+        "elapsed_seconds": 2.9792147239204496,
+        "source": "/home/yxb/分析/差分线性/DATF算法3复核_20261021/batch/055.json",
+        "statistics": {
+          "initial_terms": 15,
+          "initial_variables": 12,
+          "peak_polynomial_terms": 1458206,
+          "beta_definitions_expanded": 202,
+          "product_pairs": 4993373
+        }
+      }
+    },
+    {
+      "code": "R5_pool_000012",
+      "rounds": 5,
+      "input_difference": [
+        "0000008000000000",
+        "0000008000000000",
+        "0000008000000000",
+        "0000008000000000",
+        "0000008000000000"
+      ],
+      "core_output_mask": [
+        "0000000000000400",
+        "0000000000000000",
+        "0000000000800000",
+        "0000000000000000",
+        "0000000000000000"
+      ],
+      "full_output_mask": [
+        "2b6611e0106b4a3c",
+        "51f3cd87e297fd7c",
+        "afacecca19021ad4",
+        "b784930c70883310",
+        "95f62480a18d4bdb"
+      ],
+      "split": [
+        0,
+        3,
+        2
+      ],
+      "evaluated_part": "prefix/middle",
+      "datf_algorithm3": {
+        "numerator": "0",
+        "denominator": "1",
+        "log2_abs": null
+      },
+      "datf_seconds": 0.060254383002757095,
+      "datf_source": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R5_pool_000012_prefix3.json",
+      "hnw26": {
+        "full": {
+          "numerator": "0",
+          "denominator": "1",
+          "denominator_exponent": 0,
+          "log2_abs": null
+        },
+        "zero": {
+          "numerator": "0",
+          "denominator": "1",
+          "denominator_exponent": 0,
+          "log2_abs": null
+        }
+      },
+      "p": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "q_squared": {
+        "numerator": "1",
+        "denominator": "1024",
+        "log2_abs": -10.0
+      },
+      "reported_correlation": {
+        "numerator": "0",
+        "denominator": "1",
+        "log2_abs": null
+      },
+      "sampling": null,
+      "original_id": "R5_pool_000012",
+      "note": "旧候选：原算法 3 的三轮前缀为 0；不保留旧自定义 DATF 非零评分",
+      "whole_attempt": {
+        "status": "resource_limit",
+        "reason": "ResourceLimit: polynomial terms 1246209 exceed 1000000",
+        "elapsed_seconds": 2.295133790001273,
+        "source": "/home/yxb/分析/差分线性/DATF算法3复核_20261021/batch/056.json",
+        "statistics": {
+          "initial_terms": 10,
+          "initial_variables": 10,
+          "peak_polynomial_terms": 1246209,
+          "beta_definitions_expanded": 202,
+          "product_pairs": 4295497
+        }
+      }
+    },
+    {
+      "code": "R5_pool_000013",
+      "rounds": 5,
+      "input_difference": [
+        "0000008000000000",
+        "0000008000000000",
+        "0000008000000000",
+        "0000008000000000",
+        "0000008000000000"
+      ],
+      "core_output_mask": [
+        "0000000000000400",
+        "0000000000000000",
+        "0000000000800000",
+        "0000000000800000",
+        "0000000000000000"
+      ],
+      "full_output_mask": [
+        "6ce75c0e3dab6791",
+        "153fc96cbcceeb96",
+        "2b0a5dccbd048a57",
+        "a741ab0960092b53",
+        "ceecafd0aa850219"
+      ],
+      "split": [
+        0,
+        3,
+        2
+      ],
+      "evaluated_part": "prefix/middle",
+      "datf_algorithm3": {
+        "numerator": "0",
+        "denominator": "1",
+        "log2_abs": null
+      },
+      "datf_seconds": 0.060254383002757095,
+      "datf_source": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R5_pool_000012_prefix3.json",
+      "hnw26": {
+        "full": {
+          "numerator": "0",
+          "denominator": "1",
+          "denominator_exponent": 0,
+          "log2_abs": null
+        },
+        "zero": {
+          "numerator": "0",
+          "denominator": "1",
+          "denominator_exponent": 0,
+          "log2_abs": null
+        }
+      },
+      "p": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "q_squared": {
+        "numerator": "1",
+        "denominator": "1024",
+        "log2_abs": -10.0
+      },
+      "reported_correlation": {
+        "numerator": "0",
+        "denominator": "1",
+        "log2_abs": null
+      },
+      "sampling": null,
+      "original_id": "R5_pool_000013",
+      "note": "旧候选：原算法 3 的三轮前缀为 0；不保留旧自定义 DATF 非零评分",
+      "whole_attempt": {
+        "status": "resource_limit",
+        "reason": "ResourceLimit: polynomial terms 1246209 exceed 1000000",
+        "elapsed_seconds": 2.27369737601839,
+        "source": "/home/yxb/分析/差分线性/DATF算法3复核_20261021/batch/057.json",
+        "statistics": {
+          "initial_terms": 15,
+          "initial_variables": 12,
+          "peak_polynomial_terms": 1246209,
+          "beta_definitions_expanded": 202,
+          "product_pairs": 4295497
+        }
+      }
+    },
+    {
+      "code": "R5_pool_000016",
+      "rounds": 5,
+      "input_difference": [
+        "0000100000000000",
+        "0000100000000000",
+        "0000100000000000",
+        "0000100000000000",
+        "0000100000000000"
+      ],
+      "core_output_mask": [
+        "0000000000000400",
+        "0000000000000000",
+        "0000000000800000",
+        "0000000000000000",
+        "0000000000000000"
+      ],
+      "full_output_mask": [
+        "2b6611e0106b4a3c",
+        "51f3cd87e297fd7c",
+        "afacecca19021ad4",
+        "b784930c70883310",
+        "95f62480a18d4bdb"
+      ],
+      "split": [
+        0,
+        3,
+        2
+      ],
+      "evaluated_part": "prefix/middle",
+      "datf_algorithm3": {
+        "numerator": "0",
+        "denominator": "1",
+        "log2_abs": null
+      },
+      "datf_seconds": 0.06544084400229622,
+      "datf_source": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R5_pool_000016_prefix3.json",
+      "hnw26": {
+        "full": {
+          "numerator": "0",
+          "denominator": "1",
+          "denominator_exponent": 0,
+          "log2_abs": null
+        },
+        "zero": {
+          "numerator": "0",
+          "denominator": "1",
+          "denominator_exponent": 0,
+          "log2_abs": null
+        }
+      },
+      "p": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "q_squared": {
+        "numerator": "1",
+        "denominator": "1024",
+        "log2_abs": -10.0
+      },
+      "reported_correlation": {
+        "numerator": "0",
+        "denominator": "1",
+        "log2_abs": null
+      },
+      "sampling": null,
+      "original_id": "R5_pool_000016",
+      "note": "旧候选：原算法 3 的三轮前缀为 0；不保留旧自定义 DATF 非零评分",
+      "whole_attempt": {
+        "status": "resource_limit",
+        "reason": "ResourceLimit: polynomial terms 1000146 exceed 1000000",
+        "elapsed_seconds": 2.9286523699993268,
+        "source": "/home/yxb/分析/差分线性/DATF算法3复核_20261021/batch/058.json",
+        "statistics": {
+          "initial_terms": 10,
+          "initial_variables": 10,
+          "peak_polynomial_terms": 1000146,
+          "beta_definitions_expanded": 203,
+          "product_pairs": 6551996
+        }
+      }
+    },
+    {
+      "code": "R5_pool_000017",
+      "rounds": 5,
+      "input_difference": [
+        "0000100000000000",
+        "0000100000000000",
+        "0000100000000000",
+        "0000100000000000",
+        "0000100000000000"
+      ],
+      "core_output_mask": [
+        "0000000000000400",
+        "0000000000000000",
+        "0000000000800000",
+        "0000000000800000",
+        "0000000000000000"
+      ],
+      "full_output_mask": [
+        "6ce75c0e3dab6791",
+        "153fc96cbcceeb96",
+        "2b0a5dccbd048a57",
+        "a741ab0960092b53",
+        "ceecafd0aa850219"
+      ],
+      "split": [
+        0,
+        3,
+        2
+      ],
+      "evaluated_part": "prefix/middle",
+      "datf_algorithm3": {
+        "numerator": "0",
+        "denominator": "1",
+        "log2_abs": null
+      },
+      "datf_seconds": 0.06544084400229622,
+      "datf_source": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R5_pool_000016_prefix3.json",
+      "hnw26": {
+        "full": {
+          "numerator": "0",
+          "denominator": "1",
+          "denominator_exponent": 0,
+          "log2_abs": null
+        },
+        "zero": {
+          "numerator": "0",
+          "denominator": "1",
+          "denominator_exponent": 0,
+          "log2_abs": null
+        }
+      },
+      "p": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "q_squared": {
+        "numerator": "1",
+        "denominator": "1024",
+        "log2_abs": -10.0
+      },
+      "reported_correlation": {
+        "numerator": "0",
+        "denominator": "1",
+        "log2_abs": null
+      },
+      "sampling": null,
+      "original_id": "R5_pool_000017",
+      "note": "旧候选：原算法 3 的三轮前缀为 0；不保留旧自定义 DATF 非零评分",
+      "whole_attempt": {
+        "status": "resource_limit",
+        "reason": "ResourceLimit: polynomial terms 1000146 exceed 1000000",
+        "elapsed_seconds": 2.895622292999178,
+        "source": "/home/yxb/分析/差分线性/DATF算法3复核_20261021/batch/059.json",
+        "statistics": {
+          "initial_terms": 15,
+          "initial_variables": 12,
+          "peak_polynomial_terms": 1000146,
+          "beta_definitions_expanded": 203,
+          "product_pairs": 6551996
+        }
+      }
+    },
+    {
+      "code": "R5_pool_000020",
+      "rounds": 5,
+      "input_difference": [
+        "0000000001000000",
+        "0000000001000000",
+        "0000000001000000",
+        "0000000001000000",
+        "0000000001000000"
+      ],
+      "core_output_mask": [
+        "0000000000000400",
+        "0000000000000000",
+        "0000000000800000",
+        "0000000000000000",
+        "0000000000000000"
+      ],
+      "full_output_mask": [
+        "2b6611e0106b4a3c",
+        "51f3cd87e297fd7c",
+        "afacecca19021ad4",
+        "b784930c70883310",
+        "95f62480a18d4bdb"
+      ],
+      "split": [
+        0,
+        3,
+        2
+      ],
+      "evaluated_part": "prefix/middle",
+      "datf_algorithm3": {
+        "numerator": "0",
+        "denominator": "1",
+        "log2_abs": null
+      },
+      "datf_seconds": 0.05075670500082197,
+      "datf_source": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R5_pool_000020_prefix3.json",
+      "hnw26": {
+        "full": {
+          "numerator": "0",
+          "denominator": "1",
+          "denominator_exponent": 0,
+          "log2_abs": null
+        },
+        "zero": {
+          "numerator": "0",
+          "denominator": "1",
+          "denominator_exponent": 0,
+          "log2_abs": null
+        }
+      },
+      "p": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "q_squared": {
+        "numerator": "1",
+        "denominator": "1024",
+        "log2_abs": -10.0
+      },
+      "reported_correlation": {
+        "numerator": "0",
+        "denominator": "1",
+        "log2_abs": null
+      },
+      "sampling": null,
+      "original_id": "R5_pool_000020",
+      "note": "旧候选：原算法 3 的三轮前缀为 0；不保留旧自定义 DATF 非零评分",
+      "whole_attempt": {
+        "status": "resource_limit",
+        "reason": "ResourceLimit: polynomial terms 1038929 exceed 1000000",
+        "elapsed_seconds": 1.8943425039760768,
+        "source": "/home/yxb/分析/差分线性/DATF算法3复核_20261021/batch/060.json",
+        "statistics": {
+          "initial_terms": 10,
+          "initial_variables": 10,
+          "peak_polynomial_terms": 1038929,
+          "beta_definitions_expanded": 164,
+          "product_pairs": 3481697
+        }
+      }
+    },
+    {
+      "code": "R5_pool_000021",
+      "rounds": 5,
+      "input_difference": [
+        "0000000001000000",
+        "0000000001000000",
+        "0000000001000000",
+        "0000000001000000",
+        "0000000001000000"
+      ],
+      "core_output_mask": [
+        "0000000000000400",
+        "0000000000000000",
+        "0000000000800000",
+        "0000000000800000",
+        "0000000000000000"
+      ],
+      "full_output_mask": [
+        "6ce75c0e3dab6791",
+        "153fc96cbcceeb96",
+        "2b0a5dccbd048a57",
+        "a741ab0960092b53",
+        "ceecafd0aa850219"
+      ],
+      "split": [
+        0,
+        3,
+        2
+      ],
+      "evaluated_part": "prefix/middle",
+      "datf_algorithm3": {
+        "numerator": "0",
+        "denominator": "1",
+        "log2_abs": null
+      },
+      "datf_seconds": 0.05075670500082197,
+      "datf_source": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R5_pool_000020_prefix3.json",
+      "hnw26": {
+        "full": {
+          "numerator": "0",
+          "denominator": "1",
+          "denominator_exponent": 0,
+          "log2_abs": null
+        },
+        "zero": {
+          "numerator": "0",
+          "denominator": "1",
+          "denominator_exponent": 0,
+          "log2_abs": null
+        }
+      },
+      "p": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "q_squared": {
+        "numerator": "1",
+        "denominator": "1024",
+        "log2_abs": -10.0
+      },
+      "reported_correlation": {
+        "numerator": "0",
+        "denominator": "1",
+        "log2_abs": null
+      },
+      "sampling": null,
+      "original_id": "R5_pool_000021",
+      "note": "旧候选：原算法 3 的三轮前缀为 0；不保留旧自定义 DATF 非零评分",
+      "whole_attempt": {
+        "status": "resource_limit",
+        "reason": "ResourceLimit: polynomial terms 1038929 exceed 1000000",
+        "elapsed_seconds": 1.9371377599891275,
+        "source": "/home/yxb/分析/差分线性/DATF算法3复核_20261021/batch/061.json",
+        "statistics": {
+          "initial_terms": 15,
+          "initial_variables": 12,
+          "peak_polynomial_terms": 1038929,
+          "beta_definitions_expanded": 164,
+          "product_pairs": 3481697
+        }
+      }
+    },
+    {
+      "code": "R5_pool_000024",
+      "rounds": 5,
+      "input_difference": [
+        "0000000000000004",
+        "0000000000000004",
+        "0000000000000004",
+        "0000000000000004",
+        "0000000000000004"
+      ],
+      "core_output_mask": [
+        "0000000000000400",
+        "0000000000000000",
+        "0000000000800000",
+        "0000000000000000",
+        "0000000000000000"
+      ],
+      "full_output_mask": [
+        "2b6611e0106b4a3c",
+        "51f3cd87e297fd7c",
+        "afacecca19021ad4",
+        "b784930c70883310",
+        "95f62480a18d4bdb"
+      ],
+      "split": [
+        0,
+        3,
+        2
+      ],
+      "evaluated_part": "prefix/middle",
+      "datf_algorithm3": {
+        "numerator": "0",
+        "denominator": "1",
+        "log2_abs": null
+      },
+      "datf_seconds": 0.053537132997007575,
+      "datf_source": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R5_pool_000024_prefix3.json",
+      "hnw26": {
+        "full": {
+          "numerator": "0",
+          "denominator": "1",
+          "denominator_exponent": 0,
+          "log2_abs": null
+        },
+        "zero": {
+          "numerator": "0",
+          "denominator": "1",
+          "denominator_exponent": 0,
+          "log2_abs": null
+        }
+      },
+      "p": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "q_squared": {
+        "numerator": "1",
+        "denominator": "1024",
+        "log2_abs": -10.0
+      },
+      "reported_correlation": {
+        "numerator": "0",
+        "denominator": "1",
+        "log2_abs": null
+      },
+      "sampling": null,
+      "original_id": "R5_pool_000024",
+      "note": "旧候选：原算法 3 的三轮前缀为 0；不保留旧自定义 DATF 非零评分",
+      "whole_attempt": {
+        "status": "resource_limit",
+        "reason": "ResourceLimit: polynomial terms 1226151 exceed 1000000",
+        "elapsed_seconds": 2.1781345369527116,
+        "source": "/home/yxb/分析/差分线性/DATF算法3复核_20261021/batch/062.json",
+        "statistics": {
+          "initial_terms": 10,
+          "initial_variables": 10,
+          "peak_polynomial_terms": 1226151,
+          "beta_definitions_expanded": 161,
+          "product_pairs": 4133027
+        }
+      }
+    },
+    {
+      "code": "R5_pool_000025",
+      "rounds": 5,
+      "input_difference": [
+        "0000000000000004",
+        "0000000000000004",
+        "0000000000000004",
+        "0000000000000004",
+        "0000000000000004"
+      ],
+      "core_output_mask": [
+        "0000000000000400",
+        "0000000000000000",
+        "0000000000800000",
+        "0000000000800000",
+        "0000000000000000"
+      ],
+      "full_output_mask": [
+        "6ce75c0e3dab6791",
+        "153fc96cbcceeb96",
+        "2b0a5dccbd048a57",
+        "a741ab0960092b53",
+        "ceecafd0aa850219"
+      ],
+      "split": [
+        0,
+        3,
+        2
+      ],
+      "evaluated_part": "prefix/middle",
+      "datf_algorithm3": {
+        "numerator": "0",
+        "denominator": "1",
+        "log2_abs": null
+      },
+      "datf_seconds": 0.053537132997007575,
+      "datf_source": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R5_pool_000024_prefix3.json",
+      "hnw26": {
+        "full": {
+          "numerator": "0",
+          "denominator": "1",
+          "denominator_exponent": 0,
+          "log2_abs": null
+        },
+        "zero": {
+          "numerator": "0",
+          "denominator": "1",
+          "denominator_exponent": 0,
+          "log2_abs": null
+        }
+      },
+      "p": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "q_squared": {
+        "numerator": "1",
+        "denominator": "1024",
+        "log2_abs": -10.0
+      },
+      "reported_correlation": {
+        "numerator": "0",
+        "denominator": "1",
+        "log2_abs": null
+      },
+      "sampling": null,
+      "original_id": "R5_pool_000025",
+      "note": "旧候选：原算法 3 的三轮前缀为 0；不保留旧自定义 DATF 非零评分",
+      "whole_attempt": {
+        "status": "resource_limit",
+        "reason": "ResourceLimit: polynomial terms 1226151 exceed 1000000",
+        "elapsed_seconds": 2.190772898029536,
+        "source": "/home/yxb/分析/差分线性/DATF算法3复核_20261021/batch/063.json",
+        "statistics": {
+          "initial_terms": 15,
+          "initial_variables": 12,
+          "peak_polynomial_terms": 1226151,
+          "beta_definitions_expanded": 161,
+          "product_pairs": 4133027
+        }
+      }
+    },
+    {
+      "code": "R5_pool_000028",
+      "rounds": 5,
+      "input_difference": [
+        "0000000000000200",
+        "0000000000000200",
+        "0000000000000200",
+        "0000000000000200",
+        "0000000000000200"
+      ],
+      "core_output_mask": [
+        "0000000000000400",
+        "0000000000000000",
+        "0000000000800000",
+        "0000000000000000",
+        "0000000000000000"
+      ],
+      "full_output_mask": [
+        "2b6611e0106b4a3c",
+        "51f3cd87e297fd7c",
+        "afacecca19021ad4",
+        "b784930c70883310",
+        "95f62480a18d4bdb"
+      ],
+      "split": [
+        0,
+        3,
+        2
+      ],
+      "evaluated_part": "prefix/middle",
+      "datf_algorithm3": {
+        "numerator": "0",
+        "denominator": "1",
+        "log2_abs": null
+      },
+      "datf_seconds": 0.048517443996388465,
+      "datf_source": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R5_pool_000028_prefix3.json",
+      "hnw26": {
+        "full": {
+          "numerator": "0",
+          "denominator": "1",
+          "denominator_exponent": 0,
+          "log2_abs": null
+        },
+        "zero": {
+          "numerator": "0",
+          "denominator": "1",
+          "denominator_exponent": 0,
+          "log2_abs": null
+        }
+      },
+      "p": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "q_squared": {
+        "numerator": "1",
+        "denominator": "1024",
+        "log2_abs": -10.0
+      },
+      "reported_correlation": {
+        "numerator": "0",
+        "denominator": "1",
+        "log2_abs": null
+      },
+      "sampling": null,
+      "original_id": "R5_pool_000028",
+      "note": "旧候选：原算法 3 的三轮前缀为 0；不保留旧自定义 DATF 非零评分",
+      "whole_attempt": {
+        "status": "resource_limit",
+        "reason": "ResourceLimit: polynomial terms 1218128 exceed 1000000",
+        "elapsed_seconds": 2.236138164997101,
+        "source": "/home/yxb/分析/差分线性/DATF算法3复核_20261021/batch/064.json",
+        "statistics": {
+          "initial_terms": 10,
+          "initial_variables": 10,
+          "peak_polynomial_terms": 1218128,
+          "beta_definitions_expanded": 159,
+          "product_pairs": 4202434
+        }
+      }
+    },
+    {
+      "code": "R5_pool_000029",
+      "rounds": 5,
+      "input_difference": [
+        "0000000000000200",
+        "0000000000000200",
+        "0000000000000200",
+        "0000000000000200",
+        "0000000000000200"
+      ],
+      "core_output_mask": [
+        "0000000000000400",
+        "0000000000000000",
+        "0000000000800000",
+        "0000000000800000",
+        "0000000000000000"
+      ],
+      "full_output_mask": [
+        "6ce75c0e3dab6791",
+        "153fc96cbcceeb96",
+        "2b0a5dccbd048a57",
+        "a741ab0960092b53",
+        "ceecafd0aa850219"
+      ],
+      "split": [
+        0,
+        3,
+        2
+      ],
+      "evaluated_part": "prefix/middle",
+      "datf_algorithm3": {
+        "numerator": "0",
+        "denominator": "1",
+        "log2_abs": null
+      },
+      "datf_seconds": 0.048517443996388465,
+      "datf_source": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R5_pool_000028_prefix3.json",
+      "hnw26": {
+        "full": {
+          "numerator": "0",
+          "denominator": "1",
+          "denominator_exponent": 0,
+          "log2_abs": null
+        },
+        "zero": {
+          "numerator": "0",
+          "denominator": "1",
+          "denominator_exponent": 0,
+          "log2_abs": null
+        }
+      },
+      "p": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "q_squared": {
+        "numerator": "1",
+        "denominator": "1024",
+        "log2_abs": -10.0
+      },
+      "reported_correlation": {
+        "numerator": "0",
+        "denominator": "1",
+        "log2_abs": null
+      },
+      "sampling": null,
+      "original_id": "R5_pool_000029",
+      "note": "旧候选：原算法 3 的三轮前缀为 0；不保留旧自定义 DATF 非零评分",
+      "whole_attempt": {
+        "status": "resource_limit",
+        "reason": "ResourceLimit: polynomial terms 1218128 exceed 1000000",
+        "elapsed_seconds": 2.271458057919517,
+        "source": "/home/yxb/分析/差分线性/DATF算法3复核_20261021/batch/065.json",
+        "statistics": {
+          "initial_terms": 15,
+          "initial_variables": 12,
+          "peak_polynomial_terms": 1218128,
+          "beta_definitions_expanded": 159,
+          "product_pairs": 4202434
+        }
+      }
+    },
+    {
+      "code": "H5-new1",
+      "rounds": 5,
+      "input_difference": [
+        "0000000000000000",
+        "0000000000040000",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000"
+      ],
+      "core_output_mask": [
+        "0000000000000400",
+        "0000000000000000",
+        "0000000000800000",
+        "0000000000000000",
+        "0000000000000000"
+      ],
+      "full_output_mask": [
+        "2b6611e0106b4a3c",
+        "51f3cd87e297fd7c",
+        "afacecca19021ad4",
+        "b784930c70883310",
+        "95f62480a18d4bdb"
+      ],
+      "split": [
+        0,
+        2,
+        3
+      ],
+      "evaluated_part": "prefix/middle",
+      "datf_algorithm3": {
+        "numerator": "1",
+        "denominator": "2",
+        "log2_abs": -1.0
+      },
+      "datf_seconds": 0.007082220996380784,
+      "datf_source": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/optimized_c18_a2_prefix2.json",
+      "hnw26": {
+        "full": {
+          "numerator": "1",
+          "denominator": "2",
+          "denominator_exponent": 1,
+          "log2_abs": -1
+        },
+        "zero": {
+          "numerator": "1",
+          "denominator": "2",
+          "denominator_exponent": 1,
+          "log2_abs": -1
+        }
+      },
+      "p": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "q_squared": {
+        "numerator": "1",
+        "denominator": "4611686018427387904",
+        "log2_abs": -62.0
+      },
+      "reported_correlation": {
+        "numerator": "1",
+        "denominator": "9223372036854775808",
+        "log2_abs": -63.0
+      },
+      "sampling": null,
+      "original_id": "optimized_c18_a2",
+      "note": "新分段候选；未实验确认，非五轮整体精确相关度",
+      "whole_attempt": {
+        "status": "resource_limit",
+        "reason": "ResourceLimit: polynomial terms 1161622 exceed 1000000",
+        "elapsed_seconds": 1.835299528996984,
+        "statistics": {
+          "initial_terms": 10,
+          "initial_variables": 10,
+          "peak_polynomial_terms": 1161622,
+          "beta_definitions_expanded": 305,
+          "product_pairs": 2782119
+        },
+        "source": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/optimized_c18_a2_whole5.json"
+      },
+      "trail": {
+        "id": "optimized_c18_a2",
+        "split": [
+          0,
+          2,
+          3
+        ],
+        "input_difference": [
+          "0000000000000000",
+          "0000000000040000",
+          "0000000000000000",
+          "0000000000000000",
+          "0000000000000000"
+        ],
+        "output_mask": [
+          "0000000000000400",
+          "0000000000000000",
+          "0000000000800000",
+          "0000000000000000",
+          "0000000000000000"
+        ],
+        "middle_mask": [
+          "4b5819c709096147",
+          "76905dc80b5ba168",
+          "324c25b4008093a8",
+          "af4aaa0c43a10030",
+          "96235622080ac0f7"
+        ],
+        "exact_prefix2": {
+          "numerator": "1",
+          "denominator": "2",
+          "log2_abs": -1.0
+        },
+        "hnw_prefix2": {
+          "numerator": "1",
+          "denominator": "2",
+          "log2_abs": -1.0
+        },
+        "q2": {
+          "numerator": "1",
+          "denominator": "4611686018427387904",
+          "log2_abs": -62.0
+        },
+        "score": {
+          "numerator": "1",
+          "denominator": "9223372036854775808",
+          "log2_abs": -63.0
+        },
+        "prepended_chi": {
+          "input": [
+            "1084844010000124",
+            "40000400001a2001",
+            "4010040000000516",
+            "5000004000100400",
+            "4088040002482000"
+          ],
+          "output": [
+            "000c800010000124",
+            "4000040000120001",
+            "4010000000000412",
+            "1000044000000001",
+            "0088000002482010"
+          ],
+          "weight": 26
+        },
+        "head": {
+          "id": "H0064",
+          "bridge_id": 1,
+          "join_mask": {
+            "words": [
+              "000c800010000124",
+              "4000040000120001",
+              "4010000000000412",
+              "1000044000000001",
+              "0088000002482010"
+            ],
+            "bits": [
+              [
+                0,
+                2
+              ],
+              [
+                0,
+                5
+              ],
+              [
+                0,
+                8
+              ],
+              [
+                0,
+                28
+              ],
+              [
+                0,
+                47
+              ],
+              [
+                0,
+                50
+              ],
+              [
+                0,
+                51
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                1,
+                17
+              ],
+              [
+                1,
+                20
+              ],
+              [
+                1,
+                42
+              ],
+              [
+                1,
+                62
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                2,
+                10
+              ],
+              [
+                2,
+                52
+              ],
+              [
+                2,
+                62
+              ],
+              [
+                3,
+                0
+              ],
+              [
+                3,
+                38
+              ],
+              [
+                3,
+                42
+              ],
+              [
+                3,
+                60
+              ],
+              [
+                4,
+                4
+              ],
+              [
+                4,
+                13
+              ],
+              [
+                4,
+                19
+              ],
+              [
+                4,
+                22
+              ],
+              [
+                4,
+                25
+              ],
+              [
+                4,
+                51
+              ],
+              [
+                4,
+                55
+              ]
+            ],
+            "active_columns": 23,
+            "bit_weight": 28
+          },
+          "first_chi": {
+            "sign": 1,
+            "weight": 3,
+            "correlation": "1/8",
+            "input": {
+              "words": [
+                "0000000000000001",
+                "0000000000000000",
+                "0000000000000000",
+                "0000000000000200",
+                "0000000000020000"
+              ],
+              "bits": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  3,
+                  9
+                ],
+                [
+                  4,
+                  17
+                ]
+              ],
+              "active_columns": 3,
+              "bit_weight": 3
+            },
+            "output": {
+              "words": [
+                "0000000000000001",
+                "0000000000000000",
+                "0000000000000000",
+                "0000000000000200",
+                "0000000000020000"
+              ],
+              "bits": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  3,
+                  9
+                ],
+                [
+                  4,
+                  17
+                ]
+              ],
+              "active_columns": 3,
+              "bit_weight": 3
+            }
+          }
+        },
+        "last_chi": {
+          "sign": 1,
+          "weight": 2,
+          "correlation": "1/4",
+          "input": {
+            "words": [
+              "0000000000000400",
+              "0000000000000000",
+              "0000000000800000",
+              "0000000000000000",
+              "0000000000000000"
+            ],
+            "bits": [
+              [
+                0,
+                10
+              ],
+              [
+                2,
+                23
+              ]
+            ],
+            "active_columns": 2,
+            "bit_weight": 2
+          },
+          "output": {
+            "words": [
+              "0000000000000400",
+              "0000000000000000",
+              "0000000000800000",
+              "0000000000000000",
+              "0000000000000000"
+            ],
+            "bits": [
+              [
+                0,
+                10
+              ],
+              [
+                2,
+                23
+              ]
+            ],
+            "active_columns": 2,
+            "bit_weight": 2
+          }
+        },
+        "matched_branches": [
+          2,
+          3
+        ],
+        "matched_sign": 1
+      }
+    },
+    {
+      "code": "H5-new2",
+      "rounds": 5,
+      "input_difference": [
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000080000000",
+        "0000000000000000"
+      ],
+      "core_output_mask": [
+        "0000000000000400",
+        "0000000000000000",
+        "0000000000800000",
+        "0000000000000000",
+        "0000000000000000"
+      ],
+      "full_output_mask": [
+        "2b6611e0106b4a3c",
+        "51f3cd87e297fd7c",
+        "afacecca19021ad4",
+        "b784930c70883310",
+        "95f62480a18d4bdb"
+      ],
+      "split": [
+        0,
+        2,
+        3
+      ],
+      "evaluated_part": "prefix/middle",
+      "datf_algorithm3": {
+        "numerator": "1",
+        "denominator": "2",
+        "log2_abs": -1.0
+      },
+      "datf_seconds": 0.007064837001962587,
+      "datf_source": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/optimized_c31_a8_prefix2.json",
+      "hnw26": {
+        "full": {
+          "numerator": "1",
+          "denominator": "2",
+          "denominator_exponent": 1,
+          "log2_abs": -1
+        },
+        "zero": {
+          "numerator": "1",
+          "denominator": "2",
+          "denominator_exponent": 1,
+          "log2_abs": -1
+        }
+      },
+      "p": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "q_squared": {
+        "numerator": "1",
+        "denominator": "4611686018427387904",
+        "log2_abs": -62.0
+      },
+      "reported_correlation": {
+        "numerator": "1",
+        "denominator": "9223372036854775808",
+        "log2_abs": -63.0
+      },
+      "sampling": null,
+      "original_id": "optimized_c31_a8",
+      "note": "新分段候选；未实验确认，非五轮整体精确相关度",
+      "whole_attempt": {
+        "status": "resource_limit",
+        "reason": "ResourceLimit: monomial product pairs exceed 100000000",
+        "elapsed_seconds": 0.4786624640037189,
+        "statistics": {
+          "initial_terms": 10,
+          "initial_variables": 10,
+          "peak_polynomial_terms": 394615,
+          "beta_definitions_expanded": 217,
+          "product_pairs": 8255353507
+        },
+        "source": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/optimized_c31_a8_whole5.json"
+      },
+      "trail": {
+        "id": "optimized_c31_a8",
+        "split": [
+          0,
+          2,
+          3
+        ],
+        "input_difference": [
+          "0000000000000000",
+          "0000000000000000",
+          "0000000000000000",
+          "0000000080000000",
+          "0000000000000000"
+        ],
+        "output_mask": [
+          "0000000000000400",
+          "0000000000000000",
+          "0000000000800000",
+          "0000000000000000",
+          "0000000000000000"
+        ],
+        "middle_mask": [
+          "4ff44bc4e447ea04",
+          "bea40189ac0a62db",
+          "baa7c12f2404d2f8",
+          "f723894d7d900128",
+          "544d73700c2ec2a2"
+        ],
+        "exact_prefix2": {
+          "numerator": "1",
+          "denominator": "2",
+          "log2_abs": -1.0
+        },
+        "hnw_prefix2": {
+          "numerator": "1",
+          "denominator": "2",
+          "log2_abs": -1.0
+        },
+        "q2": {
+          "numerator": "1",
+          "denominator": "4611686018427387904",
+          "log2_abs": -62.0
+        },
+        "score": {
+          "numerator": "1",
+          "denominator": "9223372036854775808",
+          "log2_abs": -63.0
+        },
+        "prepended_chi": {
+          "input": [
+            "0084800012000124",
+            "4008040000120001",
+            "0010000000020417",
+            "1000004000000000",
+            "1098000002482003"
+          ],
+          "output": [
+            "000c800010000124",
+            "4000040000120001",
+            "4010000000000412",
+            "1000044000000001",
+            "0088000002482010"
+          ],
+          "weight": 26
+        },
+        "head": {
+          "id": "H0064",
+          "bridge_id": 1,
+          "join_mask": {
+            "words": [
+              "000c800010000124",
+              "4000040000120001",
+              "4010000000000412",
+              "1000044000000001",
+              "0088000002482010"
+            ],
+            "bits": [
+              [
+                0,
+                2
+              ],
+              [
+                0,
+                5
+              ],
+              [
+                0,
+                8
+              ],
+              [
+                0,
+                28
+              ],
+              [
+                0,
+                47
+              ],
+              [
+                0,
+                50
+              ],
+              [
+                0,
+                51
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                1,
+                17
+              ],
+              [
+                1,
+                20
+              ],
+              [
+                1,
+                42
+              ],
+              [
+                1,
+                62
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                2,
+                10
+              ],
+              [
+                2,
+                52
+              ],
+              [
+                2,
+                62
+              ],
+              [
+                3,
+                0
+              ],
+              [
+                3,
+                38
+              ],
+              [
+                3,
+                42
+              ],
+              [
+                3,
+                60
+              ],
+              [
+                4,
+                4
+              ],
+              [
+                4,
+                13
+              ],
+              [
+                4,
+                19
+              ],
+              [
+                4,
+                22
+              ],
+              [
+                4,
+                25
+              ],
+              [
+                4,
+                51
+              ],
+              [
+                4,
+                55
+              ]
+            ],
+            "active_columns": 23,
+            "bit_weight": 28
+          },
+          "first_chi": {
+            "sign": 1,
+            "weight": 3,
+            "correlation": "1/8",
+            "input": {
+              "words": [
+                "0000000000000001",
+                "0000000000000000",
+                "0000000000000000",
+                "0000000000000200",
+                "0000000000020000"
+              ],
+              "bits": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  3,
+                  9
+                ],
+                [
+                  4,
+                  17
+                ]
+              ],
+              "active_columns": 3,
+              "bit_weight": 3
+            },
+            "output": {
+              "words": [
+                "0000000000000001",
+                "0000000000000000",
+                "0000000000000000",
+                "0000000000000200",
+                "0000000000020000"
+              ],
+              "bits": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  3,
+                  9
+                ],
+                [
+                  4,
+                  17
+                ]
+              ],
+              "active_columns": 3,
+              "bit_weight": 3
+            }
+          }
+        },
+        "last_chi": {
+          "sign": 1,
+          "weight": 2,
+          "correlation": "1/4",
+          "input": {
+            "words": [
+              "0000000000000400",
+              "0000000000000000",
+              "0000000000800000",
+              "0000000000000000",
+              "0000000000000000"
+            ],
+            "bits": [
+              [
+                0,
+                10
+              ],
+              [
+                2,
+                23
+              ]
+            ],
+            "active_columns": 2,
+            "bit_weight": 2
+          },
+          "output": {
+            "words": [
+              "0000000000000400",
+              "0000000000000000",
+              "0000000000800000",
+              "0000000000000000",
+              "0000000000000000"
+            ],
+            "bits": [
+              [
+                0,
+                10
+              ],
+              [
+                2,
+                23
+              ]
+            ],
+            "active_columns": 2,
+            "bit_weight": 2
+          }
+        },
+        "matched_branches": [
+          8,
+          10
+        ],
+        "matched_sign": 1
+      }
+    },
+    {
+      "code": "H5-new3",
+      "rounds": 5,
+      "input_difference": [
+        "0000000000000000",
+        "0000000000000000",
+        "0000004000000000",
+        "0000000000000000",
+        "0000000000000000"
+      ],
+      "core_output_mask": [
+        "0000000000000400",
+        "0000000000000000",
+        "0000000000800000",
+        "0000000000000000",
+        "0000000000000000"
+      ],
+      "full_output_mask": [
+        "2b6611e0106b4a3c",
+        "51f3cd87e297fd7c",
+        "afacecca19021ad4",
+        "b784930c70883310",
+        "95f62480a18d4bdb"
+      ],
+      "split": [
+        0,
+        2,
+        3
+      ],
+      "evaluated_part": "prefix/middle",
+      "datf_algorithm3": {
+        "numerator": "1",
+        "denominator": "2",
+        "log2_abs": -1.0
+      },
+      "datf_seconds": 0.007063509001454804,
+      "datf_source": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/optimized_c38_a4_prefix2.json",
+      "hnw26": {
+        "full": {
+          "numerator": "1",
+          "denominator": "2",
+          "denominator_exponent": 1,
+          "log2_abs": -1
+        },
+        "zero": {
+          "numerator": "1",
+          "denominator": "2",
+          "denominator_exponent": 1,
+          "log2_abs": -1
+        }
+      },
+      "p": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "q_squared": {
+        "numerator": "1",
+        "denominator": "4611686018427387904",
+        "log2_abs": -62.0
+      },
+      "reported_correlation": {
+        "numerator": "1",
+        "denominator": "9223372036854775808",
+        "log2_abs": -63.0
+      },
+      "sampling": null,
+      "original_id": "optimized_c38_a4",
+      "note": "新分段候选；未实验确认，非五轮整体精确相关度",
+      "whole_attempt": {
+        "status": "resource_limit",
+        "reason": "ResourceLimit: polynomial terms 1329834 exceed 1000000",
+        "elapsed_seconds": 1.8020212529954733,
+        "statistics": {
+          "initial_terms": 10,
+          "initial_variables": 10,
+          "peak_polynomial_terms": 1329834,
+          "beta_definitions_expanded": 275,
+          "product_pairs": 2493415
+        },
+        "source": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/optimized_c38_a4_whole5.json"
+      },
+      "trail": {
+        "id": "optimized_c38_a4",
+        "split": [
+          0,
+          2,
+          3
+        ],
+        "input_difference": [
+          "0000000000000000",
+          "0000000000000000",
+          "0000004000000000",
+          "0000000000000000",
+          "0000000000000000"
+        ],
+        "output_mask": [
+          "0000000000000400",
+          "0000000000000000",
+          "0000000000800000",
+          "0000000000000000",
+          "0000000000000000"
+        ],
+        "middle_mask": [
+          "4a93b45125df6265",
+          "b6e004e94e1e9f99",
+          "b0600827202153c1",
+          "b996ff0f0f814088",
+          "dddb9f022c58812b"
+        ],
+        "exact_prefix2": {
+          "numerator": "1",
+          "denominator": "2",
+          "log2_abs": -1.0
+        },
+        "hnw_prefix2": {
+          "numerator": "1",
+          "denominator": "2",
+          "log2_abs": -1.0
+        },
+        "q2": {
+          "numerator": "1",
+          "denominator": "4611686018427387904",
+          "log2_abs": -62.0
+        },
+        "score": {
+          "numerator": "1",
+          "denominator": "9223372036854775808",
+          "log2_abs": -63.0
+        },
+        "prepended_chi": {
+          "input": [
+            "008c800010000124",
+            "4084840000122101",
+            "4018040010020532",
+            "1000044000120010",
+            "5098000002482001"
+          ],
+          "output": [
+            "000c800010000124",
+            "4000040000120001",
+            "4010000000000412",
+            "1000044000000001",
+            "0088000002482010"
+          ],
+          "weight": 26
+        },
+        "head": {
+          "id": "H0064",
+          "bridge_id": 1,
+          "join_mask": {
+            "words": [
+              "000c800010000124",
+              "4000040000120001",
+              "4010000000000412",
+              "1000044000000001",
+              "0088000002482010"
+            ],
+            "bits": [
+              [
+                0,
+                2
+              ],
+              [
+                0,
+                5
+              ],
+              [
+                0,
+                8
+              ],
+              [
+                0,
+                28
+              ],
+              [
+                0,
+                47
+              ],
+              [
+                0,
+                50
+              ],
+              [
+                0,
+                51
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                1,
+                17
+              ],
+              [
+                1,
+                20
+              ],
+              [
+                1,
+                42
+              ],
+              [
+                1,
+                62
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                2,
+                10
+              ],
+              [
+                2,
+                52
+              ],
+              [
+                2,
+                62
+              ],
+              [
+                3,
+                0
+              ],
+              [
+                3,
+                38
+              ],
+              [
+                3,
+                42
+              ],
+              [
+                3,
+                60
+              ],
+              [
+                4,
+                4
+              ],
+              [
+                4,
+                13
+              ],
+              [
+                4,
+                19
+              ],
+              [
+                4,
+                22
+              ],
+              [
+                4,
+                25
+              ],
+              [
+                4,
+                51
+              ],
+              [
+                4,
+                55
+              ]
+            ],
+            "active_columns": 23,
+            "bit_weight": 28
+          },
+          "first_chi": {
+            "sign": 1,
+            "weight": 3,
+            "correlation": "1/8",
+            "input": {
+              "words": [
+                "0000000000000001",
+                "0000000000000000",
+                "0000000000000000",
+                "0000000000000200",
+                "0000000000020000"
+              ],
+              "bits": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  3,
+                  9
+                ],
+                [
+                  4,
+                  17
+                ]
+              ],
+              "active_columns": 3,
+              "bit_weight": 3
+            },
+            "output": {
+              "words": [
+                "0000000000000001",
+                "0000000000000000",
+                "0000000000000000",
+                "0000000000000200",
+                "0000000000020000"
+              ],
+              "bits": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  3,
+                  9
+                ],
+                [
+                  4,
+                  17
+                ]
+              ],
+              "active_columns": 3,
+              "bit_weight": 3
+            }
+          }
+        },
+        "last_chi": {
+          "sign": 1,
+          "weight": 2,
+          "correlation": "1/4",
+          "input": {
+            "words": [
+              "0000000000000400",
+              "0000000000000000",
+              "0000000000800000",
+              "0000000000000000",
+              "0000000000000000"
+            ],
+            "bits": [
+              [
+                0,
+                10
+              ],
+              [
+                2,
+                23
+              ]
+            ],
+            "active_columns": 2,
+            "bit_weight": 2
+          },
+          "output": {
+            "words": [
+              "0000000000000400",
+              "0000000000000000",
+              "0000000000800000",
+              "0000000000000000",
+              "0000000000000000"
+            ],
+            "bits": [
+              [
+                0,
+                10
+              ],
+              [
+                2,
+                23
+              ]
+            ],
+            "active_columns": 2,
+            "bit_weight": 2
+          }
+        },
+        "matched_branches": [
+          4,
+          6
+        ],
+        "matched_sign": 1
+      }
+    },
+    {
+      "code": "H5-new4",
+      "rounds": 5,
+      "input_difference": [
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000",
+        "0400000000000000",
+        "0000000000000000"
+      ],
+      "core_output_mask": [
+        "0000000000000400",
+        "0000000000000000",
+        "0000000000800000",
+        "0000000000000000",
+        "0000000000000000"
+      ],
+      "full_output_mask": [
+        "2b6611e0106b4a3c",
+        "51f3cd87e297fd7c",
+        "afacecca19021ad4",
+        "b784930c70883310",
+        "95f62480a18d4bdb"
+      ],
+      "split": [
+        0,
+        2,
+        3
+      ],
+      "evaluated_part": "prefix/middle",
+      "datf_algorithm3": {
+        "numerator": "1",
+        "denominator": "2",
+        "log2_abs": -1.0
+      },
+      "datf_seconds": 0.007061397998768371,
+      "datf_source": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/optimized_c58_a8_prefix2.json",
+      "hnw26": {
+        "full": {
+          "numerator": "1",
+          "denominator": "2",
+          "denominator_exponent": 1,
+          "log2_abs": -1
+        },
+        "zero": {
+          "numerator": "1",
+          "denominator": "2",
+          "denominator_exponent": 1,
+          "log2_abs": -1
+        }
+      },
+      "p": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "q_squared": {
+        "numerator": "1",
+        "denominator": "4611686018427387904",
+        "log2_abs": -62.0
+      },
+      "reported_correlation": {
+        "numerator": "1",
+        "denominator": "9223372036854775808",
+        "log2_abs": -63.0
+      },
+      "sampling": null,
+      "original_id": "optimized_c58_a8",
+      "note": "新分段候选；未实验确认，非五轮整体精确相关度",
+      "whole_attempt": {
+        "status": "resource_limit",
+        "reason": "ResourceLimit: monomial product pairs exceed 100000000",
+        "elapsed_seconds": 0.5809481460019015,
+        "statistics": {
+          "initial_terms": 10,
+          "initial_variables": 10,
+          "peak_polynomial_terms": 440280,
+          "beta_definitions_expanded": 218,
+          "product_pairs": 15160577415
+        },
+        "source": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/optimized_c58_a8_whole5.json"
+      },
+      "trail": {
+        "id": "optimized_c58_a8",
+        "split": [
+          0,
+          2,
+          3
+        ],
+        "input_difference": [
+          "0000000000000000",
+          "0000000000000000",
+          "0000000000000000",
+          "0400000000000000",
+          "0000000000000000"
+        ],
+        "output_mask": [
+          "0000000000000400",
+          "0000000000000000",
+          "0000000000800000",
+          "0000000000000000",
+          "0000000000000000"
+        ],
+        "middle_mask": [
+          "775211d73509f806",
+          "ae1631c8cd0b2208",
+          "3328a62d442c128a",
+          "e3d8e32c27b00bb0",
+          "0b136aa02978e1f3"
+        ],
+        "exact_prefix2": {
+          "numerator": "1",
+          "denominator": "2",
+          "log2_abs": -1.0
+        },
+        "hnw_prefix2": {
+          "numerator": "1",
+          "denominator": "2",
+          "log2_abs": -1.0
+        },
+        "q2": {
+          "numerator": "1",
+          "denominator": "4611686018427387904",
+          "log2_abs": -62.0
+        },
+        "score": {
+          "numerator": "1",
+          "denominator": "9223372036854775808",
+          "log2_abs": -63.0
+        },
+        "prepended_chi": {
+          "input": [
+            "100c840012400124",
+            "4000040000520005",
+            "4018040000000413",
+            "5000044000020000",
+            "5088040002482000"
+          ],
+          "output": [
+            "000c800010000124",
+            "4000040000120001",
+            "4010000000000412",
+            "1000044000000001",
+            "0088000002482010"
+          ],
+          "weight": 26
+        },
+        "head": {
+          "id": "H0064",
+          "bridge_id": 1,
+          "join_mask": {
+            "words": [
+              "000c800010000124",
+              "4000040000120001",
+              "4010000000000412",
+              "1000044000000001",
+              "0088000002482010"
+            ],
+            "bits": [
+              [
+                0,
+                2
+              ],
+              [
+                0,
+                5
+              ],
+              [
+                0,
+                8
+              ],
+              [
+                0,
+                28
+              ],
+              [
+                0,
+                47
+              ],
+              [
+                0,
+                50
+              ],
+              [
+                0,
+                51
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                1,
+                17
+              ],
+              [
+                1,
+                20
+              ],
+              [
+                1,
+                42
+              ],
+              [
+                1,
+                62
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                2,
+                10
+              ],
+              [
+                2,
+                52
+              ],
+              [
+                2,
+                62
+              ],
+              [
+                3,
+                0
+              ],
+              [
+                3,
+                38
+              ],
+              [
+                3,
+                42
+              ],
+              [
+                3,
+                60
+              ],
+              [
+                4,
+                4
+              ],
+              [
+                4,
+                13
+              ],
+              [
+                4,
+                19
+              ],
+              [
+                4,
+                22
+              ],
+              [
+                4,
+                25
+              ],
+              [
+                4,
+                51
+              ],
+              [
+                4,
+                55
+              ]
+            ],
+            "active_columns": 23,
+            "bit_weight": 28
+          },
+          "first_chi": {
+            "sign": 1,
+            "weight": 3,
+            "correlation": "1/8",
+            "input": {
+              "words": [
+                "0000000000000001",
+                "0000000000000000",
+                "0000000000000000",
+                "0000000000000200",
+                "0000000000020000"
+              ],
+              "bits": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  3,
+                  9
+                ],
+                [
+                  4,
+                  17
+                ]
+              ],
+              "active_columns": 3,
+              "bit_weight": 3
+            },
+            "output": {
+              "words": [
+                "0000000000000001",
+                "0000000000000000",
+                "0000000000000000",
+                "0000000000000200",
+                "0000000000020000"
+              ],
+              "bits": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  3,
+                  9
+                ],
+                [
+                  4,
+                  17
+                ]
+              ],
+              "active_columns": 3,
+              "bit_weight": 3
+            }
+          }
+        },
+        "last_chi": {
+          "sign": 1,
+          "weight": 2,
+          "correlation": "1/4",
+          "input": {
+            "words": [
+              "0000000000000400",
+              "0000000000000000",
+              "0000000000800000",
+              "0000000000000000",
+              "0000000000000000"
+            ],
+            "bits": [
+              [
+                0,
+                10
+              ],
+              [
+                2,
+                23
+              ]
+            ],
+            "active_columns": 2,
+            "bit_weight": 2
+          },
+          "output": {
+            "words": [
+              "0000000000000400",
+              "0000000000000000",
+              "0000000000800000",
+              "0000000000000000",
+              "0000000000000000"
+            ],
+            "bits": [
+              [
+                0,
+                10
+              ],
+              [
+                2,
+                23
+              ]
+            ],
+            "active_columns": 2,
+            "bit_weight": 2
+          }
+        },
+        "matched_branches": [
+          8,
+          10
+        ],
+        "matched_sign": 1
+      }
+    }
+  ],
+  "searches": {
+    "221": {
+      "status": "completed",
+      "family": "D2_M2_L1",
+      "tested": 12800,
+      "nonzero": 0,
+      "linear_heads": 20,
+      "scope": "10 certified two-round differential prefixes × 64 rotations × all one-bit output one-chi linear trails at column 0",
+      "elapsed_seconds": 0.2976405769950361
+    },
+    "122": {
+      "status": "completed",
+      "tested": 761856,
+      "nonzero": 0,
+      "scope": "64 columns × 31 nonzero first-chi output patterns × 384 existing linear-tail heads; best first DDT input and minimum-weight last completion retained",
+      "elapsed_seconds": 3.4583772070036503
+    },
+    "113": {
+      "status": "completed",
+      "scope": "all 384 old two-chi heads extended backwards by all nonzero LAT supports, via affine feasibility; all 64 × 31 one-column DDT outputs; one deterministic free-variable assignment per feasible match",
+      "tested": 761856,
+      "nonzero": 526440,
+      "distinct_endpoints": 1919,
+      "elapsed_seconds": 66.3333096819988
+    },
+    "023": {
+      "status": "completed",
+      "scope": "H0064 backwards linear extension; all 320 one-bit input differences; simultaneous same-sign feasibility for every nonempty subset of four first-DDT outputs; one free assignment per feasible system",
+      "tests": 9600,
+      "found": 45,
+      "elapsed_seconds": 0.6028143410003395
+    }
+  },
+  "validation": {
+    "status": "passed",
+    "linear_trails_checked": 173,
+    "new_prefix_DATF3_vs_independent_exact": 128,
+    "affine_search_feasibility_checks": "every retained hit verified in search script",
+    "hnw_jobs": 28,
+    "hnw_variants": [
+      "full",
+      "zero"
+    ],
+    "native_mask_conversion": "passed for all 44 report rows"
+  },
+  "limitations": [
+    "Algorithm 3 expands all beta definitions, retaining the original DATF independent-uniform alpha model.",
+    "A completed model zero is not a proof of zero for the actual full permutation.",
+    "Resource-limit states have no numeric value and are never treated as zero.",
+    "All five-round nonzero values here are single-tail spliced estimates; omitted trails and boundary dependencies may reinforce or cancel them.",
+    "Two-round prefix exact checks validate the short prefix only, not the five-round endpoint.",
+    "Search spaces are bounded families, not an exhaustive search of all Hsilu five-round endpoints."
+  ],
+  "source_sha256": [
+    {
+      "path": "/home/yxb/分析/差分线性/hsilu_dl/tools/hsilu.py",
+      "sha256": "cdd65cdf626dcd4231e292c70c31711f335717ddeeb032db5dfbcde25f4a487d"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/hsilu_dl/src/main.cpp",
+      "sha256": "b69a67bb78084e08aa6cdc0d4507812c8f7bd0aa127ad2399ab01b33f5bf9c88"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/hsilu_dl/src/hnw_endpoint.cpp",
+      "sha256": "11ca386bf97b1b710ffe0b5df807fa6822f8624f1fdde015d1ba46aaf4137a99"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/hsilu_dl/results/research_summary.json",
+      "sha256": "b39f58459813d4390388b3e78af7a70f2e45bc60ad8888bb8c0a608a1a14f90d"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/hsilu_dl/results/baseline/linear_pool.json",
+      "sha256": "11014294a18197b03a21f0583dbdf7dcb9e89f1baa3a3e4a611e544adad65498"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/DATF算法3复核_20261021/algorithm3.py",
+      "sha256": "be292ecd81205a49cd1127bc3c46ded65b9418d86773619145069f2c180f32b5"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/DATF算法3复核_20261021/worker.py",
+      "sha256": "bee93b06e60f9fd0f2a64e496c53530bca41c85761ba6340a7c92f554a41c7b6"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/DATF算法3复核_20261021/results.json",
+      "sha256": "6a9979fa9abf1d5bd516a7b2384a8efa10a84e060392faaaf7527582722f09f6"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/路径分段汇总_20261027/results.json",
+      "sha256": "5a41baa9a98ac7cb0548ad5438bc0002538ca0ffbaa7b4c14876d54e47263204"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/hsilu_dl/results/H5_sampling_2p28_20261021/results.json",
+      "sha256": "a1d41f318e57469c5e6dfb3bbc18ba648aa4c6f0670af66619842415b1b8c5c5"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/hsilu_dl/results/H5_sampling_2p28_20261021/reference_results.json",
+      "sha256": "4c8ce7361ad5c7b9d373f5242432cf3ab6680e7bbebbb9668b51507b99b13888"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/build_report.py",
+      "sha256": "ede58c5e515305d304f408862d397d576b862114abe5d6d3e509ba7ebe11415d"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/search_113.py",
+      "sha256": "92fa8b3b5152521b366bdfd09864e9e7f71b7f3e07a8d60a5e706169a923bd0f"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/search_new.py",
+      "sha256": "2918bb68a19a4a37482f117bc9b428664d516b38667047b0c27ed51ab001defd"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/improve_prefix.py",
+      "sha256": "b48289d32ff7d344a4992fc7d9fdb3c6ca68212af2d7b64a962062f46ba9dff1"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/validate_middle2.py",
+      "sha256": "45b12f4bef944183f23457dacb908473c83d78d2b1ca773553e4c1ad8c0c9432"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/finish_checks.py",
+      "sha256": "687eb65735b812eba761b2fd7642b247e472930513b111f8942af87f66e38a3c"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/middle2.py",
+      "sha256": "4fea8638aa7463af4ca5e60fe28550c4bcd5da8446dbf841c8315fd44d2ff679"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/evaluate_new.py",
+      "sha256": "14921898bf06bb36710bafe90f3748e75e623b32ad3fa7a4be80ea2a851006c8"
+    },
+    {
+      "path": "/home/yxb/分析/差分线性/hsilu_dl/results/rounds2to5_20261027/evaluate.py",
+      "sha256": "45ec1384edc8c5f59fa7adf87de09f2b181b553023baba07106f61f5eae35b68"
+    }
+  ]
+}

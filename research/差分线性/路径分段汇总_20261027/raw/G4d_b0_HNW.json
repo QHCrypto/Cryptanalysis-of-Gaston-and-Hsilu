@@ -1,0 +1,31 @@
+{
+  "id": "G4d_b0",
+  "algorithm": "Gaston",
+  "rounds": 1,
+  "start_round_index": 9,
+  "delta_core": [
+    "0008600200000000",
+    "0000086002000000",
+    "0020000000043001",
+    "0000000218008000",
+    "0000000043001000"
+  ],
+  "lambda_core": [
+    "0008000400020000",
+    "8000000002000100",
+    "0000000000000000",
+    "0000000100000000",
+    "0000800040022001"
+  ],
+  "status": "completed",
+  "method": "HNW26 one-chi two-wise LAT operator",
+  "backend": "exact local DLCT product; analytically sums all first-DDT branches",
+  "mode": "full and zero coincide for one chi",
+  "correlation": {
+    "numerator": "-1",
+    "denominator": "1",
+    "log2_abs": 0.0
+  },
+  "elapsed_seconds": 0.00019176999921910465,
+  "local_operator_checks": 1024
+}

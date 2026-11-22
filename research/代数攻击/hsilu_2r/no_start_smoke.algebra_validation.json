@@ -1,0 +1,28 @@
+{
+  "input_path": "/home/yxb/分析/代数攻击/hsilu_2r/no_start_smoke.txt",
+  "sample_count": 16,
+  "sampled_unsatisfiable_capacities": 0,
+  "background_condition_rank_histogram": {
+    "6": 16
+  },
+  "output_rank_histogram": {
+    "14": 11,
+    "13": 2,
+    "15": 3
+  },
+  "selected_output_quadratic_terms": "all zero in every consistent sample",
+  "cpp_reference_checks": 16,
+  "witness": {
+    "scope": "planted target at chosen capacity/background, not arbitrary XOF preimage",
+    "native_input_hex": [
+      "664afa1d58bc938f",
+      "b25449bc5440cf98",
+      "6542244fe452eb9d",
+      "ebc050103e7c3291",
+      "cafd117abb7daebe"
+    ],
+    "first_block_target_hex": "51d5b1b38597152e",
+    "rank": 15
+  },
+  "limitations": "No full 128-bit XOF preimage, no proof of condition independence or sponge prefix reachability."
+}

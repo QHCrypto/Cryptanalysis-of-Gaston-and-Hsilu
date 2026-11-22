@@ -1,0 +1,80 @@
+{
+  "id": "G4a",
+  "algorithm": "Gaston",
+  "rounds": 4,
+  "start_round_index": 8,
+  "delta_core": [
+    "0000000000000002",
+    "0000000000000000",
+    "0000000000000000",
+    "0000000000000000",
+    "0000000000000000"
+  ],
+  "lambda_core": [
+    "0000000000000000",
+    "0000000000000001",
+    "0000000000000000",
+    "0040000000000000",
+    "0000000000000000"
+  ],
+  "previous_datf": {
+    "numerator": "3",
+    "denominator": "2048",
+    "log2_abs": -9.415037499278844
+  },
+  "previous_hnw": {
+    "numerator": "0",
+    "denominator": "1",
+    "denominator_exponent": 0,
+    "log2_abs": null
+  },
+  "sampling": {
+    "samples": 67108864,
+    "seed": "2026101609",
+    "n0": 33688934,
+    "n1": 33419930,
+    "rho": 0.004008471965789795,
+    "log2_abs": -7.962731900226425,
+    "ci95": [
+      0.0037692202492534696,
+      0.004247723223418662
+    ]
+  },
+  "method": "original DATF Algorithm 3",
+  "status": "resource_limit",
+  "correlation": null,
+  "bias": null,
+  "limits": {
+    "seconds": 120,
+    "max_terms": 2000000,
+    "max_products": 500000000,
+    "max_nodes": 1000000,
+    "address_space_bytes": 4294967296
+  },
+  "first_L_omitted": true,
+  "remaining_alpha_assumed_jointly_uniform": true,
+  "dag_verified_full_states": 4,
+  "phase": "branch_0_uniform_Bias",
+  "statistics": {
+    "input_shannon_variables": 2,
+    "input_shannon_total_branches": 4,
+    "peak_polynomial_terms": 0,
+    "max_branch_peak_polynomial_terms": 757118,
+    "beta_definitions_expanded": 142,
+    "product_pairs": 1242270,
+    "max_branch_expanded_terms": 757118,
+    "max_branch_expanded_variables": 215,
+    "max_branch_expanded_degree": 4,
+    "max_branch_expanded_input_variables": 0,
+    "max_branch_expanded_alpha_variables": 215,
+    "max_branch_max_component_variables": 215,
+    "bias_nodes": 12970,
+    "affine_pair_eliminations": 3,
+    "quadratic_calls": 6450
+  },
+  "elapsed_seconds": 120.44703957100864,
+  "peak_rss_kib": 2131156,
+  "reason": "ResourceLimit: wall time exceeds 119.97326676792 seconds",
+  "evaluation_order": "exact input Shannon then full beta expansion per branch",
+  "branches": []
+}

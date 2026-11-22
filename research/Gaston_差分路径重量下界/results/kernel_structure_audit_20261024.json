@@ -1,0 +1,866 @@
+{
+  "status": "PASS",
+  "checked_local": "2026-10-24T12:01:16.906563+08:00",
+  "scope": "Exact linear algebra and necessary count/bit-weight types; no sparse-kernel catalog enumeration or new MILP solve",
+  "coordinates": "A is theta input, after rho_east; h1/h2 are bit weights at a1/a2 and equal those at b0/b1 under kernel propagation",
+  "rank": {
+    "E": 63,
+    "S": 64,
+    "PQ": 127
+  },
+  "E_kernel_dimension": 257,
+  "PQ_kernel_dimension": 193,
+  "E_kernel_state_count": "2^257",
+  "two_S_coset_dimensions": [
+    256,
+    256
+  ],
+  "kernel_equivalence": "E=0 iff S=P XOR (XOR_{j=0..17} ROL(Q,j)) is all-zero or all-one",
+  "kernel_even_bit_weight": true,
+  "kernel_combined_row_rotations": [
+    0,
+    52,
+    53,
+    9,
+    47
+  ],
+  "linear_basis_vectors_checked": 320,
+  "named_examples_checked": {
+    "row_twins": 10,
+    "vortices": 10,
+    "constant_coset_one": 1
+  },
+  "named_examples_exhaust_all_low_weight_kernel_states": false,
+  "branch_results": {
+    "6": {
+      "count_and_even_bit_weight_lower_bound": 36,
+      "remaining_types_under_44": [
+        {
+          "counts": [
+            6,
+            6,
+            6
+          ],
+          "internal_bit_weights": [
+            6,
+            6
+          ],
+          "weight_lower_bound": 36
+        },
+        {
+          "counts": [
+            6,
+            6,
+            6
+          ],
+          "internal_bit_weights": [
+            6,
+            8
+          ],
+          "weight_lower_bound": 37
+        },
+        {
+          "counts": [
+            6,
+            6,
+            6
+          ],
+          "internal_bit_weights": [
+            6,
+            10
+          ],
+          "weight_lower_bound": 38
+        },
+        {
+          "counts": [
+            6,
+            6,
+            6
+          ],
+          "internal_bit_weights": [
+            6,
+            12
+          ],
+          "weight_lower_bound": 39
+        },
+        {
+          "counts": [
+            6,
+            6,
+            6
+          ],
+          "internal_bit_weights": [
+            6,
+            14
+          ],
+          "weight_lower_bound": 40
+        },
+        {
+          "counts": [
+            6,
+            6,
+            6
+          ],
+          "internal_bit_weights": [
+            6,
+            16
+          ],
+          "weight_lower_bound": 41
+        },
+        {
+          "counts": [
+            6,
+            6,
+            6
+          ],
+          "internal_bit_weights": [
+            6,
+            18
+          ],
+          "weight_lower_bound": 42
+        },
+        {
+          "counts": [
+            6,
+            6,
+            6
+          ],
+          "internal_bit_weights": [
+            6,
+            20
+          ],
+          "weight_lower_bound": 43
+        },
+        {
+          "counts": [
+            6,
+            6,
+            6
+          ],
+          "internal_bit_weights": [
+            8,
+            6
+          ],
+          "weight_lower_bound": 37
+        },
+        {
+          "counts": [
+            6,
+            6,
+            6
+          ],
+          "internal_bit_weights": [
+            8,
+            8
+          ],
+          "weight_lower_bound": 38
+        },
+        {
+          "counts": [
+            6,
+            6,
+            6
+          ],
+          "internal_bit_weights": [
+            8,
+            10
+          ],
+          "weight_lower_bound": 39
+        },
+        {
+          "counts": [
+            6,
+            6,
+            6
+          ],
+          "internal_bit_weights": [
+            8,
+            12
+          ],
+          "weight_lower_bound": 40
+        },
+        {
+          "counts": [
+            6,
+            6,
+            6
+          ],
+          "internal_bit_weights": [
+            8,
+            14
+          ],
+          "weight_lower_bound": 41
+        },
+        {
+          "counts": [
+            6,
+            6,
+            6
+          ],
+          "internal_bit_weights": [
+            8,
+            16
+          ],
+          "weight_lower_bound": 42
+        },
+        {
+          "counts": [
+            6,
+            6,
+            6
+          ],
+          "internal_bit_weights": [
+            8,
+            18
+          ],
+          "weight_lower_bound": 43
+        },
+        {
+          "counts": [
+            6,
+            6,
+            6
+          ],
+          "internal_bit_weights": [
+            10,
+            6
+          ],
+          "weight_lower_bound": 38
+        },
+        {
+          "counts": [
+            6,
+            6,
+            6
+          ],
+          "internal_bit_weights": [
+            10,
+            8
+          ],
+          "weight_lower_bound": 39
+        },
+        {
+          "counts": [
+            6,
+            6,
+            6
+          ],
+          "internal_bit_weights": [
+            10,
+            10
+          ],
+          "weight_lower_bound": 40
+        },
+        {
+          "counts": [
+            6,
+            6,
+            6
+          ],
+          "internal_bit_weights": [
+            10,
+            12
+          ],
+          "weight_lower_bound": 41
+        },
+        {
+          "counts": [
+            6,
+            6,
+            6
+          ],
+          "internal_bit_weights": [
+            10,
+            14
+          ],
+          "weight_lower_bound": 42
+        },
+        {
+          "counts": [
+            6,
+            6,
+            6
+          ],
+          "internal_bit_weights": [
+            10,
+            16
+          ],
+          "weight_lower_bound": 43
+        },
+        {
+          "counts": [
+            6,
+            6,
+            6
+          ],
+          "internal_bit_weights": [
+            12,
+            6
+          ],
+          "weight_lower_bound": 39
+        },
+        {
+          "counts": [
+            6,
+            6,
+            6
+          ],
+          "internal_bit_weights": [
+            12,
+            8
+          ],
+          "weight_lower_bound": 40
+        },
+        {
+          "counts": [
+            6,
+            6,
+            6
+          ],
+          "internal_bit_weights": [
+            12,
+            10
+          ],
+          "weight_lower_bound": 41
+        },
+        {
+          "counts": [
+            6,
+            6,
+            6
+          ],
+          "internal_bit_weights": [
+            12,
+            12
+          ],
+          "weight_lower_bound": 42
+        },
+        {
+          "counts": [
+            6,
+            6,
+            6
+          ],
+          "internal_bit_weights": [
+            12,
+            14
+          ],
+          "weight_lower_bound": 43
+        },
+        {
+          "counts": [
+            6,
+            6,
+            6
+          ],
+          "internal_bit_weights": [
+            14,
+            6
+          ],
+          "weight_lower_bound": 40
+        },
+        {
+          "counts": [
+            6,
+            6,
+            6
+          ],
+          "internal_bit_weights": [
+            14,
+            8
+          ],
+          "weight_lower_bound": 41
+        },
+        {
+          "counts": [
+            6,
+            6,
+            6
+          ],
+          "internal_bit_weights": [
+            14,
+            10
+          ],
+          "weight_lower_bound": 42
+        },
+        {
+          "counts": [
+            6,
+            6,
+            6
+          ],
+          "internal_bit_weights": [
+            14,
+            12
+          ],
+          "weight_lower_bound": 43
+        },
+        {
+          "counts": [
+            6,
+            6,
+            6
+          ],
+          "internal_bit_weights": [
+            16,
+            6
+          ],
+          "weight_lower_bound": 41
+        },
+        {
+          "counts": [
+            6,
+            6,
+            6
+          ],
+          "internal_bit_weights": [
+            16,
+            8
+          ],
+          "weight_lower_bound": 42
+        },
+        {
+          "counts": [
+            6,
+            6,
+            6
+          ],
+          "internal_bit_weights": [
+            16,
+            10
+          ],
+          "weight_lower_bound": 43
+        },
+        {
+          "counts": [
+            6,
+            6,
+            6
+          ],
+          "internal_bit_weights": [
+            18,
+            6
+          ],
+          "weight_lower_bound": 42
+        },
+        {
+          "counts": [
+            6,
+            6,
+            6
+          ],
+          "internal_bit_weights": [
+            18,
+            8
+          ],
+          "weight_lower_bound": 43
+        },
+        {
+          "counts": [
+            6,
+            6,
+            6
+          ],
+          "internal_bit_weights": [
+            20,
+            6
+          ],
+          "weight_lower_bound": 43
+        },
+        {
+          "counts": [
+            6,
+            6,
+            7
+          ],
+          "internal_bit_weights": [
+            6,
+            8
+          ],
+          "weight_lower_bound": 39
+        },
+        {
+          "counts": [
+            6,
+            6,
+            7
+          ],
+          "internal_bit_weights": [
+            6,
+            10
+          ],
+          "weight_lower_bound": 40
+        },
+        {
+          "counts": [
+            6,
+            6,
+            7
+          ],
+          "internal_bit_weights": [
+            6,
+            12
+          ],
+          "weight_lower_bound": 41
+        },
+        {
+          "counts": [
+            6,
+            6,
+            7
+          ],
+          "internal_bit_weights": [
+            6,
+            14
+          ],
+          "weight_lower_bound": 42
+        },
+        {
+          "counts": [
+            6,
+            6,
+            7
+          ],
+          "internal_bit_weights": [
+            6,
+            16
+          ],
+          "weight_lower_bound": 43
+        },
+        {
+          "counts": [
+            6,
+            6,
+            7
+          ],
+          "internal_bit_weights": [
+            8,
+            8
+          ],
+          "weight_lower_bound": 40
+        },
+        {
+          "counts": [
+            6,
+            6,
+            7
+          ],
+          "internal_bit_weights": [
+            8,
+            10
+          ],
+          "weight_lower_bound": 41
+        },
+        {
+          "counts": [
+            6,
+            6,
+            7
+          ],
+          "internal_bit_weights": [
+            8,
+            12
+          ],
+          "weight_lower_bound": 42
+        },
+        {
+          "counts": [
+            6,
+            6,
+            7
+          ],
+          "internal_bit_weights": [
+            8,
+            14
+          ],
+          "weight_lower_bound": 43
+        },
+        {
+          "counts": [
+            6,
+            6,
+            7
+          ],
+          "internal_bit_weights": [
+            10,
+            8
+          ],
+          "weight_lower_bound": 41
+        },
+        {
+          "counts": [
+            6,
+            6,
+            7
+          ],
+          "internal_bit_weights": [
+            10,
+            10
+          ],
+          "weight_lower_bound": 42
+        },
+        {
+          "counts": [
+            6,
+            6,
+            7
+          ],
+          "internal_bit_weights": [
+            10,
+            12
+          ],
+          "weight_lower_bound": 43
+        },
+        {
+          "counts": [
+            6,
+            6,
+            7
+          ],
+          "internal_bit_weights": [
+            12,
+            8
+          ],
+          "weight_lower_bound": 42
+        },
+        {
+          "counts": [
+            6,
+            6,
+            7
+          ],
+          "internal_bit_weights": [
+            12,
+            10
+          ],
+          "weight_lower_bound": 43
+        },
+        {
+          "counts": [
+            6,
+            6,
+            7
+          ],
+          "internal_bit_weights": [
+            14,
+            8
+          ],
+          "weight_lower_bound": 43
+        },
+        {
+          "counts": [
+            6,
+            6,
+            8
+          ],
+          "internal_bit_weights": [
+            6,
+            8
+          ],
+          "weight_lower_bound": 40
+        },
+        {
+          "counts": [
+            6,
+            6,
+            8
+          ],
+          "internal_bit_weights": [
+            6,
+            10
+          ],
+          "weight_lower_bound": 41
+        },
+        {
+          "counts": [
+            6,
+            6,
+            8
+          ],
+          "internal_bit_weights": [
+            6,
+            12
+          ],
+          "weight_lower_bound": 42
+        },
+        {
+          "counts": [
+            6,
+            6,
+            8
+          ],
+          "internal_bit_weights": [
+            6,
+            14
+          ],
+          "weight_lower_bound": 43
+        },
+        {
+          "counts": [
+            6,
+            6,
+            8
+          ],
+          "internal_bit_weights": [
+            8,
+            8
+          ],
+          "weight_lower_bound": 41
+        },
+        {
+          "counts": [
+            6,
+            6,
+            8
+          ],
+          "internal_bit_weights": [
+            8,
+            10
+          ],
+          "weight_lower_bound": 42
+        },
+        {
+          "counts": [
+            6,
+            6,
+            8
+          ],
+          "internal_bit_weights": [
+            8,
+            12
+          ],
+          "weight_lower_bound": 43
+        },
+        {
+          "counts": [
+            6,
+            6,
+            8
+          ],
+          "internal_bit_weights": [
+            10,
+            8
+          ],
+          "weight_lower_bound": 42
+        },
+        {
+          "counts": [
+            6,
+            6,
+            8
+          ],
+          "internal_bit_weights": [
+            10,
+            10
+          ],
+          "weight_lower_bound": 43
+        },
+        {
+          "counts": [
+            6,
+            6,
+            8
+          ],
+          "internal_bit_weights": [
+            12,
+            8
+          ],
+          "weight_lower_bound": 43
+        },
+        {
+          "counts": [
+            6,
+            6,
+            9
+          ],
+          "internal_bit_weights": [
+            6,
+            10
+          ],
+          "weight_lower_bound": 43
+        }
+      ],
+      "types_are_necessary_not_sufficient": true
+    },
+    "7": {
+      "count_and_even_bit_weight_lower_bound": 42,
+      "remaining_types_under_44": [
+        {
+          "counts": [
+            6,
+            7,
+            7
+          ],
+          "internal_bit_weights": [
+            8,
+            8
+          ],
+          "weight_lower_bound": 42
+        },
+        {
+          "counts": [
+            6,
+            7,
+            7
+          ],
+          "internal_bit_weights": [
+            8,
+            10
+          ],
+          "weight_lower_bound": 43
+        },
+        {
+          "counts": [
+            6,
+            7,
+            7
+          ],
+          "internal_bit_weights": [
+            10,
+            8
+          ],
+          "weight_lower_bound": 43
+        },
+        {
+          "counts": [
+            6,
+            7,
+            8
+          ],
+          "internal_bit_weights": [
+            8,
+            8
+          ],
+          "weight_lower_bound": 43
+        }
+      ],
+      "types_are_necessary_not_sufficient": true
+    },
+    "8": {
+      "count_and_even_bit_weight_lower_bound": 43,
+      "remaining_types_under_44": [
+        {
+          "counts": [
+            6,
+            8,
+            7
+          ],
+          "internal_bit_weights": [
+            8,
+            8
+          ],
+          "weight_lower_bound": 43
+        }
+      ],
+      "types_are_necessary_not_sufficient": true
+    },
+    "9": {
+      "count_and_even_bit_weight_lower_bound": 45,
+      "remaining_types_under_44": [],
+      "types_are_necessary_not_sufficient": true
+    }
+  },
+  "profile_sha256": "7965612f47decfac18302f35bfca086824255653ea8576dfbb6b5f630fb1f8fd",
+  "source_sha256": "8cc4c3fcc3acd75383362acc69dd74211b285320298a575658fc202ac9cc528e",
+  "historical_single_layer_proofs_replayed": false
+}

@@ -1,0 +1,32 @@
+PASS: explicit outside-kernel witness has total activity 16.
+Checked 200000 size-16 matchings in 2.9s
+Checked 400000 size-16 matchings in 6.5s
+Checked 600000 size-16 matchings in 9.2s
+Checked 800000 size-16 matchings in 11.9s
+Checked 1000000 size-16 matchings in 16.2s
+{
+  "verification": "PASS",
+  "retained_by_weight": {
+    "2": 32,
+    "4": 1632,
+    "6": 3
+  },
+  "pruned_by_weight": {
+    "2": 0,
+    "4": 8304,
+    "6": 1171549
+  },
+  "orbit_counts": {
+    "2": 32,
+    "4": 9936,
+    "6": 1171552
+  },
+  "size16_matchings_checked": 1179853,
+  "all_orbits_covered_exactly_once": true,
+  "all_weight_at_least_eight_excluded": true,
+  "eight_bit_extensions_checked": 4959,
+  "extension_certificate_sha256": "7e7bc6e55f7e56d13b4ec177b46de0309b3e5c32e8880a3d2f916a129f825aaa",
+  "certificate_sha256": "76a96658f07aef1fa2261e2fa6b898a15c6e54d1a4a87f4453f9985960645896",
+  "retained_tsv_sha256": "f3dbc5e4a2c8f0e0c6d041b2cd0c99154c188e3d80a87675772f7fbc41f7d04e"
+}
+PASS: all 1667 cases UNSAT with checked proofs. Exact outside-kernel ordinary branch number B=16.

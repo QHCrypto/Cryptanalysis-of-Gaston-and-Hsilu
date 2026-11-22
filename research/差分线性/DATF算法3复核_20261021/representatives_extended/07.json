@@ -1,0 +1,82 @@
+{
+  "id": "H3",
+  "algorithm": "Hsilu",
+  "rounds": 3,
+  "start_round_index": 9,
+  "delta_core": [
+    "0000000000000000",
+    "0000000000000000",
+    "0000000000000000",
+    "0000000000000001",
+    "0000000000000000"
+  ],
+  "lambda_core": [
+    "0000000020000000",
+    "0000000000000000",
+    "0000000000000000",
+    "0000000000000000",
+    "0000000000000000"
+  ],
+  "previous_datf": {
+    "numerator": "1",
+    "denominator": "1",
+    "log2_abs": 0.0
+  },
+  "previous_hnw": {
+    "numerator": "1",
+    "denominator": "1",
+    "denominator_exponent": 0,
+    "log2_abs": 0
+  },
+  "sampling": {
+    "samples": 4194304,
+    "seed": "2026101801",
+    "n0": 4194304,
+    "n1": 0,
+    "rho": 1.0,
+    "log2_abs": 0.0,
+    "ci95": null
+  },
+  "method": "original DATF Algorithm 3",
+  "status": "completed",
+  "correlation": {
+    "numerator": "1",
+    "denominator": "1",
+    "log2_abs": 0.0
+  },
+  "bias": {
+    "numerator": "1",
+    "denominator": "2",
+    "log2_abs": -1.0
+  },
+  "limits": {
+    "seconds": 180,
+    "max_terms": 5000000,
+    "max_products": 1000000000,
+    "max_nodes": 2000000,
+    "address_space_bytes": 4294967296
+  },
+  "first_L_omitted": true,
+  "remaining_alpha_assumed_jointly_uniform": true,
+  "dag_verified_full_states": 4,
+  "phase": "completed",
+  "statistics": {
+    "initial_terms": 0,
+    "initial_variables": 0,
+    "peak_polynomial_terms": 0,
+    "expanded_terms": 0,
+    "expanded_variables": 0,
+    "expanded_degree": 0,
+    "remaining_beta_variables": 0,
+    "expanded_input_variables": 0,
+    "expanded_alpha_variables": 0,
+    "max_component_variables": 0,
+    "bias_nodes": 1
+  },
+  "elapsed_seconds": 0.015558548038825393,
+  "peak_rss_kib": 20824,
+  "expansion_verified_formal_assignments": 16,
+  "zero_certificate": null,
+  "expanded_anf_file": "representatives_extended/07.anf.json",
+  "expanded_anf_sha256": "a3ab5a6144bcc0237f78181d9ea6dd2fd08140abdc96515d798c9b8208ca944a"
+}

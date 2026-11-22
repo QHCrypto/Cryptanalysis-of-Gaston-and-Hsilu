@@ -1,0 +1,81 @@
+{
+  "id": "H4b",
+  "algorithm": "Hsilu",
+  "rounds": 4,
+  "start_round_index": 8,
+  "delta_core": [
+    "0000000000000000",
+    "0000000000000000",
+    "0000000000000000",
+    "0000000000040000",
+    "0000000000000000"
+  ],
+  "lambda_core": [
+    "0000000000000200",
+    "0000000000000000",
+    "0000000000000004",
+    "0000000000000004",
+    "0000000000000200"
+  ],
+  "previous_datf": {
+    "numerator": "0",
+    "denominator": "1",
+    "log2_abs": null
+  },
+  "previous_hnw": {
+    "numerator": "0",
+    "denominator": "1",
+    "denominator_exponent": 0,
+    "log2_abs": null
+  },
+  "sampling": {
+    "samples": 268435456,
+    "seed": "2026101803",
+    "n0": 134474332,
+    "n1": 133961124,
+    "rho": 0.001911848783493042,
+    "log2_abs": -9.030815865910396,
+    "ci95": [
+      0.001792222267576582,
+      0.002031475244690162
+    ]
+  },
+  "method": "original DATF Algorithm 3",
+  "status": "resource_limit",
+  "correlation": null,
+  "bias": null,
+  "limits": {
+    "seconds": 180,
+    "max_terms": 5000000,
+    "max_products": 1000000000,
+    "max_nodes": 2000000,
+    "address_space_bytes": 4294967296
+  },
+  "first_L_omitted": true,
+  "remaining_alpha_assumed_jointly_uniform": true,
+  "dag_verified_full_states": 4,
+  "phase": "uniform_Bias",
+  "statistics": {
+    "initial_terms": 20,
+    "initial_variables": 14,
+    "peak_polynomial_terms": 43131,
+    "beta_definitions_expanded": 98,
+    "product_pairs": 4679461,
+    "expanded_terms": 43050,
+    "expanded_variables": 162,
+    "expanded_degree": 6,
+    "remaining_beta_variables": 0,
+    "expanded_input_variables": 2,
+    "expanded_alpha_variables": 160,
+    "max_component_variables": 162,
+    "bias_nodes": 327670,
+    "affine_pair_eliminations": 89088,
+    "quadratic_calls": 71641,
+    "separations": 21026,
+    "bias_cache_hits": 3227,
+    "isolated_uniform_zero_leaves": 5871
+  },
+  "elapsed_seconds": 180.0271243569441,
+  "peak_rss_kib": 341936,
+  "reason": "ResourceLimit: wall time exceeds 180 seconds"
+}

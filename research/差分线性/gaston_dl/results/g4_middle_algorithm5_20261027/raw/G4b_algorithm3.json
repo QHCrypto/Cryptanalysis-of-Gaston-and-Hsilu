@@ -1,0 +1,57 @@
+{
+  "job": {
+    "id": "G4b_middle",
+    "algorithm": "Gaston",
+    "rounds": 1,
+    "start_round_index": 9,
+    "delta_core": [
+      "0c00002800080000",
+      "000c000020000800",
+      "0004000006000010",
+      "0000030000080002",
+      "4000006000010000"
+    ],
+    "lambda_core": [
+      "0001000019000048",
+      "0030400180201009",
+      "000000800c240061",
+      "0008000005600123",
+      "0000700013800080"
+    ]
+  },
+  "method": "JOC DATF algorithm3",
+  "status": "completed",
+  "correlation": {
+    "numerator": "1",
+    "denominator": "1",
+    "log2_abs": 0.0
+  },
+  "bias": {
+    "numerator": "1",
+    "denominator": "2",
+    "log2_abs": -1.0
+  },
+  "splice_single_trail": {
+    "numerator": "1",
+    "denominator": "1024",
+    "log2_abs": -10.0
+  },
+  "expanded_polynomial": [],
+  "zero_certificate": null,
+  "expansion_checks": 32,
+  "elapsed_seconds": 0.0007743409951217473,
+  "statistics": {
+    "initial_terms": 0,
+    "initial_variables": 0,
+    "peak_polynomial_terms": 0,
+    "expanded_terms": 0,
+    "expanded_variables": 0,
+    "expanded_degree": 0,
+    "remaining_beta_variables": 0,
+    "expanded_input_variables": 0,
+    "expanded_alpha_variables": 0,
+    "max_component_variables": 0,
+    "bias_nodes": 1
+  },
+  "phase": "completed"
+}

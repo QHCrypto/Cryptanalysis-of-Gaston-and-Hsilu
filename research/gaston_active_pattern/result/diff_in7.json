@@ -1,0 +1,19 @@
+{
+  "mode": "difference",
+  "fixed_side": "input",
+  "fixed_count": 7,
+  "status": 2,
+  "proven_optimal": true,
+  "objective": 7,
+  "bound": 7,
+  "gap": 0,
+  "runtime_seconds": 3222.1507620811462,
+  "verified": true,
+  "bit_index": "LSB=0; rol moves j to j+s mod 64",
+  "input_active": 7,
+  "input_columns": [0, 7, 21, 25, 56, 60, 62],
+  "input_words": ["0x1100000000000000", "0x1000000000000001", "0x0000000000000080", "0x4000000000000000", "0x0000000002200000"],
+  "output_active": 7,
+  "output_columns": [4, 7, 8, 48, 52, 56, 60],
+  "output_words": ["0x1100000000000000", "0x0011000000000000", "0x1000000000000000", "0x0000000000000080", "0x0000000000000110"]
+}

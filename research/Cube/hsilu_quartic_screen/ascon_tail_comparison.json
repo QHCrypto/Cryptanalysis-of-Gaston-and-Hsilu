@@ -1,0 +1,9 @@
+{
+  "formal_quartics_before_prefix_screening": 121,
+  "author_published_quartics": 121,
+  "sets_identical": true,
+  "meaning": "For this chosen Ascon output, the final published list equals all exact formal quartics. No additional net term deletion is visible relative to this already parity-cancelled ANF.",
+  "author_result_path": "/home/yxb/\u5206\u6790/Cube/hsilu_quartic_screen/ascon_author_quartics.txt",
+  "author_repository": "https://github.com/keyrecoveryofascon/keyrecoveryofascon",
+  "author_commit": "616f5d247bd9decdb39a74f2339f73a115392910"
+}

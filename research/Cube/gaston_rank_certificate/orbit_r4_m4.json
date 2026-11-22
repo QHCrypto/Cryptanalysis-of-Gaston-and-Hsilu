@@ -1,0 +1,17 @@
+{
+  "rounds": 4,
+  "word_bits": 64,
+  "nonce_period": 16,
+  "m": 4,
+  "even_filter": true,
+  "mode": "sum",
+  "orbits_processed": 8264,
+  "points_covered": 32768,
+  "enumeration_complete": true,
+  "target_cube": true,
+  "coefficient_certificate": true,
+  "seconds": 0.000422394,
+  "orbit_length_histogram": {"1": 16, "2": 120, "4": 8128},
+  "folded_sums_hex": [["0","f"],["6","4"],["8","c"]],
+  "low_coefficient_matrices": [[[0,1],[1,0]],[[1,1],[0,1]],[[1,1],[1,0]],[[0,1],[1,0]]]
+}

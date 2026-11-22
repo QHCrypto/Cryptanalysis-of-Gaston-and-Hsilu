@@ -1,0 +1,690 @@
+{
+  "title": "G4a / G4b 原始中间段：DATF 算法 3 与折中算法 5",
+  "date": "2026-10-27",
+  "scope": "Only original 2/1-chi middle segments; no new full-four-round evaluation",
+  "first_L_omitted": true,
+  "first_constant_absorbed_into_uniform_middle_input": true,
+  "transitional_cut": "before each chi after the first, after L and iota; reference-code DAG simplifications",
+  "algorithm5": "Paper page 19, Algorithm 5; all immediate-predecessor alpha/beta marginals use BiasP; no enhanced DATF",
+  "quantity": "signed correlation = twice paper bias",
+  "rows": [
+    {
+      "code": "G4a",
+      "split": [
+        1,
+        2,
+        1
+      ],
+      "candidate": {
+        "differential_id": "D1_00016",
+        "linear_id": "L1_01977",
+        "differential_rotation": 1,
+        "r_d": 1,
+        "r_m": 2,
+        "r_l": 1,
+        "R": 4,
+        "start_round_index": 8,
+        "input_difference": [
+          "0000000000000002",
+          "0000000000000000",
+          "0000000000000000",
+          "0000000000000000",
+          "0000000000000000"
+        ],
+        "differential_output": [
+          "0000000000000002",
+          "0000000000000000",
+          "0000000000000000",
+          "0000000000000000",
+          "0000000000000000"
+        ],
+        "middle_input_difference": [
+          "000200000300000a",
+          "0800020000030000",
+          "0180000400010000",
+          "00020000800000c0",
+          "0000400010000018"
+        ],
+        "middle_output_mask": [
+          "0000000000000000",
+          "0000000000001000",
+          "0000000000000000",
+          "0000200000000000",
+          "0000000000000000"
+        ],
+        "output_mask": [
+          "0000000000000000",
+          "0000000000000001",
+          "0000000000000000",
+          "0040000000000000",
+          "0000000000000000"
+        ],
+        "differential_probability": {
+          "numerator": "1",
+          "denominator": "4",
+          "log2_abs": -2.0
+        },
+        "linear_squared_correlation": {
+          "numerator": "1",
+          "denominator": "16",
+          "log2_abs": -4.0
+        },
+        "middle_DATF_correlation": {
+          "numerator": "1",
+          "denominator": "4",
+          "log2_abs": -2.0
+        },
+        "score": {
+          "numerator": "1",
+          "denominator": "256",
+          "log2_abs": -8.0
+        },
+        "score_weight": 8,
+        "middle_second_constant": "5a",
+        "middle_constant_phase_mask": "0",
+        "interpretation": "individual trail-pair splice score; not full endpoint correlation or a signed hull sum"
+      },
+      "middle_job": {
+        "id": "G4a_middle",
+        "algorithm": "Gaston",
+        "rounds": 2,
+        "start_round_index": 9,
+        "delta_core": [
+          "000200000300000a",
+          "0800020000030000",
+          "0180000400010000",
+          "00020000800000c0",
+          "0000400010000018"
+        ],
+        "lambda_core": [
+          "0000000000000000",
+          "0000000000001000",
+          "0000000000000000",
+          "0000200000000000",
+          "0000000000000000"
+        ]
+      },
+      "construction_and_16_dag_checks_seconds": 0.023642139000003226,
+      "middle_bit_weights": {
+        "input": 21,
+        "output": 2
+      },
+      "p": {
+        "numerator": "1",
+        "denominator": "4",
+        "log2_abs": -2.0
+      },
+      "q_squared": {
+        "numerator": "1",
+        "denominator": "16",
+        "log2_abs": -4.0
+      },
+      "sampling": {
+        "samples": 67108864,
+        "seed": "2026101609",
+        "n0": 33688934,
+        "n1": 33419930,
+        "rho": 0.004008471965789795,
+        "log2_abs": -7.962731900226425,
+        "ci95": [
+          0.0037692202492534696,
+          0.004247723223418662
+        ]
+      },
+      "previous_full_algorithm3": {
+        "status": "resource_limit",
+        "correlation": null,
+        "source": "/home/yxb/分析/差分线性/DATF算法3复核_20261021/representatives_extended/03.json",
+        "reason": "ResourceLimit: polynomial terms 5373268 exceed 5000000",
+        "elapsed_seconds": 11.294835620908998,
+        "statistics": {
+          "initial_terms": 10,
+          "initial_variables": 10,
+          "peak_polynomial_terms": 5373268,
+          "beta_definitions_expanded": 142,
+          "product_pairs": 10222458
+        },
+        "attempts": [
+          {
+            "file": "/home/yxb/分析/差分线性/DATF算法3复核_20261021/representatives/03.json",
+            "status": "resource_limit",
+            "reason": "ResourceLimit: polynomial terms 1000130 exceed 1000000",
+            "elapsed_seconds": 0.6889222619356588
+          },
+          {
+            "file": "/home/yxb/分析/差分线性/DATF算法3复核_20261021/representatives_extended/03.json",
+            "status": "resource_limit",
+            "reason": "ResourceLimit: polynomial terms 5373268 exceed 5000000",
+            "elapsed_seconds": 11.294835620908998
+          },
+          {
+            "file": "/home/yxb/分析/差分线性/DATF算法3复核_20261021/shannon/03.json",
+            "status": "resource_limit",
+            "reason": "ResourceLimit: wall time exceeds 119.97326676792 seconds",
+            "elapsed_seconds": 120.44703957100864
+          }
+        ]
+      },
+      "dag_file": "/home/yxb/分析/差分线性/gaston_dl/results/g4_middle_algorithm5_20261027/raw/G4a_dag.json",
+      "algorithm3": {
+        "job": {
+          "id": "G4a_middle",
+          "algorithm": "Gaston",
+          "rounds": 2,
+          "start_round_index": 9,
+          "delta_core": [
+            "000200000300000a",
+            "0800020000030000",
+            "0180000400010000",
+            "00020000800000c0",
+            "0000400010000018"
+          ],
+          "lambda_core": [
+            "0000000000000000",
+            "0000000000001000",
+            "0000000000000000",
+            "0000200000000000",
+            "0000000000000000"
+          ]
+        },
+        "method": "JOC DATF algorithm3",
+        "status": "completed",
+        "correlation": {
+          "numerator": "1",
+          "denominator": "4",
+          "log2_abs": -2.0
+        },
+        "bias": {
+          "numerator": "1",
+          "denominator": "8",
+          "log2_abs": -3.0
+        },
+        "splice_single_trail": {
+          "numerator": "1",
+          "denominator": "256",
+          "log2_abs": -8.0
+        },
+        "zero_certificate": null,
+        "expansion_checks": 32,
+        "elapsed_seconds": 0.002627521003887523,
+        "statistics": {
+          "initial_terms": 6,
+          "initial_variables": 5,
+          "peak_polynomial_terms": 21,
+          "beta_definitions_expanded": 2,
+          "product_pairs": 22,
+          "expanded_terms": 21,
+          "expanded_variables": 9,
+          "expanded_degree": 2,
+          "remaining_beta_variables": 0,
+          "expanded_input_variables": 6,
+          "expanded_alpha_variables": 3,
+          "max_component_variables": 9,
+          "bias_nodes": 1,
+          "quadratic_calls": 1
+        },
+        "phase": "completed"
+      },
+      "algorithm5": {
+        "job": {
+          "id": "G4a_middle",
+          "algorithm": "Gaston",
+          "rounds": 2,
+          "start_round_index": 9,
+          "delta_core": [
+            "000200000300000a",
+            "0800020000030000",
+            "0180000400010000",
+            "00020000800000c0",
+            "0000400010000018"
+          ],
+          "lambda_core": [
+            "0000000000000000",
+            "0000000000001000",
+            "0000000000000000",
+            "0000200000000000",
+            "0000000000000000"
+          ]
+        },
+        "method": "JOC DATF algorithm5",
+        "status": "completed",
+        "correlation": {
+          "numerator": "1",
+          "denominator": "4",
+          "log2_abs": -2.0
+        },
+        "bias": {
+          "numerator": "1",
+          "denominator": "8",
+          "log2_abs": -3.0
+        },
+        "splice_single_trail": {
+          "numerator": "1",
+          "denominator": "256",
+          "log2_abs": -8.0
+        },
+        "elapsed_seconds": 0.01176037899858784,
+        "statistics": {
+          "peak_polynomial_terms": 61,
+          "distributions_input": 320,
+          "nonuniform_input": 0,
+          "weighted_nodes": 394,
+          "distributions_alpha": 320,
+          "nonuniform_alpha": 0,
+          "distributions_beta": 73,
+          "nonuniform_beta": 0,
+          "uniform_backend_calls": 1,
+          "uniform_backend": {
+            "peak_polynomial_terms": 6,
+            "bias_nodes": 1,
+            "quadratic_calls": 1
+          }
+        },
+        "phase": "completed"
+      },
+      "independent_middle_crosscheck": {
+        "method": "HNW zero model, affine/quadratic evaluation",
+        "correlation": {
+          "numerator": "1",
+          "denominator": "4",
+          "log2_abs": -2.0
+        }
+      },
+      "fixed_linear_trail_all_first_DDT_branches": {
+        "branches": [
+          {
+            "first_output_pattern": 1,
+            "probability": {
+              "numerator": "1",
+              "denominator": "4",
+              "log2_abs": -2.0
+            },
+            "middle_crosscheck": {
+              "numerator": "1",
+              "denominator": "4",
+              "log2_abs": -2.0
+            }
+          },
+          {
+            "first_output_pattern": 9,
+            "probability": {
+              "numerator": "1",
+              "denominator": "4",
+              "log2_abs": -2.0
+            },
+            "middle_crosscheck": {
+              "numerator": "0",
+              "denominator": "1",
+              "log2_abs": null
+            }
+          },
+          {
+            "first_output_pattern": 17,
+            "probability": {
+              "numerator": "1",
+              "denominator": "4",
+              "log2_abs": -2.0
+            },
+            "middle_crosscheck": {
+              "numerator": "0",
+              "denominator": "1",
+              "log2_abs": null
+            }
+          },
+          {
+            "first_output_pattern": 25,
+            "probability": {
+              "numerator": "1",
+              "denominator": "4",
+              "log2_abs": -2.0
+            },
+            "middle_crosscheck": {
+              "numerator": "0",
+              "denominator": "1",
+              "log2_abs": null
+            }
+          }
+        ],
+        "splice_sum": {
+          "numerator": "1",
+          "denominator": "256",
+          "log2_abs": -8.0
+        },
+        "note": "Independent local/HNW middle evaluation; this is not a sum over other linear trails."
+      }
+    },
+    {
+      "code": "G4b",
+      "split": [
+        1,
+        1,
+        2
+      ],
+      "candidate": {
+        "differential_id": "D1_00016",
+        "linear_id": "L2_2to2_00256",
+        "differential_rotation": 35,
+        "r_d": 1,
+        "r_m": 1,
+        "r_l": 2,
+        "R": 4,
+        "start_round_index": 8,
+        "input_difference": [
+          "0000000800000000",
+          "0000000000000000",
+          "0000000000000000",
+          "0000000000000000",
+          "0000000000000000"
+        ],
+        "output_mask": [
+          "0000000000000000",
+          "0010000000000000",
+          "0000000000000000",
+          "0000040000000000",
+          "0000000000000000"
+        ],
+        "differential_output": [
+          "0000000800000000",
+          "0000000000000000",
+          "0000000000000000",
+          "0000000000000000",
+          "0000000000000000"
+        ],
+        "middle_input_difference": [
+          "0c00002800080000",
+          "000c000020000800",
+          "0004000006000010",
+          "0000030000080002",
+          "4000006000010000"
+        ],
+        "middle_output_mask": [
+          "0001000019000048",
+          "0030400180201009",
+          "000000800c240061",
+          "0008000005600123",
+          "0000700013800080"
+        ],
+        "differential_probability": {
+          "numerator": "1",
+          "denominator": "4",
+          "log2_abs": -2.0
+        },
+        "linear_squared_correlation": {
+          "numerator": "1",
+          "denominator": "256",
+          "log2_abs": -8.0
+        },
+        "middle_DATF_correlation": {
+          "numerator": "1",
+          "denominator": "1",
+          "log2_abs": 0.0
+        },
+        "score": {
+          "numerator": "1",
+          "denominator": "1024",
+          "log2_abs": -10.0
+        },
+        "score_weight": 10,
+        "middle_second_constant": null
+      },
+      "middle_job": {
+        "id": "G4b_middle",
+        "algorithm": "Gaston",
+        "rounds": 1,
+        "start_round_index": 9,
+        "delta_core": [
+          "0c00002800080000",
+          "000c000020000800",
+          "0004000006000010",
+          "0000030000080002",
+          "4000006000010000"
+        ],
+        "lambda_core": [
+          "0001000019000048",
+          "0030400180201009",
+          "000000800c240061",
+          "0008000005600123",
+          "0000700013800080"
+        ]
+      },
+      "construction_and_16_dag_checks_seconds": 0.003224519001378212,
+      "middle_bit_weights": {
+        "input": 21,
+        "output": 40
+      },
+      "p": {
+        "numerator": "1",
+        "denominator": "4",
+        "log2_abs": -2.0
+      },
+      "q_squared": {
+        "numerator": "1",
+        "denominator": "256",
+        "log2_abs": -8.0
+      },
+      "sampling": {
+        "samples": 67108864,
+        "seed": "202610162201",
+        "n0": 33689022,
+        "n1": 33419842,
+        "rho": 0.004011094570159912,
+        "log2_abs": -7.961788303477921,
+        "ci95": [
+          0.00377184285598949,
+          0.004250345825122628
+        ]
+      },
+      "previous_full_algorithm3": {
+        "status": "resource_limit",
+        "correlation": null,
+        "source": "/home/yxb/分析/差分线性/DATF算法3复核_20261021/representatives_extended/05.json",
+        "reason": "ResourceLimit: wall time exceeds 180 seconds",
+        "elapsed_seconds": 181.35613528697286,
+        "statistics": {
+          "initial_terms": 10,
+          "initial_variables": 10,
+          "peak_polynomial_terms": 4985599,
+          "beta_definitions_expanded": 133,
+          "product_pairs": 9242858,
+          "expanded_terms": 4985599,
+          "expanded_variables": 257,
+          "expanded_degree": 6,
+          "remaining_beta_variables": 0,
+          "expanded_input_variables": 2,
+          "expanded_alpha_variables": 255,
+          "max_component_variables": 257,
+          "bias_nodes": 26,
+          "affine_pair_eliminations": 3
+        },
+        "attempts": [
+          {
+            "file": "/home/yxb/分析/差分线性/DATF算法3复核_20261021/representatives/05.json",
+            "status": "resource_limit",
+            "reason": "ResourceLimit: polynomial terms 1000815 exceed 1000000",
+            "elapsed_seconds": 0.7403725070180371
+          },
+          {
+            "file": "/home/yxb/分析/差分线性/DATF算法3复核_20261021/representatives_extended/05.json",
+            "status": "resource_limit",
+            "reason": "ResourceLimit: wall time exceeds 180 seconds",
+            "elapsed_seconds": 181.35613528697286
+          }
+        ]
+      },
+      "dag_file": "/home/yxb/分析/差分线性/gaston_dl/results/g4_middle_algorithm5_20261027/raw/G4b_dag.json",
+      "algorithm3": {
+        "job": {
+          "id": "G4b_middle",
+          "algorithm": "Gaston",
+          "rounds": 1,
+          "start_round_index": 9,
+          "delta_core": [
+            "0c00002800080000",
+            "000c000020000800",
+            "0004000006000010",
+            "0000030000080002",
+            "4000006000010000"
+          ],
+          "lambda_core": [
+            "0001000019000048",
+            "0030400180201009",
+            "000000800c240061",
+            "0008000005600123",
+            "0000700013800080"
+          ]
+        },
+        "method": "JOC DATF algorithm3",
+        "status": "completed",
+        "correlation": {
+          "numerator": "1",
+          "denominator": "1",
+          "log2_abs": 0.0
+        },
+        "bias": {
+          "numerator": "1",
+          "denominator": "2",
+          "log2_abs": -1.0
+        },
+        "splice_single_trail": {
+          "numerator": "1",
+          "denominator": "1024",
+          "log2_abs": -10.0
+        },
+        "zero_certificate": null,
+        "expansion_checks": 32,
+        "elapsed_seconds": 0.0007743409951217473,
+        "statistics": {
+          "initial_terms": 0,
+          "initial_variables": 0,
+          "peak_polynomial_terms": 0,
+          "expanded_terms": 0,
+          "expanded_variables": 0,
+          "expanded_degree": 0,
+          "remaining_beta_variables": 0,
+          "expanded_input_variables": 0,
+          "expanded_alpha_variables": 0,
+          "max_component_variables": 0,
+          "bias_nodes": 1
+        },
+        "phase": "completed"
+      },
+      "algorithm5": {
+        "job": {
+          "id": "G4b_middle",
+          "algorithm": "Gaston",
+          "rounds": 1,
+          "start_round_index": 9,
+          "delta_core": [
+            "0c00002800080000",
+            "000c000020000800",
+            "0004000006000010",
+            "0000030000080002",
+            "4000006000010000"
+          ],
+          "lambda_core": [
+            "0001000019000048",
+            "0030400180201009",
+            "000000800c240061",
+            "0008000005600123",
+            "0000700013800080"
+          ]
+        },
+        "method": "JOC DATF algorithm5",
+        "status": "completed",
+        "correlation": {
+          "numerator": "1",
+          "denominator": "1",
+          "log2_abs": 0.0
+        },
+        "bias": {
+          "numerator": "1",
+          "denominator": "2",
+          "log2_abs": -1.0
+        },
+        "splice_single_trail": {
+          "numerator": "1",
+          "denominator": "1024",
+          "log2_abs": -10.0
+        },
+        "elapsed_seconds": 0.0003558709940989502,
+        "statistics": {
+          "peak_polynomial_terms": 0,
+          "distributions_input": 320,
+          "nonuniform_input": 0,
+          "uniform_backend": {}
+        },
+        "phase": "completed"
+      },
+      "independent_middle_crosscheck": {
+        "method": "exact one-chi DLCT",
+        "correlation": {
+          "numerator": "1",
+          "denominator": "1",
+          "log2_abs": 0.0
+        }
+      },
+      "fixed_linear_trail_all_first_DDT_branches": {
+        "branches": [
+          {
+            "first_output_pattern": 1,
+            "probability": {
+              "numerator": "1",
+              "denominator": "4",
+              "log2_abs": -2.0
+            },
+            "middle_crosscheck": {
+              "numerator": "1",
+              "denominator": "1",
+              "log2_abs": 0.0
+            }
+          },
+          {
+            "first_output_pattern": 9,
+            "probability": {
+              "numerator": "1",
+              "denominator": "4",
+              "log2_abs": -2.0
+            },
+            "middle_crosscheck": {
+              "numerator": "0",
+              "denominator": "1",
+              "log2_abs": null
+            }
+          },
+          {
+            "first_output_pattern": 17,
+            "probability": {
+              "numerator": "1",
+              "denominator": "4",
+              "log2_abs": -2.0
+            },
+            "middle_crosscheck": {
+              "numerator": "0",
+              "denominator": "1",
+              "log2_abs": null
+            }
+          },
+          {
+            "first_output_pattern": 25,
+            "probability": {
+              "numerator": "1",
+              "denominator": "4",
+              "log2_abs": -2.0
+            },
+            "middle_crosscheck": {
+              "numerator": "0",
+              "denominator": "1",
+              "log2_abs": null
+            }
+          }
+        ],
+        "splice_sum": {
+          "numerator": "1",
+          "denominator": "1024",
+          "log2_abs": -10.0
+        },
+        "note": "Independent local/HNW middle evaluation; this is not a sum over other linear trails."
+      }
+    }
+  ]
+}

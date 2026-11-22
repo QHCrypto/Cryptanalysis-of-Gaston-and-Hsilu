@@ -1,0 +1,239 @@
+{
+  "word_bits": 4,
+  "prefix_rounds": 1,
+  "quartics": 38,
+  "excluded": 18,
+  "retained": 20,
+  "nonzero_coefficients": 3,
+  "false_exclusions": 0,
+  "details": [
+    {
+      "id": 0,
+      "classification": "excluded",
+      "nonzero": false,
+      "coefficient_truth_table_hex": "0x0"
+    },
+    {
+      "id": 1,
+      "classification": "excluded",
+      "nonzero": false,
+      "coefficient_truth_table_hex": "0x0"
+    },
+    {
+      "id": 2,
+      "classification": "excluded",
+      "nonzero": false,
+      "coefficient_truth_table_hex": "0x0"
+    },
+    {
+      "id": 3,
+      "classification": "retained",
+      "nonzero": false,
+      "coefficient_truth_table_hex": "0x0"
+    },
+    {
+      "id": 4,
+      "classification": "retained",
+      "nonzero": false,
+      "coefficient_truth_table_hex": "0x0"
+    },
+    {
+      "id": 5,
+      "classification": "excluded",
+      "nonzero": false,
+      "coefficient_truth_table_hex": "0x0"
+    },
+    {
+      "id": 6,
+      "classification": "excluded",
+      "nonzero": false,
+      "coefficient_truth_table_hex": "0x0"
+    },
+    {
+      "id": 7,
+      "classification": "retained",
+      "nonzero": false,
+      "coefficient_truth_table_hex": "0x0"
+    },
+    {
+      "id": 8,
+      "classification": "retained",
+      "nonzero": false,
+      "coefficient_truth_table_hex": "0x0"
+    },
+    {
+      "id": 9,
+      "classification": "excluded",
+      "nonzero": false,
+      "coefficient_truth_table_hex": "0x0"
+    },
+    {
+      "id": 10,
+      "classification": "excluded",
+      "nonzero": false,
+      "coefficient_truth_table_hex": "0x0"
+    },
+    {
+      "id": 11,
+      "classification": "retained",
+      "nonzero": false,
+      "coefficient_truth_table_hex": "0x0"
+    },
+    {
+      "id": 12,
+      "classification": "excluded",
+      "nonzero": false,
+      "coefficient_truth_table_hex": "0x0"
+    },
+    {
+      "id": 13,
+      "classification": "excluded",
+      "nonzero": false,
+      "coefficient_truth_table_hex": "0x0"
+    },
+    {
+      "id": 14,
+      "classification": "retained",
+      "nonzero": false,
+      "coefficient_truth_table_hex": "0x0"
+    },
+    {
+      "id": 15,
+      "classification": "retained",
+      "nonzero": false,
+      "coefficient_truth_table_hex": "0x0"
+    },
+    {
+      "id": 16,
+      "classification": "excluded",
+      "nonzero": false,
+      "coefficient_truth_table_hex": "0x0"
+    },
+    {
+      "id": 17,
+      "classification": "excluded",
+      "nonzero": false,
+      "coefficient_truth_table_hex": "0x0"
+    },
+    {
+      "id": 18,
+      "classification": "excluded",
+      "nonzero": false,
+      "coefficient_truth_table_hex": "0x0"
+    },
+    {
+      "id": 19,
+      "classification": "retained",
+      "nonzero": false,
+      "coefficient_truth_table_hex": "0x0"
+    },
+    {
+      "id": 20,
+      "classification": "retained",
+      "nonzero": false,
+      "coefficient_truth_table_hex": "0x0"
+    },
+    {
+      "id": 21,
+      "classification": "excluded",
+      "nonzero": false,
+      "coefficient_truth_table_hex": "0x0"
+    },
+    {
+      "id": 22,
+      "classification": "retained",
+      "nonzero": false,
+      "coefficient_truth_table_hex": "0x0"
+    },
+    {
+      "id": 23,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0xf0f"
+    },
+    {
+      "id": 24,
+      "classification": "excluded",
+      "nonzero": false,
+      "coefficient_truth_table_hex": "0x0"
+    },
+    {
+      "id": 25,
+      "classification": "excluded",
+      "nonzero": false,
+      "coefficient_truth_table_hex": "0x0"
+    },
+    {
+      "id": 26,
+      "classification": "retained",
+      "nonzero": false,
+      "coefficient_truth_table_hex": "0x0"
+    },
+    {
+      "id": 27,
+      "classification": "retained",
+      "nonzero": false,
+      "coefficient_truth_table_hex": "0x0"
+    },
+    {
+      "id": 28,
+      "classification": "retained",
+      "nonzero": false,
+      "coefficient_truth_table_hex": "0x0"
+    },
+    {
+      "id": 29,
+      "classification": "retained",
+      "nonzero": false,
+      "coefficient_truth_table_hex": "0x0"
+    },
+    {
+      "id": 30,
+      "classification": "retained",
+      "nonzero": false,
+      "coefficient_truth_table_hex": "0x0"
+    },
+    {
+      "id": 31,
+      "classification": "excluded",
+      "nonzero": false,
+      "coefficient_truth_table_hex": "0x0"
+    },
+    {
+      "id": 32,
+      "classification": "excluded",
+      "nonzero": false,
+      "coefficient_truth_table_hex": "0x0"
+    },
+    {
+      "id": 33,
+      "classification": "retained",
+      "nonzero": false,
+      "coefficient_truth_table_hex": "0x0"
+    },
+    {
+      "id": 34,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x505"
+    },
+    {
+      "id": 35,
+      "classification": "excluded",
+      "nonzero": false,
+      "coefficient_truth_table_hex": "0x0"
+    },
+    {
+      "id": 36,
+      "classification": "retained",
+      "nonzero": false,
+      "coefficient_truth_table_hex": "0x0"
+    },
+    {
+      "id": 37,
+      "classification": "retained",
+      "nonzero": true,
+      "coefficient_truth_table_hex": "0x505"
+    }
+  ]
+}

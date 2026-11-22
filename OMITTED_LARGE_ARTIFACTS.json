@@ -1,0 +1,1095 @@
+{
+  "reason": "User requested a lightweight code package without full proof certificates. Original research files are retained.",
+  "removed_from_package": [
+    {
+      "path": "research/gaston_active_pattern/ordinary_branch_proof/effects_bound15",
+      "bytes": 2592498502
+    },
+    {
+      "path": "research/gaston_active_pattern/ordinary_branch_proof/pruned_matchings.bin",
+      "bytes": 47194128
+    },
+    {
+      "path": "research/gaston_active_pattern/ordinary_branch_proof/extension_matchings.bin",
+      "bytes": 238040
+    },
+    {
+      "path": "research/gaston_active_pattern/ordinary_branch_proof/SHA256SUMS",
+      "bytes": 933998
+    }
+  ],
+  "regenerable_intermediates_omitted": [
+    {
+      "path": "research/差分线性/DATF算法3复核_20261021/batch/082.anf.json",
+      "bytes": 35521
+    },
+    {
+      "path": "research/差分线性/DATF算法3复核_20261021/batch/068.anf.json",
+      "bytes": 35566
+    },
+    {
+      "path": "research/差分线性/DATF算法3复核_20261021/batch/074.anf.json",
+      "bytes": 35566
+    },
+    {
+      "path": "research/差分线性/DATF算法3复核_20261021/batch/080.anf.json",
+      "bytes": 35521
+    },
+    {
+      "path": "research/差分线性/DATF算法3复核_20261021/batch/070.anf.json",
+      "bytes": 35521
+    },
+    {
+      "path": "research/差分线性/DATF算法3复核_20261021/batch/085.anf.json",
+      "bytes": 83523
+    },
+    {
+      "path": "research/差分线性/DATF算法3复核_20261021/batch/263.anf.json",
+      "bytes": 60202
+    },
+    {
+      "path": "research/差分线性/DATF算法3复核_20261021/batch/076.anf.json",
+      "bytes": 35521
+    },
+    {
+      "path": "research/差分线性/DATF算法3复核_20261021/batch/264.anf.json",
+      "bytes": 60202
+    },
+    {
+      "path": "research/差分线性/DATF算法3复核_20261021/batch/014.anf.json",
+      "bytes": 4357764
+    },
+    {
+      "path": "research/差分线性/DATF算法3复核_20261021/batch/013.anf.json",
+      "bytes": 4357764
+    },
+    {
+      "path": "research/差分线性/DATF算法3复核_20261021/batch/087.anf.json",
+      "bytes": 83523
+    },
+    {
+      "path": "research/差分线性/DATF算法3复核_20261021/batch/072.anf.json",
+      "bytes": 35223
+    },
+    {
+      "path": "research/差分线性/DATF算法3复核_20261021/batch/078.anf.json",
+      "bytes": 35521
+    },
+    {
+      "path": "research/差分线性/DATF算法3复核_20261021/representatives_extended/07.anf.json",
+      "bytes": 60170
+    },
+    {
+      "path": "research/差分线性/DATF算法3复核_20261021/representatives_extended/02.anf.json",
+      "bytes": 131371
+    },
+    {
+      "path": "research/差分线性/DATF算法3复核_20261021/representatives_extended/01.anf.json",
+      "bytes": 82419
+    },
+    {
+      "path": "research/差分线性/DATF算法3复核_20261021/representatives_extended/00.anf.json",
+      "bytes": 35190
+    },
+    {
+      "path": "research/差分线性/DATF算法3复核_20261021/representatives/07.anf.json",
+      "bytes": 60170
+    },
+    {
+      "path": "research/差分线性/DATF算法3复核_20261021/representatives/02.anf.json",
+      "bytes": 131371
+    },
+    {
+      "path": "research/差分线性/DATF算法3复核_20261021/representatives/01.anf.json",
+      "bytes": 82419
+    },
+    {
+      "path": "research/差分线性/DATF算法3复核_20261021/representatives/00.anf.json",
+      "bytes": 35190
+    },
+    {
+      "path": "research/差分线性/路径分段汇总_20261027/raw/H5_prefix3_DATF.anf.json",
+      "bytes": 274175
+    },
+    {
+      "path": "research/差分线性/路径分段汇总_20261027/raw/G4c_b0_DATF.anf.json",
+      "bytes": 17619
+    },
+    {
+      "path": "research/差分线性/路径分段汇总_20261027/raw/G4c_b1_DATF.anf.json",
+      "bytes": 17619
+    },
+    {
+      "path": "research/差分线性/路径分段汇总_20261027/raw/H5_prefix3_DATF_shannon.anf.json",
+      "bytes": 74925
+    },
+    {
+      "path": "research/差分线性/路径分段汇总_20261027/raw/G4d_b0_DATF.anf.json",
+      "bytes": 17624
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_123_prefix2.anf.json",
+      "bytes": 38217
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_022_prefix2.anf.json",
+      "bytes": 40049
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_119_prefix2.anf.json",
+      "bytes": 39270
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_099_prefix2.anf.json",
+      "bytes": 38284
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_023_prefix2.anf.json",
+      "bytes": 37393
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_010_prefix2.anf.json",
+      "bytes": 38031
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_063_prefix2.anf.json",
+      "bytes": 38412
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_080_prefix2.anf.json",
+      "bytes": 38668
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_059_prefix2.anf.json",
+      "bytes": 38928
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_060_prefix2.anf.json",
+      "bytes": 38939
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R2_p1_c1_m1.anf.json",
+      "bytes": 35169
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_031_prefix2.anf.json",
+      "bytes": 39048
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_039_prefix2.anf.json",
+      "bytes": 40969
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_021_prefix2.anf.json",
+      "bytes": 39038
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R5_pool_000024_prefix3.anf.json",
+      "bytes": 559099
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_019_prefix2.anf.json",
+      "bytes": 37679
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_067_prefix2.anf.json",
+      "bytes": 39304
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R5_pool_000008_prefix3.anf.json",
+      "bytes": 659523
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_040_prefix2.anf.json",
+      "bytes": 40422
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R5_pool_000028_prefix3.anf.json",
+      "bytes": 582388
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_075_prefix2.anf.json",
+      "bytes": 38829
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_047_prefix2.anf.json",
+      "bytes": 36486
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_084_prefix2.anf.json",
+      "bytes": 36709
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_006_prefix2.anf.json",
+      "bytes": 38648
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R2_p1_c1_m2.anf.json",
+      "bytes": 35169
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_050_prefix2.anf.json",
+      "bytes": 36482
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_083_prefix2.anf.json",
+      "bytes": 36624
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_041_prefix2.anf.json",
+      "bytes": 37344
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_044_prefix2.anf.json",
+      "bytes": 38304
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_051_prefix2.anf.json",
+      "bytes": 37912
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_016_prefix2.anf.json",
+      "bytes": 39749
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_069_prefix2.anf.json",
+      "bytes": 38403
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/optimized_c58_a8_prefix2.anf.json",
+      "bytes": 36492
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_055_prefix2.anf.json",
+      "bytes": 36410
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_033_prefix2.anf.json",
+      "bytes": 38462
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_081_prefix2.anf.json",
+      "bytes": 39155
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_049_prefix2.anf.json",
+      "bytes": 38080
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_036_prefix2.anf.json",
+      "bytes": 36641
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_114_prefix2.anf.json",
+      "bytes": 37822
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_103_prefix2.anf.json",
+      "bytes": 37225
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_027_prefix2.anf.json",
+      "bytes": 40224
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_074_prefix2.anf.json",
+      "bytes": 38248
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R3_p8_c36_m1.anf.json",
+      "bytes": 60757
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_086_prefix2.anf.json",
+      "bytes": 37342
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_118_prefix2.anf.json",
+      "bytes": 38929
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R2_p1_c1_m4.anf.json",
+      "bytes": 35169
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_000_prefix2.anf.json",
+      "bytes": 38746
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_095_prefix2.anf.json",
+      "bytes": 38688
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_064_prefix2.anf.json",
+      "bytes": 36484
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_065_prefix2.anf.json",
+      "bytes": 38978
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_070_prefix2.anf.json",
+      "bytes": 39317
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_066_prefix2.anf.json",
+      "bytes": 36423
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R3_p8_c16_m24.anf.json",
+      "bytes": 60717
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_108_prefix2.anf.json",
+      "bytes": 39041
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_032_prefix2.anf.json",
+      "bytes": 37408
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_061_prefix2.anf.json",
+      "bytes": 38168
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_106_prefix2.anf.json",
+      "bytes": 36630
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_035_prefix2.anf.json",
+      "bytes": 36796
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R3_p8_c53_m1.anf.json",
+      "bytes": 60793
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/optimized_c18_a2_prefix2.anf.json",
+      "bytes": 38627
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_097_prefix2.anf.json",
+      "bytes": 37481
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_071_prefix2.anf.json",
+      "bytes": 38847
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_092_prefix2.anf.json",
+      "bytes": 36729
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_096_prefix2.anf.json",
+      "bytes": 39049
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_029_prefix2.anf.json",
+      "bytes": 38848
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_102_prefix2.anf.json",
+      "bytes": 37407
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_090_prefix2.anf.json",
+      "bytes": 38333
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_093_prefix2.anf.json",
+      "bytes": 38332
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_011_prefix2.anf.json",
+      "bytes": 38764
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_037_prefix2.anf.json",
+      "bytes": 37630
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R4_pool_000884_prefix2.anf.json",
+      "bytes": 35392
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_026_prefix2.anf.json",
+      "bytes": 37068
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_109_prefix2.anf.json",
+      "bytes": 38503
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_001_prefix2.anf.json",
+      "bytes": 38856
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_002_prefix2.anf.json",
+      "bytes": 39143
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_100_prefix2.anf.json",
+      "bytes": 40069
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_105_prefix2.anf.json",
+      "bytes": 39623
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_077_prefix2.anf.json",
+      "bytes": 36883
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_048_prefix2.anf.json",
+      "bytes": 38408
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_117_prefix2.anf.json",
+      "bytes": 38107
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_079_prefix2.anf.json",
+      "bytes": 36310
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_008_prefix2.anf.json",
+      "bytes": 39739
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_001_middle1.anf.json",
+      "bytes": 17624
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_009_prefix2.anf.json",
+      "bytes": 39004
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_053_prefix2.anf.json",
+      "bytes": 36339
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_025_prefix2.anf.json",
+      "bytes": 38041
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_056_prefix2.anf.json",
+      "bytes": 38947
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R4_pool_000006_prefix2.anf.json",
+      "bytes": 35533
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R4_pool_000000_prefix2.anf.json",
+      "bytes": 35169
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_126_prefix2.anf.json",
+      "bytes": 39328
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R5_pool_000004_prefix3.anf.json",
+      "bytes": 630482
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_052_prefix2.anf.json",
+      "bytes": 38433
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R2_p1_c1_m3.anf.json",
+      "bytes": 35169
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_002_middle1.anf.json",
+      "bytes": 17619
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_116_prefix2.anf.json",
+      "bytes": 38096
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/optimized_c31_a8_prefix2.anf.json",
+      "bytes": 36253
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_115_prefix2.anf.json",
+      "bytes": 38179
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_030_prefix2.anf.json",
+      "bytes": 39378
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_028_prefix2.anf.json",
+      "bytes": 38691
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R5_pool_000000_prefix3.anf.json",
+      "bytes": 274175
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_110_prefix2.anf.json",
+      "bytes": 39488
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R4_pool_000784_prefix2.anf.json",
+      "bytes": 35474
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_091_prefix2.anf.json",
+      "bytes": 38692
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_058_prefix2.anf.json",
+      "bytes": 36946
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_113_prefix2.anf.json",
+      "bytes": 38657
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R5_pool_000016_prefix3.anf.json",
+      "bytes": 689631
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_111_prefix2.anf.json",
+      "bytes": 36925
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_042_prefix2.anf.json",
+      "bytes": 38793
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_098_prefix2.anf.json",
+      "bytes": 38419
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R5_pool_000020_prefix3.anf.json",
+      "bytes": 562907
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_038_prefix2.anf.json",
+      "bytes": 37329
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_088_prefix2.anf.json",
+      "bytes": 38291
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_104_prefix2.anf.json",
+      "bytes": 39537
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_112_prefix2.anf.json",
+      "bytes": 38744
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_124_prefix2.anf.json",
+      "bytes": 37382
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_017_prefix2.anf.json",
+      "bytes": 36939
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_024_prefix2.anf.json",
+      "bytes": 37215
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_003_prefix2.anf.json",
+      "bytes": 38101
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_127_prefix2.anf.json",
+      "bytes": 36864
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_004_prefix2.anf.json",
+      "bytes": 39371
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_007_prefix2.anf.json",
+      "bytes": 39630
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/optimized_c38_a4_prefix2.anf.json",
+      "bytes": 37878
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_094_prefix2.anf.json",
+      "bytes": 38562
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_015_prefix2.anf.json",
+      "bytes": 37256
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_120_prefix2.anf.json",
+      "bytes": 38720
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_062_prefix2.anf.json",
+      "bytes": 39079
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_034_prefix2.anf.json",
+      "bytes": 38633
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_087_prefix2.anf.json",
+      "bytes": 38780
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R4_pool_000852_prefix2.anf.json",
+      "bytes": 35376
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_045_prefix2.anf.json",
+      "bytes": 38665
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_101_prefix2.anf.json",
+      "bytes": 39023
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_107_prefix2.anf.json",
+      "bytes": 39355
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_000_middle1.anf.json",
+      "bytes": 17624
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_013_prefix2.anf.json",
+      "bytes": 40429
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_089_prefix2.anf.json",
+      "bytes": 37592
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_068_prefix2.anf.json",
+      "bytes": 38308
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_125_prefix2.anf.json",
+      "bytes": 37882
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_012_prefix2.anf.json",
+      "bytes": 39276
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_076_prefix2.anf.json",
+      "bytes": 38040
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R4_pool_000818_prefix2.anf.json",
+      "bytes": 35494
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R3_p8_c29_m1.anf.json",
+      "bytes": 60202
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_057_prefix2.anf.json",
+      "bytes": 37897
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_018_prefix2.anf.json",
+      "bytes": 39471
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_085_prefix2.anf.json",
+      "bytes": 40074
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_014_prefix2.anf.json",
+      "bytes": 37961
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_043_prefix2.anf.json",
+      "bytes": 37703
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_078_prefix2.anf.json",
+      "bytes": 39821
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R4_pool_000020_prefix2.anf.json",
+      "bytes": 35604
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_005_prefix2.anf.json",
+      "bytes": 37581
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_122_prefix2.anf.json",
+      "bytes": 39763
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_082_prefix2.anf.json",
+      "bytes": 39387
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_020_prefix2.anf.json",
+      "bytes": 36926
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_054_prefix2.anf.json",
+      "bytes": 38353
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_046_prefix2.anf.json",
+      "bytes": 38915
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R5_pool_000012_prefix3.anf.json",
+      "bytes": 729194
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/R4_pool_000026_prefix2.anf.json",
+      "bytes": 35291
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_121_prefix2.anf.json",
+      "bytes": 37408
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_073_prefix2.anf.json",
+      "bytes": 36240
+    },
+    {
+      "path": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/raw/new5_072_prefix2.anf.json",
+      "bytes": 36957
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/3d812c75c2e1a5e5_datf.anf.json",
+      "bytes": 17619
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/bcc0ae5735c6b01b_datf.anf.json",
+      "bytes": 17619
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/31047d92410bf471_datf.anf.json",
+      "bytes": 17619
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/d8ba38c53e58273b_datf.anf.json",
+      "bytes": 17619
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/9a593a2d52352b4e_datf.anf.json",
+      "bytes": 17619
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/22f2ae051eaf8c46_datf.anf.json",
+      "bytes": 17619
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/a68ede752eb717c6_datf.anf.json",
+      "bytes": 17619
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/fda03bb180cbef7b_datf.anf.json",
+      "bytes": 17619
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/25c4b851d96c968a_datf.anf.json",
+      "bytes": 17619
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/84c23652cd5add04_datf.anf.json",
+      "bytes": 17624
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/33153afaa5d782ce_datf.anf.json",
+      "bytes": 17619
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/eb8a13b54236ad25_datf.anf.json",
+      "bytes": 17619
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/e3467bcec113a6ca_datf.anf.json",
+      "bytes": 17619
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/71cd9231b7556754_datf.anf.json",
+      "bytes": 57929
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/0539e77c3d68f17b_datf.anf.json",
+      "bytes": 17619
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/03dfdfabd5e833ae_datf.anf.json",
+      "bytes": 17619
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/6bfac11aecdf4a9c_datf.anf.json",
+      "bytes": 17619
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/bfd12a3f3b255dcc_datf.anf.json",
+      "bytes": 17619
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/8a588b98700736a2_datf.anf.json",
+      "bytes": 17619
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/9a7f97e9a9baf3ae_datf.anf.json",
+      "bytes": 17619
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/3f34f3c6387f551d_datf.anf.json",
+      "bytes": 17619
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/1060916dbef42bde_datf.anf.json",
+      "bytes": 17624
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/b98458bd62f44325_datf.anf.json",
+      "bytes": 17619
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/d67a28a55858b051_datf.anf.json",
+      "bytes": 17624
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/c84c657d49544e51_datf.anf.json",
+      "bytes": 17619
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/d7b1916004585091_datf.anf.json",
+      "bytes": 17624
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/87aae79afc603864_datf.anf.json",
+      "bytes": 17619
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/1af71fe0b0b39e67_datf.anf.json",
+      "bytes": 17619
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/232d36d8bbe004fb_datf.anf.json",
+      "bytes": 17619
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/399a372f52685d06_datf.anf.json",
+      "bytes": 57929
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/e5294b84631af8ca_datf.anf.json",
+      "bytes": 17619
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/4890053fd519df1a_datf.anf.json",
+      "bytes": 17619
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/33a46f993b15d161_datf.anf.json",
+      "bytes": 17619
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/20a967b06f1e9c6e_datf.anf.json",
+      "bytes": 17619
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/f7762ec70c68909a_datf.anf.json",
+      "bytes": 17619
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/74f920496eabac73_datf.anf.json",
+      "bytes": 17619
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/8dcf0d47b78e54d1_datf.anf.json",
+      "bytes": 17619
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/df0890d365864a8d_datf.anf.json",
+      "bytes": 17619
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/d896d382e4aed5eb_datf.anf.json",
+      "bytes": 17619
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/40cb367b04ab9671_datf.anf.json",
+      "bytes": 17619
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/58e1b97f62ace491_datf.anf.json",
+      "bytes": 57929
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/4e72a4b34d6c9d39_datf.anf.json",
+      "bytes": 17619
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/5dd0d3601fdb1fea_datf.anf.json",
+      "bytes": 17619
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/477ea5a105981910_datf.anf.json",
+      "bytes": 50463
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/df2ef5f09174d771_datf.anf.json",
+      "bytes": 57929
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/cad0c0743ed12502_datf.anf.json",
+      "bytes": 17619
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/79d1f345beff0a9d_datf.anf.json",
+      "bytes": 17619
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/55811300ac9e823f_datf.anf.json",
+      "bytes": 17619
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/4cfe801aeb4da654_datf.anf.json",
+      "bytes": 17619
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/6386ac5ff3e1a950_datf.anf.json",
+      "bytes": 17619
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/939a6eab74f9b427_datf.anf.json",
+      "bytes": 17619
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/c216411d4b67253d_datf.anf.json",
+      "bytes": 17619
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/94e94d1506ad0531_datf.anf.json",
+      "bytes": 17619
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/068ef2efacd272d4_datf.anf.json",
+      "bytes": 17619
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/e68ecd46f96f5711_datf.anf.json",
+      "bytes": 17619
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/e189becd2f86ab15_datf.anf.json",
+      "bytes": 17619
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/4b276b7ea28692cf_datf.anf.json",
+      "bytes": 17619
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/4b332d7f48d1234e_datf.anf.json",
+      "bytes": 17619
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/585e7d0b07028ce9_datf.anf.json",
+      "bytes": 17619
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/4f2579ab3420e088_datf.anf.json",
+      "bytes": 17619
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/d9840ae875014241_datf.anf.json",
+      "bytes": 17619
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/17bf9f75ba7706f1_datf.anf.json",
+      "bytes": 17619
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/ea1e5557d9b2d9bf_datf.anf.json",
+      "bytes": 17619
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/a023689b6e1c2dac_datf.anf.json",
+      "bytes": 17619
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/befac847ca11aeea_datf.anf.json",
+      "bytes": 17619
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/fa883ce2620bf232_datf.anf.json",
+      "bytes": 17619
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/71afb18e77412ccb_datf.anf.json",
+      "bytes": 17624
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/0140bbfa26ed0dbd_datf.anf.json",
+      "bytes": 17619
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/4fa0f0e12ab15dc4_datf.anf.json",
+      "bytes": 17619
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/ccb8ee36d796404a_datf.anf.json",
+      "bytes": 124388
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/1e61ae72a48883ca_datf.anf.json",
+      "bytes": 17619
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/f7ab1bb6c1e682b2_datf.anf.json",
+      "bytes": 57929
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/07317ae6d3e30095_datf.anf.json",
+      "bytes": 17619
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/c314404b4fec5b1f_datf.anf.json",
+      "bytes": 17624
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/dbbe95223ca97dd3_datf.anf.json",
+      "bytes": 17619
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/splice_long_20261027/raw/f3ab42bc6f9cd6d0_datf.anf.json",
+      "bytes": 17619
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/g4_middle_algorithm5_20261027/raw/G4b_dag.json",
+      "bytes": 42544
+    },
+    {
+      "path": "research/差分线性/gaston_dl/results/g4_middle_algorithm5_20261027/raw/G4a_dag.json",
+      "bytes": 877612
+    },
+    {
+      "path": "research/Gaston_Hsilu_CTP/paper_rewriting_output/dl_datf_algorithm5_20261111/H4a_dag.json",
+      "bytes": 556441
+    },
+    {
+      "path": "research/Gaston_Hsilu_CTP/paper_rewriting_output/dl_datf_algorithm5_20261111/G4a_dag.json",
+      "bytes": 1017765
+    },
+    {
+      "path": "research/Gaston_差分路径重量下界/results/runs",
+      "bytes": 110695
+    },
+    {
+      "path": "research/Gaston_差分路径重量下界/results/kernel_campaigns",
+      "bytes": 884438
+    }
+  ]
+}

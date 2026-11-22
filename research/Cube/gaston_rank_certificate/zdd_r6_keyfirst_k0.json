@@ -1,0 +1,16 @@
+{
+  "rounds": 6,
+  "word_bits": 64,
+  "key_word": 0,
+  "key_variable_order": "first",
+  "completed_rounds": 2,
+  "stage": "linear_3",
+  "nodes": 12000000,
+  "peak_nodes": 12000000,
+  "collections": 82,
+  "recursive_calls": 49945042,
+  "seconds": 43.042277371,
+  "coefficient_certificate": false,
+  "failure": "node_limit",
+  "low_coefficients": null
+}

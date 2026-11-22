@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "official_reference_basis_cases": 640,
+  "matrix_file": "/home/yxb/\u5206\u6790/Gaston_\u5dee\u5206\u8def\u5f84\u91cd\u91cf\u4e0b\u754c/results/support_reference_matrices_20261024.txt",
+  "matrix_sha256": "e65e1dbcd573ab0a95125fca087d1e6d4a24f53fb1d8c559d9ef1179f542785c",
+  "reference_sha256": "4a0ce39ce158f410111aef7a985c2a7f8b7752e669162ec78e20eaf56bd2f5dc",
+  "scope": "Left tests E(rho_west^-1(a1)); right tests E(rho_east(b1)); derived via the official full linear layer"
+}

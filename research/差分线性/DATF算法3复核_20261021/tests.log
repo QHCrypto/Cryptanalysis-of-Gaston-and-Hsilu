@@ -1,0 +1,9 @@
+test_beta_expansion_against_independent_dag_evaluation (test_algorithm3.TestAlgorithm3.test_beta_expansion_against_independent_dag_evaluation) ... ok
+test_budget_is_not_zero (test_algorithm3.TestAlgorithm3.test_budget_is_not_zero) ... ok
+test_shared_beta_and_unexpanded_alpha (test_algorithm3.TestAlgorithm3.test_shared_beta_and_unexpanded_alpha) ... ok
+test_uniform_bias_against_enumeration (test_algorithm3.TestAlgorithm3.test_uniform_bias_against_enumeration) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.302s
+
+OK

@@ -1,0 +1,4 @@
+KhronosGroup/OpenCL-Headers
+https://github.com/KhronosGroup/OpenCL-Headers
+Retrieved 2026-10-20; header subset cl.h, cl_platform.h, cl_version.h.
+Apache-2.0; see LICENSE. No modifications.

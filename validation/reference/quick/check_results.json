@@ -1,0 +1,57 @@
+{
+  "hsilu_trail": {
+    "weights": [
+      16.0,
+      14.0,
+      50.0
+    ],
+    "active_columns": [
+      8,
+      7,
+      22
+    ],
+    "linear_connections": "PASS"
+  },
+  "chi_input_weight_inequality": "checked every valid nonzero DDT transition",
+  "gaston_weight32_witness": "PASS",
+  "profile_triple_minima": {
+    "(1, 0)": 22,
+    "(0, 1)": 22,
+    "(1, 1)": 22
+  },
+  "both_kernel_below44_middle_counts": [
+    6,
+    7,
+    8,
+    9
+  ],
+  "middle9_below44_triples": [
+    [
+      6,
+      9,
+      6
+    ]
+  ],
+  "gaston_shared_forms": {
+    "rank": 47,
+    "second_derivative_checks": 1088
+  },
+  "hsilu2_local_structure": {
+    "conditioned_states": 12,
+    "second_derivative_checks": 2772,
+    "legal_prefix_density": "not verified"
+  },
+  "hsilu3_concrete_structure": {
+    "condition_rank": 32,
+    "guess_rank": 23,
+    "branches_sampled": 32,
+    "backgrounds_checked": 224,
+    "active_assignments_checked": 896
+  },
+  "arithmetic": {
+    "gaston_candidate_exponent": 118.05563748774034,
+    "hsilu2_candidate_exponent": 106,
+    "hsilu3_candidate_exponent": 126,
+    "hsilu_batch_exponent": 102.21520762481109
+  }
+}

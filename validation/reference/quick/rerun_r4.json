@@ -1,0 +1,19 @@
+{
+  "implementation": "original_gaston_c",
+  "word_bits": 64,
+  "rounds": 4,
+  "period": 16,
+  "cube_dimension": 15,
+  "iv_hex": "00001000808c0001",
+  "begin": 0,
+  "count": 32768,
+  "total_points": 32768,
+  "interval_is_entire_cube": true,
+  "seconds": 0.002098873,
+  "sums_hex": [
+    ["b0c0c977baf44693", "b854811c3ede3841"],
+    ["ddcfd3af11d8116d", "9e89a67a0a762d97"],
+    ["0f71856d1bd1c3b5", "5fe526a01de4d94c"]
+  ],
+  "scope": "Interval XOR sums for keys 0,e_(0,0),e_(1,0); no full-cube coefficient follows from an incomplete interval."
+}

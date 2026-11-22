@@ -1,0 +1,89 @@
+{
+  "seeds": {
+    "mode": "seeds",
+    "scanned": 0,
+    "extended_cores": 3,
+    "extensions": 4198464,
+    "catalog": 4,
+    "best": 82
+  },
+  "sparse3": {
+    "mode": "sparse3",
+    "scanned": 58181823,
+    "extended_cores": 26,
+    "extensions": 6224,
+    "catalog": 5,
+    "best": 82
+  },
+  "cuts": {
+    "mode": "cuts",
+    "scanned": 0,
+    "extended_cores": 284,
+    "extensions": 1337982272,
+    "catalog": 545,
+    "best": 80
+  },
+  "cuts_generation": {
+    "cuts": 3060,
+    "nonzero_minor_sets": 2898,
+    "distinct_canonical_seeds_core_cost_le79": 709
+  },
+  "sat": {
+    "sat_13_3_25": {
+      "status": "UNSAT",
+      "seconds": 165.2919807449798,
+      "completed_trail_weight": null
+    },
+    "sat_6_6_27": {
+      "status": "UNSAT",
+      "seconds": 106.55831803398905,
+      "completed_trail_weight": null
+    },
+    "sat_6_6_any": {
+      "status": "UNSAT",
+      "seconds": 116.25549009203678,
+      "completed_trail_weight": null
+    },
+    "sat_middle5": {
+      "status": "interrupted",
+      "seconds": 314.06474036199506,
+      "completed_trail_weight": null
+    },
+    "sat_near_y0": {
+      "status": "interrupted",
+      "seconds": 506.68681784695946,
+      "completed_trail_weight": null
+    },
+    "sat_open": {
+      "status": "interrupted",
+      "seconds": 506.8428163100034,
+      "completed_trail_weight": null
+    },
+    "check82": {
+      "status": "SAT",
+      "seconds": 0.06428804900497198,
+      "completed_trail_weight": 82
+    },
+    "check81": {
+      "status": "UNSAT",
+      "seconds": 0.032372373971156776,
+      "completed_trail_weight": null
+    },
+    "check80": {
+      "status": "SAT",
+      "seconds": 0.031931299017742276,
+      "completed_trail_weight": 80
+    },
+    "check79": {
+      "status": "UNSAT",
+      "seconds": 0.032013268035370857,
+      "completed_trail_weight": null
+    }
+  },
+  "scope": {
+    "sparse3": "Exhaustive for nonzero middle input with at most 3 active columns modulo common rotation; exact core-cost pruning and complete compatible-output enumeration.",
+    "cuts": "Heuristic family generation; 4 zero word signals chosen from 18; raw and gcd-reduced polynomial minors, with up to 6 divisions by R+1; only cores of cost <=79 retained; full forward enumeration only if middle weight <=24. Not globally exhaustive.",
+    "stopped_queries": "Remaining SAT queries were interrupted after independent verification of a weight-80 trail. Interrupted is not UNSAT.",
+    "best": "80 is a verified feasible local-DDT trail weight; global optimality has not been established."
+  }
+}

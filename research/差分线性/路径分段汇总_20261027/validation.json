@@ -1,0 +1,191 @@
+{
+  "status": "PASS",
+  "one_chi_operator_coordinates_checked": 1024,
+  "first_round_branch_audits": {
+    "G4c": {
+      "branches": [
+        {
+          "first_output_pattern": 16,
+          "probability": {
+            "numerator": "1",
+            "denominator": "4",
+            "log2_abs": -2.0
+          },
+          "middle_input_difference": [
+            "0000200038000000",
+            "0000002000380000",
+            "1c00000000001000",
+            "0000000008000e00",
+            "00010000010001c0"
+          ],
+          "middle_correlation": {
+            "numerator": "1",
+            "denominator": "1",
+            "log2_abs": 0.0
+          }
+        },
+        {
+          "first_output_pattern": 20,
+          "probability": {
+            "numerator": "1",
+            "denominator": "4",
+            "log2_abs": -2.0
+          },
+          "middle_input_difference": [
+            "0010e00438000000",
+            "000010e004380000",
+            "1c40000000087002",
+            "0000000438010e00",
+            "00010000870021c0"
+          ],
+          "middle_correlation": {
+            "numerator": "0",
+            "denominator": "1",
+            "log2_abs": null
+          }
+        },
+        {
+          "first_output_pattern": 24,
+          "probability": {
+            "numerator": "1",
+            "denominator": "4",
+            "log2_abs": -2.0
+          },
+          "middle_input_difference": [
+            "0018a00038000002",
+            "020018a000380000",
+            "1c000001000c5000",
+            "0000800628000a00",
+            "00011000c50001c0"
+          ],
+          "middle_correlation": {
+            "numerator": "0",
+            "denominator": "1",
+            "log2_abs": null
+          }
+        },
+        {
+          "first_output_pattern": 28,
+          "probability": {
+            "numerator": "1",
+            "denominator": "4",
+            "log2_abs": -2.0
+          },
+          "middle_input_difference": [
+            "0008600438000002",
+            "0200086004380000",
+            "1c40000100043002",
+            "0000800218010a00",
+            "00011000430021c0"
+          ],
+          "middle_correlation": {
+            "numerator": "1",
+            "denominator": "1",
+            "log2_abs": 0.0
+          }
+        }
+      ],
+      "signed_sum": {
+        "numerator": "1",
+        "denominator": "2",
+        "log2_abs": -1.0
+      }
+    },
+    "G4d": {
+      "branches": [
+        {
+          "first_output_pattern": 4,
+          "probability": {
+            "numerator": "1",
+            "denominator": "4",
+            "log2_abs": -2.0
+          },
+          "middle_input_difference": [
+            "0008600200000000",
+            "0000086002000000",
+            "0020000000043001",
+            "0000000218008000",
+            "0000000043001000"
+          ],
+          "middle_correlation": {
+            "numerator": "-1",
+            "denominator": "1",
+            "log2_abs": 0.0
+          }
+        },
+        {
+          "first_output_pattern": 5,
+          "probability": {
+            "numerator": "1",
+            "denominator": "4",
+            "log2_abs": -2.0
+          },
+          "middle_input_difference": [
+            "0009600201800005",
+            "0400096002018000",
+            "00e000020004b001",
+            "0001000258008060",
+            "000020004b00100c"
+          ],
+          "middle_correlation": {
+            "numerator": "0",
+            "denominator": "1",
+            "log2_abs": null
+          }
+        },
+        {
+          "first_output_pattern": 6,
+          "probability": {
+            "numerator": "1",
+            "denominator": "4",
+            "log2_abs": -2.0
+          },
+          "middle_input_difference": [
+            "0000600200180020",
+            "2010006002001800",
+            "002c001000003001",
+            "0008000018008006",
+            "c001000003001000"
+          ],
+          "middle_correlation": {
+            "numerator": "0",
+            "denominator": "1",
+            "log2_abs": null
+          }
+        },
+        {
+          "first_output_pattern": 7,
+          "probability": {
+            "numerator": "1",
+            "denominator": "4",
+            "log2_abs": -2.0
+          },
+          "middle_input_difference": [
+            "0001600201980025",
+            "2410016002019800",
+            "00ec00120000b001",
+            "0009000058008066",
+            "c00120000b00100c"
+          ],
+          "middle_correlation": {
+            "numerator": "0",
+            "denominator": "1",
+            "log2_abs": null
+          }
+        }
+      ],
+      "signed_sum": {
+        "numerator": "-1",
+        "denominator": "4",
+        "log2_abs": -2.0
+      }
+    }
+  },
+  "tail_checks": [
+    "Gaston LAT product and linear masks",
+    "Hsilu LAT product and linear masks"
+  ],
+  "H5_algorithm3_independent_order_check": "full expansion and exact input-Shannon order agree",
+  "H5_hnw_modes": "full and zero agree, each covers all 8 first-DDT branches",
+  "new_whole_low_correlation_jobs": 0
+}

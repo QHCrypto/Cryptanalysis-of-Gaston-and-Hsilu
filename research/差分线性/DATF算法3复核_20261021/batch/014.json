@@ -1,0 +1,78 @@
+{
+  "id": "K06_prefix3_for_R6",
+  "algorithm": "Gaston",
+  "rounds": 3,
+  "start_round_index": 6,
+  "delta_core": [
+    "0000000002400000",
+    "0000000000000000",
+    "0000000000000000",
+    "4000000001000000",
+    "0000800000040000"
+  ],
+  "lambda_core": [
+    "0008000400020000",
+    "8000000002000100",
+    "0000000000000000",
+    "0000000100000000",
+    "0000800040022001"
+  ],
+  "previous_datf": {
+    "numerator": "0",
+    "denominator": "1",
+    "log2_abs": null
+  },
+  "aliases": [
+    "K06_prefix3_for_R6"
+  ],
+  "sources": [
+    "/home/yxb/分析/差分线性/gaston_dl/results/datf_k06/results.json"
+  ],
+  "method": "original DATF Algorithm 3",
+  "status": "completed",
+  "correlation": {
+    "numerator": "-1",
+    "denominator": "8388608",
+    "log2_abs": -23.0
+  },
+  "bias": {
+    "numerator": "-1",
+    "denominator": "16777216",
+    "log2_abs": -24.0
+  },
+  "limits": {
+    "seconds": 30,
+    "max_terms": 1000000,
+    "max_products": 100000000,
+    "max_nodes": 100000,
+    "address_space_bytes": 4294967296
+  },
+  "first_L_omitted": true,
+  "remaining_alpha_assumed_jointly_uniform": true,
+  "dag_verified_full_states": 4,
+  "phase": "completed",
+  "statistics": {
+    "initial_terms": 60,
+    "initial_variables": 57,
+    "peak_polynomial_terms": 30239,
+    "beta_definitions_expanded": 48,
+    "product_pairs": 50794,
+    "expanded_terms": 30239,
+    "expanded_variables": 279,
+    "expanded_degree": 4,
+    "remaining_beta_variables": 0,
+    "expanded_input_variables": 12,
+    "expanded_alpha_variables": 267,
+    "max_component_variables": 279,
+    "bias_nodes": 13,
+    "affine_pair_eliminations": 12,
+    "quadratic_calls": 1
+  },
+  "elapsed_seconds": 0.7198906689882278,
+  "peak_rss_kib": 61720,
+  "expansion_verified_formal_assignments": 16,
+  "zero_certificate": null,
+  "expanded_anf_file": "batch/014.anf.json",
+  "expanded_anf_sha256": "4619d0784651369d2c45013751ac58bc34482a52a1a48870c86b8eac64ffbaeb",
+  "evaluation_order": "full beta expansion then Bias"
+}

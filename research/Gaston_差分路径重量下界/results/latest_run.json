@@ -1,0 +1,35 @@
+{
+  "pid": 1655677,
+  "started_local": "2026-10-23T17:52:35.393147+08:00",
+  "command": [
+    "stdbuf",
+    "-oL",
+    "-eL",
+    "/home/yxb/分析/Gaston_差分路径重量下界/gaston_3round_lossy",
+    "--output",
+    "/home/yxb/分析/Gaston_差分路径重量下界/results/runs/20261023_175235_d22e4757/solve",
+    "--threads",
+    "16"
+  ],
+  "cwd": "/home/yxb/分析/Gaston_差分路径重量下界",
+  "threads": 16,
+  "time_limit": null,
+  "external_timeout": null,
+  "run_directory": "/home/yxb/分析/Gaston_差分路径重量下界/results/runs/20261023_175235_d22e4757",
+  "console_log": "/home/yxb/分析/Gaston_差分路径重量下界/results/runs/20261023_175235_d22e4757/console.log",
+  "verified_model_mps_sha256": "a90a2321a50a0897cca3ed7513a55e4341bb8eec23b06ef71878fedc4514e5de",
+  "source_sha256": "0607b366519978f978605ce5eb88e80dd3b177ff713de83bd122daafa2d0d623",
+  "binary_sha256": "ddc597b71eb66466ae80f11ad8d376f24e4caac9b9b37cb8d6f6fd7601ecc8b6",
+  "stop_instruction": "Send SIGINT to the recorded PID to request a graceful stop and save an incumbent.",
+  "process_state": "stopped_by_user",
+  "stop_signal": "SIGINT",
+  "stopped_result": {
+    "status_code": 11,
+    "solution_count": 10,
+    "runtime_seconds": 5440.820715904236,
+    "optimal": false,
+    "lossy_objective": 133,
+    "lossy_best_bound": 22,
+    "gap": 0.8345864661654135
+  }
+}

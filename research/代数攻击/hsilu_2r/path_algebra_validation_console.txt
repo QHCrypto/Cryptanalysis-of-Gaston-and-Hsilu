@@ -1,0 +1,312 @@
+{
+  "assumptions": {
+    "round_constants": [
+      "0x5a",
+      "0x4b"
+    ],
+    "state_meanings": "X1=input, X2=after round 1, X3=after round 2",
+    "scope": "local two-round permutation, digest=row 0"
+  },
+  "reference_random_tests": 100,
+  "capacity_conditions": 42,
+  "reduced_target_experiment": {
+    "status": "found",
+    "scope": "independent 32-bit projected target; chosen capacity",
+    "trial_count": 12572,
+    "candidate_count": 3601,
+    "rank_histogram": {
+      "21": 3601,
+      "20": 7337,
+      "19": 1575,
+      "18": 58,
+      "17": 1
+    },
+    "path_target_positions": [
+      2,
+      6,
+      7,
+      12,
+      13,
+      14,
+      17,
+      19,
+      21,
+      24,
+      29,
+      33,
+      34,
+      38,
+      40,
+      41,
+      47,
+      52,
+      57,
+      61,
+      62,
+      0,
+      1,
+      3,
+      4,
+      5,
+      8,
+      9,
+      10,
+      11,
+      15,
+      16
+    ],
+    "native_target_mask_hex": "ffffd48462c10846",
+    "native_target_value_hex": "2ad5100000c00800",
+    "native_input_words_hex": [
+      "b02dd0e556596882",
+      "491ca52055322a8c",
+      "ad9eadbfffb7744e",
+      "eb8dbcea51b17a67",
+      "1fa6564f2fbea55f"
+    ],
+    "native_full_digest_hex": "2ad51b308ddc3b30",
+    "matched_bits": 32
+  },
+  "x2_condition_exact_message_expression_path_indexing": "m[24] + (1+c4[14])*m[14] + c1[1]*m[1] + c1[61]*m[61] + k(c,rc) = 0",
+  "cases": [
+    {
+      "name": "native_lsb_j",
+      "condition_active_support": [
+        10
+      ],
+      "exact_affine_positions": [
+        3,
+        22,
+        31,
+        34,
+        36,
+        57,
+        58
+      ],
+      "exact_nonlinear_selected": [
+        2,
+        6,
+        7,
+        12,
+        13,
+        14,
+        17,
+        19,
+        21,
+        24,
+        29,
+        33,
+        38,
+        40,
+        41,
+        47,
+        52,
+        61,
+        62
+      ],
+      "sample_count": 256,
+      "rank_before_x2_condition": {
+        "20": 150,
+        "21": 76,
+        "19": 30
+      },
+      "rank_after_x2_condition": {
+        "18": 2,
+        "20": 132,
+        "21": 82,
+        "19": 28
+      },
+      "rank_all22_after_x2_condition": {
+        "19": 4,
+        "21": 154,
+        "20": 86
+      },
+      "x2_background_support_size_histogram": {
+        "3": 53,
+        "1": 64,
+        "2": 103,
+        "0": 18,
+        "4": 18
+      },
+      "witness": null
+    },
+    {
+      "name": "path_j_to_native_63_minus_j",
+      "condition_active_support": [],
+      "exact_affine_positions": [
+        2,
+        6,
+        7,
+        12,
+        13,
+        14,
+        17,
+        19,
+        21,
+        24,
+        29,
+        33,
+        34,
+        38,
+        40,
+        41,
+        43,
+        47,
+        52,
+        57,
+        61,
+        62
+      ],
+      "exact_nonlinear_selected": [],
+      "sample_count": 256,
+      "rank_before_x2_condition": {
+        "21": 69,
+        "19": 36,
+        "20": 149,
+        "18": 2
+      },
+      "rank_after_x2_condition": {
+        "21": 78,
+        "19": 32,
+        "20": 144,
+        "18": 2
+      },
+      "rank_all22_after_x2_condition": {
+        "21": 150,
+        "20": 97,
+        "19": 9
+      },
+      "x2_background_support_size_histogram": {
+        "3": 102,
+        "2": 94,
+        "1": 28,
+        "4": 32
+      },
+      "witness": {
+        "input_base_words_hex": [
+          "0948ae009030202c",
+          "491ca52055322a8c",
+          "ad9eadbfffb7744e",
+          "eb8dbcea51b17a67",
+          "1fa6564f2fbea55f"
+        ],
+        "planted_message_hex": "0d48ee06b830a42c",
+        "target_hex": "ec9fb6be211f40de",
+        "solved_message_hex": "0d48ee06b830a42c",
+        "candidate_digest_hex": "ec9fb6be211f40de",
+        "selected_bits_match": true,
+        "full_64_bits_match": true,
+        "rank": 21,
+        "input_candidate_words_hex": [
+          "0d48ee06b830a42c",
+          "491ca52055322a8c",
+          "ad9eadbfffb7744e",
+          "eb8dbcea51b17a67",
+          "1fa6564f2fbea55f"
+        ],
+        "x2_candidate_words_hex": [
+          "5b4fdaa80f03a4d2",
+          "f60f3c6171956b68",
+          "1e7330ae9f74a13c",
+          "a668e62945d824e0",
+          "e6fd8d0a80f09cc4"
+        ],
+        "output_candidate_words_hex": [
+          "ec9fb6be211f40de",
+          "ae3d43e7e5c8a62e",
+          "f7df75fb76b9c4b4",
+          "fc212e026c87685c",
+          "f379cefa567c2fd6"
+        ]
+      }
+    },
+    {
+      "name": "path_j_to_native_minus_j_mod64",
+      "condition_active_support": [],
+      "exact_affine_positions": [
+        2,
+        6,
+        7,
+        12,
+        13,
+        14,
+        17,
+        19,
+        21,
+        24,
+        29,
+        33,
+        34,
+        38,
+        40,
+        41,
+        43,
+        47,
+        52,
+        57,
+        61,
+        62
+      ],
+      "exact_nonlinear_selected": [],
+      "sample_count": 256,
+      "rank_before_x2_condition": {
+        "19": 32,
+        "21": 76,
+        "20": 148
+      },
+      "rank_after_x2_condition": {
+        "19": 30,
+        "21": 67,
+        "20": 159
+      },
+      "rank_all22_after_x2_condition": {
+        "19": 8,
+        "21": 158,
+        "20": 90
+      },
+      "x2_background_support_size_histogram": {
+        "3": 111,
+        "4": 32,
+        "1": 22,
+        "2": 91
+      },
+      "witness": {
+        "input_base_words_hex": [
+          "92130601a260a069",
+          "d0094930a2066151",
+          "4f4f15d54a77799a",
+          "525088c67fd24987",
+          "fff2f6aefdfb0fd2"
+        ],
+        "planted_message_hex": "b3532605e261aa69",
+        "target_hex": "dfb743ebd914f927",
+        "solved_message_hex": "b3532605e261aa69",
+        "candidate_digest_hex": "dfb743ebd914f927",
+        "selected_bits_match": true,
+        "full_64_bits_match": true,
+        "rank": 21,
+        "input_candidate_words_hex": [
+          "b3532605e261aa69",
+          "d0094930a2066151",
+          "4f4f15d54a77799a",
+          "525088c67fd24987",
+          "fff2f6aefdfb0fd2"
+        ],
+        "x2_candidate_words_hex": [
+          "776c396a53ed777d",
+          "70a50e35aa9679a4",
+          "7be67aef370b944f",
+          "f549e781364bfc2c",
+          "e798b53bf5abf5d6"
+        ],
+        "output_candidate_words_hex": [
+          "dfb743ebd914f927",
+          "692d6a5f3522d722",
+          "85c28fcfb0668020",
+          "c8aff3b721d0be0b",
+          "26690033a648fc69"
+        ]
+      }
+    }
+  ]
+}

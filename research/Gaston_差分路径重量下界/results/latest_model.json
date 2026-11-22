@@ -1,0 +1,39 @@
+{
+  "state": "weight_below44_excluded",
+  "updated_local": "2026-10-24T21:25:53.026861+08:00",
+  "campaign_directory": "/home/yxb/分析/Gaston_差分路径重量下界/results/kernel_campaigns/20261024_132538_a2fd158c",
+  "order": [
+    6,
+    7,
+    8
+  ],
+  "threads": 16,
+  "time_limit": null,
+  "verification": {
+    "6": "/home/yxb/分析/Gaston_差分路径重量下界/results/kernel_campaigns/20261024_132538_a2fd158c/validation_k6/verification.json",
+    "7": "/home/yxb/分析/Gaston_差分路径重量下界/results/kernel_campaigns/20261024_132538_a2fd158c/validation_k7/verification.json",
+    "8": "/home/yxb/分析/Gaston_差分路径重量下界/results/kernel_campaigns/20261024_132538_a2fd158c/validation_k8/verification.json"
+  },
+  "analytically_excluded": {
+    "9": {
+      "weight_lower_bound": 45
+    }
+  },
+  "previous_campaign_stopped": "/home/yxb/分析/Gaston_差分路径重量下界/results/kernel_campaigns/20261023_194701_17aa337c",
+  "derived_unconditional_weight_lower_bound": 44,
+  "external_proof": {
+    "path": "/home/yxb/分析/Gaston_差分路径重量下界/results/support_space_proof_20261024.json",
+    "sha256": "11c9e101bdec3e80eaa7fa617401ff6740d952c0bdf601df0a908870be009728",
+    "status": "PASS",
+    "weight_lower_bound": 44,
+    "kernel_branches_excluded_for_any_weight": [
+      6,
+      7,
+      8
+    ],
+    "middle9_weight_lower_bound": 45,
+    "method": "Exact GF(2) support enumeration plus prior completed activity bounds; historical subproofs not replayed"
+  },
+  "milp_campaign_state": "stopped",
+  "optimal_weight_known": false
+}
