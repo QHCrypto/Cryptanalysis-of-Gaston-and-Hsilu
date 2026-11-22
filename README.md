@@ -6,16 +6,16 @@ implementations, necessary small inputs, selected result records, and a tested
 entry point for bounded verification. Correspondence: Meicheng Liu,
 liumeicheng@iie.ac.cn.
 
-**Journal:** Cryptographic Theory and Practice.
+**Journal**: Cryptographic Theory and Practice.
 
-**Corresponding-author affiliations:** State Key Laboratory of Cyberspace
+**Corresponding-author affiliations**: State Key Laboratory of Cyberspace
 Security Defense, Institute of Information Engineering, Chinese Academy of
 Sciences, Beijing, China; School of Cyber Security, University of Chinese
 Academy of Sciences, Beijing, China.
 
-**Public repository:** https://github.com/QHCrypto/Cryptanalysis-of-Gaston-and-Hsilu
+**Public repository**: https://github.com/QHCrypto/Cryptanalysis-of-Gaston-and-Hsilu
 
-**Supplementary material:** Online Resource 1 (`ESM_1.zip`). Source code,
+**Supplementary material**: Online Resource 1 (`ESM_1.zip`). Source code,
 verification scripts, necessary small inputs, and selected computational records
 for the differential, differential-linear, preimage, and cube analyses of
 Gaston and Hsilu. Machine-readable article information is in
