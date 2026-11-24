@@ -6,7 +6,7 @@ implementations, necessary small inputs, selected result records, and a tested
 entry point for bounded verification. Correspondence: Meicheng Liu,
 liumeicheng@iie.ac.cn.
 
-**Journal**: Cryptographic Theory and Practice.
+**Target journal**: Frontiers of Computer Science.
 
 **Corresponding-author affiliations**: State Key Laboratory of Cyberspace
 Security Defense, Institute of Information Engineering, Chinese Academy of
@@ -15,11 +15,12 @@ Academy of Sciences, Beijing, China.
 
 **Public repository**: https://github.com/QHCrypto/Cryptanalysis-of-Gaston-and-Hsilu
 
-**Supplementary material**: Online Resource 1 (`ESM_1.zip`). Source code,
+**Code availability**: This public repository provides source code,
 verification scripts, necessary small inputs, and selected computational records
 for the differential, differential-linear, preimage, and cube analyses of
 Gaston and Hsilu. Machine-readable article information is in
-`ARTICLE_METADATA.json`.
+`ARTICLE_METADATA.json`. The manuscript cites this repository directly; no
+publisher-assigned supplementary-resource number is used.
 
 The package was assembled from the authors' local research directories on
 2026-11-22. The original directory structure is preserved inside `research/`

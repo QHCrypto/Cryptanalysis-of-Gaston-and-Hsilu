@@ -2,13 +2,13 @@
 
 本文件夹对应论文 **Cryptanalysis of Gaston and Hsilu**。通讯作者为 Meicheng Liu，邮箱为 liumeicheng@iie.ac.cn。
 
-目标期刊：**Cryptographic Theory and Practice**。
+目标期刊：**Frontiers of Computer Science**。
 
 通讯作者单位：中国科学院信息工程研究所，网络空间安全防御全国重点实验室，北京，中国；中国科学院大学网络空间安全学院，北京，中国。
 
 公开仓库：https://github.com/QHCrypto/Cryptanalysis-of-Gaston-and-Hsilu
 
-补充材料编号：**Online Resource 1**，提交文件名为 `ESM_1.zip`。内容为 Gaston 与 Hsilu 的差分、差分线性、原像和 cube 分析源代码、核验脚本、必要的小型输入及部分计算记录。完整投稿信息保存在 `ARTICLE_METADATA.json`。
+代码可用性：论文直接引用本公开仓库，不使用出版社分配的补充材料编号。内容为 Gaston 与 Hsilu 的差分、差分线性、原像和 cube 分析源代码、核验脚本、必要的小型输入及部分计算记录。论文元数据保存在 `ARTICLE_METADATA.json`。
 
 这是轻量代码包，保留源代码、必要的小型输入、结果摘要和统一核验入口。按作者要求，不包含完整 DRAT 证明证书、大型匹配证书和可重新生成的多项式中间文件。原研究目录中的文件保持不变。
 
