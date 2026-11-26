@@ -23,7 +23,8 @@ Gaston and Hsilu. Machine-readable article information is in
 publisher-assigned supplementary-resource number is used.
 
 The package was assembled from the authors' local research directories on
-2026-11-22. The original directory structure is preserved inside `research/`
+2026-11-22 and synchronized with the revised differential and differential-linear
+sections on 2026-11-26. The original directory structure is preserved inside `research/`
 because several programs share permutation implementations and algebra helpers.
 Start with the commands and result map in this README; the historical READMEs
 inside individual directories describe a broader research history.
@@ -55,8 +56,9 @@ The `quick` profile checks:
 
 1. The current manuscript's permutation parameters, native rounds, and XOF/AEAD
    conventions against the included implementations.
-2. The weight-80 Hsilu characteristic, local DDT identities, the Gaston
-   weight-32 witness, and selected preimage affine relations.
+2. The weight-80 Hsilu characteristic, all 16,384 C++ extensions of its selected
+   cancellation core, local DDT identities, the Gaston weight-32 witness, and
+   selected preimage affine relations.
 3. The saved Gaston support-enumeration records and independent nullspace
    calculations used in the weight-44 argument. This does not repeat the
    exhaustive support enumeration or establish the historical activity-profile
@@ -73,12 +75,20 @@ The `quick` profile checks:
 7. The three preimage complexity calculations under the manuscript's Huang
    precomputation and Gaussian-elimination convention.
 
-The separate `datf` profile recomputes DATF Algorithm 5 for the manuscript's
-four-round endpoints and compares the exact rational model outputs with the
-archived values. The historical endpoint identifiers `G4a` and `H4a` correspond
-to the selected Gaston and Hsilu four-round examples. The model gives `3/2048`
-and `0`, respectively; the latter is a model output, not a claim that the actual
-Hsilu correlation is zero.
+The separate `datf` profile computes the current four-round **two-round
+differential-prefix weighting** with DATF Algorithm 3 and the round-based
+approximation. All four first-round DDT branches enter the calculation. Their
+complete second-round difference distributions are integrated by affine-image
+elimination, retaining the dependencies between difference coordinates. The
+results are `1/256` for Gaston G4 and `1/512` for Hsilu H4 under both models.
+The profile checks the algebra against direct small-system enumeration, the
+original DATF backend, and the C++ round-based recurrence, then regenerates the
+seven-row current result table. Detailed setup and commands are in
+[the prefix-evaluation guide](research/差分线性/joint_dl_20261125/README.md).
+
+The old complete four-round Algorithm 5 computations remain available through
+`python3 run_checks.py --profile datf-legacy`. Their outputs `3/2048` and `0`
+are historical model values, separate from the current manuscript estimates.
 
 To rerun a particular group:
 
@@ -94,8 +104,9 @@ Paths in this table are relative to `research/`.
 |---|---|---|
 | Permutations and outer modes | `hsilu_ref/`; `gaston_ref/gaston/implementation/reference/`; `HsiluCube/src/permutations.py`; `nist_compatibility_20261109/` | Native round order, constants, bit conventions, and mode interfaces |
 | Gaston differential bounds | `gaston_active_pattern/`; `Gaston_差分路径重量下界/` | Outside-kernel branch number 16, two-round weight 32, and the three-round weight-44 argument; full proof-certificate files are omitted |
-| Hsilu weight-80 trail | `Hsilu_trail/search_below82_20261117/` | Explicit trail with round weights 16, 14, 50; this is an upper-bound witness for the minimum trail weight, not a proof of global optimality |
-| Differential-linear analysis | `差分线性/gaston_dl/`; `差分线性/hsilu_dl/`; `差分线性/路径分段汇总_20261027/`; `Gaston_Hsilu_CTP/paper_rewriting_output/evaluate_datf_algorithm5.py` | Local exact identities, DATF/HNW model estimates, endpoint selection, and sampled correlations; concatenation estimates retain the manuscript's assumptions |
+| Hsilu weight-80 trail | `Hsilu_trail/search_below82_20261117/` | Cancellation family with circuit nodes 4, 9, 10, 12 set to zero; round weights 16, 14, 50 and active counts 8, 7, 22. This is an upper-bound witness for the minimum trail weight, not a proof of global optimality |
+| Current differential-linear evaluation | `差分线性/joint_dl_20261125/`; package-root `scripts/current_dl_results.py` | Two-round differential-prefix weighting for G4/H4, DATF Algorithm 3 and round-based estimates, and the current seven-row result table |
+| Differential-linear search and archived evidence | `差分线性/gaston_dl/`; `差分线性/hsilu_dl/`; `差分线性/路径分段汇总_20261027/` | Endpoint selection, five-round concatenations, local identities, and historical sampling counts; use `CURRENT_DL_RESULTS.json` for the current manuscript selection |
 | Two-round Gaston preimages | `gaston分析/improved_milp.cpp`; `gaston分析/model_common.hpp`; `Gaston_Hsilu_CTP/paper_rewriting_output/ctp_reviewer_20261117/independent_checks.py` | Shared-form strategy, rank 47, and the 17 selected affine relations |
 | Two-round Hsilu preimages | `代数攻击/hsilu_2r/`; `Gaston_Hsilu_CTP/paper_rewriting_output/ctp_reviewer_20261117/independent_checks.py` | Current 22-variable construction and selected output relations; the current figure input is `hsilu_no_start.svg` |
 | Three-round Hsilu preimages | `代数攻击/Hsilu3r_new/validation_current_prefix/`; `代数攻击/Hsilu3r_new/hsilu_3round_best_attack.py` | Current legal prefix; 32-condition rank; 25 coordinate guesses of rank 23; concrete finite branch and background counts |
@@ -107,6 +118,31 @@ parameter tables, round constants, mode IVs, and differential-trail witness used
 by the verification scripts. These numerical inputs make the code package
 self-contained. The complete manuscript and its PDF belong to the separate
 submission package.
+
+## Current differential-linear results
+
+`CURRENT_DL_RESULTS.json` records the seven selected endpoints, method settings,
+exact rational model values, and original sampling counts. A fresh copy is
+written under `validation/<timestamp>_datf/` by the `datf` profile. Old identifiers
+`G3a`, `G4a`, and `H4a` map to G3, G4, and H4 in the current manuscript.
+
+| ID | Rounds | Experimental correlation | DATF Algorithm 3 | Round-based approximation | Evaluation |
+|---|---:|---:|---:|---:|---|
+| G2 | 2 | 1 | 1 | 1 | Overall |
+| G3 | 3 | -2^-2.42 | -3/16 | -3/16 | Overall |
+| G4 | 4 | 2^-7.96 | 2^-8 | 2^-8 | Overall, two-round prefix |
+| G5 | 5 | Not measured | 2^-59 | 2^-59 | Concatenation (1,2,2) |
+| H3 | 3 | 1 | 1 | 1 | Overall |
+| H4 | 4 | 2^-9.01 | 2^-9 | 2^-9 | Overall, two-round prefix |
+| H5 | 5 | Not measured | 2^-63 | 2^-63 | Concatenation (0,2,3) |
+
+Experimental exponents are rounded to two decimal places. The archived sample
+sizes are 2^22 for G2, G3, H3; 2^26 for G4; and 2^28 for H4. These observations
+are preserved, not replaced by the smaller seeded smoke checks. The data
+exponents computed from unrounded measurements are 4.83, 15.93, and 18.03 for
+G3, G4, and H4. Five-round concatenation estimates give 118 and 126 for G5 and
+H5. Exact rational evaluation refers to the stated approximation models, not
+to a proof of the fixed permutations' true correlations.
 
 The current preimage accounting is in `scripts/preimage_accounting.py`:
 
@@ -136,7 +172,8 @@ python3 -m pip install -r requirements.txt
 MILP searches additionally need a local Gurobi installation and a valid license.
 The copied C++ Makefiles default to Gurobi 13; override `GUROBI_HOME` for your
 installation, and adjust the versioned linker name if using another release.
-The three-round Hsilu Python search uses `gurobipy`. Optional SAT searches in
+The Python search for three-round Hsilu preimages uses `gurobipy`; the weight-80
+differential-trail search is standalone C++. Optional SAT searches in
 `Hsilu_trail/pysat_kissat/` also require `python-sat` and the configured SAT solver.
 No solver binaries, license files, or Python environments are bundled.
 

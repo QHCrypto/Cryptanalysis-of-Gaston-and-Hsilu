@@ -6,6 +6,7 @@ import json
 from pathlib import Path
 import subprocess
 import sys
+import tempfile
 
 ROOT = Path(__file__).resolve().parents[1] / 'research'
 
@@ -42,15 +43,36 @@ def branches():
 
 def datf():
     directory = ROOT/'Gaston_Hsilu_CTP/paper_rewriting_output/dl_datf_algorithm5_20261111'
-    expected = json.loads((Path(__file__).resolve().parents[1]/'EXPECTED_RESULTS.json').read_text())['datf']
+    expected = json.loads((Path(__file__).resolve().parents[1]/'EXPECTED_RESULTS.json').read_text())['datf_legacy']
     for target in ['G4a','H4a']:
         result = json.loads((directory/(target+'.json')).read_text())
         assert result['status'] == 'completed', result.get('reason')
         assert result['correlation'] == expected[target], (target, result['correlation'])
         print(target, result['status'], result['correlation'])
 
+def hsilu_search():
+    """Rerun the C++ extension search on the selected manuscript core."""
+    directory = ROOT/'Hsilu_trail/search_below82_20261117'
+    saved = json.loads((directory/'results/best_core.json').read_text())
+    with tempfile.TemporaryDirectory(prefix='hsilu_fixed_core_') as temp:
+        work = Path(temp)
+        (work/'results').mkdir()
+        (work/'seeds.txt').write_text(' '.join(saved['a1'])+'\n')
+        output = subprocess.check_output([str(directory/'search'), 'seeds'], cwd=work, text=True)
+        stats = json.loads(output)
+        candidates = [json.loads(line) for line in (work/'results/seeds.jsonl').read_text().splitlines()]
+        assert stats['extended_cores'] == 1 and stats['extensions'] == 16384, stats
+        assert stats['best'] == 80, stats
+        assert any(all(row[key] == saved[key] for key in saved) for row in candidates)
+    result = {'status': 'PASS', 'scope': 'Complete extension of the saved core, not a global search',
+              'search': stats, 'weights': saved['weights'], 'saved_states_reproduced': True}
+    out = ROOT.parent/'validation/hsilu_search.json'
+    out.parent.mkdir(exist_ok=True)
+    out.write_text(json.dumps(result, indent=2)+'\n')
+    print(json.dumps(result, indent=2))
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('check', choices=['cubes','branches','datf'])
+    parser.add_argument('check', choices=['cubes','branches','datf','hsilu_search'])
     args = parser.parse_args()
     globals()[args.check]()

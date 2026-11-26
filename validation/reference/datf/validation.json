@@ -1,0 +1,9 @@
+{
+  "gaussian_vs_exhaustive_small_systems": 600,
+  "linear_transpose_basis_pairs": 204800,
+  "quadratic_derivative_and_adjoint_trials": 300,
+  "current_prefix_affine_trials": 64,
+  "existing_cpp_core_vectors_per_target": 32,
+  "chi_local_autocorrelation_cases": 1024,
+  "status": "PASS"
+}

@@ -1,0 +1,47 @@
+{
+  "profile": "datf-legacy",
+  "started": "20261126_184435",
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "platform": "Linux-7.0.0-43-generic-x86_64-with-glibc2.39",
+  "checks": [
+    {
+      "name": "datf_algorithm5",
+      "status": "PASS",
+      "commands": [
+        {
+          "cwd": "Gaston_Hsilu_CTP/paper_rewriting_output",
+          "argv": [
+            "/usr/bin/python3",
+            "evaluate_datf_algorithm5.py",
+            "--target",
+            "G4a"
+          ],
+          "exit_code": 0
+        },
+        {
+          "cwd": "Gaston_Hsilu_CTP/paper_rewriting_output",
+          "argv": [
+            "/usr/bin/python3",
+            "evaluate_datf_algorithm5.py",
+            "--target",
+            "H4a"
+          ],
+          "exit_code": 0
+        },
+        {
+          "cwd": "..",
+          "argv": [
+            "/usr/bin/python3",
+            "scripts/check_saved_results.py",
+            "datf"
+          ],
+          "exit_code": 0
+        }
+      ],
+      "log": "datf_algorithm5.log",
+      "seconds": 0.561
+    }
+  ],
+  "scope": "See README.md: quick checks do not repeat every search or full-size computation.",
+  "status": "PASS"
+}

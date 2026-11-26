@@ -1,6 +1,6 @@
 {
   "profile": "quick",
-  "started": "20261122_190246",
+  "started": "20261126_184320",
   "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
   "platform": "Linux-7.0.0-43-generic-x86_64-with-glibc2.39",
   "checks": [
@@ -26,7 +26,7 @@
         }
       ],
       "log": "parameters.log",
-      "seconds": 1.131
+      "seconds": 1.08
     },
     {
       "name": "differential",
@@ -49,6 +49,23 @@
           "exit_code": 0
         },
         {
+          "cwd": "Hsilu_trail/search_below82_20261117",
+          "argv": [
+            "make",
+            "search"
+          ],
+          "exit_code": 0
+        },
+        {
+          "cwd": "..",
+          "argv": [
+            "/usr/bin/python3",
+            "scripts/check_saved_results.py",
+            "hsilu_search"
+          ],
+          "exit_code": 0
+        },
+        {
           "cwd": "gaston_active_pattern/two_round_outside_proof",
           "argv": [
             "/usr/bin/python3",
@@ -58,7 +75,7 @@
         }
       ],
       "log": "differential.log",
-      "seconds": 0.896
+      "seconds": 1.579
     },
     {
       "name": "gaston_support",
@@ -82,7 +99,7 @@
         }
       ],
       "log": "gaston_support.log",
-      "seconds": 0.832
+      "seconds": 0.78
     },
     {
       "name": "differential_linear",
@@ -132,7 +149,7 @@
         }
       ],
       "log": "differential_linear.log",
-      "seconds": 6.889
+      "seconds": 6.785
     },
     {
       "name": "preimage_structure",
@@ -169,7 +186,7 @@
         }
       ],
       "log": "preimage_structure.log",
-      "seconds": 3.998
+      "seconds": 3.949
     },
     {
       "name": "cubes",
@@ -210,7 +227,7 @@
         }
       ],
       "log": "cubes.log",
-      "seconds": 2.212
+      "seconds": 2.362
     },
     {
       "name": "preimage_accounting",
@@ -226,7 +243,7 @@
         }
       ],
       "log": "preimage_accounting.log",
-      "seconds": 0.065
+      "seconds": 0.033
     }
   ],
   "scope": "See README.md: quick checks do not repeat every search or full-size computation.",

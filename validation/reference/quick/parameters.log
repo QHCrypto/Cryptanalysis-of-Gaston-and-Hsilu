@@ -3,7 +3,7 @@ g++ -O3 -std=c++17 -Wall -Wextra -Wpedantic -shared -fPIC native.cpp ../hsilu_re
 COMMAND ["/usr/bin/python3", "verify_section2.py"]
 {
   "date": "2026-11-11",
-  "source": "/tmp/gaston_hsilu_reproduce_mff7xjjx/research/Gaston_Hsilu_CTP/verification_inputs/paper_parameters.tex",
+  "source": "/tmp/gaston_hsilu_reproduce_23mu55oe/research/Gaston_Hsilu_CTP/verification_inputs/paper_parameters.tex",
   "source_sha256": "d84621100c0d892e349179e2809a24c02adcba5846f2ff5be86d076773500d0f",
   "parameters_parsed_from_latex": true,
   "chi_lookup_entries": 32,

@@ -9,7 +9,7 @@
   "count": 32768,
   "total_points": 32768,
   "interval_is_entire_cube": true,
-  "seconds": 0.002098873,
+  "seconds": 0.001620926,
   "sums_hex": [
     ["b0c0c977baf44693", "b854811c3ede3841"],
     ["ddcfd3af11d8116d", "9e89a67a0a762d97"],

@@ -93,6 +93,29 @@ COMMAND ["/usr/bin/python3", "verify.py"]
     "minimizers": 1
   }
 }
+COMMAND ["make", "search"]
+g++ -O3 -march=native -std=c++17 -Wall -Wextra search.cpp -o search
+COMMAND ["/usr/bin/python3", "scripts/check_saved_results.py", "hsilu_search"]
+seed weights 16,14
+candidate 80 (16,14,50) cores=1 extensions=16384
+{
+  "status": "PASS",
+  "scope": "Complete extension of the saved core, not a global search",
+  "search": {
+    "mode": "seeds",
+    "scanned": 0,
+    "extended_cores": 1,
+    "extensions": 16384,
+    "catalog": 1,
+    "best": 80
+  },
+  "weights": [
+    16,
+    14,
+    50
+  ],
+  "saved_states_reproduced": true
+}
 COMMAND ["/usr/bin/python3", "verify.py"]
 PASS: all 1024 chi input-pair evaluations; nonzero DDT maximum 8/32.
 PASS: Z ->lambda X ->chi X ->lambda Y ->chi Y, both effects nonzero.

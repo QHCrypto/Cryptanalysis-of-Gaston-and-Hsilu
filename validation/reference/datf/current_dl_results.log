@@ -1,0 +1,8 @@
+COMMAND ["/usr/bin/python3", "scripts/current_dl_results.py"]
+G2 overall DATF 1 round-based 1
+G3 overall DATF -3/16 round-based -3/16
+G4 overall DATF 1/256 round-based 1/256
+G5 concatenation DATF 1/576460752303423488 round-based 1/576460752303423488
+H3 overall DATF 1 round-based 1
+H4 overall DATF 1/512 round-based 1/512
+H5 concatenation DATF 1/9223372036854775808 round-based 1/9223372036854775808

@@ -42,5 +42,29 @@
   {
     "path": "scripts/preimage_accounting.py",
     "change": "Use the standalone numerical verification input instead of depending on a full manuscript snapshot."
+  },
+  {
+    "path": "research/差分线性/joint_dl_20261125/validate.py",
+    "change": "Resolve build paths from the script directory; validate the current fresh-state prefix images and omit unrelated conditional-Algorithm-5 diagnostics."
+  },
+  {
+    "path": "research/差分线性/joint_dl_20261125/validate_hnw_fullmask.py",
+    "change": "Resolve native build and output paths from the script directory."
+  },
+  {
+    "path": "research/差分线性/joint_dl_20261125/recompute_for_manuscript.py",
+    "change": "Resolve the C++ validation report, source hashes, and result path from the script directory."
+  },
+  {
+    "path": "research/差分线性/joint_dl_20261125/datf_two_round_prefix.py",
+    "change": "Record source hashes using paths relative to the packaged research directory."
+  },
+  {
+    "path": "research/差分线性/joint_dl_20261125/hnw_prefix_comparison.py",
+    "change": "Clarify the current complete-mask evaluation setting and its model scope."
+  },
+  {
+    "path": "research/Hsilu_trail/search_below82_20261117/README.txt",
+    "change": "Use a package-relative search directory and document the bounded fixed-core reproduction command."
   }
 ]

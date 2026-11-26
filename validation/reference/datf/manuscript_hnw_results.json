@@ -1,0 +1,436 @@
+{
+  "method": "HNW26 round-based framework with two-round differential-prefix weighting and full-mask transpose readout",
+  "reference": "https://eprint.iacr.org/2026/358",
+  "parameters": {
+    "rounds": 4,
+    "differential_prefix_rounds": 2,
+    "value_masks": "zero",
+    "last_chi": "complete nonzero squared-LAT expansion",
+    "linear_readout": "apply L^T to the complete mask before multiplying column coordinates"
+  },
+  "quantity": "signed correlation, not bias",
+  "scope": "Exact rational evaluation of the specified approximation, not an exact true permutation correlation",
+  "results": [
+    {
+      "target": "Gaston",
+      "prefix": "fresh",
+      "split_final_column_readout": false,
+      "correlation": {
+        "numerator": 1,
+        "denominator": 256,
+        "value": 0.00390625,
+        "log2_abs": -8.0
+      },
+      "branches": [
+        {
+          "last_input_column_patterns": [
+            2,
+            8
+          ],
+          "weight": "1/16",
+          "conditional_mean": "1/16",
+          "nonzero": [
+            {
+              "first_column_value": 16,
+              "value": "1/4",
+              "rank": 2
+            },
+            {
+              "first_column_value": 17,
+              "value": "1/4",
+              "rank": 2
+            },
+            {
+              "first_column_value": 20,
+              "value": "1/4",
+              "rank": 2
+            },
+            {
+              "first_column_value": 21,
+              "value": "1/4",
+              "rank": 2
+            },
+            {
+              "first_column_value": 24,
+              "value": "1/4",
+              "rank": 2
+            },
+            {
+              "first_column_value": 25,
+              "value": "1/4",
+              "rank": 2
+            },
+            {
+              "first_column_value": 28,
+              "value": "1/4",
+              "rank": 2
+            },
+            {
+              "first_column_value": 29,
+              "value": "1/4",
+              "rank": 2
+            }
+          ]
+        },
+        {
+          "last_input_column_patterns": [
+            2,
+            9
+          ],
+          "weight": "1/16",
+          "conditional_mean": "0",
+          "nonzero": []
+        },
+        {
+          "last_input_column_patterns": [
+            2,
+            24
+          ],
+          "weight": "1/16",
+          "conditional_mean": "0",
+          "nonzero": []
+        },
+        {
+          "last_input_column_patterns": [
+            2,
+            25
+          ],
+          "weight": "1/16",
+          "conditional_mean": "0",
+          "nonzero": []
+        },
+        {
+          "last_input_column_patterns": [
+            6,
+            8
+          ],
+          "weight": "1/16",
+          "conditional_mean": "0",
+          "nonzero": []
+        },
+        {
+          "last_input_column_patterns": [
+            6,
+            9
+          ],
+          "weight": "1/16",
+          "conditional_mean": "0",
+          "nonzero": []
+        },
+        {
+          "last_input_column_patterns": [
+            6,
+            24
+          ],
+          "weight": "1/16",
+          "conditional_mean": "0",
+          "nonzero": []
+        },
+        {
+          "last_input_column_patterns": [
+            6,
+            25
+          ],
+          "weight": "1/16",
+          "conditional_mean": "0",
+          "nonzero": []
+        },
+        {
+          "last_input_column_patterns": [
+            10,
+            8
+          ],
+          "weight": "1/16",
+          "conditional_mean": "0",
+          "nonzero": []
+        },
+        {
+          "last_input_column_patterns": [
+            10,
+            9
+          ],
+          "weight": "1/16",
+          "conditional_mean": "0",
+          "nonzero": []
+        },
+        {
+          "last_input_column_patterns": [
+            10,
+            24
+          ],
+          "weight": "1/16",
+          "conditional_mean": "0",
+          "nonzero": []
+        },
+        {
+          "last_input_column_patterns": [
+            10,
+            25
+          ],
+          "weight": "1/16",
+          "conditional_mean": "0",
+          "nonzero": []
+        },
+        {
+          "last_input_column_patterns": [
+            14,
+            8
+          ],
+          "weight": "1/16",
+          "conditional_mean": "0",
+          "nonzero": []
+        },
+        {
+          "last_input_column_patterns": [
+            14,
+            9
+          ],
+          "weight": "1/16",
+          "conditional_mean": "0",
+          "nonzero": []
+        },
+        {
+          "last_input_column_patterns": [
+            14,
+            24
+          ],
+          "weight": "1/16",
+          "conditional_mean": "0",
+          "nonzero": []
+        },
+        {
+          "last_input_column_patterns": [
+            14,
+            25
+          ],
+          "weight": "1/16",
+          "conditional_mean": "0",
+          "nonzero": []
+        }
+      ],
+      "seconds": 0.2242293629969936,
+      "scope": "Two-round differential-prefix weighting with zero value masks and complete L^T masks in the tail; exact arithmetic for the stated approximation, not a fixed-permutation correlation certificate."
+    },
+    {
+      "target": "Hsilu",
+      "prefix": "fresh",
+      "split_final_column_readout": false,
+      "correlation": {
+        "numerator": 1,
+        "denominator": 512,
+        "value": 0.001953125,
+        "log2_abs": -9.0
+      },
+      "branches": [
+        {
+          "last_input_column_patterns": [
+            4,
+            16
+          ],
+          "weight": "1/16",
+          "conditional_mean": "1/32",
+          "nonzero": [
+            {
+              "first_column_value": 0,
+              "value": "1/8",
+              "rank": 3
+            },
+            {
+              "first_column_value": 1,
+              "value": "1/8",
+              "rank": 3
+            },
+            {
+              "first_column_value": 2,
+              "value": "1/8",
+              "rank": 3
+            },
+            {
+              "first_column_value": 3,
+              "value": "1/8",
+              "rank": 3
+            },
+            {
+              "first_column_value": 8,
+              "value": "1/8",
+              "rank": 3
+            },
+            {
+              "first_column_value": 9,
+              "value": "1/8",
+              "rank": 3
+            },
+            {
+              "first_column_value": 10,
+              "value": "1/8",
+              "rank": 3
+            },
+            {
+              "first_column_value": 11,
+              "value": "1/8",
+              "rank": 3
+            }
+          ]
+        },
+        {
+          "last_input_column_patterns": [
+            4,
+            18
+          ],
+          "weight": "1/16",
+          "conditional_mean": "0",
+          "nonzero": []
+        },
+        {
+          "last_input_column_patterns": [
+            4,
+            21
+          ],
+          "weight": "1/16",
+          "conditional_mean": "0",
+          "nonzero": []
+        },
+        {
+          "last_input_column_patterns": [
+            4,
+            23
+          ],
+          "weight": "1/16",
+          "conditional_mean": "0",
+          "nonzero": []
+        },
+        {
+          "last_input_column_patterns": [
+            12,
+            16
+          ],
+          "weight": "1/16",
+          "conditional_mean": "0",
+          "nonzero": []
+        },
+        {
+          "last_input_column_patterns": [
+            12,
+            18
+          ],
+          "weight": "1/16",
+          "conditional_mean": "0",
+          "nonzero": []
+        },
+        {
+          "last_input_column_patterns": [
+            12,
+            21
+          ],
+          "weight": "1/16",
+          "conditional_mean": "0",
+          "nonzero": []
+        },
+        {
+          "last_input_column_patterns": [
+            12,
+            23
+          ],
+          "weight": "1/16",
+          "conditional_mean": "0",
+          "nonzero": []
+        },
+        {
+          "last_input_column_patterns": [
+            20,
+            16
+          ],
+          "weight": "1/16",
+          "conditional_mean": "0",
+          "nonzero": []
+        },
+        {
+          "last_input_column_patterns": [
+            20,
+            18
+          ],
+          "weight": "1/16",
+          "conditional_mean": "0",
+          "nonzero": []
+        },
+        {
+          "last_input_column_patterns": [
+            20,
+            21
+          ],
+          "weight": "1/16",
+          "conditional_mean": "0",
+          "nonzero": []
+        },
+        {
+          "last_input_column_patterns": [
+            20,
+            23
+          ],
+          "weight": "1/16",
+          "conditional_mean": "0",
+          "nonzero": []
+        },
+        {
+          "last_input_column_patterns": [
+            28,
+            16
+          ],
+          "weight": "1/16",
+          "conditional_mean": "0",
+          "nonzero": []
+        },
+        {
+          "last_input_column_patterns": [
+            28,
+            18
+          ],
+          "weight": "1/16",
+          "conditional_mean": "0",
+          "nonzero": []
+        },
+        {
+          "last_input_column_patterns": [
+            28,
+            21
+          ],
+          "weight": "1/16",
+          "conditional_mean": "0",
+          "nonzero": []
+        },
+        {
+          "last_input_column_patterns": [
+            28,
+            23
+          ],
+          "weight": "1/16",
+          "conditional_mean": "0",
+          "nonzero": []
+        }
+      ],
+      "seconds": 0.14320947299711406,
+      "scope": "Two-round differential-prefix weighting with zero value masks and complete L^T masks in the tail; exact arithmetic for the stated approximation, not a fixed-permutation correlation certificate."
+    }
+  ],
+  "cpp_column_recurrence_validation": [
+    {
+      "target": "Gaston",
+      "cases": 49,
+      "nonzero_cases": 16,
+      "status": "PASS"
+    },
+    {
+      "target": "Hsilu",
+      "cases": 49,
+      "nonzero_cases": 15,
+      "status": "PASS"
+    }
+  ],
+  "source_hashes": {
+    "recompute_for_manuscript.py": "5ac8fd94b497e113b71de8be17d839dca33e3f8aef2d50ff9b6b10ac47022a19",
+    "hnw_prefix_comparison.py": "a76410f1c6ba6f622ab03b4354f3e9747a394ea8baaf4caad1691de46580ffde",
+    "joint_estimator.py": "870a492e4573ca6b1ec563387a93009a8575afec4bec84188392544d3f7e5a4e",
+    "core.py": "c5439ee1764d5608b8288a2f0bf6b3279c4ffa9a016c17ccee7139652eb9bde0",
+    "hnw_fullmask_reference.cpp": "34b1633f6d3fdde56f47071afdf620edef48669451135f848fab4269fd6e022e"
+  }
+}

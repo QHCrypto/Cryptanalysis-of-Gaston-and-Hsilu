@@ -1,7 +1,7 @@
 COMMAND ["/usr/bin/python3", "evaluate_datf_algorithm5.py", "--target", "G4a"]
-G4a completed {'numerator': '3', 'denominator': '2048', 'log2_abs': -9.415037499278844} 0.288
+G4a completed {'numerator': '3', 'denominator': '2048', 'log2_abs': -9.415037499278844} 0.283
 COMMAND ["/usr/bin/python3", "evaluate_datf_algorithm5.py", "--target", "H4a"]
-H4a completed {'numerator': '0', 'denominator': '1', 'log2_abs': None} 0.113
+H4a completed {'numerator': '0', 'denominator': '1', 'log2_abs': None} 0.112
 COMMAND ["/usr/bin/python3", "scripts/check_saved_results.py", "datf"]
 G4a completed {'numerator': '3', 'denominator': '2048', 'log2_abs': -9.415037499278844}
 H4a completed {'numerator': '0', 'denominator': '1', 'log2_abs': None}

@@ -1,0 +1,406 @@
+{
+  "date": "2026-11-26",
+  "status": "PASS",
+  "quantity": "signed correlation, not bias",
+  "scope": "Current manuscript Table 7 and Appendix C. Exact rational evaluation of the stated models; sampling counts are historical observations.",
+  "legacy": "Full four-round Algorithm 5 outputs 3/2048 and 0 are retained only by the datf-legacy profile.",
+  "rows": [
+    {
+      "id": "G2",
+      "permutation": "Gaston",
+      "rounds": 2,
+      "delta": [
+        "0000000000000001",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000"
+      ],
+      "lambda": [
+        "0000000000000000",
+        "0000000000000001",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000"
+      ],
+      "evaluation": "overall",
+      "historical_id": "G2",
+      "experiment": {
+        "samples": 4194304,
+        "seed": "15246946117792421225",
+        "n0": 4194304,
+        "n1": 0,
+        "rho": 1.0,
+        "log2_abs": 0.0,
+        "ci95": [
+          0.9999981682513702,
+          1.0
+        ],
+        "exact_sample_correlation": "1",
+        "source": "research/差分线性/路径分段汇总_20261027/results.json",
+        "rerun_this_check": false
+      },
+      "data_log2_from_experiment": -0.0,
+      "model": "Direct whole-pair evaluation",
+      "round_based_source": "Archived result; its native implementation is tested by the quick profile",
+      "source": "research/差分线性/路径分段汇总_20261027/results.json",
+      "datf_algorithm3": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "round_based": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      }
+    },
+    {
+      "id": "G3",
+      "permutation": "Gaston",
+      "rounds": 3,
+      "delta": [
+        "0000000000000001",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000"
+      ],
+      "lambda": [
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000080000",
+        "0000000000000000"
+      ],
+      "evaluation": "overall",
+      "historical_id": "G3a",
+      "experiment": {
+        "samples": 4194304,
+        "seed": "13074040226442538726",
+        "n0": 1704388,
+        "n1": 2489916,
+        "rho": -0.1872844696044922,
+        "log2_abs": -2.4166968245297866,
+        "ci95": [
+          -0.18822437765714523,
+          -0.1863442184937686
+        ],
+        "exact_sample_correlation": "-98191/524288",
+        "source": "research/差分线性/路径分段汇总_20261027/results.json",
+        "rerun_this_check": false
+      },
+      "data_log2_from_experiment": 4.833393649059573,
+      "model": "Direct whole-pair evaluation",
+      "round_based_source": "Archived result; its native implementation is tested by the quick profile",
+      "source": "research/差分线性/路径分段汇总_20261027/results.json",
+      "datf_algorithm3": {
+        "numerator": "-3",
+        "denominator": "16",
+        "log2_abs": -2.415037499278844
+      },
+      "round_based": {
+        "numerator": "-3",
+        "denominator": "16",
+        "log2_abs": -2.415037499278844
+      }
+    },
+    {
+      "id": "G4",
+      "permutation": "Gaston",
+      "rounds": 4,
+      "delta": [
+        "0000000000000002",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000"
+      ],
+      "lambda": [
+        "0000000000000000",
+        "0000000000000001",
+        "0000000000000000",
+        "0040000000000000",
+        "0000000000000000"
+      ],
+      "evaluation": "overall",
+      "prefix_rounds": 2,
+      "historical_id": "G4a",
+      "experiment": {
+        "samples": 67108864,
+        "seed": "2026101609",
+        "n0": 33688934,
+        "n1": 33419930,
+        "rho": 0.004008471965789795,
+        "log2_abs": -7.962731900226425,
+        "ci95": [
+          0.0037692202492534696,
+          0.004247723223418662
+        ],
+        "exact_sample_correlation": "67251/16777216",
+        "source": "research/差分线性/路径分段汇总_20261027/results.json",
+        "rerun_this_check": false
+      },
+      "data_log2_from_experiment": 15.92546380045285,
+      "model": "Full two-round differential-prefix weighting; uniform tail base state; full-mask transpose readout",
+      "first_prefix_branches": [
+        {
+          "first_column_difference": 1,
+          "probability": "1/4",
+          "second_layer_difference_image_dimension": 39
+        },
+        {
+          "first_column_difference": 9,
+          "probability": "1/4",
+          "second_layer_difference_image_dimension": 73
+        },
+        {
+          "first_column_difference": 17,
+          "probability": "1/4",
+          "second_layer_difference_image_dimension": 75
+        },
+        {
+          "first_column_difference": 25,
+          "probability": "1/4",
+          "second_layer_difference_image_dimension": 103
+        }
+      ],
+      "summation_terms": 64,
+      "source": "research/差分线性/joint_dl_20261125",
+      "datf_algorithm3": {
+        "numerator": "1",
+        "denominator": "256",
+        "log2_abs": -8.0
+      },
+      "round_based": {
+        "numerator": "1",
+        "denominator": "256",
+        "log2_abs": -8.0
+      }
+    },
+    {
+      "id": "G5",
+      "permutation": "Gaston",
+      "rounds": 5,
+      "delta": [
+        "0000000000004000",
+        "0000000000000000",
+        "0000000000000000",
+        "0008000000000000",
+        "0000000000000000"
+      ],
+      "lambda": [
+        "0008800400020001",
+        "0000000000000000",
+        "0000000000000000",
+        "0800000000000000",
+        "1000080044002000"
+      ],
+      "gamma": [
+        "0008000400020001",
+        "0000000000000000",
+        "0000000000000000",
+        "0000020000000000",
+        "1000800040002001"
+      ],
+      "evaluation": "concatenation",
+      "split": [
+        1,
+        2,
+        2
+      ],
+      "experiment": null,
+      "factors": {
+        "p": "1/16",
+        "middle_datf": "1/8192",
+        "middle_round_based": "1/8192",
+        "q_squared": "1/4398046511104"
+      },
+      "data_log2_from_model": 118.0,
+      "model": "Selected differential/middle/linear concatenation, not whole-pair evaluation",
+      "source": "research/差分线性/gaston_dl/results/splice_long_20261027/results.json",
+      "datf_algorithm3": {
+        "numerator": "1",
+        "denominator": "576460752303423488",
+        "log2_abs": -59.0
+      },
+      "round_based": {
+        "numerator": "1",
+        "denominator": "576460752303423488",
+        "log2_abs": -59.0
+      }
+    },
+    {
+      "id": "H3",
+      "permutation": "Hsilu",
+      "rounds": 3,
+      "delta": [
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000001",
+        "0000000000000000"
+      ],
+      "lambda": [
+        "0000000020000000",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000"
+      ],
+      "evaluation": "overall",
+      "historical_id": "H3",
+      "experiment": {
+        "samples": 4194304,
+        "seed": "2026101801",
+        "n0": 4194304,
+        "n1": 0,
+        "rho": 1.0,
+        "log2_abs": 0.0,
+        "ci95": null,
+        "exact_sample_correlation": "1",
+        "source": "research/差分线性/路径分段汇总_20261027/results.json",
+        "rerun_this_check": false
+      },
+      "data_log2_from_experiment": -0.0,
+      "model": "Direct whole-pair evaluation",
+      "round_based_source": "Archived result; its native implementation is tested by the quick profile",
+      "source": "research/差分线性/路径分段汇总_20261027/results.json",
+      "datf_algorithm3": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      },
+      "round_based": {
+        "numerator": "1",
+        "denominator": "1",
+        "log2_abs": 0.0
+      }
+    },
+    {
+      "id": "H4",
+      "permutation": "Hsilu",
+      "rounds": 4,
+      "delta": [
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000040000",
+        "0000000000000000"
+      ],
+      "lambda": [
+        "0000000000000200",
+        "0000000000000000",
+        "0000000000000004",
+        "0000000000000000",
+        "0000000000000200"
+      ],
+      "evaluation": "overall",
+      "prefix_rounds": 2,
+      "historical_id": "H4a",
+      "experiment": {
+        "samples": 268435456,
+        "seed": "2026101803",
+        "n0": 134477302,
+        "n1": 133958154,
+        "rho": 0.0019339770078659058,
+        "log2_abs": -9.014213641261506,
+        "ci95": [
+          0.0018143504967229607,
+          0.0020536034636562395
+        ],
+        "exact_sample_correlation": "129787/67108864",
+        "source": "research/差分线性/路径分段汇总_20261027/results.json",
+        "rerun_this_check": false
+      },
+      "data_log2_from_experiment": 18.028427282523012,
+      "model": "Full two-round differential-prefix weighting; uniform tail base state; full-mask transpose readout",
+      "first_prefix_branches": [
+        {
+          "first_column_difference": 8,
+          "probability": "1/4",
+          "second_layer_difference_image_dimension": 20
+        },
+        {
+          "first_column_difference": 10,
+          "probability": "1/4",
+          "second_layer_difference_image_dimension": 18
+        },
+        {
+          "first_column_difference": 12,
+          "probability": "1/4",
+          "second_layer_difference_image_dimension": 37
+        },
+        {
+          "first_column_difference": 14,
+          "probability": "1/4",
+          "second_layer_difference_image_dimension": 37
+        }
+      ],
+      "summation_terms": 64,
+      "source": "research/差分线性/joint_dl_20261125",
+      "datf_algorithm3": {
+        "numerator": "1",
+        "denominator": "512",
+        "log2_abs": -9.0
+      },
+      "round_based": {
+        "numerator": "1",
+        "denominator": "512",
+        "log2_abs": -9.0
+      }
+    },
+    {
+      "id": "H5",
+      "permutation": "Hsilu",
+      "rounds": 5,
+      "delta": [
+        "0000000000000000",
+        "0000000000040000",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000"
+      ],
+      "lambda": [
+        "0000000000000400",
+        "0000000000000000",
+        "0000000000800000",
+        "0000000000000000",
+        "0000000000000000"
+      ],
+      "gamma": [
+        "4b5819c709096147",
+        "76905dc80b5ba168",
+        "324c25b4008093a8",
+        "af4aaa0c43a10030",
+        "96235622080ac0f7"
+      ],
+      "evaluation": "concatenation",
+      "split": [
+        0,
+        2,
+        3
+      ],
+      "experiment": null,
+      "factors": {
+        "p": "1",
+        "middle_datf": "1/2",
+        "middle_round_based": "1/2",
+        "q_squared": "1/4611686018427387904"
+      },
+      "data_log2_from_model": 126.0,
+      "model": "Selected differential/middle/linear concatenation, not whole-pair evaluation",
+      "source": "research/差分线性/hsilu_dl/results/rounds2to5_20261027/results.json",
+      "datf_algorithm3": {
+        "numerator": "1",
+        "denominator": "9223372036854775808",
+        "log2_abs": -63.0
+      },
+      "round_based": {
+        "numerator": "1",
+        "denominator": "9223372036854775808",
+        "log2_abs": -63.0
+      }
+    }
+  ]
+}

@@ -25,6 +25,8 @@ def jobs(profile):
                             (paper,[PY,'verify_section2.py'])]),
             ('differential', [(paper+'/ctp_reviewer_20261117',[PY,'independent_checks.py']),
                               ('Hsilu_trail/search_below82_20261117',[PY,'verify.py']),
+                              ('Hsilu_trail/search_below82_20261117',['make','search']),
+                              ('..',[PY,'scripts/check_saved_results.py','hsilu_search']),
                               ('gaston_active_pattern/two_round_outside_proof',[PY,'verify.py'])]),
             ('gaston_support', [('Gaston_差分路径重量下界',['make','support-proof-binaries']),
                                 ('Gaston_差分路径重量下界',[PY,'src/verify_support_proof.py'])]),
@@ -43,6 +45,13 @@ def jobs(profile):
             ('preimage_accounting', [('..',[PY,'scripts/preimage_accounting.py'])]),
         ]
     if profile == 'datf':
+        current = '差分线性/joint_dl_20261125'
+        return [('prefix_algebra', [(current,[PY,'validate.py'])]),
+                ('datf_algorithm3_prefix', [(current,[PY,'datf_two_round_prefix.py'])]),
+                ('round_based_prefix', [(current,[PY,'validate_hnw_fullmask.py']),
+                                       (current,[PY,'recompute_for_manuscript.py'])]),
+                ('current_dl_results', [('..',[PY,'scripts/current_dl_results.py'])])]
+    if profile == 'datf-legacy':
         return [('datf_algorithm5', [(paper,[PY,'evaluate_datf_algorithm5.py','--target','G4a']),
                                     (paper,[PY,'evaluate_datf_algorithm5.py','--target','H4a']),
                                     ('..',[PY,'scripts/check_saved_results.py','datf'])])]
@@ -50,7 +59,7 @@ def jobs(profile):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--profile', choices=['quick','datf'], default='quick')
+    parser.add_argument('--profile', choices=['quick','datf','datf-legacy'], default='quick')
     parser.add_argument('--only', help='Comma-separated labels from the selected profile, for a focused rerun.')
     parser.add_argument('--timeout', type=int, default=1800, help='Seconds allowed for each command (default: 1800).')
     args = parser.parse_args()
@@ -60,6 +69,8 @@ def main():
         known = {name for name, _ in selected}
         if names-known:
             parser.error('Unknown check names: '+', '.join(sorted(names-known)))
+        if args.profile == 'datf' and 'current_dl_results' in names:
+            names.update(['datf_algorithm3_prefix', 'round_based_prefix'])
         selected = [(name, cmds) for name, cmds in selected if name in names]
     stamp = datetime.datetime.now().astimezone().strftime('%Y%m%d_%H%M%S')
     output = PACKAGE/'validation'/(stamp+'_'+args.profile)
@@ -111,9 +122,17 @@ def main():
             'validation/preimage_accounting.json',
         ]
         # Only copy files produced by checks run in this invocation.
-        produced = {'differential': [candidates[0]], 'differential_linear': [candidates[1]],
+        current = 'research/差分线性/joint_dl_20261125/'
+        produced = {'differential': [candidates[0], 'validation/hsilu_search.json',
+                                    'research/Hsilu_trail/search_below82_20261117/results/trail80.json'],
+                    'differential_linear': [candidates[1]],
                     'preimage_structure': [candidates[2]], 'cubes': candidates[3:5],
-                    'preimage_accounting': [candidates[5]]}
+                    'preimage_accounting': [candidates[5]],
+                    'prefix_algebra': [current+'validation.json'],
+                    'datf_algorithm3_prefix': [current+'datf_prefix_fullmask_results.json'],
+                    'round_based_prefix': [current+'hnw_fullmask_validation.json',
+                                          current+'manuscript_hnw_results.json'],
+                    'current_dl_results': ['CURRENT_DL_RESULTS.json']}
         for item in report['checks']:
             if item['status'] != 'PASS': continue
             for name in produced.get(item['name'], []):

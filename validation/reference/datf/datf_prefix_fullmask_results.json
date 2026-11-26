@@ -1,0 +1,5616 @@
+{
+  "method": "Two-round differential-prefix weighting plus original DATF Algorithm 3 on chi-L-chi tail",
+  "quantity": "signed correlation; bias is half of correlation",
+  "connection_model": "independent uniform tail base state, as in the manuscript HNW comparison",
+  "prefix_model": "full two-round differential Markov distribution, integrated exactly as a mixture of affine images",
+  "tail_identity": "Fully expand DATF beta variables; average last-layer independent uniform alpha variables; squared-LAT expansion and complete L^T masks are an equivalent evaluation order for this two-round DATF model.",
+  "scope": "Exact rational model evaluation, not a proof of the actual fixed-permutation correlation",
+  "local_algorithm3_truth_table_checks": 2048,
+  "results": [
+    {
+      "target": "Gaston",
+      "delta": [
+        "0000000000000002",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000"
+      ],
+      "lambda": [
+        "0000000000000000",
+        "0000000000000001",
+        "0000000000000000",
+        "0040000000000000",
+        "0000000000000000"
+      ],
+      "correlation": {
+        "numerator": 1,
+        "denominator": 256,
+        "value": 0.00390625,
+        "log2_abs": -8.0
+      },
+      "bias": {
+        "numerator": 1,
+        "denominator": 512,
+        "value": 0.001953125,
+        "log2_abs": -9.0
+      },
+      "first_prefix_branches": [
+        {
+          "first_column_difference": 1,
+          "probability": "1/4",
+          "second_layer_difference_image_dimension": 39
+        },
+        {
+          "first_column_difference": 9,
+          "probability": "1/4",
+          "second_layer_difference_image_dimension": 73
+        },
+        {
+          "first_column_difference": 17,
+          "probability": "1/4",
+          "second_layer_difference_image_dimension": 75
+        },
+        {
+          "first_column_difference": 25,
+          "probability": "1/4",
+          "second_layer_difference_image_dimension": 103
+        }
+      ],
+      "last_mask_branches": 16,
+      "all_summed_cases": 64,
+      "nonzero_cases": 1,
+      "branches": [
+        {
+          "first_column_difference": 1,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000000",
+            "0000000000000001",
+            "0000000000000000",
+            "0040000000000000",
+            "0000000000000000"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "1/4",
+          "rank": 2,
+          "reason": "nonzero",
+          "contribution": "1/256"
+        },
+        {
+          "first_column_difference": 1,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0040000000000000",
+            "0000000000000001",
+            "0000000000000000",
+            "0040000000000000",
+            "0000000000000000"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 19,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 1,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000000",
+            "0000000000000001",
+            "0000000000000000",
+            "0040000000000000",
+            "0040000000000000"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 4,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 1,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0040000000000000",
+            "0000000000000001",
+            "0000000000000000",
+            "0040000000000000",
+            "0040000000000000"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 12,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 1,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000000",
+            "0000000000000001",
+            "0000000000000001",
+            "0040000000000000",
+            "0000000000000000"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 8,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 1,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0040000000000000",
+            "0000000000000001",
+            "0000000000000001",
+            "0040000000000000",
+            "0000000000000000"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 16,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 1,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000000",
+            "0000000000000001",
+            "0000000000000001",
+            "0040000000000000",
+            "0040000000000000"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 7,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 1,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0040000000000000",
+            "0000000000000001",
+            "0000000000000001",
+            "0040000000000000",
+            "0040000000000000"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 10,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 1,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000000",
+            "0000000000000001",
+            "0000000000000000",
+            "0040000000000001",
+            "0000000000000000"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 11,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 1,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0040000000000000",
+            "0000000000000001",
+            "0000000000000000",
+            "0040000000000001",
+            "0000000000000000"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 22,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 1,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000000",
+            "0000000000000001",
+            "0000000000000000",
+            "0040000000000001",
+            "0040000000000000"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 4,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 1,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0040000000000000",
+            "0000000000000001",
+            "0000000000000000",
+            "0040000000000001",
+            "0040000000000000"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 12,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 1,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000000",
+            "0000000000000001",
+            "0000000000000001",
+            "0040000000000001",
+            "0000000000000000"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 8,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 1,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0040000000000000",
+            "0000000000000001",
+            "0000000000000001",
+            "0040000000000001",
+            "0000000000000000"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 16,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 1,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000000",
+            "0000000000000001",
+            "0000000000000001",
+            "0040000000000001",
+            "0040000000000000"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 7,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 1,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0040000000000000",
+            "0000000000000001",
+            "0000000000000001",
+            "0040000000000001",
+            "0040000000000000"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 10,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 9,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000000",
+            "0000000000000001",
+            "0000000000000000",
+            "0040000000000000",
+            "0000000000000000"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 3,
+          "reason": "balanced_sign",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 9,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0040000000000000",
+            "0000000000000001",
+            "0000000000000000",
+            "0040000000000000",
+            "0000000000000000"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 21,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 9,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000000",
+            "0000000000000001",
+            "0000000000000000",
+            "0040000000000000",
+            "0040000000000000"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 10,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 9,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0040000000000000",
+            "0000000000000001",
+            "0000000000000000",
+            "0040000000000000",
+            "0040000000000000"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 22,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 9,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000000",
+            "0000000000000001",
+            "0000000000000001",
+            "0040000000000000",
+            "0000000000000000"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 18,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 9,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0040000000000000",
+            "0000000000000001",
+            "0000000000000001",
+            "0040000000000000",
+            "0000000000000000"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 28,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 9,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000000",
+            "0000000000000001",
+            "0000000000000001",
+            "0040000000000000",
+            "0040000000000000"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 16,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 9,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0040000000000000",
+            "0000000000000001",
+            "0000000000000001",
+            "0040000000000000",
+            "0040000000000000"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 25,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 9,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000000",
+            "0000000000000001",
+            "0000000000000000",
+            "0040000000000001",
+            "0000000000000000"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 34,
+          "reason": "balanced_sign",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 9,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0040000000000000",
+            "0000000000000001",
+            "0000000000000000",
+            "0040000000000001",
+            "0000000000000000"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 25,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 9,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000000",
+            "0000000000000001",
+            "0000000000000000",
+            "0040000000000001",
+            "0040000000000000"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 14,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 9,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0040000000000000",
+            "0000000000000001",
+            "0000000000000000",
+            "0040000000000001",
+            "0040000000000000"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 26,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 9,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000000",
+            "0000000000000001",
+            "0000000000000001",
+            "0040000000000001",
+            "0000000000000000"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 16,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 9,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0040000000000000",
+            "0000000000000001",
+            "0000000000000001",
+            "0040000000000001",
+            "0000000000000000"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 26,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 9,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000000",
+            "0000000000000001",
+            "0000000000000001",
+            "0040000000000001",
+            "0040000000000000"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 14,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 9,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0040000000000000",
+            "0000000000000001",
+            "0000000000000001",
+            "0040000000000001",
+            "0040000000000000"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 23,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 17,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000000",
+            "0000000000000001",
+            "0000000000000000",
+            "0040000000000000",
+            "0000000000000000"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 2,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 17,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0040000000000000",
+            "0000000000000001",
+            "0000000000000000",
+            "0040000000000000",
+            "0000000000000000"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 19,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 17,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000000",
+            "0000000000000001",
+            "0000000000000000",
+            "0040000000000000",
+            "0040000000000000"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 10,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 17,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0040000000000000",
+            "0000000000000001",
+            "0000000000000000",
+            "0040000000000000",
+            "0040000000000000"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 38,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 17,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000000",
+            "0000000000000001",
+            "0000000000000001",
+            "0040000000000000",
+            "0000000000000000"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 25,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 17,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0040000000000000",
+            "0000000000000001",
+            "0000000000000001",
+            "0040000000000000",
+            "0000000000000000"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 32,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 17,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000000",
+            "0000000000000001",
+            "0000000000000001",
+            "0040000000000000",
+            "0040000000000000"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 17,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 17,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0040000000000000",
+            "0000000000000001",
+            "0000000000000001",
+            "0040000000000000",
+            "0040000000000000"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 28,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 17,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000000",
+            "0000000000000001",
+            "0000000000000000",
+            "0040000000000001",
+            "0000000000000000"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 21,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 17,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0040000000000000",
+            "0000000000000001",
+            "0000000000000000",
+            "0040000000000001",
+            "0000000000000000"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 23,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 17,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000000",
+            "0000000000000001",
+            "0000000000000000",
+            "0040000000000001",
+            "0040000000000000"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 14,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 17,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0040000000000000",
+            "0000000000000001",
+            "0000000000000000",
+            "0040000000000001",
+            "0040000000000000"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 26,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 17,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000000",
+            "0000000000000001",
+            "0000000000000001",
+            "0040000000000001",
+            "0000000000000000"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 34,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 17,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0040000000000000",
+            "0000000000000001",
+            "0000000000000001",
+            "0040000000000001",
+            "0000000000000000"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 32,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 17,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000000",
+            "0000000000000001",
+            "0000000000000001",
+            "0040000000000001",
+            "0040000000000000"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 16,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 17,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0040000000000000",
+            "0000000000000001",
+            "0000000000000001",
+            "0040000000000001",
+            "0040000000000000"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 27,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 25,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000000",
+            "0000000000000001",
+            "0000000000000000",
+            "0040000000000000",
+            "0000000000000000"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 2,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 25,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0040000000000000",
+            "0000000000000001",
+            "0000000000000000",
+            "0040000000000000",
+            "0000000000000000"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 19,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 25,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000000",
+            "0000000000000001",
+            "0000000000000000",
+            "0040000000000000",
+            "0040000000000000"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 10,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 25,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0040000000000000",
+            "0000000000000001",
+            "0000000000000000",
+            "0040000000000000",
+            "0040000000000000"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 32,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 25,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000000",
+            "0000000000000001",
+            "0000000000000001",
+            "0040000000000000",
+            "0000000000000000"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 25,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 25,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0040000000000000",
+            "0000000000000001",
+            "0000000000000001",
+            "0040000000000000",
+            "0000000000000000"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 32,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 25,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000000",
+            "0000000000000001",
+            "0000000000000001",
+            "0040000000000000",
+            "0040000000000000"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 17,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 25,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0040000000000000",
+            "0000000000000001",
+            "0000000000000001",
+            "0040000000000000",
+            "0040000000000000"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 28,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 25,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000000",
+            "0000000000000001",
+            "0000000000000000",
+            "0040000000000001",
+            "0000000000000000"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 22,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 25,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0040000000000000",
+            "0000000000000001",
+            "0000000000000000",
+            "0040000000000001",
+            "0000000000000000"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 24,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 25,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000000",
+            "0000000000000001",
+            "0000000000000000",
+            "0040000000000001",
+            "0040000000000000"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 14,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 25,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0040000000000000",
+            "0000000000000001",
+            "0000000000000000",
+            "0040000000000001",
+            "0040000000000000"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 27,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 25,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000000",
+            "0000000000000001",
+            "0000000000000001",
+            "0040000000000001",
+            "0000000000000000"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 37,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 25,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0040000000000000",
+            "0000000000000001",
+            "0000000000000001",
+            "0040000000000001",
+            "0000000000000000"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 33,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 25,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000000",
+            "0000000000000001",
+            "0000000000000001",
+            "0040000000000001",
+            "0040000000000000"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 17,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 25,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0040000000000000",
+            "0000000000000001",
+            "0000000000000001",
+            "0040000000000001",
+            "0040000000000000"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 28,
+          "reason": "inconsistent",
+          "contribution": "0"
+        }
+      ],
+      "seconds": 0.07291506200272124
+    },
+    {
+      "target": "Hsilu",
+      "delta": [
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000040000",
+        "0000000000000000"
+      ],
+      "lambda": [
+        "0000000000000200",
+        "0000000000000000",
+        "0000000000000004",
+        "0000000000000000",
+        "0000000000000200"
+      ],
+      "correlation": {
+        "numerator": 1,
+        "denominator": 512,
+        "value": 0.001953125,
+        "log2_abs": -9.0
+      },
+      "bias": {
+        "numerator": 1,
+        "denominator": 1024,
+        "value": 0.0009765625,
+        "log2_abs": -10.0
+      },
+      "first_prefix_branches": [
+        {
+          "first_column_difference": 8,
+          "probability": "1/4",
+          "second_layer_difference_image_dimension": 20
+        },
+        {
+          "first_column_difference": 10,
+          "probability": "1/4",
+          "second_layer_difference_image_dimension": 18
+        },
+        {
+          "first_column_difference": 12,
+          "probability": "1/4",
+          "second_layer_difference_image_dimension": 37
+        },
+        {
+          "first_column_difference": 14,
+          "probability": "1/4",
+          "second_layer_difference_image_dimension": 37
+        }
+      ],
+      "last_mask_branches": 16,
+      "all_summed_cases": 64,
+      "nonzero_cases": 1,
+      "branches": [
+        {
+          "first_column_difference": 8,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000000",
+            "0000000000000000",
+            "0000000000000004",
+            "0000000000000000",
+            "0000000000000200"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 0,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 8,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000000",
+            "0000000000000200",
+            "0000000000000004",
+            "0000000000000000",
+            "0000000000000200"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 3,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 8,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000200",
+            "0000000000000000",
+            "0000000000000204",
+            "0000000000000000",
+            "0000000000000200"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 3,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 8,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000200",
+            "0000000000000200",
+            "0000000000000204",
+            "0000000000000000",
+            "0000000000000200"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 5,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 8,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000000",
+            "0000000000000000",
+            "0000000000000004",
+            "0000000000000004",
+            "0000000000000200"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 2,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 8,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000000",
+            "0000000000000200",
+            "0000000000000004",
+            "0000000000000004",
+            "0000000000000200"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 5,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 8,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000200",
+            "0000000000000000",
+            "0000000000000204",
+            "0000000000000004",
+            "0000000000000200"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 3,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 8,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000200",
+            "0000000000000200",
+            "0000000000000204",
+            "0000000000000004",
+            "0000000000000200"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 5,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 8,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000000",
+            "0000000000000000",
+            "0000000000000004",
+            "0000000000000000",
+            "0000000000000204"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 3,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 8,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000000",
+            "0000000000000200",
+            "0000000000000004",
+            "0000000000000000",
+            "0000000000000204"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 5,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 8,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000200",
+            "0000000000000000",
+            "0000000000000204",
+            "0000000000000000",
+            "0000000000000204"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 5,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 8,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000200",
+            "0000000000000200",
+            "0000000000000204",
+            "0000000000000000",
+            "0000000000000204"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 6,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 8,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000000",
+            "0000000000000000",
+            "0000000000000004",
+            "0000000000000004",
+            "0000000000000204"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 5,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 8,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000000",
+            "0000000000000200",
+            "0000000000000004",
+            "0000000000000004",
+            "0000000000000204"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 7,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 8,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000200",
+            "0000000000000000",
+            "0000000000000204",
+            "0000000000000004",
+            "0000000000000204"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 5,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 8,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000200",
+            "0000000000000200",
+            "0000000000000204",
+            "0000000000000004",
+            "0000000000000204"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 6,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 10,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000000",
+            "0000000000000000",
+            "0000000000000004",
+            "0000000000000000",
+            "0000000000000200"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "1/8",
+          "rank": 3,
+          "reason": "nonzero",
+          "contribution": "1/512"
+        },
+        {
+          "first_column_difference": 10,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000000",
+            "0000000000000200",
+            "0000000000000004",
+            "0000000000000000",
+            "0000000000000200"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 4,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 10,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000200",
+            "0000000000000000",
+            "0000000000000204",
+            "0000000000000000",
+            "0000000000000200"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 5,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 10,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000200",
+            "0000000000000200",
+            "0000000000000204",
+            "0000000000000000",
+            "0000000000000200"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 6,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 10,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000000",
+            "0000000000000000",
+            "0000000000000004",
+            "0000000000000004",
+            "0000000000000200"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 4,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 10,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000000",
+            "0000000000000200",
+            "0000000000000004",
+            "0000000000000004",
+            "0000000000000200"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 5,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 10,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000200",
+            "0000000000000000",
+            "0000000000000204",
+            "0000000000000004",
+            "0000000000000200"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 6,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 10,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000200",
+            "0000000000000200",
+            "0000000000000204",
+            "0000000000000004",
+            "0000000000000200"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 6,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 10,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000000",
+            "0000000000000000",
+            "0000000000000004",
+            "0000000000000000",
+            "0000000000000204"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 1,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 10,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000000",
+            "0000000000000200",
+            "0000000000000004",
+            "0000000000000000",
+            "0000000000000204"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 6,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 10,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000200",
+            "0000000000000000",
+            "0000000000000204",
+            "0000000000000000",
+            "0000000000000204"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 3,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 10,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000200",
+            "0000000000000200",
+            "0000000000000204",
+            "0000000000000000",
+            "0000000000000204"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 7,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 10,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000000",
+            "0000000000000000",
+            "0000000000000004",
+            "0000000000000004",
+            "0000000000000204"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 2,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 10,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000000",
+            "0000000000000200",
+            "0000000000000004",
+            "0000000000000004",
+            "0000000000000204"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 7,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 10,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000200",
+            "0000000000000000",
+            "0000000000000204",
+            "0000000000000004",
+            "0000000000000204"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 4,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 10,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000200",
+            "0000000000000200",
+            "0000000000000204",
+            "0000000000000004",
+            "0000000000000204"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 7,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 12,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000000",
+            "0000000000000000",
+            "0000000000000004",
+            "0000000000000000",
+            "0000000000000200"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 3,
+          "reason": "balanced_sign",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 12,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000000",
+            "0000000000000200",
+            "0000000000000004",
+            "0000000000000000",
+            "0000000000000200"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 4,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 12,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000200",
+            "0000000000000000",
+            "0000000000000204",
+            "0000000000000000",
+            "0000000000000200"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 2,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 12,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000200",
+            "0000000000000200",
+            "0000000000000204",
+            "0000000000000000",
+            "0000000000000200"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 4,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 12,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000000",
+            "0000000000000000",
+            "0000000000000004",
+            "0000000000000004",
+            "0000000000000200"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 2,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 12,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000000",
+            "0000000000000200",
+            "0000000000000004",
+            "0000000000000004",
+            "0000000000000200"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 4,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 12,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000200",
+            "0000000000000000",
+            "0000000000000204",
+            "0000000000000004",
+            "0000000000000200"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 6,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 12,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000200",
+            "0000000000000200",
+            "0000000000000204",
+            "0000000000000004",
+            "0000000000000200"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 8,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 12,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000000",
+            "0000000000000000",
+            "0000000000000004",
+            "0000000000000000",
+            "0000000000000204"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 6,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 12,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000000",
+            "0000000000000200",
+            "0000000000000004",
+            "0000000000000000",
+            "0000000000000204"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 8,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 12,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000200",
+            "0000000000000000",
+            "0000000000000204",
+            "0000000000000000",
+            "0000000000000204"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 4,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 12,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000200",
+            "0000000000000200",
+            "0000000000000204",
+            "0000000000000000",
+            "0000000000000204"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 4,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 12,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000000",
+            "0000000000000000",
+            "0000000000000004",
+            "0000000000000004",
+            "0000000000000204"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 4,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 12,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000000",
+            "0000000000000200",
+            "0000000000000004",
+            "0000000000000004",
+            "0000000000000204"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 4,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 12,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000200",
+            "0000000000000000",
+            "0000000000000204",
+            "0000000000000004",
+            "0000000000000204"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 10,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 12,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000200",
+            "0000000000000200",
+            "0000000000000204",
+            "0000000000000004",
+            "0000000000000204"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 10,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 14,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000000",
+            "0000000000000000",
+            "0000000000000004",
+            "0000000000000000",
+            "0000000000000200"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 3,
+          "reason": "balanced_sign",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 14,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000000",
+            "0000000000000200",
+            "0000000000000004",
+            "0000000000000000",
+            "0000000000000200"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 4,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 14,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000200",
+            "0000000000000000",
+            "0000000000000204",
+            "0000000000000000",
+            "0000000000000200"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 2,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 14,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000200",
+            "0000000000000200",
+            "0000000000000204",
+            "0000000000000000",
+            "0000000000000200"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 4,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 14,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000000",
+            "0000000000000000",
+            "0000000000000004",
+            "0000000000000004",
+            "0000000000000200"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 2,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 14,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000000",
+            "0000000000000200",
+            "0000000000000004",
+            "0000000000000004",
+            "0000000000000200"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 4,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 14,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000200",
+            "0000000000000000",
+            "0000000000000204",
+            "0000000000000004",
+            "0000000000000200"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 11,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 14,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000200",
+            "0000000000000200",
+            "0000000000000204",
+            "0000000000000004",
+            "0000000000000200"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 12,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 14,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000000",
+            "0000000000000000",
+            "0000000000000004",
+            "0000000000000000",
+            "0000000000000204"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 10,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 14,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000000",
+            "0000000000000200",
+            "0000000000000004",
+            "0000000000000000",
+            "0000000000000204"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 8,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 14,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000200",
+            "0000000000000000",
+            "0000000000000204",
+            "0000000000000000",
+            "0000000000000204"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 4,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 14,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000200",
+            "0000000000000200",
+            "0000000000000204",
+            "0000000000000000",
+            "0000000000000204"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 4,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 14,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000000",
+            "0000000000000000",
+            "0000000000000004",
+            "0000000000000004",
+            "0000000000000204"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 4,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 14,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000000",
+            "0000000000000200",
+            "0000000000000004",
+            "0000000000000004",
+            "0000000000000204"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 4,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 14,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000200",
+            "0000000000000000",
+            "0000000000000204",
+            "0000000000000004",
+            "0000000000000204"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 16,
+          "reason": "inconsistent",
+          "contribution": "0"
+        },
+        {
+          "first_column_difference": 14,
+          "first_probability": "1/4",
+          "last_chi_input_mask": [
+            "0000000000000200",
+            "0000000000000200",
+            "0000000000000204",
+            "0000000000000004",
+            "0000000000000204"
+          ],
+          "last_chi_squared_weight": "1/16",
+          "prefix_average": "0",
+          "rank": 16,
+          "reason": "inconsistent",
+          "contribution": "0"
+        }
+      ],
+      "seconds": 0.06322896499477793
+    }
+  ],
+  "tail_validation": [
+    {
+      "target": "Gaston",
+      "cases": 121,
+      "nonzero_cases": 19,
+      "full_state_dag_checks": 6,
+      "status": "PASS",
+      "records": [
+        {
+          "kind": "zero",
+          "difference": [
+            "0000000000000000",
+            "0000000000000000",
+            "0000000000000000",
+            "0000000000000000",
+            "0000000000000000"
+          ],
+          "algorithm3_correlation": "1",
+          "fullmask_formula_correlation": "1",
+          "expanded_degree": 0,
+          "expanded_terms": 0
+        },
+        {
+          "kind": "prefix_1",
+          "difference": [
+            "4b94206f334b48e1",
+            "e3429e204b704a68",
+            "91251435a1991015",
+            "963ad1a5881b6812",
+            "524e5a1091035182"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 594
+        },
+        {
+          "kind": "prefix_1",
+          "difference": [
+            "78eb54f2de4e80ba",
+            "b070f174d2d54fb0",
+            "76a7f01038b6aa59",
+            "e4ac1d18553d1753",
+            "fc0983826aa79fea"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 1064
+        },
+        {
+          "kind": "prefix_1",
+          "difference": [
+            "6da909d521aff459",
+            "5b643309f12aaec4",
+            "8b574a61b2c784c8",
+            "b914d82ec275ecab",
+            "77aa9f24784e8095"
+          ],
+          "algorithm3_correlation": "1/16",
+          "fullmask_formula_correlation": "1/16",
+          "expanded_degree": 2,
+          "expanded_terms": 965
+        },
+        {
+          "kind": "prefix_1",
+          "difference": [
+            "4a32305f164a8e28",
+            "2e42a0307b1d4bae",
+            "91a5f7512198180d",
+            "e78891aa0c174152",
+            "dc781210a082d1aa"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 530
+        },
+        {
+          "kind": "prefix_1",
+          "difference": [
+            "5c031dfdfd6a06f2",
+            "f454013dd9f66b26",
+            "f735b3342ac08edc",
+            "c5be1420477fff9a",
+            "583ac2a528efc672"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 984
+        },
+        {
+          "kind": "prefix_1",
+          "difference": [
+            "6eb491dde5612668",
+            "6e66b6b3f9e66306",
+            "f031a379339b49cc",
+            "cd989889a4f7ed98",
+            "993f1331949ec633"
+          ],
+          "algorithm3_correlation": "1/16",
+          "fullmask_formula_correlation": "1/16",
+          "expanded_degree": 2,
+          "expanded_terms": 751
+        },
+        {
+          "kind": "prefix_1",
+          "difference": [
+            "69751b75074e10f3",
+            "f560673951044e20",
+            "8a273834b0e98c98",
+            "803e593dc65dd513",
+            "f08fcb0798cb81a2"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 708
+        },
+        {
+          "kind": "prefix_1",
+          "difference": [
+            "7bae1cf13e4aec29",
+            "2f722c1cd1754adc",
+            "8fa54659b9d40e58",
+            "bf08ddad073ddb52",
+            "57681b9541e780eb"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 1010
+        },
+        {
+          "kind": "prefix_1",
+          "difference": [
+            "7ecf07c56a6b84a2",
+            "ac76dd05e1616ba4",
+            "a6b5f25c3ba482c0",
+            "e12a1c914171de5a",
+            "5c2d43b3482e03cb"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 1003
+        },
+        {
+          "kind": "prefix_1",
+          "difference": [
+            "6daf126d264abaab",
+            "ad64ad10492d4a9a",
+            "8aa56d18b2868814",
+            "aaa85809441bed52",
+            "d5dd0b20498340aa"
+          ],
+          "algorithm3_correlation": "1/16",
+          "fullmask_formula_correlation": "1/16",
+          "expanded_degree": 2,
+          "expanded_terms": 576
+        },
+        {
+          "kind": "prefix_1",
+          "difference": [
+            "528dee7cec867e33",
+            "355217cc58a7875e",
+            "6fc38f5ca9c7f61c",
+            "db0e55a5fb1fafe1",
+            "bbfdce945e63cf7d"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 1430
+        },
+        {
+          "kind": "prefix_1",
+          "difference": [
+            "5c601fc3b3ae8ac8",
+            "c6547a1de3b8afaa",
+            "db57f5612ae10ec1",
+            "e2b0943887714c2b",
+            "fc5a16a731ee1505"
+          ],
+          "algorithm3_correlation": "1/16",
+          "fullmask_formula_correlation": "1/16",
+          "expanded_degree": 2,
+          "expanded_terms": 924
+        },
+        {
+          "kind": "prefix_1",
+          "difference": [
+            "64de2b7f8b620c51",
+            "53644c095b80633c",
+            "cd31b62db2ec149d",
+            "c316d8130a5f6218",
+            "986edb27c04bd542"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 769
+        },
+        {
+          "kind": "prefix_1",
+          "difference": [
+            "77a874ea42a6f810",
+            "1e762254ca49a6c8",
+            "31d34c053bc73a55",
+            "be869cac9d3b0469",
+            "b7c9d7b473a75a8d"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 1307
+        },
+        {
+          "kind": "prefix_1",
+          "difference": [
+            "5b41854dbf84a260",
+            "6a52d38769fc8692",
+            "cc43613d29a1c384",
+            "a89a95b4e1d3fb21",
+            "351f56923c3a4564"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 992
+        },
+        {
+          "kind": "prefix_1",
+          "difference": [
+            "686331d725abe0d1",
+            "d760f111f326abd0",
+            "8155c02db0b298c9",
+            "fc36d9184c755daa",
+            "df0fdf03298e91b5"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 856
+        },
+        {
+          "kind": "prefix_1",
+          "difference": [
+            "7bc59eefc54bfe5b",
+            "5d72579ccb8e4ade",
+            "eb254f68b9e3ce55",
+            "bb945db5e73b6592",
+            "57ff8b961ce75733"
+          ],
+          "algorithm3_correlation": "1/16",
+          "fullmask_formula_correlation": "1/16",
+          "expanded_degree": 2,
+          "expanded_terms": 1266
+        },
+        {
+          "kind": "prefix_1",
+          "difference": [
+            "5209b4ff35a6b6c2",
+            "c4528394db3ea796",
+            "8353eb242985da5d",
+            "e9b215a2ed3f7da9",
+            "bdbf46907ca7d0b5"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 1180
+        },
+        {
+          "kind": "prefix_1",
+          "difference": [
+            "671193cdeba846cb",
+            "c9661b93e9e0aa66",
+            "ee551328b3c9c9c4",
+            "95b05884e4f3de2a",
+            "523b0f35bd9e47c4"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 829
+        },
+        {
+          "kind": "prefix_1",
+          "difference": [
+            "436339c966877619",
+            "1f42f919e9258646",
+            "a0c30b01a1a09cc4",
+            "9d84d19e4e73dd61",
+            "33b89e1229ce43ad"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 934
+        },
+        {
+          "kind": "prefix_1",
+          "difference": [
+            "7806b5d1274570cb",
+            "cd7084b7f12c4740",
+            "99238828b8905bc8",
+            "d8305d012df5c911",
+            "3b8e0b8105be80a3"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 793
+        },
+        {
+          "kind": "prefix_1",
+          "difference": [
+            "7e2a74f03f65f4c1",
+            "c7762876d07467c4",
+            "0733ca25bbc63b58",
+            "f9b2dc8a1dbd9b19",
+            "3fae5bb463b78862"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 1228
+        },
+        {
+          "kind": "prefix_1",
+          "difference": [
+            "7b1f7d7209641cc8",
+            "ca72057f524a662c",
+            "15333e2939ccbf99",
+            "83b09da75fdd0699",
+            "b0ef1395cbfb99d3"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 885
+        },
+        {
+          "kind": "prefix_1",
+          "difference": [
+            "779e3eed66a93c1b",
+            "1d768c1ec965aa0c",
+            "a3d52e00bb9c1f54",
+            "8f045c810fbbfd6a",
+            "51e88fb1c1f7432c"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 1019
+        },
+        {
+          "kind": "prefix_9",
+          "difference": [
+            "50725628469f38c2",
+            "8a5ad8ef847f9188",
+            "33c88c2d2d58e2be",
+            "4a329af43182a164",
+            "8bca56da2271092c"
+          ],
+          "algorithm3_correlation": "-1/16",
+          "fullmask_formula_correlation": "-1/16",
+          "expanded_degree": 2,
+          "expanded_terms": 842
+        },
+        {
+          "kind": "prefix_9",
+          "difference": [
+            "7643bfe683265641",
+            "4574e91ece822472",
+            "4a121b7cbad89e1b",
+            "109250744fd03009",
+            "22be4eaae8bb5e80"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 1032
+        },
+        {
+          "kind": "prefix_9",
+          "difference": [
+            "19658b4fbdca772a",
+            "2a18d720e2b4c3d3",
+            "c7618b930cd3850d",
+            "fde88bddc25b0fb0",
+            "9bb111cfd44a3e76"
+          ],
+          "algorithm3_correlation": "1/16",
+          "fullmask_formula_correlation": "1/16",
+          "expanded_degree": 2,
+          "expanded_terms": 622
+        },
+        {
+          "kind": "prefix_9",
+          "difference": [
+            "988250ffcc1875e7",
+            "ef93b0eb56ad1f91",
+            "748faae7c9bc60d7",
+            "dc5be8a230b603c7",
+            "79a77995aa579d78"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 1035
+        },
+        {
+          "kind": "prefix_9",
+          "difference": [
+            "10a1b18ca4a9265c",
+            "1c191b3224e5a252",
+            "d1d1237a0cb3986e",
+            "8c950baacceaa9e8",
+            "113ea5c5bc9c0ebc"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 664
+        },
+        {
+          "kind": "prefix_9",
+          "difference": [
+            "28e8c868156e81f0",
+            "b428da61c12e60b1",
+            "193070ac1495259c",
+            "05fe06d29213d598",
+            "0403c14af34323b3"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 790
+        },
+        {
+          "kind": "prefix_9",
+          "difference": [
+            "af19ffd2d623ce9b",
+            "9faf3b767ab5297e",
+            "e394f74bd773be41",
+            "6324e606dffd154a",
+            "4c7c987d7bbefd28"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 1214
+        },
+        {
+          "kind": "prefix_9",
+          "difference": [
+            "86dbf06cd0edab78",
+            "388d796b41e3e05b",
+            "e2f065ea46c834dc",
+            "3fdc2f325ab3e4f8",
+            "0557846f2f57251f"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 824
+        },
+        {
+          "kind": "prefix_9",
+          "difference": [
+            "3276cdfe34e87ed5",
+            "99395c465667e91a",
+            "8bf4af6c9c0ea657",
+            "5f37439713f62dfa",
+            "49fee8ca473f9bbf"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 1253
+        },
+        {
+          "kind": "prefix_9",
+          "difference": [
+            "96428426bab5ab14",
+            "1c9f70178ed9b89f",
+            "dcdc659c4f080ebb",
+            "2b672b9007800e6e",
+            "4554e0fbe9b15e4c"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 957
+        },
+        {
+          "kind": "prefix_9",
+          "difference": [
+            "f62a7aa59d46a02d",
+            "25f690f18c9e4cd0",
+            "d5264012fb72f9ba",
+            "08a970e83c00b793",
+            "670d2eb5abc14e72"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 895
+        },
+        {
+          "kind": "prefix_9",
+          "difference": [
+            "9e8ccdd4347e9cbf",
+            "b79d265e7c6d71bc",
+            "98b8fe0bcefdae42",
+            "520deba397fc9ddc",
+            "8ce9bce19afeca3b"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 1024
+        },
+        {
+          "kind": "prefix_9",
+          "difference": [
+            "9953b2eff17979b4",
+            "f890f903c7e87ec9",
+            "e33f0c9c489e109f",
+            "bacf285848926c9f",
+            "f3c5e48b65131492"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 899
+        },
+        {
+          "kind": "prefix_9",
+          "difference": [
+            "fc58c1be77bb8ede",
+            "96f76a68135cb17e",
+            "a058d7397b052175",
+            "4615b13a90674d2c",
+            "0e7ab2b63b4db1a5"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 833
+        },
+        {
+          "kind": "prefix_9",
+          "difference": [
+            "ca3a34acd58beec9",
+            "c1c8108d81dc82da",
+            "78416720e438d3bc",
+            "8f307ee22903d5a0",
+            "957a0b4924212535"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 568
+        },
+        {
+          "kind": "prefix_9",
+          "difference": [
+            "5e6bdde368106cc2",
+            "c255d17cca531ecc",
+            "248f263f2a18af19",
+            "8e92991057511ac7",
+            "f16a57aae7ab79d8"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 1173
+        },
+        {
+          "kind": "prefix_9",
+          "difference": [
+            "f4f816f89ebc48f2",
+            "b2f6caad51afbfa8",
+            "4ddf94757bd347d4",
+            "f2beb1faa337e76f",
+            "7a4bd2be3167a76c"
+          ],
+          "algorithm3_correlation": "1/16",
+          "fullmask_formula_correlation": "1/16",
+          "expanded_degree": 2,
+          "expanded_terms": 1434
+        },
+        {
+          "kind": "prefix_9",
+          "difference": [
+            "df12218556c17ddd",
+            "d5d6b8882d47c609",
+            "a1e32ef0eba0d16a",
+            "be5578c82868c571",
+            "31e6afb1294c402f"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 689
+        },
+        {
+          "kind": "prefix_9",
+          "difference": [
+            "25214d24f92b2b30",
+            "30278bfe88e82cdf",
+            "ed16058c13f5ee38",
+            "3bce0402f7c1be8b",
+            "e351c535faf96cd1"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 1100
+        },
+        {
+          "kind": "prefix_9",
+          "difference": [
+            "27ecfd3e7c761dc8",
+            "c42ede541615722d",
+            "36b93ea2175b3f77",
+            "83f006f59f663fdc",
+            "90e60177d7ad997a"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 1108
+        },
+        {
+          "kind": "prefix_9",
+          "difference": [
+            "1543973272f4d263",
+            "6b1f61149f2bf972",
+            "b0fcd96f8fd00f33",
+            "41bacbb247447c7e",
+            "4e9f58ffe4a9d18e"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 1115
+        },
+        {
+          "kind": "prefix_9",
+          "difference": [
+            "800b05006a513162",
+            "2e8121acad215905",
+            "bdac88bf40ea432a",
+            "7c7aac2a6148ea56",
+            "4b87550ca168404a"
+          ],
+          "algorithm3_correlation": "1/16",
+          "fullmask_formula_correlation": "1/16",
+          "expanded_degree": 2,
+          "expanded_terms": 484
+        },
+        {
+          "kind": "prefix_9",
+          "difference": [
+            "8b1f0d1cb191a6b9",
+            "f182358cb1aa9616",
+            "504b4312c1224324",
+            "8dac6c4d614feca5",
+            "373989140828a695"
+          ],
+          "algorithm3_correlation": "1/16",
+          "fullmask_formula_correlation": "1/16",
+          "expanded_degree": 2,
+          "expanded_terms": 575
+        },
+        {
+          "kind": "prefix_9",
+          "difference": [
+            "9e5cab3cbc6dc166",
+            "2295fe0015fd6425",
+            "c4b270a74a8f1176",
+            "017ba8b18866cfd9",
+            "a40774ae5d0d867b"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 669
+        },
+        {
+          "kind": "prefix_17",
+          "difference": [
+            "6969b8af40dda830",
+            "fa6c2b988d73c619",
+            "c4e16c7d36a5ec75",
+            "6a0e9a1ce6347af1",
+            "2d2dd762edc56ad2"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 949
+        },
+        {
+          "kind": "prefix_17",
+          "difference": [
+            "911aefba33d2d279",
+            "339000cdb840cb62",
+            "9e67d979c89e66ef",
+            "329ce5263378b232",
+            "467f9881667cddc3"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 904
+        },
+        {
+          "kind": "prefix_17",
+          "difference": [
+            "5e91c99454d33e3b",
+            "794713c9b62f7b9e",
+            "34ffa710a359d4e8",
+            "0bcc50c6fa7abbfe",
+            "c1988a3c3e5cba77"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 1006
+        },
+        {
+          "kind": "prefix_17",
+          "difference": [
+            "1156ff0e9f512c50",
+            "d21594dd0cece38c",
+            "7233ae0d0a6a6eb4",
+            "0f5684753756bd18",
+            "810bd4ae06f9742e"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 798
+        },
+        {
+          "kind": "prefix_17",
+          "difference": [
+            "447e4bbd3e73dff3",
+            "5141b4499f05cb7e",
+            "53a7d7b4a0bf34fc",
+            "37be51491a71e552",
+            "c696ce03535de933"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 1012
+        },
+        {
+          "kind": "prefix_17",
+          "difference": [
+            "45e9cca67994fe63",
+            "e950bbce80421f4f",
+            "b14dc754a8a5f772",
+            "3d9a555efbb7b0a7",
+            "e79e4e82fe750f80"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 1147
+        },
+        {
+          "kind": "prefix_17",
+          "difference": [
+            "cb6938001cabef22",
+            "6cc733380667a24f",
+            "92d34ffc63a6ac31",
+            "7bca30acc61699e8",
+            "0f144233f9d12d2d"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 769
+        },
+        {
+          "kind": "prefix_17",
+          "difference": [
+            "e31e703101edebaa",
+            "a0ef0c52373a4f4a",
+            "5e65c5d077cd0929",
+            "3a683af314995ab3",
+            "e7b407744280acd6"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 446
+        },
+        {
+          "kind": "prefix_17",
+          "difference": [
+            "5b17e3281c7f1eab",
+            "654e8dc10e277cbf",
+            "bbbc3770a78bc0b5",
+            "c3285297705499df",
+            "78990a710f1974be"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 739
+        },
+        {
+          "kind": "prefix_17",
+          "difference": [
+            "07a7322467176199",
+            "b712bd32021cbdc1",
+            "ff1c80e989418933",
+            "9ae4c5dd4496830f",
+            "73e19c9c9991037c"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 631
+        },
+        {
+          "kind": "prefix_17",
+          "difference": [
+            "ae591e926116a2e9",
+            "c3a30b3eb45a0d02",
+            "3604e111d16ebf69",
+            "acb8e9e6cfba1683",
+            "75fa1d1f79f4b644"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 725
+        },
+        {
+          "kind": "prefix_17",
+          "difference": [
+            "5a75c484540421e0",
+            "624a27c6a2271e90",
+            "6c8d28f525eaf363",
+            "4efa93eff9bcbbc7",
+            "e96352570e341e7d"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 1027
+        },
+        {
+          "kind": "prefix_17",
+          "difference": [
+            "cbbf0a20c81f0c1b",
+            "d1c63d0a26bb8cbd",
+            "e2843640e3cd9520",
+            "c70470b94a9f3cc3",
+            "78898e3559502a15"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 669
+        },
+        {
+          "kind": "prefix_17",
+          "difference": [
+            "86f3b6052087f472",
+            "d49b61b6275b3f54",
+            "37ddca3c4d6aeb20",
+            "3dde27be659e76ef",
+            "e74fc4df3cb02cc5"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 1109
+        },
+        {
+          "kind": "prefix_17",
+          "difference": [
+            "25a69e0d03e223d8",
+            "f225bc9e0b70cb82",
+            "a467a1e912405f36",
+            "0a3488092f964a32",
+            "41f3912d95f15dde"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 572
+        },
+        {
+          "kind": "prefix_17",
+          "difference": [
+            "57b3d02fb428b69a",
+            "d44b21d229c7b317",
+            "4d9beb48254af927",
+            "2fe413aa7c9ef7cc",
+            "055d825d3e80446d"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 811
+        },
+        {
+          "kind": "prefix_17",
+          "difference": [
+            "4d48673dc98271b8",
+            "1e5192651bb2bac1",
+            "a85f08f1287502bf",
+            "5e2c9536915178ae",
+            "cb65928fe339d281"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 689
+        },
+        {
+          "kind": "prefix_17",
+          "difference": [
+            "bee8679cea732e58",
+            "3ebfb245ba99c18e",
+            "52a2af415f6522ee",
+            "89d4aefc9179b050",
+            "911e91fef23cdb8b"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 1175
+        },
+        {
+          "kind": "prefix_17",
+          "difference": [
+            "080796acb1861243",
+            "650c55968ac204a3",
+            "9440316486d1db76",
+            "c65242316db732a1",
+            "38fb4c659cb55051"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 685
+        },
+        {
+          "kind": "prefix_17",
+          "difference": [
+            "b9cb8097265407c9",
+            "87b1c9a2955564a6",
+            "efb03be9d875f179",
+            "c530ed4068b0c759",
+            "3853198efd05b063"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 1030
+        },
+        {
+          "kind": "prefix_17",
+          "difference": [
+            "beaccdaeee14d1eb",
+            "25aba6ed8c953e71",
+            "db9d58d8d51756f5",
+            "74b86bedbb75a14f",
+            "6e660959c67d6e2c"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 1185
+        },
+        {
+          "kind": "prefix_17",
+          "difference": [
+            "3b01d9a36f853f49",
+            "272f13d9855c3f9f",
+            "ca5dafa99741dcf0",
+            "0f10caa4fe77652f",
+            "e113197daecd36b8"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 868
+        },
+        {
+          "kind": "prefix_17",
+          "difference": [
+            "632051b663babd23",
+            "65722a719058b31c",
+            "255beedcb90318fb",
+            "29ca5dcc9c72a22c",
+            "05014f99a38d9e54"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 878
+        },
+        {
+          "kind": "prefix_17",
+          "difference": [
+            "cf501a02b62cf3c1",
+            "03cf821a24c58753",
+            "1481c185e7fb1d21",
+            "3cb2f2968e9d3741",
+            "a7f65a7720d0217d"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 709
+        },
+        {
+          "kind": "prefix_25",
+          "difference": [
+            "fa6389523226fd08",
+            "8ce2c9325d691d98",
+            "f48cc6d871c99850",
+            "8ea0356a4ceb4247",
+            "77840712359fd25d"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 796
+        },
+        {
+          "kind": "prefix_25",
+          "difference": [
+            "611de214555b44ce",
+            "4a75f7593b0c5db0",
+            "842cba3b3a6c09e2",
+            "b2119039d4307b97",
+            "704e33a1c7c4f5ee"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 755
+        },
+        {
+          "kind": "prefix_25",
+          "difference": [
+            "1df5b6065606da8a",
+            "8a09c72fa947a73f",
+            "cf91f501049502ab",
+            "26808fddc196cb49",
+            "a4b8144280707c7d"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 778
+        },
+        {
+          "kind": "prefix_25",
+          "difference": [
+            "550ad6b460942573",
+            "5f52207f1a439405",
+            "26c82aeda9babaf3",
+            "e8ded9c61db986e5",
+            "3947de9522b5f1d5"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 887
+        },
+        {
+          "kind": "prefix_25",
+          "difference": [
+            "8d219362906376fb",
+            "53859b18e8c9c897",
+            "2ca60329c2ad990a",
+            "cc1cec4ccc473ad2",
+            "dbdf9d2471da624f"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 684
+        },
+        {
+          "kind": "prefix_25",
+          "difference": [
+            "d310d081f45adc52",
+            "fac9f27b8b975bec",
+            "85affe77647338ba",
+            "30d6be689c9ec3d6",
+            "440ed74ce28161f3"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 821
+        },
+        {
+          "kind": "prefix_25",
+          "difference": [
+            "78398cd2f3a64072",
+            "5a73d30f58803df5",
+            "5e5c980f39a736d3",
+            "871e908ecbab822f",
+            "726bd399ac37f8dd"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 1267
+        },
+        {
+          "kind": "prefix_25",
+          "difference": [
+            "dabaf73d53d99860",
+            "44dc985cb70acbbd",
+            "a767f46c6e3d0f24",
+            "25ba3a1a1753ca32",
+            "44af42e4aaf88cd7"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 752
+        },
+        {
+          "kind": "prefix_25",
+          "difference": [
+            "715890aa3a3ede68",
+            "4478ea3b243103ea",
+            "4a83f77a3c9998ed",
+            "1798123e8cb70040",
+            "849b03c6b1840290"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 740
+        },
+        {
+          "kind": "prefix_25",
+          "difference": [
+            "fdf193a897f89e4e",
+            "caf04b0aa7cefdfa",
+            "ec7cdf29784a102d",
+            "97b1b1c8c8d77b3f",
+            "761a368ab04816e6"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 823
+        },
+        {
+          "kind": "prefix_25",
+          "difference": [
+            "556e97ce031aa26b",
+            "435f8426e028b312",
+            "261be121af14960e",
+            "3b78dbf90bc60e0c",
+            "05ff1efa1c3a2ed5"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 756
+        },
+        {
+          "kind": "prefix_25",
+          "difference": [
+            "86906a86d85e64c4",
+            "689e6afb28f1e844",
+            "09b6223c4fa848eb",
+            "dc532b52b4b518da",
+            "d9ce61f0abc4788b"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 739
+        },
+        {
+          "kind": "prefix_25",
+          "difference": [
+            "d4743d32840edaac",
+            "28d15eac99b7016e",
+            "9f82dd1068c56333",
+            "b0c9387da158dfc0",
+            "1639228a9869e66d"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 746
+        },
+        {
+          "kind": "prefix_25",
+          "difference": [
+            "22c278d2ad3b810d",
+            "892d20e358deb274",
+            "5b1b70f8968ac4d3",
+            "654147fc32aab58c",
+            "8ce42c662747f335"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 808
+        },
+        {
+          "kind": "prefix_25",
+          "difference": [
+            "fd7077168e833597",
+            "33ea12fe19ef1ed5",
+            "98cd0abdf5d8ee73",
+            "7a27f7a6b7fbed67",
+            "6b40fe57a7adfaa8"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 1254
+        },
+        {
+          "kind": "prefix_25",
+          "difference": [
+            "8d584cd51bda0489",
+            "218862c57f32def0",
+            "b96d1a68c4dbf7c0",
+            "67e06efabb227837",
+            "ea480c43f266c38e"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 1038
+        },
+        {
+          "kind": "prefix_25",
+          "difference": [
+            "9b5ff33e404787b6",
+            "96893d5214617226",
+            "2dbb5ba744cf8875",
+            "700fae6f54fa3edc",
+            "0e51f14e829d805f"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 786
+        },
+        {
+          "kind": "prefix_25",
+          "difference": [
+            "9859a0e0c9c6d598",
+            "b4886b016ff0fa71",
+            "d27f5ad2448da5c8",
+            "66042e70c224ecbe",
+            "ce448142a516500b"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 670
+        },
+        {
+          "kind": "prefix_25",
+          "difference": [
+            "5d0e5a02ca0ca977",
+            "7356fcf98cb337cd",
+            "6199e4d5abf77db9",
+            "2cffd8fd3e1f1c4d",
+            "25a3fbbc1e814498"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 904
+        },
+        {
+          "kind": "prefix_25",
+          "difference": [
+            "c7a938c7272520fd",
+            "7dd093a968342651",
+            "04112050e8ee45cb",
+            "4a1d7992e224a709",
+            "29efab8475467361"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 827
+        },
+        {
+          "kind": "prefix_25",
+          "difference": [
+            "e8285b3e249286d9",
+            "79fd0ac29545b967",
+            "86def350fe727434",
+            "8214735abad947ee",
+            "d4da8be57f09866d"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 850
+        },
+        {
+          "kind": "prefix_25",
+          "difference": [
+            "88bb9d47df09eebd",
+            "959cd1044da6b2db",
+            "fa1b6f5acee23358",
+            "5f2d6b48496d490c",
+            "8d1dade8ad6f50a1"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 1076
+        },
+        {
+          "kind": "prefix_25",
+          "difference": [
+            "bde80311a37a6fe5",
+            "e9aa0aa8bbb04b1b",
+            "f52787b6d581d123",
+            "3d3b6638a850f612",
+            "c397695a6108f347"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 790
+        },
+        {
+          "kind": "prefix_25",
+          "difference": [
+            "67e5cb48d4db32e8",
+            "687c577a6687e502",
+            "4ef0a9603e523c4d",
+            "9fb812e1dee69bf9",
+            "317b07e35bce1cf2"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 874
+        },
+        {
+          "kind": "unrestricted",
+          "difference": [
+            "d95ec26c09d17d7e",
+            "ec9946e4b64bf66b",
+            "d55637d4f5ffba6d",
+            "8ac6c23ed49f3a75",
+            "6ae138154f5581b8"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 1132
+        },
+        {
+          "kind": "unrestricted",
+          "difference": [
+            "032c569cfd20ce47",
+            "7b45e95320aef05c",
+            "d9bd61c38cfff40c",
+            "e26b827b9f46a1b3",
+            "22cad687f4eb7cbf"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 661
+        },
+        {
+          "kind": "unrestricted",
+          "difference": [
+            "08e04280573e8365",
+            "67806865a79f34ca",
+            "abfada71398b347e",
+            "b317c6f097466ed9",
+            "56df383e40797e33"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 1063
+        },
+        {
+          "kind": "unrestricted",
+          "difference": [
+            "8e22cb040351541b",
+            "362d758bbf4e6e07",
+            "10662e95e7f53966",
+            "015bd8c2bfecbca9",
+            "4e07b455b3d58f04"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 663
+        },
+        {
+          "kind": "unrestricted",
+          "difference": [
+            "0d527c60c3bdf98d",
+            "867bfb7caa482399",
+            "5f87b072cd98dcb7",
+            "062ff99c6fc1cc1d",
+            "7f1c6024fba49891"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 879
+        },
+        {
+          "kind": "unrestricted",
+          "difference": [
+            "860d2e67b7a094b0",
+            "4dd8214d59b0253d",
+            "dfbe2361b0c092b4",
+            "d8019d4bd4636fd1",
+            "4af8517c078bdc1d"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 1008
+        },
+        {
+          "kind": "unrestricted",
+          "difference": [
+            "be568427a8a9f6bd",
+            "14c945dc16a5b761",
+            "4e744c3fc163620c",
+            "fcbb41012a814825",
+            "ef61026e2bbc0345"
+          ],
+          "algorithm3_correlation": "-1/16",
+          "fullmask_formula_correlation": "-1/16",
+          "expanded_degree": 2,
+          "expanded_terms": 881
+        },
+        {
+          "kind": "unrestricted",
+          "difference": [
+            "41ad3a6748a2f3fa",
+            "c4ac2edd17831a2e",
+            "09824298eed3dc76",
+            "ed20d7eddc0d90a1",
+            "3f689faa7a6e9ff8"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 918
+        },
+        {
+          "kind": "unrestricted",
+          "difference": [
+            "45b56d47132ca51c",
+            "6f2685053a4757b4",
+            "9573e35a31c68581",
+            "f2d2a5481a0ecc2a",
+            "6c46cb2a030eaafc"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 754
+        },
+        {
+          "kind": "unrestricted",
+          "difference": [
+            "565859ffddf7c440",
+            "c8bea53ce934885c",
+            "6f2541957c2cf7ee",
+            "1ed149466a863354",
+            "e7b8cda9da04cbc8"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 879
+        },
+        {
+          "kind": "unrestricted",
+          "difference": [
+            "11e4658abcfbe020",
+            "3ce090438b158a20",
+            "11027a5854d44511",
+            "0bfaa635c5fce2bd",
+            "11ddff8802c52d3e"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 795
+        },
+        {
+          "kind": "unrestricted",
+          "difference": [
+            "7b5d06d6b00883b2",
+            "804c6ff40a80cac9",
+            "e2d419f12a2990fb",
+            "1bb4cb520d348b21",
+            "c75de87f1eeeb782"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 667
+        },
+        {
+          "kind": "unrestricted",
+          "difference": [
+            "6019b87d29a6fb69",
+            "8899d863c22fd90d",
+            "b78a257b36c73a86",
+            "e11c25e8d65f40d5",
+            "b3ef41cf5c0ebf18"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 734
+        },
+        {
+          "kind": "unrestricted",
+          "difference": [
+            "d336234c43bdbe3a",
+            "f1f7b49036df4255",
+            "29c0c288d495ab39",
+            "0961212778cf9bd2",
+            "d2f76f02c0bcd673"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 667
+        },
+        {
+          "kind": "unrestricted",
+          "difference": [
+            "fc919bacf91636e2",
+            "7052304c3706e699",
+            "94490b8872583dad",
+            "0c0ea6b12e1a49ff",
+            "551360c917094beb"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 720
+        },
+        {
+          "kind": "unrestricted",
+          "difference": [
+            "c0a9effa54ada1a7",
+            "4e9323a8a384f0c4",
+            "fcf2c7d2f21f2e1a",
+            "021c98e8f5f8c104",
+            "c35b77eae4e5465b"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 937
+        },
+        {
+          "kind": "single_column",
+          "difference": [
+            "0000000000000000",
+            "0000400000000000",
+            "0000000000000000",
+            "0000400000000000",
+            "0000000000000000"
+          ],
+          "algorithm3_correlation": "1/2",
+          "fullmask_formula_correlation": "1/2",
+          "expanded_degree": 2,
+          "expanded_terms": 3
+        },
+        {
+          "kind": "single_column",
+          "difference": [
+            "0000000000000000",
+            "0000000000000000",
+            "0000000000000080",
+            "0000000000000080",
+            "0000000000000000"
+          ],
+          "algorithm3_correlation": "1",
+          "fullmask_formula_correlation": "1",
+          "expanded_degree": 0,
+          "expanded_terms": 0
+        },
+        {
+          "kind": "single_column",
+          "difference": [
+            "0000000000800000",
+            "0000000000000000",
+            "0000000000000000",
+            "0000000000800000",
+            "0000000000800000"
+          ],
+          "algorithm3_correlation": "1",
+          "fullmask_formula_correlation": "1",
+          "expanded_degree": 0,
+          "expanded_terms": 0
+        },
+        {
+          "kind": "single_column",
+          "difference": [
+            "0400000000000000",
+            "0000000000000000",
+            "0000000000000000",
+            "0000000000000000",
+            "0400000000000000"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 1,
+          "expanded_terms": 2
+        },
+        {
+          "kind": "single_column",
+          "difference": [
+            "0000000000000000",
+            "0000000000002000",
+            "0000000000000000",
+            "0000000000002000",
+            "0000000000002000"
+          ],
+          "algorithm3_correlation": "1/2",
+          "fullmask_formula_correlation": "1/2",
+          "expanded_degree": 2,
+          "expanded_terms": 2
+        },
+        {
+          "kind": "single_column",
+          "difference": [
+            "0000000000000000",
+            "0000000000000000",
+            "0000000000000000",
+            "0000000000000000",
+            "0000000000000002"
+          ],
+          "algorithm3_correlation": "1",
+          "fullmask_formula_correlation": "1",
+          "expanded_degree": 0,
+          "expanded_terms": 0
+        },
+        {
+          "kind": "single_column",
+          "difference": [
+            "0040000000000000",
+            "0000000000000000",
+            "0000000000000000",
+            "0040000000000000",
+            "0000000000000000"
+          ],
+          "algorithm3_correlation": "1/4",
+          "fullmask_formula_correlation": "1/4",
+          "expanded_degree": 2,
+          "expanded_terms": 6
+        },
+        {
+          "kind": "single_column",
+          "difference": [
+            "0000000000000000",
+            "0000000000004000",
+            "0000000000000000",
+            "0000000000004000",
+            "0000000000000000"
+          ],
+          "algorithm3_correlation": "1/2",
+          "fullmask_formula_correlation": "1/2",
+          "expanded_degree": 2,
+          "expanded_terms": 1
+        }
+      ]
+    },
+    {
+      "target": "Hsilu",
+      "cases": 121,
+      "nonzero_cases": 21,
+      "full_state_dag_checks": 6,
+      "status": "PASS",
+      "records": [
+        {
+          "kind": "zero",
+          "difference": [
+            "0000000000000000",
+            "0000000000000000",
+            "0000000000000000",
+            "0000000000000000",
+            "0000000000000000"
+          ],
+          "algorithm3_correlation": "1",
+          "fullmask_formula_correlation": "1",
+          "expanded_degree": 0,
+          "expanded_terms": 0
+        },
+        {
+          "kind": "prefix_8",
+          "difference": [
+            "4a9148619c77a844",
+            "809500888a286910",
+            "a9bc118bf52a895a",
+            "8a9e41476dc06620",
+            "9e00fffa5d54add8"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 244
+        },
+        {
+          "kind": "prefix_8",
+          "difference": [
+            "4a810081a663a804",
+            "809500010a0cc110",
+            "a01016cc75228958",
+            "833840462dc04440",
+            "480b563a5944acd8"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 149
+        },
+        {
+          "kind": "prefix_8",
+          "difference": [
+            "08814002ce73bc00",
+            "001540900c8ce138",
+            "a8a07bce77800118",
+            "23385e670dd02403",
+            "103ddd3b08008c54"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 235
+        },
+        {
+          "kind": "prefix_8",
+          "difference": [
+            "08832022b067b840",
+            "001544588c284930",
+            "e4747409f7080118",
+            "2a165b664dd11623",
+            "7a2235fb4c108c72"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 268
+        },
+        {
+          "kind": "prefix_8",
+          "difference": [
+            "0a920843e663ac04",
+            "881544100e8cc118",
+            "c1085ecc75a0815a",
+            "83b044440dd14403",
+            "843f563a1840ade4"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 273
+        },
+        {
+          "kind": "prefix_8",
+          "difference": [
+            "0a922863b077a844",
+            "881544588e686910",
+            "c55c540bf528815a",
+            "ba9e41454dd15623",
+            "ae223cfa5c50ade6"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 334
+        },
+        {
+          "kind": "prefix_8",
+          "difference": [
+            "5a9068609a77bc24",
+            "c09500d0082c6934",
+            "8dcc310ff6a68b5a",
+            "0b9a5a576dc27000",
+            "e600bcfb9a45a9ca"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 309
+        },
+        {
+          "kind": "prefix_8",
+          "difference": [
+            "08b308a0d477bc40",
+            "0015041988a86938",
+            "e104388bf788011e",
+            "0a965d674dc10660",
+            "c2047dfb0c108f74"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 273
+        },
+        {
+          "kind": "prefix_8",
+          "difference": [
+            "589208e03477b060",
+            "4895040989686924",
+            "c12c248bf70e0b1a",
+            "7a9654756dc30660",
+            "961a7dfb4f15896c"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 331
+        },
+        {
+          "kind": "prefix_8",
+          "difference": [
+            "58b10803a467a860",
+            "489540000e084914",
+            "a1205689f40e0b1e",
+            "829241746dd20403",
+            "d02b74facf158b5c"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 358
+        },
+        {
+          "kind": "prefix_8",
+          "difference": [
+            "1a8140030e67a424",
+            "c81540900f4c4904",
+            "a8a0438df5a48358",
+            "d3124d544dd26403",
+            "1021f4fa1b41a8d4"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 300
+        },
+        {
+          "kind": "prefix_8",
+          "difference": [
+            "088320e27077b440",
+            "001544498de86928",
+            "e44c6c0bf6880118",
+            "5a1653674dd11263",
+            "663e3cfb8c108c72"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 300
+        },
+        {
+          "kind": "prefix_8",
+          "difference": [
+            "0a9308e23473b044",
+            "881544198d68e120",
+            "e10c648a7628815a",
+            "7ab455450dd14663",
+            "c63a7d3bdc50adf4"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 300
+        },
+        {
+          "kind": "prefix_8",
+          "difference": [
+            "48a060e2da73b800",
+            "089540d10cace138",
+            "8cfc790e7702091c",
+            "2b305d652dd03043",
+            "7e24bc3b48048e4e"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 365
+        },
+        {
+          "kind": "prefix_8",
+          "difference": [
+            "1a8360838a73a824",
+            "c81544c98e0ce114",
+            "ecc0534e74248358",
+            "a33443550dd37263",
+            "20399c3ada41a8f6"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 355
+        },
+        {
+          "kind": "prefix_8",
+          "difference": [
+            "588300217673a020",
+            "489504188bece10c",
+            "e0340c8e75060b18",
+            "db3c48752dc30220",
+            "5a1e7f3a4a058878"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 315
+        },
+        {
+          "kind": "prefix_8",
+          "difference": [
+            "4aa14062fc67b844",
+            "809540900ca84938",
+            "a8ac7dc9f72a895c",
+            "2a125d466dd06003",
+            "1626d6fb5c54aedc"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 313
+        },
+        {
+          "kind": "prefix_8",
+          "difference": [
+            "08832062d077b840",
+            "001544588ca86938",
+            "e47c784bf7080118",
+            "0a1e5f674dd11623",
+            "7e341cfb4d108c72"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 245
+        },
+        {
+          "kind": "prefix_8",
+          "difference": [
+            "4ab108e39673ac04",
+            "809540110e2ce110",
+            "a11c508e75a2895e",
+            "8bb043472dd04043",
+            "ce307f3a1844afdc"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 304
+        },
+        {
+          "kind": "prefix_8",
+          "difference": [
+            "489228c1c277ac00",
+            "089504410a8c6918",
+            "c5781a4ff582091a",
+            "839244656dc11440",
+            "bc1d1efa09048d6e"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 223
+        },
+        {
+          "kind": "prefix_8",
+          "difference": [
+            "08a100611463a040",
+            "001500100b68c100",
+            "a02c00887408011c",
+            "da304f660dc00400",
+            "5618743acc108e50"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 187
+        },
+        {
+          "kind": "prefix_8",
+          "difference": [
+            "0a9028233073a444",
+            "881540500f68e100",
+            "8544444a74a8815a",
+            "dab84d450dd05403",
+            "a22a1c3a9d50adc6"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 235
+        },
+        {
+          "kind": "prefix_8",
+          "difference": [
+            "08b208816677a400",
+            "001504010bcc6908",
+            "c1300ecff480011e",
+            "d3924a674dc10040",
+            "98075ffa88008f64"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 249
+        },
+        {
+          "kind": "prefix_8",
+          "difference": [
+            "08a300611473a440",
+            "001504188b28e100",
+            "e03c00ca7488011c",
+            "ea3c4d670dc10620",
+            "5e085d3a8d108e70"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 199
+        },
+        {
+          "kind": "prefix_10",
+          "difference": [
+            "1a80400a8e429662",
+            "44150080108c8120",
+            "088179cc53ec4358",
+            "232048550d42000c",
+            "40bcc4297731a884"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 236
+        },
+        {
+          "kind": "prefix_10",
+          "difference": [
+            "5a30084986448b62",
+            "4c944010168c0912",
+            "0109188d904c5b4e",
+            "a38256d76d82200f",
+            "849c66c8263da384"
+          ],
+          "algorithm3_correlation": "1/16",
+          "fullmask_formula_correlation": "1/16",
+          "expanded_degree": 2,
+          "expanded_terms": 301
+        },
+        {
+          "kind": "prefix_10",
+          "difference": [
+            "1a124dc99e4a8a62",
+            "44144409128c9110",
+            "69191b8d506c435a",
+            "83ec56558d93224c",
+            "8cdd60a8b631a9b0"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 319
+        },
+        {
+          "kind": "prefix_10",
+          "difference": [
+            "5a9448cb8e448542",
+            "0c950081128c0906",
+            "89b959cd91881b5a",
+            "a38a51c76d52044c",
+            "dcbcc4c8c51da9c1"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 332
+        },
+        {
+          "kind": "prefix_10",
+          "difference": [
+            "580245c98c468c26",
+            "c494441912880914",
+            "68191989d084db18",
+            "824a55756d93624c",
+            "0cdc66e8c36d8834"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 249
+        },
+        {
+          "kind": "prefix_10",
+          "difference": [
+            "5a164dc98e448d42",
+            "0c944409128c0916",
+            "e91919cd90881b5a",
+            "83ca55c76d83264c",
+            "8cdc44c8451da9f1"
+          ],
+          "algorithm3_correlation": "1/16",
+          "fullmask_formula_correlation": "1/16",
+          "expanded_degree": 2,
+          "expanded_terms": 320
+        },
+        {
+          "kind": "prefix_10",
+          "difference": [
+            "1aa6458a9e489742",
+            "04150419148c9122",
+            "e8117bcd13c8034c",
+            "036c48c58d53264f",
+            "08fd4089e511a2f5"
+          ],
+          "algorithm3_correlation": "1/16",
+          "fullmask_formula_correlation": "1/16",
+          "expanded_degree": 2,
+          "expanded_terms": 372
+        },
+        {
+          "kind": "prefix_10",
+          "difference": [
+            "5a26454a9e489d42",
+            "0c940408148c9136",
+            "e8297bcd12881b5c",
+            "03644dc7ad93260f",
+            "14ed4089451daaf5"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 369
+        },
+        {
+          "kind": "prefix_10",
+          "difference": [
+            "5ab649c9be488742",
+            "0c95048116cc9102",
+            "c9991fcd11c81b4e",
+            "93ac52c7ad53044f",
+            "ccdfc088e51da3e1"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 453
+        },
+        {
+          "kind": "prefix_10",
+          "difference": [
+            "1aa6050a84429602",
+            "0415048814888120",
+            "e0a1788853e0034c",
+            "026048450d43020f",
+            "50fce4297101a2f1"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 279
+        },
+        {
+          "kind": "prefix_10",
+          "difference": [
+            "5aa040489c489522",
+            "4c95408014889126",
+            "08893b8913845b5c",
+            "222449d7ad42040f",
+            "448de289c32daa84"
+          ],
+          "algorithm3_correlation": "1/16",
+          "fullmask_formula_correlation": "1/16",
+          "expanded_degree": 2,
+          "expanded_terms": 294
+        },
+        {
+          "kind": "prefix_10",
+          "difference": [
+            "18b649888e409146",
+            "8c150481148c8126",
+            "c991398c1328830e",
+            "03a84be70d53404f",
+            "c8dce40994518361"
+          ],
+          "algorithm3_correlation": "1/16",
+          "fullmask_formula_correlation": "1/16",
+          "expanded_degree": 2,
+          "expanded_terms": 380
+        },
+        {
+          "kind": "prefix_10",
+          "difference": [
+            "58960dc9b44e8606",
+            "8495448912c81900",
+            "e1991e88d1c09b0a",
+            "92ce5265ed53464c",
+            "ccdfe068614d8175"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 270
+        },
+        {
+          "kind": "prefix_10",
+          "difference": [
+            "1a2000c9964e8c62",
+            "44144011168c1914",
+            "00391accd0ac434c",
+            "a30e5555cd92244f",
+            "1c9d4268d731a280"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 269
+        },
+        {
+          "kind": "prefix_10",
+          "difference": [
+            "58a440498c448506",
+            "8495408016880906",
+            "8889198991a09b1c",
+            "a20251e56d42440f",
+            "449ce6c8d14d8a45"
+          ],
+          "algorithm3_correlation": "1/16",
+          "fullmask_formula_correlation": "1/16",
+          "expanded_degree": 2,
+          "expanded_terms": 288
+        },
+        {
+          "kind": "prefix_10",
+          "difference": [
+            "5a92498abe4e9262",
+            "4c95448110cc1920",
+            "49917f8cd36c5b4a",
+            "138e4857ed53044c",
+            "c8ffe069363da1a0"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 414
+        },
+        {
+          "kind": "prefix_10",
+          "difference": [
+            "18360dcab64c9946",
+            "8c14048914cc1936",
+            "e1997e8c9228831e",
+            "13ce4de7cd93424f",
+            "ccefe24914518b75"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 445
+        },
+        {
+          "kind": "prefix_10",
+          "difference": [
+            "58b20d4aa4469026",
+            "c495049814c80924",
+            "61a97cc9d304db0e",
+            "12c249756d43420f",
+            "d4eec4e9026d8334"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 333
+        },
+        {
+          "kind": "prefix_10",
+          "difference": [
+            "183209c886429c66",
+            "cc140401148c8134",
+            "411938cc528cc31e",
+            "03a84d770d83604f",
+            "8ccc4629c7718b24"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 317
+        },
+        {
+          "kind": "prefix_10",
+          "difference": [
+            "1a00008bb44e8a22",
+            "4414001112c81910",
+            "00315ec8d0644348",
+            "b20e5455cd82244c",
+            "18af4068b221a080"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 202
+        },
+        {
+          "kind": "prefix_10",
+          "difference": [
+            "1a0444c9ac428802",
+            "0414001912c88114",
+            "a8391dc850200348",
+            "b26855450d82264c",
+            "1c9e46289001a0d5"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 233
+        },
+        {
+          "kind": "prefix_10",
+          "difference": [
+            "1a160d89b64c8b42",
+            "0414448912cc1912",
+            "e1911e8c9048035a",
+            "93ce54c5cd83024c",
+            "c8cfe2482411a9f5"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 311
+        },
+        {
+          "kind": "prefix_10",
+          "difference": [
+            "18a20109a6448366",
+            "cc15040016cc0902",
+            "40211c8d916cc30c",
+            "930250f74d53600f",
+            "10ce66c8b6718220"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 336
+        },
+        {
+          "kind": "prefix_10",
+          "difference": [
+            "1aa2014886449362",
+            "44150400148c0922",
+            "4029388d934c434c",
+            "03024ad54d53200f",
+            "14cc66c9a631a2a0"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 265
+        },
+        {
+          "kind": "prefix_12",
+          "difference": [
+            "18b638a005232259",
+            "2305046549ac712a",
+            "471c2bc5e5cb631e",
+            "4b965affc14039d0",
+            "8e15ca7608238926"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 273
+        },
+        {
+          "kind": "prefix_12",
+          "difference": [
+            "1a92281a7f3ca66c",
+            "c81764401f5c9c2c",
+            "c50370c795ed83da",
+            "f7271ec4659b7006",
+            "83bc4bcc5a53e9e2"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 330
+        },
+        {
+          "kind": "prefix_12",
+          "difference": [
+            "00b268705d352b3a",
+            "641724d45b980d14",
+            "cda60483a5a7409e",
+            "c60156ef659a1515",
+            "d11679d43f224d66"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 273
+        },
+        {
+          "kind": "prefix_12",
+          "difference": [
+            "529428e16511b62f",
+            "c78500454b285404",
+            "053407c737e7aa5a",
+            "ca9f0745c14275d0",
+            "9a13c39f1e57298f"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 227
+        },
+        {
+          "kind": "prefix_12",
+          "difference": [
+            "12b34830a929231c",
+            "a817249cd8b8b500",
+            "e9fe1e01258382de",
+            "0e2b5add25984735",
+            "bd1b21942d4369f4"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 406
+        },
+        {
+          "kind": "prefix_12",
+          "difference": [
+            "0882204215312328",
+            "401764588f88150e",
+            "c4186dc324250198",
+            "c28152e625cb3622",
+            "0e36c996ff02cc66"
+          ],
+          "algorithm3_correlation": "-1/16",
+          "fullmask_formula_correlation": "-1/16",
+          "expanded_degree": 2,
+          "expanded_terms": 281
+        },
+        {
+          "kind": "prefix_12",
+          "difference": [
+            "48b0087a6b3c2268",
+            "4897600cdd7c9d2c",
+            "81577607844f099e",
+            "5f215fe4459a2736",
+            "a9bf2ac48a16cf48"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 347
+        },
+        {
+          "kind": "prefix_12",
+          "difference": [
+            "18a20018712ea629",
+            "4215041cd9586824",
+            "c07b354055c5231c",
+            "761c1ee7c5432734",
+            "3d868b2e4f138a60"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 307
+        },
+        {
+          "kind": "prefix_12",
+          "difference": [
+            "429728b06d132a2c",
+            "c18504411bf80134",
+            "65360287e567c85a",
+            "de885dc4610374c4",
+            "db0d7bf45f662dbf"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 269
+        },
+        {
+          "kind": "prefix_12",
+          "difference": [
+            "0281300a25202a7e",
+            "ec1540700d2c3536",
+            "a6015f8505efc058",
+            "4b0d59cc25537c03",
+            "40aff2065b722ed3"
+          ],
+          "algorithm3_correlation": "-1/16",
+          "fullmask_formula_correlation": "-1/16",
+          "expanded_degree": 2,
+          "expanded_terms": 326
+        },
+        {
+          "kind": "prefix_12",
+          "difference": [
+            "0a81101a2b34ab0e",
+            "8c1760344f788c1a",
+            "a26b5a029501c1d8",
+            "dea1125565886d12",
+            "77a138cc2d62ecd5"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 371
+        },
+        {
+          "kind": "prefix_12",
+          "difference": [
+            "1ab13830152f2a4f",
+            "8e1500745b1c6930",
+            "a72e0d846469e35e",
+            "c79859d4c5407d14",
+            "d702f8b6d863abd7"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 357
+        },
+        {
+          "kind": "prefix_12",
+          "difference": [
+            "02b638d1bf03be0c",
+            "8905046988183010",
+            "470a1885f7e1c05e",
+            "268009d741417ae0",
+            "8508727f1d622fa6"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 316
+        },
+        {
+          "kind": "prefix_12",
+          "difference": [
+            "5aa200e29325ab6f",
+            "c69544154e0cbc16",
+            "c0747d44b40feb5c",
+            "a3251ac6c5436153",
+            "3a2e9b5eeb67aae8"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 416
+        },
+        {
+          "kind": "prefix_12",
+          "difference": [
+            "18b438616d213a5b",
+            "270500645beca512",
+            "0704268426cb231e",
+            "fbab46fee1013994",
+            "8203789589038906"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 367
+        },
+        {
+          "kind": "prefix_12",
+          "difference": [
+            "4a8540e9d934b61d",
+            "a38720810a488c0a",
+            "28fd20029661e9d8",
+            "92ab0dde818944c1",
+            "3c88224d9c76ee99"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 372
+        },
+        {
+          "kind": "prefix_12",
+          "difference": [
+            "08b21870b131a348",
+            "001504345adc940a",
+            "c36619463429011e",
+            "97a7197625512d14",
+            "b318889ef9128f65"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 391
+        },
+        {
+          "kind": "prefix_12",
+          "difference": [
+            "1a9478a35d27b77d",
+            "eb0540f10f0ce82c",
+            "0fb44084770fe35a",
+            "c3b20e4d81035cc3",
+            "da2868bd6b63ab82"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 429
+        },
+        {
+          "kind": "prefix_12",
+          "difference": [
+            "1a975822b139a77c",
+            "e90544b45ecc840c",
+            "6bec5907350fc35a",
+            "93a31a4c61424d97",
+            "b62caa1e6b73abb0"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 483
+        },
+        {
+          "kind": "prefix_12",
+          "difference": [
+            "429158516b1f3b3c",
+            "e09720b01bf81934",
+            "abca2646678588da",
+            "fe064fcc659b4805",
+            "a7071ab52e466fdd"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 353
+        },
+        {
+          "kind": "prefix_12",
+          "difference": [
+            "42a3302b0f3cb71c",
+            "a09544745fa81c20",
+            "e60d5a829601885c",
+            "ca05085e45007917",
+            "46ad6bcdad462cfb"
+          ],
+          "algorithm3_correlation": "-1/16",
+          "fullmask_formula_correlation": "-1/16",
+          "expanded_degree": 2,
+          "expanded_terms": 337
+        },
+        {
+          "kind": "prefix_12",
+          "difference": [
+            "1293086bf304b37e",
+            "ec1544000e0cfc24",
+            "e16d6540978fc25a",
+            "a3bf064e65426003",
+            "f6aa814f6b732bf4"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 338
+        },
+        {
+          "kind": "prefix_12",
+          "difference": [
+            "5a8420113d31b23d",
+            "e38500544b980406",
+            "042a0c8337e5eb58",
+            "e603004ec1037190",
+            "150a619d1e77aa8b"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 285
+        },
+        {
+          "kind": "prefix_12",
+          "difference": [
+            "028760026f0b276e",
+            "cd0764cccf2c310e",
+            "6cb862c0e48d80d8",
+            "eb8a55c6418b53b2",
+            "1e294274aa526cb3"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 314
+        },
+        {
+          "kind": "prefix_14",
+          "difference": [
+            "188631d2df37894e",
+            "8c15446110789c3a",
+            "c61a4ac6f0298308",
+            "3e2f0075e5c3584c",
+            "0d714ffc71538062"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 355
+        },
+        {
+          "kind": "prefix_14",
+          "difference": [
+            "0a866531071b1e38",
+            "6105444c41dc4536",
+            "ec2e15c663274148",
+            "57535e4ce1d21398",
+            "174e4d35f622a6f7"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 307
+        },
+        {
+          "kind": "prefix_14",
+          "difference": [
+            "1aa265e23d318b5a",
+            "2507245d4788041c",
+            "6c347287308b43cc",
+            "c2cb065f611a17da",
+            "1869e99ea033e0b2"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 409
+        },
+        {
+          "kind": "prefix_14",
+          "difference": [
+            "42a631b18f071969",
+            "4b87246556f8fd12",
+            "c63e2080e30d78cc",
+            "9eb55c47815b1dde",
+            "1d5468f5e22e66e6"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 399
+        },
+        {
+          "kind": "prefix_14",
+          "difference": [
+            "1ab428305f158908",
+            "00176044457c8832",
+            "850e3a86300143de",
+            "5f200854c50a111a",
+            "85196f1e6423ebc3"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 306
+        },
+        {
+          "kind": "prefix_14",
+          "difference": [
+            "129068eaf70c883b",
+            "661720d540ac2812",
+            "0db55f8410e762da",
+            "2b000ecc454b3559",
+            "d8bffe0c57336b86"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 393
+        },
+        {
+          "kind": "prefix_14",
+          "difference": [
+            "180621aa172e863f",
+            "ef06644551ece826",
+            "c41d63c15147a398",
+            "5bb00bec019a51dd",
+            "0cf1ccac0653ca67"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 353
+        },
+        {
+          "kind": "prefix_14",
+          "difference": [
+            "18b679b8af008a4d",
+            "8a1724e54698b014",
+            "cf9f10809009e38e",
+            "86260ef7054b795a",
+            "cdcc6ccc2063c366"
+          ],
+          "algorithm3_correlation": "1/16",
+          "fullmask_formula_correlation": "1/16",
+          "expanded_degree": 2,
+          "expanded_terms": 412
+        },
+        {
+          "kind": "prefix_14",
+          "difference": [
+            "40a2251b3d0c1d4d",
+            "838724c81598ed32",
+            "6483428183e9b88c",
+            "46fb5d75815b768e",
+            "43e5e8c5514e4636"
+          ],
+          "algorithm3_correlation": "1/16",
+          "fullmask_formula_correlation": "1/16",
+          "expanded_degree": 2,
+          "expanded_terms": 320
+        },
+        {
+          "kind": "prefix_14",
+          "difference": [
+            "12307839cf02977b",
+            "661440f446f8f404",
+            "0faf38c0534f624e",
+            "bebf1bcca5033d1b",
+            "d79858ad82232183"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 428
+        },
+        {
+          "kind": "prefix_14",
+          "difference": [
+            "02a470b0ff030b69",
+            "430540f55438e536",
+            "8e9e0e80614d605c",
+            "0e33434561823ddf",
+            "4f036cb6c2222ec6"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 355
+        },
+        {
+          "kind": "prefix_14",
+          "difference": [
+            "52a434cb5d289b19",
+            "2a9540f917ece014",
+            "a6994ac192c37a5c",
+            "fb70155d25c33a4f",
+            "4cb5de4d453f28d2"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 537
+        },
+        {
+          "kind": "prefix_14",
+          "difference": [
+            "188070134717985e",
+            "ad0720e001d89812",
+            "0e825d82728bc398",
+            "76a6157f814b7889",
+            "432affbda173ca03"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 378
+        },
+        {
+          "kind": "prefix_14",
+          "difference": [
+            "58362d1bf722970f",
+            "869404c8063cf02e",
+            "e5837f80d3a1bb1e",
+            "affc15762513760b",
+            "c1fb6e6d745f8b77"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 563
+        },
+        {
+          "kind": "prefix_14",
+          "difference": [
+            "0a1438cbdf3e1548",
+            "0014006102e80d02",
+            "87197ac6c289414a",
+            "ba8b5ad6e5121848",
+            "8cad5de56132a5c6"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 261
+        },
+        {
+          "kind": "prefix_14",
+          "difference": [
+            "0a942802af130b3a",
+            "65072050102c8114",
+            "85204486e18701da",
+            "0b204b4d411b148d",
+            "922279762702efc3"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 298
+        },
+        {
+          "kind": "prefix_14",
+          "difference": [
+            "488430ead5060b0d",
+            "82972075424ced36",
+            "86355fc4c161f998",
+            "93b140f5c51a5959",
+            "18bfcae6947ecc46"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 338
+        },
+        {
+          "kind": "prefix_14",
+          "difference": [
+            "188221eb6506995d",
+            "ab0544455328ec10",
+            "44354dc0d2aba308",
+            "ea31127fa18251dc",
+            "1af6c86f71438222"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 315
+        },
+        {
+          "kind": "prefix_14",
+          "difference": [
+            "42347c5ae5180728",
+            "49844068061c1126",
+            "af0b598680c5584e",
+            "87c44446e1421e8b",
+            "85b86dc6472e27d2"
+          ],
+          "algorithm3_correlation": "-1/16",
+          "fullmask_formula_correlation": "-1/16",
+          "expanded_degree": 2,
+          "expanded_terms": 330
+        },
+        {
+          "kind": "prefix_14",
+          "difference": [
+            "12823591ed259b3b",
+            "661764f9123ce814",
+            "66922cc032c762c8",
+            "aff21bcec50a3e4d",
+            "4b52c89f073362b7"
+          ],
+          "algorithm3_correlation": "1/16",
+          "fullmask_formula_correlation": "1/16",
+          "expanded_degree": 2,
+          "expanded_terms": 438
+        },
+        {
+          "kind": "prefix_14",
+          "difference": [
+            "002024e2c71f000c",
+            "890660dd546c8928",
+            "249449c76001808c",
+            "1be84476019a77de",
+            "48344bb4e5424616"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 318
+        },
+        {
+          "kind": "prefix_14",
+          "difference": [
+            "402625abf506135d",
+            "a29624dd4408ed04",
+            "e4bd7bc0c2ebf89c",
+            "22f15e7dc5da735a",
+            "5cfd4867516e4c77"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 357
+        },
+        {
+          "kind": "prefix_14",
+          "difference": [
+            "000064e1cd29177f",
+            "ee16204d5048252c",
+            "2c342cc4222fe088",
+            "12c3566c259b535d",
+            "1806cc15f3624612"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 304
+        },
+        {
+          "kind": "prefix_14",
+          "difference": [
+            "480434086522060d",
+            "829400f811ac612c",
+            "a6812dc1c0c1f908",
+            "6b584977a5427a0c",
+            "40965866c47e8452"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 245
+        },
+        {
+          "kind": "unrestricted",
+          "difference": [
+            "cc4b535c38657e63",
+            "3fb9c8497c45498e",
+            "371aa74d8f3e6cae",
+            "55531b073cbb3a9d",
+            "7af47fbe0d500a5f"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 557
+        },
+        {
+          "kind": "unrestricted",
+          "difference": [
+            "a899870d1ab00b38",
+            "536bf847c6dc2907",
+            "533c4899fdf8568f",
+            "8e916a1cfc5cd5da",
+            "6c58c9f297d0c006"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 434
+        },
+        {
+          "kind": "unrestricted",
+          "difference": [
+            "a9f264674458d9c1",
+            "e932a7534673637d",
+            "afeda9a6e41ed7b8",
+            "eab84a1a7a96f494",
+            "5369a59435df6723"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 343
+        },
+        {
+          "kind": "unrestricted",
+          "difference": [
+            "5cbec7dcdeb140cf",
+            "7b3d077b4fabdeed",
+            "8f56aa7c93b646a9",
+            "1c41a2501bec6192",
+            "3a897863c392f167"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 428
+        },
+        {
+          "kind": "unrestricted",
+          "difference": [
+            "57c41dad5a7d22d6",
+            "4d5a75f86355908b",
+            "9c5b5e70c1a7b9cf",
+            "2e8a07f0d66e5703",
+            "814ff7b1a8f83a3b"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 487
+        },
+        {
+          "kind": "unrestricted",
+          "difference": [
+            "5a3ba93f46ac5771",
+            "7c3cee3487fd4781",
+            "e24d47f507c96bbe",
+            "a2787617a8564cea",
+            "e82fd24637114d18"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 472
+        },
+        {
+          "kind": "unrestricted",
+          "difference": [
+            "7a4b46e74a0f6dae",
+            "ff7bac7dbd94da2d",
+            "2141ff06b9137dd4",
+            "5f9373ef3a0a555a",
+            "76e66d2753c4159c"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 426
+        },
+        {
+          "kind": "unrestricted",
+          "difference": [
+            "3ecee1cb86bfdbfb",
+            "da923fa62f244b50",
+            "e3510f2745f86ace",
+            "0948c7a4881efdb9",
+            "8dc0c1ca190e7e38"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 397
+        },
+        {
+          "kind": "unrestricted",
+          "difference": [
+            "2f64869554252254",
+            "1b6a2d18ad84427f",
+            "595bab51fba27f70",
+            "e3f5f299db95c041",
+            "5e77c989a38aa498"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 451
+        },
+        {
+          "kind": "unrestricted",
+          "difference": [
+            "e04633cc8b1ffcf7",
+            "99b4227ade216e48",
+            "7dcee49570bc3323",
+            "40f4a70292759df2",
+            "07c82175fcd1f94a"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 493
+        },
+        {
+          "kind": "unrestricted",
+          "difference": [
+            "feb10bf7abe41d52",
+            "0d2575450ef16cc2",
+            "a2f6c996af1129e7",
+            "fbe56345d35ab53f",
+            "176eb6091c615726"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 609
+        },
+        {
+          "kind": "unrestricted",
+          "difference": [
+            "80a2cfe9704ccf64",
+            "7f164c7105b62ba9",
+            "677e87324a1aa09c",
+            "d85d2f64878884da",
+            "900d016707307f20"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 229
+        },
+        {
+          "kind": "unrestricted",
+          "difference": [
+            "49443d86bb65218c",
+            "2cc8b5721e03ee04",
+            "aece873f79223506",
+            "bc6a543bf38aa882",
+            "510013e61d993287"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 462
+        },
+        {
+          "kind": "unrestricted",
+          "difference": [
+            "e05dc00abf71a345",
+            "241301368039fb5a",
+            "e856aefc6771fd91",
+            "4ebe27a34917f61b",
+            "3a452e7cdb814dfd"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 326
+        },
+        {
+          "kind": "unrestricted",
+          "difference": [
+            "f0a9b3562748f42c",
+            "ad229fd91e771841",
+            "b7e34d22d5fd6524",
+            "c265792fa1638cb3",
+            "12739b02e0c50e18"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 428
+        },
+        {
+          "kind": "unrestricted",
+          "difference": [
+            "ef472bda930b5350",
+            "5f62dbfbac6b2594",
+            "6e691743c833f75c",
+            "0a12dc06356162c0",
+            "a191814f78a944e9"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 2,
+          "expanded_terms": 500
+        },
+        {
+          "kind": "single_column",
+          "difference": [
+            "0000000000000002",
+            "0000000000000000",
+            "0000000000000000",
+            "0000000000000002",
+            "0000000000000000"
+          ],
+          "algorithm3_correlation": "0",
+          "fullmask_formula_correlation": "0",
+          "expanded_degree": 1,
+          "expanded_terms": 2
+        },
+        {
+          "kind": "single_column",
+          "difference": [
+            "0000000000000000",
+            "0000000000000000",
+            "0000000004000000",
+            "0000000004000000",
+            "0000000004000000"
+          ],
+          "algorithm3_correlation": "1/2",
+          "fullmask_formula_correlation": "1/2",
+          "expanded_degree": 2,
+          "expanded_terms": 9
+        },
+        {
+          "kind": "single_column",
+          "difference": [
+            "0000010000000000",
+            "0000000000000000",
+            "0000010000000000",
+            "0000010000000000",
+            "0000000000000000"
+          ],
+          "algorithm3_correlation": "1",
+          "fullmask_formula_correlation": "1",
+          "expanded_degree": 0,
+          "expanded_terms": 0
+        },
+        {
+          "kind": "single_column",
+          "difference": [
+            "0000000000000010",
+            "0000000000000010",
+            "0000000000000000",
+            "0000000000000000",
+            "0000000000000000"
+          ],
+          "algorithm3_correlation": "1/2",
+          "fullmask_formula_correlation": "1/2",
+          "expanded_degree": 2,
+          "expanded_terms": 4
+        },
+        {
+          "kind": "single_column",
+          "difference": [
+            "0000000000000080",
+            "0000000000000000",
+            "0000000000000000",
+            "0000000000000000",
+            "0000000000000080"
+          ],
+          "algorithm3_correlation": "1",
+          "fullmask_formula_correlation": "1",
+          "expanded_degree": 0,
+          "expanded_terms": 0
+        },
+        {
+          "kind": "single_column",
+          "difference": [
+            "0000000000000000",
+            "0000001000000000",
+            "0000001000000000",
+            "0000001000000000",
+            "0000000000000000"
+          ],
+          "algorithm3_correlation": "1/4",
+          "fullmask_formula_correlation": "1/4",
+          "expanded_degree": 2,
+          "expanded_terms": 11
+        },
+        {
+          "kind": "single_column",
+          "difference": [
+            "0000000020000000",
+            "0000000020000000",
+            "0000000020000000",
+            "0000000000000000",
+            "0000000020000000"
+          ],
+          "algorithm3_correlation": "1/4",
+          "fullmask_formula_correlation": "1/4",
+          "expanded_degree": 2,
+          "expanded_terms": 11
+        },
+        {
+          "kind": "single_column",
+          "difference": [
+            "0000000200000000",
+            "0000000200000000",
+            "0000000200000000",
+            "0000000000000000",
+            "0000000000000000"
+          ],
+          "algorithm3_correlation": "1",
+          "fullmask_formula_correlation": "1",
+          "expanded_degree": 0,
+          "expanded_terms": 0
+        }
+      ]
+    }
+  ],
+  "seconds": 1.604923258011695,
+  "sources": [
+    {
+      "path": "\u5dee\u5206\u7ebf\u6027/joint_dl_20261125/datf_two_round_prefix.py",
+      "sha256": "25f86693a600ceb0211f38ad10243a4be5f322f14367b27d7b7403648b179056"
+    },
+    {
+      "path": "\u5dee\u5206\u7ebf\u6027/joint_dl_20261125/core.py",
+      "sha256": "c5439ee1764d5608b8288a2f0bf6b3279c4ffa9a016c17ccee7139652eb9bde0"
+    },
+    {
+      "path": "\u5dee\u5206\u7ebf\u6027/joint_dl_20261125/joint_estimator.py",
+      "sha256": "870a492e4573ca6b1ec563387a93009a8575afec4bec84188392544d3f7e5a4e"
+    },
+    {
+      "path": "\u5dee\u5206\u7ebf\u6027/DATF\u7b97\u6cd53\u590d\u6838_20261021/algorithm3.py",
+      "sha256": "be292ecd81205a49cd1127bc3c46ded65b9418d86773619145069f2c180f32b5"
+    },
+    {
+      "path": "\u5dee\u5206\u7ebf\u6027/gaston_dl/tools/datf.py",
+      "sha256": "a565d96a2fc20cd8af0fd2dff466441977ac6c8947483c29a24a851c983d0dee"
+    },
+    {
+      "path": "\u5dee\u5206\u7ebf\u6027/gaston_dl/tools/datf_k06.py",
+      "sha256": "a186728ca9442a9897f1adbdf0d19b9386e0defb29b46eef334859e5436ef87c"
+    },
+    {
+      "path": "\u5dee\u5206\u7ebf\u6027/gaston_dl/tools/datf_quadratic.py",
+      "sha256": "7a647cf1efcb38a5ae7464b2e2343dea7c1d3e5a1e7951ee99a389fa3dd51e5f"
+    },
+    {
+      "path": "\u5dee\u5206\u7ebf\u6027/hsilu_dl/tools/hsilu.py",
+      "sha256": "cdd65cdf626dcd4231e292c70c31711f335717ddeeb032db5dfbcde25f4a487d"
+    }
+  ]
+}

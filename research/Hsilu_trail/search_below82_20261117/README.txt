@@ -74,7 +74,7 @@ SAT 模型在固定全部核心状态时，界 80 返回 SAT，界 79 返回 UNS
 
 复现
 ====
-cd /home/yxb/分析/Hsilu_trail/search_below82_20261117
+cd research/Hsilu_trail/search_below82_20261117
 make search
 python3 cut_families.py
 ./search cuts
@@ -82,3 +82,14 @@ python3 verify.py
 
 只复核已保存的路径时执行最后一条命令即可。
 代码和结果均在本目录；未修改已有 Hsilu 搜索器的手工 CNF 或参数。
+
+2026-11-26 与当前稿件同步
+=========================
+第4.1节和附录A仍采用这里的相消族及重量80路径，搜索算法无需调整。
+在仓库根目录执行：
+
+python3 run_checks.py --profile quick --only differential
+
+此入口在临时副本中重新执行独立DDT/线性层验证，并编译原C++搜索器，
+对所选a1核心完整枚举16384个扩展，重现最优完成重量80及保存的状态。
+这只证明该固定核心的最优完成；全局三轮最小重量仍只得到上界80。

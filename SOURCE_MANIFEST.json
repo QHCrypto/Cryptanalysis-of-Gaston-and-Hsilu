@@ -1420,8 +1420,9 @@
     "path": "research/Hsilu_trail/search_below82_20261117/README.txt",
     "bytes": 4118,
     "source_sha256": "467fba46ff1cd8f9a0fc84391c1d7a2f9ab8b834f038b652a6966b08b2f882fb",
-    "packaged_sha256": "467fba46ff1cd8f9a0fc84391c1d7a2f9ab8b834f038b652a6966b08b2f882fb",
-    "adapted": false
+    "packaged_sha256": "160bb309ec191b17be0e66cea568109c57bb3615465e64543444e05d2641aa71",
+    "adapted": true,
+    "packaged_bytes": 4634
   },
   {
     "source": "/home/yxb/分析/Hsilu_trail/search_below82_20261117/common.hpp",
@@ -11935,5 +11936,82 @@
     "role": "Only numerical parameter tables, constants, IVs and the trail witness are extracted.",
     "packaged_sha256": "d84621100c0d892e349179e2809a24c02adcba5846f2ff5be86d076773500d0f",
     "adapted": true
+  },
+  {
+    "source": "/home/yxb/分析/差分线性/joint_dl_20261125/core.py",
+    "path": "research/差分线性/joint_dl_20261125/core.py",
+    "bytes": 2583,
+    "source_sha256": "c5439ee1764d5608b8288a2f0bf6b3279c4ffa9a016c17ccee7139652eb9bde0",
+    "packaged_sha256": "c5439ee1764d5608b8288a2f0bf6b3279c4ffa9a016c17ccee7139652eb9bde0",
+    "adapted": false
+  },
+  {
+    "source": "/home/yxb/分析/差分线性/joint_dl_20261125/joint_estimator.py",
+    "path": "research/差分线性/joint_dl_20261125/joint_estimator.py",
+    "bytes": 7570,
+    "source_sha256": "870a492e4573ca6b1ec563387a93009a8575afec4bec84188392544d3f7e5a4e",
+    "packaged_sha256": "870a492e4573ca6b1ec563387a93009a8575afec4bec84188392544d3f7e5a4e",
+    "adapted": false
+  },
+  {
+    "source": "/home/yxb/分析/差分线性/joint_dl_20261125/hnw_prefix_comparison.py",
+    "path": "research/差分线性/joint_dl_20261125/hnw_prefix_comparison.py",
+    "bytes": 3768,
+    "source_sha256": "49d747af63d9d6a426d84058e398ec154446d87bfd98c256fbd01ef3ef85e7d0",
+    "packaged_sha256": "a76410f1c6ba6f622ab03b4354f3e9747a394ea8baaf4caad1691de46580ffde",
+    "adapted": true,
+    "packaged_bytes": 3928
+  },
+  {
+    "source": "/home/yxb/分析/差分线性/joint_dl_20261125/datf_two_round_prefix.py",
+    "path": "research/差分线性/joint_dl_20261125/datf_two_round_prefix.py",
+    "bytes": 10790,
+    "source_sha256": "fd8ba3fb73f7452995f3009f57f07ddf66c8d70e10dab1007ac5a553218d6a9f",
+    "packaged_sha256": "25f86693a600ceb0211f38ad10243a4be5f322f14367b27d7b7403648b179056",
+    "adapted": true,
+    "packaged_bytes": 10815
+  },
+  {
+    "source": "/home/yxb/分析/差分线性/joint_dl_20261125/recompute_for_manuscript.py",
+    "path": "research/差分线性/joint_dl_20261125/recompute_for_manuscript.py",
+    "bytes": 1785,
+    "source_sha256": "6e1346ecf0d1f75b0365b9641176e6e0ee0badf682463d9ae8400e825ec26a59",
+    "packaged_sha256": "5ac8fd94b497e113b71de8be17d839dca33e3f8aef2d50ff9b6b10ac47022a19",
+    "adapted": true,
+    "packaged_bytes": 1828
+  },
+  {
+    "source": "/home/yxb/分析/差分线性/joint_dl_20261125/validate_hnw_fullmask.py",
+    "path": "research/差分线性/joint_dl_20261125/validate_hnw_fullmask.py",
+    "bytes": 2314,
+    "source_sha256": "3b2bb365d972e84c0ac58a6c32bafec58d85f83e1decf74765e59ba687d09777",
+    "packaged_sha256": "dd0d547794da516d9d5a529b840e8fe3da4f6d763ed75d92d8036a7f21857d50",
+    "adapted": true,
+    "packaged_bytes": 2367
+  },
+  {
+    "source": "/home/yxb/分析/差分线性/joint_dl_20261125/hnw_fullmask_reference.cpp",
+    "path": "research/差分线性/joint_dl_20261125/hnw_fullmask_reference.cpp",
+    "bytes": 1700,
+    "source_sha256": "34b1633f6d3fdde56f47071afdf620edef48669451135f848fab4269fd6e022e",
+    "packaged_sha256": "34b1633f6d3fdde56f47071afdf620edef48669451135f848fab4269fd6e022e",
+    "adapted": false
+  },
+  {
+    "source": "/home/yxb/分析/差分线性/joint_dl_20261125/reference_vectors.cpp",
+    "path": "research/差分线性/joint_dl_20261125/reference_vectors.cpp",
+    "bytes": 393,
+    "source_sha256": "a8beb37edf2d401ae70aa3b8b9c0046355d6f7465ff6d323ba0f971a23e2966a",
+    "packaged_sha256": "a8beb37edf2d401ae70aa3b8b9c0046355d6f7465ff6d323ba0f971a23e2966a",
+    "adapted": false
+  },
+  {
+    "source": "/home/yxb/分析/差分线性/joint_dl_20261125/validate.py",
+    "path": "research/差分线性/joint_dl_20261125/validate.py",
+    "bytes": 4056,
+    "source_sha256": "c85da7e472d6ec488f46242ad669ab41426dd233351e42e2bd91a7c0af29d208",
+    "packaged_sha256": "1048966d1c6e0ae5fd8035e16cc3413f39992e83c2d8cd399b5c0469e6304628",
+    "adapted": true,
+    "packaged_bytes": 3200
   }
 ]

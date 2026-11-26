@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-22",
+  "date": "2026-11-26",
   "distribution": "public lightweight code package",
   "full_proof_certificates_included": false,
   "profiles": [
@@ -12,42 +12,72 @@
         {
           "name": "parameters",
           "status": "PASS",
-          "seconds": 1.131
+          "seconds": 1.08
         },
         {
           "name": "differential",
           "status": "PASS",
-          "seconds": 0.896
+          "seconds": 1.579
         },
         {
           "name": "gaston_support",
           "status": "PASS",
-          "seconds": 0.832
+          "seconds": 0.78
         },
         {
           "name": "differential_linear",
           "status": "PASS",
-          "seconds": 6.889
+          "seconds": 6.785
         },
         {
           "name": "preimage_structure",
           "status": "PASS",
-          "seconds": 3.998
+          "seconds": 3.949
         },
         {
           "name": "cubes",
           "status": "PASS",
-          "seconds": 2.212
+          "seconds": 2.362
         },
         {
           "name": "preimage_accounting",
           "status": "PASS",
-          "seconds": 0.065
+          "seconds": 0.033
         }
-      ]
+      ],
+      "reference_report": "validation/reference/quick/summary.json"
     },
     {
       "profile": "datf",
+      "status": "PASS",
+      "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+      "platform": "Linux-7.0.0-43-generic-x86_64-with-glibc2.39",
+      "checks": [
+        {
+          "name": "prefix_algebra",
+          "status": "PASS",
+          "seconds": 0.516
+        },
+        {
+          "name": "datf_algorithm3_prefix",
+          "status": "PASS",
+          "seconds": 1.668
+        },
+        {
+          "name": "round_based_prefix",
+          "status": "PASS",
+          "seconds": 2.933
+        },
+        {
+          "name": "current_dl_results",
+          "status": "PASS",
+          "seconds": 0.114
+        }
+      ],
+      "reference_report": "validation/reference/datf/summary.json"
+    },
+    {
+      "profile": "datf-legacy",
       "status": "PASS",
       "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
       "platform": "Linux-7.0.0-43-generic-x86_64-with-glibc2.39",
@@ -57,7 +87,8 @@
           "status": "PASS",
           "seconds": 0.561
         }
-      ]
+      ],
+      "reference_report": "validation/reference/datf-legacy/summary.json"
     }
   ]
 }

@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "scope": "Complete extension of the saved core, not a global search",
+  "search": {
+    "mode": "seeds",
+    "scanned": 0,
+    "extended_cores": 1,
+    "extensions": 16384,
+    "catalog": 1,
+    "best": 80
+  },
+  "weights": [
+    16,
+    14,
+    50
+  ],
+  "saved_states_reproduced": true
+}

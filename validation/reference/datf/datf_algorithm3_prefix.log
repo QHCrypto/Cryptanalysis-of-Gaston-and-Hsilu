@@ -1,0 +1,6 @@
+COMMAND ["/usr/bin/python3", "datf_two_round_prefix.py"]
+DATF Algorithm 3 local tables: 2048 exact truth-table checks PASS
+Gaston weighted two-round-prefix DATF {'numerator': 1, 'denominator': 256, 'value': 0.00390625, 'log2_abs': -8.0}
+Gaston full two-round DATF checks 121 nonzero 19 PASS
+Hsilu weighted two-round-prefix DATF {'numerator': 1, 'denominator': 512, 'value': 0.001953125, 'log2_abs': -9.0}
+Hsilu full two-round DATF checks 121 nonzero 21 PASS
