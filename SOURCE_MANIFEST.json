@@ -11956,9 +11956,9 @@
   {
     "source": "/home/yxb/分析/差分线性/joint_dl_20261125/hnw_prefix_comparison.py",
     "path": "research/差分线性/joint_dl_20261125/hnw_prefix_comparison.py",
-    "bytes": 3768,
+    "bytes": 3962,
     "source_sha256": "49d747af63d9d6a426d84058e398ec154446d87bfd98c256fbd01ef3ef85e7d0",
-    "packaged_sha256": "a76410f1c6ba6f622ab03b4354f3e9747a394ea8baaf4caad1691de46580ffde",
+    "packaged_sha256": "0dc9952bf3c88f8ca54742f27d26fd5bac51e88090d70372f33b2a0ec4bc67ae",
     "adapted": true,
     "packaged_bytes": 3928
   },
@@ -11974,28 +11974,28 @@
   {
     "source": "/home/yxb/分析/差分线性/joint_dl_20261125/recompute_for_manuscript.py",
     "path": "research/差分线性/joint_dl_20261125/recompute_for_manuscript.py",
-    "bytes": 1785,
+    "bytes": 2405,
     "source_sha256": "6e1346ecf0d1f75b0365b9641176e6e0ee0badf682463d9ae8400e825ec26a59",
-    "packaged_sha256": "5ac8fd94b497e113b71de8be17d839dca33e3f8aef2d50ff9b6b10ac47022a19",
+    "packaged_sha256": "2877369e8b7043162772538826a009cb118ec271f1e9522c7825a76758347c19",
     "adapted": true,
     "packaged_bytes": 1828
   },
   {
     "source": "/home/yxb/分析/差分线性/joint_dl_20261125/validate_hnw_fullmask.py",
     "path": "research/差分线性/joint_dl_20261125/validate_hnw_fullmask.py",
-    "bytes": 2314,
+    "bytes": 2927,
     "source_sha256": "3b2bb365d972e84c0ac58a6c32bafec58d85f83e1decf74765e59ba687d09777",
-    "packaged_sha256": "dd0d547794da516d9d5a529b840e8fe3da4f6d763ed75d92d8036a7f21857d50",
+    "packaged_sha256": "e49c1dde78259c2e92567075d596ef13587b6772452e73738628145c23e235fe",
     "adapted": true,
     "packaged_bytes": 2367
   },
   {
     "source": "/home/yxb/分析/差分线性/joint_dl_20261125/hnw_fullmask_reference.cpp",
     "path": "research/差分线性/joint_dl_20261125/hnw_fullmask_reference.cpp",
-    "bytes": 1700,
+    "bytes": 2152,
     "source_sha256": "34b1633f6d3fdde56f47071afdf620edef48669451135f848fab4269fd6e022e",
-    "packaged_sha256": "34b1633f6d3fdde56f47071afdf620edef48669451135f848fab4269fd6e022e",
-    "adapted": false
+    "packaged_sha256": "690e5e433abcc7c400ca5c76b5d4c8a60ac0b154710b6a841f2c419510641647",
+    "adapted": true
   },
   {
     "source": "/home/yxb/分析/差分线性/joint_dl_20261125/reference_vectors.cpp",

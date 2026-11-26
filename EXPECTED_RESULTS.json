@@ -1,12 +1,11 @@
 {
   "snapshot_date": "2026-11-26",
-  "scope": "Current manuscript Table 7 and Appendix C endpoints; correlations are model values, with five-round concatenation assumptions retained.",
+  "scope": "Current manuscript Table 7 and Appendix E endpoints; correlations are model values, with five-round concatenation assumptions retained.",
   "differential_linear": [
     {
       "id": "G2",
       "permutation": "Gaston",
       "rounds": 2,
-      "correlation": "1",
       "delta": [
         "0000000000000001",
         "0000000000000000",
@@ -21,13 +20,14 @@
         "0000000000000000",
         "0000000000000000"
       ],
-      "evaluation": "overall"
+      "evaluation": "overall",
+      "correlation_datf": "1",
+      "correlation_round_based": "1"
     },
     {
       "id": "G3",
       "permutation": "Gaston",
       "rounds": 3,
-      "correlation": "-3/16",
       "delta": [
         "0000000000000001",
         "0000000000000000",
@@ -42,13 +42,14 @@
         "0000000000080000",
         "0000000000000000"
       ],
-      "evaluation": "overall"
+      "evaluation": "overall",
+      "correlation_datf": "-3/16",
+      "correlation_round_based": "-3/16"
     },
     {
       "id": "G4",
       "permutation": "Gaston",
       "rounds": 4,
-      "correlation": "1/256",
       "delta": [
         "0000000000000002",
         "0000000000000000",
@@ -64,13 +65,14 @@
         "0000000000000000"
       ],
       "evaluation": "overall",
-      "prefix_rounds": 2
+      "prefix_rounds": 2,
+      "correlation_datf": "1/256",
+      "correlation_round_based": "0"
     },
     {
       "id": "G5",
       "permutation": "Gaston",
       "rounds": 5,
-      "correlation": "1/576460752303423488",
       "delta": [
         "0000000000004000",
         "0000000000000000",
@@ -97,13 +99,14 @@
         1,
         2,
         2
-      ]
+      ],
+      "correlation_datf": "1/576460752303423488",
+      "correlation_round_based": "1/576460752303423488"
     },
     {
       "id": "H3",
       "permutation": "Hsilu",
       "rounds": 3,
-      "correlation": "1",
       "delta": [
         "0000000000000000",
         "0000000000000000",
@@ -118,13 +121,14 @@
         "0000000000000000",
         "0000000000000000"
       ],
-      "evaluation": "overall"
+      "evaluation": "overall",
+      "correlation_datf": "1",
+      "correlation_round_based": "1"
     },
     {
       "id": "H4",
       "permutation": "Hsilu",
       "rounds": 4,
-      "correlation": "1/512",
       "delta": [
         "0000000000000000",
         "0000000000000000",
@@ -140,13 +144,14 @@
         "0000000000000200"
       ],
       "evaluation": "overall",
-      "prefix_rounds": 2
+      "prefix_rounds": 2,
+      "correlation_datf": "1/512",
+      "correlation_round_based": "0"
     },
     {
       "id": "H5",
       "permutation": "Hsilu",
       "rounds": 5,
-      "correlation": "1/9223372036854775808",
       "delta": [
         "0000000000000000",
         "0000000000040000",
@@ -173,7 +178,9 @@
         0,
         2,
         3
-      ]
+      ],
+      "correlation_datf": "1/9223372036854775808",
+      "correlation_round_based": "1/9223372036854775808"
     }
   ],
   "datf_legacy": {

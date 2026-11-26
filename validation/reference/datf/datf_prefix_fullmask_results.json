@@ -1086,7 +1086,7 @@
           "contribution": "0"
         }
       ],
-      "seconds": 0.07291506200272124
+      "seconds": 0.07627411599969491
     },
     {
       "target": "Hsilu",
@@ -2167,7 +2167,7 @@
           "contribution": "0"
         }
       ],
-      "seconds": 0.06322896499477793
+      "seconds": 0.06621764101146255
     }
   ],
   "tail_validation": [
@@ -5578,7 +5578,7 @@
       ]
     }
   ],
-  "seconds": 1.604923258011695,
+  "seconds": 1.6334245250036474,
   "sources": [
     {
       "path": "\u5dee\u5206\u7ebf\u6027/joint_dl_20261125/datf_two_round_prefix.py",

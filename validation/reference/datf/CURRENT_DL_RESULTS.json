@@ -2,7 +2,7 @@
   "date": "2026-11-26",
   "status": "PASS",
   "quantity": "signed correlation, not bias",
-  "scope": "Current manuscript Table 7 and Appendix C. Exact rational evaluation of the stated models; sampling counts are historical observations.",
+  "scope": "Current manuscript Table 7 and Appendix E. Exact rational evaluation of the stated models; sampling counts are historical observations.",
   "legacy": "Full four-round Algorithm 5 outputs 3/2048 and 0 are retained only by the datf-legacy profile.",
   "rows": [
     {
@@ -142,7 +142,9 @@
         "rerun_this_check": false
       },
       "data_log2_from_experiment": 15.92546380045285,
-      "model": "Full two-round differential-prefix weighting; uniform tail base state; full-mask transpose readout",
+      "model": "Full two-round differential-prefix weighting; uniform tail base state",
+      "datf_readout": "Joint full-mask parity through L^T",
+      "round_based_readout": "Original HNW26 column-product approximation, zero value masks",
       "first_prefix_branches": [
         {
           "first_column_difference": 1,
@@ -173,9 +175,9 @@
         "log2_abs": -8.0
       },
       "round_based": {
-        "numerator": "1",
-        "denominator": "256",
-        "log2_abs": -8.0
+        "numerator": "0",
+        "denominator": "1",
+        "log2_abs": null
       }
     },
     {
@@ -314,7 +316,9 @@
         "rerun_this_check": false
       },
       "data_log2_from_experiment": 18.028427282523012,
-      "model": "Full two-round differential-prefix weighting; uniform tail base state; full-mask transpose readout",
+      "model": "Full two-round differential-prefix weighting; uniform tail base state",
+      "datf_readout": "Joint full-mask parity through L^T",
+      "round_based_readout": "Original HNW26 column-product approximation, zero value masks",
       "first_prefix_branches": [
         {
           "first_column_difference": 8,
@@ -345,9 +349,9 @@
         "log2_abs": -9.0
       },
       "round_based": {
-        "numerator": "1",
-        "denominator": "512",
-        "log2_abs": -9.0
+        "numerator": "0",
+        "denominator": "1",
+        "log2_abs": null
       }
     },
     {

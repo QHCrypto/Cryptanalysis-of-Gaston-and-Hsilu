@@ -68,7 +68,7 @@ def main():
     aliases = {'G2':'G2', 'G3':'G3a', 'G4':'G4a', 'H3':'H3', 'H4':'H4a'}
     for spec in expected:
         ident, name = spec['id'], spec['permutation']
-        row = {k: v for k, v in spec.items() if k != 'correlation'}
+        row = {k: v for k, v in spec.items() if not k.startswith('correlation_')}
         if ident in aliases:
             saved = short[aliases[ident]]
             assert (spec['delta'], spec['lambda']) == (saved['delta_core'], saved['lambda_core'])
@@ -84,12 +84,14 @@ def main():
             if ident in ['G4', 'H4']:
                 d, h = fresh_datf[name], fresh_hnw[name]
                 assert d['delta'] == spec['delta'] and d['lambda'] == spec['lambda']
-                assert h['prefix'] == 'fresh' and h['split_final_column_readout'] is False
+                assert h['prefix'] == 'fresh' and h['split_final_column_readout'] is True
                 assert len(d['first_prefix_branches']) == 4
                 assert all(Fraction(b['probability']) == Fraction(1, 4) for b in d['first_prefix_branches'])
                 assert d['last_mask_branches'] == 16 and d['all_summed_cases'] == 64
                 dc, hc = fraction(d['correlation']), fraction(h['correlation'])
-                row['model'] = 'Full two-round differential-prefix weighting; uniform tail base state; full-mask transpose readout'
+                row['model'] = 'Full two-round differential-prefix weighting; uniform tail base state'
+                row['datf_readout'] = 'Joint full-mask parity through L^T'
+                row['round_based_readout'] = 'Original HNW26 column-product approximation, zero value masks'
                 row['first_prefix_branches'] = d['first_prefix_branches']
                 row['summation_terms'] = d['all_summed_cases']
                 row['source'] = str(CURRENT.relative_to(PACKAGE))
@@ -128,13 +130,14 @@ def main():
             row['data_log2_from_model'] = -2*math.log2(abs(dc))
             row['model'] = 'Selected differential/middle/linear concatenation, not whole-pair evaluation'
             row['source'] = str(source.relative_to(PACKAGE))
-        assert dc == hc == Fraction(spec['correlation']), (ident, dc, hc)
+        assert dc == Fraction(spec['correlation_datf']), (ident, 'DATF', dc)
+        assert hc == Fraction(spec['correlation_round_based']), (ident, 'HNW26', hc)
         row['datf_algorithm3'] = record(dc)
         row['round_based'] = record(hc)
         output.append(row)
         print(ident, row['evaluation'], 'DATF', dc, 'round-based', hc, flush=True)
     result = {'date': '2026-11-26', 'status': 'PASS', 'quantity': 'signed correlation, not bias',
-              'scope': 'Current manuscript Table 7 and Appendix C. Exact rational evaluation of the stated models; sampling counts are historical observations.',
+              'scope': 'Current manuscript Table 7 and Appendix E. Exact rational evaluation of the stated models; sampling counts are historical observations.',
               'legacy': 'Full four-round Algorithm 5 outputs 3/2048 and 0 are retained only by the datf-legacy profile.',
               'rows': output}
     (PACKAGE/'CURRENT_DL_RESULTS.json').write_text(json.dumps(result, ensure_ascii=False, indent=2)+'\n')

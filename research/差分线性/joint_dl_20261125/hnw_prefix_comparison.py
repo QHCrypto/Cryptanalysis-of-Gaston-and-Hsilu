@@ -1,4 +1,4 @@
-"""HNW two-round prefix weighting, including the manuscript full-mask readout.
+"""HNW two-round prefix weighting and a separate joint-mask extension.
 
 We integrate the prefix difference law by affine elimination, rather than
 enumerating every difference. The tail is chi3-L-chi4 with fresh uniform
@@ -60,7 +60,7 @@ def compare(name,prefix='exact',split_output=True):
             'correlation':fraction_record(total),'branches':records,
             'seconds':time.perf_counter()-started,
             'scope':'HNW Eq. (5) with two-layer prefix and Algorithm 1 column-product tail readout, zero value masks; exact arithmetic for stated model.'
-                    if split_output else 'Two-round differential-prefix weighting with zero value masks and complete L^T masks in the tail; exact arithmetic for the stated approximation, not a fixed-permutation correlation certificate.'}
+                    if split_output else 'Joint-mask extension, not original HNW26: two-round differential-prefix weighting with zero value masks and complete L^T masks in the tail; exact arithmetic for the stated approximation, not a fixed-permutation correlation certificate.'}
 
 if __name__=='__main__':
     records=[]

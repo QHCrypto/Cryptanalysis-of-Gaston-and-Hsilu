@@ -4,7 +4,7 @@ g++ -O3 -std=c++17 -Wall -Wextra -Wpedantic src/verify_support_ranks.cpp -o src/
 COMMAND ["/usr/bin/python3", "src/verify_support_proof.py"]
 {
   "status": "PASS",
-  "checked_local": "2026-11-26T18:43:24.049986+08:00",
+  "checked_local": "2026-11-26T21:32:36.616207+08:00",
   "conclusion": "Every nonzero free-endpoint Gaston-320 three-chi-layer XOR differential trail has weight at least 44 under the agreed local-DDT-weight definition",
   "weight_lower_bound": 44,
   "new_computation": "Exact finite GF(2) enumeration and full-support nullspace checks, without floating-point MILP inference",

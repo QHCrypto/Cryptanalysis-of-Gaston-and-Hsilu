@@ -119,7 +119,7 @@ def main():
             'research/代数攻击/Hsilu3r_new/validation_current_prefix/prefix_validation.json',
             'research/Cube/results/hsilu_7r_batch_audit.json',
             'research/Cube/gaston_rank_certificate/rerun_r4.json',
-            'validation/preimage_accounting.json',
+            'CURRENT_PREIMAGE_RESULTS.json',
         ]
         # Only copy files produced by checks run in this invocation.
         current = 'research/差分线性/joint_dl_20261125/'

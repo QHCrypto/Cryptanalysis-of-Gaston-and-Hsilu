@@ -1,5 +1,5 @@
 COMMAND ["/usr/bin/python3", "validate_hnw_fullmask.py"]
-[{'target': 'Gaston', 'cases': 49, 'nonzero_cases': 16, 'status': 'PASS'}, {'target': 'Hsilu', 'cases': 49, 'nonzero_cases': 15, 'status': 'PASS'}]
+[{'target': 'Gaston', 'readout': 'original_column_product', 'cases': 49, 'nonzero_cases': 13, 'status': 'PASS', 'cases_distinguishing_readouts': 3}, {'target': 'Gaston', 'readout': 'joint_mask_extension', 'cases': 49, 'nonzero_cases': 16, 'status': 'PASS', 'cases_distinguishing_readouts': 3}, {'target': 'Hsilu', 'readout': 'original_column_product', 'cases': 49, 'nonzero_cases': 13, 'status': 'PASS', 'cases_distinguishing_readouts': 2}, {'target': 'Hsilu', 'readout': 'joint_mask_extension', 'cases': 49, 'nonzero_cases': 15, 'status': 'PASS', 'cases_distinguishing_readouts': 2}]
 COMMAND ["/usr/bin/python3", "recompute_for_manuscript.py"]
-Gaston {'numerator': 1, 'denominator': 256, 'value': 0.00390625, 'log2_abs': -8.0}
-Hsilu {'numerator': 1, 'denominator': 512, 'value': 0.001953125, 'log2_abs': -9.0}
+Gaston {'numerator': 0, 'denominator': 1, 'value': 0.0, 'log2_abs': None}
+Hsilu {'numerator': 0, 'denominator': 1, 'value': 0.0, 'log2_abs': None}

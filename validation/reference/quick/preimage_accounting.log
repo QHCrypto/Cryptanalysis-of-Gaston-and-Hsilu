@@ -8,8 +8,11 @@ COMMAND ["/usr/bin/python3", "scripts/preimage_accounting.py"]
     "candidates_per_setup": 140737488355328,
     "Ts_elimination_only": 0.39843750000009187,
     "Tv": 1,
-    "reported_exponent_Huang_dominant_convention": 118.05563748774034,
-    "exponent_retaining_1_plus_Ts": 118.5394532650047
+    "exponent_retaining_1_plus_Ts": 118.5394532650047,
+    "second_word_tests_exponent": 64,
+    "time_formula": "C_s * (1 + T_s) + 2^64",
+    "reported_time_exponent": 118.5394532650047,
+    "reported_time_exponent_rounded": "118.54"
   },
   "Hsilu_2round": {
     "search_exponent": 106,
@@ -19,8 +22,11 @@ COMMAND ["/usr/bin/python3", "scripts/preimage_accounting.py"]
     "candidates_per_setup": 1,
     "Ts_elimination_only": 0.9542025862068966,
     "Tv": 1,
-    "reported_exponent_Huang_dominant_convention": 106,
-    "exponent_retaining_1_plus_Ts": 106.9665800348427
+    "exponent_retaining_1_plus_Ts": 106.9665800348427,
+    "second_word_tests_exponent": 64,
+    "time_formula": "C_s * (1 + T_s) + 2^64",
+    "reported_time_exponent": 106.96658003484288,
+    "reported_time_exponent_rounded": "106.97"
   },
   "Hsilu_3round": {
     "search_exponent": 126,
@@ -30,7 +36,10 @@ COMMAND ["/usr/bin/python3", "scripts/preimage_accounting.py"]
     "candidates_per_setup": 67108864,
     "Ts_elimination_only": 0.17407524802764857,
     "Tv": 1,
-    "reported_exponent_Huang_dominant_convention": 126,
-    "exponent_retaining_1_plus_Ts": 126.23152487563483
+    "exponent_retaining_1_plus_Ts": 126.23152487563483,
+    "second_word_tests_exponent": 64,
+    "time_formula": "C_s * (1 + T_s) + 2^64",
+    "reported_time_exponent": 126.23152487563483,
+    "reported_time_exponent_rounded": "126.23"
   }
 }

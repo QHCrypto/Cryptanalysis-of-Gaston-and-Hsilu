@@ -1,7 +1,7 @@
 {
-  "date": "2026-11-22",
-  "scope": "Huang precomputation and Gaussian-elimination accounting",
-  "warning": "These estimates exclude coefficient formation and candidate handling. The estimate follows the manuscript's stated accounting model. The retained-constant column is Cs*(1+Ts), not a full runtime estimate; prefix selection continues to use Huang's max allocation convention.",
+  "date": "2026-11-26",
+  "scope": "Current manuscript Sections 5.1--5.3 and Appendix F; retain solving and verification costs under Huang's precomputation and Gaussian-elimination accounting",
+  "warning": "These estimates exclude coefficient formation and candidate handling. The estimate follows the manuscript's stated accounting model. The reported time is Cs*(1+Ts)+2^64 within this model; prefix selection continues to use Huang's max allocation convention.",
   "assumptions": {
     "Gaston_conditional_success": "(3/4)^17",
     "Hsilu2_prefix_density": "2^-41",
@@ -18,8 +18,11 @@
     "candidates_per_setup": 140737488355328,
     "Ts_elimination_only": 0.39843750000009187,
     "Tv": 1,
-    "reported_exponent_Huang_dominant_convention": 118.05563748774034,
-    "exponent_retaining_1_plus_Ts": 118.5394532650047
+    "exponent_retaining_1_plus_Ts": 118.5394532650047,
+    "second_word_tests_exponent": 64,
+    "time_formula": "C_s * (1 + T_s) + 2^64",
+    "reported_time_exponent": 118.5394532650047,
+    "reported_time_exponent_rounded": "118.54"
   },
   "Hsilu_2round": {
     "search_exponent": 106,
@@ -29,8 +32,11 @@
     "candidates_per_setup": 1,
     "Ts_elimination_only": 0.9542025862068966,
     "Tv": 1,
-    "reported_exponent_Huang_dominant_convention": 106,
-    "exponent_retaining_1_plus_Ts": 106.9665800348427
+    "exponent_retaining_1_plus_Ts": 106.9665800348427,
+    "second_word_tests_exponent": 64,
+    "time_formula": "C_s * (1 + T_s) + 2^64",
+    "reported_time_exponent": 106.96658003484288,
+    "reported_time_exponent_rounded": "106.97"
   },
   "Hsilu_3round": {
     "search_exponent": 126,
@@ -40,8 +46,11 @@
     "candidates_per_setup": 67108864,
     "Ts_elimination_only": 0.17407524802764857,
     "Tv": 1,
-    "reported_exponent_Huang_dominant_convention": 126,
-    "exponent_retaining_1_plus_Ts": 126.23152487563483
+    "exponent_retaining_1_plus_Ts": 126.23152487563483,
+    "second_word_tests_exponent": 64,
+    "time_formula": "C_s * (1 + T_s) + 2^64",
+    "reported_time_exponent": 126.23152487563483,
+    "reported_time_exponent_rounded": "126.23"
   },
   "Hsilu3_fixed_row_count": 65835,
   "Hsilu3_variable_row_count": 7738,

@@ -24,7 +24,7 @@ publisher-assigned supplementary-resource number is used.
 
 The package was assembled from the authors' local research directories on
 2026-11-22 and synchronized with the revised differential and differential-linear
-sections on 2026-11-26. The original directory structure is preserved inside `research/`
+sections, XOF time estimates, and appendix numbering on 2026-11-26. The original directory structure is preserved inside `research/`
 because several programs share permutation implementations and algebra helpers.
 Start with the commands and result map in this README; the historical READMEs
 inside individual directories describe a broader research history.
@@ -79,8 +79,10 @@ The separate `datf` profile computes the current four-round **two-round
 differential-prefix weighting** with DATF Algorithm 3 and the round-based
 approximation. All four first-round DDT branches enter the calculation. Their
 complete second-round difference distributions are integrated by affine-image
-elimination, retaining the dependencies between difference coordinates. The
-results are `1/256` for Gaston G4 and `1/512` for Hsilu H4 under both models.
+elimination, retaining the dependencies between difference coordinates. DATF gives `1/256` for Gaston G4 and `1/512` for Hsilu H4; the original
+HNW26 column-product tail gives `0` for both endpoints. The joint-mask
+readout is retained separately as an extension, not attributed to original
+HNW26. It agrees with DATF on these endpoints.
 The profile checks the algebra against direct small-system enumeration, the
 original DATF backend, and the C++ round-based recurrence, then regenerates the
 seven-row current result table. Detailed setup and commands are in
@@ -126,14 +128,14 @@ exact rational model values, and original sampling counts. A fresh copy is
 written under `validation/<timestamp>_datf/` by the `datf` profile. Old identifiers
 `G3a`, `G4a`, and `H4a` map to G3, G4, and H4 in the current manuscript.
 
-| ID | Rounds | Experimental correlation | DATF Algorithm 3 | Round-based approximation | Evaluation |
+| ID | Rounds | Experimental correlation | DATF Algorithm 3 | HNW26 round-based approximation | Evaluation |
 |---|---:|---:|---:|---:|---|
 | G2 | 2 | 1 | 1 | 1 | Overall |
 | G3 | 3 | -2^-2.42 | -3/16 | -3/16 | Overall |
-| G4 | 4 | 2^-7.96 | 2^-8 | 2^-8 | Overall, two-round prefix |
+| G4 | 4 | 2^-7.96 | 2^-8 | 0 | Overall, two-round prefix |
 | G5 | 5 | Not measured | 2^-59 | 2^-59 | Concatenation (1,2,2) |
 | H3 | 3 | 1 | 1 | 1 | Overall |
-| H4 | 4 | 2^-9.01 | 2^-9 | 2^-9 | Overall, two-round prefix |
+| H4 | 4 | 2^-9.01 | 2^-9 | 0 | Overall, two-round prefix |
 | H5 | 5 | Not measured | 2^-63 | 2^-63 | Concatenation (0,2,3) |
 
 Experimental exponents are rounded to two decimal places. The archived sample
@@ -144,20 +146,31 @@ G3, G4, and H4. Five-round concatenation estimates give 118 and 126 for G5 and
 H5. Exact rational evaluation refers to the stated approximation models, not
 to a proof of the fixed permutations' true correlations.
 
-The current preimage accounting is in `scripts/preimage_accounting.py`:
+The current preimage accounting is in `scripts/preimage_accounting.py`, with
+machine-readable results in `CURRENT_PREIMAGE_RESULTS.json`:
 
-| Construction | Gaussian-elimination cost per candidate, in permutation units | Reported search exponent |
-|---|---:|---:|
-| Gaston, 2 rounds | 0.3984375 | 118.05563749, displayed as 118.06 |
-| Hsilu, 2 rounds | 0.954202586 | 106 |
-| Hsilu, 3 rounds | 0.174075248 | 126 |
+| Construction | Elimination cost per candidate, in permutation units | Candidate-count exponent | Reported time exponent |
+|---|---:|---:|---:|
+| Gaston, 2 rounds | 0.3984375 | 118.05563749 | 118.54 |
+| Hsilu, 2 rounds | 0.954202586 | 106 | 106.97 |
+| Hsilu, 3 rounds | 0.174075248 | 126 | 126.23 |
 
-These are model estimates under the manuscript's allocation, target-coverage,
-and dominant-term conventions. They are not measured full-search running times.
+The time estimate retains `C_s*(1+T_s)+2^64`, including both solving and
+first-word verification plus the expected second-word tests. Candidate counts
+and elimination formulas are unchanged. These are model estimates under the
+manuscript's allocation and target-coverage assumptions, not measured
+full-search running times. Prefix selection still uses the stated max-allocation
+convention; this update does not add coefficient-formation or candidate-handling
+costs to that model.
 The Hsilu seven-round time `2^102.22` and space `2^108.44` bits are also counted
 estimates under the stated table-access and candidate-bucket assumptions. The
 full six-round Gaston cube and full seven-round Hsilu recovery are not executed
 by the verification profiles.
+
+The current appendices are A: mode-interface certificates; B: cube computations;
+C: the weight-80 Hsilu trail; D: Gaston differential bounds; E: differential-linear
+endpoints; F: preimage configurations. Historical research records may use older
+appendix numbers.
 
 ## Search programs and optional dependencies
 

@@ -12,40 +12,41 @@
         {
           "name": "parameters",
           "status": "PASS",
-          "seconds": 1.08
+          "seconds": 1.131
         },
         {
           "name": "differential",
           "status": "PASS",
-          "seconds": 1.579
+          "seconds": 1.543
         },
         {
           "name": "gaston_support",
           "status": "PASS",
-          "seconds": 0.78
+          "seconds": 0.881
         },
         {
           "name": "differential_linear",
           "status": "PASS",
-          "seconds": 6.785
+          "seconds": 6.837
         },
         {
           "name": "preimage_structure",
           "status": "PASS",
-          "seconds": 3.949
+          "seconds": 3.948
         },
         {
           "name": "cubes",
           "status": "PASS",
-          "seconds": 2.362
+          "seconds": 2.212
         },
         {
           "name": "preimage_accounting",
           "status": "PASS",
-          "seconds": 0.033
+          "seconds": 0.032
         }
       ],
-      "reference_report": "validation/reference/quick/summary.json"
+      "reference_report": "validation/reference/quick/summary.json",
+      "started": "20261126_213233"
     },
     {
       "profile": "datf",
@@ -56,25 +57,26 @@
         {
           "name": "prefix_algebra",
           "status": "PASS",
-          "seconds": 0.516
+          "seconds": 0.465
         },
         {
           "name": "datf_algorithm3_prefix",
           "status": "PASS",
-          "seconds": 1.668
+          "seconds": 1.716
         },
         {
           "name": "round_based_prefix",
           "status": "PASS",
-          "seconds": 2.933
+          "seconds": 4.135
         },
         {
           "name": "current_dl_results",
           "status": "PASS",
-          "seconds": 0.114
+          "seconds": 0.116
         }
       ],
-      "reference_report": "validation/reference/datf/summary.json"
+      "reference_report": "validation/reference/datf/summary.json",
+      "started": "20261126_213225"
     },
     {
       "profile": "datf-legacy",

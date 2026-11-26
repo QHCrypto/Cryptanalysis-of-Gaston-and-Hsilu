@@ -2,7 +2,7 @@ COMMAND ["make", "certificate"]
 cc -O3 -std=c11 -Wall -Wextra -flto -I../../gaston_ref/gaston/implementation/reference -c ../../gaston_ref/gaston/implementation/reference/gaston.c -o gaston_reference.o
 g++ -O3 -std=c++17 -Wall -Wextra -Wpedantic -flto -I../../gaston_ref/gaston/implementation/reference certificate.cpp gaston_reference.o -o certificate
 COMMAND ["/usr/bin/python3", "scripts/check_saved_results.py", "cubes"]
-rounds=4 dimension=15 points=32768/32768 seconds=0.001621 complete=yes
+rounds=4 dimension=15 points=32768/32768 seconds=0.002118 complete=yes
 {
   "4": {
     "rank": 128,
@@ -20,10 +20,10 @@ rounds=4 dimension=15 points=32768/32768 seconds=0.001621 complete=yes
 COMMAND ["/usr/bin/python3", "verify.py"]
 {'word_bits': 4, 'prefix_rounds': 1, 'quartics': 38, 'excluded': 18, 'retained': 20, 'nonzero_coefficients': 3, 'false_exclusions': 0}
 {'word_bits': 8, 'prefix_rounds': 2, 'quartics': 94, 'excluded': 0, 'retained': 94, 'nonzero_coefficients': 94, 'false_exclusions': 0}
-{'formal_quartics_before_prefix_screening': 121, 'author_published_quartics': 121, 'sets_identical': True, 'meaning': 'For this chosen Ascon output, the final published list equals all exact formal quartics. No additional net term deletion is visible relative to this already parity-cancelled ANF.', 'author_result_path': '/tmp/gaston_hsilu_reproduce_23mu55oe/research/Cube/hsilu_quartic_screen/ascon_author_quartics.txt', 'author_repository': 'https://github.com/keyrecoveryofascon/keyrecoveryofascon', 'author_commit': '616f5d247bd9decdb39a74f2339f73a115392910'}
+{'formal_quartics_before_prefix_screening': 121, 'author_published_quartics': 121, 'sets_identical': True, 'meaning': 'For this chosen Ascon output, the final published list equals all exact formal quartics. No additional net term deletion is visible relative to this already parity-cancelled ANF.', 'author_result_path': '/tmp/gaston_hsilu_reproduce_taguk13e/research/Cube/hsilu_quartic_screen/ascon_author_quartics.txt', 'author_repository': 'https://github.com/keyrecoveryofascon/keyrecoveryofascon', 'author_commit': '616f5d247bd9decdb39a74f2339f73a115392910'}
 COMMAND ["/usr/bin/python3", "src/hsilu_7r_batch_audit.py"]
 {
-  "path": "/tmp/gaston_hsilu_reproduce_23mu55oe/research/Cube/results/hsilu_7r_batch_audit.json",
+  "path": "/tmp/gaston_hsilu_reproduce_taguk13e/research/Cube/results/hsilu_7r_batch_audit.json",
   "tests": [
     {
       "word_bits": 4,
@@ -224,5 +224,5 @@ COMMAND ["/usr/bin/python3", "src/hsilu_7r_batch_audit.py"]
       "status": "Author-reported estimate; the all-key evaluation step is not independently certified here"
     }
   },
-  "elapsed_seconds": 1.6866013050021138
+  "elapsed_seconds": 1.6825211370014586
 }

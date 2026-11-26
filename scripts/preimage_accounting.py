@@ -19,6 +19,7 @@ def E(n, k):
 def result(search_exponent, permutation_bits, recurring_bits, setup_bits=0,
            setups_shared_by=1):
     ts = (recurring_bits + setup_bits / setups_shared_by) / permutation_bits
+    time_exponent = search_exponent + math.log2(1 + ts + 2**(64-search_exponent))
     return {
         "search_exponent": search_exponent,
         "permutation_bit_operations": permutation_bits,
@@ -27,10 +28,11 @@ def result(search_exponent, permutation_bits, recurring_bits, setup_bits=0,
         "candidates_per_setup": setups_shared_by,
         "Ts_elimination_only": ts,
         "Tv": 1,
-        "reported_exponent_Huang_dominant_convention": (
-            search_exponent if ts < 1 else search_exponent + math.log2(1 + ts)
-        ),
         "exponent_retaining_1_plus_Ts": search_exponent + math.log2(1 + ts),
+        "second_word_tests_exponent": 64,
+        "time_formula": "C_s * (1 + T_s) + 2^64",
+        "reported_time_exponent": time_exponent,
+        "reported_time_exponent_rounded": f"{time_exponent:.2f}",
     }
 
 
@@ -53,12 +55,12 @@ def main():
     root = Path(__file__).resolve().parents[1] / "research/Gaston_Hsilu_CTP"
     verification_inputs = root / "verification_inputs"
     output = {
-        "date": "2026-11-22",
-        "scope": "Huang precomputation and Gaussian-elimination accounting",
+        "date": "2026-11-26",
+        "scope": "Current manuscript Sections 5.1--5.3 and Appendix F; retain solving and verification costs under Huang's precomputation and Gaussian-elimination accounting",
         "warning": (
             "These estimates exclude coefficient formation and candidate handling. "
             "The estimate follows the manuscript's stated accounting model. "
-            "The retained-constant column is Cs*(1+Ts), not a full runtime estimate; "
+            "The reported time is Cs*(1+Ts)+2^64 within this model; "
             "prefix selection continues to use Huang's max allocation convention."
         ),
         "assumptions": {
@@ -80,7 +82,11 @@ def main():
             for name in ("paper_parameters.tex",)
         },
     }
-    destination = Path(__file__).resolve().parents[1] / "validation/preimage_accounting.json"
+    for name, expected in [("Gaston_2round", "118.54"), ("Hsilu_2round", "106.97"),
+                           ("Hsilu_3round", "126.23")]:
+        assert output[name]["reported_time_exponent_rounded"] == expected
+        assert output[name]["reported_time_exponent"] > output[name]["search_exponent"]
+    destination = Path(__file__).resolve().parents[1] / "CURRENT_PREIMAGE_RESULTS.json"
     destination.parent.mkdir(parents=True, exist_ok=True)
     destination.write_text(json.dumps(output, indent=2, ensure_ascii=False) + "\n")
     print(json.dumps({name: output[name] for name in

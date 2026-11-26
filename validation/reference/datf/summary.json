@@ -1,6 +1,6 @@
 {
   "profile": "datf",
-  "started": "20261126_184525",
+  "started": "20261126_213225",
   "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
   "platform": "Linux-7.0.0-43-generic-x86_64-with-glibc2.39",
   "checks": [
@@ -18,7 +18,7 @@
         }
       ],
       "log": "prefix_algebra.log",
-      "seconds": 0.516
+      "seconds": 0.465
     },
     {
       "name": "datf_algorithm3_prefix",
@@ -34,7 +34,7 @@
         }
       ],
       "log": "datf_algorithm3_prefix.log",
-      "seconds": 1.668
+      "seconds": 1.716
     },
     {
       "name": "round_based_prefix",
@@ -58,7 +58,7 @@
         }
       ],
       "log": "round_based_prefix.log",
-      "seconds": 2.933
+      "seconds": 4.135
     },
     {
       "name": "current_dl_results",
@@ -74,7 +74,7 @@
         }
       ],
       "log": "current_dl_results.log",
-      "seconds": 0.114
+      "seconds": 0.116
     }
   ],
   "scope": "See README.md: quick checks do not repeat every search or full-size computation.",
