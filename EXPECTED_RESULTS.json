@@ -1,5 +1,5 @@
 {
-  "snapshot_date": "2026-11-26",
+  "snapshot_date": "2026-11-27",
   "scope": "Current manuscript Table 7 and Appendix E endpoints; correlations are model values, with five-round concatenation assumptions retained.",
   "differential_linear": [
     {
@@ -67,7 +67,7 @@
       "evaluation": "overall",
       "prefix_rounds": 2,
       "correlation_datf": "1/256",
-      "correlation_round_based": "0"
+      "correlation_round_based": "1/256"
     },
     {
       "id": "G5",
@@ -146,7 +146,7 @@
       "evaluation": "overall",
       "prefix_rounds": 2,
       "correlation_datf": "1/512",
-      "correlation_round_based": "0"
+      "correlation_round_based": "1/512"
     },
     {
       "id": "H5",

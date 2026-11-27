@@ -79,10 +79,13 @@ The separate `datf` profile computes the current four-round **two-round
 differential-prefix weighting** with DATF Algorithm 3 and the round-based
 approximation. All four first-round DDT branches enter the calculation. Their
 complete second-round difference distributions are integrated by affine-image
-elimination, retaining the dependencies between difference coordinates. DATF gives `1/256` for Gaston G4 and `1/512` for Hsilu H4; the original
-HNW26 column-product tail gives `0` for both endpoints. The joint-mask
-readout is retained separately as an extension, not attributed to original
-HNW26. It agrees with DATF on these endpoints.
+elimination, retaining the dependencies between difference coordinates. Both
+methods give `1/256` for Gaston G4 and `1/512` for Hsilu H4. The HNW26 evaluation
+adapts the joint final-layer treatment in the authors' public PRESENT code
+(`getBias_Opt2`/`getBias_Opt4`), combining all active-column masks before applying
+`L^T`. This treatment is attributed to the authors, not claimed as a new method.
+The basic Algorithm 1 column-product readout gives `0` for both endpoints and
+is retained separately as a comparison.
 The profile checks the algebra against direct small-system enumeration, the
 original DATF backend, and the C++ round-based recurrence, then regenerates the
 seven-row current result table. Detailed setup and commands are in
@@ -132,10 +135,10 @@ written under `validation/<timestamp>_datf/` by the `datf` profile. Old identifi
 |---|---:|---:|---:|---:|---|
 | G2 | 2 | 1 | 1 | 1 | Overall |
 | G3 | 3 | -2^-2.42 | -3/16 | -3/16 | Overall |
-| G4 | 4 | 2^-7.96 | 2^-8 | 0 | Overall, two-round prefix |
+| G4 | 4 | 2^-7.96 | 2^-8 | 2^-8 | Overall, two-round prefix |
 | G5 | 5 | Not measured | 2^-59 | 2^-59 | Concatenation (1,2,2) |
 | H3 | 3 | 1 | 1 | 1 | Overall |
-| H4 | 4 | 2^-9.01 | 2^-9 | 0 | Overall, two-round prefix |
+| H4 | 4 | 2^-9.01 | 2^-9 | 2^-9 | Overall, two-round prefix |
 | H5 | 5 | Not measured | 2^-63 | 2^-63 | Concatenation (0,2,3) |
 
 Experimental exponents are rounded to two decimal places. The archived sample

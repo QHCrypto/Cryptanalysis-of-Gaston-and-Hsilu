@@ -84,14 +84,14 @@ def main():
             if ident in ['G4', 'H4']:
                 d, h = fresh_datf[name], fresh_hnw[name]
                 assert d['delta'] == spec['delta'] and d['lambda'] == spec['lambda']
-                assert h['prefix'] == 'fresh' and h['split_final_column_readout'] is True
+                assert h['prefix'] == 'fresh' and h['split_final_column_readout'] is False
                 assert len(d['first_prefix_branches']) == 4
                 assert all(Fraction(b['probability']) == Fraction(1, 4) for b in d['first_prefix_branches'])
                 assert d['last_mask_branches'] == 16 and d['all_summed_cases'] == 64
                 dc, hc = fraction(d['correlation']), fraction(h['correlation'])
                 row['model'] = 'Full two-round differential-prefix weighting; uniform tail base state'
                 row['datf_readout'] = 'Joint full-mask parity through L^T'
-                row['round_based_readout'] = 'Original HNW26 column-product approximation, zero value masks'
+                row['round_based_readout'] = 'HNW26 authors\' joint final-layer treatment adapted from their public PRESENT implementation, zero value masks'
                 row['first_prefix_branches'] = d['first_prefix_branches']
                 row['summation_terms'] = d['all_summed_cases']
                 row['source'] = str(CURRENT.relative_to(PACKAGE))
@@ -136,7 +136,7 @@ def main():
         row['round_based'] = record(hc)
         output.append(row)
         print(ident, row['evaluation'], 'DATF', dc, 'round-based', hc, flush=True)
-    result = {'date': '2026-11-26', 'status': 'PASS', 'quantity': 'signed correlation, not bias',
+    result = {'date': '2026-11-27', 'status': 'PASS', 'quantity': 'signed correlation, not bias',
               'scope': 'Current manuscript Table 7 and Appendix E. Exact rational evaluation of the stated models; sampling counts are historical observations.',
               'legacy': 'Full four-round Algorithm 5 outputs 3/2048 and 0 are retained only by the datf-legacy profile.',
               'rows': output}

@@ -1,16 +1,25 @@
-"""HNW two-round prefix weighting and a separate joint-mask extension.
+"""HNW two-round prefix weighting with basic and joint final-layer readouts.
 
 We integrate the prefix difference law by affine elimination, rather than
 enumerating every difference. The tail is chi3-L-chi4 with fresh uniform
-base values. For each fixed prefix difference, HNW's column readout multiplies
-the expectations for the final active columns. This is different from taking
-one expectation for their joint parity. Both are integrated against exactly
-the same prefix distribution below.
+base values. The basic Algorithm 1 readout multiplies final-column expectations.
+The joint readout follows the authors' PRESENT getBias_Opt2/getBias_Opt4
+implementation, combining the active-column masks before the transpose and
+the final squared-LAT evaluation. Both use the same prefix distribution below.
 """
 from joint_estimator import *
 from pathlib import Path
 
-def compare(name,prefix='exact',split_output=True):
+HNW_IMPLEMENTATION = {
+    'repository': 'https://github.com/hukaisdu/Round-based-approximation',
+    'commit': '783e8edc560b848d0f2ba63f11838aecd23da40f',
+    'file': 'PRESENT/present.py',
+    'functions': ['getBias_Opt2', 'getBias_Opt4'],
+    'source_url': 'https://github.com/hukaisdu/Round-based-approximation/blob/783e8edc560b848d0f2ba63f11838aecd23da40f/PRESENT/present.py',
+    'adaptation': 'Joint final-layer treatment adapted to chi5 and the Gaston/Hsilu mixers; affine elimination evaluates the two-round differential-prefix sum.',
+}
+
+def compare(name,prefix='exact',split_output=False):
     started = time.perf_counter()
     L,LT = (lg,lgt) if name=='Gaston' else (lh,lht)
     delta,target = ENDPOINTS[name]
@@ -59,8 +68,8 @@ def compare(name,prefix='exact',split_output=True):
     return {'target':name,'prefix':prefix,'split_final_column_readout':split_output,
             'correlation':fraction_record(total),'branches':records,
             'seconds':time.perf_counter()-started,
-            'scope':'HNW Eq. (5) with two-layer prefix and Algorithm 1 column-product tail readout, zero value masks; exact arithmetic for stated model.'
-                    if split_output else 'Joint-mask extension, not original HNW26: two-round differential-prefix weighting with zero value masks and complete L^T masks in the tail; exact arithmetic for the stated approximation, not a fixed-permutation correlation certificate.'}
+            'scope':'HNW Eq. (5) with two-round prefix and basic Algorithm 1 column-product tail readout, zero value masks; exact arithmetic for the stated model.'
+                    if split_output else 'HNW two-round differential-prefix weighting with the joint final-layer treatment from the authors\' public PRESENT implementation, adapted to Gaston/Hsilu; zero value masks and complete L^T masks; exact arithmetic for the stated model, not a fixed-permutation correlation certificate.'}
 
 if __name__=='__main__':
     records=[]

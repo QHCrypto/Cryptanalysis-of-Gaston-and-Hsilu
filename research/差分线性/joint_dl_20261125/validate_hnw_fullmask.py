@@ -1,4 +1,4 @@
-"""Check original HNW column-product and joint-mask extension separately."""
+"""Check basic HNW column-product and authors' joint final-layer readouts."""
 from joint_estimator import *
 import random
 import subprocess
@@ -47,7 +47,7 @@ for name in ENDPOINTS:
     data=''.join(' '.join(f'{v:016x}' for v in d+m)+'\n' for d,m in cases)
     values={}
     for split in [True,False]:
-        mode='original_column_product' if split else 'joint_mask_extension'
+        mode='basic_column_product' if split else 'hnw_joint_final_layer'
         lines=subprocess.check_output(['./'+exe]+(['--split'] if split else []),input=data,text=True).splitlines()
         assert len(lines)==len(cases)
         values[mode]=[]

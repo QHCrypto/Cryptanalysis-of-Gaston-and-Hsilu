@@ -7,8 +7,8 @@ layers are absorbed into the endpoint difference or mask.
 
 | Target | DATF Algorithm 3 correlation | Round-based correlation | DATF bias |
 |---|---:|---:|---:|
-| Gaston G4 | 1/256 | 0 | 1/512 |
-| Hsilu H4 | 1/512 | 0 | 1/1024 |
+| Gaston G4 | 1/256 | 1/256 | 1/512 |
+| Hsilu H4 | 1/512 | 1/512 | 1/1024 |
 
 These are exact rational evaluations of the stated approximation models.
 The connection uses a fresh uniform base state. The calculation does not prove
@@ -38,17 +38,24 @@ averaging the independent final alpha variables gives the same squared-LAT
 formula. The formula is checked against direct two-round Algorithm 3 calls.
 
 `recompute_for_manuscript.py` selects `prefix='fresh'` and
-`split_output=True` for the manuscript's original HNW26 result. For each fixed
-prefix difference it evaluates the final active columns separately and multiplies
-their expectations. Each column mask is passed through `L^T` separately, so this
-readout uses `product_j E[Z_j]`. Averaging those products over the same complete
-prefix distribution gives zero for both G4 and H4.
+`split_output=False` for the manuscript's HNW26 result. This adapts the joint
+final-layer treatment already used in the authors' public PRESENT code:
+[`getBias_Opt2` and `getBias_Opt4`](https://github.com/hukaisdu/Round-based-approximation/blob/783e8edc560b848d0f2ba63f11838aecd23da40f/PRESENT/present.py),
+commit `783e8edc560b848d0f2ba63f11838aecd23da40f`. The authors combine masks for
+the selected output blocks before the linear-mask propagation and
+apply the final squared-LAT tensor product to the joint coordinates. Here the
+same treatment uses chi5 and the Gaston/Hsilu mixers, with complete masks passed
+through `L^T`. For each fixed prefix difference it evaluates `E[product_j Z_j]`,
+giving the prefix-weighted values `1/256` and `1/512`. Affine elimination is our
+summation backend; the joint final-layer treatment is attributed to HNW's authors.
+`split_output` is a switch in this local comparison script, not an upstream
+parameter name.
 
-The separate `split_output=False` comparison uses `E[product_j Z_j]`: it combines
-the masks before passing the complete mask through `L^T`. This retains the
-joint parity information at the final readout and gives `1/256` and `1/512`.
-It is a joint-mask extension, not original HNW26. Its values are stored under
-`joint_mask_extension_comparison`, not in the manuscript's HNW26 column.
+The separate `split_output=True` comparison uses the basic Algorithm 1 readout:
+each final-column mask is passed through `L^T` separately and the expectations
+are multiplied, giving `product_j E[Z_j]`. Averaging over the same prefix
+distribution gives zero for both endpoints. These values are stored under
+`basic_column_product_comparison`, separately from the manuscript results.
 
 `validate_hnw_fullmask.py` checks both readouts against the C++ local recurrence,
 including cases that distinguish them. The full prefix integration is shared;
@@ -99,6 +106,6 @@ additional concatenation row or middle mask. G5 and H5 remain concatenation
 estimates with splits `(1,2,2)` and `(0,2,3)`.
 
 当前稿件采用首两轮差分的完整加权求和；各首轮分支下的第二轮差分分布通过仿射像消元求和，
-不是逐个遍历多达 `2^103` 个差分。G4、H4 的 DATF 模型相关度分别为 `2^-8`、`2^-9`；原 HNW26 逐列乘积近似均为 `0`。
-联合掩码读出单独作为扩展对照保留，不属于原 HNW26 方法。
+不是逐个遍历多达 `2^103` 个差分。G4、H4 的 DATF 和 HNW26 模型相关度均分别为 `2^-8`、`2^-9`。
+HNW26 采用作者公开 PRESENT 实现已有的联合末端处理；基本 Algorithm 1 逐列乘积读出的两个 `0` 单独保留为对照。
 实验计数沿用原记录，与模型值分开保存；旧 Algorithm 5 结果仅作为历史对照。

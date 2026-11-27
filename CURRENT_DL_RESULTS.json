@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-26",
+  "date": "2026-11-27",
   "status": "PASS",
   "quantity": "signed correlation, not bias",
   "scope": "Current manuscript Table 7 and Appendix E. Exact rational evaluation of the stated models; sampling counts are historical observations.",
@@ -144,7 +144,7 @@
       "data_log2_from_experiment": 15.92546380045285,
       "model": "Full two-round differential-prefix weighting; uniform tail base state",
       "datf_readout": "Joint full-mask parity through L^T",
-      "round_based_readout": "Original HNW26 column-product approximation, zero value masks",
+      "round_based_readout": "HNW26 authors' joint final-layer treatment adapted from their public PRESENT implementation, zero value masks",
       "first_prefix_branches": [
         {
           "first_column_difference": 1,
@@ -175,9 +175,9 @@
         "log2_abs": -8.0
       },
       "round_based": {
-        "numerator": "0",
-        "denominator": "1",
-        "log2_abs": null
+        "numerator": "1",
+        "denominator": "256",
+        "log2_abs": -8.0
       }
     },
     {
@@ -318,7 +318,7 @@
       "data_log2_from_experiment": 18.028427282523012,
       "model": "Full two-round differential-prefix weighting; uniform tail base state",
       "datf_readout": "Joint full-mask parity through L^T",
-      "round_based_readout": "Original HNW26 column-product approximation, zero value masks",
+      "round_based_readout": "HNW26 authors' joint final-layer treatment adapted from their public PRESENT implementation, zero value masks",
       "first_prefix_branches": [
         {
           "first_column_difference": 8,
@@ -349,9 +349,9 @@
         "log2_abs": -9.0
       },
       "round_based": {
-        "numerator": "0",
-        "denominator": "1",
-        "log2_abs": null
+        "numerator": "1",
+        "denominator": "512",
+        "log2_abs": -9.0
       }
     },
     {

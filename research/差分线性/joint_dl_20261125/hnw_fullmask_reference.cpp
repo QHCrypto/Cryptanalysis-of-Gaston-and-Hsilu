@@ -1,5 +1,7 @@
-// Compare the original HNW column-product readout (--split) with a joint-mask
-// extension (default). The latter is not the original HNW26 approximation.
+// Compare basic HNW Algorithm 1 column-product readout (--split) with the
+// authors' joint final-layer treatment (default), adapted from PRESENT/present.py
+// getBias_Opt2/getBias_Opt4 in hukaisdu/Round-based-approximation,
+// commit 783e8edc560b848d0f2ba63f11838aecd23da40f.
 #define main original_hnw_cli_main
 #ifdef TARGET_GASTON
 #include "../gaston_dl/src/hnw_endpoint.cpp"

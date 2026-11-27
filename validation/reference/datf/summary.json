@@ -1,6 +1,6 @@
 {
   "profile": "datf",
-  "started": "20261126_213225",
+  "started": "20261127_141606",
   "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
   "platform": "Linux-7.0.0-43-generic-x86_64-with-glibc2.39",
   "checks": [
@@ -34,7 +34,7 @@
         }
       ],
       "log": "datf_algorithm3_prefix.log",
-      "seconds": 1.716
+      "seconds": 1.667
     },
     {
       "name": "round_based_prefix",
@@ -58,7 +58,7 @@
         }
       ],
       "log": "round_based_prefix.log",
-      "seconds": 4.135
+      "seconds": 3.885
     },
     {
       "name": "current_dl_results",

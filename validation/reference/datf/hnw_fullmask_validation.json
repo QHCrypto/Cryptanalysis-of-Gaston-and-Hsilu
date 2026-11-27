@@ -1,7 +1,7 @@
 [
   {
     "target": "Gaston",
-    "readout": "original_column_product",
+    "readout": "basic_column_product",
     "cases": 49,
     "nonzero_cases": 13,
     "status": "PASS",
@@ -9,7 +9,7 @@
   },
   {
     "target": "Gaston",
-    "readout": "joint_mask_extension",
+    "readout": "hnw_joint_final_layer",
     "cases": 49,
     "nonzero_cases": 16,
     "status": "PASS",
@@ -17,7 +17,7 @@
   },
   {
     "target": "Hsilu",
-    "readout": "original_column_product",
+    "readout": "basic_column_product",
     "cases": 49,
     "nonzero_cases": 13,
     "status": "PASS",
@@ -25,7 +25,7 @@
   },
   {
     "target": "Hsilu",
-    "readout": "joint_mask_extension",
+    "readout": "hnw_joint_final_layer",
     "cases": 49,
     "nonzero_cases": 15,
     "status": "PASS",

@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-26",
+  "date": "2026-11-27",
   "distribution": "public lightweight code package",
   "full_proof_certificates_included": false,
   "profiles": [
@@ -62,12 +62,12 @@
         {
           "name": "datf_algorithm3_prefix",
           "status": "PASS",
-          "seconds": 1.716
+          "seconds": 1.667
         },
         {
           "name": "round_based_prefix",
           "status": "PASS",
-          "seconds": 4.135
+          "seconds": 3.885
         },
         {
           "name": "current_dl_results",
@@ -76,7 +76,7 @@
         }
       ],
       "reference_report": "validation/reference/datf/summary.json",
-      "started": "20261126_213225"
+      "started": "20261127_141606"
     },
     {
       "profile": "datf-legacy",
